@@ -2,7 +2,7 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid "a3bc57ae-5a88-43fe-8e0d-a8b1866d3021")
+	(uuid "b6e1abd3-6f99-4a51-88ab-3fb6d726466c")
 	(paper "A3")
 	(title_block
 		(title "Si5351A VFO - Synth and RF outputs")
@@ -1040,203 +1040,182 @@
 			(font
 				(size 2 2))
 			(justify left top))
-		(uuid "370e7d0a-04f1-4461-a600-83e2894c168f"))
+		(uuid "9d981294-6902-411f-ba34-d7326959b8e0"))
 	(symbol
 		(lib_id "Si5351AVFO:TCXO_4P")
-		(at 59.69 90.17 0)
+		(at 59.69 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "9c08772d-d16b-4ccc-b7e8-a8ed0387fd0c")
+		(uuid "3bdd1730-be65-48d2-9f30-de0a8d6228b8")
 		(property "Reference" "X1"
-			(at 54.61 82.55 0)
+			(at 54.61 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Value" "25MHz TCXO"
-			(at 64.77 82.55 0)
+			(at 64.77 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(justify left)))
 		(property "Footprint" "Oscillator:Oscillator_SMD_SeikoEpson_SG8002CE-4Pin_3.2x2.5mm"
-			(at 59.69 90.17 0)
+			(at 59.69 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 59.69 90.17 0)
+			(at 59.69 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "4-pin 3225 TCXO, clipped-sine output; pin 1 NC/EN (NC on fitted part; EN on active-high-enable TCXOs via DNP R6)"
-			(at 59.69 90.17 0)
+			(at 59.69 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "LCSC" "C48888230"
-			(at 59.69 90.17 0)
+			(at 59.69 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "MPN" "OW2EL89CENUXK7YLC-25M"
-			(at 59.69 90.17 0)
+			(at 59.69 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Manufacturer" "YXC"
-			(at 59.69 90.17 0)
+			(at 59.69 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "VERIFY" "TCXO stock thin (718); buy before ordering."
-			(at 59.69 90.17 0)
+			(at 59.69 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "d7d8e432-db1c-40d8-b7ab-04bf8bcdb608"))
+			(uuid "b5bf8175-93a8-4aff-b34c-318a9b0914b8"))
 		(pin "2"
-			(uuid "a8a9f7e4-b095-43db-9a5d-c6e2f1975bad"))
+			(uuid "8b3b0102-bcae-4cd4-add7-ab508f64ce6b"))
 		(pin "3"
-			(uuid "7fe29f4d-0925-4d48-b83a-9df6b38204cf"))
+			(uuid "86b6f106-5cc2-478c-8238-a48adfc9eb99"))
 		(pin "4"
-			(uuid "b8d39e75-0305-4ba2-b19d-d9242a32c4b5"))
+			(uuid "3319bd0a-4c12-4d5d-b724-f44025ff7766"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "X1")
 					(unit 1)))))
-	(label "TCXO_EN"
-		(at 49.53 90.17 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "38370062-b10d-455b-8aaf-4998ec5f6166"))
 	(symbol
 		(lib_id "power:GND")
-		(at 59.69 97.79 0)
+		(at 59.69 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "e997e828-f02e-47e6-b28a-b8b6096170da")
-		(property "Reference" "#PWR080"
-			(at 59.69 97.79 0)
+		(uuid "72c2d364-560a-401e-beac-f8fa7ef10995")
+		(property "Reference" "#PWR084"
+			(at 59.69 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Value" "GND"
-			(at 59.69 101.6 0)
+			(at 59.69 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" ""
-			(at 59.69 97.79 0)
+			(at 59.69 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 59.69 97.79 0)
+			(at 59.69 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "c798e3a0-3aa0-4d69-b027-761f590f5485"))
+			(uuid "5ad84bac-b39f-4350-85c8-8ff006410f8a"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "#PWR080")
+					(reference "#PWR084")
 					(unit 1)))))
-	(label "TCXO_OUT"
-		(at 69.85 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "78566b70-b0e1-4c5d-a444-74d7a4dfb020"))
-	(label "TCXO_VDD"
-		(at 59.69 82.55 90)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "38bb492e-96f9-4ba6-a90c-7fd27906cb05"))
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 44.45 59.69 0)
+		(at 59.69 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "4c4f6abf-e761-4a33-86eb-66a953deb0d8")
+		(uuid "497a3cc5-d6a2-4fc9-b5a9-3b050810fdc2")
 		(property "Reference" "R5"
-			(at 46.25 59.09 0)
+			(at 61.49 66.71 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(justify left)))
 		(property "Value" "10"
-			(at 46.25 61.29 0)
+			(at 61.49 68.91 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(justify left)))
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 44.45 59.69 0)
+			(at 59.69 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 44.45 59.69 0)
+			(at 59.69 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Resistor, small symbol"
-			(at 44.45 59.69 0)
+			(at 59.69 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "LCSC" "C17415"
-			(at 44.45 59.69 0)
+			(at 59.69 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "MPN" "0805W8F100JT5E"
-			(at 44.45 59.69 0)
+			(at 59.69 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 44.45 59.69 0)
+			(at 59.69 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "f26472cc-3d2d-4a63-93c8-189a1ddfa88c"))
+			(uuid "5dc79ef7-78f0-4200-95c7-f1ef997d2df3"))
 		(pin "2"
-			(uuid "ad5b739d-0663-4462-98b9-999b03b0057a"))
+			(uuid "659cf7fd-5fd9-432f-917e-bf6ea0112f6a"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
@@ -1244,354 +1223,305 @@
 					(unit 1)))))
 	(symbol
 		(lib_id "power:+3V3")
-		(at 44.45 57.15 0)
+		(at 59.69 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "de6f8c6a-43ec-4bd8-8f19-c59c177dead7")
-		(property "Reference" "#PWR081"
-			(at 44.45 57.15 0)
+		(uuid "f534efb7-108f-4461-9e0c-0cfb3e75758f")
+		(property "Reference" "#PWR085"
+			(at 59.69 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Value" "+3V3_CLK"
-			(at 44.45 53.34 0)
+			(at 59.69 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" ""
-			(at 44.45 57.15 0)
+			(at 59.69 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 44.45 57.15 0)
+			(at 59.69 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "7559eadc-9fe8-4a9d-b3f7-a11556919139"))
+			(uuid "a7a553ca-807c-4734-9218-d8f2366632e9"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "#PWR081")
+					(reference "#PWR085")
 					(unit 1)))))
-	(label "TCXO_VDD"
-		(at 44.45 62.23 270)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "c26bca12-e9aa-4323-a6a0-d38085c26bef"))
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 74.93 59.69 0)
+		(at 85.09 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1cf282d1-8f39-4196-969a-fe59f99820ed")
+		(uuid "fa202b5d-8d5b-4b90-9bb5-4aedb8308c9b")
 		(property "Reference" "C5"
-			(at 76.73 59.09 0)
+			(at 86.89 74.33 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(justify left)))
 		(property "Value" "100n"
-			(at 76.73 61.29 0)
+			(at 86.89 76.53 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(justify left)))
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 74.93 59.69 0)
+			(at 85.09 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 74.93 59.69 0)
+			(at 85.09 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 74.93 59.69 0)
+			(at 85.09 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "LCSC" "C49678"
-			(at 74.93 59.69 0)
+			(at 85.09 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "MPN" "CC0805KRX7R9BB104"
-			(at 74.93 59.69 0)
+			(at 85.09 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Manufacturer" "YAGEO"
-			(at 74.93 59.69 0)
+			(at 85.09 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "f8de7017-962f-4baa-bf32-49903c763c0a"))
+			(uuid "90925387-c3a5-4a07-adab-50311d230612"))
 		(pin "2"
-			(uuid "e6b842c0-77a0-4a3f-be1e-ee960464d5bc"))
+			(uuid "b9bcd64b-3518-4e70-94da-6a5b65ed1e03"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "C5")
 					(unit 1)))))
-	(label "TCXO_VDD"
-		(at 74.93 57.15 90)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "4fad404c-4546-494c-bf0d-27cd56b8823d"))
 	(symbol
 		(lib_id "power:GND")
-		(at 74.93 62.23 0)
+		(at 85.09 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "2314fbb1-5ab8-4be2-86c5-31a220bf709e")
-		(property "Reference" "#PWR082"
-			(at 74.93 62.23 0)
+		(uuid "5a04c85a-fc48-4a3c-89d1-067ab3837c14")
+		(property "Reference" "#PWR086"
+			(at 85.09 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Value" "GND"
-			(at 74.93 66.04 0)
+			(at 85.09 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" ""
-			(at 74.93 62.23 0)
+			(at 85.09 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 74.93 62.23 0)
+			(at 85.09 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "4ad92c80-53f4-4b9e-a00b-c029264daaa9"))
+			(uuid "478ed1c6-8d5e-4a61-aac2-5a36c5cc0bb3"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "#PWR082")
+					(reference "#PWR086")
 					(unit 1)))))
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 90.17 49.53 0)
+		(at 85.09 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "05133898-80bc-4e1f-979b-526ca08c3398")
-		(property "Reference" "#FLG083"
-			(at 90.17 51.43 0)
+		(uuid "bbbd7549-e339-4b75-81a1-cee4128d1969")
+		(property "Reference" "#FLG087"
+			(at 85.09 74.29 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Value" "PWR_FLAG"
-			(at 90.17 45.72 0)
+			(at 85.09 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(pin "1"
-			(uuid "11d86fc5-462f-4fa7-bf9c-ddbdfd1e1aac"))
+			(uuid "f96dc482-2ccc-46bd-a281-9aa255b35331"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "#FLG083")
+					(reference "#FLG087")
 					(unit 1)))))
-	(label "TCXO_VDD"
-		(at 90.17 49.53 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "83888dbf-72d9-435b-948a-0f63fd71e03a"))
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 30.48 85.09 0)
+		(at 44.45 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "92f79e22-3794-4548-a949-7f0393027d70")
+		(uuid "c9dd2b38-80e0-49f5-bb32-966d45069598")
 		(property "Reference" "R6"
-			(at 32.28 84.49 0)
+			(at 46.25 74.33 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(justify left)))
 		(property "Value" "0"
-			(at 32.28 86.69 0)
+			(at 46.25 76.53 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(justify left)))
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 30.48 85.09 0)
+			(at 44.45 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 30.48 85.09 0)
+			(at 44.45 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Resistor, small symbol"
-			(at 30.48 85.09 0)
+			(at 44.45 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "LCSC" "C17477"
-			(at 30.48 85.09 0)
+			(at 44.45 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "MPN" "0805W8F0000T5E"
-			(at 30.48 85.09 0)
+			(at 44.45 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 30.48 85.09 0)
+			(at 44.45 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "ca01cbde-0c17-4c8c-86f3-34379ec01bb2"))
+			(uuid "b29bf29d-6c7a-458d-b876-016037074aab"))
 		(pin "2"
-			(uuid "263e4d99-405b-40fe-b7da-5f35d3983830"))
+			(uuid "39916069-2cba-4bfa-b9b2-a75402b0aced"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "R6")
 					(unit 1)))))
-	(label "TCXO_VDD"
-		(at 30.48 82.55 90)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "96f3fca8-a99f-48a5-9a78-5be69d94df3a"))
-	(label "TCXO_EN"
-		(at 30.48 87.63 270)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "dd37166e-f894-4cf7-bb66-5ec0673aacdd"))
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 95.25 90.17 90)
+		(at 80.01 87.63 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d54eccf6-67dd-4380-b2b2-54724d2225e7")
+		(uuid "323a6e10-0e13-4207-988e-a3ade7fbb860")
 		(property "Reference" "C6"
-			(at 95.25 87.63 90)
+			(at 80.01 85.09 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Value" "100n"
-			(at 95.25 92.71 90)
+			(at 80.01 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 95.25 90.17 0)
+			(at 80.01 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 95.25 90.17 0)
+			(at 80.01 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 95.25 90.17 0)
+			(at 80.01 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "LCSC" "C49678"
-			(at 95.25 90.17 0)
+			(at 80.01 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "MPN" "CC0805KRX7R9BB104"
-			(at 95.25 90.17 0)
+			(at 80.01 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Manufacturer" "YAGEO"
-			(at 95.25 90.17 0)
+			(at 80.01 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "6f5a8457-57b2-407c-8965-640a227141d2"))
+			(uuid "a189d295-c724-46c1-8846-72491e65fbc2"))
 		(pin "2"
-			(uuid "6e108478-573a-4cf8-aedc-394b9fcb02fb"))
+			(uuid "947ea304-78c7-441a-96cd-20a683177cb0"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "C6")
 					(unit 1)))))
-	(label "TCXO_OUT"
-		(at 92.71 90.17 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "a4530183-ae3f-4277-ac64-5da760f885d0"))
-	(label "SI_XA"
-		(at 97.79 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "418c2793-b8e6-4f64-b5a7-23f5443aeecb"))
 	(symbol
 		(lib_id "Oscillator:Si5351A-B-GT")
 		(at 139.7 95.25 0)
@@ -1600,7 +1530,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "725f5df9-ac42-4049-b86e-e9013fdecc03")
+		(uuid "4e7dfadf-cde5-4ee5-984a-6fe8f916d060")
 		(property "Reference" "U2"
 			(at 130.81 83.82 0)
 			(effects
@@ -1648,25 +1578,25 @@
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "93c94f08-2dc8-4404-aa77-34c9901f106a"))
+			(uuid "d50b6f32-f5a2-4823-9784-97f62a6245c0"))
 		(pin "2"
-			(uuid "aab1acdc-0807-4443-ae5b-c6e732cdbae0"))
+			(uuid "4673ec49-4693-4e79-89d6-7054fdf874b3"))
 		(pin "3"
-			(uuid "95a88752-b0bc-4817-80b8-50f9c28d69b5"))
+			(uuid "1885734e-29ea-4703-aecf-8e0deccfbdc5"))
 		(pin "4"
-			(uuid "6ea17dbd-0866-4792-b440-071b4f6776a9"))
+			(uuid "4823ee83-c5a2-4a59-b1f4-785c0a03fc61"))
 		(pin "5"
-			(uuid "3a37208d-e6d7-4f88-b35a-6f5eaebdc594"))
+			(uuid "626f18a9-b1e2-461d-98fa-e432decdbe94"))
 		(pin "6"
-			(uuid "82387eaa-14ff-41f2-b57d-886f48e69038"))
+			(uuid "f6ae0cc6-e6f3-4645-acb5-95640b377e52"))
 		(pin "7"
-			(uuid "fb6621a1-42a6-4fe3-bd77-54f210d31238"))
+			(uuid "bd14688b-2c68-4611-bf83-d487df6b9f6b"))
 		(pin "8"
-			(uuid "fc4b2094-6a73-4958-82d0-126784421b92"))
+			(uuid "323577f1-2f61-445d-badc-f0f7060cec30"))
 		(pin "9"
-			(uuid "d61d5134-4cd8-4b9c-8aa6-42e8bb60854c"))
+			(uuid "41074986-9534-4ae4-8637-7504b1883cbd"))
 		(pin "10"
-			(uuid "31fdf085-5c1b-4414-b894-58c63d6dc526"))
+			(uuid "c430a798-0aa7-4057-be61-88095a936410"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
@@ -1679,7 +1609,7 @@
 		(stroke
 			(width 0)
 			(type default))
-		(uuid "b0753c99-3e95-416a-8c75-62e2ba5e7783"))
+		(uuid "b24baa4d-a18c-408b-976e-5f3a2c2e54d1"))
 	(symbol
 		(lib_id "power:+3V3")
 		(at 137.16 80.01 0)
@@ -1688,8 +1618,8 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "8466b528-7704-4e4e-b392-1ec03ef2d2e1")
-		(property "Reference" "#PWR084"
+		(uuid "2bff83c6-fd8b-49f7-ad2b-63e1d9b8149b")
+		(property "Reference" "#PWR088"
 			(at 137.16 80.01 0)
 			(effects
 				(font
@@ -1713,22 +1643,15 @@
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "2d6892ae-1ef0-490d-a64e-04153ac610a8"))
+			(uuid "25953f22-398e-483e-98f2-abf241cdb0fa"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "#PWR084")
+					(reference "#PWR088")
 					(unit 1)))))
-	(label "SI_XA"
-		(at 127 87.63 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "db782782-d565-4a3a-9c8d-4322fdfa4ff1"))
 	(no_connect
 		(at 127 92.71)
-		(uuid "a0a52d3c-00f4-403d-800a-09b09eb74977"))
+		(uuid "39bb39e0-b9ac-40e7-8f2c-459c193318ea"))
 	(global_label "I2C_SCL"
 		(shape passive)
 		(at 127 100.33 180)
@@ -1737,7 +1660,7 @@
 			(font
 				(size 1.27 1.27))
 			(justify right))
-		(uuid "4e1d3fb9-e154-45d9-86d8-357498101116")
+		(uuid "635fc508-4a44-4303-b1aa-82d50e23c7cc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 127 100.33 0)
 			(effects
@@ -1752,7 +1675,7 @@
 			(font
 				(size 1.27 1.27))
 			(justify right))
-		(uuid "ce5703cd-3f6d-4831-9049-f6e85b93ff99")
+		(uuid "08185e98-4831-4865-8636-e23d50399f22")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 127 102.87 0)
 			(effects
@@ -1765,7 +1688,7 @@
 			(font
 				(size 1.27 1.27))
 			(justify left bottom))
-		(uuid "9ed7636c-ee98-4d2d-b66e-a3c4244cbb32"))
+		(uuid "57fccc35-0e80-48aa-a4bb-8b42d25328f0"))
 	(symbol
 		(lib_id "power:GND")
 		(at 139.7 107.95 0)
@@ -1774,8 +1697,8 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "87ef5610-2457-46b4-924f-9bff31bb8386")
-		(property "Reference" "#PWR085"
+		(uuid "a523b34a-dae0-4c40-8920-06c218f517ec")
+		(property "Reference" "#PWR089"
 			(at 139.7 107.95 0)
 			(effects
 				(font
@@ -1799,11 +1722,11 @@
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "f0b70529-f1b7-49c7-b7fe-372df22d047a"))
+			(uuid "76a238be-7455-417d-bd16-8a269c983bf3"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "#PWR085")
+					(reference "#PWR089")
 					(unit 1)))))
 	(label "CLK1"
 		(at 152.4 95.25 0)
@@ -1811,14 +1734,14 @@
 			(font
 				(size 1.27 1.27))
 			(justify left bottom))
-		(uuid "de7c3207-2766-450f-8dd4-765b743b4559"))
+		(uuid "1ec11278-fa02-4332-9eca-ad3778b027ed"))
 	(label "CLK0"
 		(at 152.4 90.17 0)
 		(effects
 			(font
 				(size 1.27 1.27))
 			(justify left bottom))
-		(uuid "eb63fe2d-52f6-43a8-a797-eb7e66b6e326"))
+		(uuid "351467f0-e656-4555-848c-ccaec71df1f2"))
 	(wire
 		(pts
 			(xy 142.24 82.55)
@@ -1826,7 +1749,7 @@
 		(stroke
 			(width 0)
 			(type default))
-		(uuid "22deaeee-fdae-4a15-8e99-3dc611a5eab0"))
+		(uuid "fa33768b-f9f9-47bc-8d17-ede6bb4b5a0f"))
 	(wire
 		(pts
 			(xy 142.24 80.01)
@@ -1834,7 +1757,63 @@
 		(stroke
 			(width 0)
 			(type default))
-		(uuid "638c62bc-a9e5-4ea3-93de-fda807d92513"))
+		(uuid "036bb092-8f02-44f5-a9fc-4fec1b66b93f"))
+	(wire
+		(pts
+			(xy 59.69 69.85)
+			(xy 59.69 80.01))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f5cde8a1-9cf8-4dc9-91bb-be62850d96a6"))
+	(wire
+		(pts
+			(xy 59.69 72.39)
+			(xy 85.09 72.39))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "541826e4-3448-4d1b-90d8-1ac49b1f1416"))
+	(wire
+		(pts
+			(xy 59.69 72.39)
+			(xy 44.45 72.39))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f36a5321-fc3a-4d7c-bf57-a824b1a850c1"))
+	(wire
+		(pts
+			(xy 44.45 77.47)
+			(xy 44.45 87.63))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "298fc1c6-4738-4b6e-8a0a-53bcf9c257d8"))
+	(wire
+		(pts
+			(xy 44.45 87.63)
+			(xy 49.53 87.63))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "0496e1af-b1d5-482b-b580-6d921180c491"))
+	(wire
+		(pts
+			(xy 69.85 87.63)
+			(xy 77.47 87.63))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "c0fad016-e5e8-4024-bd06-343702d660d6"))
+	(wire
+		(pts
+			(xy 82.55 87.63)
+			(xy 127 87.63))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "b3154ae2-3aee-41df-9d92-cec9bed75d4b"))
 	(symbol
 		(lib_id "Device:C_Small")
 		(at 165.1 59.69 0)
@@ -1843,7 +1822,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5f7ab35f-b443-43be-84e8-1ae49a33c76d")
+		(uuid "e5c9215c-eb37-478f-ab94-af4bf402cf10")
 		(property "Reference" "C4"
 			(at 166.9 59.09 0)
 			(effects
@@ -1893,9 +1872,9 @@
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "cebf3a22-bfee-4ee1-9b5b-4902019a8654"))
+			(uuid "fe84fcb6-b90d-4cb5-9be0-a2f6f32477c6"))
 		(pin "2"
-			(uuid "2f82fa29-6140-479a-a894-8d2e3bb94c18"))
+			(uuid "b6ad2516-165b-4663-8519-625799737ca7"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
@@ -1909,8 +1888,8 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "2d6ad893-c3f9-4a43-86ba-c47103a7c9b3")
-		(property "Reference" "#PWR086"
+		(uuid "f141026a-6294-46b5-82fd-70c3808b8e0f")
+		(property "Reference" "#PWR090"
 			(at 165.1 57.15 0)
 			(effects
 				(font
@@ -1934,11 +1913,11 @@
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "d55c24fc-1120-48e6-af01-1c337e03fe06"))
+			(uuid "05810e19-4c15-4f96-b675-ee47071429bd"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "#PWR086")
+					(reference "#PWR090")
 					(unit 1)))))
 	(symbol
 		(lib_id "power:GND")
@@ -1948,8 +1927,8 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "072436d3-b237-4dfd-9081-c23b9a057c3a")
-		(property "Reference" "#PWR087"
+		(uuid "baad4dd8-98aa-4ca3-ab0d-927aeb2e7662")
+		(property "Reference" "#PWR091"
 			(at 165.1 62.23 0)
 			(effects
 				(font
@@ -1973,11 +1952,11 @@
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "1f19d2fe-0695-45f3-acce-a877d85b39d1"))
+			(uuid "07c1ffeb-6691-48fd-837d-2e101d01569f"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "#PWR087")
+					(reference "#PWR091")
 					(unit 1)))))
 	(symbol
 		(lib_id "Device:R_Small")
@@ -1987,7 +1966,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6df93f87-802e-4898-919e-f86d505c06f5")
+		(uuid "b519b63f-3a7f-4613-b9d0-bddf178e15b7")
 		(property "Reference" "R27"
 			(at 102.13 128.94 0)
 			(effects
@@ -2018,16 +1997,16 @@
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
-		(property "VERIFY" "I2C pull-up value not fixed (PLAN 2.2-4.7k); no LCSC chosen."
+		(property "VERIFY" "I2C pull-up value not fixed (PLAN 2.2-4.7k); no LCSC chosen. Pulled to +3V3_MCU (not +3V3_CLK) so SCL/SDA never exceed ATtiny VDD; Si5351 VIH 0.7*VDD=2.31 V vs ~2.95 V high - check."
 			(at 100.33 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "2730bf0a-090f-4367-8373-b8bb1afe9b45"))
+			(uuid "701d29c6-7867-4ebd-873d-acb7b7317d65"))
 		(pin "2"
-			(uuid "3c3baa8e-a860-4e54-a62f-4e81cebbd656"))
+			(uuid "76657b52-7496-4338-8f3d-6975e3e20063"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
@@ -2041,14 +2020,14 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "fa9dfbea-5927-4d8e-9dab-9bcc53213b8a")
-		(property "Reference" "#PWR088"
+		(uuid "aec128e5-ede7-4b4a-af57-660f67906e01")
+		(property "Reference" "#PWR092"
 			(at 100.33 127 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
-		(property "Value" "+3V3_CLK"
+		(property "Value" "+3V3_MCU"
 			(at 100.33 123.19 0)
 			(effects
 				(font
@@ -2066,11 +2045,11 @@
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "637ceb25-45b2-42c9-8404-a096e0c32b11"))
+			(uuid "a26129cc-1cf6-4aa6-9080-0d686b651782"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "#PWR088")
+					(reference "#PWR092")
 					(unit 1)))))
 	(global_label "I2C_SCL"
 		(shape passive)
@@ -2080,7 +2059,7 @@
 			(font
 				(size 1.27 1.27))
 			(justify right))
-		(uuid "33b2939d-470d-4ad6-90ff-eae98b4025b7")
+		(uuid "1b9cbb17-76b7-49d9-93ce-0e313f20d9be")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 100.33 132.08 0)
 			(effects
@@ -2095,7 +2074,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "4528ddf4-79af-45a2-9f47-a7bbc2036ce0")
+		(uuid "c26bf105-ba72-4cc1-a026-8da6ee1e2864")
 		(property "Reference" "R28"
 			(at 141.5 128.94 0)
 			(effects
@@ -2133,9 +2112,9 @@
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "005a0e0c-240b-4852-b60c-9d7adac95543"))
+			(uuid "0f147b4d-9d7f-49f8-97f6-7ff698b1a03b"))
 		(pin "2"
-			(uuid "01620692-a0bd-46cf-a464-01160ed10601"))
+			(uuid "a6f9204c-fa6c-4cbc-87cc-09bf773ae96c"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
@@ -2149,14 +2128,14 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "61256d4c-b557-497c-8ede-86ad7f1beaef")
-		(property "Reference" "#PWR089"
+		(uuid "a7fbae4a-d49e-4b7b-a4ac-a579e2d2e15a")
+		(property "Reference" "#PWR093"
 			(at 139.7 127 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
-		(property "Value" "+3V3_CLK"
+		(property "Value" "+3V3_MCU"
 			(at 139.7 123.19 0)
 			(effects
 				(font
@@ -2174,11 +2153,11 @@
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "54fb7f4b-8133-4ffe-aff4-6b340c449a00"))
+			(uuid "f0dbecff-f188-45a3-a53f-401ab63c37e3"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "#PWR089")
+					(reference "#PWR093")
 					(unit 1)))))
 	(global_label "I2C_SDA"
 		(shape passive)
@@ -2188,7 +2167,7 @@
 			(font
 				(size 1.27 1.27))
 			(justify right))
-		(uuid "73cf888b-aef8-4c11-825d-7b86293e5d6f")
+		(uuid "f8fbe510-db4e-4bc8-a28a-8a0c9cb716f2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 139.7 132.08 0)
 			(effects
@@ -2197,4066 +2176,4027 @@
 				(hide yes))))
 	(text "CLK0 output chain (J2)"
 		(exclude_from_sim no)
-		(at 20 146 0)
+		(at 20 148.72 0)
 		(effects
 			(font
 				(size 1.27 1.27))
 			(justify left top))
-		(uuid "13d29767-b7e1-48c5-901f-078bd95d2858"))
+		(uuid "c2a510f9-2f2d-4261-aacd-763585fe647e"))
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 39.37 170.18 90)
+		(at 40.64 172.72 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c8fba01a-7b62-4bbc-96ff-1ae6334961c7")
+		(uuid "27555ad5-649e-4e3e-879c-ba3d2bddd078")
 		(property "Reference" "R100"
-			(at 39.37 167.64 90)
+			(at 40.64 170.18 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Value" "0"
-			(at 39.37 172.72 90)
+			(at 40.64 175.26 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 39.37 170.18 0)
+			(at 40.64 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 39.37 170.18 0)
+			(at 40.64 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Resistor, small symbol"
-			(at 39.37 170.18 0)
+			(at 40.64 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "LCSC" ""
-			(at 39.37 170.18 0)
+			(at 40.64 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "VERIFY" "0603 0R series (Jason decision); LCSC code not in PLAN (C17477 is 0805)."
-			(at 39.37 170.18 0)
+			(at 40.64 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "db307dee-39da-4919-a4ee-1ae457296522"))
+			(uuid "dd76f418-cbbb-44cb-9734-509b1bce5639"))
 		(pin "2"
-			(uuid "5847548b-a458-4c12-b0ea-38170693ace9"))
+			(uuid "ff2bd5f0-5544-42ac-8ad4-249f89c0e362"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "R100")
 					(unit 1)))))
 	(label "CLK0"
-		(at 36.83 170.18 180)
+		(at 38.1 172.72 180)
 		(effects
 			(font
 				(size 1.27 1.27))
 			(justify right bottom))
-		(uuid "32b98b58-21f8-4c52-8388-79b10dadf6e8"))
-	(label "CLK0_S"
-		(at 41.91 170.18 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "3396a403-2a6b-4888-b1ed-0a90bc90bd3a"))
+		(uuid "b751a0ac-c0c2-4c72-bb0d-ff27c6ec1f99"))
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 62.23 170.18 90)
+		(at 50.8 172.72 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "21e345c8-a5a6-401d-be03-e980f4d25f9f")
+		(uuid "545ed181-2eb2-4f1b-8807-389a1cdaf6cc")
 		(property "Reference" "C100"
-			(at 62.23 167.64 90)
+			(at 50.8 170.18 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Value" "100n"
-			(at 62.23 172.72 90)
+			(at 50.8 175.26 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 62.23 170.18 0)
+			(at 50.8 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 62.23 170.18 0)
+			(at 50.8 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 62.23 170.18 0)
+			(at 50.8 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "LCSC" "C49678"
-			(at 62.23 170.18 0)
+			(at 50.8 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "MPN" "CC0805KRX7R9BB104"
-			(at 62.23 170.18 0)
+			(at 50.8 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Manufacturer" "YAGEO"
-			(at 62.23 170.18 0)
+			(at 50.8 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "VERIFY" "DC-block LF corner ~32 kHz into 50 ohm (PLAN Q6)."
-			(at 62.23 170.18 0)
+			(at 50.8 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "93d6aaed-cdc0-4ce5-b2ce-5471c6aa0caf"))
+			(uuid "45ac0f4c-4cd6-4272-ad71-6e9fcf52c184"))
 		(pin "2"
-			(uuid "bb2e4f4f-c1b0-4493-827e-4e0b41cb3fb1"))
+			(uuid "ec8d9e22-782e-4467-814c-8975efce7768"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "C100")
 					(unit 1)))))
-	(label "CLK0_S"
-		(at 59.69 170.18 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "01981839-909e-457c-8640-a029c8cf9838"))
-	(label "CLK0_DC"
-		(at 64.77 170.18 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "23e1c46f-f2c4-473a-adb3-074829180f35"))
+	(wire
+		(pts
+			(xy 43.18 172.72)
+			(xy 48.26 172.72))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f8deff99-eb6d-49e7-be84-c7ef5954eed8"))
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 80.01 177.8 0)
+		(at 60.96 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "c07cf284-c487-4a05-ba5c-08deb71600d5")
+		(uuid "5b96fb40-55ff-4825-8877-d0eb343c555a")
 		(property "Reference" "R101"
-			(at 81.81 177.2 0)
+			(at 62.76 177.2 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(justify left)))
 		(property "Value" "120"
-			(at 81.81 179.4 0)
+			(at 62.76 179.4 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(justify left)))
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 80.01 177.8 0)
+			(at 60.96 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 80.01 177.8 0)
+			(at 60.96 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Resistor, small symbol"
-			(at 80.01 177.8 0)
+			(at 60.96 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "VERIFY" "DNP shunt ~120 ohm back-match of ~85 ohm source (datasheet Zo); part/LCSC not chosen; verify return loss esp. >100 MHz."
-			(at 80.01 177.8 0)
+			(at 60.96 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "c11ba8c9-a56b-4ece-abd6-fdcde63aea6e"))
+			(uuid "2889fa8b-e58e-4fbc-9706-fc4abdc0e56f"))
 		(pin "2"
-			(uuid "e0bfa1f1-a71b-45c4-a08c-e8368907480a"))
+			(uuid "598d62eb-73b5-4912-a8fa-217d874cf94a"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "R101")
 					(unit 1)))))
-	(label "CLK0_DC"
-		(at 80.01 175.26 90)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "78a1d28c-9d43-4f14-9144-5bdca1ecb0b6"))
 	(symbol
 		(lib_id "power:GND")
-		(at 80.01 180.34 0)
+		(at 60.96 180.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "3f1789fa-1ba6-4460-ac3b-b62469436062")
-		(property "Reference" "#PWR090"
-			(at 80.01 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "GND"
-			(at 80.01 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Footprint" ""
-			(at 80.01 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 80.01 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "a80f0106-266e-433c-9abe-3de48ae0c9bb"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "#PWR090")
-					(unit 1)))))
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 100.33 170.18 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "252873e1-f628-494a-88c6-a1364002af56")
-		(property "Reference" "R102"
-			(at 100.33 167.64 90)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Value" "0"
-			(at 100.33 172.72 90)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 100.33 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 100.33 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Resistor, small symbol"
-			(at 100.33 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "LCSC" "C17477"
-			(at 100.33 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "MPN" "0805W8F0000T5E"
-			(at 100.33 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 100.33 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "5ff38f55-5f0c-4113-a0df-936e540e0e52"))
-		(pin "2"
-			(uuid "22d142bf-75ca-4a5c-9f4a-88c6b63a0996"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "R102")
-					(unit 1)))))
-	(label "CLK0_DC"
-		(at 97.79 170.18 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "a681081b-44e7-4917-a165-56866bc26454"))
-	(label "CLK0_F1"
-		(at 102.87 170.18 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "6349edf5-be68-4c6b-905a-22f8229e6efb"))
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 121.92 177.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "7d2f97ad-b25a-4bec-adcb-a4510c9dff2f")
-		(property "Reference" "C101"
-			(at 123.72 177.2 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "DNP"
-			(at 123.72 179.4 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 121.92 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 121.92 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 121.92 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "VERIFY" "LPF values builder choice (DNP)"
-			(at 121.92 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "06bfc2d8-11c0-4d9a-88d4-820dea79fa8d"))
-		(pin "2"
-			(uuid "409fbc45-fe04-418a-a966-3fd6670fd328"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "C101")
-					(unit 1)))))
-	(label "CLK0_F1"
-		(at 121.92 175.26 90)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "2f5bf422-afd4-44fe-a349-3e6a17112f1d"))
-	(symbol
-		(lib_id "power:GND")
-		(at 121.92 180.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "8aad506e-0ce3-4998-9d14-7619309ad7f3")
-		(property "Reference" "#PWR091"
-			(at 121.92 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "GND"
-			(at 121.92 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Footprint" ""
-			(at 121.92 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 121.92 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "e1ffbe08-deab-481f-9d50-4f44d3b55c1f"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "#PWR091")
-					(unit 1)))))
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 153.67 177.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "b4ca60eb-1879-4bb0-b712-ad9e19266787")
-		(property "Reference" "C102"
-			(at 155.47 177.2 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "DNP"
-			(at 155.47 179.4 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 153.67 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 153.67 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 153.67 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "e64e00d4-a3de-4979-8c6f-bc8d20a6f89d"))
-		(pin "2"
-			(uuid "e3f331a8-b49b-4f6c-9852-4cfaa90af84e"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "C102")
-					(unit 1)))))
-	(label "CLK0_F2"
-		(at 153.67 175.26 90)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "b1ff06dc-3b01-4e42-9413-2a6f32b5d04a"))
-	(symbol
-		(lib_id "power:GND")
-		(at 153.67 180.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "e5630e18-70e0-40d2-a3e1-1ed0c7d8ccea")
-		(property "Reference" "#PWR092"
-			(at 153.67 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "GND"
-			(at 153.67 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Footprint" ""
-			(at 153.67 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 153.67 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "b2a40ce0-881e-423a-85b7-c0bcbd8eeb76"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "#PWR092")
-					(unit 1)))))
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 185.42 177.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "aacc9bfd-ac07-4106-a586-dbfd85cfb8fa")
-		(property "Reference" "C103"
-			(at 187.22 177.2 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "DNP"
-			(at 187.22 179.4 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 185.42 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 185.42 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 185.42 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "8e91369f-2fb6-426b-9361-26efa730b243"))
-		(pin "2"
-			(uuid "25f1e42b-a69a-4d07-8c7d-24c5834f3602"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "C103")
-					(unit 1)))))
-	(label "CLK0_F3"
-		(at 185.42 175.26 90)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "8fb411e2-fae8-4a07-b550-b69753448cbf"))
-	(symbol
-		(lib_id "power:GND")
-		(at 185.42 180.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "15f88ef6-4771-499c-a57c-fe3beb52bd0e")
-		(property "Reference" "#PWR093"
-			(at 185.42 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "GND"
-			(at 185.42 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Footprint" ""
-			(at 185.42 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 185.42 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "db7f007d-0d12-4e1b-836e-842b2724c498"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "#PWR093")
-					(unit 1)))))
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 218.44 177.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "d4ffa9e3-d0bb-4ae1-a5c2-9830ae0a181b")
-		(property "Reference" "C104"
-			(at 220.24 177.2 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "DNP"
-			(at 220.24 179.4 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 218.44 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 218.44 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 218.44 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "0d0d1e80-4e8c-4387-b677-60ed6998588e"))
-		(pin "2"
-			(uuid "e51d4872-62fa-447a-ac53-9b0f0ffe6eb6"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "C104")
-					(unit 1)))))
-	(label "CLK0_F4"
-		(at 218.44 175.26 90)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "86ca6af2-004a-489f-9e64-1ef5b4a86bad"))
-	(symbol
-		(lib_id "power:GND")
-		(at 218.44 180.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "915dddef-0a2c-44f0-9189-03d44974c96e")
+		(uuid "a1ee3993-96c1-4ff1-a431-5e43424a899b")
 		(property "Reference" "#PWR094"
-			(at 218.44 180.34 0)
+			(at 60.96 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Value" "GND"
-			(at 218.44 184.15 0)
+			(at 60.96 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" ""
-			(at 218.44 180.34 0)
+			(at 60.96 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 218.44 180.34 0)
+			(at 60.96 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "b439207a-d848-4ac6-8738-e6dca3b497a8"))
+			(uuid "c9d98a21-b252-48e2-894e-7dc688891022"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "#PWR094")
 					(unit 1)))))
 	(symbol
-		(lib_id "Device:L_Small")
-		(at 138.43 170.18 90)
+		(lib_id "Device:R_Small")
+		(at 101.6 172.72 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "71c384a5-ee61-4a88-b117-8c0fc0e85d90")
-		(property "Reference" "L1"
-			(at 138.43 167.64 90)
+		(uuid "aebf23b9-c19f-4a0e-8afc-85fc9459eecc")
+		(property "Reference" "R102"
+			(at 101.6 170.18 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
-		(property "Value" "DNP"
-			(at 138.43 172.72 90)
+		(property "Value" "0"
+			(at 101.6 175.26 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
-		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
-			(at 138.43 170.18 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 101.6 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 138.43 170.18 0)
+			(at 101.6 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Resistor, small symbol"
+			(at 101.6 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C17477"
+			(at 101.6 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "0805W8F0000T5E"
+			(at 101.6 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 101.6 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "4c44df8c-80fb-4b76-acbf-d9d3dafe0a9a"))
+		(pin "2"
+			(uuid "e2187ad2-5995-4c44-9d10-0b8750f67bd8"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "R102")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 53.34 172.72)
+			(xy 99.06 172.72))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "9a17950f-b3d3-4c99-9818-a3be5452d200"))
+	(wire
+		(pts
+			(xy 60.96 172.72)
+			(xy 60.96 175.26))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "eaac9f5e-e725-49f4-856c-0a23dedcd1bc"))
+	(symbol
+		(lib_id "Device:L_Small")
+		(at 121.92 172.72 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "c8a03150-9ce4-452e-93b6-324d7ad3f92e")
+		(property "Reference" "L1"
+			(at 121.92 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "DNP"
+			(at 121.92 175.26 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
+			(at 121.92 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 121.92 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Inductor, small symbol"
-			(at 138.43 170.18 0)
+			(at 121.92 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "VERIFY" "LPF inductor size (SMD vs T37 option, PLAN Q7)"
-			(at 138.43 170.18 0)
+			(at 121.92 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "31b2d9d2-0102-4c80-8c2d-92efe165fa86"))
+			(uuid "d4527067-6fe0-4500-938d-d4d55c1eb678"))
 		(pin "2"
-			(uuid "44c4510f-51f8-42b8-90e0-71dbf0815d66"))
+			(uuid "1b4dc918-5652-46f8-bb10-f4d7a99e4681"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "L1")
 					(unit 1)))))
-	(label "CLK0_F1"
-		(at 135.89 170.18 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "8a09fb1a-d3c0-4c16-9378-fd0e3edfa1c2"))
-	(label "CLK0_F2"
-		(at 140.97 170.18 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "f43e1c5f-de2e-4206-a915-ea4c6e06fdea"))
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 138.43 161.29 90)
+		(at 121.92 165.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "46c54d6b-4741-417d-afee-6a10afa259a8")
+		(uuid "c7ee6dac-212e-4faa-b1ff-6beb6d7f3cee")
 		(property "Reference" "C105"
-			(at 138.43 158.75 90)
+			(at 121.92 162.56 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Value" "DNP"
-			(at 138.43 163.83 90)
+			(at 121.92 167.64 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 138.43 161.29 0)
+			(at 121.92 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 138.43 161.29 0)
+			(at 121.92 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 138.43 161.29 0)
+			(at 121.92 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "VERIFY" "Parallel C across L (elliptic) per LowPassFilterModule - unconfirmed"
-			(at 138.43 161.29 0)
+			(at 121.92 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "133ab152-0bbf-4b91-aa98-f9686cbfd602"))
+			(uuid "170149cc-a5f3-4af6-8474-9583046e1d5c"))
 		(pin "2"
-			(uuid "f11efbb2-5cae-4ff0-83f3-724795104a8e"))
+			(uuid "a03c3d9c-c086-4917-a9ac-c8ff6b3c4bac"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "C105")
 					(unit 1)))))
-	(label "CLK0_F1"
-		(at 135.89 161.29 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "b7a15055-06d7-43fe-ba1f-c2952f1c1c38"))
-	(label "CLK0_F2"
-		(at 140.97 161.29 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "21dafed0-a054-4a19-a26d-911d2a31df99"))
+	(wire
+		(pts
+			(xy 119.38 172.72)
+			(xy 119.38 165.1))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "57a3f3a1-c449-4dc1-a958-064574b73c80"))
+	(wire
+		(pts
+			(xy 124.46 172.72)
+			(xy 124.46 165.1))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "81e7caac-5a0a-4c10-a319-1e305c57af5d"))
 	(symbol
 		(lib_id "Device:L_Small")
-		(at 170.18 170.18 90)
+		(at 144.78 172.72 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "bbc8d026-d4d8-4273-b589-1eacfa46e741")
+		(uuid "86a8bdb8-4bf9-47d8-894f-e42d241da8ba")
 		(property "Reference" "L2"
-			(at 170.18 167.64 90)
+			(at 144.78 170.18 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Value" "DNP"
-			(at 170.18 172.72 90)
+			(at 144.78 175.26 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
-			(at 170.18 170.18 0)
+			(at 144.78 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 170.18 170.18 0)
+			(at 144.78 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Inductor, small symbol"
-			(at 170.18 170.18 0)
+			(at 144.78 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "5b7b253b-373e-40d3-8e6a-c09ae1a9317b"))
+			(uuid "8f12b13e-a964-4388-8efc-177711ee4f5d"))
 		(pin "2"
-			(uuid "5cd6f03f-45c0-4c00-b387-85aec9e13e85"))
+			(uuid "c1e569e3-50d1-4682-a06e-e79ff01fffa2"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "L2")
 					(unit 1)))))
-	(label "CLK0_F2"
-		(at 167.64 170.18 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "2e631734-2c16-4829-9f60-a83778515de3"))
-	(label "CLK0_F3"
-		(at 172.72 170.18 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "36230a47-5491-486d-a046-d98a5d0c9392"))
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 170.18 161.29 90)
+		(at 144.78 165.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "308cf633-8774-4a8b-bbe5-291f6f544441")
+		(uuid "8eade47a-2953-4eae-a40a-032797880c3c")
 		(property "Reference" "C106"
-			(at 170.18 158.75 90)
+			(at 144.78 162.56 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Value" "DNP"
-			(at 170.18 163.83 90)
+			(at 144.78 167.64 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 170.18 161.29 0)
+			(at 144.78 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 170.18 161.29 0)
+			(at 144.78 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 170.18 161.29 0)
+			(at 144.78 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "043b95df-1d8e-467a-b0cd-6e19d0504609"))
+			(uuid "185c8a8a-0f4d-44fa-986a-bad75d7610e9"))
 		(pin "2"
-			(uuid "c30f0d33-6a27-417d-94db-63a93bfcbb45"))
+			(uuid "40d70938-e22a-43e2-8542-271b68a46b3f"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "C106")
 					(unit 1)))))
-	(label "CLK0_F2"
-		(at 167.64 161.29 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "27d431aa-40e2-4517-9eb2-bb492473d0f4"))
-	(label "CLK0_F3"
-		(at 172.72 161.29 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "71b29bb3-4572-478b-9f0f-05cb069d69df"))
+	(wire
+		(pts
+			(xy 142.24 172.72)
+			(xy 142.24 165.1))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "718ffbb9-f317-47e9-bbb4-82871563538f"))
+	(wire
+		(pts
+			(xy 147.32 172.72)
+			(xy 147.32 165.1))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "fd3c53e7-fa51-48e9-ad90-06b95b3fc292"))
 	(symbol
 		(lib_id "Device:L_Small")
-		(at 201.93 170.18 90)
+		(at 167.64 172.72 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "8657fd1e-5d03-4208-80b6-3fd70b8d13f5")
+		(uuid "b6f468d7-99ba-4273-9695-6c114b51a887")
 		(property "Reference" "L3"
-			(at 201.93 167.64 90)
+			(at 167.64 170.18 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Value" "DNP"
-			(at 201.93 172.72 90)
+			(at 167.64 175.26 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
-			(at 201.93 170.18 0)
+			(at 167.64 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 201.93 170.18 0)
+			(at 167.64 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Inductor, small symbol"
-			(at 201.93 170.18 0)
+			(at 167.64 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "cebc8977-a63f-4e8f-aa93-c69c94caf877"))
+			(uuid "ec623249-4c8c-4179-ae78-2fbb9ccd5c5e"))
 		(pin "2"
-			(uuid "347f28bb-f201-4fb3-9e37-0799fe33468c"))
+			(uuid "6cef8091-310c-4f91-ad58-cd3201110425"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "L3")
 					(unit 1)))))
-	(label "CLK0_F3"
-		(at 199.39 170.18 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "deb5ac04-459b-4a1d-b9cb-0bff00778f2c"))
-	(label "CLK0_F4"
-		(at 204.47 170.18 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "d910690b-59b8-4b4e-b555-4cd879e19ef2"))
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 201.93 161.29 90)
+		(at 167.64 165.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "2fb4b6a7-97d0-461b-9396-025bae07c734")
+		(uuid "057bcfac-e8a4-4e7e-8dff-1b155eb30537")
 		(property "Reference" "C107"
-			(at 201.93 158.75 90)
+			(at 167.64 162.56 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Value" "DNP"
-			(at 201.93 163.83 90)
+			(at 167.64 167.64 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 201.93 161.29 0)
+			(at 167.64 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 201.93 161.29 0)
+			(at 167.64 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 201.93 161.29 0)
+			(at 167.64 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "a407e7d8-3b4e-4d6f-9e32-90810f2106b2"))
+			(uuid "7872cdd9-756e-4712-9f3a-d0d617467480"))
 		(pin "2"
-			(uuid "27053ebd-c515-4f07-aee2-85f3e9976099"))
+			(uuid "48ba5ee7-ee4e-4e95-8dd4-0a5e940d32c5"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "C107")
 					(unit 1)))))
-	(label "CLK0_F3"
-		(at 199.39 161.29 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "6224dfd4-ba92-4920-b2b4-4f3b7c051f1a"))
-	(label "CLK0_F4"
-		(at 204.47 161.29 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "59bf1f93-a398-4066-b6da-14381fc716cc"))
+	(wire
+		(pts
+			(xy 165.1 172.72)
+			(xy 165.1 165.1))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "74b2f29d-56c4-4390-9acc-c5eb0086bf7b"))
+	(wire
+		(pts
+			(xy 170.18 172.72)
+			(xy 170.18 165.1))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "2941a17e-e6c3-4d2e-9e25-1db6b1b29aa5"))
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 240.03 170.18 90)
+		(lib_id "Device:C_Small")
+		(at 109.22 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "35bb314b-9f7c-419a-b0d9-de9c8ebb6477")
-		(property "Reference" "R103"
-			(at 240.03 167.64 90)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Value" "0"
-			(at 240.03 172.72 90)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 240.03 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 240.03 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Resistor, small symbol"
-			(at 240.03 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "LCSC" "C17477"
-			(at 240.03 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "MPN" "0805W8F0000T5E"
-			(at 240.03 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 240.03 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "b8743fc7-f4fe-4443-83b8-ee2e8e316879"))
-		(pin "2"
-			(uuid "3879b6df-3949-4d94-bb80-646edcfc3e0f"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "R103")
-					(unit 1)))))
-	(label "CLK0_F4"
-		(at 237.49 170.18 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "adf8ed66-12e6-4abd-a955-795d27517781"))
-	(label "CLK0_OUT"
-		(at 242.57 170.18 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "a777e072-7b40-4cc4-b20a-335459d333ce"))
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 170.18 191.77 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e72e7e37-e217-4157-a9fa-3c744b5d59f5")
-		(property "Reference" "R104"
-			(at 170.18 189.23 90)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Value" "0"
-			(at 170.18 194.31 90)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 170.18 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 170.18 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Resistor, small symbol"
-			(at 170.18 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "LCSC" "C17477"
-			(at 170.18 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "MPN" "0805W8F0000T5E"
-			(at 170.18 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 170.18 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "7ed9c4c5-8cb5-4753-b3a2-fe1dcf4147d9"))
-		(pin "2"
-			(uuid "bd902486-eea6-45ad-8650-a85be57a0ad3"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "R104")
-					(unit 1)))))
-	(label "CLK0_DC"
-		(at 167.64 191.77 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "80d12e27-f16b-4712-b90b-52a2e83ff0d4"))
-	(label "CLK0_OUT"
-		(at 172.72 191.77 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "4a79997c-8194-4079-81d1-8c8df56f4fd2"))
-	(symbol
-		(lib_id "Connector:Conn_Coaxial")
-		(at 271.78 170.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "645382c9-40fc-4b99-be28-8120aadfd93a")
-		(property "Reference" "J2"
-			(at 272.034 167.132 0)
+		(uuid "a5d50382-81d5-4774-8b71-1a29160e18b4")
+		(property "Reference" "C101"
+			(at 111.02 177.2 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "SMA CLK0"
-			(at 274.701 170.18 0)
+		(property "Value" "DNP"
+			(at 111.02 179.4 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
-			(at 271.78 170.18 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 109.22 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 271.78 170.18 0)
+			(at 109.22 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
-		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 271.78 170.18 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 109.22 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
-		(property "LCSC" "C496550"
-			(at 271.78 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "MPN" "BWSMA-KE-P001"
-			(at 271.78 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Manufacturer" "BAT Wireless"
-			(at 271.78 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "VERIFY" "Footprint is a placeholder; check BWSMA-KE-P001 launch geometry and 1.6 mm edge fit."
-			(at 271.78 170.18 0)
+		(property "VERIFY" "LPF values builder choice (DNP)"
+			(at 109.22 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "7fa764d9-5674-45f2-8926-77e4a273e3d2"))
+			(uuid "5db501bb-b45b-4dc1-bdd1-cd12715ded95"))
 		(pin "2"
-			(uuid "fe756ee3-a4d5-4096-9348-fbcd8a2d4628"))
+			(uuid "61dd2ada-b6c9-434d-9c54-d8c1c4d169ca"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "J2")
+					(reference "C101")
 					(unit 1)))))
-	(label "CLK0_OUT"
-		(at 266.7 170.18 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "2ee038f8-ef07-4a5b-9514-768783264661"))
 	(symbol
 		(lib_id "power:GND")
-		(at 271.78 175.26 0)
+		(at 109.22 180.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "efbe3fc1-d60b-40fe-95a6-81fa1065e02d")
+		(uuid "bcf31f63-6808-41a4-8799-64c0641cef19")
 		(property "Reference" "#PWR095"
-			(at 271.78 175.26 0)
+			(at 109.22 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Value" "GND"
-			(at 271.78 179.07 0)
+			(at 109.22 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" ""
-			(at 271.78 175.26 0)
+			(at 109.22 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 271.78 175.26 0)
+			(at 109.22 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "824ebbd1-890d-49d6-8615-4583f1255bb6"))
+			(uuid "a691bf43-3e23-4fee-bef5-6b5ae879084a"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "#PWR095")
 					(unit 1)))))
-	(text "CLK1 output chain (J3)"
-		(exclude_from_sim no)
-		(at 20 191 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left top))
-		(uuid "3a85bd03-2a7c-4841-8d08-784ba939fdc6"))
+	(wire
+		(pts
+			(xy 109.22 172.72)
+			(xy 109.22 175.26))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "e2fb6556-5dae-4f7d-b6f5-1a7f664b7030"))
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 39.37 214.63 90)
+		(lib_id "Device:C_Small")
+		(at 129.54 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
-		(uuid "d9658af9-b603-46f0-8411-ff7388045ae4")
-		(property "Reference" "R120"
-			(at 39.37 212.09 90)
+		(dnp yes)
+		(uuid "dd01c2ab-ee57-4cf1-bccd-c4f77af7af19")
+		(property "Reference" "C102"
+			(at 131.34 177.2 0)
 			(effects
 				(font
-					(size 1.27 1.27))))
-		(property "Value" "0"
-			(at 39.37 217.17 90)
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "DNP"
+			(at 131.34 179.4 0)
 			(effects
 				(font
-					(size 1.27 1.27))))
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 39.37 214.63 0)
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 129.54 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 39.37 214.63 0)
+			(at 129.54 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
-		(property "Description" "Resistor, small symbol"
-			(at 39.37 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "LCSC" ""
-			(at 39.37 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "VERIFY" "see R100"
-			(at 39.37 214.63 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 129.54 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "d40617b6-ea23-4865-ae7e-ed816343b3b9"))
+			(uuid "7daedaba-b69b-4eb5-ba68-e9161a86c17c"))
 		(pin "2"
-			(uuid "50c5c711-1b11-4581-976a-6287e54697f8"))
+			(uuid "72de46e3-9362-4ce5-96df-efb98eeac09c"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C102")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 129.54 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "e99b66e5-b6f8-4fca-9daa-d79aabbdf49b")
+		(property "Reference" "#PWR096"
+			(at 129.54 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 129.54 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 129.54 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 129.54 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "2e2f3a55-8ba6-42b6-9f5c-1fac52778cad"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR096")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 129.54 172.72)
+			(xy 129.54 175.26))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "29cd17e9-c225-4999-af0d-d4bf7eff0b8d"))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 152.4 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "68b0c507-d06c-44a7-8a35-cc342884a15d")
+		(property "Reference" "C103"
+			(at 154.2 177.2 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "DNP"
+			(at 154.2 179.4 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 152.4 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 152.4 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 152.4 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "563d1b6e-fe0f-40e4-b9fc-8525a4eae214"))
+		(pin "2"
+			(uuid "b2334e4f-4bef-48ad-bfa8-ba597f178461"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C103")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 152.4 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "40bc1911-4f3a-4697-9195-00f475a0be7d")
+		(property "Reference" "#PWR097"
+			(at 152.4 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 152.4 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 152.4 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 152.4 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "61fabd3e-1a8e-424d-ad54-f19ce3c0fd2b"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR097")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 152.4 172.72)
+			(xy 152.4 175.26))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "9c9e1e7c-adfd-4221-8f42-3e7d37cb7520"))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 175.26 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "bb05b4f9-b013-4f03-948d-62cbdffbfde6")
+		(property "Reference" "C104"
+			(at 177.06 177.2 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "DNP"
+			(at 177.06 179.4 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 175.26 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 175.26 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 175.26 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "cc376b8a-adcb-480e-bd23-a68b2dd0eedc"))
+		(pin "2"
+			(uuid "8ac3bef7-4a37-4cb4-a648-b2b64ba0a295"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C104")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 175.26 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "21f28410-602c-445b-9a48-bf7044363edd")
+		(property "Reference" "#PWR098"
+			(at 175.26 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 175.26 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 175.26 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 175.26 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "18d5c63b-31db-4de1-a67a-06b307673653"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR098")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 175.26 172.72)
+			(xy 175.26 175.26))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "2297c154-e31f-440c-aa3d-20b744a788a7"))
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 185.42 172.72 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "23368c70-f992-4429-8a66-f6cbadead7b3")
+		(property "Reference" "R103"
+			(at 185.42 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "0"
+			(at 185.42 175.26 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 185.42 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 185.42 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Resistor, small symbol"
+			(at 185.42 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C17477"
+			(at 185.42 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "0805W8F0000T5E"
+			(at 185.42 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 185.42 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "cf8e3108-db98-4d15-bfb3-6a244d81033e"))
+		(pin "2"
+			(uuid "b1e14073-f9eb-4d83-ac05-db28edc2839e"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "R103")
+					(unit 1)))))
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 203.2 172.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "da4b951e-862a-4c76-a57b-dc9976c867a4")
+		(property "Reference" "J2"
+			(at 203.454 169.672 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "SMA CLK0"
+			(at 206.121 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
+			(at 203.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 203.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 203.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C496550"
+			(at 203.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "BWSMA-KE-P001"
+			(at 203.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "BAT Wireless"
+			(at 203.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "VERIFY" "Footprint is a placeholder; check BWSMA-KE-P001 launch geometry and 1.6 mm edge fit."
+			(at 203.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "a69f3419-3b81-4ff6-9eee-ab6ffdf61309"))
+		(pin "2"
+			(uuid "852c3eb6-a5ec-4afa-8060-1fc9a99491b6"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "J2")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 203.2 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "cf1a75f5-6e7d-4cf9-85df-7d3041115549")
+		(property "Reference" "#PWR099"
+			(at 203.2 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 203.2 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 203.2 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 203.2 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "415fdb56-ee8b-4c35-86ec-338029d80fbc"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR099")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 104.14 172.72)
+			(xy 119.38 172.72))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "92d20877-d2fb-438a-ad4c-42a887d1ce91"))
+	(wire
+		(pts
+			(xy 124.46 172.72)
+			(xy 142.24 172.72))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "19abbbb0-f4e0-4290-9317-0560612809dd"))
+	(wire
+		(pts
+			(xy 147.32 172.72)
+			(xy 165.1 172.72))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "499e516d-f61b-4cfb-ae0d-c783bd0d4706"))
+	(wire
+		(pts
+			(xy 170.18 172.72)
+			(xy 182.88 172.72))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "604a6e7f-f3d7-48f5-b2cd-0c3433236b5f"))
+	(wire
+		(pts
+			(xy 187.96 172.72)
+			(xy 198.12 172.72))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "6b4eefeb-b2d9-4ce3-b89d-bad0d6c3b48c"))
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 88.9 193.04 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2d52f8a7-d55c-4b74-9ae8-e68eab5aca22")
+		(property "Reference" "R104"
+			(at 88.9 190.5 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "0"
+			(at 88.9 195.58 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 88.9 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 88.9 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Resistor, small symbol"
+			(at 88.9 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C17477"
+			(at 88.9 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "0805W8F0000T5E"
+			(at 88.9 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 88.9 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "8401e27f-03e3-409c-a9b3-09ebbc2bf1c0"))
+		(pin "2"
+			(uuid "d40c7c61-177f-4f3f-b88c-e750b27a9825"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "R104")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 76.2 172.72)
+			(xy 76.2 193.04))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "ce1c7a82-18de-4553-8e78-0ea85b8028d1"))
+	(wire
+		(pts
+			(xy 76.2 193.04)
+			(xy 86.36 193.04))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "9fa6de49-2f55-4ee7-93a5-ed5d58be10f2"))
+	(wire
+		(pts
+			(xy 91.44 193.04)
+			(xy 193.04 193.04))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "ce70dc80-0159-4de9-ac0b-bfc5222f0490"))
+	(wire
+		(pts
+			(xy 193.04 193.04)
+			(xy 193.04 172.72))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "4905f33b-0cc7-423e-9de9-5b064c82aa1a"))
+	(text "CLK1 output chain (J3)"
+		(exclude_from_sim no)
+		(at 20 194.44 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left top))
+		(uuid "4fdcc8e5-5d89-4b01-8828-8603c02c204f"))
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 40.64 218.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e0483ac6-012b-49b0-9bee-aa0ddf3a7f21")
+		(property "Reference" "R120"
+			(at 40.64 215.9 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "0"
+			(at 40.64 220.98 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 40.64 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 40.64 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Resistor, small symbol"
+			(at 40.64 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" ""
+			(at 40.64 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "VERIFY" "see R100"
+			(at 40.64 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "144e79d3-1b2b-4de6-b65a-9bc815c26254"))
+		(pin "2"
+			(uuid "3fa28dd5-d53a-42ed-9343-ba5b4afa59df"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "R120")
 					(unit 1)))))
 	(label "CLK1"
-		(at 36.83 214.63 180)
+		(at 38.1 218.44 180)
 		(effects
 			(font
 				(size 1.27 1.27))
 			(justify right bottom))
-		(uuid "51a21c09-84b4-4568-b8f9-cc10ccc8efcb"))
-	(label "CLK1_S"
-		(at 41.91 214.63 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "61eb2d0b-bdef-46c2-a02c-025368e1adb2"))
+		(uuid "c511d5bf-484a-4d76-a2bc-ca65eda97875"))
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 62.23 214.63 90)
+		(at 50.8 218.44 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "bd7fd17d-b46c-467c-b11e-a384e0b61eca")
+		(uuid "0738e072-de62-4074-b025-8009d0921958")
 		(property "Reference" "C120"
-			(at 62.23 212.09 90)
+			(at 50.8 215.9 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Value" "100n"
-			(at 62.23 217.17 90)
+			(at 50.8 220.98 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 62.23 214.63 0)
+			(at 50.8 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 62.23 214.63 0)
+			(at 50.8 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 62.23 214.63 0)
+			(at 50.8 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "LCSC" "C49678"
-			(at 62.23 214.63 0)
+			(at 50.8 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "MPN" "CC0805KRX7R9BB104"
-			(at 62.23 214.63 0)
+			(at 50.8 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Manufacturer" "YAGEO"
-			(at 62.23 214.63 0)
+			(at 50.8 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "75b1dfd9-6e59-4be0-8c70-0464f8d834d4"))
+			(uuid "0067f0c3-9b2c-46d4-b5db-256e61f6332e"))
 		(pin "2"
-			(uuid "55d5934a-1209-4b3c-b240-35cae045f6ea"))
+			(uuid "08812948-4f48-4641-a56d-1b48718acef1"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "C120")
 					(unit 1)))))
-	(label "CLK1_S"
-		(at 59.69 214.63 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "84e5ba8f-6eee-49e7-94c0-e0297d87fb14"))
-	(label "CLK1_DC"
-		(at 64.77 214.63 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "3c0ba0f6-cb31-474b-bffe-015ca5f3d462"))
+	(wire
+		(pts
+			(xy 43.18 218.44)
+			(xy 48.26 218.44))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "5c1f9ba1-6c61-4820-b35e-970ff590b6a5"))
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 80.01 223.52 0)
+		(at 60.96 223.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "306eb539-b123-43e5-b23c-1c977a72f091")
+		(uuid "055668d3-f506-4199-b7b9-8f0b43efdd99")
 		(property "Reference" "R121"
-			(at 81.81 222.92 0)
+			(at 62.76 222.92 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(justify left)))
 		(property "Value" "120"
-			(at 81.81 225.12 0)
+			(at 62.76 225.12 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(justify left)))
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 80.01 223.52 0)
+			(at 60.96 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 80.01 223.52 0)
+			(at 60.96 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Resistor, small symbol"
-			(at 80.01 223.52 0)
+			(at 60.96 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "VERIFY" "see R100"
-			(at 80.01 223.52 0)
+			(at 60.96 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "09906146-077b-41ab-8a45-0c25738bf40f"))
+			(uuid "c00ba7e5-8ae1-493a-8ba5-8c5b2cecab12"))
 		(pin "2"
-			(uuid "4bda5c55-4804-406b-9e55-9fc357068a64"))
+			(uuid "842efe1f-b271-460e-8172-0fe83fdc0f49"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "R121")
 					(unit 1)))))
-	(label "CLK1_DC"
-		(at 80.01 220.98 90)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "5e5675b9-c94f-4151-8c32-9536cdac8dcd"))
 	(symbol
 		(lib_id "power:GND")
-		(at 80.01 226.06 0)
+		(at 60.96 226.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "46127ce8-55bc-4eab-883e-3dc1d23158d1")
-		(property "Reference" "#PWR096"
-			(at 80.01 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "GND"
-			(at 80.01 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Footprint" ""
-			(at 80.01 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 80.01 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "26d00016-351c-419f-83aa-cd3726194556"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "#PWR096")
-					(unit 1)))))
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 100.33 214.63 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "1f7b67a8-d4b3-4cbc-8295-ff10fca475a2")
-		(property "Reference" "R122"
-			(at 100.33 212.09 90)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Value" "0"
-			(at 100.33 217.17 90)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 100.33 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 100.33 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Resistor, small symbol"
-			(at 100.33 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "LCSC" "C17477"
-			(at 100.33 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "MPN" "0805W8F0000T5E"
-			(at 100.33 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 100.33 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "3a7d9a0b-3216-4420-9b6c-7899e442723f"))
-		(pin "2"
-			(uuid "c65a4f3e-8a89-43ed-b6f6-a3ec60225244"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "R122")
-					(unit 1)))))
-	(label "CLK1_DC"
-		(at 97.79 214.63 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "fecbf098-4643-4ae1-9d63-cc9f55a8b516"))
-	(label "CLK1_F1"
-		(at 102.87 214.63 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "7f4fb4fb-dd6f-45db-8646-99605f5aecba"))
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 121.92 223.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "8bcffd2b-19a5-4e67-b322-a952dfe66e84")
-		(property "Reference" "C121"
-			(at 123.72 222.92 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "DNP"
-			(at 123.72 225.12 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 121.92 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 121.92 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 121.92 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "3bb7bda3-6500-416b-83eb-384ea906e0ef"))
-		(pin "2"
-			(uuid "68eb6ede-debc-4dd1-a8a1-ed42aa6568d2"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "C121")
-					(unit 1)))))
-	(label "CLK1_F1"
-		(at 121.92 220.98 90)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "0c0bbeca-09e3-4778-b0e9-993bc08ad5ce"))
-	(symbol
-		(lib_id "power:GND")
-		(at 121.92 226.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "27f9359f-5645-49a4-93d6-c50c0d943943")
-		(property "Reference" "#PWR097"
-			(at 121.92 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "GND"
-			(at 121.92 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Footprint" ""
-			(at 121.92 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 121.92 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "37cc3cbc-a269-4fbb-8c0d-c3e66b237465"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "#PWR097")
-					(unit 1)))))
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 153.67 223.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "100377df-8739-4a8b-9476-dfc539af701a")
-		(property "Reference" "C122"
-			(at 155.47 222.92 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "DNP"
-			(at 155.47 225.12 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 153.67 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 153.67 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 153.67 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "11eb6c14-7edd-4ebb-b6a5-48be3e0eae2d"))
-		(pin "2"
-			(uuid "c15329ce-344a-44e3-ba4f-3975f34f7295"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "C122")
-					(unit 1)))))
-	(label "CLK1_F2"
-		(at 153.67 220.98 90)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "ce0ffe32-d176-4239-a6d7-047effab2152"))
-	(symbol
-		(lib_id "power:GND")
-		(at 153.67 226.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "00d5f075-ccd5-4db9-9acd-ca6aae8e975c")
-		(property "Reference" "#PWR098"
-			(at 153.67 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "GND"
-			(at 153.67 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Footprint" ""
-			(at 153.67 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 153.67 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "d9a6b813-04e8-4a96-92d6-24350ddbd838"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "#PWR098")
-					(unit 1)))))
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 185.42 223.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "b4d237d0-9f16-4d3d-81bd-4d9f0c4541e6")
-		(property "Reference" "C123"
-			(at 187.22 222.92 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "DNP"
-			(at 187.22 225.12 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 185.42 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 185.42 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 185.42 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "fd1256a2-e208-493e-9d74-6837849e13f8"))
-		(pin "2"
-			(uuid "dab5296e-6c48-4b55-9ed4-373d1746e9c0"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "C123")
-					(unit 1)))))
-	(label "CLK1_F3"
-		(at 185.42 220.98 90)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "acb175d5-9324-437d-917d-0dfb04e4a71b"))
-	(symbol
-		(lib_id "power:GND")
-		(at 185.42 226.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "9cdf5440-05c7-4870-b745-30293f43b55e")
-		(property "Reference" "#PWR099"
-			(at 185.42 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "GND"
-			(at 185.42 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Footprint" ""
-			(at 185.42 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 185.42 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "802adde5-ec9b-462f-9776-7c042de1f14e"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "#PWR099")
-					(unit 1)))))
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 218.44 223.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "e8e2fcbd-34d8-4157-ac50-81b87b001961")
-		(property "Reference" "C124"
-			(at 220.24 222.92 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "DNP"
-			(at 220.24 225.12 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 218.44 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 218.44 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 218.44 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "52dd3123-7188-4735-bcc1-d6dc8a9cf9bf"))
-		(pin "2"
-			(uuid "a4b9a9bd-9204-40b2-b2cb-564eef5f00d4"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "C124")
-					(unit 1)))))
-	(label "CLK1_F4"
-		(at 218.44 220.98 90)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "85ad2dd9-fe99-4330-b0e7-8ffe34e0be79"))
-	(symbol
-		(lib_id "power:GND")
-		(at 218.44 226.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "bfa24123-7221-4f35-b714-96459c3be4ba")
+		(uuid "c89f410a-7f59-43e6-8d5f-8c4596ecb78a")
 		(property "Reference" "#PWR100"
-			(at 218.44 226.06 0)
+			(at 60.96 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Value" "GND"
-			(at 218.44 229.87 0)
+			(at 60.96 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" ""
-			(at 218.44 226.06 0)
+			(at 60.96 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 218.44 226.06 0)
+			(at 60.96 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "01e1267c-9107-413c-84c9-ad2be63cdede"))
+			(uuid "d6df4cae-32b0-47da-a3e2-ebbd9f8fe288"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "#PWR100")
 					(unit 1)))))
 	(symbol
-		(lib_id "Device:L_Small")
-		(at 138.43 214.63 90)
+		(lib_id "Device:R_Small")
+		(at 101.6 218.44 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "ab45f7dd-4717-468d-91a1-19b4da2b87a2")
-		(property "Reference" "L4"
-			(at 138.43 212.09 90)
+		(uuid "563afb89-cec3-4275-8599-b4234ee9850e")
+		(property "Reference" "R122"
+			(at 101.6 215.9 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
-		(property "Value" "DNP"
-			(at 138.43 217.17 90)
+		(property "Value" "0"
+			(at 101.6 220.98 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
-		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
-			(at 138.43 214.63 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 101.6 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 138.43 214.63 0)
+			(at 101.6 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
-		(property "Description" "Inductor, small symbol"
-			(at 138.43 214.63 0)
+		(property "Description" "Resistor, small symbol"
+			(at 101.6 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C17477"
+			(at 101.6 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "0805W8F0000T5E"
+			(at 101.6 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 101.6 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "473d0c88-83a9-4b16-a1fa-314abe926806"))
+			(uuid "7f983a6b-92be-4e38-938a-f5f6c2302280"))
 		(pin "2"
-			(uuid "d56f2687-7e61-4815-a450-71fe85f903d5"))
+			(uuid "5a1dbea0-c10b-48dd-b58b-724e1bc0f201"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "R122")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 53.34 218.44)
+			(xy 99.06 218.44))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "9fd49377-1f25-4605-a5a1-a74dfe787785"))
+	(wire
+		(pts
+			(xy 60.96 218.44)
+			(xy 60.96 220.98))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "a9d3a86b-5e99-4684-ada4-0981117ff205"))
+	(symbol
+		(lib_id "Device:L_Small")
+		(at 121.92 218.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "7ef49f90-36db-44e7-a2be-5555a02fe1ee")
+		(property "Reference" "L4"
+			(at 121.92 215.9 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "DNP"
+			(at 121.92 220.98 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
+			(at 121.92 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 121.92 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Inductor, small symbol"
+			(at 121.92 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "32265502-0a77-4819-a17f-d13169d13a34"))
+		(pin "2"
+			(uuid "d3dbdef1-852a-42bc-ae4b-bb33ea78ef20"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "L4")
 					(unit 1)))))
-	(label "CLK1_F1"
-		(at 135.89 214.63 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "140e7750-edce-4e9c-b09c-06f0dd6d9dfc"))
-	(label "CLK1_F2"
-		(at 140.97 214.63 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "ef5f4ea1-c099-45d0-80a6-0f9806979a20"))
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 138.43 205.74 90)
+		(at 121.92 210.82 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "39b0d0c6-3f46-448b-99c1-18b9cac2c698")
+		(uuid "bc2383d8-f435-4adf-beec-34261cdfa6a9")
 		(property "Reference" "C125"
-			(at 138.43 203.2 90)
+			(at 121.92 208.28 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Value" "DNP"
-			(at 138.43 208.28 90)
+			(at 121.92 213.36 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 138.43 205.74 0)
+			(at 121.92 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 138.43 205.74 0)
+			(at 121.92 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 138.43 205.74 0)
+			(at 121.92 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "9b0a080f-9eaf-4c0a-aec4-b53bf61ea58d"))
+			(uuid "999dd2ec-a137-4d67-8128-cecbdb71d573"))
 		(pin "2"
-			(uuid "006294a3-6779-4e12-8987-2a14e0676e2e"))
+			(uuid "029e3b1c-7ad6-4e61-b728-59b97f6b02bf"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "C125")
 					(unit 1)))))
-	(label "CLK1_F1"
-		(at 135.89 205.74 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "27a7354d-bb8d-464a-bf82-3d43054db71d"))
-	(label "CLK1_F2"
-		(at 140.97 205.74 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "fb377e9b-f0b3-45b9-8ee1-62308dc13c8f"))
+	(wire
+		(pts
+			(xy 119.38 218.44)
+			(xy 119.38 210.82))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "a1797612-a354-4e05-a3be-83d05b1275a0"))
+	(wire
+		(pts
+			(xy 124.46 218.44)
+			(xy 124.46 210.82))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "a6abeabd-0e6b-4160-9320-16e5cb8a3640"))
 	(symbol
 		(lib_id "Device:L_Small")
-		(at 170.18 214.63 90)
+		(at 144.78 218.44 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "dd8e1c9a-1235-46fc-97ee-e32134c18a52")
+		(uuid "184da2e0-d472-4d64-bceb-e96278afaed8")
 		(property "Reference" "L5"
-			(at 170.18 212.09 90)
+			(at 144.78 215.9 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Value" "DNP"
-			(at 170.18 217.17 90)
+			(at 144.78 220.98 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
-			(at 170.18 214.63 0)
+			(at 144.78 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 170.18 214.63 0)
+			(at 144.78 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Inductor, small symbol"
-			(at 170.18 214.63 0)
+			(at 144.78 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "33cfaabe-38cd-41d5-b9cb-6c0fea189b0c"))
+			(uuid "c98a4252-eea7-4e38-b9e6-9f71d136a061"))
 		(pin "2"
-			(uuid "011edd28-4da9-4778-84b8-fb75e3fa7c18"))
+			(uuid "c437a6c2-3a1e-4b82-b59a-0864e5b72766"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "L5")
 					(unit 1)))))
-	(label "CLK1_F2"
-		(at 167.64 214.63 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "d6b0df0c-81fc-44f8-b17f-8c67847c0904"))
-	(label "CLK1_F3"
-		(at 172.72 214.63 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "8ac4be7b-5d45-4cc9-b982-671998ede0c7"))
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 170.18 205.74 90)
+		(at 144.78 210.82 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "85f898d9-a895-4d60-9198-806a6d597266")
+		(uuid "e3403ece-4f92-4982-88d1-90b6aa50c833")
 		(property "Reference" "C126"
-			(at 170.18 203.2 90)
+			(at 144.78 208.28 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Value" "DNP"
-			(at 170.18 208.28 90)
+			(at 144.78 213.36 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 170.18 205.74 0)
+			(at 144.78 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 170.18 205.74 0)
+			(at 144.78 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 170.18 205.74 0)
+			(at 144.78 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "a60e08ef-e90d-4ae9-a2c4-746c81f518b5"))
+			(uuid "bce83800-9d2e-4e4d-aee9-c41cebe29520"))
 		(pin "2"
-			(uuid "cbe8ce30-7653-4fd5-ad8c-191445090a82"))
+			(uuid "8d3ec1d5-bf94-48c1-add0-92ce7f0a9811"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "C126")
 					(unit 1)))))
-	(label "CLK1_F2"
-		(at 167.64 205.74 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "09cb9000-02b0-4894-bc53-eea781d94d87"))
-	(label "CLK1_F3"
-		(at 172.72 205.74 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "304e4d58-e25e-4de5-9d65-195d79c83771"))
+	(wire
+		(pts
+			(xy 142.24 218.44)
+			(xy 142.24 210.82))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "cd696797-c2a5-4caa-b308-6f9820e8d04c"))
+	(wire
+		(pts
+			(xy 147.32 218.44)
+			(xy 147.32 210.82))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "388bdc2a-f8f3-49ea-86ff-ee9b9548b8e5"))
 	(symbol
 		(lib_id "Device:L_Small")
-		(at 201.93 214.63 90)
+		(at 167.64 218.44 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "ea0d2291-c072-4753-89d7-5ea18f22d998")
+		(uuid "3de09ef9-d99b-4d79-b315-a3695995bafd")
 		(property "Reference" "L6"
-			(at 201.93 212.09 90)
+			(at 167.64 215.9 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Value" "DNP"
-			(at 201.93 217.17 90)
+			(at 167.64 220.98 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
-			(at 201.93 214.63 0)
+			(at 167.64 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 201.93 214.63 0)
+			(at 167.64 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Inductor, small symbol"
-			(at 201.93 214.63 0)
+			(at 167.64 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "d479eb08-1a8e-4f3f-a44e-3ce2f274afb1"))
+			(uuid "e8103a56-d015-425f-a97f-d4a7a542f39b"))
 		(pin "2"
-			(uuid "8de552d0-0dc3-4dd6-8c5b-794cc59bc6ab"))
+			(uuid "43420ce1-adad-43e5-8b8b-680827ae8285"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "L6")
 					(unit 1)))))
-	(label "CLK1_F3"
-		(at 199.39 214.63 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "1f884b1b-2146-4195-8fa8-7de6f9a09962"))
-	(label "CLK1_F4"
-		(at 204.47 214.63 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "24feef9f-301e-456e-a979-ed7e4fe36624"))
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 201.93 205.74 90)
+		(at 167.64 210.82 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "cdfedbdf-918a-4575-a1d4-7dac52d6d01e")
+		(uuid "06ad6113-d1ad-48f4-ba26-ba35ca6db73d")
 		(property "Reference" "C127"
-			(at 201.93 203.2 90)
+			(at 167.64 208.28 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Value" "DNP"
-			(at 201.93 208.28 90)
+			(at 167.64 213.36 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 201.93 205.74 0)
+			(at 167.64 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 201.93 205.74 0)
+			(at 167.64 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 201.93 205.74 0)
+			(at 167.64 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "718b3115-cf2e-46f5-971f-0ee7a38f8057"))
+			(uuid "f4619e81-35a0-4ac3-aaa2-33899b2034b6"))
 		(pin "2"
-			(uuid "c501a437-d061-452e-8271-9cb6c74f7085"))
+			(uuid "386f1794-cba2-46b3-9952-c0c0086ef119"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "C127")
 					(unit 1)))))
-	(label "CLK1_F3"
-		(at 199.39 205.74 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "d55e1eda-5940-4ab0-a061-8377a9e21422"))
-	(label "CLK1_F4"
-		(at 204.47 205.74 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "11376042-d923-4177-ad38-58797f4c5d5d"))
+	(wire
+		(pts
+			(xy 165.1 218.44)
+			(xy 165.1 210.82))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "9c1da8a7-5524-4ad3-be9a-6a9037ecfd32"))
+	(wire
+		(pts
+			(xy 170.18 218.44)
+			(xy 170.18 210.82))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7f842d13-60ed-4c1e-9702-224f8bb4110a"))
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 240.03 214.63 90)
+		(lib_id "Device:C_Small")
+		(at 109.22 223.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "d175df2f-5f22-42f5-a259-ceb70c380cdf")
-		(property "Reference" "R123"
-			(at 240.03 212.09 90)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Value" "0"
-			(at 240.03 217.17 90)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 240.03 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 240.03 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Resistor, small symbol"
-			(at 240.03 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "LCSC" "C17477"
-			(at 240.03 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "MPN" "0805W8F0000T5E"
-			(at 240.03 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 240.03 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "42ba2542-e717-433a-b5df-61326eb6c7ab"))
-		(pin "2"
-			(uuid "c7b55a1d-96a9-48f6-a095-dc043522f9ea"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "R123")
-					(unit 1)))))
-	(label "CLK1_F4"
-		(at 237.49 214.63 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "86b7f3c2-49ce-4186-aef5-e2fecf47dce3"))
-	(label "CLK1_OUT"
-		(at 242.57 214.63 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "87c72be6-66aa-4fa3-9a03-2ff4a6a6f1b8"))
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 170.18 237.49 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e9069720-1820-4cc7-9fd4-818d9010ea91")
-		(property "Reference" "R124"
-			(at 170.18 234.95 90)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Value" "0"
-			(at 170.18 240.03 90)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 170.18 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 170.18 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Resistor, small symbol"
-			(at 170.18 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "LCSC" "C17477"
-			(at 170.18 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "MPN" "0805W8F0000T5E"
-			(at 170.18 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 170.18 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "c7054ffa-023d-45fc-becb-75d37ebcc485"))
-		(pin "2"
-			(uuid "bbb30575-9e6b-4b7b-bf16-a7355b4a8d48"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "R124")
-					(unit 1)))))
-	(label "CLK1_DC"
-		(at 167.64 237.49 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "6c7c7e62-05a2-4210-b033-64d907c26636"))
-	(label "CLK1_OUT"
-		(at 172.72 237.49 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "27150a1a-528a-463f-bdff-e072dbfdfeac"))
-	(symbol
-		(lib_id "Connector:Conn_Coaxial")
-		(at 271.78 214.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f9ec1540-8ff0-4510-bf5b-d09b6077d6e4")
-		(property "Reference" "J3"
-			(at 272.034 211.582 0)
+		(uuid "6401a4aa-a6d8-4f66-871f-9dfdf98bf962")
+		(property "Reference" "C121"
+			(at 111.02 222.92 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "SMA CLK1"
-			(at 274.701 214.63 0)
+		(property "Value" "DNP"
+			(at 111.02 225.12 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
-			(at 271.78 214.63 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 109.22 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 271.78 214.63 0)
+			(at 109.22 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
-		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 271.78 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "LCSC" "C496550"
-			(at 271.78 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "MPN" "BWSMA-KE-P001"
-			(at 271.78 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Manufacturer" "BAT Wireless"
-			(at 271.78 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "VERIFY" "see J2"
-			(at 271.78 214.63 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 109.22 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "6527525f-f3fd-4574-8b1d-bc160212bfe1"))
+			(uuid "2117cc91-6d25-4769-aa96-a7ec6e1398c1"))
 		(pin "2"
-			(uuid "e8015646-5960-4f95-98a7-5371bdcd3110"))
+			(uuid "b3d98799-9696-4388-90ae-893fb3ab4b49"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "J3")
+					(reference "C121")
 					(unit 1)))))
-	(label "CLK1_OUT"
-		(at 266.7 214.63 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "2a661a80-1f5d-49a1-ba70-b46fc8bfeaa7"))
 	(symbol
 		(lib_id "power:GND")
-		(at 271.78 219.71 0)
+		(at 109.22 226.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "e7dfee64-c578-4094-a1cb-8d16bd037cd9")
+		(uuid "aa9524e7-ad2c-4089-80e8-3e279a1c31db")
 		(property "Reference" "#PWR101"
-			(at 271.78 219.71 0)
+			(at 109.22 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Value" "GND"
-			(at 271.78 223.52 0)
+			(at 109.22 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" ""
-			(at 271.78 219.71 0)
+			(at 109.22 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 271.78 219.71 0)
+			(at 109.22 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "387fb495-c7bf-413a-85ee-e924e2727cd3"))
+			(uuid "fc4072ca-729e-459e-bc06-5958acecd8cf"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "#PWR101")
 					(unit 1)))))
-	(text "CLK2 output chain (J4)"
-		(exclude_from_sim no)
-		(at 20 236 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left top))
-		(uuid "0a3267e1-798a-4748-a024-34cedc6ed950"))
+	(wire
+		(pts
+			(xy 109.22 218.44)
+			(xy 109.22 220.98))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "600ff297-be50-4d65-9423-6b18c6add61f"))
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 39.37 260.35 90)
+		(lib_id "Device:C_Small")
+		(at 129.54 223.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
-		(uuid "bdfa48c9-ccd1-4175-bd94-fd108c9cd93d")
-		(property "Reference" "R140"
-			(at 39.37 257.81 90)
+		(dnp yes)
+		(uuid "b23c8355-6118-4d5e-969a-3f864a8c1e6c")
+		(property "Reference" "C122"
+			(at 131.34 222.92 0)
 			(effects
 				(font
-					(size 1.27 1.27))))
-		(property "Value" "0"
-			(at 39.37 262.89 90)
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "DNP"
+			(at 131.34 225.12 0)
 			(effects
 				(font
-					(size 1.27 1.27))))
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 39.37 260.35 0)
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 129.54 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 39.37 260.35 0)
+			(at 129.54 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
-		(property "Description" "Resistor, small symbol"
-			(at 39.37 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "LCSC" ""
-			(at 39.37 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "VERIFY" "see R100"
-			(at 39.37 260.35 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 129.54 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "5531a79b-306f-46bf-919d-707686ebf9a9"))
+			(uuid "d09282d2-aa42-43d6-8004-53cff9cbd408"))
 		(pin "2"
-			(uuid "df6e8fdb-8d2d-4fb4-bfa2-eb40ba54563e"))
+			(uuid "febcece6-9ca2-4acb-8ae4-418ab2de9114"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C122")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 129.54 226.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "cba8fd4f-d340-46f1-aaa8-c43252272f6b")
+		(property "Reference" "#PWR102"
+			(at 129.54 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 129.54 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 129.54 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 129.54 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "d691e847-724c-4b74-bf1f-031666005f5c"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR102")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 129.54 218.44)
+			(xy 129.54 220.98))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "89388f12-5892-484a-b661-0ccb95999304"))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 152.4 223.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "48c683c6-d66a-4af5-8197-8002b0bfaae5")
+		(property "Reference" "C123"
+			(at 154.2 222.92 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "DNP"
+			(at 154.2 225.12 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 152.4 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 152.4 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 152.4 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "e29dba33-7dd7-4c8a-a5b3-0555cc0efff3"))
+		(pin "2"
+			(uuid "214a75ce-3e2f-4f81-b22b-3b9b02c18062"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C123")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 152.4 226.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "bee265e1-521f-41dd-8b2b-88a5c0b7e6e2")
+		(property "Reference" "#PWR103"
+			(at 152.4 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 152.4 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 152.4 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 152.4 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "61b0a3d6-c554-4978-a943-ee06e8fe2e24"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR103")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 152.4 218.44)
+			(xy 152.4 220.98))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "c66b6e38-1e11-4ae1-bae3-c2a3e6e22c66"))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 175.26 223.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "0a08efc7-a457-417f-9eac-be10dbbe88e6")
+		(property "Reference" "C124"
+			(at 177.06 222.92 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "DNP"
+			(at 177.06 225.12 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 175.26 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 175.26 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 175.26 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "f39950b5-ee5b-41c9-9208-27625d40a845"))
+		(pin "2"
+			(uuid "111f4037-b740-47c0-a7ae-2915624f004d"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C124")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 175.26 226.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "f6f26c0a-fdb6-4da3-a5fd-09aeca84452f")
+		(property "Reference" "#PWR104"
+			(at 175.26 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 175.26 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 175.26 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 175.26 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "14c580c0-22c0-4794-8397-93e65f8a3dec"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR104")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 175.26 218.44)
+			(xy 175.26 220.98))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "667c1474-350b-412d-a7d4-3ca0d8b2747c"))
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 185.42 218.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "a242d742-0b48-448c-a904-feffa79dbbfb")
+		(property "Reference" "R123"
+			(at 185.42 215.9 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "0"
+			(at 185.42 220.98 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 185.42 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 185.42 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Resistor, small symbol"
+			(at 185.42 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C17477"
+			(at 185.42 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "0805W8F0000T5E"
+			(at 185.42 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 185.42 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "a4a11152-b999-4053-9896-00d939c9e0ac"))
+		(pin "2"
+			(uuid "062b6dd2-96cc-463a-b69a-d164b6bf7ee1"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "R123")
+					(unit 1)))))
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 203.2 218.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "341a0636-9b0e-43e2-bf6a-1c8b89a59423")
+		(property "Reference" "J3"
+			(at 203.454 215.392 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "SMA CLK1"
+			(at 206.121 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
+			(at 203.2 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 203.2 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 203.2 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C496550"
+			(at 203.2 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "BWSMA-KE-P001"
+			(at 203.2 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "BAT Wireless"
+			(at 203.2 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "VERIFY" "see J2"
+			(at 203.2 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "1cbac782-b190-4661-92a2-0f531723b2b4"))
+		(pin "2"
+			(uuid "91e50e42-4f1f-4cf9-b433-0b89c176d929"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "J3")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 203.2 223.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "5f14ae4f-7a82-4b11-a812-7bca1e16d102")
+		(property "Reference" "#PWR105"
+			(at 203.2 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 203.2 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 203.2 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 203.2 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "f84b8b05-0ecc-45c9-8fbb-e5375d34d119"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR105")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 104.14 218.44)
+			(xy 119.38 218.44))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "99e1b0f3-ae69-49e2-909d-88f293f462dd"))
+	(wire
+		(pts
+			(xy 124.46 218.44)
+			(xy 142.24 218.44))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7262a4db-a1ad-40e0-81f0-a310c2426fc1"))
+	(wire
+		(pts
+			(xy 147.32 218.44)
+			(xy 165.1 218.44))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "6d278b93-8c19-4e1f-a4a2-03c9ab8e03f4"))
+	(wire
+		(pts
+			(xy 170.18 218.44)
+			(xy 182.88 218.44))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7ca3b394-88e4-4c75-a9a1-313f852fcb2f"))
+	(wire
+		(pts
+			(xy 187.96 218.44)
+			(xy 198.12 218.44))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "70e39649-fda3-437c-b4fd-35731c75c3bb"))
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 88.9 238.76 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "981124cd-d79f-4146-9b90-cbeb4c8475ad")
+		(property "Reference" "R124"
+			(at 88.9 236.22 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "0"
+			(at 88.9 241.3 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 88.9 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 88.9 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Resistor, small symbol"
+			(at 88.9 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C17477"
+			(at 88.9 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "0805W8F0000T5E"
+			(at 88.9 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 88.9 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "827d7afc-9bc0-4d6c-9328-2207257b6ea4"))
+		(pin "2"
+			(uuid "11d4f795-63e2-4981-b7ea-865a7d38a1b9"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "R124")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 76.2 218.44)
+			(xy 76.2 238.76))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "008b3959-398f-4335-880c-2e31041e722c"))
+	(wire
+		(pts
+			(xy 76.2 238.76)
+			(xy 86.36 238.76))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "0ef6c5d7-392a-4a35-98d8-306357abf246"))
+	(wire
+		(pts
+			(xy 91.44 238.76)
+			(xy 193.04 238.76))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "3cc5b6a5-36de-4743-84c1-843f010215cb"))
+	(wire
+		(pts
+			(xy 193.04 238.76)
+			(xy 193.04 218.44))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "75ca69b0-9f89-4a9a-b12e-34dce051f2f3"))
+	(text "CLK2 output chain (J4)"
+		(exclude_from_sim no)
+		(at 20 240.16 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left top))
+		(uuid "bbb72c96-94b3-475a-9ade-6f4c59520f53"))
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 40.64 264.16 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "121b13f1-16f2-4d37-801e-01cffd706602")
+		(property "Reference" "R140"
+			(at 40.64 261.62 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "0"
+			(at 40.64 266.7 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 40.64 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 40.64 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Resistor, small symbol"
+			(at 40.64 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" ""
+			(at 40.64 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "VERIFY" "see R100"
+			(at 40.64 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "cce5bf65-1705-4ed8-aa38-c214960689c5"))
+		(pin "2"
+			(uuid "500be349-0511-40b6-8a5b-a7753d4cbe84"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "R140")
 					(unit 1)))))
 	(label "CLK2"
-		(at 36.83 260.35 180)
+		(at 38.1 264.16 180)
 		(effects
 			(font
 				(size 1.27 1.27))
 			(justify right bottom))
-		(uuid "50466aad-665c-4f58-89bf-2e3564d59c11"))
-	(label "CLK2_S"
-		(at 41.91 260.35 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "a1fb0938-a146-4b19-9b88-78b1ba39333e"))
+		(uuid "843bb2fb-64c9-4273-957a-fdd4b60c725c"))
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 62.23 260.35 90)
+		(at 50.8 264.16 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5f6f1ebd-45c0-4b75-ba3d-3a3e0215795f")
+		(uuid "c929a1e0-37f3-4680-b95c-033efbb674b1")
 		(property "Reference" "C140"
-			(at 62.23 257.81 90)
+			(at 50.8 261.62 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Value" "100n"
-			(at 62.23 262.89 90)
+			(at 50.8 266.7 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 62.23 260.35 0)
+			(at 50.8 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 62.23 260.35 0)
+			(at 50.8 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 62.23 260.35 0)
+			(at 50.8 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "LCSC" "C49678"
-			(at 62.23 260.35 0)
+			(at 50.8 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "MPN" "CC0805KRX7R9BB104"
-			(at 62.23 260.35 0)
+			(at 50.8 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Manufacturer" "YAGEO"
-			(at 62.23 260.35 0)
+			(at 50.8 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "daed8fb2-8f80-46bf-ae38-f1be0da0bcf2"))
+			(uuid "e7ab2f39-d32b-46c1-a7f1-077e814faa2c"))
 		(pin "2"
-			(uuid "e5ce06d8-2b49-40f7-880c-c9c989ef52a4"))
+			(uuid "c085afb2-3a4f-4c60-b246-7b03b3f7a3bc"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "C140")
 					(unit 1)))))
-	(label "CLK2_S"
-		(at 59.69 260.35 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "d5f426d3-9fec-47b7-8c63-4313e7287d5a"))
-	(label "CLK2_DC"
-		(at 64.77 260.35 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "3aec03db-6bd2-4a96-818a-62fdba36b7ab"))
+	(wire
+		(pts
+			(xy 43.18 264.16)
+			(xy 48.26 264.16))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "c898938b-7eb5-442c-b8c5-86a97680b07a"))
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 80.01 267.97 0)
+		(at 60.96 269.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "d8448426-575b-46d4-9c67-bf5378b7f076")
+		(uuid "daadac92-3995-4430-83b0-62f3d73da0d3")
 		(property "Reference" "R141"
-			(at 81.81 267.37 0)
+			(at 62.76 268.64 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(justify left)))
 		(property "Value" "120"
-			(at 81.81 269.57 0)
+			(at 62.76 270.84 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(justify left)))
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 80.01 267.97 0)
+			(at 60.96 269.24 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 80.01 267.97 0)
+			(at 60.96 269.24 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Resistor, small symbol"
-			(at 80.01 267.97 0)
+			(at 60.96 269.24 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "VERIFY" "see R100"
-			(at 80.01 267.97 0)
+			(at 60.96 269.24 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "6882063d-8805-41fc-bec9-0d0238bf4ff5"))
+			(uuid "30a590a6-f9a2-476f-aba1-1a6d1e550c16"))
 		(pin "2"
-			(uuid "f899ae46-05be-4c08-ad5e-0215f24c8869"))
+			(uuid "7b854a49-e042-48eb-86ce-06c95d961b76"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "R141")
 					(unit 1)))))
-	(label "CLK2_DC"
-		(at 80.01 265.43 90)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "845ed317-0b43-48de-9c5f-fed177fadaec"))
 	(symbol
 		(lib_id "power:GND")
-		(at 80.01 270.51 0)
+		(at 60.96 271.78 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "09662a19-a92d-4d8c-ab59-01d2526faca3")
-		(property "Reference" "#PWR102"
-			(at 80.01 270.51 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "GND"
-			(at 80.01 274.32 0)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Footprint" ""
-			(at 80.01 270.51 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 80.01 270.51 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "683e75ab-58cd-494b-a031-94691fcb76b4"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "#PWR102")
-					(unit 1)))))
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 100.33 260.35 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "2f1a2bae-d204-4d03-9ef4-2666c19e0c73")
-		(property "Reference" "R142"
-			(at 100.33 257.81 90)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Value" "0"
-			(at 100.33 262.89 90)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 100.33 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 100.33 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Resistor, small symbol"
-			(at 100.33 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "LCSC" "C17477"
-			(at 100.33 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "MPN" "0805W8F0000T5E"
-			(at 100.33 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 100.33 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "91d09854-eaf8-475d-a1c7-6e8be2c25af7"))
-		(pin "2"
-			(uuid "dd14810e-342b-4504-b763-f0bab10f7fb7"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "R142")
-					(unit 1)))))
-	(label "CLK2_DC"
-		(at 97.79 260.35 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "3a51553c-8629-4a58-8386-a3e8cba7580d"))
-	(label "CLK2_F1"
-		(at 102.87 260.35 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "b745bc72-f48c-4d06-8e6b-26e078405da7"))
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 121.92 267.97 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "d010e4bd-d428-4ede-a27e-48a77dc19850")
-		(property "Reference" "C141"
-			(at 123.72 267.37 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "DNP"
-			(at 123.72 269.57 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 121.92 267.97 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 121.92 267.97 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 121.92 267.97 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "d2b8a7ba-cce1-4818-ac31-a5b11f1d30fe"))
-		(pin "2"
-			(uuid "5f954890-19cc-4faa-a021-57af78eb3a8f"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "C141")
-					(unit 1)))))
-	(label "CLK2_F1"
-		(at 121.92 265.43 90)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "d55707a1-8f0d-4fcd-a136-20a5e122115c"))
-	(symbol
-		(lib_id "power:GND")
-		(at 121.92 270.51 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "4a14a437-f332-4edc-b3c8-e1c2c2fb9720")
-		(property "Reference" "#PWR103"
-			(at 121.92 270.51 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "GND"
-			(at 121.92 274.32 0)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Footprint" ""
-			(at 121.92 270.51 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 121.92 270.51 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "f57be0af-01f0-4b98-809b-084933f4200b"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "#PWR103")
-					(unit 1)))))
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 153.67 267.97 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "eb8c92d1-6702-4a82-8c49-4a8998a04b52")
-		(property "Reference" "C142"
-			(at 155.47 267.37 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "DNP"
-			(at 155.47 269.57 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 153.67 267.97 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 153.67 267.97 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 153.67 267.97 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "51c05807-2f66-4d66-adee-2f1ba5cddd1b"))
-		(pin "2"
-			(uuid "0406c3c3-95cf-4c9d-8e3a-5fd5e5351d35"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "C142")
-					(unit 1)))))
-	(label "CLK2_F2"
-		(at 153.67 265.43 90)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "b9b229a7-5c87-4cd0-9ce9-ad6fe1a6817f"))
-	(symbol
-		(lib_id "power:GND")
-		(at 153.67 270.51 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "aaedb79d-ad45-4e3b-acc5-284fe8703f72")
-		(property "Reference" "#PWR104"
-			(at 153.67 270.51 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "GND"
-			(at 153.67 274.32 0)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Footprint" ""
-			(at 153.67 270.51 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 153.67 270.51 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "61569ae7-4b31-4fa2-8375-02327778d24c"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "#PWR104")
-					(unit 1)))))
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 185.42 267.97 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "cf816714-c01c-467a-ab24-c85b17107f81")
-		(property "Reference" "C143"
-			(at 187.22 267.37 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "DNP"
-			(at 187.22 269.57 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 185.42 267.97 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 185.42 267.97 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 185.42 267.97 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "015d3b53-133d-4ec4-b87b-fd960809a5c4"))
-		(pin "2"
-			(uuid "2f5e6f67-0368-4c02-8874-9c81a6e8c860"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "C143")
-					(unit 1)))))
-	(label "CLK2_F3"
-		(at 185.42 265.43 90)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "80db1266-8834-42e2-b18f-ce76d3448763"))
-	(symbol
-		(lib_id "power:GND")
-		(at 185.42 270.51 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "05aa404e-7788-43fe-8d62-7f47d823ecf0")
-		(property "Reference" "#PWR105"
-			(at 185.42 270.51 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "GND"
-			(at 185.42 274.32 0)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Footprint" ""
-			(at 185.42 270.51 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 185.42 270.51 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "83fe5d76-72c8-4789-b9dc-f44496ac7144"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "#PWR105")
-					(unit 1)))))
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 218.44 267.97 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "3c465757-5228-4f1c-8385-09e4504e6c36")
-		(property "Reference" "C144"
-			(at 220.24 267.37 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "DNP"
-			(at 220.24 269.57 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 218.44 267.97 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 218.44 267.97 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 218.44 267.97 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "11bc4aa0-b8f7-4785-aecd-9c0d38dc6f9e"))
-		(pin "2"
-			(uuid "d944aed7-d4d3-4633-8491-7e66d687bc35"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "C144")
-					(unit 1)))))
-	(label "CLK2_F4"
-		(at 218.44 265.43 90)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "5347cd39-73a9-47b7-9a83-a6470e7bdc84"))
-	(symbol
-		(lib_id "power:GND")
-		(at 218.44 270.51 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "16349ad0-a00a-4ba1-b6a4-753f7c6320c7")
+		(uuid "ff302582-7c94-44bb-8212-00d7caa56735")
 		(property "Reference" "#PWR106"
-			(at 218.44 270.51 0)
+			(at 60.96 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Value" "GND"
-			(at 218.44 274.32 0)
+			(at 60.96 275.59 0)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" ""
-			(at 218.44 270.51 0)
+			(at 60.96 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 218.44 270.51 0)
+			(at 60.96 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "f02c221f-f492-4a42-9a3e-082c3521ca2d"))
+			(uuid "26375cd6-fb3d-4454-9538-81e7aed5d4f1"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "#PWR106")
 					(unit 1)))))
 	(symbol
-		(lib_id "Device:L_Small")
-		(at 138.43 260.35 90)
+		(lib_id "Device:R_Small")
+		(at 101.6 264.16 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "d6e008e0-736e-4474-857b-8413e33e4dc6")
-		(property "Reference" "L7"
-			(at 138.43 257.81 90)
+		(uuid "0f6f0c60-c2e2-453d-8ae9-7bf2e90f8c5a")
+		(property "Reference" "R142"
+			(at 101.6 261.62 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
-		(property "Value" "DNP"
-			(at 138.43 262.89 90)
+		(property "Value" "0"
+			(at 101.6 266.7 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
-		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
-			(at 138.43 260.35 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 101.6 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 138.43 260.35 0)
+			(at 101.6 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
-		(property "Description" "Inductor, small symbol"
-			(at 138.43 260.35 0)
+		(property "Description" "Resistor, small symbol"
+			(at 101.6 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C17477"
+			(at 101.6 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "0805W8F0000T5E"
+			(at 101.6 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 101.6 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "2e2d7130-c4b5-4cf6-98bc-9f7139da9daa"))
+			(uuid "c32a42c7-e8c5-4fdc-bef7-d1044afbad56"))
 		(pin "2"
-			(uuid "341b6b0a-6519-442d-b315-aee348f73216"))
+			(uuid "d2d59528-b642-45d8-933d-c37a43c839e4"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "R142")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 53.34 264.16)
+			(xy 99.06 264.16))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "4333558b-7016-4b61-9a33-88feda3fc8b7"))
+	(wire
+		(pts
+			(xy 60.96 264.16)
+			(xy 60.96 266.7))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "1bc8c853-6844-488f-8b2b-62d0ac0d1393"))
+	(symbol
+		(lib_id "Device:L_Small")
+		(at 121.92 264.16 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "49fcabc9-c62f-4397-b82f-adba328cc19c")
+		(property "Reference" "L7"
+			(at 121.92 261.62 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "DNP"
+			(at 121.92 266.7 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
+			(at 121.92 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 121.92 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Inductor, small symbol"
+			(at 121.92 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "7d2b0700-e25a-4265-9679-2e357dc66312"))
+		(pin "2"
+			(uuid "619b3f10-76ed-4335-8d45-28b4e991d2bb"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "L7")
 					(unit 1)))))
-	(label "CLK2_F1"
-		(at 135.89 260.35 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "a99a8857-3e46-4e0d-b8fe-4603578ce0ca"))
-	(label "CLK2_F2"
-		(at 140.97 260.35 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "b08bf6ff-5cc2-4d32-acf6-e1928790f0a0"))
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 138.43 251.46 90)
+		(at 121.92 256.54 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "495ad969-59ba-4679-8798-832192c288c8")
+		(uuid "c89809e1-4e85-4136-938c-e7ce8e08a0ed")
 		(property "Reference" "C145"
-			(at 138.43 248.92 90)
+			(at 121.92 254 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Value" "DNP"
-			(at 138.43 254 90)
+			(at 121.92 259.08 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 138.43 251.46 0)
+			(at 121.92 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 138.43 251.46 0)
+			(at 121.92 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 138.43 251.46 0)
+			(at 121.92 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "cc25eac9-8715-4e0e-a650-ee832f978e04"))
+			(uuid "096a9eb1-7122-4e45-a97c-7ca1a2c832d1"))
 		(pin "2"
-			(uuid "cf29b85f-2307-4dc3-b8d0-9362f2ed9735"))
+			(uuid "35b7d212-a9cb-4934-b2a6-b9ac276a1264"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "C145")
 					(unit 1)))))
-	(label "CLK2_F1"
-		(at 135.89 251.46 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "560087b3-68bf-4d14-ba91-11f0e8459c9e"))
-	(label "CLK2_F2"
-		(at 140.97 251.46 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "5515879e-779b-47ef-a0f8-c72ebf580a6f"))
+	(wire
+		(pts
+			(xy 119.38 264.16)
+			(xy 119.38 256.54))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "a81815da-a44c-463a-924b-45d8f376a66e"))
+	(wire
+		(pts
+			(xy 124.46 264.16)
+			(xy 124.46 256.54))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "3b480134-a52b-4564-8367-f7b231df0f6b"))
 	(symbol
 		(lib_id "Device:L_Small")
-		(at 170.18 260.35 90)
+		(at 144.78 264.16 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "d4d92281-1ddd-4298-b1c6-8ba09c43fae1")
+		(uuid "60f89491-247a-4a46-b886-152d2879dba1")
 		(property "Reference" "L8"
-			(at 170.18 257.81 90)
+			(at 144.78 261.62 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Value" "DNP"
-			(at 170.18 262.89 90)
+			(at 144.78 266.7 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
-			(at 170.18 260.35 0)
+			(at 144.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 170.18 260.35 0)
+			(at 144.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Inductor, small symbol"
-			(at 170.18 260.35 0)
+			(at 144.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "1fcd826f-d111-444b-b9e2-9563e99c8ac0"))
+			(uuid "b4ed9aec-a6fb-4c4f-a5f4-7805866d0dfb"))
 		(pin "2"
-			(uuid "7c1fe429-9eb3-42e9-9d34-2dc760a83182"))
+			(uuid "d3534e98-dc5f-4633-b397-adcebd0d08e6"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "L8")
 					(unit 1)))))
-	(label "CLK2_F2"
-		(at 167.64 260.35 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "b5aad7cf-3e50-4070-a7d7-a0f4334767f2"))
-	(label "CLK2_F3"
-		(at 172.72 260.35 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "85a859bc-27c2-4a1b-a2fa-4f03254caf1b"))
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 170.18 251.46 90)
+		(at 144.78 256.54 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "72501118-ace1-4f21-83b4-cf157a48b930")
+		(uuid "a86600ec-5522-4324-a63a-1536082a05df")
 		(property "Reference" "C146"
-			(at 170.18 248.92 90)
+			(at 144.78 254 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Value" "DNP"
-			(at 170.18 254 90)
+			(at 144.78 259.08 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 170.18 251.46 0)
+			(at 144.78 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 170.18 251.46 0)
+			(at 144.78 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 170.18 251.46 0)
+			(at 144.78 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "1b936e96-71fb-48b6-9d7d-0ab489d64462"))
+			(uuid "16a57ebf-5a22-4ed0-9427-1870ea36bc58"))
 		(pin "2"
-			(uuid "d3c528b1-cb7e-4ce2-8a7b-09700c097dac"))
+			(uuid "2939066d-1712-41f3-b075-014897e430a6"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "C146")
 					(unit 1)))))
-	(label "CLK2_F2"
-		(at 167.64 251.46 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "b6e263b0-23ed-428f-add9-6010cf03bd7b"))
-	(label "CLK2_F3"
-		(at 172.72 251.46 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "65c1a51d-081e-4c9a-9cd0-ff0a1bc74af2"))
+	(wire
+		(pts
+			(xy 142.24 264.16)
+			(xy 142.24 256.54))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "dca4796c-064d-4e3f-a1ce-bd463e7d7534"))
+	(wire
+		(pts
+			(xy 147.32 264.16)
+			(xy 147.32 256.54))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "9ada3eac-d1b6-477f-8666-615410cb7e60"))
 	(symbol
 		(lib_id "Device:L_Small")
-		(at 201.93 260.35 90)
+		(at 167.64 264.16 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "c8df4911-2f95-4999-9d66-5a0e79b676f5")
+		(uuid "e6137502-8dac-46c0-a717-937ab361d2c2")
 		(property "Reference" "L9"
-			(at 201.93 257.81 90)
+			(at 167.64 261.62 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Value" "DNP"
-			(at 201.93 262.89 90)
+			(at 167.64 266.7 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
-			(at 201.93 260.35 0)
+			(at 167.64 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 201.93 260.35 0)
+			(at 167.64 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Inductor, small symbol"
-			(at 201.93 260.35 0)
+			(at 167.64 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "50a557cc-3994-4d6d-9adc-b656709df613"))
+			(uuid "1afd8056-a3c2-4f43-8b5f-1d77d1686737"))
 		(pin "2"
-			(uuid "af945ddb-e21c-411c-94f6-6d0f8dce1472"))
+			(uuid "00c58808-38bd-4482-ba94-5037a79479b7"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "L9")
 					(unit 1)))))
-	(label "CLK2_F3"
-		(at 199.39 260.35 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "a4ef4c69-c559-4bc3-98dd-0d939fda07d4"))
-	(label "CLK2_F4"
-		(at 204.47 260.35 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "bff1eb27-69f2-49a3-9b6f-f9fbfd3392af"))
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 201.93 251.46 90)
+		(at 167.64 256.54 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "f24d3053-31e9-4950-ae1e-0982206b31f3")
+		(uuid "e1cd6893-a59c-4b75-a4e9-280b3f7e13d4")
 		(property "Reference" "C147"
-			(at 201.93 248.92 90)
+			(at 167.64 254 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Value" "DNP"
-			(at 201.93 254 90)
+			(at 167.64 259.08 90)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 201.93 251.46 0)
+			(at 167.64 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 201.93 251.46 0)
+			(at 167.64 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 201.93 251.46 0)
+			(at 167.64 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "21f1c1a3-7bcf-4c28-9d6a-d0ae211be858"))
+			(uuid "2658a8d0-cb4a-4d21-a84f-307f5ca196d2"))
 		(pin "2"
-			(uuid "22689681-a4e5-4719-9136-dbb7124b1f29"))
+			(uuid "3cdec9dc-6797-4fd3-80be-7d5083ad8d09"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "C147")
 					(unit 1)))))
-	(label "CLK2_F3"
-		(at 199.39 251.46 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "a2d9dadc-b631-4c46-aa3f-f99b86e8a07c"))
-	(label "CLK2_F4"
-		(at 204.47 251.46 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "7628bab6-7f65-41c8-863b-170f895298e0"))
+	(wire
+		(pts
+			(xy 165.1 264.16)
+			(xy 165.1 256.54))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "cbffb6c5-4645-4094-bd01-a5c28d5182a6"))
+	(wire
+		(pts
+			(xy 170.18 264.16)
+			(xy 170.18 256.54))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "41a97440-dccb-4985-9625-7983851fbf2e"))
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 240.03 260.35 90)
+		(lib_id "Device:C_Small")
+		(at 109.22 269.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "24c191ba-9a3c-4efc-bd82-5de98a0fc041")
-		(property "Reference" "R143"
-			(at 240.03 257.81 90)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Value" "0"
-			(at 240.03 262.89 90)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 240.03 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 240.03 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Resistor, small symbol"
-			(at 240.03 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "LCSC" "C17477"
-			(at 240.03 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "MPN" "0805W8F0000T5E"
-			(at 240.03 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 240.03 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "2ef2e7f6-6169-40ed-b7cb-c5d3fff44c22"))
-		(pin "2"
-			(uuid "69d590ae-7534-4582-9a68-84076e6f02b4"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "R143")
-					(unit 1)))))
-	(label "CLK2_F4"
-		(at 237.49 260.35 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "8c12685c-6566-4268-95fa-4be14c4757ee"))
-	(label "CLK2_OUT"
-		(at 242.57 260.35 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "a7f06738-1c1f-42e8-8694-d372ca4c6896"))
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 170.18 281.94 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "33aea83d-04eb-48e0-abba-d71b64c44df8")
-		(property "Reference" "R144"
-			(at 170.18 279.4 90)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Value" "0"
-			(at 170.18 284.48 90)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 170.18 281.94 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Datasheet" ""
-			(at 170.18 281.94 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Resistor, small symbol"
-			(at 170.18 281.94 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "LCSC" "C17477"
-			(at 170.18 281.94 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "MPN" "0805W8F0000T5E"
-			(at 170.18 281.94 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 170.18 281.94 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(pin "1"
-			(uuid "20b201ca-485e-463e-912f-267abab17e3d"))
-		(pin "2"
-			(uuid "afcb1a42-55f8-4755-be83-1597caac49df"))
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "R144")
-					(unit 1)))))
-	(label "CLK2_DC"
-		(at 167.64 281.94 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "f6cbc229-26c8-46b4-9b4f-96e472a80d7a"))
-	(label "CLK2_OUT"
-		(at 172.72 281.94 0)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify left bottom))
-		(uuid "86d23d5d-9980-4382-8f2d-5a95a9a57bae"))
-	(symbol
-		(lib_id "Connector:Conn_Coaxial")
-		(at 271.78 260.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "46f5ef19-ae09-498e-8854-9921e10c8a52")
-		(property "Reference" "J4"
-			(at 272.034 257.302 0)
+		(uuid "1cc93b97-b2dd-468d-b08f-57b0dbc36419")
+		(property "Reference" "C141"
+			(at 111.02 268.64 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "SMA CLK2"
-			(at 274.701 260.35 0)
+		(property "Value" "DNP"
+			(at 111.02 270.84 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
-			(at 271.78 260.35 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 109.22 269.24 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 271.78 260.35 0)
+			(at 109.22 269.24 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
-		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 271.78 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "LCSC" "C496550"
-			(at 271.78 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "MPN" "BWSMA-KE-P001"
-			(at 271.78 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Manufacturer" "BAT Wireless"
-			(at 271.78 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "VERIFY" "see J2"
-			(at 271.78 260.35 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 109.22 269.24 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "9e8fafad-f111-49fc-9cdc-a138eb26db84"))
+			(uuid "f97b0b33-f567-4a28-9d16-98f4bb89595b"))
 		(pin "2"
-			(uuid "6ca70e91-b31f-4ec5-aeb7-33670c7e4d81"))
+			(uuid "4dd71cde-1a12-4134-b50a-33d8ee8e027d"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "J4")
+					(reference "C141")
 					(unit 1)))))
-	(label "CLK2_OUT"
-		(at 266.7 260.35 180)
-		(effects
-			(font
-				(size 1.27 1.27))
-			(justify right bottom))
-		(uuid "08ce575a-120b-48f5-8a71-79d290dbfcff"))
 	(symbol
 		(lib_id "power:GND")
-		(at 271.78 265.43 0)
+		(at 109.22 271.78 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "9e6f4616-c81f-4a2b-9b27-5e8fca4bbed0")
+		(uuid "e816305f-5202-450e-8bc7-61ab26d8fffe")
 		(property "Reference" "#PWR107"
-			(at 271.78 265.43 0)
+			(at 109.22 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Value" "GND"
-			(at 271.78 269.24 0)
+			(at 109.22 275.59 0)
 			(effects
 				(font
 					(size 1.27 1.27))))
 		(property "Footprint" ""
-			(at 271.78 265.43 0)
+			(at 109.22 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(property "Datasheet" ""
-			(at 271.78 265.43 0)
+			(at 109.22 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27))
 				(hide yes)))
 		(pin "1"
-			(uuid "e1e9a4ae-bdf5-4f79-b78a-c754af481430"))
+			(uuid "7cd606f1-88d1-4c0c-890c-7bd26e22d3b4"))
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "#PWR107")
 					(unit 1)))))
+	(wire
+		(pts
+			(xy 109.22 264.16)
+			(xy 109.22 266.7))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "3273210a-3615-4402-93e0-d2ef76c9ff36"))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 129.54 269.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "0b99f483-e7fb-4bd8-96f5-900117ebf84e")
+		(property "Reference" "C142"
+			(at 131.34 268.64 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "DNP"
+			(at 131.34 270.84 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 129.54 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 129.54 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 129.54 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "65e0331e-cbb1-48d6-90f5-48b6f04f7407"))
+		(pin "2"
+			(uuid "02320b96-8315-45a8-97dc-b091204b8703"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C142")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 129.54 271.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "795126e0-97e5-47bd-8d3b-3f47330f2f5f")
+		(property "Reference" "#PWR108"
+			(at 129.54 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 129.54 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 129.54 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 129.54 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "3187c81a-1fc8-4873-8cb6-5f788074d5c5"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR108")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 129.54 264.16)
+			(xy 129.54 266.7))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7f11dfe3-1c60-472e-8b18-39fdc314fdf3"))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 152.4 269.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "1fbdcc61-6174-4ca4-9f10-c469dc4f9b6d")
+		(property "Reference" "C143"
+			(at 154.2 268.64 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "DNP"
+			(at 154.2 270.84 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 152.4 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 152.4 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 152.4 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "57600fe4-bbfc-459c-8cec-d92f39058064"))
+		(pin "2"
+			(uuid "e6936f5d-4108-47b5-87b9-1c79203f3142"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C143")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 152.4 271.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "07423305-cc99-4115-8043-dfa766db6ede")
+		(property "Reference" "#PWR109"
+			(at 152.4 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 152.4 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 152.4 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 152.4 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "31b0d559-1908-46c4-9df1-fd560def17df"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR109")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 152.4 264.16)
+			(xy 152.4 266.7))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "a69357d3-4501-46fa-86f0-096787add97b"))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 175.26 269.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "e6913093-add9-4439-aa89-2934cf6af3bb")
+		(property "Reference" "C144"
+			(at 177.06 268.64 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "DNP"
+			(at 177.06 270.84 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 175.26 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 175.26 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 175.26 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "f4dad0e0-0a76-42bd-9327-4d3ca2e3058f"))
+		(pin "2"
+			(uuid "234c1ddb-f4b8-4a22-b9e2-16b09d872e27"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C144")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 175.26 271.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "8952e818-a11e-4c11-b4bd-1fe55513c38e")
+		(property "Reference" "#PWR110"
+			(at 175.26 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 175.26 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 175.26 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 175.26 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "630befcb-22be-4ab5-b91f-2a4cad63f3e8"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR110")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 175.26 264.16)
+			(xy 175.26 266.7))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "5df4d37a-dfd5-4ed8-bbb7-4a4a1c830857"))
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 185.42 264.16 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "7691bdfd-b6a7-4550-9e2d-ab10bfe0d47a")
+		(property "Reference" "R143"
+			(at 185.42 261.62 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "0"
+			(at 185.42 266.7 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 185.42 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 185.42 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Resistor, small symbol"
+			(at 185.42 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C17477"
+			(at 185.42 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "0805W8F0000T5E"
+			(at 185.42 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 185.42 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "ce7cf6d4-72e4-4881-a894-6b7cc75b97d2"))
+		(pin "2"
+			(uuid "20665eae-ca07-4716-af34-22ce3cc7ea80"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "R143")
+					(unit 1)))))
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 203.2 264.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "820e8836-c62c-4743-ad1a-15ecc8e5c6e5")
+		(property "Reference" "J4"
+			(at 203.454 261.112 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "SMA CLK2"
+			(at 206.121 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
+			(at 203.2 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 203.2 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 203.2 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C496550"
+			(at 203.2 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "BWSMA-KE-P001"
+			(at 203.2 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "BAT Wireless"
+			(at 203.2 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "VERIFY" "see J2"
+			(at 203.2 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "615a0d89-e7fa-4d16-b796-b3e279d002d3"))
+		(pin "2"
+			(uuid "1b4c0060-ca9a-48e4-8ade-90e54d739ca5"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "J4")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 203.2 269.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "1f77981c-2d8a-4a20-9a47-cd2380182539")
+		(property "Reference" "#PWR111"
+			(at 203.2 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 203.2 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 203.2 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 203.2 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "8223e136-356a-4aec-9323-18a503c61558"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR111")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 104.14 264.16)
+			(xy 119.38 264.16))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "869fd5eb-e314-48c8-b17b-6b9c6387d108"))
+	(wire
+		(pts
+			(xy 124.46 264.16)
+			(xy 142.24 264.16))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "ead823a6-d66a-48ee-b874-04b756bd5713"))
+	(wire
+		(pts
+			(xy 147.32 264.16)
+			(xy 165.1 264.16))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "083c2672-0d8f-4dc8-883b-68d8f592c281"))
+	(wire
+		(pts
+			(xy 170.18 264.16)
+			(xy 182.88 264.16))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "576a7305-f803-4364-bd88-b8aaf8e6c1fd"))
+	(wire
+		(pts
+			(xy 187.96 264.16)
+			(xy 198.12 264.16))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "0d2672b2-ba93-4b7c-8c80-a50be751b078"))
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 88.9 284.48 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2da5fff2-a0a7-4c3b-8f7d-edaae564a8bb")
+		(property "Reference" "R144"
+			(at 88.9 281.94 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "0"
+			(at 88.9 287.02 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 88.9 284.48 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 88.9 284.48 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Resistor, small symbol"
+			(at 88.9 284.48 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C17477"
+			(at 88.9 284.48 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "0805W8F0000T5E"
+			(at 88.9 284.48 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 88.9 284.48 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "ea0c95e3-5b81-4b5e-b0be-e6ec0088144f"))
+		(pin "2"
+			(uuid "51cb0d57-bc6b-48ae-9172-38a14c629406"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "R144")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 76.2 264.16)
+			(xy 76.2 284.48))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "8ab7861c-77a0-40df-914b-e3f88cd7bd1f"))
+	(wire
+		(pts
+			(xy 76.2 284.48)
+			(xy 86.36 284.48))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f4ec44a5-b36d-4880-bb95-466af4216489"))
+	(wire
+		(pts
+			(xy 91.44 284.48)
+			(xy 193.04 284.48))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "d718acab-2810-4878-b581-ed406ae69cb4"))
+	(wire
+		(pts
+			(xy 193.04 284.48)
+			(xy 193.04 264.16))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "9dab48f5-d759-49c7-8a31-bccce7c7e957"))
 	(text "Bypass: RC (R104/R124/R144) fitted by default; RA/RB DNP. Filter build: fit RA/RB, remove RC.\nKeep RA/RB pads <=2 mm from junction (PLAN 6)."
 		(exclude_from_sim no)
 		(at 200 100 0)
@@ -6264,12 +6204,212 @@
 			(font
 				(size 1.27 1.27))
 			(justify left top))
-		(uuid "b5e26de6-2f0d-4076-b6cf-b039e8fefff9"))
-	(text "VERIFY (unconfirmed items on this sheet):\n- X1: TCXO stock thin (718); buy before ordering.\n- R27: I2C pull-up value not fixed (PLAN 2.2-4.7k); no LCSC chosen.\n- R28: as R27\n- R100: 0603 0R series (Jason decision); LCSC code not in PLAN (C17477 is 0805).\n- C100: DC-block LF corner ~32 kHz into 50 ohm (PLAN Q6).\n- R101: DNP shunt ~120 ohm back-match of ~85 ohm source (datasheet Zo); part/LCSC not chosen; verify return loss esp. >100 MHz.\n- C101: LPF values builder choice (DNP)\n- L1: LPF inductor size (SMD vs T37 option, PLAN Q7)\n- C105: Parallel C across L (elliptic) per LowPassFilterModule - unconfirmed\n- J2: Footprint is a placeholder; check BWSMA-KE-P001 launch geometry and 1.6 mm edge fit.\n- R120: see R100\n- R121: see R100\n- J3: see J2\n- R140: see R100\n- R141: see R100\n- J4: see J2"
+		(uuid "37f7821f-d54f-41e7-9a61-8e2d0062bf4c"))
+	(text "VERIFY (unconfirmed items on this sheet):\n- X1: TCXO stock thin (718); buy before ordering.\n- R27: I2C pull-up value not fixed (PLAN 2.2-4.7k); no LCSC chosen. Pulled to +3V3_MCU (not +3V3_CLK) so SCL/SDA never\n   exceed ATtiny VDD; Si5351 VIH 0.7*VDD=2.31 V vs ~2.95 V high - check.\n- R28: as R27\n- R100: 0603 0R series (Jason decision); LCSC code not in PLAN (C17477 is 0805).\n- C100: DC-block LF corner ~32 kHz into 50 ohm (PLAN Q6).\n- R101: DNP shunt ~120 ohm back-match of ~85 ohm source (datasheet Zo); part/LCSC not chosen; verify return loss esp.\n   >100 MHz.\n- L1: LPF inductor size (SMD vs T37 option, PLAN Q7)\n- C105: Parallel C across L (elliptic) per LowPassFilterModule - unconfirmed\n- C101: LPF values builder choice (DNP)\n- J2: Footprint is a placeholder; check BWSMA-KE-P001 launch geometry and 1.6 mm edge fit.\n- R120: see R100\n- R121: see R100\n- J3: see J2\n- R140: see R100\n- R141: see R100\n- J4: see J2"
 		(exclude_from_sim no)
 		(at 290 40 0)
 		(effects
 			(font
 				(size 1 1))
 			(justify left top))
-		(uuid "1ac1d398-4610-4b0b-a1e7-6d6ae1153719")))
+		(uuid "a8966e72-aa5d-4aac-bcf6-bc8ac931a6e5"))
+	(junction
+		(at 193.04 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ebb7fedf-dcf3-4bdf-99d3-11b78c549daf"))
+	(junction
+		(at 175.26 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9b71f111-a847-480d-9f43-1d65d0653c51"))
+	(junction
+		(at 142.24 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4bd0178d-d035-4e0c-a8b8-0328d1b45966"))
+	(junction
+		(at 193.04 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9752077e-b993-4401-9bef-e9334ceb780f"))
+	(junction
+		(at 109.22 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "39aa6dc6-1bb0-4030-b899-6c73e9b5c546"))
+	(junction
+		(at 129.54 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c1b9bc6-201f-4495-9688-837772c35a41"))
+	(junction
+		(at 60.96 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2af56687-8894-4829-a016-db5fb6064b21"))
+	(junction
+		(at 147.32 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7a47a7c4-57c4-49c7-a7bf-8918ae911199"))
+	(junction
+		(at 129.54 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4cf340d1-8a94-43d8-8594-1471eb59c958"))
+	(junction
+		(at 124.46 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c2c63594-2342-41dc-8e30-2f7dadab7f35"))
+	(junction
+		(at 165.1 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "82ec3eff-4f32-4f96-813f-250a0bf2f8ee"))
+	(junction
+		(at 175.26 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "88609105-4136-44dc-9589-c3e526e365ac"))
+	(junction
+		(at 170.18 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c6db240c-cafa-4363-a789-2adcabb1faa0"))
+	(junction
+		(at 147.32 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bd1baa7a-36e3-40d2-af18-05d9e528383b"))
+	(junction
+		(at 76.2 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a44aa34f-0857-4f5f-afa0-f0a28f64b8fb"))
+	(junction
+		(at 193.04 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4d1f17a6-92be-48dd-bada-7f25437c30b9"))
+	(junction
+		(at 165.1 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "46d69bc4-27ae-4793-b815-c7bcdbb77508"))
+	(junction
+		(at 59.69 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1b7e5db4-1c0f-4e34-b221-daf1ed83d753"))
+	(junction
+		(at 170.18 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "88c1c0bc-65cd-47ae-83af-5dd218ef6be3"))
+	(junction
+		(at 152.4 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6e9e4cc7-3ba5-4974-b474-706b98ac47b0"))
+	(junction
+		(at 60.96 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4f9ec671-70b7-4288-bc7f-9a6e3a17d93c"))
+	(junction
+		(at 119.38 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "191ab3d9-ba82-4067-83d8-3c8004129d45"))
+	(junction
+		(at 129.54 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5076213a-bafc-4ee4-8ba3-39f538c424bd"))
+	(junction
+		(at 152.4 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8e0af50e-75b6-4399-a6e1-5715dae1dbfa"))
+	(junction
+		(at 147.32 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8f7c344-b613-4a65-9dad-e96a82c7497d"))
+	(junction
+		(at 60.96 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8c9652e0-4f03-4414-82d7-5de8c51a83b0"))
+	(junction
+		(at 142.24 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "26c8ae8f-2110-45a1-b24e-b1b306d99a7b"))
+	(junction
+		(at 119.38 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "271c1476-4b59-4cf3-b74a-c48955331d18"))
+	(junction
+		(at 165.1 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ac12c8f-00d9-426e-a6d4-a21a9d43271c"))
+	(junction
+		(at 76.2 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0a211a39-5e4e-4f6b-93c3-40b30c74e849"))
+	(junction
+		(at 109.22 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "79e521e3-7434-43c1-805b-22bd5ff7a342"))
+	(junction
+		(at 142.24 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4abe5d6c-7492-4b01-ac26-88f2263bf4f9"))
+	(junction
+		(at 76.2 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8bb4aa2d-5f79-4caf-9a95-d6f1fdfc16e7"))
+	(junction
+		(at 109.22 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "601cd2e7-be7e-4378-ba4b-5056c866ae66"))
+	(junction
+		(at 152.4 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "21169087-a98a-4910-94d8-b52356872e11"))
+	(junction
+		(at 124.46 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b8fd6b36-814c-4283-bbc9-ce40d438d03a"))
+	(junction
+		(at 175.26 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "387a0d9b-0093-46d5-ab59-8a42b94cb0f5"))
+	(junction
+		(at 119.38 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58eb14bf-b9a2-426a-b95b-d3f994283ed7"))
+	(junction
+		(at 170.18 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a54111c9-cd33-4dda-88bf-3bdddd5d0ab5"))
+	(junction
+		(at 124.46 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6f172e84-7c5d-4844-ba2e-c2b95bc4fa40")))

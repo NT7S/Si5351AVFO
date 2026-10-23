@@ -6,7 +6,7 @@ ROOT_UUID='a0000000-0000-4000-8000-000000000001'
 def g(v): return round(round(v/1.27)*1.27,2)
 def U(): return str(uuid.uuid4())
 def f(v): s=('%.4f'%v).rstrip('0').rstrip('.'); return '0' if s in('-0','') else s
-RAILS={'GND':('power','GND','down'),'+5V':('power','+5V','up'),'+3V3D':('power','+3V3','up'),
+RAILS={'GND':('power','GND','down'),'+5V':('power','+5V','up'),'+3V3D':('power','+3V3','up'),'+3V3_MCU':('power','+3V3','up'),
  '+3V3_CLK':('power','+3V3','up'),'+3V3_OLED':('power','+3V3','up')}
 GLOBALS={'MCU_TX','MCU_RX','DTR','I2C_SCL','I2C_SDA'}
 VERIFY_ALL=[]
@@ -111,7 +111,25 @@ class Sheet:
                 s.power(spec,x,y,d)
             else: s.label(spec,x,y,out)
         return ref
+    def autojunc(s):
+        segs=[]
+        for it in s.items:
+            if it[0]=='wire':
+                p=it[1]; a=(float(p[1][1]),float(p[1][2])); c=(float(p[2][1]),float(p[2][2])); segs.append((a,c))
+        pinset=set((round(x,2),round(y,2)) for x,y in s.pinpos.values())
+        have=set((round(float(it[1][1]),2),round(float(it[1][2]),2)) for it in s.items if it[0]=='junction')
+        s.items=[it for it in s.items if it[0]!='junction']; have=set()
+        pts=set(); [pts.update([(round(a[0],2),round(a[1],2)),(round(c[0],2),round(c[1],2))]) for a,c in segs]
+        for p in pts:
+            d=0
+            for a,c in segs:
+                a=(round(a[0],2),round(a[1],2)); c=(round(c[0],2),round(c[1],2))
+                if p in (a,c): d+=1
+                elif (a[0]==c[0]==p[0] and min(a[1],c[1])<p[1]<max(a[1],c[1])) or (a[1]==c[1]==p[1] and min(a[0],c[0])<p[0]<max(a[0],c[0])): d+=2
+            if p in pinset: d+=1
+            if d>=3: s.junction(*p)
     def save(s,root_extra=None):
+        s.autojunc()
         doc=['kicad_sch',['version','20250114'],['generator','"eeschema"'],['generator_version','"10.0"'],['uuid',q(s.uuid)],['paper','"A3"'],
              ['title_block',['title',q('Si5351A VFO - '+s.title)],['date','"2026-10-22"'],['rev','"A"'],['company','"Etherkit / NT7S"'],['comment','1','"Draft schematic, not reviewed. See VERIFY notes."']],
              ['lib_symbols']+list(s.libs.values())]+s.items

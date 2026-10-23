@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/workspace/Si5351AVFO/Si5351AVFO.kicad_sch")
-		(date "2026-10-22T20:28:31")
+		(date "2026-10-22T20:34:23")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
@@ -255,7 +255,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "9a7b8090-7a20-4db4-aad9-faa52faf8a6c")
+			(tstamps "5dfd37b4-47f8-4b59-83c2-77b0a18bfab3")
 			(units
 				(unit
 					(name "A")
@@ -327,7 +327,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "728c00f1-04f0-4a99-940a-abe54e8cb77c")
+			(tstamps "276f336f-f55c-4023-8bbf-7cf446fb1e19")
 			(units
 				(unit
 					(name "A")
@@ -399,7 +399,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "ccb68f24-6453-4b1d-bb97-ee21b670ac85")
+			(tstamps "62e2fec6-4d8e-4937-8bac-18a6c36a3cfb")
 			(units
 				(unit
 					(name "A")
@@ -471,7 +471,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "31b42a2c-b827-4729-8e17-2e3c74cc154c")
+			(tstamps "aa25a51f-2d06-474b-8c54-5f0d4636b590")
 			(units
 				(unit
 					(name "A")
@@ -543,7 +543,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "0832aabb-add3-4c25-a164-21d0bd14fd35")
+			(tstamps "e3b95107-513e-4558-b019-7335e4cfcc07")
 			(units
 				(unit
 					(name "A")
@@ -615,7 +615,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "fd6da902-373d-43f6-a367-25ab4d7c4c85")
+			(tstamps "4c3dafd0-a8b0-4647-8566-b3372a9015b0")
 			(units
 				(unit
 					(name "A")
@@ -693,7 +693,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "026fefb0-ea30-4239-acde-c5a65716cb92")
+			(tstamps "4a0d646d-427a-49a2-86cd-5356f8ba9dc1")
 			(units
 				(unit
 					(name "A")
@@ -765,7 +765,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "c8001caf-fcf9-40c7-8bc4-ea4e6109b8db")
+			(tstamps "83a07460-9387-4d48-a17e-0e8df6309c3b")
 			(units
 				(unit
 					(name "A")
@@ -837,7 +837,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "7f8afd04-84af-4c80-bef8-67ad9279c2e0")
+			(tstamps "59d7cafd-2bab-40f2-88ad-fe6a7331e417")
 			(units
 				(unit
 					(name "A")
@@ -909,7 +909,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "b752490f-e003-40da-9095-6645271aefb1")
+			(tstamps "3b3c5878-d534-4068-8bc0-f2aa70d70292")
 			(units
 				(unit
 					(name "A")
@@ -987,7 +987,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "47a9c90b-862f-46a1-a522-c3c1e2a8d62d")
+			(tstamps "2524caf8-45cd-4530-ba84-d6384945fb83")
 			(units
 				(unit
 					(name "A")
@@ -1059,7 +1059,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "6f30bbe2-0ac9-4697-ac69-a37ba7440d08")
+			(tstamps "4f96b855-e5d5-4bd4-884a-30bd8d98c0af")
 			(units
 				(unit
 					(name "A")
@@ -1122,7 +1122,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "d2c18e5c-682b-484c-b499-9fdfcb2d7dec")
+			(tstamps "7271068d-8275-422c-ab09-c8ad9a07bc1d")
 			(units
 				(unit
 					(name "A")
@@ -1200,7 +1200,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "73970756-e1c0-4253-bc8b-e6a7abba627c")
+			(tstamps "b4b5e759-9233-4e81-b8d5-e1cf6999284a")
 			(units
 				(unit
 					(name "A")
@@ -1278,7 +1278,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "6a9d6f37-0ad5-4774-b0cd-c3592381ed5a")
+			(tstamps "e6b51f43-1072-4f41-9f57-050edd5ecba1")
 			(units
 				(unit
 					(name "A")
@@ -1356,7 +1356,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "7056e885-e398-4c00-8c71-99819868e6da")
+			(tstamps "60f2bea5-5b6f-4b3c-ae32-c1132029f6b6")
 			(units
 				(unit
 					(name "A")
@@ -1410,7 +1410,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "7d30a8fa-9494-4246-a21d-f11f1e6947d4")
+			(tstamps "c9d3e4d3-4b62-4557-8aa2-45f5372cbd13")
 			(units
 				(unit
 					(name "A")
@@ -1457,7 +1457,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "42a2978b-81a4-4680-9a6c-a237adce92e5")
+			(tstamps "49174296-a4b6-4f1a-a2e3-a2e1463d4f9c")
 			(units
 				(unit
 					(name "A")
@@ -1504,7 +1504,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "f3224085-dae1-42b2-8205-7495b8f4af3a")
+			(tstamps "f6bdd8e7-bf6e-46d8-861d-9d1a188103c4")
 			(units
 				(unit
 					(name "A")
@@ -1551,7 +1551,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "2ac42096-0304-49a1-87d5-23f24c98ba2a")
+			(tstamps "11de7e51-fd8e-44d6-9373-58949f28c259")
 			(units
 				(unit
 					(name "A")
@@ -1622,7 +1622,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "69325613-60f4-490a-87a0-5d94a2c3db3e")
+			(tstamps "d98590ad-90b9-4efb-8754-87bec6e7f2ee")
 			(units
 				(unit
 					(name "A")
@@ -1739,7 +1739,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "e9c2e014-eb0f-42ed-864c-09b151759cb9")
+			(tstamps "4faadee2-0302-4c4b-b0de-b1b0b4e8d624")
 			(units
 				(unit
 					(name "A")
@@ -1811,7 +1811,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "61a18a48-4049-4406-8543-f7215bab576e")
+			(tstamps "f1656223-691c-45f3-a86f-bd393069255d")
 			(units
 				(unit
 					(name "A")
@@ -1883,7 +1883,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "30f31070-ccc6-4961-9483-183477a5f883")
+			(tstamps "5e9da966-2c63-41eb-8ae1-b2517e5072df")
 			(units
 				(unit
 					(name "A")
@@ -1955,7 +1955,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "b8f5b7f3-f461-4999-b534-1efa552b43ec")
+			(tstamps "2c55d849-786a-4c2f-b66a-8d41c5c998c8")
 			(units
 				(unit
 					(name "A")
@@ -2033,7 +2033,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "e60841d6-f197-4d4c-869b-911c4ba17235")
+			(tstamps "744dceb9-238a-4e97-8414-181ba3cf3ac4")
 			(units
 				(unit
 					(name "A")
@@ -2105,7 +2105,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "ddef260d-7c4a-44e2-9149-4322faf9a4d9")
+			(tstamps "ed4e1a21-b14b-467a-bca1-a098a91194d5")
 			(units
 				(unit
 					(name "A")
@@ -2192,7 +2192,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "e0fb9146-0e69-41d8-93c5-eb4c14443ded")
+			(tstamps "9b5ff339-62ce-4262-a872-66808c0f1250")
 			(units
 				(unit
 					(name "A")
@@ -2333,7 +2333,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "3be4063d-f566-4ef3-ae5b-ac3e08dbb5cb")
+			(tstamps "6d599126-ea02-4660-b11a-9e137a8a521f")
 			(units
 				(unit
 					(name "A")
@@ -2420,7 +2420,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "fcb1e6d0-2036-4ee3-9b83-06bd446705d5")
+			(tstamps "67ea569a-3c29-4928-a649-2e0fe945d055")
 			(units
 				(unit
 					(name "A")
@@ -2492,7 +2492,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "8b4b1027-aa30-4f0b-9aa5-8457eb04830c")
+			(tstamps "5803c027-c3e2-4575-b7c1-8d15b777419f")
 			(units
 				(unit
 					(name "A")
@@ -2564,7 +2564,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "6b7e24a5-59b0-496b-8995-13b4b48439f1")
+			(tstamps "158cc978-f658-480e-8954-98a3c7dcfe68")
 			(units
 				(unit
 					(name "A")
@@ -2642,7 +2642,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "8e85c8e4-9ea6-4e33-b1cc-497cefe64a51")
+			(tstamps "9a41b4ca-1a39-4e28-816e-3ed2d4f56e13")
 			(units
 				(unit
 					(name "A")
@@ -2714,7 +2714,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "60657482-1f50-407b-a399-f0c068c34453")
+			(tstamps "e7165182-3cd1-48ff-8488-0bf2854f77e4")
 			(units
 				(unit
 					(name "A")
@@ -2786,7 +2786,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "ce795f90-da6c-41d8-a426-e16deb839e77")
+			(tstamps "f3212ed4-1964-4a63-a3d8-7163486ada26")
 			(units
 				(unit
 					(name "A")
@@ -2858,7 +2858,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "ab99e0af-617d-4ff0-b5d0-fe21b2fb8bb6")
+			(tstamps "93680abf-44e9-4238-a4bf-35250004fc6e")
 			(units
 				(unit
 					(name "A")
@@ -2930,7 +2930,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "803ae668-00e2-49c4-bda6-90c586931c89")
+			(tstamps "ef73f346-3ff6-41cb-abc4-5f2db257fe29")
 			(units
 				(unit
 					(name "A")
@@ -3002,7 +3002,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "3d5fb322-b416-4715-be45-00db5fef88d3")
+			(tstamps "547760c4-27ea-43a8-b3a6-c1c8d324eb46")
 			(units
 				(unit
 					(name "A")
@@ -3062,7 +3062,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "1b88072e-7fa2-450c-a357-784f3ffd3158")
+			(tstamps "22fa27fb-beab-4a4d-8b74-a96ac3178792")
 			(units
 				(unit
 					(name "A")
@@ -3122,7 +3122,67 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "7efc3665-4cd1-4649-aa4f-3dc2f367e734")
+			(tstamps "d92821cc-0d70-49a4-b6fa-072997254507")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D6")
+			(value "1N5711")
+			(footprint "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal")
+			(description "Schottky diode")
+			(fields
+				(field
+					(name "VERIFY") "ATtiny-only rail +3V3_MCU: diode-OR of +3V3D (D6) and UPDI header VCC (D5) so a programmer cannot back-feed +3V3D. Same 1N5711 as EKM D5 (no LCSC/MPN). MCU VDD ~2.9-3.0 V (0.3-0.4 V drop): check ATtiny VIH/VIL vs CP2102N TXD (3.3 V VIO, exceeds MCU VDD by ~0.35 V) and OLED/Si5351 3.3 V logic; I/O pull-ups moved to +3V3_MCU. With only programmer power, MCU pins can back-power unpowered CP2102N/OLED/Si5351 via their ESD diodes.")
+				(field
+					(name "Footprint") "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Schottky diode")
+			)
+			(libsource
+				(lib "Device")
+				(part "D_Schottky")
+				(description "Schottky diode")
+			)
+			(property
+				(name "VERIFY")
+				(value "ATtiny-only rail +3V3_MCU: diode-OR of +3V3D (D6) and UPDI header VCC (D5) so a programmer cannot back-feed +3V3D. Same 1N5711 as EKM D5 (no LCSC/MPN). MCU VDD ~2.9-3.0 V (0.3-0.4 V drop): check ATtiny VIH/VIL vs CP2102N TXD (3.3 V VIO, exceeds MCU VDD by ~0.35 V) and OLED/Si5351 3.3 V logic; I/O pull-ups moved to +3V3_MCU. With only programmer power, MCU pins can back-power unpowered CP2102N/OLED/Si5351 via their ESD diodes.")
+			)
+			(property
+				(name "Sheetname")
+				(value "MCU and UI")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mcu_ui.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "diode Schottky")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "TO-???* *_Diode_* *SingleDiode* D_*")
+			)
+			(sheetpath
+				(names "/MCU and UI/")
+				(tstamps "/b0000000-0000-4000-8000-000000000003/")
+			)
+			(tstamps "e5d61a8f-2aff-4da9-8fe6-c2a5711d4d61")
 			(units
 				(unit
 					(name "A")
@@ -3200,7 +3260,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "5b137670-1d41-484c-a1ba-3285665d9661")
+			(tstamps "fbedb2c8-79b1-4d63-bb45-db1ad8db2611")
 			(units
 				(unit
 					(name "A")
@@ -3278,7 +3338,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "0fed111c-a124-47b9-977d-5957912d18b4")
+			(tstamps "1e648e1d-3cc1-4b46-b9f2-495216403ffa")
 			(units
 				(unit
 					(name "A")
@@ -3294,126 +3354,6 @@
 						)
 						(pin
 							(num "4")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "JP1")
-			(value "SolderJumper_2_Bridged")
-			(footprint "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
-			(description "Solder Jumper, 2-pole, open")
-			(fields
-				(field
-					(name "VERIFY") "Replicated from EtherKeyerMini (JP2); EKM has no LCSC/MPN fields - part number to choose. Open by default; bridging parallels the CP2102N UART on MCU_RX.")
-				(field
-					(name "Footprint") "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Solder Jumper, 2-pole, open")
-			)
-			(libsource
-				(lib "Jumper")
-				(part "SolderJumper_2_Open")
-				(description "Solder Jumper, 2-pole, open")
-			)
-			(property
-				(name "VERIFY")
-				(value "Replicated from EtherKeyerMini (JP2); EKM has no LCSC/MPN fields - part number to choose. Open by default; bridging parallels the CP2102N UART on MCU_RX.")
-			)
-			(property
-				(name "Sheetname")
-				(value "MCU and UI")
-			)
-			(property
-				(name "Sheetfile")
-				(value "mcu_ui.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "solder jumper SPST")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "SolderJumper*Open*")
-			)
-			(sheetpath
-				(names "/MCU and UI/")
-				(tstamps "/b0000000-0000-4000-8000-000000000003/")
-			)
-			(tstamps "385dc6d8-e891-4a69-9077-446601e285c4")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "JP2")
-			(value "SolderJumper_2_Bridged")
-			(footprint "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
-			(description "Solder Jumper, 2-pole, open")
-			(fields
-				(field
-					(name "VERIFY") "Replicated from EtherKeyerMini (JP3); EKM has no LCSC/MPN fields - part number to choose. Open by default; bridging parallels the CP2102N UART on MCU_TX.")
-				(field
-					(name "Footprint") "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Solder Jumper, 2-pole, open")
-			)
-			(libsource
-				(lib "Jumper")
-				(part "SolderJumper_2_Open")
-				(description "Solder Jumper, 2-pole, open")
-			)
-			(property
-				(name "VERIFY")
-				(value "Replicated from EtherKeyerMini (JP3); EKM has no LCSC/MPN fields - part number to choose. Open by default; bridging parallels the CP2102N UART on MCU_TX.")
-			)
-			(property
-				(name "Sheetname")
-				(value "MCU and UI")
-			)
-			(property
-				(name "Sheetfile")
-				(value "mcu_ui.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "solder jumper SPST")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "SolderJumper*Open*")
-			)
-			(sheetpath
-				(names "/MCU and UI/")
-				(tstamps "/b0000000-0000-4000-8000-000000000003/")
-			)
-			(tstamps "1c199be4-c884-4bd4-83df-c91221ee1809")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
 						)
 					)
 				)
@@ -3476,7 +3416,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "38a60cbe-a9cd-4ef5-ba84-9321c9107f25")
+			(tstamps "ad56fc72-c535-4040-a063-72ad675719d9")
 			(units
 				(unit
 					(name "A")
@@ -3536,7 +3476,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "3c7ad2cb-14ba-43e8-8f4a-b284aeaea8b9")
+			(tstamps "f3eae737-f044-4179-9c9c-4529d75fec28")
 			(units
 				(unit
 					(name "A")
@@ -3608,7 +3548,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "095a688b-153e-4ca6-898f-ca1d8fe6a8d6")
+			(tstamps "f3023334-a882-40ba-a5de-11a4a2d5a143")
 			(units
 				(unit
 					(name "A")
@@ -3680,7 +3620,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "56543894-6039-4051-af9e-1a7de6244f55")
+			(tstamps "12cdd957-d5b1-4eff-a730-ec502f760cde")
 			(units
 				(unit
 					(name "A")
@@ -3752,7 +3692,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "98d52f8b-913f-4508-845b-ca2bccdcddc1")
+			(tstamps "1a7f7b7f-c6fe-434b-b1d8-b27e01e7ba60")
 			(units
 				(unit
 					(name "A")
@@ -3824,7 +3764,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "7b4382d1-fa56-41ef-b50e-7efd40ad32a7")
+			(tstamps "55292186-7a52-4f0d-9350-92614d5da65b")
 			(units
 				(unit
 					(name "A")
@@ -3896,7 +3836,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "24423d2d-6f71-435f-966d-06bba9d9637e")
+			(tstamps "7546bb7e-e039-4e60-a07c-16560e363c4e")
 			(units
 				(unit
 					(name "A")
@@ -3968,7 +3908,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "bd14da73-b1e2-4e71-b5c5-60108ebb393a")
+			(tstamps "70f92ef3-8da7-4768-9c54-ab372b06eae5")
 			(units
 				(unit
 					(name "A")
@@ -4040,7 +3980,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "861c6f87-f4be-43b5-a560-ef50aa305f3f")
+			(tstamps "701cb2a4-e72a-4b49-9e30-b77a69abf990")
 			(units
 				(unit
 					(name "A")
@@ -4112,7 +4052,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "767fc4b6-2f04-472e-a792-ba9505e79b14")
+			(tstamps "738d3729-cc0f-4c0e-b1a8-1dc1a1c28467")
 			(units
 				(unit
 					(name "A")
@@ -4184,7 +4124,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "7d60e265-cae1-47ec-b70c-04f685bbc3c4")
+			(tstamps "4ddbf291-0209-40ab-8689-83acd660c2cf")
 			(units
 				(unit
 					(name "A")
@@ -4256,7 +4196,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "c8d1d895-2363-4d2c-990d-712ff1b71537")
+			(tstamps "ffac5593-4753-4a0a-90f3-679ff97d141d")
 			(units
 				(unit
 					(name "A")
@@ -4328,7 +4268,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "3d2ed13b-726b-4e66-8bd3-7956de25dd6f")
+			(tstamps "668aa163-8500-400d-a964-87621803e2cc")
 			(units
 				(unit
 					(name "A")
@@ -4400,7 +4340,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "76d422d5-fb89-4876-84e9-a164c34bfcb7")
+			(tstamps "4f7f9503-7be5-446d-a325-8af2eb036d47")
 			(units
 				(unit
 					(name "A")
@@ -4472,7 +4412,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "830a4659-f71f-46e4-bd0e-9b42a12ac01e")
+			(tstamps "927f2872-f2fa-47cd-9179-77bb3333231a")
 			(units
 				(unit
 					(name "A")
@@ -4550,7 +4490,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "6b79f70c-2c02-42c7-afbb-761bb112b8fe")
+			(tstamps "dacb92eb-8411-446d-9147-1ab26b9b680f")
 			(units
 				(unit
 					(name "A")
@@ -4627,7 +4567,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "4c631825-2479-4a5b-8424-75982eaadb08")
+			(tstamps "081b4563-9392-4b42-bad6-c94c5f454495")
 			(units
 				(unit
 					(name "A")
@@ -4695,7 +4635,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "553826d8-e028-4fd8-803c-7d50c3686fa8")
+			(tstamps "c1b7b836-e66a-4820-8f2e-29fd7b24228b")
 			(units
 				(unit
 					(name "A")
@@ -4763,7 +4703,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "a29048e0-38d0-4ca7-9f4d-3a14310f6f65")
+			(tstamps "8573d478-e634-4422-b801-6a48d8fc8874")
 			(units
 				(unit
 					(name "A")
@@ -4841,7 +4781,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "fa85f493-bd12-43b3-80f7-9d56e997eb72")
+			(tstamps "52efed96-9047-4097-aef4-3c388f7ce49d")
 			(units
 				(unit
 					(name "A")
@@ -4967,7 +4907,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "5f7ab35f-b443-43be-84e8-1ae49a33c76d")
+			(tstamps "e5c9215c-eb37-478f-ab94-af4bf402cf10")
 			(units
 				(unit
 					(name "A")
@@ -5039,7 +4979,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "1cf282d1-8f39-4196-969a-fe59f99820ed")
+			(tstamps "fa202b5d-8d5b-4b90-9bb5-4aedb8308c9b")
 			(units
 				(unit
 					(name "A")
@@ -5111,7 +5051,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "d54eccf6-67dd-4380-b2b2-54724d2225e7")
+			(tstamps "323a6e10-0e13-4207-988e-a3ade7fbb860")
 			(units
 				(unit
 					(name "A")
@@ -5189,7 +5129,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "21e345c8-a5a6-401d-be03-e980f4d25f9f")
+			(tstamps "545ed181-2eb2-4f1b-8807-389a1cdaf6cc")
 			(units
 				(unit
 					(name "A")
@@ -5252,7 +5192,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "7d2f97ad-b25a-4bec-adcb-a4510c9dff2f")
+			(tstamps "a5d50382-81d5-4774-8b71-1a29160e18b4")
 			(units
 				(unit
 					(name "A")
@@ -5309,7 +5249,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "b4ca60eb-1879-4bb0-b712-ad9e19266787")
+			(tstamps "dd01c2ab-ee57-4cf1-bccd-c4f77af7af19")
 			(units
 				(unit
 					(name "A")
@@ -5366,7 +5306,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "aacc9bfd-ac07-4106-a586-dbfd85cfb8fa")
+			(tstamps "68b0c507-d06c-44a7-8a35-cc342884a15d")
 			(units
 				(unit
 					(name "A")
@@ -5423,7 +5363,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "d4ffa9e3-d0bb-4ae1-a5c2-9830ae0a181b")
+			(tstamps "bb05b4f9-b013-4f03-948d-62cbdffbfde6")
 			(units
 				(unit
 					(name "A")
@@ -5486,7 +5426,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "46c54d6b-4741-417d-afee-6a10afa259a8")
+			(tstamps "c7ee6dac-212e-4faa-b1ff-6beb6d7f3cee")
 			(units
 				(unit
 					(name "A")
@@ -5543,7 +5483,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "308cf633-8774-4a8b-bbe5-291f6f544441")
+			(tstamps "8eade47a-2953-4eae-a40a-032797880c3c")
 			(units
 				(unit
 					(name "A")
@@ -5600,7 +5540,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "2fb4b6a7-97d0-461b-9396-025bae07c734")
+			(tstamps "057bcfac-e8a4-4e7e-8dff-1b155eb30537")
 			(units
 				(unit
 					(name "A")
@@ -5672,7 +5612,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "bd7fd17d-b46c-467c-b11e-a384e0b61eca")
+			(tstamps "0738e072-de62-4074-b025-8009d0921958")
 			(units
 				(unit
 					(name "A")
@@ -5729,7 +5669,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "8bcffd2b-19a5-4e67-b322-a952dfe66e84")
+			(tstamps "6401a4aa-a6d8-4f66-871f-9dfdf98bf962")
 			(units
 				(unit
 					(name "A")
@@ -5786,7 +5726,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "100377df-8739-4a8b-9476-dfc539af701a")
+			(tstamps "b23c8355-6118-4d5e-969a-3f864a8c1e6c")
 			(units
 				(unit
 					(name "A")
@@ -5843,7 +5783,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "b4d237d0-9f16-4d3d-81bd-4d9f0c4541e6")
+			(tstamps "48c683c6-d66a-4af5-8197-8002b0bfaae5")
 			(units
 				(unit
 					(name "A")
@@ -5900,7 +5840,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "e8e2fcbd-34d8-4157-ac50-81b87b001961")
+			(tstamps "0a08efc7-a457-417f-9eac-be10dbbe88e6")
 			(units
 				(unit
 					(name "A")
@@ -5957,7 +5897,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "39b0d0c6-3f46-448b-99c1-18b9cac2c698")
+			(tstamps "bc2383d8-f435-4adf-beec-34261cdfa6a9")
 			(units
 				(unit
 					(name "A")
@@ -6014,7 +5954,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "85f898d9-a895-4d60-9198-806a6d597266")
+			(tstamps "e3403ece-4f92-4982-88d1-90b6aa50c833")
 			(units
 				(unit
 					(name "A")
@@ -6071,7 +6011,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "cdfedbdf-918a-4575-a1d4-7dac52d6d01e")
+			(tstamps "06ad6113-d1ad-48f4-ba26-ba35ca6db73d")
 			(units
 				(unit
 					(name "A")
@@ -6143,7 +6083,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "5f6f1ebd-45c0-4b75-ba3d-3a3e0215795f")
+			(tstamps "c929a1e0-37f3-4680-b95c-033efbb674b1")
 			(units
 				(unit
 					(name "A")
@@ -6200,7 +6140,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "d010e4bd-d428-4ede-a27e-48a77dc19850")
+			(tstamps "1cc93b97-b2dd-468d-b08f-57b0dbc36419")
 			(units
 				(unit
 					(name "A")
@@ -6257,7 +6197,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "eb8c92d1-6702-4a82-8c49-4a8998a04b52")
+			(tstamps "0b99f483-e7fb-4bd8-96f5-900117ebf84e")
 			(units
 				(unit
 					(name "A")
@@ -6314,7 +6254,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "cf816714-c01c-467a-ab24-c85b17107f81")
+			(tstamps "1fbdcc61-6174-4ca4-9f10-c469dc4f9b6d")
 			(units
 				(unit
 					(name "A")
@@ -6371,7 +6311,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "3c465757-5228-4f1c-8385-09e4504e6c36")
+			(tstamps "e6913093-add9-4439-aa89-2934cf6af3bb")
 			(units
 				(unit
 					(name "A")
@@ -6428,7 +6368,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "495ad969-59ba-4679-8798-832192c288c8")
+			(tstamps "c89809e1-4e85-4136-938c-e7ce8e08a0ed")
 			(units
 				(unit
 					(name "A")
@@ -6485,7 +6425,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "72501118-ace1-4f21-83b4-cf157a48b930")
+			(tstamps "a86600ec-5522-4324-a63a-1536082a05df")
 			(units
 				(unit
 					(name "A")
@@ -6542,7 +6482,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "f24d3053-31e9-4950-ae1e-0982206b31f3")
+			(tstamps "e1cd6893-a59c-4b75-a4e9-280b3f7e13d4")
 			(units
 				(unit
 					(name "A")
@@ -6620,7 +6560,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "645382c9-40fc-4b99-be28-8120aadfd93a")
+			(tstamps "da4b951e-862a-4c76-a57b-dc9976c867a4")
 			(units
 				(unit
 					(name "A")
@@ -6698,7 +6638,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "f9ec1540-8ff0-4510-bf5b-d09b6077d6e4")
+			(tstamps "341a0636-9b0e-43e2-bf6a-1c8b89a59423")
 			(units
 				(unit
 					(name "A")
@@ -6776,7 +6716,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "46f5ef19-ae09-498e-8854-9921e10c8a52")
+			(tstamps "820e8836-c62c-4743-ad1a-15ecc8e5c6e5")
 			(units
 				(unit
 					(name "A")
@@ -6839,7 +6779,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "71c384a5-ee61-4a88-b117-8c0fc0e85d90")
+			(tstamps "c8a03150-9ce4-452e-93b6-324d7ad3f92e")
 			(units
 				(unit
 					(name "A")
@@ -6896,7 +6836,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "bbc8d026-d4d8-4273-b589-1eacfa46e741")
+			(tstamps "86a8bdb8-4bf9-47d8-894f-e42d241da8ba")
 			(units
 				(unit
 					(name "A")
@@ -6953,7 +6893,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "8657fd1e-5d03-4208-80b6-3fd70b8d13f5")
+			(tstamps "b6f468d7-99ba-4273-9695-6c114b51a887")
 			(units
 				(unit
 					(name "A")
@@ -7010,7 +6950,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "ab45f7dd-4717-468d-91a1-19b4da2b87a2")
+			(tstamps "7ef49f90-36db-44e7-a2be-5555a02fe1ee")
 			(units
 				(unit
 					(name "A")
@@ -7067,7 +7007,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "dd8e1c9a-1235-46fc-97ee-e32134c18a52")
+			(tstamps "184da2e0-d472-4d64-bceb-e96278afaed8")
 			(units
 				(unit
 					(name "A")
@@ -7124,7 +7064,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "ea0d2291-c072-4753-89d7-5ea18f22d998")
+			(tstamps "3de09ef9-d99b-4d79-b315-a3695995bafd")
 			(units
 				(unit
 					(name "A")
@@ -7181,7 +7121,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "d6e008e0-736e-4474-857b-8413e33e4dc6")
+			(tstamps "49fcabc9-c62f-4397-b82f-adba328cc19c")
 			(units
 				(unit
 					(name "A")
@@ -7238,7 +7178,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "d4d92281-1ddd-4298-b1c6-8ba09c43fae1")
+			(tstamps "60f89491-247a-4a46-b886-152d2879dba1")
 			(units
 				(unit
 					(name "A")
@@ -7295,7 +7235,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "c8df4911-2f95-4999-9d66-5a0e79b676f5")
+			(tstamps "e6137502-8dac-46c0-a717-937ab361d2c2")
 			(units
 				(unit
 					(name "A")
@@ -7367,7 +7307,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "4c4f6abf-e761-4a33-86eb-66a953deb0d8")
+			(tstamps "497a3cc5-d6a2-4fc9-b5a9-3b050810fdc2")
 			(units
 				(unit
 					(name "A")
@@ -7442,7 +7382,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "92f79e22-3794-4548-a949-7f0393027d70")
+			(tstamps "c9dd2b38-80e0-49f5-bb32-966d45069598")
 			(units
 				(unit
 					(name "A")
@@ -7464,7 +7404,7 @@
 			(description "Resistor, small symbol")
 			(fields
 				(field
-					(name "VERIFY") "I2C pull-up value not fixed (PLAN 2.2-4.7k); no LCSC chosen.")
+					(name "VERIFY") "I2C pull-up value not fixed (PLAN 2.2-4.7k); no LCSC chosen. Pulled to +3V3_MCU (not +3V3_CLK) so SCL/SDA never exceed ATtiny VDD; Si5351 VIH 0.7*VDD=2.31 V vs ~2.95 V high - check.")
 				(field
 					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
 				(field
@@ -7480,7 +7420,7 @@
 			)
 			(property
 				(name "VERIFY")
-				(value "I2C pull-up value not fixed (PLAN 2.2-4.7k); no LCSC chosen.")
+				(value "I2C pull-up value not fixed (PLAN 2.2-4.7k); no LCSC chosen. Pulled to +3V3_MCU (not +3V3_CLK) so SCL/SDA never exceed ATtiny VDD; Si5351 VIH 0.7*VDD=2.31 V vs ~2.95 V high - check.")
 			)
 			(property
 				(name "Sheetname")
@@ -7502,7 +7442,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "6df93f87-802e-4898-919e-f86d505c06f5")
+			(tstamps "b519b63f-3a7f-4613-b9d0-bddf178e15b7")
 			(units
 				(unit
 					(name "A")
@@ -7562,7 +7502,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "4528ddf4-79af-45a2-9f47-a7bbc2036ce0")
+			(tstamps "c26bf105-ba72-4cc1-a026-8da6ee1e2864")
 			(units
 				(unit
 					(name "A")
@@ -7629,7 +7569,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "c8fba01a-7b62-4bbc-96ff-1ae6334961c7")
+			(tstamps "27555ad5-649e-4e3e-879c-ba3d2bddd078")
 			(units
 				(unit
 					(name "A")
@@ -7692,7 +7632,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "c07cf284-c487-4a05-ba5c-08deb71600d5")
+			(tstamps "5b96fb40-55ff-4825-8877-d0eb343c555a")
 			(units
 				(unit
 					(name "A")
@@ -7767,7 +7707,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "252873e1-f628-494a-88c6-a1364002af56")
+			(tstamps "aebf23b9-c19f-4a0e-8afc-85fc9459eecc")
 			(units
 				(unit
 					(name "A")
@@ -7842,7 +7782,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "35bb314b-9f7c-419a-b0d9-de9c8ebb6477")
+			(tstamps "23368c70-f992-4429-8a66-f6cbadead7b3")
 			(units
 				(unit
 					(name "A")
@@ -7914,7 +7854,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "e72e7e37-e217-4157-a9fa-3c744b5d59f5")
+			(tstamps "2d52f8a7-d55c-4b74-9ae8-e68eab5aca22")
 			(units
 				(unit
 					(name "A")
@@ -7981,7 +7921,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "d9658af9-b603-46f0-8411-ff7388045ae4")
+			(tstamps "e0483ac6-012b-49b0-9bee-aa0ddf3a7f21")
 			(units
 				(unit
 					(name "A")
@@ -8044,7 +7984,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "306eb539-b123-43e5-b23c-1c977a72f091")
+			(tstamps "055668d3-f506-4199-b7b9-8f0b43efdd99")
 			(units
 				(unit
 					(name "A")
@@ -8119,7 +8059,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "1f7b67a8-d4b3-4cbc-8295-ff10fca475a2")
+			(tstamps "563afb89-cec3-4275-8599-b4234ee9850e")
 			(units
 				(unit
 					(name "A")
@@ -8194,7 +8134,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "d175df2f-5f22-42f5-a259-ceb70c380cdf")
+			(tstamps "a242d742-0b48-448c-a904-feffa79dbbfb")
 			(units
 				(unit
 					(name "A")
@@ -8266,7 +8206,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "e9069720-1820-4cc7-9fd4-818d9010ea91")
+			(tstamps "981124cd-d79f-4146-9b90-cbeb4c8475ad")
 			(units
 				(unit
 					(name "A")
@@ -8333,7 +8273,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "bdfa48c9-ccd1-4175-bd94-fd108c9cd93d")
+			(tstamps "121b13f1-16f2-4d37-801e-01cffd706602")
 			(units
 				(unit
 					(name "A")
@@ -8396,7 +8336,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "d8448426-575b-46d4-9c67-bf5378b7f076")
+			(tstamps "daadac92-3995-4430-83b0-62f3d73da0d3")
 			(units
 				(unit
 					(name "A")
@@ -8471,7 +8411,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "2f1a2bae-d204-4d03-9ef4-2666c19e0c73")
+			(tstamps "0f6f0c60-c2e2-453d-8ae9-7bf2e90f8c5a")
 			(units
 				(unit
 					(name "A")
@@ -8546,7 +8486,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "24c191ba-9a3c-4efc-bd82-5de98a0fc041")
+			(tstamps "7691bdfd-b6a7-4550-9e2d-ab10bfe0d47a")
 			(units
 				(unit
 					(name "A")
@@ -8618,7 +8558,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "33aea83d-04eb-48e0-abba-d71b64c44df8")
+			(tstamps "2da5fff2-a0a7-4c3b-8f7d-edaae564a8bb")
 			(units
 				(unit
 					(name "A")
@@ -8690,7 +8630,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "725f5df9-ac42-4049-b86e-e9013fdecc03")
+			(tstamps "4e7dfadf-cde5-4ee5-984a-6fe8f916d060")
 			(units
 				(unit
 					(name "A")
@@ -8784,7 +8724,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "9c08772d-d16b-4ccc-b7e8-a8ed0387fd0c")
+			(tstamps "3bdd1730-be65-48d2-9f30-de0a8d6228b8")
 			(units
 				(unit
 					(name "A")
@@ -9444,40 +9384,6 @@
 			)
 		)
 		(libpart
-			(lib "Jumper")
-			(part "SolderJumper_2_Open")
-			(description "Solder Jumper, 2-pole, open")
-			(footprints
-				(fp "SolderJumper*Open*")
-			)
-			(fields
-				(field
-					(name "Reference") "JP")
-				(field
-					(name "Value") "SolderJumper_2_Open")
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Solder Jumper, 2-pole, open")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "A")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "B")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
 			(lib "MCU_Microchip_ATtiny")
 			(part "ATtiny3226-S")
 			(description "20MHz, 32kB Flash, 3kB SRAM, 256B EEPROM, SOIC-20")
@@ -9876,10 +9782,6 @@
 			(uri "${KICAD10_SYMBOL_DIR}/Interface_USB.kicad_sym")
 		)
 		(library
-			(logical "Jumper")
-			(uri "${KICAD10_SYMBOL_DIR}/Jumper.kicad_sym")
-		)
-		(library
 			(logical "MCU_Microchip_ATtiny")
 			(uri "${KICAD10_SYMBOL_DIR}/MCU_Microchip_ATtiny.kicad_sym")
 		)
@@ -9914,6 +9816,65 @@
 			(name "+3V3D")
 			(class "Default")
 			(node
+				(ref "C3")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D6")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "FB1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "5")
+				(pinfunction "VOUT_5")
+				(pintype "power_out")
+			)
+		)
+		(net
+			(code "2")
+			(name "+3V3_CLK")
+			(class "Default")
+			(node
+				(ref "C4")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "FB1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R5")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "1")
+				(pinfunction "VDD_1")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U2")
+				(pin "7")
+				(pinfunction "VDDO_7")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "3")
+			(name "+3V3_MCU")
+			(class "Default")
+			(node
 				(ref "C15")
 				(pin "1")
 				(pintype "passive")
@@ -9924,19 +9885,15 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "C3")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
 				(ref "D5")
 				(pin "1")
 				(pinfunction "K_1")
 				(pintype "passive")
 			)
 			(node
-				(ref "FB1")
+				(ref "D6")
 				(pin "1")
+				(pinfunction "K_1")
 				(pintype "passive")
 			)
 			(node
@@ -9980,33 +9937,6 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "U1")
-				(pin "5")
-				(pinfunction "VOUT_5")
-				(pintype "power_out")
-			)
-			(node
-				(ref "U4")
-				(pin "1")
-				(pinfunction "VCC_1")
-				(pintype "power_in")
-			)
-		)
-		(net
-			(code "2")
-			(name "+3V3_CLK")
-			(class "Default")
-			(node
-				(ref "C4")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "FB1")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
 				(ref "R27")
 				(pin "1")
 				(pintype "passive")
@@ -10017,25 +9947,14 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R5")
+				(ref "U4")
 				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U2")
-				(pin "1")
-				(pinfunction "VDD_1")
-				(pintype "power_in")
-			)
-			(node
-				(ref "U2")
-				(pin "7")
-				(pinfunction "VDDO_7")
+				(pinfunction "VCC_1")
 				(pintype "power_in")
 			)
 		)
 		(net
-			(code "3")
+			(code "4")
 			(name "+3V3_OLED")
 			(class "Default")
 			(node
@@ -10066,7 +9985,7 @@
 			)
 		)
 		(net
-			(code "4")
+			(code "5")
 			(name "+5V")
 			(class "Default")
 			(node
@@ -10161,7 +10080,7 @@
 			)
 		)
 		(net
-			(code "5")
+			(code "6")
 			(name "/MCU and UI/BTN_BAND")
 			(class "Default")
 			(node
@@ -10182,7 +10101,7 @@
 			)
 		)
 		(net
-			(code "6")
+			(code "7")
 			(name "/MCU and UI/BTN_BAND_SW")
 			(class "Default")
 			(node
@@ -10203,7 +10122,7 @@
 			)
 		)
 		(net
-			(code "7")
+			(code "8")
 			(name "/MCU and UI/BTN_MENU")
 			(class "Default")
 			(node
@@ -10224,7 +10143,7 @@
 			)
 		)
 		(net
-			(code "8")
+			(code "9")
 			(name "/MCU and UI/BTN_MENU_SW")
 			(class "Default")
 			(node
@@ -10245,7 +10164,7 @@
 			)
 		)
 		(net
-			(code "9")
+			(code "10")
 			(name "/MCU and UI/BTN_STEP")
 			(class "Default")
 			(node
@@ -10266,7 +10185,7 @@
 			)
 		)
 		(net
-			(code "10")
+			(code "11")
 			(name "/MCU and UI/BTN_STEP_SW")
 			(class "Default")
 			(node
@@ -10287,7 +10206,7 @@
 			)
 		)
 		(net
-			(code "11")
+			(code "12")
 			(name "/MCU and UI/ENC_A")
 			(class "Default")
 			(node
@@ -10308,7 +10227,7 @@
 			)
 		)
 		(net
-			(code "12")
+			(code "13")
 			(name "/MCU and UI/ENC_A_SW")
 			(class "Default")
 			(node
@@ -10329,7 +10248,7 @@
 			)
 		)
 		(net
-			(code "13")
+			(code "14")
 			(name "/MCU and UI/ENC_B")
 			(class "Default")
 			(node
@@ -10350,7 +10269,7 @@
 			)
 		)
 		(net
-			(code "14")
+			(code "15")
 			(name "/MCU and UI/ENC_B_SW")
 			(class "Default")
 			(node
@@ -10371,7 +10290,7 @@
 			)
 		)
 		(net
-			(code "15")
+			(code "16")
 			(name "/MCU and UI/ENC_SW")
 			(class "Default")
 			(node
@@ -10392,7 +10311,7 @@
 			)
 		)
 		(net
-			(code "16")
+			(code "17")
 			(name "/MCU and UI/ENC_SW_SW")
 			(class "Default")
 			(node
@@ -10410,27 +10329,6 @@
 				(pin "S1")
 				(pinfunction "S1_S1")
 				(pintype "passive")
-			)
-		)
-		(net
-			(code "17")
-			(name "/MCU and UI/MCU_RESET")
-			(class "Default")
-			(node
-				(ref "C14")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R12")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "U4")
-				(pin "7")
-				(pinfunction "PB4_7")
-				(pintype "bidirectional")
 			)
 		)
 		(net
@@ -10572,47 +10470,9 @@
 				(pinfunction "Pin_2_2")
 				(pintype "passive")
 			)
-			(node
-				(ref "JP1")
-				(pin "2")
-				(pinfunction "B_2")
-				(pintype "passive")
-			)
 		)
 		(net
 			(code "26")
-			(name "/Power and USB/CC1")
-			(class "Default")
-			(node
-				(ref "J1")
-				(pin "A5")
-				(pinfunction "CC1_A5")
-				(pintype "bidirectional")
-			)
-			(node
-				(ref "R1")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "27")
-			(name "/Power and USB/CC2")
-			(class "Default")
-			(node
-				(ref "J1")
-				(pin "B5")
-				(pinfunction "CC2_B5")
-				(pintype "bidirectional")
-			)
-			(node
-				(ref "R2")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "28")
 			(name "/Power and USB/CP_RST")
 			(class "Default")
 			(node
@@ -10628,7 +10488,7 @@
 			)
 		)
 		(net
-			(code "29")
+			(code "27")
 			(name "/Power and USB/CP_VBUS_SENSE")
 			(class "Default")
 			(node
@@ -10649,7 +10509,7 @@
 			)
 		)
 		(net
-			(code "30")
+			(code "28")
 			(name "/Power and USB/CP_VDD")
 			(class "Default")
 			(node
@@ -10676,60 +10536,7 @@
 			)
 		)
 		(net
-			(code "31")
-			(name "/Power and USB/OLED_LDO_OUT")
-			(class "Default")
-			(node
-				(ref "C9")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "FB2")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U5")
-				(pin "5")
-				(pinfunction "VOUT_5")
-				(pintype "power_out")
-			)
-		)
-		(net
-			(code "32")
-			(name "/Power and USB/U1_BP")
-			(class "Default")
-			(node
-				(ref "C2")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U1")
-				(pin "4")
-				(pinfunction "BP_4")
-				(pintype "input")
-			)
-		)
-		(net
-			(code "33")
-			(name "/Power and USB/U5_BP")
-			(class "Default")
-			(node
-				(ref "C8")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U5")
-				(pin "4")
-				(pinfunction "BP_4")
-				(pintype "input")
-			)
-		)
-		(net
-			(code "34")
+			(code "29")
 			(name "/Power and USB/USB_DM")
 			(class "Default")
 			(node
@@ -10758,7 +10565,7 @@
 			)
 		)
 		(net
-			(code "35")
+			(code "30")
 			(name "/Power and USB/USB_DP")
 			(class "Default")
 			(node
@@ -10787,7 +10594,7 @@
 			)
 		)
 		(net
-			(code "36")
+			(code "31")
 			(name "/Synth and RF outputs/CLK0")
 			(class "Default")
 			(node
@@ -10803,178 +10610,7 @@
 			)
 		)
 		(net
-			(code "37")
-			(name "/Synth and RF outputs/CLK0_DC")
-			(class "Default")
-			(node
-				(ref "C100")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R101")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R102")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R104")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "38")
-			(name "/Synth and RF outputs/CLK0_F1")
-			(class "Default")
-			(node
-				(ref "C101")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C105")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "L1")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R102")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "39")
-			(name "/Synth and RF outputs/CLK0_F2")
-			(class "Default")
-			(node
-				(ref "C102")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C105")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "C106")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "L1")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "L2")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "40")
-			(name "/Synth and RF outputs/CLK0_F3")
-			(class "Default")
-			(node
-				(ref "C103")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C106")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "C107")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "L2")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "L3")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "41")
-			(name "/Synth and RF outputs/CLK0_F4")
-			(class "Default")
-			(node
-				(ref "C104")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C107")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "L3")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R103")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "42")
-			(name "/Synth and RF outputs/CLK0_OUT")
-			(class "Default")
-			(node
-				(ref "J2")
-				(pin "1")
-				(pinfunction "In_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R103")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R104")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "43")
-			(name "/Synth and RF outputs/CLK0_S")
-			(class "Default")
-			(node
-				(ref "C100")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R100")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "44")
+			(code "32")
 			(name "/Synth and RF outputs/CLK1")
 			(class "Default")
 			(node
@@ -10990,178 +10626,7 @@
 			)
 		)
 		(net
-			(code "45")
-			(name "/Synth and RF outputs/CLK1_DC")
-			(class "Default")
-			(node
-				(ref "C120")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R121")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R122")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R124")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "46")
-			(name "/Synth and RF outputs/CLK1_F1")
-			(class "Default")
-			(node
-				(ref "C121")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C125")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "L4")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R122")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "47")
-			(name "/Synth and RF outputs/CLK1_F2")
-			(class "Default")
-			(node
-				(ref "C122")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C125")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "C126")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "L4")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "L5")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "48")
-			(name "/Synth and RF outputs/CLK1_F3")
-			(class "Default")
-			(node
-				(ref "C123")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C126")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "C127")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "L5")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "L6")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "49")
-			(name "/Synth and RF outputs/CLK1_F4")
-			(class "Default")
-			(node
-				(ref "C124")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C127")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "L6")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R123")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "50")
-			(name "/Synth and RF outputs/CLK1_OUT")
-			(class "Default")
-			(node
-				(ref "J3")
-				(pin "1")
-				(pinfunction "In_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R123")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R124")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "51")
-			(name "/Synth and RF outputs/CLK1_S")
-			(class "Default")
-			(node
-				(ref "C120")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R120")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "52")
+			(code "33")
 			(name "/Synth and RF outputs/CLK2")
 			(class "Default")
 			(node
@@ -11177,252 +10642,7 @@
 			)
 		)
 		(net
-			(code "53")
-			(name "/Synth and RF outputs/CLK2_DC")
-			(class "Default")
-			(node
-				(ref "C140")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R141")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R142")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R144")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "54")
-			(name "/Synth and RF outputs/CLK2_F1")
-			(class "Default")
-			(node
-				(ref "C141")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C145")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "L7")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R142")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "55")
-			(name "/Synth and RF outputs/CLK2_F2")
-			(class "Default")
-			(node
-				(ref "C142")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C145")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "C146")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "L7")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "L8")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "56")
-			(name "/Synth and RF outputs/CLK2_F3")
-			(class "Default")
-			(node
-				(ref "C143")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C146")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "C147")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "L8")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "L9")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "57")
-			(name "/Synth and RF outputs/CLK2_F4")
-			(class "Default")
-			(node
-				(ref "C144")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C147")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "L9")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R143")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "58")
-			(name "/Synth and RF outputs/CLK2_OUT")
-			(class "Default")
-			(node
-				(ref "J4")
-				(pin "1")
-				(pinfunction "In_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R143")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R144")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "59")
-			(name "/Synth and RF outputs/CLK2_S")
-			(class "Default")
-			(node
-				(ref "C140")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R140")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "60")
-			(name "/Synth and RF outputs/SI_XA")
-			(class "Default")
-			(node
-				(ref "C6")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "U2")
-				(pin "2")
-				(pinfunction "XA_2")
-				(pintype "input")
-			)
-		)
-		(net
-			(code "61")
-			(name "/Synth and RF outputs/TCXO_EN")
-			(class "Default")
-			(node
-				(ref "R6")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "X1")
-				(pin "1")
-				(pinfunction "NC/EN_1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "62")
-			(name "/Synth and RF outputs/TCXO_OUT")
-			(class "Default")
-			(node
-				(ref "C6")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "X1")
-				(pin "3")
-				(pinfunction "OUT_3")
-				(pintype "output")
-			)
-		)
-		(net
-			(code "63")
-			(name "/Synth and RF outputs/TCXO_VDD")
-			(class "Default")
-			(node
-				(ref "C5")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R5")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R6")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "X1")
-				(pin "4")
-				(pinfunction "VDD_4")
-				(pintype "power_in")
-			)
-		)
-		(net
-			(code "64")
+			(code "34")
 			(name "DTR")
 			(class "Default")
 			(node
@@ -11438,7 +10658,7 @@
 			)
 		)
 		(net
-			(code "65")
+			(code "35")
 			(name "GND")
 			(class "Default")
 			(node
@@ -11786,7 +11006,7 @@
 			)
 		)
 		(net
-			(code "66")
+			(code "36")
 			(name "I2C_SCL")
 			(class "Default")
 			(node
@@ -11808,7 +11028,7 @@
 			)
 		)
 		(net
-			(code "67")
+			(code "37")
 			(name "I2C_SDA")
 			(class "Default")
 			(node
@@ -11830,15 +11050,9 @@
 			)
 		)
 		(net
-			(code "68")
+			(code "38")
 			(name "MCU_RX")
 			(class "Default")
-			(node
-				(ref "JP1")
-				(pin "1")
-				(pinfunction "A_1")
-				(pintype "passive")
-			)
 			(node
 				(ref "U3")
 				(pin "21")
@@ -11853,15 +11067,9 @@
 			)
 		)
 		(net
-			(code "69")
+			(code "39")
 			(name "MCU_TX")
 			(class "Default")
-			(node
-				(ref "JP2")
-				(pin "1")
-				(pinfunction "A_1")
-				(pintype "passive")
-			)
 			(node
 				(ref "U3")
 				(pin "20")
@@ -11876,7 +11084,457 @@
 			)
 		)
 		(net
-			(code "70")
+			(code "40")
+			(name "Net-(C100-Pad1)")
+			(class "Default")
+			(node
+				(ref "C100")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R100")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "41")
+			(name "Net-(C100-Pad2)")
+			(class "Default")
+			(node
+				(ref "C100")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R101")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R102")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R104")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "42")
+			(name "Net-(C101-Pad1)")
+			(class "Default")
+			(node
+				(ref "C101")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C105")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "L1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R102")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "43")
+			(name "Net-(C102-Pad1)")
+			(class "Default")
+			(node
+				(ref "C102")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C105")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C106")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "L1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "L2")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "44")
+			(name "Net-(C103-Pad1)")
+			(class "Default")
+			(node
+				(ref "C103")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C106")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C107")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "L2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "L3")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "45")
+			(name "Net-(C104-Pad1)")
+			(class "Default")
+			(node
+				(ref "C104")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C107")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "L3")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R103")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "46")
+			(name "Net-(C120-Pad1)")
+			(class "Default")
+			(node
+				(ref "C120")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R120")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "47")
+			(name "Net-(C120-Pad2)")
+			(class "Default")
+			(node
+				(ref "C120")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R121")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R122")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R124")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "48")
+			(name "Net-(C121-Pad1)")
+			(class "Default")
+			(node
+				(ref "C121")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C125")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "L4")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R122")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "49")
+			(name "Net-(C122-Pad1)")
+			(class "Default")
+			(node
+				(ref "C122")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C125")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C126")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "L4")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "L5")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "50")
+			(name "Net-(C123-Pad1)")
+			(class "Default")
+			(node
+				(ref "C123")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C126")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C127")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "L5")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "L6")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "51")
+			(name "Net-(C124-Pad1)")
+			(class "Default")
+			(node
+				(ref "C124")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C127")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "L6")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R123")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "52")
+			(name "Net-(C140-Pad1)")
+			(class "Default")
+			(node
+				(ref "C140")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R140")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "53")
+			(name "Net-(C140-Pad2)")
+			(class "Default")
+			(node
+				(ref "C140")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R141")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R142")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R144")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "54")
+			(name "Net-(C141-Pad1)")
+			(class "Default")
+			(node
+				(ref "C141")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C145")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "L7")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R142")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "55")
+			(name "Net-(C142-Pad1)")
+			(class "Default")
+			(node
+				(ref "C142")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C145")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C146")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "L7")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "L8")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "56")
+			(name "Net-(C143-Pad1)")
+			(class "Default")
+			(node
+				(ref "C143")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C146")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C147")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "L8")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "L9")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "57")
+			(name "Net-(C144-Pad1)")
+			(class "Default")
+			(node
+				(ref "C144")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C147")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "L9")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R143")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "58")
 			(name "Net-(D4-A)")
 			(class "Default")
 			(node
@@ -11892,19 +11550,13 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "JP2")
-				(pin "2")
-				(pinfunction "B_2")
-				(pintype "passive")
-			)
-			(node
 				(ref "R13")
 				(pin "2")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "71")
+			(code "59")
 			(name "Net-(D5-A)")
 			(class "Default")
 			(node
@@ -11921,7 +11573,250 @@
 			)
 		)
 		(net
+			(code "60")
+			(name "Net-(J1-CC1)")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "A5")
+				(pinfunction "CC1_A5")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R1")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "61")
+			(name "Net-(J1-CC2)")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "B5")
+				(pinfunction "CC2_B5")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R2")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "62")
+			(name "Net-(J2-In)")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "In_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R103")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R104")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "63")
+			(name "Net-(J3-In)")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "1")
+				(pinfunction "In_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R123")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R124")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "64")
+			(name "Net-(J4-In)")
+			(class "Default")
+			(node
+				(ref "J4")
+				(pin "1")
+				(pinfunction "In_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R143")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R144")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "65")
+			(name "Net-(U1-BP)")
+			(class "Default")
+			(node
+				(ref "C2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "4")
+				(pinfunction "BP_4")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "66")
+			(name "Net-(U2-XA)")
+			(class "Default")
+			(node
+				(ref "C6")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "2")
+				(pinfunction "XA_2")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "67")
+			(name "Net-(U4-PB4)")
+			(class "Default")
+			(node
+				(ref "C14")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R12")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U4")
+				(pin "7")
+				(pinfunction "PB4_7")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "68")
+			(name "Net-(U5-BP)")
+			(class "Default")
+			(node
+				(ref "C8")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U5")
+				(pin "4")
+				(pinfunction "BP_4")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "69")
+			(name "Net-(U5-VOUT)")
+			(class "Default")
+			(node
+				(ref "C9")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "FB2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U5")
+				(pin "5")
+				(pinfunction "VOUT_5")
+				(pintype "power_out")
+			)
+		)
+		(net
+			(code "70")
+			(name "Net-(X1-NC{slash}EN)")
+			(class "Default")
+			(node
+				(ref "R6")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "X1")
+				(pin "1")
+				(pinfunction "NC/EN_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "71")
+			(name "Net-(X1-OUT)")
+			(class "Default")
+			(node
+				(ref "C6")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "X1")
+				(pin "3")
+				(pinfunction "OUT_3")
+				(pintype "output")
+			)
+		)
+		(net
 			(code "72")
+			(name "Net-(X1-VDD)")
+			(class "Default")
+			(node
+				(ref "C5")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R5")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R6")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "X1")
+				(pin "4")
+				(pinfunction "VDD_4")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "73")
 			(name "unconnected-(J1-SBU1-PadA8)")
 			(class "Default")
 			(node
@@ -11932,7 +11827,7 @@
 			)
 		)
 		(net
-			(code "73")
+			(code "74")
 			(name "unconnected-(J1-SBU2-PadB8)")
 			(class "Default")
 			(node
@@ -11943,7 +11838,7 @@
 			)
 		)
 		(net
-			(code "74")
+			(code "75")
 			(name "unconnected-(U2-XB-Pad3)")
 			(class "Default")
 			(node
@@ -11954,7 +11849,7 @@
 			)
 		)
 		(net
-			(code "75")
+			(code "76")
 			(name "unconnected-(U3-NC-Pad10)")
 			(class "Default")
 			(node
@@ -11965,7 +11860,7 @@
 			)
 		)
 		(net
-			(code "76")
+			(code "77")
 			(name "unconnected-(U3-NC-Pad16)")
 			(class "Default")
 			(node
@@ -11976,7 +11871,7 @@
 			)
 		)
 		(net
-			(code "77")
+			(code "78")
 			(name "unconnected-(U3-RS485{slash}GPIO.2-Pad12)")
 			(class "Default")
 			(node
@@ -11987,7 +11882,7 @@
 			)
 		)
 		(net
-			(code "78")
+			(code "79")
 			(name "unconnected-(U3-SUSPEND-Pad17)")
 			(class "Default")
 			(node
@@ -11998,7 +11893,7 @@
 			)
 		)
 		(net
-			(code "79")
+			(code "80")
 			(name "unconnected-(U3-~{CTS}-Pad18)")
 			(class "Default")
 			(node
@@ -12009,7 +11904,7 @@
 			)
 		)
 		(net
-			(code "80")
+			(code "81")
 			(name "unconnected-(U3-~{DCD}-Pad24)")
 			(class "Default")
 			(node
@@ -12020,7 +11915,7 @@
 			)
 		)
 		(net
-			(code "81")
+			(code "82")
 			(name "unconnected-(U3-~{DSR}-Pad22)")
 			(class "Default")
 			(node
@@ -12031,7 +11926,7 @@
 			)
 		)
 		(net
-			(code "82")
+			(code "83")
 			(name "unconnected-(U3-~{RI}{slash}CLK-Pad1)")
 			(class "Default")
 			(node
@@ -12042,7 +11937,7 @@
 			)
 		)
 		(net
-			(code "83")
+			(code "84")
 			(name "unconnected-(U3-~{RTS}-Pad19)")
 			(class "Default")
 			(node
@@ -12053,7 +11948,7 @@
 			)
 		)
 		(net
-			(code "84")
+			(code "85")
 			(name "unconnected-(U3-~{RXT}{slash}GPIO.1-Pad13)")
 			(class "Default")
 			(node
@@ -12064,7 +11959,7 @@
 			)
 		)
 		(net
-			(code "85")
+			(code "86")
 			(name "unconnected-(U3-~{SUSPEND}-Pad15)")
 			(class "Default")
 			(node
@@ -12075,7 +11970,7 @@
 			)
 		)
 		(net
-			(code "86")
+			(code "87")
 			(name "unconnected-(U3-~{TXT}{slash}GPIO.0-Pad14)")
 			(class "Default")
 			(node
@@ -12086,7 +11981,7 @@
 			)
 		)
 		(net
-			(code "87")
+			(code "88")
 			(name "unconnected-(U3-~{WAKEUP}{slash}GPIO.3-Pad11)")
 			(class "Default")
 			(node
