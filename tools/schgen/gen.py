@@ -39,7 +39,7 @@ C(P,'C10','100n',125,120,'+5V','GND',fp=C0603,fields=LC('C14663','CC0603KRX7R9BB
 C(P,'C11','4.7u',137.16,120,'+5V','GND',fp=C0603,fields=LC('C1705','CL10A475KP8NNNC','Samsung'))
 P.place('Interface_USB','CP2102N-Axx-xQFN24','U3','CP2102N-A02-GQFN24',190,85,
   {'3':'USB_DP','4':'USB_DM','8':'CP_VBUS_SENSE','9':'CP_RST','5':'WIRE','6':('CP_VDD',2.54),'7':('+5V',7.62),'2':'GND',
-   '21':'MCU_RX','20':'MCU_TX','23':'DTR','14':'LED_TXT','13':'LED_RXT'},
+   '21':'MCU_RX','20':'MCU_TX','23':'DTR','14':'NC','13':'NC'},
   fields=LC('C969151','CP2102N-A02-GQFN24R','Silicon Labs'),vfy='Unused CP2102N pins left NC (adapter used DTR via JP1, TRRS dropped). Confirm none were strapped on the adapter.')
 x5,y5=P.pinpos[('U3','5')]; x6,y6=P.pinpos[('U3','6')]; P.wire([(x5,y5),(x5,y5-2.54),(x6,y6-2.54)])
 R(P,'R7','22.1k',150,60,'+5V','CP_VBUS_SENSE',fp=R0603,fields=LC('C137768','RC0603FR-0722K1L','YAGEO'))
@@ -49,13 +49,6 @@ R(P,'R9','1k',137.16,60,'+5V','CP_RST',fp=R0603,fields=LC('C110776','RT0603BRD07
 C(P,'C12','4.7u',220,50,'CP_VDD','GND',fp=C0603,fields=LC('C1705','CL10A475KP8NNNC','Samsung'))
 C(P,'C13','100n',232.41,50,'CP_VDD','GND',fp=C0603,fields=LC('C14663','CC0603KRX7R9BB104','YAGEO'))
 P.flag(245.11,45); P.label('CP_VDD',245.11,45,0)
-R(P,'R10','470',250,100,'CP_VDD','WIRE',fp=R0603,fields=LC('C114669','RC0603FR-07470RL','YAGEO'))
-P.place('Device','LED_Small','D2','RED',250,112.5,{'1':'LED_TXT','2':'WIRE'},r=90,fp='LED_SMD:LED_0603_1608Metric',fields=LC('C497918','HL-PT-1608S52FC-L','Honglitronic'),
-  fieldpos={'Reference':(3.5,-1),'Value':(3.5,1.5)},vfy='LED drive topology (VDD->R->LED->GPIO active-low) assumed; PLAN only says CP2102N pin 14. Optional per PLAN Q5.')
-P.wire([P.pinpos[('R10','2')],P.pinpos[('D2','2')]])
-R(P,'R11','330',275,100,'CP_VDD','WIRE',fp=R0603,fields=LC('C105881','RC0603FR-07330RL','YAGEO'))
-P.place('Device','LED_Small','D3','BLUE',275,112.5,{'1':'LED_RXT','2':'WIRE'},r=90,fp='LED_SMD:LED_0603_1608Metric',fields=LC('C497919','HL-PT-1608H392BC-L','Honglitronic'),
-  fieldpos={'Reference':(3.5,-1),'Value':(3.5,1.5)},vfy='Same topology assumption as D2 (pin 13). Optional per PLAN Q5.')
 # LDOs
 def ldo(ref,X,Y,out,cin,cbp,cout):
     P.place('Regulator_Linear','LP2985-3.3',ref,'LP2985-3.3',X,Y,{'1':('+5V',7.62),'3':'WIRE','4':'%s_BP'%ref,'5':out if not out.startswith('+') else (out,7.62),'2':'GND'},
@@ -64,7 +57,6 @@ def ldo(ref,X,Y,out,cin,cbp,cout):
     C(P,cin,'1u',X-30,Y+17.78,'+5V','GND',fields=C1U)
     C(P,cbp,'100n',X+20,Y+17.78,'%s_BP'%ref,'GND',fields=C100N)
     C(P,cout,'4.7u',X+35,Y+17.78,out,'GND',fields=C4U7)
-P.wire([P.pinpos[('R11','2')],P.pinpos[('D3','2')]])
 P.text('U1: +3V3D (MCU) and, via FB1, +3V3_CLK (Si5351 + TCXO). Rev F U1/C1/C2/C3.',30,150)
 ldo('U1',70,170,'+3V3D','C1','C2','C3')
 FB(P,'FB1','BLM18PG221',140,185,('+3V3D',7.62),('+3V3_CLK',7.62),r=90,fields=LC('C80165','BLM18PG221SN1D','Murata'))
@@ -90,9 +82,40 @@ M.place('MCU_Microchip_ATtiny','ATtiny3226-S','U4','ATtiny3226-SU',150,110,
 C(M,'C15','100n',120,70,'+3V3D','GND',fields=C100N); C(M,'C16','4.7u',132.08,70,'+3V3D','GND',fields=C4U7)
 C(M,'C14','100n',200,150,'DTR','MCU_RESET',r=90,fields=C100N,vfy='PLAN: series R or clamp on PB4 for DTR-rising overshoot? EKM has none.')
 R(M,'R12','10k',215,140,'+3V3D','MCU_RESET',fields=R10K)
-R(M,'R13','470',200,170,'UPDI_PA0','UPDI',r=90,fp=R0603,fields=LC('C114669','RC0603FR-07470RL','YAGEO'))
-M.place('Connector_Generic','Conn_01x03','J5','UPDI',240,175,{'1':'UPDI','2':'GND','3':'+3V3D'},fp='Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical',dnp=True,
-  vfy='Generic header, no part number (PLAN). Pin order UPDI/GND/3V3 per PLAN.')
+# UPDI: replicated exactly from EtherKeyerMini PCB/EtherKeyerMini.kicad_sch (J3,R3,D1,D2,JP2,JP3)
+EKMV='Replicated from EtherKeyerMini (%s); EKM has no LCSC/MPN fields - part number to choose.'
+M.text('UPDI / serial-UPDI header, circuit copied from EtherKeyerMini (J3,R3,D1,D2,JP2,JP3 -> J5,R13,D4,D5,JP1,JP2).\nPin 1 VCC (via D5), 2 TXD, 3 RXD/UPDI, 4 GND. JP1/JP2 open by default.',262,140)
+M.place('Connector_Generic','Conn_01x04','J5','UPDI',334,170.18,{'1':'WIRE','2':'WIRE','3':'WIRE','4':'WIRE'},
+  fp='Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical',vfy=EKMV%'J3')
+p1,p2,p3,p4=[M.pinpos[('J5',n)] for n in '1234']
+M.wire([p4,(p4[0]-2.54,p4[1])]); M.power('GND',p4[0]-2.54,p4[1],'left')
+M.wire([p2,(p2[0]-2.54,p2[1])]); M.label('UPDI_TXD',p2[0]-2.54,p2[1],180)
+M.place('Device','D_Schottky','D5','1N5711',308.61,167.64,{'1':'WIRE','2':'WIRE'},fp='Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal',vfy=EKMV%'D2',
+  fieldpos={'Reference':(0,-2.8),'Value':(0,-5.08)})
+k=M.pinpos[('D5','1')]; a_=M.pinpos[('D5','2')]
+M.wire([a_,p1]); M.wire([k,(k[0]-5.08,k[1])]); M.power('+3V3D',k[0]-5.08,k[1],'up')
+R(M,'R13','470',270.51,177.8,'UPDI_PA0','WIRE',r=90,fp='Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical',vfy=EKMV%'R3')
+r2=M.pinpos[('R13','2')]
+M.wire([r2,(p3[0]-7.62,r2[1]),(p3[0]-7.62,p3[1]),p3])
+jx=309.88
+M.place('Device','D_Schottky','D4','1N5711',jx,185.42,{'1':'WIRE','2':'WIRE'},r=90,fp='Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal',vfy=EKMV%'D1',
+  fieldpos={'Reference':(5.08,-1.27),'Value':(7.62,1.27)})
+dA=M.pinpos[('D4','2')]; dK=M.pinpos[('D4','1')]
+top,bot=(dA,dK) if dA[1]<dK[1] else (dK,dA)
+M.wire([(jx,r2[1]),top]); M.wire([bot,(jx,bot[1]+2.54),(jx+5.08,bot[1]+2.54)]); M.label('UPDI_TXD',jx+5.08,bot[1]+2.54,0)
+M.junction(jx,r2[1])
+for ref,x,n1 in (('JP2',295.91,'MCU_TX'),('JP1',254,'MCU_RX')):
+    M.place('Jumper','SolderJumper_2_Open',ref,'SolderJumper_2_Bridged',x,187.96,{'1':'WIRE','2':'WIRE'},r=90,fp='Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm',
+      vfy=(EKMV%('JP3' if ref=='JP2' else 'JP2'))+' Open by default; bridging parallels the CP2102N UART on '+n1+'.',fieldpos={'Reference':(2.54,-1.27),'Value':(0,20.32)})
+    q1=M.pinpos[(ref,'1')]; q2=M.pinpos[(ref,'2')]
+    lo,hi=(q1,q2) if q1[1]>q2[1] else (q2,q1)
+    M.wire([lo,(x,lo[1]+2.54)]); M.label(n1,x,lo[1]+2.54,270)
+    if ref=='JP2':
+        M.wire([hi,(x,r2[1])]); M.junction(x,r2[1])
+    else:
+        M.wire([hi,(x,hi[1]-2.54)]); M.label('UPDI_TXD',x,hi[1]-2.54,90)
+    print(ref,q1,q2)
+print('D4',dA,dK,'D5',k,a_)
 M.place('Connector_Generic','Conn_01x08','DS1','HS13L01W4S01',300,100,
  {'1':'WIRE','2':('+3V3_OLED',17.78),'3':'OLED_SCK','4':'OLED_MOSI','5':'OLED_DC','6':'OLED_CS1','7':'OLED_FS0','8':'OLED_CS2'},
  fp='Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical',fields=LC('C5139764','HS13L01W4S01','HS'),

@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/workspace/Si5351AVFO/Si5351AVFO.kicad_sch")
-		(date "2026-10-22T19:12:53")
+		(date "2026-10-22T20:28:31")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
@@ -255,7 +255,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "e5d112db-ad7a-4a9a-a852-b5aad3f2a44c")
+			(tstamps "9a7b8090-7a20-4db4-aad9-faa52faf8a6c")
 			(units
 				(unit
 					(name "A")
@@ -327,7 +327,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "534326b7-c5a4-42ed-9614-c99a122dadb3")
+			(tstamps "728c00f1-04f0-4a99-940a-abe54e8cb77c")
 			(units
 				(unit
 					(name "A")
@@ -399,7 +399,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "91101798-ad35-4c4a-ad8f-50b5f1b4fadb")
+			(tstamps "ccb68f24-6453-4b1d-bb97-ee21b670ac85")
 			(units
 				(unit
 					(name "A")
@@ -471,7 +471,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "9bade571-aaa9-4ecf-a391-92459df13a2a")
+			(tstamps "31b42a2c-b827-4729-8e17-2e3c74cc154c")
 			(units
 				(unit
 					(name "A")
@@ -543,7 +543,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "ce28fc23-cc45-4113-98a8-ec06375b8fd1")
+			(tstamps "0832aabb-add3-4c25-a164-21d0bd14fd35")
 			(units
 				(unit
 					(name "A")
@@ -615,7 +615,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "a654f561-a064-4eeb-80cd-d973cec1fa2f")
+			(tstamps "fd6da902-373d-43f6-a367-25ab4d7c4c85")
 			(units
 				(unit
 					(name "A")
@@ -693,7 +693,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "b8ebf64e-1ad1-43d2-91f7-eaf1879be6a0")
+			(tstamps "026fefb0-ea30-4239-acde-c5a65716cb92")
 			(units
 				(unit
 					(name "A")
@@ -765,7 +765,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "747aa499-2a69-48be-9849-73c33bc9b115")
+			(tstamps "c8001caf-fcf9-40c7-8bc4-ea4e6109b8db")
 			(units
 				(unit
 					(name "A")
@@ -837,7 +837,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "6263953c-9e0d-405c-9c31-76ec4a0c9b02")
+			(tstamps "7f8afd04-84af-4c80-bef8-67ad9279c2e0")
 			(units
 				(unit
 					(name "A")
@@ -909,7 +909,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "b029e019-a9c1-4a2c-a5f8-c55eef458b53")
+			(tstamps "b752490f-e003-40da-9095-6645271aefb1")
 			(units
 				(unit
 					(name "A")
@@ -987,7 +987,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "97422f80-14c4-4e03-b273-3f76ba716f90")
+			(tstamps "47a9c90b-862f-46a1-a522-c3c1e2a8d62d")
 			(units
 				(unit
 					(name "A")
@@ -1059,7 +1059,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "4a355c95-3d90-4d02-9543-dd3a5a851dc6")
+			(tstamps "6f30bbe2-0ac9-4697-ac69-a37ba7440d08")
 			(units
 				(unit
 					(name "A")
@@ -1122,7 +1122,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "c6f89e95-bff0-4903-b627-551f05d067e1")
+			(tstamps "d2c18e5c-682b-484c-b499-9fdfcb2d7dec")
 			(units
 				(unit
 					(name "A")
@@ -1200,7 +1200,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "f94b6cbb-c3f7-4394-a05c-54e089cdbcd2")
+			(tstamps "73970756-e1c0-4253-bc8b-e6a7abba627c")
 			(units
 				(unit
 					(name "A")
@@ -1216,162 +1216,6 @@
 						)
 						(pin
 							(num "4")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "D2")
-			(value "RED")
-			(footprint "LED_SMD:LED_0603_1608Metric")
-			(description "Light emitting diode, small symbol")
-			(fields
-				(field
-					(name "LCSC") "C497918")
-				(field
-					(name "MPN") "HL-PT-1608S52FC-L")
-				(field
-					(name "Manufacturer") "Honglitronic")
-				(field
-					(name "VERIFY") "LED drive topology (VDD->R->LED->GPIO active-low) assumed; PLAN only says CP2102N pin 14. Optional per PLAN Q5.")
-				(field
-					(name "Footprint") "LED_SMD:LED_0603_1608Metric")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Light emitting diode, small symbol")
-			)
-			(libsource
-				(lib "Device")
-				(part "LED_Small")
-				(description "Light emitting diode, small symbol")
-			)
-			(property
-				(name "LCSC")
-				(value "C497918")
-			)
-			(property
-				(name "MPN")
-				(value "HL-PT-1608S52FC-L")
-			)
-			(property
-				(name "Manufacturer")
-				(value "Honglitronic")
-			)
-			(property
-				(name "VERIFY")
-				(value "LED drive topology (VDD->R->LED->GPIO active-low) assumed; PLAN only says CP2102N pin 14. Optional per PLAN Q5.")
-			)
-			(property
-				(name "Sheetname")
-				(value "Power and USB")
-			)
-			(property
-				(name "Sheetfile")
-				(value "power_usb.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "LED diode light-emitting-diode")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "LED* LED_SMD:* LED_THT:*")
-			)
-			(sheetpath
-				(names "/Power and USB/")
-				(tstamps "/b0000000-0000-4000-8000-000000000002/")
-			)
-			(tstamps "a2bfa1ea-4d95-4537-8440-f0b906113edc")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "D3")
-			(value "BLUE")
-			(footprint "LED_SMD:LED_0603_1608Metric")
-			(description "Light emitting diode, small symbol")
-			(fields
-				(field
-					(name "LCSC") "C497919")
-				(field
-					(name "MPN") "HL-PT-1608H392BC-L")
-				(field
-					(name "Manufacturer") "Honglitronic")
-				(field
-					(name "VERIFY") "Same topology assumption as D2 (pin 13). Optional per PLAN Q5.")
-				(field
-					(name "Footprint") "LED_SMD:LED_0603_1608Metric")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Light emitting diode, small symbol")
-			)
-			(libsource
-				(lib "Device")
-				(part "LED_Small")
-				(description "Light emitting diode, small symbol")
-			)
-			(property
-				(name "LCSC")
-				(value "C497919")
-			)
-			(property
-				(name "MPN")
-				(value "HL-PT-1608H392BC-L")
-			)
-			(property
-				(name "Manufacturer")
-				(value "Honglitronic")
-			)
-			(property
-				(name "VERIFY")
-				(value "Same topology assumption as D2 (pin 13). Optional per PLAN Q5.")
-			)
-			(property
-				(name "Sheetname")
-				(value "Power and USB")
-			)
-			(property
-				(name "Sheetfile")
-				(value "power_usb.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "LED diode light-emitting-diode")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "LED* LED_SMD:* LED_THT:*")
-			)
-			(sheetpath
-				(names "/Power and USB/")
-				(tstamps "/b0000000-0000-4000-8000-000000000002/")
-			)
-			(tstamps "b465ef75-f023-4b0f-b4c8-eba57d7e49c7")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
 						)
 					)
 				)
@@ -1434,7 +1278,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "f467fe3a-ce89-406f-8f85-2f4d5e69cf7a")
+			(tstamps "6a9d6f37-0ad5-4774-b0cd-c3592381ed5a")
 			(units
 				(unit
 					(name "A")
@@ -1512,7 +1356,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "625d920d-374b-46cc-988d-24df6b38daa9")
+			(tstamps "7056e885-e398-4c00-8c71-99819868e6da")
 			(units
 				(unit
 					(name "A")
@@ -1566,7 +1410,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "eac8e4e4-9633-4fea-bfd3-2aa841b920a8")
+			(tstamps "7d30a8fa-9494-4246-a21d-f11f1e6947d4")
 			(units
 				(unit
 					(name "A")
@@ -1613,7 +1457,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "2cb243d1-a7d5-4d9d-98f4-2297eb4316ee")
+			(tstamps "42a2978b-81a4-4680-9a6c-a237adce92e5")
 			(units
 				(unit
 					(name "A")
@@ -1660,7 +1504,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "2df81461-8202-4402-a7bf-065cd8c8a291")
+			(tstamps "f3224085-dae1-42b2-8205-7495b8f4af3a")
 			(units
 				(unit
 					(name "A")
@@ -1707,7 +1551,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "33b53df4-cba2-477e-a4fb-c816bd696a34")
+			(tstamps "2ac42096-0304-49a1-87d5-23f24c98ba2a")
 			(units
 				(unit
 					(name "A")
@@ -1778,7 +1622,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "3864441a-750a-48a7-8402-63fc3996e2f6")
+			(tstamps "69325613-60f4-490a-87a0-5d94a2c3db3e")
 			(units
 				(unit
 					(name "A")
@@ -1895,7 +1739,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "9e04de39-71c6-4f31-a7d9-1be9e1230804")
+			(tstamps "e9c2e014-eb0f-42ed-864c-09b151759cb9")
 			(units
 				(unit
 					(name "A")
@@ -1967,7 +1811,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "692eff94-1620-4b14-8e57-1c2d48a7201f")
+			(tstamps "61a18a48-4049-4406-8543-f7215bab576e")
 			(units
 				(unit
 					(name "A")
@@ -2039,7 +1883,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "9c4fce5c-69a0-4b86-a6f8-a47eb03d1eb4")
+			(tstamps "30f31070-ccc6-4961-9483-183477a5f883")
 			(units
 				(unit
 					(name "A")
@@ -2111,7 +1955,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "c8f2eefe-82a5-4c78-a4de-fa798db50d83")
+			(tstamps "b8f5b7f3-f461-4999-b534-1efa552b43ec")
 			(units
 				(unit
 					(name "A")
@@ -2189,151 +2033,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "124ebf44-fe95-4236-a7c8-f0062c6fdced")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R10")
-			(value "470")
-			(footprint "Resistor_SMD:R_0603_1608Metric")
-			(description "Resistor, small symbol")
-			(fields
-				(field
-					(name "LCSC") "C114669")
-				(field
-					(name "MPN") "RC0603FR-07470RL")
-				(field
-					(name "Manufacturer") "YAGEO")
-				(field
-					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Resistor, small symbol")
-			)
-			(libsource
-				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
-			)
-			(property
-				(name "LCSC")
-				(value "C114669")
-			)
-			(property
-				(name "MPN")
-				(value "RC0603FR-07470RL")
-			)
-			(property
-				(name "Manufacturer")
-				(value "YAGEO")
-			)
-			(property
-				(name "Sheetname")
-				(value "Power and USB")
-			)
-			(property
-				(name "Sheetfile")
-				(value "power_usb.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/Power and USB/")
-				(tstamps "/b0000000-0000-4000-8000-000000000002/")
-			)
-			(tstamps "92ce8040-cc11-478a-872b-bf34e5021cb9")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R11")
-			(value "330")
-			(footprint "Resistor_SMD:R_0603_1608Metric")
-			(description "Resistor, small symbol")
-			(fields
-				(field
-					(name "LCSC") "C105881")
-				(field
-					(name "MPN") "RC0603FR-07330RL")
-				(field
-					(name "Manufacturer") "YAGEO")
-				(field
-					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Resistor, small symbol")
-			)
-			(libsource
-				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
-			)
-			(property
-				(name "LCSC")
-				(value "C105881")
-			)
-			(property
-				(name "MPN")
-				(value "RC0603FR-07330RL")
-			)
-			(property
-				(name "Manufacturer")
-				(value "YAGEO")
-			)
-			(property
-				(name "Sheetname")
-				(value "Power and USB")
-			)
-			(property
-				(name "Sheetfile")
-				(value "power_usb.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/Power and USB/")
-				(tstamps "/b0000000-0000-4000-8000-000000000002/")
-			)
-			(tstamps "6abb4ad0-bfc0-4e7e-bc03-655c9fad372f")
+			(tstamps "e60841d6-f197-4d4c-869b-911c4ba17235")
 			(units
 				(unit
 					(name "A")
@@ -2405,7 +2105,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "5d2202e8-1198-41ee-8d6f-40c9ed4a06e8")
+			(tstamps "ddef260d-7c4a-44e2-9149-4322faf9a4d9")
 			(units
 				(unit
 					(name "A")
@@ -2492,7 +2192,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "47fd7baa-ee14-4657-9013-833033efcce4")
+			(tstamps "e0fb9146-0e69-41d8-93c5-eb4c14443ded")
 			(units
 				(unit
 					(name "A")
@@ -2633,7 +2333,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "21f8e2e0-91b5-48ef-82c4-893a1c5a2433")
+			(tstamps "3be4063d-f566-4ef3-ae5b-ac3e08dbb5cb")
 			(units
 				(unit
 					(name "A")
@@ -2720,7 +2420,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "b25a7893-3acb-43b6-91b4-009b96bf1bd7")
+			(tstamps "fcb1e6d0-2036-4ee3-9b83-06bd446705d5")
 			(units
 				(unit
 					(name "A")
@@ -2792,7 +2492,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "d1a7d7e0-00b0-4913-a8e9-fd0b0199c864")
+			(tstamps "8b4b1027-aa30-4f0b-9aa5-8457eb04830c")
 			(units
 				(unit
 					(name "A")
@@ -2864,7 +2564,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "026c720c-3d7b-4bd4-9baa-d0071fdcd4c1")
+			(tstamps "6b7e24a5-59b0-496b-8995-13b4b48439f1")
 			(units
 				(unit
 					(name "A")
@@ -2942,7 +2642,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "70f0c8eb-ff0d-4ced-8ae3-6c2b9775c26c")
+			(tstamps "8e85c8e4-9ea6-4e33-b1cc-497cefe64a51")
 			(units
 				(unit
 					(name "A")
@@ -3014,7 +2714,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "e12622ca-b60e-4302-9b30-52b1aa2e7d1b")
+			(tstamps "60657482-1f50-407b-a399-f0c068c34453")
 			(units
 				(unit
 					(name "A")
@@ -3086,7 +2786,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "087ecc64-07f1-42de-bcea-82cf311109bf")
+			(tstamps "ce795f90-da6c-41d8-a426-e16deb839e77")
 			(units
 				(unit
 					(name "A")
@@ -3158,7 +2858,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "5a502e92-641f-4290-a06d-f8af8413489c")
+			(tstamps "ab99e0af-617d-4ff0-b5d0-fe21b2fb8bb6")
 			(units
 				(unit
 					(name "A")
@@ -3230,7 +2930,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "230db559-4d75-4d65-b475-0e049126115c")
+			(tstamps "803ae668-00e2-49c4-bda6-90c586931c89")
 			(units
 				(unit
 					(name "A")
@@ -3302,7 +3002,127 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "1e55e071-5b41-4490-85c2-7840e061e8e6")
+			(tstamps "3d5fb322-b416-4715-be45-00db5fef88d3")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D4")
+			(value "1N5711")
+			(footprint "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal")
+			(description "Schottky diode")
+			(fields
+				(field
+					(name "VERIFY") "Replicated from EtherKeyerMini (D1); EKM has no LCSC/MPN fields - part number to choose.")
+				(field
+					(name "Footprint") "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Schottky diode")
+			)
+			(libsource
+				(lib "Device")
+				(part "D_Schottky")
+				(description "Schottky diode")
+			)
+			(property
+				(name "VERIFY")
+				(value "Replicated from EtherKeyerMini (D1); EKM has no LCSC/MPN fields - part number to choose.")
+			)
+			(property
+				(name "Sheetname")
+				(value "MCU and UI")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mcu_ui.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "diode Schottky")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "TO-???* *_Diode_* *SingleDiode* D_*")
+			)
+			(sheetpath
+				(names "/MCU and UI/")
+				(tstamps "/b0000000-0000-4000-8000-000000000003/")
+			)
+			(tstamps "1b88072e-7fa2-450c-a357-784f3ffd3158")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D5")
+			(value "1N5711")
+			(footprint "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal")
+			(description "Schottky diode")
+			(fields
+				(field
+					(name "VERIFY") "Replicated from EtherKeyerMini (D2); EKM has no LCSC/MPN fields - part number to choose.")
+				(field
+					(name "Footprint") "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Schottky diode")
+			)
+			(libsource
+				(lib "Device")
+				(part "D_Schottky")
+				(description "Schottky diode")
+			)
+			(property
+				(name "VERIFY")
+				(value "Replicated from EtherKeyerMini (D2); EKM has no LCSC/MPN fields - part number to choose.")
+			)
+			(property
+				(name "Sheetname")
+				(value "MCU and UI")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mcu_ui.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "diode Schottky")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "TO-???* *_Diode_* *SingleDiode* D_*")
+			)
+			(sheetpath
+				(names "/MCU and UI/")
+				(tstamps "/b0000000-0000-4000-8000-000000000003/")
+			)
+			(tstamps "7efc3665-4cd1-4649-aa4f-3dc2f367e734")
 			(units
 				(unit
 					(name "A")
@@ -3380,7 +3200,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "7baecb96-453b-45cf-b74c-d0ad9a288bf9")
+			(tstamps "5b137670-1d41-484c-a1ba-3285665d9661")
 			(units
 				(unit
 					(name "A")
@@ -3416,27 +3236,27 @@
 		(comp
 			(ref "J5")
 			(value "UPDI")
-			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
-			(description "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(footprint "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical")
+			(description "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)")
 			(fields
 				(field
-					(name "VERIFY") "Generic header, no part number (PLAN). Pin order UPDI/GND/3V3 per PLAN.")
+					(name "VERIFY") "Replicated from EtherKeyerMini (J3); EKM has no LCSC/MPN fields - part number to choose.")
 				(field
-					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
+					(name "Footprint") "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)")
+					(name "Description") "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)")
 			)
 			(libsource
 				(lib "Connector_Generic")
-				(part "Conn_01x03")
-				(description "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)")
+				(part "Conn_01x04")
+				(description "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)")
 			)
 			(property
 				(name "VERIFY")
-				(value "Generic header, no part number (PLAN). Pin order UPDI/GND/3V3 per PLAN.")
+				(value "Replicated from EtherKeyerMini (J3); EKM has no LCSC/MPN fields - part number to choose.")
 			)
 			(property
 				(name "Sheetname")
@@ -3445,9 +3265,6 @@
 			(property
 				(name "Sheetfile")
 				(value "mcu_ui.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -3461,7 +3278,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "68276514-5abe-4b77-9cae-5d0a30990f39")
+			(tstamps "0fed111c-a124-47b9-977d-5957912d18b4")
 			(units
 				(unit
 					(name "A")
@@ -3474,6 +3291,129 @@
 						)
 						(pin
 							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "JP1")
+			(value "SolderJumper_2_Bridged")
+			(footprint "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
+			(description "Solder Jumper, 2-pole, open")
+			(fields
+				(field
+					(name "VERIFY") "Replicated from EtherKeyerMini (JP2); EKM has no LCSC/MPN fields - part number to choose. Open by default; bridging parallels the CP2102N UART on MCU_RX.")
+				(field
+					(name "Footprint") "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Solder Jumper, 2-pole, open")
+			)
+			(libsource
+				(lib "Jumper")
+				(part "SolderJumper_2_Open")
+				(description "Solder Jumper, 2-pole, open")
+			)
+			(property
+				(name "VERIFY")
+				(value "Replicated from EtherKeyerMini (JP2); EKM has no LCSC/MPN fields - part number to choose. Open by default; bridging parallels the CP2102N UART on MCU_RX.")
+			)
+			(property
+				(name "Sheetname")
+				(value "MCU and UI")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mcu_ui.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "solder jumper SPST")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SolderJumper*Open*")
+			)
+			(sheetpath
+				(names "/MCU and UI/")
+				(tstamps "/b0000000-0000-4000-8000-000000000003/")
+			)
+			(tstamps "385dc6d8-e891-4a69-9077-446601e285c4")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "JP2")
+			(value "SolderJumper_2_Bridged")
+			(footprint "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
+			(description "Solder Jumper, 2-pole, open")
+			(fields
+				(field
+					(name "VERIFY") "Replicated from EtherKeyerMini (JP3); EKM has no LCSC/MPN fields - part number to choose. Open by default; bridging parallels the CP2102N UART on MCU_TX.")
+				(field
+					(name "Footprint") "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Solder Jumper, 2-pole, open")
+			)
+			(libsource
+				(lib "Jumper")
+				(part "SolderJumper_2_Open")
+				(description "Solder Jumper, 2-pole, open")
+			)
+			(property
+				(name "VERIFY")
+				(value "Replicated from EtherKeyerMini (JP3); EKM has no LCSC/MPN fields - part number to choose. Open by default; bridging parallels the CP2102N UART on MCU_TX.")
+			)
+			(property
+				(name "Sheetname")
+				(value "MCU and UI")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mcu_ui.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "solder jumper SPST")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SolderJumper*Open*")
+			)
+			(sheetpath
+				(names "/MCU and UI/")
+				(tstamps "/b0000000-0000-4000-8000-000000000003/")
+			)
+			(tstamps "1c199be4-c884-4bd4-83df-c91221ee1809")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
 						)
 					)
 				)
@@ -3536,7 +3476,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "48beae6a-08e5-4495-bb1a-b0ad5a6799b1")
+			(tstamps "38a60cbe-a9cd-4ef5-ba84-9321c9107f25")
 			(units
 				(unit
 					(name "A")
@@ -3554,17 +3494,13 @@
 		(comp
 			(ref "R13")
 			(value "470")
-			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical")
 			(description "Resistor, small symbol")
 			(fields
 				(field
-					(name "LCSC") "C114669")
+					(name "VERIFY") "Replicated from EtherKeyerMini (R3); EKM has no LCSC/MPN fields - part number to choose.")
 				(field
-					(name "MPN") "RC0603FR-07470RL")
-				(field
-					(name "Manufacturer") "YAGEO")
-				(field
-					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical")
 				(field
 					(name "Datasheet")
 				)
@@ -3577,16 +3513,8 @@
 				(description "Resistor, small symbol")
 			)
 			(property
-				(name "LCSC")
-				(value "C114669")
-			)
-			(property
-				(name "MPN")
-				(value "RC0603FR-07470RL")
-			)
-			(property
-				(name "Manufacturer")
-				(value "YAGEO")
+				(name "VERIFY")
+				(value "Replicated from EtherKeyerMini (R3); EKM has no LCSC/MPN fields - part number to choose.")
 			)
 			(property
 				(name "Sheetname")
@@ -3608,7 +3536,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "465c0929-e458-48eb-a057-5d178e3f75c2")
+			(tstamps "3c7ad2cb-14ba-43e8-8f4a-b284aeaea8b9")
 			(units
 				(unit
 					(name "A")
@@ -3680,7 +3608,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "77cbf640-3b8e-477c-b821-149b7269c8cf")
+			(tstamps "095a688b-153e-4ca6-898f-ca1d8fe6a8d6")
 			(units
 				(unit
 					(name "A")
@@ -3752,7 +3680,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "45577584-e282-46ed-b5ce-33c7253fe197")
+			(tstamps "56543894-6039-4051-af9e-1a7de6244f55")
 			(units
 				(unit
 					(name "A")
@@ -3824,7 +3752,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "a2b5d779-9aa4-4401-8303-09ea53f06838")
+			(tstamps "98d52f8b-913f-4508-845b-ca2bccdcddc1")
 			(units
 				(unit
 					(name "A")
@@ -3896,7 +3824,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "d7b563a6-3b47-4e6b-9906-9ce877706ff4")
+			(tstamps "7b4382d1-fa56-41ef-b50e-7efd40ad32a7")
 			(units
 				(unit
 					(name "A")
@@ -3968,7 +3896,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "24aa4cf1-8101-4ee5-9e54-bef030cbfe42")
+			(tstamps "24423d2d-6f71-435f-966d-06bba9d9637e")
 			(units
 				(unit
 					(name "A")
@@ -4040,7 +3968,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "56962893-cd78-44af-a4b2-20599209f26b")
+			(tstamps "bd14da73-b1e2-4e71-b5c5-60108ebb393a")
 			(units
 				(unit
 					(name "A")
@@ -4112,7 +4040,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "c88cf576-0eb5-4a41-a71a-703875480dad")
+			(tstamps "861c6f87-f4be-43b5-a560-ef50aa305f3f")
 			(units
 				(unit
 					(name "A")
@@ -4184,7 +4112,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "07aea734-1657-4547-8844-8f093b0a49b2")
+			(tstamps "767fc4b6-2f04-472e-a792-ba9505e79b14")
 			(units
 				(unit
 					(name "A")
@@ -4256,7 +4184,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "1f0baf87-8627-45d8-af9d-fd1e8d86e3f8")
+			(tstamps "7d60e265-cae1-47ec-b70c-04f685bbc3c4")
 			(units
 				(unit
 					(name "A")
@@ -4328,7 +4256,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "09e255b8-ff4e-4a8a-8991-2919025acaa0")
+			(tstamps "c8d1d895-2363-4d2c-990d-712ff1b71537")
 			(units
 				(unit
 					(name "A")
@@ -4400,7 +4328,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "8097d52c-3dba-47fa-a9bb-274a3b8f0d9f")
+			(tstamps "3d2ed13b-726b-4e66-8bd3-7956de25dd6f")
 			(units
 				(unit
 					(name "A")
@@ -4472,7 +4400,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "25c44e98-61fd-44f6-80c3-2f68db24b8e8")
+			(tstamps "76d422d5-fb89-4876-84e9-a164c34bfcb7")
 			(units
 				(unit
 					(name "A")
@@ -4544,7 +4472,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "375475ae-7bea-4284-9ed4-e037a504d997")
+			(tstamps "830a4659-f71f-46e4-bd0e-9b42a12ac01e")
 			(units
 				(unit
 					(name "A")
@@ -4622,7 +4550,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "4a11ded9-28c3-406f-b407-d6d45de21d7b")
+			(tstamps "6b79f70c-2c02-42c7-afbb-761bb112b8fe")
 			(units
 				(unit
 					(name "A")
@@ -4699,7 +4627,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "9dfb5ae1-eb6b-4f46-9086-0e4abd51fe4c")
+			(tstamps "4c631825-2479-4a5b-8424-75982eaadb08")
 			(units
 				(unit
 					(name "A")
@@ -4767,7 +4695,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "7d441f7e-fccf-4014-a486-ca8e18dfb9ea")
+			(tstamps "553826d8-e028-4fd8-803c-7d50c3686fa8")
 			(units
 				(unit
 					(name "A")
@@ -4835,7 +4763,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "82883b6b-9ada-4c32-9ac7-12cc8ad90531")
+			(tstamps "a29048e0-38d0-4ca7-9f4d-3a14310f6f65")
 			(units
 				(unit
 					(name "A")
@@ -4913,7 +4841,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "2402c410-fc7f-4f46-8b90-c218e9411584")
+			(tstamps "fa85f493-bd12-43b3-80f7-9d56e997eb72")
 			(units
 				(unit
 					(name "A")
@@ -5039,7 +4967,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "76d3038c-fed1-462d-bc21-6d36f6401d26")
+			(tstamps "5f7ab35f-b443-43be-84e8-1ae49a33c76d")
 			(units
 				(unit
 					(name "A")
@@ -5111,7 +5039,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "bcd7709f-6c26-4825-b833-e92bc1e72bfe")
+			(tstamps "1cf282d1-8f39-4196-969a-fe59f99820ed")
 			(units
 				(unit
 					(name "A")
@@ -5183,7 +5111,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "fa59a239-b664-4b7e-b201-b3e5809d2776")
+			(tstamps "d54eccf6-67dd-4380-b2b2-54724d2225e7")
 			(units
 				(unit
 					(name "A")
@@ -5261,7 +5189,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "12d5d899-660b-4402-9ccc-d9b453439d06")
+			(tstamps "21e345c8-a5a6-401d-be03-e980f4d25f9f")
 			(units
 				(unit
 					(name "A")
@@ -5324,7 +5252,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "c6971805-54d2-4028-8b8b-9ff2b6276054")
+			(tstamps "7d2f97ad-b25a-4bec-adcb-a4510c9dff2f")
 			(units
 				(unit
 					(name "A")
@@ -5381,7 +5309,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "b7b4feba-c1a7-493a-9530-81a57d9990c7")
+			(tstamps "b4ca60eb-1879-4bb0-b712-ad9e19266787")
 			(units
 				(unit
 					(name "A")
@@ -5438,7 +5366,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "af0fd705-876a-4a21-ba8e-2dd5728b619f")
+			(tstamps "aacc9bfd-ac07-4106-a586-dbfd85cfb8fa")
 			(units
 				(unit
 					(name "A")
@@ -5495,7 +5423,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "eead9b31-4bed-4ce6-9d8c-69621bf71b37")
+			(tstamps "d4ffa9e3-d0bb-4ae1-a5c2-9830ae0a181b")
 			(units
 				(unit
 					(name "A")
@@ -5558,7 +5486,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "d296c556-5cca-41ff-9b1b-8072c67f71ab")
+			(tstamps "46c54d6b-4741-417d-afee-6a10afa259a8")
 			(units
 				(unit
 					(name "A")
@@ -5615,7 +5543,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "7abbdadd-b3d4-4df4-b677-805abb35b23f")
+			(tstamps "308cf633-8774-4a8b-bbe5-291f6f544441")
 			(units
 				(unit
 					(name "A")
@@ -5672,7 +5600,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "39e7082a-cfce-48af-a302-e226ce34105f")
+			(tstamps "2fb4b6a7-97d0-461b-9396-025bae07c734")
 			(units
 				(unit
 					(name "A")
@@ -5744,7 +5672,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "52cd2912-6b3f-4780-9fa8-5da8eaea7079")
+			(tstamps "bd7fd17d-b46c-467c-b11e-a384e0b61eca")
 			(units
 				(unit
 					(name "A")
@@ -5801,7 +5729,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "0f7956b1-7491-4c0e-aab5-810b4c94b544")
+			(tstamps "8bcffd2b-19a5-4e67-b322-a952dfe66e84")
 			(units
 				(unit
 					(name "A")
@@ -5858,7 +5786,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "a371cee1-9a3b-47ba-bed2-de6bf126431c")
+			(tstamps "100377df-8739-4a8b-9476-dfc539af701a")
 			(units
 				(unit
 					(name "A")
@@ -5915,7 +5843,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "538462da-3cb5-4d25-be34-92e987f545ce")
+			(tstamps "b4d237d0-9f16-4d3d-81bd-4d9f0c4541e6")
 			(units
 				(unit
 					(name "A")
@@ -5972,7 +5900,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "c2455612-1473-4745-bbcc-40927b8cf519")
+			(tstamps "e8e2fcbd-34d8-4157-ac50-81b87b001961")
 			(units
 				(unit
 					(name "A")
@@ -6029,7 +5957,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "68344ff5-0ea7-4543-a61d-15051f18b184")
+			(tstamps "39b0d0c6-3f46-448b-99c1-18b9cac2c698")
 			(units
 				(unit
 					(name "A")
@@ -6086,7 +6014,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "c1b11156-dda7-4150-939e-b97ebb14993b")
+			(tstamps "85f898d9-a895-4d60-9198-806a6d597266")
 			(units
 				(unit
 					(name "A")
@@ -6143,7 +6071,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "f5ed4fba-8800-4134-ba61-4851964cfbf4")
+			(tstamps "cdfedbdf-918a-4575-a1d4-7dac52d6d01e")
 			(units
 				(unit
 					(name "A")
@@ -6215,7 +6143,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "22a5309d-da4c-4dfe-85be-098175dae668")
+			(tstamps "5f6f1ebd-45c0-4b75-ba3d-3a3e0215795f")
 			(units
 				(unit
 					(name "A")
@@ -6272,7 +6200,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "747cf2c4-ace9-4050-9e41-fa353b846344")
+			(tstamps "d010e4bd-d428-4ede-a27e-48a77dc19850")
 			(units
 				(unit
 					(name "A")
@@ -6329,7 +6257,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "b2db47af-0750-4c3d-b791-fee9154bdf30")
+			(tstamps "eb8c92d1-6702-4a82-8c49-4a8998a04b52")
 			(units
 				(unit
 					(name "A")
@@ -6386,7 +6314,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "6283a8fe-1ce7-4950-8e64-b4ee24ab6fa4")
+			(tstamps "cf816714-c01c-467a-ab24-c85b17107f81")
 			(units
 				(unit
 					(name "A")
@@ -6443,7 +6371,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "35af7d7a-bf30-465e-892f-630fd0903471")
+			(tstamps "3c465757-5228-4f1c-8385-09e4504e6c36")
 			(units
 				(unit
 					(name "A")
@@ -6500,7 +6428,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "e434cda1-5908-4944-b715-7172753761ed")
+			(tstamps "495ad969-59ba-4679-8798-832192c288c8")
 			(units
 				(unit
 					(name "A")
@@ -6557,7 +6485,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "0901f0c5-f80f-47bf-acd4-ea20e36de268")
+			(tstamps "72501118-ace1-4f21-83b4-cf157a48b930")
 			(units
 				(unit
 					(name "A")
@@ -6614,7 +6542,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "a5982951-53c8-4f44-807c-9d30e2583453")
+			(tstamps "f24d3053-31e9-4950-ae1e-0982206b31f3")
 			(units
 				(unit
 					(name "A")
@@ -6692,7 +6620,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "9539bbe3-0366-4941-ab4d-22075e11b549")
+			(tstamps "645382c9-40fc-4b99-be28-8120aadfd93a")
 			(units
 				(unit
 					(name "A")
@@ -6770,7 +6698,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "7b5d316d-b204-4df3-a1ff-323e17ac339a")
+			(tstamps "f9ec1540-8ff0-4510-bf5b-d09b6077d6e4")
 			(units
 				(unit
 					(name "A")
@@ -6848,7 +6776,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "100bc64c-a089-4a42-9825-2032b623eac9")
+			(tstamps "46f5ef19-ae09-498e-8854-9921e10c8a52")
 			(units
 				(unit
 					(name "A")
@@ -6911,7 +6839,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "85d638f2-67c8-4198-8dd9-88a563e5d35b")
+			(tstamps "71c384a5-ee61-4a88-b117-8c0fc0e85d90")
 			(units
 				(unit
 					(name "A")
@@ -6968,7 +6896,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "b792f961-4763-4ec6-bfea-7202c8ead24c")
+			(tstamps "bbc8d026-d4d8-4273-b589-1eacfa46e741")
 			(units
 				(unit
 					(name "A")
@@ -7025,7 +6953,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "f7681425-a45f-4e7c-8c81-9e874f22b6a2")
+			(tstamps "8657fd1e-5d03-4208-80b6-3fd70b8d13f5")
 			(units
 				(unit
 					(name "A")
@@ -7082,7 +7010,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "943b2b1e-d96b-4e55-b30b-183d563f0754")
+			(tstamps "ab45f7dd-4717-468d-91a1-19b4da2b87a2")
 			(units
 				(unit
 					(name "A")
@@ -7139,7 +7067,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "63046104-b290-4a29-a49c-d550ceb6145a")
+			(tstamps "dd8e1c9a-1235-46fc-97ee-e32134c18a52")
 			(units
 				(unit
 					(name "A")
@@ -7196,7 +7124,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "360c24bb-adaa-4e4f-b694-880ae215a4d4")
+			(tstamps "ea0d2291-c072-4753-89d7-5ea18f22d998")
 			(units
 				(unit
 					(name "A")
@@ -7253,7 +7181,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "4b1c52c8-047f-47d1-be33-ac2fbff9264f")
+			(tstamps "d6e008e0-736e-4474-857b-8413e33e4dc6")
 			(units
 				(unit
 					(name "A")
@@ -7310,7 +7238,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "3c17c358-0128-486d-9402-d067990c7040")
+			(tstamps "d4d92281-1ddd-4298-b1c6-8ba09c43fae1")
 			(units
 				(unit
 					(name "A")
@@ -7367,7 +7295,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "f362bc4e-4519-4135-b258-c05134e05d8f")
+			(tstamps "c8df4911-2f95-4999-9d66-5a0e79b676f5")
 			(units
 				(unit
 					(name "A")
@@ -7439,7 +7367,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "b436ccaf-acfe-4248-9eda-7ded5d68b2ee")
+			(tstamps "4c4f6abf-e761-4a33-86eb-66a953deb0d8")
 			(units
 				(unit
 					(name "A")
@@ -7514,7 +7442,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "43c84b25-2529-43a1-962c-9d49d64e2567")
+			(tstamps "92f79e22-3794-4548-a949-7f0393027d70")
 			(units
 				(unit
 					(name "A")
@@ -7574,7 +7502,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "8733c87b-3029-4cf8-9643-866f0bff2351")
+			(tstamps "6df93f87-802e-4898-919e-f86d505c06f5")
 			(units
 				(unit
 					(name "A")
@@ -7634,7 +7562,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "2350ddfb-c0b8-4eca-b595-ec4bb6a34d91")
+			(tstamps "4528ddf4-79af-45a2-9f47-a7bbc2036ce0")
 			(units
 				(unit
 					(name "A")
@@ -7701,7 +7629,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "c67efb52-28dd-40c5-8db7-7a863858ea12")
+			(tstamps "c8fba01a-7b62-4bbc-96ff-1ae6334961c7")
 			(units
 				(unit
 					(name "A")
@@ -7764,7 +7692,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "60cc102e-e01a-4911-be62-ee8d4ceba60f")
+			(tstamps "c07cf284-c487-4a05-ba5c-08deb71600d5")
 			(units
 				(unit
 					(name "A")
@@ -7839,7 +7767,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "071fd55a-adf7-469d-a023-87b20dc0eb3e")
+			(tstamps "252873e1-f628-494a-88c6-a1364002af56")
 			(units
 				(unit
 					(name "A")
@@ -7914,7 +7842,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "b317082b-2a26-4cf6-8900-59c3354115c4")
+			(tstamps "35bb314b-9f7c-419a-b0d9-de9c8ebb6477")
 			(units
 				(unit
 					(name "A")
@@ -7986,7 +7914,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "f3a47d57-0128-42a9-9763-47ab301331db")
+			(tstamps "e72e7e37-e217-4157-a9fa-3c744b5d59f5")
 			(units
 				(unit
 					(name "A")
@@ -8053,7 +7981,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "7de8f706-ddda-428d-84fd-3fd4b4990316")
+			(tstamps "d9658af9-b603-46f0-8411-ff7388045ae4")
 			(units
 				(unit
 					(name "A")
@@ -8116,7 +8044,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "872c4a1a-9d0b-4469-b4a7-2fec7cd7e622")
+			(tstamps "306eb539-b123-43e5-b23c-1c977a72f091")
 			(units
 				(unit
 					(name "A")
@@ -8191,7 +8119,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "549d2b7e-de26-4ab3-89b3-6a7144001fc1")
+			(tstamps "1f7b67a8-d4b3-4cbc-8295-ff10fca475a2")
 			(units
 				(unit
 					(name "A")
@@ -8266,7 +8194,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "7e420f3d-5ffd-4a3b-a608-98c85f047caf")
+			(tstamps "d175df2f-5f22-42f5-a259-ceb70c380cdf")
 			(units
 				(unit
 					(name "A")
@@ -8338,7 +8266,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "1b06dcdc-c5a5-4567-b741-3d9320915e55")
+			(tstamps "e9069720-1820-4cc7-9fd4-818d9010ea91")
 			(units
 				(unit
 					(name "A")
@@ -8405,7 +8333,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "faf6fd98-88c1-402c-9239-07ed40c78567")
+			(tstamps "bdfa48c9-ccd1-4175-bd94-fd108c9cd93d")
 			(units
 				(unit
 					(name "A")
@@ -8468,7 +8396,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "4395d125-fe3b-4d6d-a653-5371927d30f7")
+			(tstamps "d8448426-575b-46d4-9c67-bf5378b7f076")
 			(units
 				(unit
 					(name "A")
@@ -8543,7 +8471,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "c36b9a6e-7875-4a23-84e9-5059e5174ec9")
+			(tstamps "2f1a2bae-d204-4d03-9ef4-2666c19e0c73")
 			(units
 				(unit
 					(name "A")
@@ -8618,7 +8546,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "3750bf25-cc58-48f8-b021-2ee455b522ef")
+			(tstamps "24c191ba-9a3c-4efc-bd82-5de98a0fc041")
 			(units
 				(unit
 					(name "A")
@@ -8690,7 +8618,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "159e25d4-7abb-404e-bad1-4c499cceb50b")
+			(tstamps "33aea83d-04eb-48e0-abba-d71b64c44df8")
 			(units
 				(unit
 					(name "A")
@@ -8762,7 +8690,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "152c05ca-2962-4129-8ef1-011603ec113a")
+			(tstamps "725f5df9-ac42-4049-b86e-e9013fdecc03")
 			(units
 				(unit
 					(name "A")
@@ -8856,7 +8784,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "eb6c1538-bce4-4b6e-b1dd-083fd4eab3bb")
+			(tstamps "9c08772d-d16b-4ccc-b7e8-a8ed0387fd0c")
 			(units
 				(unit
 					(name "A")
@@ -9034,8 +8962,8 @@
 		)
 		(libpart
 			(lib "Connector_Generic")
-			(part "Conn_01x03")
-			(description "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(part "Conn_01x04")
+			(description "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)")
 			(footprints
 				(fp "Connector*:*_1x??_*")
 			)
@@ -9043,7 +8971,7 @@
 				(field
 					(name "Reference") "J")
 				(field
-					(name "Value") "Conn_01x03")
+					(name "Value") "Conn_01x04")
 				(field
 					(name "Footprint")
 				)
@@ -9051,7 +8979,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)")
+					(name "Description") "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)")
 			)
 			(pins
 				(pin
@@ -9067,6 +8995,11 @@
 				(pin
 					(num "3")
 					(name "Pin_3")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "Pin_4")
 					(type "passive")
 				)
 			)
@@ -9171,6 +9104,43 @@
 		)
 		(libpart
 			(lib "Device")
+			(part "D_Schottky")
+			(description "Schottky diode")
+			(footprints
+				(fp "TO-???*")
+				(fp "*_Diode_*")
+				(fp "*SingleDiode*")
+				(fp "D_*")
+			)
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "D_Schottky")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Schottky diode")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "K")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "A")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
 			(part "FerriteBead_Small")
 			(description "Ferrite bead, small symbol")
 			(footprints
@@ -9201,44 +9171,6 @@
 				(pin
 					(num "2")
 					(name "")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "Device")
-			(part "LED_Small")
-			(description "Light emitting diode, small symbol")
-			(footprints
-				(fp "LED*")
-				(fp "LED_SMD:*")
-				(fp "LED_THT:*")
-			)
-			(fields
-				(field
-					(name "Reference") "D")
-				(field
-					(name "Value") "LED_Small")
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Light emitting diode, small symbol")
-				(field
-					(name "Sim.Pins") "1=K 2=A")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "K")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "A")
 					(type "passive")
 				)
 			)
@@ -9507,6 +9439,40 @@
 				(pin
 					(num "25")
 					(name "GND")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Jumper")
+			(part "SolderJumper_2_Open")
+			(description "Solder Jumper, 2-pole, open")
+			(footprints
+				(fp "SolderJumper*Open*")
+			)
+			(fields
+				(field
+					(name "Reference") "JP")
+				(field
+					(name "Value") "SolderJumper_2_Open")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Solder Jumper, 2-pole, open")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "A")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "B")
 					(type "passive")
 				)
 			)
@@ -9910,6 +9876,10 @@
 			(uri "${KICAD10_SYMBOL_DIR}/Interface_USB.kicad_sym")
 		)
 		(library
+			(logical "Jumper")
+			(uri "${KICAD10_SYMBOL_DIR}/Jumper.kicad_sym")
+		)
+		(library
 			(logical "MCU_Microchip_ATtiny")
 			(uri "${KICAD10_SYMBOL_DIR}/MCU_Microchip_ATtiny.kicad_sym")
 		)
@@ -9959,14 +9929,14 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "FB1")
+				(ref "D5")
 				(pin "1")
+				(pinfunction "K_1")
 				(pintype "passive")
 			)
 			(node
-				(ref "J5")
-				(pin "3")
-				(pinfunction "Pin_3_3")
+				(ref "FB1")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -10572,22 +10542,6 @@
 		)
 		(net
 			(code "24")
-			(name "/MCU and UI/UPDI")
-			(class "Default")
-			(node
-				(ref "J5")
-				(pin "1")
-				(pinfunction "Pin_1_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R13")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "25")
 			(name "/MCU and UI/UPDI_PA0")
 			(class "Default")
 			(node
@@ -10600,6 +10554,29 @@
 				(pin "16")
 				(pinfunction "~{RESET}/PA0_16")
 				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "25")
+			(name "/MCU and UI/UPDI_TXD")
+			(class "Default")
+			(node
+				(ref "D4")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "JP1")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
 			)
 		)
 		(net
@@ -10686,16 +10663,6 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R10")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R11")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
 				(ref "U3")
 				(pin "5")
 				(pinfunction "VIO_5")
@@ -10710,40 +10677,6 @@
 		)
 		(net
 			(code "31")
-			(name "/Power and USB/LED_RXT")
-			(class "Default")
-			(node
-				(ref "D3")
-				(pin "1")
-				(pinfunction "K_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U3")
-				(pin "13")
-				(pinfunction "~{RXT}/GPIO.1_13")
-				(pintype "bidirectional")
-			)
-		)
-		(net
-			(code "32")
-			(name "/Power and USB/LED_TXT")
-			(class "Default")
-			(node
-				(ref "D2")
-				(pin "1")
-				(pinfunction "K_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U3")
-				(pin "14")
-				(pinfunction "~{TXT}/GPIO.0_14")
-				(pintype "bidirectional")
-			)
-		)
-		(net
-			(code "33")
 			(name "/Power and USB/OLED_LDO_OUT")
 			(class "Default")
 			(node
@@ -10764,7 +10697,7 @@
 			)
 		)
 		(net
-			(code "34")
+			(code "32")
 			(name "/Power and USB/U1_BP")
 			(class "Default")
 			(node
@@ -10780,7 +10713,7 @@
 			)
 		)
 		(net
-			(code "35")
+			(code "33")
 			(name "/Power and USB/U5_BP")
 			(class "Default")
 			(node
@@ -10796,7 +10729,7 @@
 			)
 		)
 		(net
-			(code "36")
+			(code "34")
 			(name "/Power and USB/USB_DM")
 			(class "Default")
 			(node
@@ -10825,7 +10758,7 @@
 			)
 		)
 		(net
-			(code "37")
+			(code "35")
 			(name "/Power and USB/USB_DP")
 			(class "Default")
 			(node
@@ -10854,7 +10787,7 @@
 			)
 		)
 		(net
-			(code "38")
+			(code "36")
 			(name "/Synth and RF outputs/CLK0")
 			(class "Default")
 			(node
@@ -10870,7 +10803,7 @@
 			)
 		)
 		(net
-			(code "39")
+			(code "37")
 			(name "/Synth and RF outputs/CLK0_DC")
 			(class "Default")
 			(node
@@ -10895,7 +10828,7 @@
 			)
 		)
 		(net
-			(code "40")
+			(code "38")
 			(name "/Synth and RF outputs/CLK0_F1")
 			(class "Default")
 			(node
@@ -10920,7 +10853,7 @@
 			)
 		)
 		(net
-			(code "41")
+			(code "39")
 			(name "/Synth and RF outputs/CLK0_F2")
 			(class "Default")
 			(node
@@ -10950,7 +10883,7 @@
 			)
 		)
 		(net
-			(code "42")
+			(code "40")
 			(name "/Synth and RF outputs/CLK0_F3")
 			(class "Default")
 			(node
@@ -10980,7 +10913,7 @@
 			)
 		)
 		(net
-			(code "43")
+			(code "41")
 			(name "/Synth and RF outputs/CLK0_F4")
 			(class "Default")
 			(node
@@ -11005,7 +10938,7 @@
 			)
 		)
 		(net
-			(code "44")
+			(code "42")
 			(name "/Synth and RF outputs/CLK0_OUT")
 			(class "Default")
 			(node
@@ -11026,7 +10959,7 @@
 			)
 		)
 		(net
-			(code "45")
+			(code "43")
 			(name "/Synth and RF outputs/CLK0_S")
 			(class "Default")
 			(node
@@ -11041,7 +10974,7 @@
 			)
 		)
 		(net
-			(code "46")
+			(code "44")
 			(name "/Synth and RF outputs/CLK1")
 			(class "Default")
 			(node
@@ -11057,7 +10990,7 @@
 			)
 		)
 		(net
-			(code "47")
+			(code "45")
 			(name "/Synth and RF outputs/CLK1_DC")
 			(class "Default")
 			(node
@@ -11082,7 +11015,7 @@
 			)
 		)
 		(net
-			(code "48")
+			(code "46")
 			(name "/Synth and RF outputs/CLK1_F1")
 			(class "Default")
 			(node
@@ -11107,7 +11040,7 @@
 			)
 		)
 		(net
-			(code "49")
+			(code "47")
 			(name "/Synth and RF outputs/CLK1_F2")
 			(class "Default")
 			(node
@@ -11137,7 +11070,7 @@
 			)
 		)
 		(net
-			(code "50")
+			(code "48")
 			(name "/Synth and RF outputs/CLK1_F3")
 			(class "Default")
 			(node
@@ -11167,7 +11100,7 @@
 			)
 		)
 		(net
-			(code "51")
+			(code "49")
 			(name "/Synth and RF outputs/CLK1_F4")
 			(class "Default")
 			(node
@@ -11192,7 +11125,7 @@
 			)
 		)
 		(net
-			(code "52")
+			(code "50")
 			(name "/Synth and RF outputs/CLK1_OUT")
 			(class "Default")
 			(node
@@ -11213,7 +11146,7 @@
 			)
 		)
 		(net
-			(code "53")
+			(code "51")
 			(name "/Synth and RF outputs/CLK1_S")
 			(class "Default")
 			(node
@@ -11228,7 +11161,7 @@
 			)
 		)
 		(net
-			(code "54")
+			(code "52")
 			(name "/Synth and RF outputs/CLK2")
 			(class "Default")
 			(node
@@ -11244,7 +11177,7 @@
 			)
 		)
 		(net
-			(code "55")
+			(code "53")
 			(name "/Synth and RF outputs/CLK2_DC")
 			(class "Default")
 			(node
@@ -11269,7 +11202,7 @@
 			)
 		)
 		(net
-			(code "56")
+			(code "54")
 			(name "/Synth and RF outputs/CLK2_F1")
 			(class "Default")
 			(node
@@ -11294,7 +11227,7 @@
 			)
 		)
 		(net
-			(code "57")
+			(code "55")
 			(name "/Synth and RF outputs/CLK2_F2")
 			(class "Default")
 			(node
@@ -11324,7 +11257,7 @@
 			)
 		)
 		(net
-			(code "58")
+			(code "56")
 			(name "/Synth and RF outputs/CLK2_F3")
 			(class "Default")
 			(node
@@ -11354,7 +11287,7 @@
 			)
 		)
 		(net
-			(code "59")
+			(code "57")
 			(name "/Synth and RF outputs/CLK2_F4")
 			(class "Default")
 			(node
@@ -11379,7 +11312,7 @@
 			)
 		)
 		(net
-			(code "60")
+			(code "58")
 			(name "/Synth and RF outputs/CLK2_OUT")
 			(class "Default")
 			(node
@@ -11400,7 +11333,7 @@
 			)
 		)
 		(net
-			(code "61")
+			(code "59")
 			(name "/Synth and RF outputs/CLK2_S")
 			(class "Default")
 			(node
@@ -11415,7 +11348,7 @@
 			)
 		)
 		(net
-			(code "62")
+			(code "60")
 			(name "/Synth and RF outputs/SI_XA")
 			(class "Default")
 			(node
@@ -11431,7 +11364,7 @@
 			)
 		)
 		(net
-			(code "63")
+			(code "61")
 			(name "/Synth and RF outputs/TCXO_EN")
 			(class "Default")
 			(node
@@ -11447,7 +11380,7 @@
 			)
 		)
 		(net
-			(code "64")
+			(code "62")
 			(name "/Synth and RF outputs/TCXO_OUT")
 			(class "Default")
 			(node
@@ -11463,7 +11396,7 @@
 			)
 		)
 		(net
-			(code "65")
+			(code "63")
 			(name "/Synth and RF outputs/TCXO_VDD")
 			(class "Default")
 			(node
@@ -11489,7 +11422,7 @@
 			)
 		)
 		(net
-			(code "66")
+			(code "64")
 			(name "DTR")
 			(class "Default")
 			(node
@@ -11505,7 +11438,7 @@
 			)
 		)
 		(net
-			(code "67")
+			(code "65")
 			(name "GND")
 			(class "Default")
 			(node
@@ -11745,8 +11678,8 @@
 			)
 			(node
 				(ref "J5")
-				(pin "2")
-				(pinfunction "Pin_2_2")
+				(pin "4")
+				(pinfunction "Pin_4_4")
 				(pintype "passive")
 			)
 			(node
@@ -11853,7 +11786,7 @@
 			)
 		)
 		(net
-			(code "68")
+			(code "66")
 			(name "I2C_SCL")
 			(class "Default")
 			(node
@@ -11875,7 +11808,7 @@
 			)
 		)
 		(net
-			(code "69")
+			(code "67")
 			(name "I2C_SDA")
 			(class "Default")
 			(node
@@ -11897,9 +11830,15 @@
 			)
 		)
 		(net
-			(code "70")
+			(code "68")
 			(name "MCU_RX")
 			(class "Default")
+			(node
+				(ref "JP1")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
 			(node
 				(ref "U3")
 				(pin "21")
@@ -11914,9 +11853,15 @@
 			)
 		)
 		(net
-			(code "71")
+			(code "69")
 			(name "MCU_TX")
 			(class "Default")
+			(node
+				(ref "JP2")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
 			(node
 				(ref "U3")
 				(pin "20")
@@ -11931,39 +11876,52 @@
 			)
 		)
 		(net
+			(code "70")
+			(name "Net-(D4-A)")
+			(class "Default")
+			(node
+				(ref "D4")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "JP2")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R13")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "71")
+			(name "Net-(D5-A)")
+			(class "Default")
+			(node
+				(ref "D5")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+		)
+		(net
 			(code "72")
-			(name "Net-(D2-A)")
-			(class "Default")
-			(node
-				(ref "D2")
-				(pin "2")
-				(pinfunction "A_2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R10")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "73")
-			(name "Net-(D3-A)")
-			(class "Default")
-			(node
-				(ref "D3")
-				(pin "2")
-				(pinfunction "A_2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R11")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "74")
 			(name "unconnected-(J1-SBU1-PadA8)")
 			(class "Default")
 			(node
@@ -11974,7 +11932,7 @@
 			)
 		)
 		(net
-			(code "75")
+			(code "73")
 			(name "unconnected-(J1-SBU2-PadB8)")
 			(class "Default")
 			(node
@@ -11985,7 +11943,7 @@
 			)
 		)
 		(net
-			(code "76")
+			(code "74")
 			(name "unconnected-(U2-XB-Pad3)")
 			(class "Default")
 			(node
@@ -11996,7 +11954,7 @@
 			)
 		)
 		(net
-			(code "77")
+			(code "75")
 			(name "unconnected-(U3-NC-Pad10)")
 			(class "Default")
 			(node
@@ -12007,7 +11965,7 @@
 			)
 		)
 		(net
-			(code "78")
+			(code "76")
 			(name "unconnected-(U3-NC-Pad16)")
 			(class "Default")
 			(node
@@ -12018,7 +11976,7 @@
 			)
 		)
 		(net
-			(code "79")
+			(code "77")
 			(name "unconnected-(U3-RS485{slash}GPIO.2-Pad12)")
 			(class "Default")
 			(node
@@ -12029,7 +11987,7 @@
 			)
 		)
 		(net
-			(code "80")
+			(code "78")
 			(name "unconnected-(U3-SUSPEND-Pad17)")
 			(class "Default")
 			(node
@@ -12040,7 +11998,7 @@
 			)
 		)
 		(net
-			(code "81")
+			(code "79")
 			(name "unconnected-(U3-~{CTS}-Pad18)")
 			(class "Default")
 			(node
@@ -12051,7 +12009,7 @@
 			)
 		)
 		(net
-			(code "82")
+			(code "80")
 			(name "unconnected-(U3-~{DCD}-Pad24)")
 			(class "Default")
 			(node
@@ -12062,7 +12020,7 @@
 			)
 		)
 		(net
-			(code "83")
+			(code "81")
 			(name "unconnected-(U3-~{DSR}-Pad22)")
 			(class "Default")
 			(node
@@ -12073,7 +12031,7 @@
 			)
 		)
 		(net
-			(code "84")
+			(code "82")
 			(name "unconnected-(U3-~{RI}{slash}CLK-Pad1)")
 			(class "Default")
 			(node
@@ -12084,7 +12042,7 @@
 			)
 		)
 		(net
-			(code "85")
+			(code "83")
 			(name "unconnected-(U3-~{RTS}-Pad19)")
 			(class "Default")
 			(node
@@ -12095,7 +12053,18 @@
 			)
 		)
 		(net
-			(code "86")
+			(code "84")
+			(name "unconnected-(U3-~{RXT}{slash}GPIO.1-Pad13)")
+			(class "Default")
+			(node
+				(ref "U3")
+				(pin "13")
+				(pinfunction "~{RXT}/GPIO.1_13")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "85")
 			(name "unconnected-(U3-~{SUSPEND}-Pad15)")
 			(class "Default")
 			(node
@@ -12103,6 +12072,17 @@
 				(pin "15")
 				(pinfunction "~{SUSPEND}_15")
 				(pintype "output+no_connect")
+			)
+		)
+		(net
+			(code "86")
+			(name "unconnected-(U3-~{TXT}{slash}GPIO.0-Pad14)")
+			(class "Default")
+			(node
+				(ref "U3")
+				(pin "14")
+				(pinfunction "~{TXT}/GPIO.0_14")
+				(pintype "bidirectional+no_connect")
 			)
 		)
 		(net

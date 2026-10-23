@@ -61,6 +61,7 @@ class Sheet:
               ['property','"Intersheetrefs"','"${INTERSHEET_REFS}"',['at',f(x),f(y),'0'],['effects',['font',['size','1.27','1.27']],['hide','yes']]]])
         else:
             s.items.append(['label',q(net),['at',f(x),f(y),str(ang)],['effects',['font',['size','1.27','1.27']],['justify',*just]],['uuid',q(U())]])
+    def junction(s,x,y): s.items.append(['junction',['at',f(g(x)),f(g(y))],['diameter','0'],['color','0','0','0','0'],['uuid',q(U())]])
     def nc(s,x,y): s.items.append(['no_connect',['at',f(x),f(y)],['uuid',q(U())]])
     def place(s,lib,name,ref,value,X,Y,conns,r=0,fp=None,dnp=False,fields=None,src=None,libname=None,vfy=None,fieldpos=None):
         X,Y=g(X),g(Y)
