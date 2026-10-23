@@ -20,9 +20,8 @@ R28: as R27
 R100: 0603 0R series (Jason decision); LCSC code not in PLAN (C17477 is 0805).
 C100: DC-block LF corner ~32 kHz into 50 ohm (PLAN Q6).
 R101: DNP shunt ~120 ohm back-match of ~85 ohm source (datasheet Zo); part/LCSC not chosen; verify return loss esp. >100 MHz.
-L1: LPF inductor size (SMD vs T37 option, PLAN Q7)
-C105: Parallel C across L (elliptic) per LowPassFilterModule - unconfirmed
-C101: LPF values builder choice (DNP)
+L1: LQW2UAS stock 0.9-3.3k/part; buy ahead. 150n uses +/-1% C2044861 (C2043109 is +/-5%).
+C105: 9.1p only +/-0.25pF in stock (C513588); 24p +/-2% stock thin (C2857979, ~950).
 J2: Footprint is a placeholder; check BWSMA-KE-P001 launch geometry and 1.6 mm edge fit.
 R120: see R100
 R121: see R100
@@ -30,3 +29,5 @@ J3: see J2
 R140: see R100
 R141: see R100
 J4: see J2
+JP102-JP144: Solder-jumper footprints (SolderJumper-2_P1.3mm_*_RoundedPad1.0x1.5mm) not RF-characterised; check pad parasitics at 160 MHz on layout. Bridged (NC) trace must be cut to remove a filter; then bridge the NO bypass.
+LPF values (CLK0/1 60 MHz, CLK2 160 MHz): designs in /workspace/vfo/lpf60 and /workspace/vfo/lpf (ngspice + Monte Carlo); confirm on a VNA once built.

@@ -131,7 +131,7 @@ for i,(ref,n,nm) in enumerate([('SW2','BTN_BAND_SW','BAND'),('SW3','BTN_STEP_SW'
     M.place('Switch','SW_Push',ref,nm,110+i*30,260,{'1':n,'2':'GND'},fp='Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A',fields=LC('C318884','TS-1187A-B-A-B','XKB'))
 # ================= SYNTH / RF =================
 S=Sheet('synth_rf.kicad_sch','Synth and RF outputs','b0000000-0000-4000-8000-000000000004',4); sheets.append(S)
-S.text('Si5351A + 25 MHz TCXO copied from Si5351A Breakout Rev F (R5/C5/C6/R6/C4, XB open). Each output: Rs 0R -> Cb 100n DC block -> DNP shunt -> LPF (DNP) with 0R bypass -> SMA.',20,20,2)
+S.text('Si5351A + 25 MHz TCXO copied from Si5351A Breakout Rev F (R5/C5/C6/R6/C4, XB open). Each output: Rs 0R -> Cb 100n DC block -> DNP shunt -> 7th-order Cauer LPF between NC solder jumpers, NO bypass jumper -> SMA.',20,20,2)
 S.place('Si5351ABreakout','TCXO_4P','X1','25MHz TCXO',59.69,87.63,{'1':'WIRE','2':'GND','3':'WIRE','4':'WIRE'},src=REVF_LIBS,libname='Si5351AVFO',
   fields=LC('C48888230','OW2EL89CENUXK7YLC-25M','YXC'),vfy='TCXO stock thin (718); buy before ordering.')
 R(S,'R5','10',59.69,67.31,'+3V3_CLK','WIRE',fields=LC('C17415','0805W8F100JT5E','UNI-ROYAL'))
@@ -148,38 +148,54 @@ S.wire([S.pinpos[('X1','3')],S.pinpos[('C6','1')]]); S.wire([S.pinpos[('C6','2')
 C(S,'C4','100n',165,60,'+3V3_CLK','GND',fields=C100N)
 R(S,'R27','VERIFY 2.2k-4.7k',100,130,'+3V3D','I2C_SCL',vfy='I2C pull-up value not fixed (PLAN 2.2-4.7k); no LCSC chosen. On +3V3D: ATtiny, Si5351, CP2102N and OLED all at 3.3 V, so I2C levels match.')
 R(S,'R28','VERIFY 2.2k-4.7k',140,130,'+3V3D','I2C_SDA',vfy='as R27')
+L1008='Inductor_SMD:L_1008_2520Metric'
+JNC='Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm'; JNO='Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm'
+def JP(s,ref,x,y,nc,**k):
+    nm='SolderJumper_2_Bridged' if nc else 'SolderJumper_2_Open'
+    return s.place('Jumper',nm,ref,'NC' if nc else 'NO',x,y,{'1':'WIRE','2':'WIRE'},fp=JNC if nc else JNO,fields={'LCSC':''},fieldpos={'Reference':(0,-2.54),'Value':(0,2.54)},**k)
+YG=lambda c,m: LC(c,m,'YAGEO')
+CAP={'2.0p':YG('C513620','CC0603BRNPO9BN2R0'),'3.6p':YG('C519106','CC0603BRNPO9BN3R6'),'5.6p':YG('C519111','CC0603BRNPO9BN5R6'),
+ '9.1p':YG('C513588','CC0603CRNPO9BN9R1'),'16p':YG('C519489','CC0603FRNPO9BN160'),'18p':YG('C527046','CC0603FRNPO9BN180'),
+ '20p':YG('C326779','CC0603FRNPO9BN200'),'24p':LC('C2857979','0603CG240G500NT','FH'),'30p':YG('C519491','CC0603FRNPO9BN300'),
+ '33p':YG('C519485','CC0603FRNPO9BN330'),'39p':YG('C527048','CC0603FRNPO9BN390'),'43p':YG('C519493','CC0603FRNPO9BN430'),
+ '75p':YG('C519496','CC0603FRNPO9BN750'),'82p':YG('C519487','CC0603FRNPO9BN820')}
+IND={'33n':LC('C2043161','LQW2UAS33NG0CL','Murata'),'68n':LC('C703709','LQW2UAS68NG00L','Murata'),
+ '100n':LC('C1330579','LQW2UASR10G0CL','Murata'),'150n':LC('C2044861','LQW2UASR15F00L','Murata')}
+F60=dict(sh=['33p','75p','82p','43p'],par=['39p','20p','9.1p'],L=['100n','150n','150n'])
+F160=dict(sh=['3.6p','24p','30p','18p'],par=['16p','5.6p','2.0p'],L=['33n','68n','68n'])
+FILT=[F60,F60,F160]
 for k in range(3):
-    y=172.72+k*45.72
+    y=172.72+k*45.72; F=FILT[k]
     n='CLK%d'%k; rb=100+k*20; cb=100+k*20; lb=1+k*3
     S.text('%s output chain (J%d)'%(n,k+2),20,y-24)
     R(S,'R%d'%rb,'0',40.64,y,n,'WIRE',r=90,fp=R0603,fields={'LCSC':''},vfy='0603 0R series (Jason decision); LCSC code not in PLAN (C17477 is 0805).' if k==0 else 'see R100')
     C(S,'C%d'%cb,'100n',50.8,y,'WIRE','WIRE',r=90,fields=C100N,vfy='DC-block LF corner ~32 kHz into 50 ohm (PLAN Q6).' if k==0 else None)
     S.wire([S.pinpos[('R%d'%rb,'2')],S.pinpos[('C%d'%cb,'1')]])
     R(S,'R%d'%(rb+1),'120',60.96,y+5.08,'WIRE','GND',dnp=True,vfy='DNP shunt ~120 ohm back-match of ~85 ohm source (datasheet Zo); part/LCSC not chosen; verify return loss esp. >100 MHz.' if k==0 else 'see R100')
-    R(S,'R%d'%(rb+2),'0',101.6,y,'WIRE','WIRE',r=90,fields=R0R,dnp=True)  # RA
-    S.wire([S.pinpos[('C%d'%cb,'2')],S.pinpos[('R%d'%(rb+2),'1')]]); S.wire([(60.96,y),S.pinpos[('R%d'%(rb+1),'1')]])
+    JP(S,'JP%d'%(rb+2),101.6,y,True)  # RA (NC)
+    S.wire([S.pinpos[('C%d'%cb,'2')],S.pinpos[('JP%d'%(rb+2),'1')]]); S.wire([(60.96,y),S.pinpos[('R%d'%(rb+1),'1')]])
     xs=[121.92+j*22.86 for j in range(3)]
     for j in range(3):
-        L(S,'L%d'%(lb+j),'DNP',xs[j],y,'WIRE','WIRE',r=90,dnp=True,vfy='LPF inductor size (SMD vs T37 option, PLAN Q7)' if (k==0 and j==0) else None)
-        C(S,'C%d'%(cb+5+j),'DNP',xs[j],y-7.62,'WIRE','WIRE',r=90,dnp=True,vfy='Parallel C across L (elliptic) per LowPassFilterModule - unconfirmed' if (k==0 and j==0) else None)
+        L(S,'L%d'%(lb+j),F['L'][j],xs[j],y,'WIRE','WIRE',r=90,fp=L1008,fields=IND[F['L'][j]],vfy='LQW2UAS stock 0.9-3.3k/part; buy ahead. 150n uses +/-1% C2044861 (C2043109 is +/-5%).' if (k==0 and j==0) else None)
+        C(S,'C%d'%(cb+5+j),F['par'][j],xs[j],y-7.62,'WIRE','WIRE',r=90,fp=C0603,fields=CAP[F['par'][j]],vfy='9.1p only +/-0.25pF in stock (C513588); 24p +/-2% stock thin (C2857979, ~950).' if (k==0 and j==0) else None)
         l1=S.pinpos[('L%d'%(lb+j),'1')]; l2=S.pinpos[('L%d'%(lb+j),'2')]
         S.wire([l1,S.pinpos[('C%d'%(cb+5+j),'1')]]); S.wire([l2,S.pinpos[('C%d'%(cb+5+j),'2')]])
     shx=[109.22]+[x+7.62 for x in xs]
     for j in range(4):
-        C(S,'C%d'%(cb+1+j),'DNP',shx[j],y+5.08,'WIRE','GND',dnp=True,vfy='LPF values builder choice (DNP)' if (k==0 and j==0) else None)
+        C(S,'C%d'%(cb+1+j),F['sh'][j],shx[j],y+5.08,'WIRE','GND',fp=C0603,fields=CAP[F['sh'][j]])
         S.wire([(shx[j],y),S.pinpos[('C%d'%(cb+1+j),'1')]])
-    R(S,'R%d'%(rb+3),'0',185.42,y,'WIRE','WIRE',r=90,fields=R0R,dnp=True)  # RB
+    JP(S,'JP%d'%(rb+3),185.42,y,True)  # RB (NC)
     S.place('Connector','Conn_Coaxial','J%d'%(k+2),'SMA '+n,203.2,y,{'1':'WIRE','2':'GND'},fp='Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount',
       fields=LC('C496550','BWSMA-KE-P001','BAT Wireless'),vfy='Footprint is a placeholder; check BWSMA-KE-P001 launch geometry and 1.6 mm edge fit.' if k==0 else 'see J2')
-    chainpts=[S.pinpos[('R%d'%(rb+2),'2')]]
+    chainpts=[S.pinpos[('JP%d'%(rb+2),'2')]]
     for j in range(3): chainpts+= [S.pinpos[('L%d'%(lb+j),'1')],S.pinpos[('L%d'%(lb+j),'2')]]
-    chainpts+=[S.pinpos[('R%d'%(rb+3),'1')]]
+    chainpts+=[S.pinpos[('JP%d'%(rb+3),'1')]]
     for a_,b_ in zip(chainpts[0::2],chainpts[1::2]): S.wire([a_,b_])
-    S.wire([S.pinpos[('R%d'%(rb+3),'2')],S.pinpos[('J%d'%(k+2),'1')]])
-    R(S,'R%d'%(rb+4),'0',88.9,y+20.32,'WIRE','WIRE',r=90,fields=R0R)          # RC bypass fitted
-    S.wire([(76.2,y),(76.2,y+20.32),S.pinpos[('R%d'%(rb+4),'1')]])
-    S.wire([S.pinpos[('R%d'%(rb+4),'2')],(193.04,y+20.32),(193.04,y)])
-S.text('Bypass: RC (R104/R124/R144) fitted by default; RA/RB DNP. Filter build: fit RA/RB, remove RC.\nKeep RA/RB pads <=2 mm from junction (PLAN 6).',200,100)
+    S.wire([S.pinpos[('JP%d'%(rb+3),'2')],S.pinpos[('J%d'%(k+2),'1')]])
+    JP(S,'JP%d'%(rb+4),88.9,y+20.32,False)  # RC bypass (NO)
+    S.wire([(76.2,y),(76.2,y+20.32),S.pinpos[('JP%d'%(rb+4),'1')]])
+    S.wire([S.pinpos[('JP%d'%(rb+4),'2')],(193.04,y+20.32),(193.04,y)])
+S.text('Jumpers: JP102/JP103, JP122/JP123, JP142/JP143 in-line, normally closed (cut to remove filter).\nJP104/JP124/JP144 filter bypass, normally open (bridge after cutting in-line pair).\nKeep in-line jumper pads <=2 mm from junction (PLAN 6).\nFilter values are interchangeable per output (same footprint):\n  CLK0/CLK1: 60 MHz Cauer (HF + 6 m; matched pair keeps quadrature phase).\n  CLK2: 160 MHz Cauer. Not a harmonic filter for HF bands.',200,100)
 # ================= VERIFY text blocks + root =================
 P.vpos=(230,150); M.vpos=(195,238); S.vpos=(290,40)
 for sh in sheets:

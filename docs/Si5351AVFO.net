@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/workspace/Si5351AVFO/Si5351AVFO.kicad_sch")
-		(date "2026-10-22T21:16:50")
+		(date "2026-10-23T09:48:25")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
@@ -255,7 +255,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "9b804fda-fb80-4019-9de6-7fcb7f604a42")
+			(tstamps "8d442f61-76d2-4c11-940b-5b74a123396f")
 			(units
 				(unit
 					(name "A")
@@ -327,7 +327,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "83748a08-f9fc-4cfc-b64a-426dfb295500")
+			(tstamps "cc85c9f5-80ab-4494-88db-4af1fe5c3466")
 			(units
 				(unit
 					(name "A")
@@ -399,7 +399,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "698c602c-0778-45c1-aebb-9e7804d7ab07")
+			(tstamps "fc9f6935-dff9-42a6-afbe-cf524c19b06d")
 			(units
 				(unit
 					(name "A")
@@ -471,7 +471,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "a2d32058-efa6-439b-8e96-9d3035db2c59")
+			(tstamps "258cf06d-37cf-483d-8848-0b73860e634e")
 			(units
 				(unit
 					(name "A")
@@ -543,7 +543,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "36aded5a-96a6-414b-9638-52f60417470f")
+			(tstamps "0e2e2614-4593-41cb-bb91-c14c5c92cb8b")
 			(units
 				(unit
 					(name "A")
@@ -615,7 +615,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "41d3bd52-7bbc-4987-b77b-d3134822e7ba")
+			(tstamps "a7147ced-520d-4928-9130-d842b8f39d06")
 			(units
 				(unit
 					(name "A")
@@ -693,7 +693,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "0538ef58-d5e6-4966-83d7-bde042ad6dd3")
+			(tstamps "87a4b48c-5a96-4a62-a511-eea59ac5c62e")
 			(units
 				(unit
 					(name "A")
@@ -765,7 +765,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "a7ee29ef-a0c3-4033-af41-839505f3f06e")
+			(tstamps "447d4e2c-4c9c-4602-a673-ac7b4c131e13")
 			(units
 				(unit
 					(name "A")
@@ -837,7 +837,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "0f367099-c0fe-42bc-88cf-2346921bceee")
+			(tstamps "34fde1fa-5ea5-4ec5-a437-e3f3ed6b3f2a")
 			(units
 				(unit
 					(name "A")
@@ -909,7 +909,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "ff697711-15b9-4528-9dff-884345e3716e")
+			(tstamps "c6ae409f-d12a-46d9-9260-29c6f02532ba")
 			(units
 				(unit
 					(name "A")
@@ -987,7 +987,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "c6fc78b7-5eff-4afe-9324-4b746a8d34b8")
+			(tstamps "17c624e8-84db-4b60-9cbc-f823c2639cb9")
 			(units
 				(unit
 					(name "A")
@@ -1059,7 +1059,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "ed2bf302-f781-46d0-8688-80223daebf11")
+			(tstamps "955f023c-d71a-44c2-a355-92cd6a4c7072")
 			(units
 				(unit
 					(name "A")
@@ -1122,7 +1122,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "22b72ccc-52f2-464e-a857-08624f87a54c")
+			(tstamps "0f78d740-5f25-4111-9bfc-87d14e954f6e")
 			(units
 				(unit
 					(name "A")
@@ -1200,7 +1200,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "1edbb007-dd9c-4a4a-bd3d-fd7455ccfc91")
+			(tstamps "d077535a-dcdf-47c5-bd25-4455468598a8")
 			(units
 				(unit
 					(name "A")
@@ -1278,7 +1278,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "80c86fe2-fbcc-4f20-9e19-9c7b899df004")
+			(tstamps "3529b01b-f61e-4c10-906d-d7acf9259f55")
 			(units
 				(unit
 					(name "A")
@@ -1356,7 +1356,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "268866e9-cb35-43ae-a426-33d638a73a44")
+			(tstamps "2cd4eb46-b078-4e5d-82f2-005df3c8cbd1")
 			(units
 				(unit
 					(name "A")
@@ -1410,7 +1410,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "79f370f3-9122-4825-8c46-cd687c55afca")
+			(tstamps "19a0425a-7fa1-4ce7-8001-53aad0ba6d26")
 			(units
 				(unit
 					(name "A")
@@ -1457,7 +1457,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "3dc1fc3e-dbef-48e5-bc41-b3b68037aebd")
+			(tstamps "fd4d95be-2f11-4a83-bdbb-6a21d782dca5")
 			(units
 				(unit
 					(name "A")
@@ -1504,7 +1504,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "68811d71-6cdd-46ac-942e-ca591abbe104")
+			(tstamps "e24a820c-db62-4a7b-bde5-9669212348ff")
 			(units
 				(unit
 					(name "A")
@@ -1551,7 +1551,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "5c5162dd-e79d-46c8-90ea-4dfd94ae231c")
+			(tstamps "42c773e1-8f67-404a-8447-940945e76751")
 			(units
 				(unit
 					(name "A")
@@ -1622,7 +1622,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "b2cd219c-f134-4178-a57c-e5e50846c189")
+			(tstamps "9ce4a7e1-6986-43dc-ac40-f366d4a26eb7")
 			(units
 				(unit
 					(name "A")
@@ -1739,7 +1739,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "b4ad4310-4eb4-46d6-a374-94337569cce0")
+			(tstamps "5c38da18-d166-4068-b1e1-a39dfafc2e4c")
 			(units
 				(unit
 					(name "A")
@@ -1811,7 +1811,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "a46c093b-25b9-4e58-a9bc-ae27e986aec2")
+			(tstamps "4af357a2-3f85-4f04-b5b3-85effe841453")
 			(units
 				(unit
 					(name "A")
@@ -1883,7 +1883,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "d84713ec-bb6c-43c9-9650-0c32194dfd7c")
+			(tstamps "285e38bc-a8c5-4827-ab96-f1ac95492fd1")
 			(units
 				(unit
 					(name "A")
@@ -1955,7 +1955,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "67e7f4b0-80c1-4e21-94bf-d30027d3181b")
+			(tstamps "f5197234-e7b9-4674-bc99-32568313ed5b")
 			(units
 				(unit
 					(name "A")
@@ -2033,7 +2033,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "a609b8ab-b95f-42db-8744-523fa976c235")
+			(tstamps "e5d9ffa3-1852-49a5-b3c3-7b3e0dc2d668")
 			(units
 				(unit
 					(name "A")
@@ -2105,7 +2105,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "d9d876e5-c881-40bf-9a1d-8681a2c564ff")
+			(tstamps "2e1cde1e-b9de-4340-9b5c-64ceef8642ab")
 			(units
 				(unit
 					(name "A")
@@ -2192,7 +2192,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "5bfbbf03-aa85-454f-8f74-872d88d6cd24")
+			(tstamps "976be7b4-8409-44e2-8c0c-897a0a749632")
 			(units
 				(unit
 					(name "A")
@@ -2333,7 +2333,7 @@
 				(names "/Power and USB/")
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
-			(tstamps "4f0f37f4-436a-491a-b9a1-b56168f06348")
+			(tstamps "937048f1-1b39-45c6-a681-20fef89f32c4")
 			(units
 				(unit
 					(name "A")
@@ -2420,7 +2420,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "63c11391-e478-4d52-83d0-b42a8c634b5e")
+			(tstamps "c5bfe053-4593-4241-9e35-6b7338f4b87c")
 			(units
 				(unit
 					(name "A")
@@ -2492,7 +2492,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "0add80c1-57bc-4c04-a2de-180fe07c2fb5")
+			(tstamps "5e35aeb2-a892-45c6-8319-70dbefa4929e")
 			(units
 				(unit
 					(name "A")
@@ -2564,7 +2564,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "cbea97ad-66a1-4303-973d-f8a926cac3c6")
+			(tstamps "0e43b05f-7755-490a-8046-5bcf463be291")
 			(units
 				(unit
 					(name "A")
@@ -2642,7 +2642,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "a0c207fe-7169-4cda-91e5-5ff433857354")
+			(tstamps "ca2cfeb7-d504-4c49-8c9a-2801d8e8623c")
 			(units
 				(unit
 					(name "A")
@@ -2714,7 +2714,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "ecb1f3f4-0f68-4092-87d3-4649b7ef3983")
+			(tstamps "908c509a-4039-4ff8-9935-52d2a0711c85")
 			(units
 				(unit
 					(name "A")
@@ -2786,7 +2786,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "eef113b1-a2ca-40a9-924c-fe2b31db8d32")
+			(tstamps "93c41583-5df0-4006-8196-a5eba1997cde")
 			(units
 				(unit
 					(name "A")
@@ -2858,7 +2858,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "7794e12f-876d-4c52-bc93-ed330452ec25")
+			(tstamps "0eeb883a-153f-434f-95df-d4f35c349dc8")
 			(units
 				(unit
 					(name "A")
@@ -2930,7 +2930,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "ca7765c0-8b08-470c-ae3e-d81c5d35a6c9")
+			(tstamps "ca32d136-8531-4fb4-b0e1-1002d74ce481")
 			(units
 				(unit
 					(name "A")
@@ -3002,7 +3002,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "e7caefb8-07d0-45c4-adfd-7882db7adb87")
+			(tstamps "1c51d9b8-c632-43b1-b27a-186e2b411d3c")
 			(units
 				(unit
 					(name "A")
@@ -3062,7 +3062,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "f65742a9-58df-4f34-95e8-7314d43b214b")
+			(tstamps "8fff73e0-857e-487a-be99-02c2ae1516f4")
 			(units
 				(unit
 					(name "A")
@@ -3140,7 +3140,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "5d1ca238-0da6-4fee-9796-8ebd0eb43966")
+			(tstamps "418d69cb-b31d-4c47-b2b7-0efa81fea90f")
 			(units
 				(unit
 					(name "A")
@@ -3218,7 +3218,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "2c840267-72ea-45e7-acdd-b6a878424670")
+			(tstamps "c3d1e3a2-38c8-4fcb-ac51-fd640f9efe3c")
 			(units
 				(unit
 					(name "A")
@@ -3296,7 +3296,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "92a40e26-dbc3-4b80-97ed-05555438df1c")
+			(tstamps "70bec1ea-80e5-4433-a1a4-73229a8aacce")
 			(units
 				(unit
 					(name "A")
@@ -3356,7 +3356,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "83d46bea-19db-4b93-9720-ee21823619df")
+			(tstamps "1ac6ce04-5854-4d01-94af-fb4f7fcc12a7")
 			(units
 				(unit
 					(name "A")
@@ -3428,7 +3428,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "f8b5034e-dddb-46cc-a185-ee9e8e674db5")
+			(tstamps "4b01e6af-e818-47cd-a102-e2651810c4de")
 			(units
 				(unit
 					(name "A")
@@ -3500,7 +3500,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "0c0a582a-dc26-4d95-bc7e-0e467ffa2b3e")
+			(tstamps "f2d13d7e-9788-45b1-ac08-f86248c4b97d")
 			(units
 				(unit
 					(name "A")
@@ -3572,7 +3572,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "08bbb7ce-719c-43b0-a697-573491749ace")
+			(tstamps "804492aa-c3a0-4ad1-b582-61e1613b891e")
 			(units
 				(unit
 					(name "A")
@@ -3644,7 +3644,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "da088337-9d53-4729-8575-8bbd4ad538ce")
+			(tstamps "e341b34b-2118-40df-98a7-5ae53ccf0b1e")
 			(units
 				(unit
 					(name "A")
@@ -3716,7 +3716,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "ef83c34f-35e3-4ca8-a12c-a02af2950688")
+			(tstamps "f7c01129-07f2-4372-879e-42def6a2312c")
 			(units
 				(unit
 					(name "A")
@@ -3788,7 +3788,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "648ba99d-d17f-4495-a957-9e506b667fe9")
+			(tstamps "575939be-8223-45b6-8114-0b6859d7d661")
 			(units
 				(unit
 					(name "A")
@@ -3860,7 +3860,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "b69230b1-73ae-4808-bc21-bcaf6c1271b6")
+			(tstamps "46748e1e-c507-45eb-9422-e7ae9b47d267")
 			(units
 				(unit
 					(name "A")
@@ -3932,7 +3932,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "fb421eb5-f49b-4393-94ad-920566a7a85b")
+			(tstamps "6d64aac4-4fa8-43d4-a49b-344241d4d7ea")
 			(units
 				(unit
 					(name "A")
@@ -4004,7 +4004,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "f01b513b-2d84-46c0-92ab-d0b59c25dc2e")
+			(tstamps "accf0d27-d161-404c-bed8-6cd6e3e35e26")
 			(units
 				(unit
 					(name "A")
@@ -4076,7 +4076,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "3c092994-7c48-4e5f-a7ba-dd627eb78140")
+			(tstamps "d9d95770-01c6-4178-b185-012a80e0b2eb")
 			(units
 				(unit
 					(name "A")
@@ -4148,7 +4148,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "37ffe8d1-ccf9-41a4-8bb0-938e7116a5a1")
+			(tstamps "7cf41224-6f1f-4d38-8b96-21eeaaaa2603")
 			(units
 				(unit
 					(name "A")
@@ -4220,7 +4220,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "9dd0d721-4517-41e8-8a50-bdb7329c7e67")
+			(tstamps "35036021-d568-4b9f-b272-513a6df5ac43")
 			(units
 				(unit
 					(name "A")
@@ -4292,7 +4292,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "82fd4df5-8778-41e4-9b0f-321c70ac8a7e")
+			(tstamps "8dd20e9b-267a-40d1-8a8f-41817e39490d")
 			(units
 				(unit
 					(name "A")
@@ -4370,7 +4370,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "1ba89c0e-62ca-46d5-8e40-8f6ca47d4a92")
+			(tstamps "d2e4f50d-5b22-4dd3-a207-258594664d0f")
 			(units
 				(unit
 					(name "A")
@@ -4447,7 +4447,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "adf2e619-ae56-4590-97a7-f12e70e76d2b")
+			(tstamps "3d9022a8-202a-4479-a3b2-2baf4b49c028")
 			(units
 				(unit
 					(name "A")
@@ -4515,7 +4515,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "44b2a818-882b-4b17-9fa1-1a19dd83351a")
+			(tstamps "c59a21ad-4e9b-4b72-a6a7-fad4134b8594")
 			(units
 				(unit
 					(name "A")
@@ -4583,7 +4583,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "c2da18d2-4823-4323-b66e-9cf75c89acf1")
+			(tstamps "8121f764-b676-4bab-9991-f27fb668366e")
 			(units
 				(unit
 					(name "A")
@@ -4661,7 +4661,7 @@
 				(names "/MCU and UI/")
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
-			(tstamps "37a73696-65f7-4562-8219-a3a1a28ac883")
+			(tstamps "cda27250-4c50-4f04-9d91-f320a003ffd6")
 			(units
 				(unit
 					(name "A")
@@ -4787,7 +4787,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "056ade75-69ac-42fd-8e9b-80b5c1b8032a")
+			(tstamps "56bd0ef7-c366-4426-b0b9-30adc6145bde")
 			(units
 				(unit
 					(name "A")
@@ -4859,7 +4859,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "65e4c294-6645-44b5-b0b4-413bad794d71")
+			(tstamps "47f8ceb2-fac2-4024-9de8-58f2f9033f92")
 			(units
 				(unit
 					(name "A")
@@ -4931,7 +4931,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "81b12412-3f8c-4aef-872e-7ec64f5e0bf7")
+			(tstamps "fcfffa21-d54e-461f-a31c-9a7aabcdc417")
 			(units
 				(unit
 					(name "A")
@@ -5009,7 +5009,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "0e38697d-b62b-4e57-a581-606783c307a3")
+			(tstamps "6c435d50-e1ad-4b6f-84aa-8344784712dc")
 			(units
 				(unit
 					(name "A")
@@ -5026,14 +5026,18 @@
 		)
 		(comp
 			(ref "C101")
-			(value "DNP")
-			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(value "33p")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "VERIFY") "LPF values builder choice (DNP)")
+					(name "LCSC") "C519485")
 				(field
-					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+					(name "MPN") "CC0603FRNPO9BN330")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -5046,8 +5050,16 @@
 				(description "Unpolarized capacitor, small symbol")
 			)
 			(property
-				(name "VERIFY")
-				(value "LPF values builder choice (DNP)")
+				(name "LCSC")
+				(value "C519485")
+			)
+			(property
+				(name "MPN")
+				(value "CC0603FRNPO9BN330")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
 			)
 			(property
 				(name "Sheetname")
@@ -5056,9 +5068,6 @@
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -5072,7 +5081,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "e96c4027-2427-404a-ba59-5402ec15adce")
+			(tstamps "c9417b0a-7b8c-4c86-ad79-e3ca32277b40")
 			(units
 				(unit
 					(name "A")
@@ -5089,12 +5098,18 @@
 		)
 		(comp
 			(ref "C102")
-			(value "DNP")
-			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(value "75p")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+					(name "LCSC") "C519496")
+				(field
+					(name "MPN") "CC0603FRNPO9BN750")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -5107,15 +5122,24 @@
 				(description "Unpolarized capacitor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C519496")
+			)
+			(property
+				(name "MPN")
+				(value "CC0603FRNPO9BN750")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -5129,7 +5153,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "f42083fe-1ac0-4e65-93d7-298fddeca448")
+			(tstamps "1fa31aa4-3703-4af2-bc7f-6c6b440724d9")
 			(units
 				(unit
 					(name "A")
@@ -5146,12 +5170,18 @@
 		)
 		(comp
 			(ref "C103")
-			(value "DNP")
-			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(value "82p")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+					(name "LCSC") "C519487")
+				(field
+					(name "MPN") "CC0603FRNPO9BN820")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -5164,15 +5194,24 @@
 				(description "Unpolarized capacitor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C519487")
+			)
+			(property
+				(name "MPN")
+				(value "CC0603FRNPO9BN820")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -5186,7 +5225,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "8c8bee0a-bb34-4857-9528-9029480860ba")
+			(tstamps "68a04fa4-a9d5-4fe7-be90-a50a0bc312c7")
 			(units
 				(unit
 					(name "A")
@@ -5203,12 +5242,18 @@
 		)
 		(comp
 			(ref "C104")
-			(value "DNP")
-			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(value "43p")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+					(name "LCSC") "C519493")
+				(field
+					(name "MPN") "CC0603FRNPO9BN430")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -5221,15 +5266,24 @@
 				(description "Unpolarized capacitor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C519493")
+			)
+			(property
+				(name "MPN")
+				(value "CC0603FRNPO9BN430")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -5243,7 +5297,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "e18728be-a263-4b56-be6a-718cfdd5a9fe")
+			(tstamps "89d04953-9a00-4409-a867-bb0096703509")
 			(units
 				(unit
 					(name "A")
@@ -5260,14 +5314,20 @@
 		)
 		(comp
 			(ref "C105")
-			(value "DNP")
-			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(value "39p")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "VERIFY") "Parallel C across L (elliptic) per LowPassFilterModule - unconfirmed")
+					(name "LCSC") "C527048")
 				(field
-					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+					(name "MPN") "CC0603FRNPO9BN390")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "VERIFY") "9.1p only +/-0.25pF in stock (C513588); 24p +/-2% stock thin (C2857979, ~950).")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -5280,8 +5340,20 @@
 				(description "Unpolarized capacitor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C527048")
+			)
+			(property
+				(name "MPN")
+				(value "CC0603FRNPO9BN390")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
 				(name "VERIFY")
-				(value "Parallel C across L (elliptic) per LowPassFilterModule - unconfirmed")
+				(value "9.1p only +/-0.25pF in stock (C513588); 24p +/-2% stock thin (C2857979, ~950).")
 			)
 			(property
 				(name "Sheetname")
@@ -5290,9 +5362,6 @@
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -5306,7 +5375,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "b01a6252-117a-44b9-ad07-d5607d77fe9a")
+			(tstamps "67f1fbf9-7096-4141-b10c-a82e43dd317d")
 			(units
 				(unit
 					(name "A")
@@ -5323,12 +5392,18 @@
 		)
 		(comp
 			(ref "C106")
-			(value "DNP")
-			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(value "20p")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+					(name "LCSC") "C326779")
+				(field
+					(name "MPN") "CC0603FRNPO9BN200")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -5341,15 +5416,24 @@
 				(description "Unpolarized capacitor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C326779")
+			)
+			(property
+				(name "MPN")
+				(value "CC0603FRNPO9BN200")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -5363,7 +5447,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "c2beeba2-144d-4c1b-9f51-77463261541f")
+			(tstamps "85dd53f4-019c-48fb-b428-93b745bb47a4")
 			(units
 				(unit
 					(name "A")
@@ -5380,12 +5464,18 @@
 		)
 		(comp
 			(ref "C107")
-			(value "DNP")
-			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(value "9.1p")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+					(name "LCSC") "C513588")
+				(field
+					(name "MPN") "CC0603CRNPO9BN9R1")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -5398,15 +5488,24 @@
 				(description "Unpolarized capacitor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C513588")
+			)
+			(property
+				(name "MPN")
+				(value "CC0603CRNPO9BN9R1")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -5420,7 +5519,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "dfc84cb6-8a93-43b9-a68b-9dd01fcfe44b")
+			(tstamps "0719facd-2b78-43a1-8195-5ec35f75c5a7")
 			(units
 				(unit
 					(name "A")
@@ -5492,7 +5591,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "2424ccd8-b241-4b75-8b62-eadbd8ad4e96")
+			(tstamps "ff124b66-a443-4612-a3a2-81b0f62a21e2")
 			(units
 				(unit
 					(name "A")
@@ -5509,12 +5608,18 @@
 		)
 		(comp
 			(ref "C121")
-			(value "DNP")
-			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(value "33p")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+					(name "LCSC") "C519485")
+				(field
+					(name "MPN") "CC0603FRNPO9BN330")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -5527,15 +5632,24 @@
 				(description "Unpolarized capacitor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C519485")
+			)
+			(property
+				(name "MPN")
+				(value "CC0603FRNPO9BN330")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -5549,7 +5663,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "7f41a713-9f5c-4380-afe9-6d02b7da124b")
+			(tstamps "4af367bd-f619-4905-9b50-9deee0153ec1")
 			(units
 				(unit
 					(name "A")
@@ -5566,12 +5680,18 @@
 		)
 		(comp
 			(ref "C122")
-			(value "DNP")
-			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(value "75p")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+					(name "LCSC") "C519496")
+				(field
+					(name "MPN") "CC0603FRNPO9BN750")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -5584,15 +5704,24 @@
 				(description "Unpolarized capacitor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C519496")
+			)
+			(property
+				(name "MPN")
+				(value "CC0603FRNPO9BN750")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -5606,7 +5735,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "3182e962-328b-4750-8dd9-dd59c70952df")
+			(tstamps "42d66cc4-e9c0-4bbf-b9c6-eafab4e1e9ee")
 			(units
 				(unit
 					(name "A")
@@ -5623,12 +5752,18 @@
 		)
 		(comp
 			(ref "C123")
-			(value "DNP")
-			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(value "82p")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+					(name "LCSC") "C519487")
+				(field
+					(name "MPN") "CC0603FRNPO9BN820")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -5641,15 +5776,24 @@
 				(description "Unpolarized capacitor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C519487")
+			)
+			(property
+				(name "MPN")
+				(value "CC0603FRNPO9BN820")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -5663,7 +5807,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "27e217aa-914c-412f-a6e3-a3447ff18e0c")
+			(tstamps "d3c3cd41-ce00-4e46-9776-e773242e0ddb")
 			(units
 				(unit
 					(name "A")
@@ -5680,12 +5824,18 @@
 		)
 		(comp
 			(ref "C124")
-			(value "DNP")
-			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(value "43p")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+					(name "LCSC") "C519493")
+				(field
+					(name "MPN") "CC0603FRNPO9BN430")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -5698,15 +5848,24 @@
 				(description "Unpolarized capacitor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C519493")
+			)
+			(property
+				(name "MPN")
+				(value "CC0603FRNPO9BN430")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -5720,7 +5879,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "fd394d17-22dc-4c32-ae3c-d7faeae970b2")
+			(tstamps "20f1271d-2297-4c1e-9fef-ac7f531c1dda")
 			(units
 				(unit
 					(name "A")
@@ -5737,12 +5896,18 @@
 		)
 		(comp
 			(ref "C125")
-			(value "DNP")
-			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(value "39p")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+					(name "LCSC") "C527048")
+				(field
+					(name "MPN") "CC0603FRNPO9BN390")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -5755,15 +5920,24 @@
 				(description "Unpolarized capacitor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C527048")
+			)
+			(property
+				(name "MPN")
+				(value "CC0603FRNPO9BN390")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -5777,7 +5951,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "fb6f5b7d-7b3b-4e4f-8dd9-28ba7588f892")
+			(tstamps "fd07071c-b572-401d-ac38-aeb08b2258fa")
 			(units
 				(unit
 					(name "A")
@@ -5794,12 +5968,18 @@
 		)
 		(comp
 			(ref "C126")
-			(value "DNP")
-			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(value "20p")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+					(name "LCSC") "C326779")
+				(field
+					(name "MPN") "CC0603FRNPO9BN200")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -5812,15 +5992,24 @@
 				(description "Unpolarized capacitor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C326779")
+			)
+			(property
+				(name "MPN")
+				(value "CC0603FRNPO9BN200")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -5834,7 +6023,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "079b8bab-30af-458d-b83e-96537b4e207c")
+			(tstamps "d408f1d9-b714-49bf-b6e5-94ceba5089bd")
 			(units
 				(unit
 					(name "A")
@@ -5851,12 +6040,18 @@
 		)
 		(comp
 			(ref "C127")
-			(value "DNP")
-			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(value "9.1p")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+					(name "LCSC") "C513588")
+				(field
+					(name "MPN") "CC0603CRNPO9BN9R1")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -5869,15 +6064,24 @@
 				(description "Unpolarized capacitor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C513588")
+			)
+			(property
+				(name "MPN")
+				(value "CC0603CRNPO9BN9R1")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -5891,7 +6095,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "d07e0ae6-9ced-436c-92bc-d65e04f1fc06")
+			(tstamps "9a2b21b0-9361-4aeb-bbb0-14d85f460893")
 			(units
 				(unit
 					(name "A")
@@ -5963,7 +6167,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "33a5b105-931a-4d08-ad43-3ae3c0fef8bf")
+			(tstamps "b57e4cad-c61d-430c-b82d-f557cf443b8c")
 			(units
 				(unit
 					(name "A")
@@ -5980,12 +6184,18 @@
 		)
 		(comp
 			(ref "C141")
-			(value "DNP")
-			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(value "3.6p")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+					(name "LCSC") "C519106")
+				(field
+					(name "MPN") "CC0603BRNPO9BN3R6")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -5998,15 +6208,24 @@
 				(description "Unpolarized capacitor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C519106")
+			)
+			(property
+				(name "MPN")
+				(value "CC0603BRNPO9BN3R6")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -6020,7 +6239,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "c4504ff4-2706-47d2-b69e-bb40be075c3a")
+			(tstamps "fe8708f6-db62-4301-b7bf-c328ea7ca278")
 			(units
 				(unit
 					(name "A")
@@ -6037,12 +6256,18 @@
 		)
 		(comp
 			(ref "C142")
-			(value "DNP")
-			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(value "24p")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+					(name "LCSC") "C2857979")
+				(field
+					(name "MPN") "0603CG240G500NT")
+				(field
+					(name "Manufacturer") "FH")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -6055,15 +6280,24 @@
 				(description "Unpolarized capacitor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C2857979")
+			)
+			(property
+				(name "MPN")
+				(value "0603CG240G500NT")
+			)
+			(property
+				(name "Manufacturer")
+				(value "FH")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -6077,7 +6311,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "2ec10027-d69f-478c-96b4-17b24718005d")
+			(tstamps "7b1a8939-6f86-4cc4-a27b-a727ae228a5b")
 			(units
 				(unit
 					(name "A")
@@ -6094,12 +6328,18 @@
 		)
 		(comp
 			(ref "C143")
-			(value "DNP")
-			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(value "30p")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+					(name "LCSC") "C519491")
+				(field
+					(name "MPN") "CC0603FRNPO9BN300")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -6112,15 +6352,24 @@
 				(description "Unpolarized capacitor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C519491")
+			)
+			(property
+				(name "MPN")
+				(value "CC0603FRNPO9BN300")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -6134,7 +6383,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "9c68bc6b-051e-4f2a-be6e-573f9aeb6dff")
+			(tstamps "acc53a91-895f-4747-ba2c-8a1db842fef7")
 			(units
 				(unit
 					(name "A")
@@ -6151,12 +6400,18 @@
 		)
 		(comp
 			(ref "C144")
-			(value "DNP")
-			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(value "18p")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+					(name "LCSC") "C527046")
+				(field
+					(name "MPN") "CC0603FRNPO9BN180")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -6169,15 +6424,24 @@
 				(description "Unpolarized capacitor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C527046")
+			)
+			(property
+				(name "MPN")
+				(value "CC0603FRNPO9BN180")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -6191,7 +6455,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "198238ff-f554-4109-8dc4-bc6f403fa67b")
+			(tstamps "8d7a6793-675d-44e4-b0c2-bdb2afb53216")
 			(units
 				(unit
 					(name "A")
@@ -6208,12 +6472,18 @@
 		)
 		(comp
 			(ref "C145")
-			(value "DNP")
-			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(value "16p")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+					(name "LCSC") "C519489")
+				(field
+					(name "MPN") "CC0603FRNPO9BN160")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -6226,15 +6496,24 @@
 				(description "Unpolarized capacitor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C519489")
+			)
+			(property
+				(name "MPN")
+				(value "CC0603FRNPO9BN160")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -6248,7 +6527,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "c31710d6-8bda-4405-aef4-c886bda890d5")
+			(tstamps "1fc8c9ab-121b-4e7d-8a13-0ea5ad634e80")
 			(units
 				(unit
 					(name "A")
@@ -6265,12 +6544,18 @@
 		)
 		(comp
 			(ref "C146")
-			(value "DNP")
-			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(value "5.6p")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+					(name "LCSC") "C519111")
+				(field
+					(name "MPN") "CC0603BRNPO9BN5R6")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -6283,15 +6568,24 @@
 				(description "Unpolarized capacitor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C519111")
+			)
+			(property
+				(name "MPN")
+				(value "CC0603BRNPO9BN5R6")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -6305,7 +6599,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "82ed8c3e-7311-42b4-a605-99118bd2f63c")
+			(tstamps "e987cb25-736e-428c-94e0-0deaa5f20bb5")
 			(units
 				(unit
 					(name "A")
@@ -6322,12 +6616,18 @@
 		)
 		(comp
 			(ref "C147")
-			(value "DNP")
-			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(value "2.0p")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+					(name "LCSC") "C513620")
+				(field
+					(name "MPN") "CC0603BRNPO9BN2R0")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -6340,15 +6640,24 @@
 				(description "Unpolarized capacitor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C513620")
+			)
+			(property
+				(name "MPN")
+				(value "CC0603BRNPO9BN2R0")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -6362,7 +6671,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "4c5b5424-9bcb-4f89-8937-0f4174fc5511")
+			(tstamps "9621c827-d858-48d9-b5d2-220b309cd531")
 			(units
 				(unit
 					(name "A")
@@ -6440,7 +6749,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "8e5a7f63-fc84-4196-9e82-3fada9f787c1")
+			(tstamps "584ceec2-979e-4b8b-9451-7e0fbc9e09ca")
 			(units
 				(unit
 					(name "A")
@@ -6518,7 +6827,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "0db309d3-adfa-4ace-be75-8546ee228dd7")
+			(tstamps "b039bf94-d82a-4ab8-a530-72d73dcf3d03")
 			(units
 				(unit
 					(name "A")
@@ -6596,7 +6905,556 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "7ac1f82a-8943-4b11-b410-0a1840f03625")
+			(tstamps "7ebfed17-ffa8-491e-9f3a-d296dcc04fd8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "JP102")
+			(value "NC")
+			(footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+			(description "Solder Jumper, 2-pole, closed/bridged")
+			(fields
+				(field
+					(name "LCSC")
+				)
+				(field
+					(name "Footprint") "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Solder Jumper, 2-pole, closed/bridged")
+			)
+			(libsource
+				(lib "Jumper")
+				(part "SolderJumper_2_Bridged")
+				(description "Solder Jumper, 2-pole, closed/bridged")
+			)
+			(property
+				(name "LCSC")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Synth and RF outputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "solder jumper SPST")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SolderJumper*Bridged*")
+			)
+			(sheetpath
+				(names "/Synth and RF outputs/")
+				(tstamps "/b0000000-0000-4000-8000-000000000004/")
+			)
+			(tstamps "a0892ff0-2b71-4320-bf1a-e8b4559b3c70")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "JP103")
+			(value "NC")
+			(footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+			(description "Solder Jumper, 2-pole, closed/bridged")
+			(fields
+				(field
+					(name "LCSC")
+				)
+				(field
+					(name "Footprint") "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Solder Jumper, 2-pole, closed/bridged")
+			)
+			(libsource
+				(lib "Jumper")
+				(part "SolderJumper_2_Bridged")
+				(description "Solder Jumper, 2-pole, closed/bridged")
+			)
+			(property
+				(name "LCSC")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Synth and RF outputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "solder jumper SPST")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SolderJumper*Bridged*")
+			)
+			(sheetpath
+				(names "/Synth and RF outputs/")
+				(tstamps "/b0000000-0000-4000-8000-000000000004/")
+			)
+			(tstamps "7d76dbc4-8fff-42c4-90bf-cc947a12a206")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "JP104")
+			(value "NO")
+			(footprint "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
+			(description "Solder Jumper, 2-pole, open")
+			(fields
+				(field
+					(name "LCSC")
+				)
+				(field
+					(name "Footprint") "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Solder Jumper, 2-pole, open")
+			)
+			(libsource
+				(lib "Jumper")
+				(part "SolderJumper_2_Open")
+				(description "Solder Jumper, 2-pole, open")
+			)
+			(property
+				(name "LCSC")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Synth and RF outputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "solder jumper SPST")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SolderJumper*Open*")
+			)
+			(sheetpath
+				(names "/Synth and RF outputs/")
+				(tstamps "/b0000000-0000-4000-8000-000000000004/")
+			)
+			(tstamps "16d52759-e1c4-4e35-a6db-7f2572e976eb")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "JP122")
+			(value "NC")
+			(footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+			(description "Solder Jumper, 2-pole, closed/bridged")
+			(fields
+				(field
+					(name "LCSC")
+				)
+				(field
+					(name "Footprint") "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Solder Jumper, 2-pole, closed/bridged")
+			)
+			(libsource
+				(lib "Jumper")
+				(part "SolderJumper_2_Bridged")
+				(description "Solder Jumper, 2-pole, closed/bridged")
+			)
+			(property
+				(name "LCSC")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Synth and RF outputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "solder jumper SPST")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SolderJumper*Bridged*")
+			)
+			(sheetpath
+				(names "/Synth and RF outputs/")
+				(tstamps "/b0000000-0000-4000-8000-000000000004/")
+			)
+			(tstamps "02e344dd-31ca-40ad-b7f5-523a6f6e02df")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "JP123")
+			(value "NC")
+			(footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+			(description "Solder Jumper, 2-pole, closed/bridged")
+			(fields
+				(field
+					(name "LCSC")
+				)
+				(field
+					(name "Footprint") "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Solder Jumper, 2-pole, closed/bridged")
+			)
+			(libsource
+				(lib "Jumper")
+				(part "SolderJumper_2_Bridged")
+				(description "Solder Jumper, 2-pole, closed/bridged")
+			)
+			(property
+				(name "LCSC")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Synth and RF outputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "solder jumper SPST")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SolderJumper*Bridged*")
+			)
+			(sheetpath
+				(names "/Synth and RF outputs/")
+				(tstamps "/b0000000-0000-4000-8000-000000000004/")
+			)
+			(tstamps "d7275b04-b7a4-4e26-b58e-571662c8acef")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "JP124")
+			(value "NO")
+			(footprint "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
+			(description "Solder Jumper, 2-pole, open")
+			(fields
+				(field
+					(name "LCSC")
+				)
+				(field
+					(name "Footprint") "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Solder Jumper, 2-pole, open")
+			)
+			(libsource
+				(lib "Jumper")
+				(part "SolderJumper_2_Open")
+				(description "Solder Jumper, 2-pole, open")
+			)
+			(property
+				(name "LCSC")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Synth and RF outputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "solder jumper SPST")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SolderJumper*Open*")
+			)
+			(sheetpath
+				(names "/Synth and RF outputs/")
+				(tstamps "/b0000000-0000-4000-8000-000000000004/")
+			)
+			(tstamps "691fbb78-0ddb-4a63-ace4-553af7256e6a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "JP142")
+			(value "NC")
+			(footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+			(description "Solder Jumper, 2-pole, closed/bridged")
+			(fields
+				(field
+					(name "LCSC")
+				)
+				(field
+					(name "Footprint") "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Solder Jumper, 2-pole, closed/bridged")
+			)
+			(libsource
+				(lib "Jumper")
+				(part "SolderJumper_2_Bridged")
+				(description "Solder Jumper, 2-pole, closed/bridged")
+			)
+			(property
+				(name "LCSC")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Synth and RF outputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "solder jumper SPST")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SolderJumper*Bridged*")
+			)
+			(sheetpath
+				(names "/Synth and RF outputs/")
+				(tstamps "/b0000000-0000-4000-8000-000000000004/")
+			)
+			(tstamps "d0cd24a1-fa75-49a3-a821-a800fb051139")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "JP143")
+			(value "NC")
+			(footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+			(description "Solder Jumper, 2-pole, closed/bridged")
+			(fields
+				(field
+					(name "LCSC")
+				)
+				(field
+					(name "Footprint") "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Solder Jumper, 2-pole, closed/bridged")
+			)
+			(libsource
+				(lib "Jumper")
+				(part "SolderJumper_2_Bridged")
+				(description "Solder Jumper, 2-pole, closed/bridged")
+			)
+			(property
+				(name "LCSC")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Synth and RF outputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "solder jumper SPST")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SolderJumper*Bridged*")
+			)
+			(sheetpath
+				(names "/Synth and RF outputs/")
+				(tstamps "/b0000000-0000-4000-8000-000000000004/")
+			)
+			(tstamps "e517fffa-c2e6-40c4-8168-30f64ef024cd")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "JP144")
+			(value "NO")
+			(footprint "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
+			(description "Solder Jumper, 2-pole, open")
+			(fields
+				(field
+					(name "LCSC")
+				)
+				(field
+					(name "Footprint") "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Solder Jumper, 2-pole, open")
+			)
+			(libsource
+				(lib "Jumper")
+				(part "SolderJumper_2_Open")
+				(description "Solder Jumper, 2-pole, open")
+			)
+			(property
+				(name "LCSC")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Synth and RF outputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "solder jumper SPST")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SolderJumper*Open*")
+			)
+			(sheetpath
+				(names "/Synth and RF outputs/")
+				(tstamps "/b0000000-0000-4000-8000-000000000004/")
+			)
+			(tstamps "6666c818-6a89-4fe6-b185-bcea0f1119cc")
 			(units
 				(unit
 					(name "A")
@@ -6613,14 +7471,20 @@
 		)
 		(comp
 			(ref "L1")
-			(value "DNP")
-			(footprint "Inductor_SMD:L_0805_2012Metric")
+			(value "100n")
+			(footprint "Inductor_SMD:L_1008_2520Metric")
 			(description "Inductor, small symbol")
 			(fields
 				(field
-					(name "VERIFY") "LPF inductor size (SMD vs T37 option, PLAN Q7)")
+					(name "LCSC") "C1330579")
 				(field
-					(name "Footprint") "Inductor_SMD:L_0805_2012Metric")
+					(name "MPN") "LQW2UASR10G0CL")
+				(field
+					(name "Manufacturer") "Murata")
+				(field
+					(name "VERIFY") "LQW2UAS stock 0.9-3.3k/part; buy ahead. 150n uses +/-1% C2044861 (C2043109 is +/-5%).")
+				(field
+					(name "Footprint") "Inductor_SMD:L_1008_2520Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -6633,8 +7497,20 @@
 				(description "Inductor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C1330579")
+			)
+			(property
+				(name "MPN")
+				(value "LQW2UASR10G0CL")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Murata")
+			)
+			(property
 				(name "VERIFY")
-				(value "LPF inductor size (SMD vs T37 option, PLAN Q7)")
+				(value "LQW2UAS stock 0.9-3.3k/part; buy ahead. 150n uses +/-1% C2044861 (C2043109 is +/-5%).")
 			)
 			(property
 				(name "Sheetname")
@@ -6643,9 +7519,6 @@
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -6659,7 +7532,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "21359a15-ebb0-439b-a6d3-1120710185fd")
+			(tstamps "405f9836-323c-4c6b-99ac-5d4b5693012e")
 			(units
 				(unit
 					(name "A")
@@ -6676,12 +7549,18 @@
 		)
 		(comp
 			(ref "L2")
-			(value "DNP")
-			(footprint "Inductor_SMD:L_0805_2012Metric")
+			(value "150n")
+			(footprint "Inductor_SMD:L_1008_2520Metric")
 			(description "Inductor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Inductor_SMD:L_0805_2012Metric")
+					(name "LCSC") "C2044861")
+				(field
+					(name "MPN") "LQW2UASR15F00L")
+				(field
+					(name "Manufacturer") "Murata")
+				(field
+					(name "Footprint") "Inductor_SMD:L_1008_2520Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -6694,15 +7573,24 @@
 				(description "Inductor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C2044861")
+			)
+			(property
+				(name "MPN")
+				(value "LQW2UASR15F00L")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Murata")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -6716,7 +7604,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "60d95172-5cea-4657-be77-e0958cc86d72")
+			(tstamps "fad72a8c-9578-42d7-8f08-3336b3ecb3cf")
 			(units
 				(unit
 					(name "A")
@@ -6733,12 +7621,18 @@
 		)
 		(comp
 			(ref "L3")
-			(value "DNP")
-			(footprint "Inductor_SMD:L_0805_2012Metric")
+			(value "150n")
+			(footprint "Inductor_SMD:L_1008_2520Metric")
 			(description "Inductor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Inductor_SMD:L_0805_2012Metric")
+					(name "LCSC") "C2044861")
+				(field
+					(name "MPN") "LQW2UASR15F00L")
+				(field
+					(name "Manufacturer") "Murata")
+				(field
+					(name "Footprint") "Inductor_SMD:L_1008_2520Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -6751,15 +7645,24 @@
 				(description "Inductor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C2044861")
+			)
+			(property
+				(name "MPN")
+				(value "LQW2UASR15F00L")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Murata")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -6773,7 +7676,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "3cd1eb46-7aea-4aae-8468-a50e6765ec21")
+			(tstamps "6ffd41fa-38a0-4fb3-a41c-93d2a679c72d")
 			(units
 				(unit
 					(name "A")
@@ -6790,12 +7693,18 @@
 		)
 		(comp
 			(ref "L4")
-			(value "DNP")
-			(footprint "Inductor_SMD:L_0805_2012Metric")
+			(value "100n")
+			(footprint "Inductor_SMD:L_1008_2520Metric")
 			(description "Inductor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Inductor_SMD:L_0805_2012Metric")
+					(name "LCSC") "C1330579")
+				(field
+					(name "MPN") "LQW2UASR10G0CL")
+				(field
+					(name "Manufacturer") "Murata")
+				(field
+					(name "Footprint") "Inductor_SMD:L_1008_2520Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -6808,15 +7717,24 @@
 				(description "Inductor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C1330579")
+			)
+			(property
+				(name "MPN")
+				(value "LQW2UASR10G0CL")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Murata")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -6830,7 +7748,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "bfd86294-94aa-4076-9815-6db8e3e53d12")
+			(tstamps "e22a80bf-2354-430c-a4aa-9848faca4b0b")
 			(units
 				(unit
 					(name "A")
@@ -6847,12 +7765,18 @@
 		)
 		(comp
 			(ref "L5")
-			(value "DNP")
-			(footprint "Inductor_SMD:L_0805_2012Metric")
+			(value "150n")
+			(footprint "Inductor_SMD:L_1008_2520Metric")
 			(description "Inductor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Inductor_SMD:L_0805_2012Metric")
+					(name "LCSC") "C2044861")
+				(field
+					(name "MPN") "LQW2UASR15F00L")
+				(field
+					(name "Manufacturer") "Murata")
+				(field
+					(name "Footprint") "Inductor_SMD:L_1008_2520Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -6865,15 +7789,24 @@
 				(description "Inductor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C2044861")
+			)
+			(property
+				(name "MPN")
+				(value "LQW2UASR15F00L")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Murata")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -6887,7 +7820,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "9eeea500-fe8c-4388-aaa6-3184b37ca467")
+			(tstamps "af6e1411-969c-4622-b4c5-e39762867abd")
 			(units
 				(unit
 					(name "A")
@@ -6904,12 +7837,18 @@
 		)
 		(comp
 			(ref "L6")
-			(value "DNP")
-			(footprint "Inductor_SMD:L_0805_2012Metric")
+			(value "150n")
+			(footprint "Inductor_SMD:L_1008_2520Metric")
 			(description "Inductor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Inductor_SMD:L_0805_2012Metric")
+					(name "LCSC") "C2044861")
+				(field
+					(name "MPN") "LQW2UASR15F00L")
+				(field
+					(name "Manufacturer") "Murata")
+				(field
+					(name "Footprint") "Inductor_SMD:L_1008_2520Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -6922,15 +7861,24 @@
 				(description "Inductor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C2044861")
+			)
+			(property
+				(name "MPN")
+				(value "LQW2UASR15F00L")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Murata")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -6944,7 +7892,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "888ed730-b4d4-494c-88e8-937eafb1cb11")
+			(tstamps "bb588eb5-b399-4ed8-a2ee-10822b023791")
 			(units
 				(unit
 					(name "A")
@@ -6961,12 +7909,18 @@
 		)
 		(comp
 			(ref "L7")
-			(value "DNP")
-			(footprint "Inductor_SMD:L_0805_2012Metric")
+			(value "33n")
+			(footprint "Inductor_SMD:L_1008_2520Metric")
 			(description "Inductor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Inductor_SMD:L_0805_2012Metric")
+					(name "LCSC") "C2043161")
+				(field
+					(name "MPN") "LQW2UAS33NG0CL")
+				(field
+					(name "Manufacturer") "Murata")
+				(field
+					(name "Footprint") "Inductor_SMD:L_1008_2520Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -6979,15 +7933,24 @@
 				(description "Inductor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C2043161")
+			)
+			(property
+				(name "MPN")
+				(value "LQW2UAS33NG0CL")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Murata")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -7001,7 +7964,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "eff79952-8f7d-4105-96be-ca07a4025720")
+			(tstamps "1be9dd2e-6b6a-4868-9f62-396214a963ce")
 			(units
 				(unit
 					(name "A")
@@ -7018,12 +7981,18 @@
 		)
 		(comp
 			(ref "L8")
-			(value "DNP")
-			(footprint "Inductor_SMD:L_0805_2012Metric")
+			(value "68n")
+			(footprint "Inductor_SMD:L_1008_2520Metric")
 			(description "Inductor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Inductor_SMD:L_0805_2012Metric")
+					(name "LCSC") "C703709")
+				(field
+					(name "MPN") "LQW2UAS68NG00L")
+				(field
+					(name "Manufacturer") "Murata")
+				(field
+					(name "Footprint") "Inductor_SMD:L_1008_2520Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -7036,15 +8005,24 @@
 				(description "Inductor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C703709")
+			)
+			(property
+				(name "MPN")
+				(value "LQW2UAS68NG00L")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Murata")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -7058,7 +8036,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "0ead1299-fc37-4772-af2d-4cab515f6d0e")
+			(tstamps "e8b625c1-685a-45a6-9d20-ce8d338d8667")
 			(units
 				(unit
 					(name "A")
@@ -7075,12 +8053,18 @@
 		)
 		(comp
 			(ref "L9")
-			(value "DNP")
-			(footprint "Inductor_SMD:L_0805_2012Metric")
+			(value "68n")
+			(footprint "Inductor_SMD:L_1008_2520Metric")
 			(description "Inductor, small symbol")
 			(fields
 				(field
-					(name "Footprint") "Inductor_SMD:L_0805_2012Metric")
+					(name "LCSC") "C703709")
+				(field
+					(name "MPN") "LQW2UAS68NG00L")
+				(field
+					(name "Manufacturer") "Murata")
+				(field
+					(name "Footprint") "Inductor_SMD:L_1008_2520Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -7093,15 +8077,24 @@
 				(description "Inductor, small symbol")
 			)
 			(property
+				(name "LCSC")
+				(value "C703709")
+			)
+			(property
+				(name "MPN")
+				(value "LQW2UAS68NG00L")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Murata")
+			)
+			(property
 				(name "Sheetname")
 				(value "Synth and RF outputs")
 			)
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -7115,7 +8108,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "5069dadb-2de0-44fa-b5af-804707a74771")
+			(tstamps "6449b29b-cd72-4198-b6b9-149de7db18e4")
 			(units
 				(unit
 					(name "A")
@@ -7187,7 +8180,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "9f59129a-351d-44af-ab66-02103b12db7b")
+			(tstamps "98dafabc-b184-43f9-bc5d-538f34fa545f")
 			(units
 				(unit
 					(name "A")
@@ -7262,7 +8255,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "b11683da-2777-4b0e-922b-99dd1458c93b")
+			(tstamps "b9d7b4cb-e8c3-4ce4-95de-c829cf61f503")
 			(units
 				(unit
 					(name "A")
@@ -7322,7 +8315,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "a2b07c02-c623-464e-852e-0b31487e73d5")
+			(tstamps "d1e3522c-262e-4685-85dc-6c8048208a67")
 			(units
 				(unit
 					(name "A")
@@ -7382,7 +8375,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "b5a1bdfb-3dde-40ba-acd0-7fb56555b256")
+			(tstamps "515e4e8c-35da-4ff5-841d-8331ccb965b7")
 			(units
 				(unit
 					(name "A")
@@ -7449,7 +8442,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "44841d73-d4b7-4946-b1cc-c352ba5f27b6")
+			(tstamps "5db6d516-b97e-44c1-97d6-d77691e60651")
 			(units
 				(unit
 					(name "A")
@@ -7512,229 +8505,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "de718aca-a176-4e58-ba21-f3140eb9f426")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R102")
-			(value "0")
-			(footprint "Resistor_SMD:R_0805_2012Metric")
-			(description "Resistor, small symbol")
-			(fields
-				(field
-					(name "LCSC") "C17477")
-				(field
-					(name "MPN") "0805W8F0000T5E")
-				(field
-					(name "Manufacturer") "UNI-ROYAL")
-				(field
-					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Resistor, small symbol")
-			)
-			(libsource
-				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
-			)
-			(property
-				(name "LCSC")
-				(value "C17477")
-			)
-			(property
-				(name "MPN")
-				(value "0805W8F0000T5E")
-			)
-			(property
-				(name "Manufacturer")
-				(value "UNI-ROYAL")
-			)
-			(property
-				(name "Sheetname")
-				(value "Synth and RF outputs")
-			)
-			(property
-				(name "Sheetfile")
-				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/Synth and RF outputs/")
-				(tstamps "/b0000000-0000-4000-8000-000000000004/")
-			)
-			(tstamps "c8eed45b-61e9-4f6e-909f-520b244d6676")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R103")
-			(value "0")
-			(footprint "Resistor_SMD:R_0805_2012Metric")
-			(description "Resistor, small symbol")
-			(fields
-				(field
-					(name "LCSC") "C17477")
-				(field
-					(name "MPN") "0805W8F0000T5E")
-				(field
-					(name "Manufacturer") "UNI-ROYAL")
-				(field
-					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Resistor, small symbol")
-			)
-			(libsource
-				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
-			)
-			(property
-				(name "LCSC")
-				(value "C17477")
-			)
-			(property
-				(name "MPN")
-				(value "0805W8F0000T5E")
-			)
-			(property
-				(name "Manufacturer")
-				(value "UNI-ROYAL")
-			)
-			(property
-				(name "Sheetname")
-				(value "Synth and RF outputs")
-			)
-			(property
-				(name "Sheetfile")
-				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/Synth and RF outputs/")
-				(tstamps "/b0000000-0000-4000-8000-000000000004/")
-			)
-			(tstamps "845362c4-6853-4b53-9a59-141624664816")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R104")
-			(value "0")
-			(footprint "Resistor_SMD:R_0805_2012Metric")
-			(description "Resistor, small symbol")
-			(fields
-				(field
-					(name "LCSC") "C17477")
-				(field
-					(name "MPN") "0805W8F0000T5E")
-				(field
-					(name "Manufacturer") "UNI-ROYAL")
-				(field
-					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Resistor, small symbol")
-			)
-			(libsource
-				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
-			)
-			(property
-				(name "LCSC")
-				(value "C17477")
-			)
-			(property
-				(name "MPN")
-				(value "0805W8F0000T5E")
-			)
-			(property
-				(name "Manufacturer")
-				(value "UNI-ROYAL")
-			)
-			(property
-				(name "Sheetname")
-				(value "Synth and RF outputs")
-			)
-			(property
-				(name "Sheetfile")
-				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/Synth and RF outputs/")
-				(tstamps "/b0000000-0000-4000-8000-000000000004/")
-			)
-			(tstamps "3ac194ab-e20c-45cf-914b-39af3eca964b")
+			(tstamps "83314c56-c99b-4177-9714-3b9a07a5f664")
 			(units
 				(unit
 					(name "A")
@@ -7801,7 +8572,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "48a5cb7c-d26d-48f5-b683-a3397baa3734")
+			(tstamps "7fba8b57-6e8d-4f7a-98cf-dd42fc52fd14")
 			(units
 				(unit
 					(name "A")
@@ -7864,229 +8635,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "bca7fe84-33ed-4737-a03e-4c0eba9f2b37")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R122")
-			(value "0")
-			(footprint "Resistor_SMD:R_0805_2012Metric")
-			(description "Resistor, small symbol")
-			(fields
-				(field
-					(name "LCSC") "C17477")
-				(field
-					(name "MPN") "0805W8F0000T5E")
-				(field
-					(name "Manufacturer") "UNI-ROYAL")
-				(field
-					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Resistor, small symbol")
-			)
-			(libsource
-				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
-			)
-			(property
-				(name "LCSC")
-				(value "C17477")
-			)
-			(property
-				(name "MPN")
-				(value "0805W8F0000T5E")
-			)
-			(property
-				(name "Manufacturer")
-				(value "UNI-ROYAL")
-			)
-			(property
-				(name "Sheetname")
-				(value "Synth and RF outputs")
-			)
-			(property
-				(name "Sheetfile")
-				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/Synth and RF outputs/")
-				(tstamps "/b0000000-0000-4000-8000-000000000004/")
-			)
-			(tstamps "e859b989-f0ff-44c9-b693-1c357bc701e2")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R123")
-			(value "0")
-			(footprint "Resistor_SMD:R_0805_2012Metric")
-			(description "Resistor, small symbol")
-			(fields
-				(field
-					(name "LCSC") "C17477")
-				(field
-					(name "MPN") "0805W8F0000T5E")
-				(field
-					(name "Manufacturer") "UNI-ROYAL")
-				(field
-					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Resistor, small symbol")
-			)
-			(libsource
-				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
-			)
-			(property
-				(name "LCSC")
-				(value "C17477")
-			)
-			(property
-				(name "MPN")
-				(value "0805W8F0000T5E")
-			)
-			(property
-				(name "Manufacturer")
-				(value "UNI-ROYAL")
-			)
-			(property
-				(name "Sheetname")
-				(value "Synth and RF outputs")
-			)
-			(property
-				(name "Sheetfile")
-				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/Synth and RF outputs/")
-				(tstamps "/b0000000-0000-4000-8000-000000000004/")
-			)
-			(tstamps "30c6a877-f475-4f86-8745-1cc5d530f9ea")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R124")
-			(value "0")
-			(footprint "Resistor_SMD:R_0805_2012Metric")
-			(description "Resistor, small symbol")
-			(fields
-				(field
-					(name "LCSC") "C17477")
-				(field
-					(name "MPN") "0805W8F0000T5E")
-				(field
-					(name "Manufacturer") "UNI-ROYAL")
-				(field
-					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Resistor, small symbol")
-			)
-			(libsource
-				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
-			)
-			(property
-				(name "LCSC")
-				(value "C17477")
-			)
-			(property
-				(name "MPN")
-				(value "0805W8F0000T5E")
-			)
-			(property
-				(name "Manufacturer")
-				(value "UNI-ROYAL")
-			)
-			(property
-				(name "Sheetname")
-				(value "Synth and RF outputs")
-			)
-			(property
-				(name "Sheetfile")
-				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/Synth and RF outputs/")
-				(tstamps "/b0000000-0000-4000-8000-000000000004/")
-			)
-			(tstamps "e5b33851-4e8b-4bf6-9e6e-c557cb126795")
+			(tstamps "997a45f7-f085-430e-ae0c-bf218505dd5b")
 			(units
 				(unit
 					(name "A")
@@ -8153,7 +8702,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "c55cbadc-324c-4210-8447-5a845c21399c")
+			(tstamps "61508417-f5da-4e5c-acaa-3e1e070e28df")
 			(units
 				(unit
 					(name "A")
@@ -8216,229 +8765,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "8c223323-e7bb-4279-9682-36ac6534d0a4")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R142")
-			(value "0")
-			(footprint "Resistor_SMD:R_0805_2012Metric")
-			(description "Resistor, small symbol")
-			(fields
-				(field
-					(name "LCSC") "C17477")
-				(field
-					(name "MPN") "0805W8F0000T5E")
-				(field
-					(name "Manufacturer") "UNI-ROYAL")
-				(field
-					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Resistor, small symbol")
-			)
-			(libsource
-				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
-			)
-			(property
-				(name "LCSC")
-				(value "C17477")
-			)
-			(property
-				(name "MPN")
-				(value "0805W8F0000T5E")
-			)
-			(property
-				(name "Manufacturer")
-				(value "UNI-ROYAL")
-			)
-			(property
-				(name "Sheetname")
-				(value "Synth and RF outputs")
-			)
-			(property
-				(name "Sheetfile")
-				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/Synth and RF outputs/")
-				(tstamps "/b0000000-0000-4000-8000-000000000004/")
-			)
-			(tstamps "6a27bb10-d9dd-4572-93a1-3ada5b4a58de")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R143")
-			(value "0")
-			(footprint "Resistor_SMD:R_0805_2012Metric")
-			(description "Resistor, small symbol")
-			(fields
-				(field
-					(name "LCSC") "C17477")
-				(field
-					(name "MPN") "0805W8F0000T5E")
-				(field
-					(name "Manufacturer") "UNI-ROYAL")
-				(field
-					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Resistor, small symbol")
-			)
-			(libsource
-				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
-			)
-			(property
-				(name "LCSC")
-				(value "C17477")
-			)
-			(property
-				(name "MPN")
-				(value "0805W8F0000T5E")
-			)
-			(property
-				(name "Manufacturer")
-				(value "UNI-ROYAL")
-			)
-			(property
-				(name "Sheetname")
-				(value "Synth and RF outputs")
-			)
-			(property
-				(name "Sheetfile")
-				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/Synth and RF outputs/")
-				(tstamps "/b0000000-0000-4000-8000-000000000004/")
-			)
-			(tstamps "337e2aa1-a440-4dc6-94e7-edde6bff5775")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R144")
-			(value "0")
-			(footprint "Resistor_SMD:R_0805_2012Metric")
-			(description "Resistor, small symbol")
-			(fields
-				(field
-					(name "LCSC") "C17477")
-				(field
-					(name "MPN") "0805W8F0000T5E")
-				(field
-					(name "Manufacturer") "UNI-ROYAL")
-				(field
-					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Resistor, small symbol")
-			)
-			(libsource
-				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
-			)
-			(property
-				(name "LCSC")
-				(value "C17477")
-			)
-			(property
-				(name "MPN")
-				(value "0805W8F0000T5E")
-			)
-			(property
-				(name "Manufacturer")
-				(value "UNI-ROYAL")
-			)
-			(property
-				(name "Sheetname")
-				(value "Synth and RF outputs")
-			)
-			(property
-				(name "Sheetfile")
-				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/Synth and RF outputs/")
-				(tstamps "/b0000000-0000-4000-8000-000000000004/")
-			)
-			(tstamps "1e097d44-7720-4489-a219-91b3ebcdcfe9")
+			(tstamps "de729542-cc5a-4bd0-bb8a-9904df33d54e")
 			(units
 				(unit
 					(name "A")
@@ -8510,7 +8837,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "1f564cc6-c2c7-4f33-ab46-bc42d695da1f")
+			(tstamps "a42ef271-eb69-4e99-a9a9-e3fb68ee74d7")
 			(units
 				(unit
 					(name "A")
@@ -8604,7 +8931,7 @@
 				(names "/Synth and RF outputs/")
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
-			(tstamps "b319182d-0e51-49eb-9c11-10e6c9e12998")
+			(tstamps "9acd0ddc-e8d5-4402-8eaf-e57e6090358a")
 			(units
 				(unit
 					(name "A")
@@ -9264,6 +9591,74 @@
 			)
 		)
 		(libpart
+			(lib "Jumper")
+			(part "SolderJumper_2_Bridged")
+			(description "Solder Jumper, 2-pole, closed/bridged")
+			(footprints
+				(fp "SolderJumper*Bridged*")
+			)
+			(fields
+				(field
+					(name "Reference") "JP")
+				(field
+					(name "Value") "SolderJumper_2_Bridged")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Solder Jumper, 2-pole, closed/bridged")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "A")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "B")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Jumper")
+			(part "SolderJumper_2_Open")
+			(description "Solder Jumper, 2-pole, open")
+			(footprints
+				(fp "SolderJumper*Open*")
+			)
+			(fields
+				(field
+					(name "Reference") "JP")
+				(field
+					(name "Value") "SolderJumper_2_Open")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Solder Jumper, 2-pole, open")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "A")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "B")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
 			(lib "MCU_Microchip_ATtiny")
 			(part "ATtiny3226-S")
 			(description "20MHz, 32kB Flash, 3kB SRAM, 256B EEPROM, SOIC-20")
@@ -9660,6 +10055,10 @@
 		(library
 			(logical "Interface_USB")
 			(uri "${KICAD10_SYMBOL_DIR}/Interface_USB.kicad_sym")
+		)
+		(library
+			(logical "Jumper")
+			(uri "${KICAD10_SYMBOL_DIR}/Jumper.kicad_sym")
 		)
 		(library
 			(logical "MCU_Microchip_ATtiny")
@@ -10963,56 +11362,6 @@
 		)
 		(net
 			(code "40")
-			(name "Net-(C100-Pad2)")
-			(class "Default")
-			(node
-				(ref "C100")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R101")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R102")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R104")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "41")
-			(name "Net-(C101-Pad1)")
-			(class "Default")
-			(node
-				(ref "C101")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C105")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "L1")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R102")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "42")
 			(name "Net-(C102-Pad1)")
 			(class "Default")
 			(node
@@ -11042,7 +11391,7 @@
 			)
 		)
 		(net
-			(code "43")
+			(code "41")
 			(name "Net-(C103-Pad1)")
 			(class "Default")
 			(node
@@ -11072,32 +11421,7 @@
 			)
 		)
 		(net
-			(code "44")
-			(name "Net-(C104-Pad1)")
-			(class "Default")
-			(node
-				(ref "C104")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C107")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "L3")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R103")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "45")
+			(code "42")
 			(name "Net-(C120-Pad1)")
 			(class "Default")
 			(node
@@ -11112,57 +11436,7 @@
 			)
 		)
 		(net
-			(code "46")
-			(name "Net-(C120-Pad2)")
-			(class "Default")
-			(node
-				(ref "C120")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R121")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R122")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R124")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "47")
-			(name "Net-(C121-Pad1)")
-			(class "Default")
-			(node
-				(ref "C121")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C125")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "L4")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R122")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "48")
+			(code "43")
 			(name "Net-(C122-Pad1)")
 			(class "Default")
 			(node
@@ -11192,7 +11466,7 @@
 			)
 		)
 		(net
-			(code "49")
+			(code "44")
 			(name "Net-(C123-Pad1)")
 			(class "Default")
 			(node
@@ -11222,32 +11496,7 @@
 			)
 		)
 		(net
-			(code "50")
-			(name "Net-(C124-Pad1)")
-			(class "Default")
-			(node
-				(ref "C124")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C127")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "L6")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R123")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "51")
+			(code "45")
 			(name "Net-(C140-Pad1)")
 			(class "Default")
 			(node
@@ -11262,57 +11511,7 @@
 			)
 		)
 		(net
-			(code "52")
-			(name "Net-(C140-Pad2)")
-			(class "Default")
-			(node
-				(ref "C140")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R141")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R142")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R144")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "53")
-			(name "Net-(C141-Pad1)")
-			(class "Default")
-			(node
-				(ref "C141")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C145")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "L7")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R142")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "54")
+			(code "46")
 			(name "Net-(C142-Pad1)")
 			(class "Default")
 			(node
@@ -11342,7 +11541,7 @@
 			)
 		)
 		(net
-			(code "55")
+			(code "47")
 			(name "Net-(C143-Pad1)")
 			(class "Default")
 			(node
@@ -11372,32 +11571,7 @@
 			)
 		)
 		(net
-			(code "56")
-			(name "Net-(C144-Pad1)")
-			(class "Default")
-			(node
-				(ref "C144")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C147")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "L9")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R143")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "57")
+			(code "48")
 			(name "Net-(D4-A)")
 			(class "Default")
 			(node
@@ -11419,7 +11593,7 @@
 			)
 		)
 		(net
-			(code "58")
+			(code "49")
 			(name "Net-(J1-CC1)")
 			(class "Default")
 			(node
@@ -11435,7 +11609,7 @@
 			)
 		)
 		(net
-			(code "59")
+			(code "50")
 			(name "Net-(J1-CC2)")
 			(class "Default")
 			(node
@@ -11451,7 +11625,7 @@
 			)
 		)
 		(net
-			(code "60")
+			(code "51")
 			(name "Net-(J2-In)")
 			(class "Default")
 			(node
@@ -11461,18 +11635,20 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R103")
+				(ref "JP103")
 				(pin "2")
+				(pinfunction "B_2")
 				(pintype "passive")
 			)
 			(node
-				(ref "R104")
+				(ref "JP104")
 				(pin "2")
+				(pinfunction "B_2")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "61")
+			(code "52")
 			(name "Net-(J3-In)")
 			(class "Default")
 			(node
@@ -11482,18 +11658,20 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R123")
+				(ref "JP123")
 				(pin "2")
+				(pinfunction "B_2")
 				(pintype "passive")
 			)
 			(node
-				(ref "R124")
+				(ref "JP124")
 				(pin "2")
+				(pinfunction "B_2")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "62")
+			(code "53")
 			(name "Net-(J4-In)")
 			(class "Default")
 			(node
@@ -11503,12 +11681,251 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R143")
+				(ref "JP143")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "JP144")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "54")
+			(name "Net-(JP102-A)")
+			(class "Default")
+			(node
+				(ref "C100")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "R144")
+				(ref "JP102")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "JP104")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R101")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "55")
+			(name "Net-(JP102-B)")
+			(class "Default")
+			(node
+				(ref "C101")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C105")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "JP102")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "L1")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "56")
+			(name "Net-(JP103-A)")
+			(class "Default")
+			(node
+				(ref "C104")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C107")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "JP103")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "L3")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "57")
+			(name "Net-(JP122-A)")
+			(class "Default")
+			(node
+				(ref "C120")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "JP122")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "JP124")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R121")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "58")
+			(name "Net-(JP122-B)")
+			(class "Default")
+			(node
+				(ref "C121")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C125")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "JP122")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "L4")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "59")
+			(name "Net-(JP123-A)")
+			(class "Default")
+			(node
+				(ref "C124")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C127")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "JP123")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "L6")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "60")
+			(name "Net-(JP142-A)")
+			(class "Default")
+			(node
+				(ref "C140")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "JP142")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "JP144")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R141")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "61")
+			(name "Net-(JP142-B)")
+			(class "Default")
+			(node
+				(ref "C141")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C145")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "JP142")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "L7")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "62")
+			(name "Net-(JP143-A)")
+			(class "Default")
+			(node
+				(ref "C144")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C147")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "JP143")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "L9")
 				(pin "2")
 				(pintype "passive")
 			)
