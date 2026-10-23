@@ -1,0 +1,7101 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "fa5b14ac-0bbc-4929-a473-10659e504f96")
+	(paper "A3")
+	(title_block
+		(title "Si5351A VFO - Synth and RF outputs")
+		(date "2026-10-22")
+		(rev "A")
+		(company "Etherkit / NT7S")
+		(comment 1 "Draft schematic, not reviewed. See VERIFY notes."))
+	(lib_symbols
+		(symbol "Si5351AVFO:TCXO_4P"
+			(pin_names
+				(offset 0.508))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "X"
+				(at -5.08 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Value" "TCXO"
+				(at 5.08 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" "Oscillator:Oscillator_SMD_SeikoEpson_SG8002CE-4Pin_3.2x2.5mm"
+				(at 0 -10.16 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "4-pin 3225 TCXO, clipped-sine output; pin 1 NC/EN (NC on fitted part; EN on active-high-enable TCXOs via DNP R6)"
+				(at 0 0 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "TCXO_4P_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default))
+					(fill
+						(type background))))
+			(symbol "TCXO_4P_1_1"
+				(pin passive line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "NC/EN"
+						(effects
+							(font
+								(size 1.016 1.016))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin output line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "power:GND"
+			(power global)
+			(pin_numbers
+				(hide yes))
+			(pin_names
+				(offset 0)
+				(hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0)
+						(xy 0 -1.27)
+						(xy 1.27 -1.27)
+						(xy 0 -2.54)
+						(xy -1.27 -1.27)
+						(xy 0 -1.27))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none))))
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Device:R_Small"
+			(pin_numbers
+				(hide yes))
+			(pin_names
+				(offset 0.254)
+				(hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.016 1.016))))
+			(property "Value" "R_Small"
+				(at 1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "R_Small_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default))
+					(fill
+						(type none))))
+			(symbol "R_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "power:+3V3"
+			(power global)
+			(pin_numbers
+				(hide yes))
+			(pin_names
+				(offset 0)
+				(hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27)
+						(xy 0 2.54))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy 0 2.54)
+						(xy 0.762 1.27))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy 0 0)
+						(xy 0 2.54))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none))))
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Device:C_Small"
+			(pin_numbers
+				(hide yes))
+			(pin_names
+				(offset 0.254)
+				(hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(justify left)))
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(justify left)))
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508)
+						(xy 1.524 0.508))
+					(stroke
+						(width 0.3048)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy -1.524 -0.508)
+						(xy 1.524 -0.508))
+					(stroke
+						(width 0.3048)
+						(type default))
+					(fill
+						(type none))))
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes))
+			(pin_names
+				(offset 0)
+				(hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0)
+						(xy 0 1.27)
+						(xy -1.016 1.905)
+						(xy 0 2.54)
+						(xy 1.016 1.905)
+						(xy 0 1.27))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none))))
+			(embedded_fonts no))
+		(symbol "Oscillator:Si5351A-B-GT"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Y"
+				(at -8.89 11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Value" "Si5351A-B-GT"
+				(at -12.7 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" "Package_SO:MSOP-10_3x3mm_P0.5mm"
+				(at 0 -20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" "https://www.silabs.com/documents/public/data-sheets/Si5351-B.pdf"
+				(at -8.89 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "I2C Programmable Any-Frequency CMOS Clock Generator, MSOP-10"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "CMOS Synth Oscillator I2C"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "MSOP*3x3mm*P0.5mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "Si5351A-B-GT_0_1"
+				(rectangle
+					(start -10.16 10.16)
+					(end 10.16 -10.16)
+					(stroke
+						(width 0.254)
+						(type default))
+					(fill
+						(type background))))
+			(symbol "Si5351A-B-GT_1_1"
+				(pin power_in line
+					(at -2.54 12.7 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input line
+					(at -12.7 7.62 0)
+					(length 2.54)
+					(name "XA"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input line
+					(at -12.7 2.54 0)
+					(length 2.54)
+					(name "XB"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input line
+					(at -12.7 -5.08 0)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at -12.7 -7.62 0)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin output line
+					(at 12.7 -5.08 180)
+					(length 2.54)
+					(name "CLK2"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin power_in line
+					(at 2.54 12.7 270)
+					(length 2.54)
+					(name "VDDO"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin output line
+					(at 12.7 0 180)
+					(length 2.54)
+					(name "CLK1"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin output line
+					(at 12.7 5.08 180)
+					(length 2.54)
+					(name "CLK0"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Jumper:SolderJumper_2_Bridged"
+			(pin_numbers
+				(hide yes))
+			(pin_names
+				(offset 0)
+				(hide yes))
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "JP"
+				(at 0 2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Value" "SolderJumper_2_Bridged"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "solder jumper SPST"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "SolderJumper*Bridged*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "SolderJumper_2_Bridged_0_1"
+				(rectangle
+					(start -0.508 0.508)
+					(end 0.508 -0.508)
+					(stroke
+						(width 0.1524)
+						(type default))
+					(fill
+						(type outline)))
+				(polyline
+					(pts
+						(xy -0.254 1.016)
+						(xy -0.254 -1.016))
+					(stroke
+						(width 0.1524)
+						(type default))
+					(fill
+						(type none)))
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0.1524)
+						(type default))
+					(fill
+						(type outline)))
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0.1524)
+						(type default))
+					(fill
+						(type outline)))
+				(polyline
+					(pts
+						(xy 0.254 1.016)
+						(xy 0.254 -1.016))
+					(stroke
+						(width 0.1524)
+						(type default))
+					(fill
+						(type none))))
+			(symbol "SolderJumper_2_Bridged_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Device:L_Small"
+			(pin_numbers
+				(hide yes))
+			(pin_names
+				(offset 0.254)
+				(hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at 0.762 1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(justify left)))
+			(property "Value" "L_Small"
+				(at 0.762 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(justify left)))
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "Inductor, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "L_Small_0_1"
+				(arc
+					(start 0 2.032)
+					(mid 0.5058 1.524)
+					(end 0 1.016)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(arc
+					(start 0 1.016)
+					(mid 0.5058 0.508)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(arc
+					(start 0 0)
+					(mid 0.5058 -0.508)
+					(end 0 -1.016)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(arc
+					(start 0 -1.016)
+					(mid 0.5058 -1.524)
+					(end 0 -2.032)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none))))
+			(symbol "L_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.508)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.508)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Connector:Conn_Coaxial"
+			(pin_names
+				(offset 1.016)
+				(hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0.254 3.048 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Value" "Conn_Coaxial"
+				(at 2.921 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "Conn_Coaxial_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0)
+						(xy -0.508 0))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(arc
+					(start 1.778 0)
+					(mid 0.222 -1.8079)
+					(end -1.778 -0.508)
+					(stroke
+						(width 0.254)
+						(type default))
+					(fill
+						(type none)))
+				(arc
+					(start -1.778 0.508)
+					(mid 0.2221 1.8084)
+					(end 1.778 0)
+					(stroke
+						(width 0.254)
+						(type default))
+					(fill
+						(type none)))
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0.2032)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy 0 -2.54)
+						(xy 0 -1.778))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none))))
+			(symbol "Conn_Coaxial_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "In"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "Ext"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Jumper:SolderJumper_2_Open"
+			(pin_numbers
+				(hide yes))
+			(pin_names
+				(offset 0)
+				(hide yes))
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "JP"
+				(at 0 2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Value" "SolderJumper_2_Open"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "Solder Jumper, 2-pole, open"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "solder jumper SPST"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "SolderJumper*Open*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "SolderJumper_2_Open_0_1"
+				(polyline
+					(pts
+						(xy -0.254 1.016)
+						(xy -0.254 -1.016))
+					(stroke
+						(width 0.1524)
+						(type default))
+					(fill
+						(type none)))
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0.1524)
+						(type default))
+					(fill
+						(type outline)))
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0.1524)
+						(type default))
+					(fill
+						(type outline)))
+				(polyline
+					(pts
+						(xy 0.254 1.016)
+						(xy 0.254 -1.016))
+					(stroke
+						(width 0.1524)
+						(type default))
+					(fill
+						(type none))))
+			(symbol "SolderJumper_2_Open_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no)))
+	(text "Si5351A + 25 MHz TCXO copied from Si5351A Breakout Rev F (R5/C5/C6/R6/C4, XB open). Each output: Rs 0R -> Cb 100n DC block -> DNP shunt -> 7th-order Cauer LPF between NC solder jumpers, NO bypass jumper -> SMA."
+		(exclude_from_sim no)
+		(at 20 20 0)
+		(effects
+			(font
+				(size 2 2))
+			(justify left top))
+		(uuid "1ddb4fa1-176b-4a3d-b5ec-b4ec382786ca"))
+	(symbol
+		(lib_id "Si5351AVFO:TCXO_4P")
+		(at 59.69 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9acd0ddc-e8d5-4402-8eaf-e57e6090358a")
+		(property "Reference" "X1"
+			(at 54.61 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "25MHz TCXO"
+			(at 64.77 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Oscillator:Oscillator_SMD_SeikoEpson_SG8002CE-4Pin_3.2x2.5mm"
+			(at 59.69 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 59.69 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "4-pin 3225 TCXO, clipped-sine output; pin 1 NC/EN (NC on fitted part; EN on active-high-enable TCXOs via DNP R6)"
+			(at 59.69 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C48888230"
+			(at 59.69 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "OW2EL89CENUXK7YLC-25M"
+			(at 59.69 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YXC"
+			(at 59.69 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "VERIFY" "TCXO stock thin (718); buy before ordering."
+			(at 59.69 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "4f7f978d-6e88-4919-876b-c921f812719f"))
+		(pin "2"
+			(uuid "96f4fc27-94bb-4154-9895-508fdb5883b5"))
+		(pin "3"
+			(uuid "e3f64f17-39d9-4cd6-9642-70181bae75e1"))
+		(pin "4"
+			(uuid "af5db59a-6e71-40e8-a9c6-e0517d79f513"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "X1")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 59.69 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "2ee6728e-cd9e-40e9-be94-6b328561767a")
+		(property "Reference" "#PWR080"
+			(at 59.69 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 59.69 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 59.69 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 59.69 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "8fa814ff-5b78-44b8-908e-5c8797800ef4"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR080")
+					(unit 1)))))
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 59.69 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "98dafabc-b184-43f9-bc5d-538f34fa545f")
+		(property "Reference" "R5"
+			(at 61.49 66.71 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "10"
+			(at 61.49 68.91 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 59.69 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 59.69 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Resistor, small symbol"
+			(at 59.69 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C17415"
+			(at 59.69 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "0805W8F100JT5E"
+			(at 59.69 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 59.69 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "58f4e685-d4a1-4bc6-97db-cb5d1370d03d"))
+		(pin "2"
+			(uuid "66c419c8-bd2d-400b-8480-db33dc1e7855"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "R5")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:+3V3")
+		(at 59.69 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "ad17bdc9-e7f2-4854-a32f-6b00a87b95c5")
+		(property "Reference" "#PWR081"
+			(at 59.69 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "+3V3_CLK"
+			(at 59.69 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 59.69 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 59.69 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "703f4fd4-cee0-46bc-b381-ff010bce2b8e"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR081")
+					(unit 1)))))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 85.09 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "47f8ceb2-fac2-4024-9de8-58f2f9033f92")
+		(property "Reference" "C5"
+			(at 86.89 74.33 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "100n"
+			(at 86.89 76.53 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 85.09 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 85.09 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 85.09 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C49678"
+			(at 85.09 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0805KRX7R9BB104"
+			(at 85.09 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 85.09 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "ed923639-9b2d-43f5-9545-13ba1afac905"))
+		(pin "2"
+			(uuid "bbd56962-80a2-429a-8e0a-4cec7358b2ac"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C5")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 85.09 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "0ecb6160-ca27-4447-b447-3335a16a7fe1")
+		(property "Reference" "#PWR082"
+			(at 85.09 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 85.09 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 85.09 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 85.09 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "b910abdc-6e55-4997-8709-80cf99281fef"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR082")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 85.09 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "c6ed3449-64ba-44b0-aa3b-a2fdc3b366ea")
+		(property "Reference" "#FLG083"
+			(at 85.09 74.29 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "PWR_FLAG"
+			(at 85.09 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(pin "1"
+			(uuid "10161bc8-d1b0-45a4-8d9a-fb5fc00c2dbe"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#FLG083")
+					(unit 1)))))
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 44.45 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "b9d7b4cb-e8c3-4ce4-95de-c829cf61f503")
+		(property "Reference" "R6"
+			(at 46.25 74.33 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "0"
+			(at 46.25 76.53 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 44.45 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 44.45 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Resistor, small symbol"
+			(at 44.45 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C17477"
+			(at 44.45 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "0805W8F0000T5E"
+			(at 44.45 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 44.45 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "b3135ed7-0e3f-4a36-a4db-5d0512bb7dad"))
+		(pin "2"
+			(uuid "eab461e0-e20f-4bd8-87bf-85c179fa9fa1"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "R6")
+					(unit 1)))))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 80.01 87.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fcfffa21-d54e-461f-a31c-9a7aabcdc417")
+		(property "Reference" "C6"
+			(at 80.01 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "100n"
+			(at 80.01 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 80.01 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 80.01 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 80.01 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C49678"
+			(at 80.01 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0805KRX7R9BB104"
+			(at 80.01 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 80.01 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "947a135e-ef18-4e63-8c0a-cfa7464ce156"))
+		(pin "2"
+			(uuid "de9a8059-5d3d-4541-95b5-72f42fb47bb8"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C6")
+					(unit 1)))))
+	(symbol
+		(lib_id "Oscillator:Si5351A-B-GT")
+		(at 139.7 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a42ef271-eb69-4e99-a9a9-e3fb68ee74d7")
+		(property "Reference" "U2"
+			(at 130.81 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "Si5351A-B-GT"
+			(at 127 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Package_SO:MSOP-10_3x3mm_P0.5mm"
+			(at 139.7 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" "https://www.silabs.com/documents/public/data-sheets/Si5351-B.pdf"
+			(at 139.7 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "I2C Programmable Any-Frequency CMOS Clock Generator, MSOP-10"
+			(at 139.7 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C504891"
+			(at 139.7 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "SI5351A-B-GTR"
+			(at 139.7 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "Skyworks/Silicon Labs"
+			(at 139.7 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "d61a3172-e40c-44de-a0db-fceea4aca4cd"))
+		(pin "2"
+			(uuid "38b76fee-01cd-4c39-8563-2e41e0b5c2fc"))
+		(pin "3"
+			(uuid "ae26a0c6-f2ea-4114-b3ea-61ca134ac7eb"))
+		(pin "4"
+			(uuid "d96bcadb-9c44-445f-a0f5-a7e484acc50b"))
+		(pin "5"
+			(uuid "290e21bd-aa66-4c95-bbf5-ad5ae3cc7131"))
+		(pin "6"
+			(uuid "724ceffd-7700-47f6-9ba8-ed6818987a3f"))
+		(pin "7"
+			(uuid "00e67851-980c-465f-b8d7-657335a759fb"))
+		(pin "8"
+			(uuid "4dcf1ee1-babc-4fbb-a62e-d2d08cf4b443"))
+		(pin "9"
+			(uuid "9b9edbc7-51f7-4af6-b687-29a1f9664766"))
+		(pin "10"
+			(uuid "f9d0f393-8fed-4957-9c62-a8775a75b8e0"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "U2")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 137.16 82.55)
+			(xy 137.16 80.01))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f1d8a1ca-dd1b-4fa2-93ee-d8f22f0623a3"))
+	(symbol
+		(lib_id "power:+3V3")
+		(at 137.16 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "1793049b-1495-4d44-b794-774328b26237")
+		(property "Reference" "#PWR084"
+			(at 137.16 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "+3V3_CLK"
+			(at 137.16 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 137.16 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 137.16 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "b432582a-b89c-45ec-8aa5-7d5c1d636880"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR084")
+					(unit 1)))))
+	(no_connect
+		(at 127 92.71)
+		(uuid "7704628a-7db7-4d84-b00e-4182d25dddbb"))
+	(global_label "I2C_SCL"
+		(shape passive)
+		(at 127 100.33 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "fff7c73c-6c2f-49b1-8b35-2c7d110e33b6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 127 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(global_label "I2C_SDA"
+		(shape passive)
+		(at 127 102.87 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "05177a86-d3a3-4b6c-817f-3698e288bd7c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 127 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(label "CLK2"
+		(at 152.4 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "50425585-c8e0-4b4d-b938-4ccf4a6b9a29"))
+	(symbol
+		(lib_id "power:GND")
+		(at 139.7 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "d56a091a-2559-4ad5-aef0-1334087ff350")
+		(property "Reference" "#PWR085"
+			(at 139.7 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 139.7 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 139.7 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 139.7 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "4d69b19b-955e-4e38-8c07-4fd3774055d2"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR085")
+					(unit 1)))))
+	(label "CLK1"
+		(at 152.4 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "76915b97-3659-445a-a9e0-d21f3118c5a5"))
+	(label "CLK0"
+		(at 152.4 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "5a018fbc-d270-4ba3-9200-1a449273bb0b"))
+	(wire
+		(pts
+			(xy 142.24 82.55)
+			(xy 142.24 80.01))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "6755d84b-58e6-43ad-baac-38ba4348b9d8"))
+	(wire
+		(pts
+			(xy 142.24 80.01)
+			(xy 137.16 80.01))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "c3b10285-f7bc-42b2-9f9d-cf6e3c16cf52"))
+	(wire
+		(pts
+			(xy 59.69 69.85)
+			(xy 59.69 80.01))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "26018d1e-2e7b-4aa5-acee-8729beed655d"))
+	(wire
+		(pts
+			(xy 59.69 72.39)
+			(xy 85.09 72.39))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "dd81eb2c-dd03-41aa-9168-d7796aa2c0d6"))
+	(wire
+		(pts
+			(xy 59.69 72.39)
+			(xy 44.45 72.39))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "acc06d6d-971b-49c8-876d-e59625c2df24"))
+	(wire
+		(pts
+			(xy 44.45 77.47)
+			(xy 44.45 87.63))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "fc69686f-1fb9-4cd9-8656-cde7cd0eb239"))
+	(wire
+		(pts
+			(xy 44.45 87.63)
+			(xy 49.53 87.63))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "9be37b44-3d03-4049-8164-4a72ad8c821e"))
+	(wire
+		(pts
+			(xy 69.85 87.63)
+			(xy 77.47 87.63))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "ac975575-3d81-4200-af51-47ecbe20659a"))
+	(wire
+		(pts
+			(xy 82.55 87.63)
+			(xy 127 87.63))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "89735476-5154-4b66-8da5-6365b881f989"))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 165.1 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "56bd0ef7-c366-4426-b0b9-30adc6145bde")
+		(property "Reference" "C4"
+			(at 166.9 59.09 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "100n"
+			(at 166.9 61.29 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 165.1 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 165.1 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 165.1 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C49678"
+			(at 165.1 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0805KRX7R9BB104"
+			(at 165.1 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 165.1 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "d3ede5f1-6144-4df4-8d73-1d677bacc231"))
+		(pin "2"
+			(uuid "cedf47c4-d0ec-4b4b-bea4-e9360d09acb0"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C4")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:+3V3")
+		(at 165.1 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "e3296a37-ece0-4a77-91c0-a5f583592d07")
+		(property "Reference" "#PWR086"
+			(at 165.1 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "+3V3_CLK"
+			(at 165.1 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 165.1 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 165.1 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "70b7c936-7384-4e81-a913-b3b05348f904"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR086")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 165.1 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "d440b8b4-4500-415e-94b7-59eb3c3da89f")
+		(property "Reference" "#PWR087"
+			(at 165.1 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 165.1 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 165.1 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 165.1 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "44678f26-a849-47c1-bde1-88dd8c3a7628"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR087")
+					(unit 1)))))
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 100.33 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d1e3522c-262e-4685-85dc-6c8048208a67")
+		(property "Reference" "R27"
+			(at 102.13 128.94 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "VERIFY 2.2k-4.7k"
+			(at 102.13 131.14 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 100.33 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 100.33 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Resistor, small symbol"
+			(at 100.33 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "VERIFY" "I2C pull-up value not fixed (PLAN 2.2-4.7k); no LCSC chosen. On +3V3D: ATtiny, Si5351, CP2102N and OLED all at 3.3 V, so I2C levels match."
+			(at 100.33 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "2114be9c-6a21-4474-9716-aa30b17e6b70"))
+		(pin "2"
+			(uuid "587d9f50-0063-4dc5-bdf2-bc729112a210"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "R27")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:+3V3")
+		(at 100.33 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "b3515160-abd3-4257-ba2e-89b905fbae0d")
+		(property "Reference" "#PWR088"
+			(at 100.33 127 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "+3V3D"
+			(at 100.33 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 100.33 127 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 100.33 127 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "a6a0b818-2957-4b9e-a14d-4116d19ce2e3"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR088")
+					(unit 1)))))
+	(global_label "I2C_SCL"
+		(shape passive)
+		(at 100.33 132.08 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "57af8c52-00fe-48d2-bf55-f70e3aa1a6ca")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 139.7 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "515e4e8c-35da-4ff5-841d-8331ccb965b7")
+		(property "Reference" "R28"
+			(at 141.5 128.94 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "VERIFY 2.2k-4.7k"
+			(at 141.5 131.14 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 139.7 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 139.7 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Resistor, small symbol"
+			(at 139.7 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "VERIFY" "as R27"
+			(at 139.7 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "2f5e004c-7208-4855-aba5-77cbad987b9d"))
+		(pin "2"
+			(uuid "b3f7a8d2-498f-4570-8e76-481fc6010b3e"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "R28")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:+3V3")
+		(at 139.7 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "8994d9dd-4ef8-4a7c-9d92-2c32c8d1fe5c")
+		(property "Reference" "#PWR089"
+			(at 139.7 127 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "+3V3D"
+			(at 139.7 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 139.7 127 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 139.7 127 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "a01285f6-2cd0-4df8-8dcc-b5a0fd43d6be"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR089")
+					(unit 1)))))
+	(global_label "I2C_SDA"
+		(shape passive)
+		(at 139.7 132.08 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "06076aca-a605-41d5-91ab-833b8cbfd164")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 139.7 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(text "CLK0 output chain (J2)"
+		(exclude_from_sim no)
+		(at 20 148.72 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left top))
+		(uuid "1b5a758c-0882-4496-abd6-ada8e1c7b38f"))
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 40.64 172.72 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5db6d516-b97e-44c1-97d6-d77691e60651")
+		(property "Reference" "R100"
+			(at 40.64 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "0"
+			(at 40.64 175.26 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 40.64 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 40.64 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Resistor, small symbol"
+			(at 40.64 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" ""
+			(at 40.64 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "VERIFY" "0603 0R series (Jason decision); LCSC code not in PLAN (C17477 is 0805)."
+			(at 40.64 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "3c07fcb9-e3e1-4fef-8225-84d1c307986c"))
+		(pin "2"
+			(uuid "7d78a37b-7d63-4aea-b957-43259c9592c4"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "R100")
+					(unit 1)))))
+	(label "CLK0"
+		(at 38.1 172.72 180)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "0838dede-7a82-401e-b976-1b42aaecd0ba"))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 50.8 172.72 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6c435d50-e1ad-4b6f-84aa-8344784712dc")
+		(property "Reference" "C100"
+			(at 50.8 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "100n"
+			(at 50.8 175.26 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 50.8 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 50.8 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 50.8 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C49678"
+			(at 50.8 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0805KRX7R9BB104"
+			(at 50.8 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 50.8 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "VERIFY" "DC-block LF corner ~32 kHz into 50 ohm (PLAN Q6)."
+			(at 50.8 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "a61b545e-2447-4224-8aec-f7bbdac01de0"))
+		(pin "2"
+			(uuid "e62619eb-5f0b-4fc7-ac81-f155ba42ae39"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C100")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 43.18 172.72)
+			(xy 48.26 172.72))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "059737a5-eb06-478d-ba56-4b68ca55b8bf"))
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 60.96 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "83314c56-c99b-4177-9714-3b9a07a5f664")
+		(property "Reference" "R101"
+			(at 62.76 177.2 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "120"
+			(at 62.76 179.4 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 60.96 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 60.96 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Resistor, small symbol"
+			(at 60.96 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "VERIFY" "DNP shunt ~120 ohm back-match of ~85 ohm source (datasheet Zo); part/LCSC not chosen; verify return loss esp. >100 MHz."
+			(at 60.96 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "2e1e7ac3-e87a-4563-b16a-313d1e3de8e8"))
+		(pin "2"
+			(uuid "d531f0c4-03d9-40cc-9845-21ec51ad985b"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "R101")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 60.96 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "100651a2-4ef7-44d9-bb8a-e27dda42c3dc")
+		(property "Reference" "#PWR090"
+			(at 60.96 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 60.96 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 60.96 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 60.96 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "f7b31fce-2928-457f-8be6-9ff96c9d7548"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR090")
+					(unit 1)))))
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Bridged")
+		(at 101.6 172.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a0892ff0-2b71-4320-bf1a-e8b4559b3c70")
+		(property "Reference" "JP102"
+			(at 101.6 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "NC"
+			(at 101.6 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
+			(at 101.6 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 101.6 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 101.6 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" ""
+			(at 101.6 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "0b7f173b-f5d7-4475-b460-026681c40902"))
+		(pin "2"
+			(uuid "24cc21b7-aef2-4ff7-8914-3b7b7098b438"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "JP102")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 53.34 172.72)
+			(xy 96.52 172.72))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "ecac0d35-4b80-42b5-b752-7e810d666dfc"))
+	(wire
+		(pts
+			(xy 60.96 172.72)
+			(xy 60.96 175.26))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "dc951b66-859a-466f-819d-7662256eb4ea"))
+	(symbol
+		(lib_id "Device:L_Small")
+		(at 121.92 172.72 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "405f9836-323c-4c6b-99ac-5d4b5693012e")
+		(property "Reference" "L1"
+			(at 121.92 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "100n"
+			(at 121.92 175.26 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
+			(at 121.92 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 121.92 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Inductor, small symbol"
+			(at 121.92 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C1330579"
+			(at 121.92 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "LQW2UASR10G0CL"
+			(at 121.92 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "Murata"
+			(at 121.92 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "VERIFY" "LQW2UAS stock 0.9-3.3k/part; buy ahead. 150n uses +/-1% C2044861 (C2043109 is +/-5%)."
+			(at 121.92 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "42340c48-fad8-42e4-b088-cca6f34284dd"))
+		(pin "2"
+			(uuid "63601cc4-9771-4b4c-b26a-cf5f764d0f9b"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "L1")
+					(unit 1)))))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 121.92 165.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "67f1fbf9-7096-4141-b10c-a82e43dd317d")
+		(property "Reference" "C105"
+			(at 121.92 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "39p"
+			(at 121.92 167.64 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 121.92 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 121.92 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 121.92 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C527048"
+			(at 121.92 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0603FRNPO9BN390"
+			(at 121.92 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 121.92 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "VERIFY" "9.1p only +/-0.25pF in stock (C513588); 24p +/-2% stock thin (C2857979, ~950)."
+			(at 121.92 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "9cd61268-124a-4dc8-8cbe-36c261a5b411"))
+		(pin "2"
+			(uuid "3bafe168-7c6c-4984-80f5-cc29f1ccfd7d"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C105")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 119.38 172.72)
+			(xy 119.38 165.1))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "87a9d495-d95c-4df7-93ac-2b186301430c"))
+	(wire
+		(pts
+			(xy 124.46 172.72)
+			(xy 124.46 165.1))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "eb53032e-f883-443f-aee0-c2974e95b65d"))
+	(symbol
+		(lib_id "Device:L_Small")
+		(at 144.78 172.72 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fad72a8c-9578-42d7-8f08-3336b3ecb3cf")
+		(property "Reference" "L2"
+			(at 144.78 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "150n"
+			(at 144.78 175.26 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
+			(at 144.78 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 144.78 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Inductor, small symbol"
+			(at 144.78 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C2044861"
+			(at 144.78 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "LQW2UASR15F00L"
+			(at 144.78 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "Murata"
+			(at 144.78 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "0063d285-08fb-454f-a4d2-5c9e86ce3051"))
+		(pin "2"
+			(uuid "e981200b-88dd-4d89-b917-f776546f2130"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "L2")
+					(unit 1)))))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 144.78 165.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "85dd53f4-019c-48fb-b428-93b745bb47a4")
+		(property "Reference" "C106"
+			(at 144.78 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "20p"
+			(at 144.78 167.64 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 144.78 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 144.78 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 144.78 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C326779"
+			(at 144.78 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0603FRNPO9BN200"
+			(at 144.78 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 144.78 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "2857437d-10e5-414d-98be-18eb07fcc8d8"))
+		(pin "2"
+			(uuid "c2eaa87f-548f-472a-b4a8-124d6378851f"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C106")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 142.24 172.72)
+			(xy 142.24 165.1))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7693b883-c397-49c8-b9ad-9e7fbf8f1b75"))
+	(wire
+		(pts
+			(xy 147.32 172.72)
+			(xy 147.32 165.1))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "a3aa8c9c-8e30-4fae-9ab7-0a7de7f280c7"))
+	(symbol
+		(lib_id "Device:L_Small")
+		(at 167.64 172.72 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6ffd41fa-38a0-4fb3-a41c-93d2a679c72d")
+		(property "Reference" "L3"
+			(at 167.64 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "150n"
+			(at 167.64 175.26 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
+			(at 167.64 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 167.64 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Inductor, small symbol"
+			(at 167.64 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C2044861"
+			(at 167.64 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "LQW2UASR15F00L"
+			(at 167.64 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "Murata"
+			(at 167.64 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "acf07a40-3520-4028-b3a5-1460eba4d81b"))
+		(pin "2"
+			(uuid "d4f935c8-93ca-4b51-b162-925c69b533ba"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "L3")
+					(unit 1)))))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 167.64 165.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0719facd-2b78-43a1-8195-5ec35f75c5a7")
+		(property "Reference" "C107"
+			(at 167.64 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "9.1p"
+			(at 167.64 167.64 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 167.64 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 167.64 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 167.64 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C513588"
+			(at 167.64 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0603CRNPO9BN9R1"
+			(at 167.64 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 167.64 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "0e091feb-a7ff-444c-a334-e0769eaf74b9"))
+		(pin "2"
+			(uuid "dd3b07c3-6dd6-44ab-ac0a-6bcc58c28fe0"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C107")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 165.1 172.72)
+			(xy 165.1 165.1))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f906c471-df59-4247-88a5-b094614cdb98"))
+	(wire
+		(pts
+			(xy 170.18 172.72)
+			(xy 170.18 165.1))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "753efd37-c557-4a05-bdbf-28e2153aeec1"))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 109.22 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c9417b0a-7b8c-4c86-ad79-e3ca32277b40")
+		(property "Reference" "C101"
+			(at 111.02 177.2 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "33p"
+			(at 111.02 179.4 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 109.22 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 109.22 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 109.22 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C519485"
+			(at 109.22 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0603FRNPO9BN330"
+			(at 109.22 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 109.22 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "c1c82ada-4707-4fa2-974e-db7c4bd230a2"))
+		(pin "2"
+			(uuid "2becd0e0-66a3-4096-bfb2-d18bb657fa74"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C101")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 109.22 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "d2b40f56-1921-4393-b1e8-a562b585e7d6")
+		(property "Reference" "#PWR091"
+			(at 109.22 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 109.22 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 109.22 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 109.22 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "8ab8324d-4cb2-4e7d-89bf-2c44cf32fafa"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR091")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 109.22 172.72)
+			(xy 109.22 175.26))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "37f17408-9f71-4925-9a61-9c51ef68db9f"))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 129.54 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1fa31aa4-3703-4af2-bc7f-6c6b440724d9")
+		(property "Reference" "C102"
+			(at 131.34 177.2 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "75p"
+			(at 131.34 179.4 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 129.54 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 129.54 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 129.54 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C519496"
+			(at 129.54 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0603FRNPO9BN750"
+			(at 129.54 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 129.54 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "e70f8ab5-ca13-4de0-8163-bd701da10bc5"))
+		(pin "2"
+			(uuid "0995296b-e374-4525-8766-0ebc1180a5e5"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C102")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 129.54 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "dfabec6a-110b-4825-a810-225547a87a3a")
+		(property "Reference" "#PWR092"
+			(at 129.54 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 129.54 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 129.54 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 129.54 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "db2e42a7-b2cc-4002-8b22-8fe99ee87c35"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR092")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 129.54 172.72)
+			(xy 129.54 175.26))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "142bd868-e050-4b5b-95a3-2015f225a61a"))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 152.4 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "68a04fa4-a9d5-4fe7-be90-a50a0bc312c7")
+		(property "Reference" "C103"
+			(at 154.2 177.2 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "82p"
+			(at 154.2 179.4 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 152.4 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 152.4 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 152.4 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C519487"
+			(at 152.4 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0603FRNPO9BN820"
+			(at 152.4 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 152.4 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "49f38a27-74fe-4959-85ba-cbb6d4b99a46"))
+		(pin "2"
+			(uuid "b3e28b6d-eeee-4d39-b115-ee8a8d9e4cca"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C103")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 152.4 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "3ee39aaa-5e18-4fba-b2c4-7172bc67b57e")
+		(property "Reference" "#PWR093"
+			(at 152.4 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 152.4 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 152.4 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 152.4 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "ab1245dc-1b6e-4d2d-8b9e-aed643ca6838"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR093")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 152.4 172.72)
+			(xy 152.4 175.26))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "b1592bff-0d12-4d40-b4f6-9b19628177b7"))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 175.26 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "89d04953-9a00-4409-a867-bb0096703509")
+		(property "Reference" "C104"
+			(at 177.06 177.2 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "43p"
+			(at 177.06 179.4 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 175.26 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 175.26 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 175.26 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C519493"
+			(at 175.26 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0603FRNPO9BN430"
+			(at 175.26 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 175.26 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "cafa7f43-47d6-4219-894f-04c77f1c8713"))
+		(pin "2"
+			(uuid "c1062265-1d2c-4260-a405-c4c6e6e3b8d6"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C104")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 175.26 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "ea782459-98c4-4929-99ec-aeba9e3d6454")
+		(property "Reference" "#PWR094"
+			(at 175.26 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 175.26 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 175.26 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 175.26 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "599057d6-6123-4491-aa07-8faaeda993d0"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR094")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 175.26 172.72)
+			(xy 175.26 175.26))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "e5c1e261-4c48-43c4-965e-fcacb50b2782"))
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Bridged")
+		(at 185.42 172.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7d76dbc4-8fff-42c4-90bf-cc947a12a206")
+		(property "Reference" "JP103"
+			(at 185.42 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "NC"
+			(at 185.42 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
+			(at 185.42 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 185.42 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 185.42 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" ""
+			(at 185.42 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "d4b3526c-3999-47b9-b099-a0ac239cf586"))
+		(pin "2"
+			(uuid "23e2c781-8214-476b-9d6a-29bd125a9d5e"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "JP103")
+					(unit 1)))))
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 203.2 172.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "584ceec2-979e-4b8b-9451-7e0fbc9e09ca")
+		(property "Reference" "J2"
+			(at 203.454 169.672 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "SMA CLK0"
+			(at 206.121 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
+			(at 203.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 203.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 203.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C496550"
+			(at 203.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "BWSMA-KE-P001"
+			(at 203.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "BAT Wireless"
+			(at 203.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "VERIFY" "Footprint is a placeholder; check BWSMA-KE-P001 launch geometry and 1.6 mm edge fit."
+			(at 203.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "d712c71f-8c66-4916-adba-27c0dc87e6fb"))
+		(pin "2"
+			(uuid "da94221d-b2c9-44b7-a450-567582f50aec"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "J2")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 203.2 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "698bc089-81ff-4c31-b483-3666b5448237")
+		(property "Reference" "#PWR095"
+			(at 203.2 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 203.2 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 203.2 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 203.2 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "080e8600-f289-4b9d-b3af-b6886ea731fd"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR095")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 106.68 172.72)
+			(xy 119.38 172.72))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "65bf2ccd-5c37-4b74-8241-3b24081da1d8"))
+	(wire
+		(pts
+			(xy 124.46 172.72)
+			(xy 142.24 172.72))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "cf040a2d-0b68-4b10-b1c0-07c9236e595c"))
+	(wire
+		(pts
+			(xy 147.32 172.72)
+			(xy 165.1 172.72))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "0946ed46-316e-4a50-867c-e294fc44a061"))
+	(wire
+		(pts
+			(xy 170.18 172.72)
+			(xy 180.34 172.72))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "5e5ed69b-9894-41da-a8ca-fc570d832017"))
+	(wire
+		(pts
+			(xy 190.5 172.72)
+			(xy 198.12 172.72))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "a277ec5f-9e96-480d-9c31-3b35c336b348"))
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 88.9 193.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "16d52759-e1c4-4e35-a6db-7f2572e976eb")
+		(property "Reference" "JP104"
+			(at 88.9 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "NO"
+			(at 88.9 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 88.9 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 88.9 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 88.9 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" ""
+			(at 88.9 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "008fc298-2b92-4619-a055-259c686d49d4"))
+		(pin "2"
+			(uuid "bd15f8c5-cc8e-4d77-919e-76c26a114fb4"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "JP104")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 76.2 172.72)
+			(xy 76.2 193.04))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "ffcf8b55-9807-4de6-9935-62582ae5d4b9"))
+	(wire
+		(pts
+			(xy 76.2 193.04)
+			(xy 83.82 193.04))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "431418d6-117a-4989-9cf3-ed04cf9f3287"))
+	(wire
+		(pts
+			(xy 93.98 193.04)
+			(xy 193.04 193.04))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f2138826-536f-431d-967e-e757115baf32"))
+	(wire
+		(pts
+			(xy 193.04 193.04)
+			(xy 193.04 172.72))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "4bc0bacf-9b55-455f-a3c2-e346ad7f7b67"))
+	(text "CLK1 output chain (J3)"
+		(exclude_from_sim no)
+		(at 20 194.44 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left top))
+		(uuid "476e059a-2531-49a8-a5d2-dbc3fae88101"))
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 40.64 218.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7fba8b57-6e8d-4f7a-98cf-dd42fc52fd14")
+		(property "Reference" "R120"
+			(at 40.64 215.9 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "0"
+			(at 40.64 220.98 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 40.64 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 40.64 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Resistor, small symbol"
+			(at 40.64 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" ""
+			(at 40.64 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "VERIFY" "see R100"
+			(at 40.64 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "1f08a5a1-68d2-47b6-86d4-dbc5ff7d311b"))
+		(pin "2"
+			(uuid "ebc70f17-1fb2-42b5-8c67-25c5496836be"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "R120")
+					(unit 1)))))
+	(label "CLK1"
+		(at 38.1 218.44 180)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "5d71ddfb-c693-4d62-a5cb-5c12211548e9"))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 50.8 218.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff124b66-a443-4612-a3a2-81b0f62a21e2")
+		(property "Reference" "C120"
+			(at 50.8 215.9 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "100n"
+			(at 50.8 220.98 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 50.8 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 50.8 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 50.8 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C49678"
+			(at 50.8 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0805KRX7R9BB104"
+			(at 50.8 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 50.8 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "f3085659-b18f-45bc-812e-1985d387e7eb"))
+		(pin "2"
+			(uuid "f8c396d2-0dea-462a-b262-0437c922e82f"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C120")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 43.18 218.44)
+			(xy 48.26 218.44))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "c2b55b09-4e1f-4fa8-90cd-bedcaeb0d796"))
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 60.96 223.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "997a45f7-f085-430e-ae0c-bf218505dd5b")
+		(property "Reference" "R121"
+			(at 62.76 222.92 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "120"
+			(at 62.76 225.12 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 60.96 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 60.96 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Resistor, small symbol"
+			(at 60.96 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "VERIFY" "see R100"
+			(at 60.96 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "6e8f60b2-3744-4e61-88c7-d273e0309f73"))
+		(pin "2"
+			(uuid "aa36dcc7-dc8e-4da9-b3b3-19f8c9d1bb76"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "R121")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 60.96 226.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "23410828-c203-481c-84d4-464f80a9fd55")
+		(property "Reference" "#PWR096"
+			(at 60.96 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 60.96 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 60.96 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 60.96 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "eb6e561a-1779-4349-b2b2-88b835f731fe"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR096")
+					(unit 1)))))
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Bridged")
+		(at 101.6 218.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "02e344dd-31ca-40ad-b7f5-523a6f6e02df")
+		(property "Reference" "JP122"
+			(at 101.6 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "NC"
+			(at 101.6 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
+			(at 101.6 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 101.6 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 101.6 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" ""
+			(at 101.6 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "63469514-32ee-4933-ae41-f8c36813f9e6"))
+		(pin "2"
+			(uuid "3eee8eda-24b1-4159-a124-7878911164f6"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "JP122")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 53.34 218.44)
+			(xy 96.52 218.44))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7a4cb691-c598-4e39-946f-ba3a3d8ecd6b"))
+	(wire
+		(pts
+			(xy 60.96 218.44)
+			(xy 60.96 220.98))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "41b8d952-260a-4562-93cf-f6e53b196c16"))
+	(symbol
+		(lib_id "Device:L_Small")
+		(at 121.92 218.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e22a80bf-2354-430c-a4aa-9848faca4b0b")
+		(property "Reference" "L4"
+			(at 121.92 215.9 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "100n"
+			(at 121.92 220.98 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
+			(at 121.92 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 121.92 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Inductor, small symbol"
+			(at 121.92 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C1330579"
+			(at 121.92 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "LQW2UASR10G0CL"
+			(at 121.92 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "Murata"
+			(at 121.92 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "df244b0b-477e-4dd2-9861-1c6d6b90b99b"))
+		(pin "2"
+			(uuid "3b4940b7-3708-454e-9124-8080bc216541"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "L4")
+					(unit 1)))))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 121.92 210.82 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fd07071c-b572-401d-ac38-aeb08b2258fa")
+		(property "Reference" "C125"
+			(at 121.92 208.28 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "39p"
+			(at 121.92 213.36 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 121.92 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 121.92 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 121.92 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C527048"
+			(at 121.92 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0603FRNPO9BN390"
+			(at 121.92 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 121.92 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "bdeeade1-69df-417a-8447-484cd6506991"))
+		(pin "2"
+			(uuid "d6607f11-c241-476e-8709-ec07d5301944"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C125")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 119.38 218.44)
+			(xy 119.38 210.82))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "053563da-37b7-436d-9f0c-1c65a60cf78e"))
+	(wire
+		(pts
+			(xy 124.46 218.44)
+			(xy 124.46 210.82))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "0269e0e9-eb37-4cc5-ba34-b51267a7f0be"))
+	(symbol
+		(lib_id "Device:L_Small")
+		(at 144.78 218.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "af6e1411-969c-4622-b4c5-e39762867abd")
+		(property "Reference" "L5"
+			(at 144.78 215.9 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "150n"
+			(at 144.78 220.98 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
+			(at 144.78 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 144.78 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Inductor, small symbol"
+			(at 144.78 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C2044861"
+			(at 144.78 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "LQW2UASR15F00L"
+			(at 144.78 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "Murata"
+			(at 144.78 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "e6248758-b86c-4f10-82d3-353f70f4daa2"))
+		(pin "2"
+			(uuid "50dc2a69-9e10-4037-9a8a-e4118c4ae9db"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "L5")
+					(unit 1)))))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 144.78 210.82 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d408f1d9-b714-49bf-b6e5-94ceba5089bd")
+		(property "Reference" "C126"
+			(at 144.78 208.28 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "20p"
+			(at 144.78 213.36 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 144.78 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 144.78 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 144.78 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C326779"
+			(at 144.78 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0603FRNPO9BN200"
+			(at 144.78 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 144.78 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "ee39df92-5dad-424e-b78e-e3f4a783e935"))
+		(pin "2"
+			(uuid "f88b9d6a-4043-4bf9-bc21-8eb6161fc340"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C126")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 142.24 218.44)
+			(xy 142.24 210.82))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f6a254b1-5990-46c9-b19e-d5aa73356458"))
+	(wire
+		(pts
+			(xy 147.32 218.44)
+			(xy 147.32 210.82))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "ebf01bef-a965-46b4-906e-90584f7956f5"))
+	(symbol
+		(lib_id "Device:L_Small")
+		(at 167.64 218.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bb588eb5-b399-4ed8-a2ee-10822b023791")
+		(property "Reference" "L6"
+			(at 167.64 215.9 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "150n"
+			(at 167.64 220.98 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
+			(at 167.64 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 167.64 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Inductor, small symbol"
+			(at 167.64 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C2044861"
+			(at 167.64 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "LQW2UASR15F00L"
+			(at 167.64 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "Murata"
+			(at 167.64 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "a528bd95-81e2-49e7-aa09-264752c70ee2"))
+		(pin "2"
+			(uuid "f113eb8b-49c7-494f-88ae-6c07bdffc3d9"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "L6")
+					(unit 1)))))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 167.64 210.82 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9a2b21b0-9361-4aeb-bbb0-14d85f460893")
+		(property "Reference" "C127"
+			(at 167.64 208.28 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "9.1p"
+			(at 167.64 213.36 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 167.64 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 167.64 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 167.64 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C513588"
+			(at 167.64 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0603CRNPO9BN9R1"
+			(at 167.64 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 167.64 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "19a90039-b814-400b-b92a-7c64c834dcc4"))
+		(pin "2"
+			(uuid "9e35f9d8-475f-49fb-9b49-fdf3d129fac4"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C127")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 165.1 218.44)
+			(xy 165.1 210.82))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "5ad16e28-6d57-4b80-95bd-e1a26e0ca035"))
+	(wire
+		(pts
+			(xy 170.18 218.44)
+			(xy 170.18 210.82))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f89333bc-38f3-4d7e-8033-164a27a1c1a8"))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 109.22 223.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4af367bd-f619-4905-9b50-9deee0153ec1")
+		(property "Reference" "C121"
+			(at 111.02 222.92 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "33p"
+			(at 111.02 225.12 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 109.22 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 109.22 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 109.22 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C519485"
+			(at 109.22 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0603FRNPO9BN330"
+			(at 109.22 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 109.22 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "d21f680b-4a7c-423a-a710-0846d7346db0"))
+		(pin "2"
+			(uuid "1f352bde-3baa-42f5-8432-2b6a1e6170fb"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C121")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 109.22 226.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "3976125d-3725-41de-81eb-305da3cd1093")
+		(property "Reference" "#PWR097"
+			(at 109.22 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 109.22 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 109.22 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 109.22 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "55388998-ee2a-4263-92e7-a86b227eca62"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR097")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 109.22 218.44)
+			(xy 109.22 220.98))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "d193fd59-ba99-49c7-a391-b9471aca2bdd"))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 129.54 223.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "42d66cc4-e9c0-4bbf-b9c6-eafab4e1e9ee")
+		(property "Reference" "C122"
+			(at 131.34 222.92 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "75p"
+			(at 131.34 225.12 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 129.54 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 129.54 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 129.54 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C519496"
+			(at 129.54 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0603FRNPO9BN750"
+			(at 129.54 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 129.54 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "5ad25b87-3b27-4ff1-9874-8ae55dc32ad6"))
+		(pin "2"
+			(uuid "8b551de7-4d76-4a1a-8bc2-d0109b7240f8"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C122")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 129.54 226.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "2d234f16-63cc-4245-a69a-6a4086b06fa5")
+		(property "Reference" "#PWR098"
+			(at 129.54 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 129.54 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 129.54 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 129.54 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "ede85a56-02c0-4ae4-ae4d-26688042577d"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR098")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 129.54 218.44)
+			(xy 129.54 220.98))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "4863c485-340f-44cf-81b9-d4d4c3fc8797"))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 152.4 223.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d3c3cd41-ce00-4e46-9776-e773242e0ddb")
+		(property "Reference" "C123"
+			(at 154.2 222.92 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "82p"
+			(at 154.2 225.12 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 152.4 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 152.4 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 152.4 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C519487"
+			(at 152.4 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0603FRNPO9BN820"
+			(at 152.4 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 152.4 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "872a578b-c10b-4d99-9212-626bc8b34350"))
+		(pin "2"
+			(uuid "e0f1bc1d-f791-4909-85b1-6cd8066d4b80"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C123")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 152.4 226.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "3397f587-d1b1-422d-9714-bd9bfdf5a83e")
+		(property "Reference" "#PWR099"
+			(at 152.4 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 152.4 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 152.4 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 152.4 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "5b0b190b-fb05-4d62-a1e1-4d0fa28bd0ca"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR099")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 152.4 218.44)
+			(xy 152.4 220.98))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "1b8cb4b5-03c3-4466-95c4-58f76d9977eb"))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 175.26 223.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "20f1271d-2297-4c1e-9fef-ac7f531c1dda")
+		(property "Reference" "C124"
+			(at 177.06 222.92 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "43p"
+			(at 177.06 225.12 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 175.26 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 175.26 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 175.26 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C519493"
+			(at 175.26 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0603FRNPO9BN430"
+			(at 175.26 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 175.26 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "11e8bad5-8af6-4b75-b64e-325e9a1a4681"))
+		(pin "2"
+			(uuid "32b8fc82-ae68-4485-ab18-7d8b07b96473"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C124")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 175.26 226.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "45842aa9-7333-4b7f-88fb-0f08774d53f4")
+		(property "Reference" "#PWR100"
+			(at 175.26 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 175.26 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 175.26 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 175.26 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "a76d520b-efef-459d-819a-6ee0395e5457"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR100")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 175.26 218.44)
+			(xy 175.26 220.98))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "fad53896-8686-4da0-b372-5ab777043424"))
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Bridged")
+		(at 185.42 218.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d7275b04-b7a4-4e26-b58e-571662c8acef")
+		(property "Reference" "JP123"
+			(at 185.42 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "NC"
+			(at 185.42 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
+			(at 185.42 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 185.42 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 185.42 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" ""
+			(at 185.42 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "60ddbbc0-502c-4333-888f-989d8b6d30a5"))
+		(pin "2"
+			(uuid "cc7f86c6-a78a-4978-964b-b81aadd656a8"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "JP123")
+					(unit 1)))))
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 203.2 218.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b039bf94-d82a-4ab8-a530-72d73dcf3d03")
+		(property "Reference" "J3"
+			(at 203.454 215.392 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "SMA CLK1"
+			(at 206.121 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
+			(at 203.2 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 203.2 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 203.2 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C496550"
+			(at 203.2 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "BWSMA-KE-P001"
+			(at 203.2 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "BAT Wireless"
+			(at 203.2 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "VERIFY" "see J2"
+			(at 203.2 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "4d1749dd-27e8-47fb-a992-87479637066c"))
+		(pin "2"
+			(uuid "85a372d9-edc7-4340-a293-0e7976d33166"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "J3")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 203.2 223.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "25f029d5-fa32-4bcd-b0dc-8a3e7cbf882c")
+		(property "Reference" "#PWR101"
+			(at 203.2 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 203.2 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 203.2 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 203.2 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "f6044794-eaf3-4656-a2a6-f84c70522116"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR101")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 106.68 218.44)
+			(xy 119.38 218.44))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "ce5cc3e2-441a-47f0-88f3-bb5efce2cc40"))
+	(wire
+		(pts
+			(xy 124.46 218.44)
+			(xy 142.24 218.44))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "60193564-cb7e-471b-bf16-7dd31a1a3906"))
+	(wire
+		(pts
+			(xy 147.32 218.44)
+			(xy 165.1 218.44))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "29677f81-9990-49dd-8bfe-a0e7fa26a5a1"))
+	(wire
+		(pts
+			(xy 170.18 218.44)
+			(xy 180.34 218.44))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "fc8278fc-622b-4226-8567-033952a0ea16"))
+	(wire
+		(pts
+			(xy 190.5 218.44)
+			(xy 198.12 218.44))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "34182189-76fb-41c0-a732-c06c189bcfca"))
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 88.9 238.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "691fbb78-0ddb-4a63-ace4-553af7256e6a")
+		(property "Reference" "JP124"
+			(at 88.9 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "NO"
+			(at 88.9 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 88.9 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 88.9 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 88.9 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" ""
+			(at 88.9 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "136bd143-dc2c-42db-9f6e-f0d814565576"))
+		(pin "2"
+			(uuid "0a01bd22-0394-4dfc-b08f-0875edc97333"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "JP124")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 76.2 218.44)
+			(xy 76.2 238.76))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "a6371acd-dedc-4b71-8fc3-6bbb68a32705"))
+	(wire
+		(pts
+			(xy 76.2 238.76)
+			(xy 83.82 238.76))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "fb9af0a3-46f5-47e1-b734-e947eb0a0bc0"))
+	(wire
+		(pts
+			(xy 93.98 238.76)
+			(xy 193.04 238.76))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "d9492772-6675-4ed5-9c8b-99b3caa95bd2"))
+	(wire
+		(pts
+			(xy 193.04 238.76)
+			(xy 193.04 218.44))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7b8027c8-6557-4139-a695-f029148861b6"))
+	(text "CLK2 output chain (J4)"
+		(exclude_from_sim no)
+		(at 20 240.16 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left top))
+		(uuid "3acf3f8f-7726-4aef-9ab9-8e9a0dd82fdb"))
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 40.64 264.16 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "61508417-f5da-4e5c-acaa-3e1e070e28df")
+		(property "Reference" "R140"
+			(at 40.64 261.62 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "0"
+			(at 40.64 266.7 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 40.64 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 40.64 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Resistor, small symbol"
+			(at 40.64 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" ""
+			(at 40.64 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "VERIFY" "see R100"
+			(at 40.64 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "cb13a8a0-65d0-4c1d-b253-19c1c20c793e"))
+		(pin "2"
+			(uuid "fc55b86a-1254-4d83-971e-fc350f773aaf"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "R140")
+					(unit 1)))))
+	(label "CLK2"
+		(at 38.1 264.16 180)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "0fe359e1-3301-42b2-b943-936dd8512a33"))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 50.8 264.16 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b57e4cad-c61d-430c-b82d-f557cf443b8c")
+		(property "Reference" "C140"
+			(at 50.8 261.62 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "100n"
+			(at 50.8 266.7 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 50.8 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 50.8 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 50.8 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C49678"
+			(at 50.8 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0805KRX7R9BB104"
+			(at 50.8 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 50.8 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "f3682e57-741d-4f73-b67e-19274fad06b8"))
+		(pin "2"
+			(uuid "552df0fd-0f59-47f0-8d98-621b5dff5073"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C140")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 43.18 264.16)
+			(xy 48.26 264.16))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "55cbffff-cfa4-4416-ae56-0ce4be0790ad"))
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 60.96 269.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "de729542-cc5a-4bd0-bb8a-9904df33d54e")
+		(property "Reference" "R141"
+			(at 62.76 268.64 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "120"
+			(at 62.76 270.84 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 60.96 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 60.96 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Resistor, small symbol"
+			(at 60.96 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "VERIFY" "see R100"
+			(at 60.96 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "88b66ddd-aa12-4ac9-b221-5b93ba6f7dbb"))
+		(pin "2"
+			(uuid "e6818cd2-4879-4c21-8e7d-132b9c580c87"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "R141")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 60.96 271.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "b5fa49cf-bff5-449d-bd12-26a95b6b42b1")
+		(property "Reference" "#PWR102"
+			(at 60.96 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 60.96 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 60.96 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 60.96 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "371201fd-5a98-464c-8892-5ece0d2b02b4"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR102")
+					(unit 1)))))
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Bridged")
+		(at 101.6 264.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d0cd24a1-fa75-49a3-a821-a800fb051139")
+		(property "Reference" "JP142"
+			(at 101.6 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "NC"
+			(at 101.6 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
+			(at 101.6 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 101.6 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 101.6 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" ""
+			(at 101.6 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "6387d046-bd59-4ce1-b58e-108b8bd170f9"))
+		(pin "2"
+			(uuid "0fb997a8-dfeb-48ff-8633-b5634db747f0"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "JP142")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 53.34 264.16)
+			(xy 96.52 264.16))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "6ef1d7a3-86cb-45ae-9727-28e0148aaa42"))
+	(wire
+		(pts
+			(xy 60.96 264.16)
+			(xy 60.96 266.7))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "3c7df894-945c-4d2a-8f48-389a6ab9d46c"))
+	(symbol
+		(lib_id "Device:L_Small")
+		(at 121.92 264.16 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1be9dd2e-6b6a-4868-9f62-396214a963ce")
+		(property "Reference" "L7"
+			(at 121.92 261.62 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "33n"
+			(at 121.92 266.7 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
+			(at 121.92 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 121.92 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Inductor, small symbol"
+			(at 121.92 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C2043161"
+			(at 121.92 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "LQW2UAS33NG0CL"
+			(at 121.92 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "Murata"
+			(at 121.92 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "e379a2d9-8a7c-4a0e-9745-c25e6793869e"))
+		(pin "2"
+			(uuid "c93b5d46-b1e6-4405-b9fa-090973ab2c34"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "L7")
+					(unit 1)))))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 121.92 256.54 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1fc8c9ab-121b-4e7d-8a13-0ea5ad634e80")
+		(property "Reference" "C145"
+			(at 121.92 254 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "16p"
+			(at 121.92 259.08 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 121.92 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 121.92 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 121.92 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C519489"
+			(at 121.92 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0603FRNPO9BN160"
+			(at 121.92 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 121.92 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "c7909508-28e3-48fe-82a7-9574aacc98d2"))
+		(pin "2"
+			(uuid "206891dc-d19e-443b-a014-befcdb4ec19d"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C145")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 119.38 264.16)
+			(xy 119.38 256.54))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "23afae48-8f46-4310-97a7-62cee170ad51"))
+	(wire
+		(pts
+			(xy 124.46 264.16)
+			(xy 124.46 256.54))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "a15fa630-1ab5-4f85-b2a1-b5efb543f957"))
+	(symbol
+		(lib_id "Device:L_Small")
+		(at 144.78 264.16 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e8b625c1-685a-45a6-9d20-ce8d338d8667")
+		(property "Reference" "L8"
+			(at 144.78 261.62 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "68n"
+			(at 144.78 266.7 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
+			(at 144.78 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 144.78 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Inductor, small symbol"
+			(at 144.78 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C703709"
+			(at 144.78 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "LQW2UAS68NG00L"
+			(at 144.78 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "Murata"
+			(at 144.78 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "667c1e38-ebe6-4563-91ab-d6605bae374b"))
+		(pin "2"
+			(uuid "2fd270e4-31ec-478d-8db8-422fac266706"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "L8")
+					(unit 1)))))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 144.78 256.54 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e987cb25-736e-428c-94e0-0deaa5f20bb5")
+		(property "Reference" "C146"
+			(at 144.78 254 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "5.6p"
+			(at 144.78 259.08 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 144.78 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 144.78 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 144.78 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C519111"
+			(at 144.78 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0603BRNPO9BN5R6"
+			(at 144.78 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 144.78 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "4d7ed9dd-7189-4599-8601-b0f5fae6d5b2"))
+		(pin "2"
+			(uuid "eec8fb8f-bffa-4adc-86fd-c1791ec1e11e"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C146")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 142.24 264.16)
+			(xy 142.24 256.54))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "887e3c35-d755-44b6-9963-d72e84068cc4"))
+	(wire
+		(pts
+			(xy 147.32 264.16)
+			(xy 147.32 256.54))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "aaf9e8f8-1359-4c4d-b257-b0ad9689e656"))
+	(symbol
+		(lib_id "Device:L_Small")
+		(at 167.64 264.16 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6449b29b-cd72-4198-b6b9-149de7db18e4")
+		(property "Reference" "L9"
+			(at 167.64 261.62 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "68n"
+			(at 167.64 266.7 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
+			(at 167.64 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 167.64 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Inductor, small symbol"
+			(at 167.64 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C703709"
+			(at 167.64 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "LQW2UAS68NG00L"
+			(at 167.64 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "Murata"
+			(at 167.64 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "c5976e91-0180-4f6d-b012-a29824466e0e"))
+		(pin "2"
+			(uuid "cdeb77cb-0c1c-42d1-b8e3-ef1b852135b3"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "L9")
+					(unit 1)))))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 167.64 256.54 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9621c827-d858-48d9-b5d2-220b309cd531")
+		(property "Reference" "C147"
+			(at 167.64 254 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "2.0p"
+			(at 167.64 259.08 90)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 167.64 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 167.64 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 167.64 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C513620"
+			(at 167.64 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0603BRNPO9BN2R0"
+			(at 167.64 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 167.64 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "3da98176-e0d5-4603-9c26-e505829ad1cc"))
+		(pin "2"
+			(uuid "fd67d803-224b-4455-9376-6dec3874c771"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C147")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 165.1 264.16)
+			(xy 165.1 256.54))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "96161af3-f537-4c9f-b646-1b9fb4a0af76"))
+	(wire
+		(pts
+			(xy 170.18 264.16)
+			(xy 170.18 256.54))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "ef4c3fda-6908-4d4c-974d-4a7b3775434c"))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 109.22 269.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fe8708f6-db62-4301-b7bf-c328ea7ca278")
+		(property "Reference" "C141"
+			(at 111.02 268.64 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "3.6p"
+			(at 111.02 270.84 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 109.22 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 109.22 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 109.22 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C519106"
+			(at 109.22 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0603BRNPO9BN3R6"
+			(at 109.22 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 109.22 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "e1f60381-b4bc-43fd-b451-55539848b0bd"))
+		(pin "2"
+			(uuid "16258a83-e3a2-43d4-a0ea-aa7fc82e2b14"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C141")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 109.22 271.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "c0fc1840-2d95-4a14-b6be-07b2ca811c7a")
+		(property "Reference" "#PWR103"
+			(at 109.22 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 109.22 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 109.22 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 109.22 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "787cdf01-e28b-4527-8029-7ff4a1298c36"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR103")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 109.22 264.16)
+			(xy 109.22 266.7))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "18aeb3f4-1d93-4742-ab5f-e3166299d1a2"))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 129.54 269.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7b1a8939-6f86-4cc4-a27b-a727ae228a5b")
+		(property "Reference" "C142"
+			(at 131.34 268.64 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "24p"
+			(at 131.34 270.84 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 129.54 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 129.54 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 129.54 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C2857979"
+			(at 129.54 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "0603CG240G500NT"
+			(at 129.54 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "FH"
+			(at 129.54 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "f09185a5-bbde-44a0-a0cd-35317867fd7c"))
+		(pin "2"
+			(uuid "9ba53d72-09a9-4a53-899d-da90a15e0c81"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C142")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 129.54 271.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "571da845-8def-43e3-8e6b-9f836a1a3867")
+		(property "Reference" "#PWR104"
+			(at 129.54 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 129.54 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 129.54 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 129.54 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "a240fc0b-5a7e-4178-871c-b36d9b7cc38f"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR104")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 129.54 264.16)
+			(xy 129.54 266.7))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "98eba805-cfca-4992-88b3-12e434695b3e"))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 152.4 269.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "acc53a91-895f-4747-ba2c-8a1db842fef7")
+		(property "Reference" "C143"
+			(at 154.2 268.64 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "30p"
+			(at 154.2 270.84 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 152.4 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 152.4 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 152.4 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C519491"
+			(at 152.4 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0603FRNPO9BN300"
+			(at 152.4 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 152.4 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "d2ac6730-39f6-4e56-8ca6-1b1c7faaa809"))
+		(pin "2"
+			(uuid "fde52245-9d95-4c9c-a2f5-fb72c5b811f5"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C143")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 152.4 271.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "7fd04993-e112-4a5a-b4a9-fe22f6261a78")
+		(property "Reference" "#PWR105"
+			(at 152.4 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 152.4 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 152.4 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 152.4 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "59d8fb36-3820-4084-8728-a55eda5b4f95"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR105")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 152.4 264.16)
+			(xy 152.4 266.7))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "0b48024b-4a9c-4276-a7dd-ade9bee56dd8"))
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 175.26 269.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8d7a6793-675d-44e4-b0c2-bdb2afb53216")
+		(property "Reference" "C144"
+			(at 177.06 268.64 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "18p"
+			(at 177.06 270.84 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 175.26 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 175.26 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 175.26 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C527046"
+			(at 175.26 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0603FRNPO9BN180"
+			(at 175.26 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "YAGEO"
+			(at 175.26 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "70de8e0d-ef51-441d-8685-7878e4a1f679"))
+		(pin "2"
+			(uuid "112f891d-df8a-4d3a-abce-c5f012c83e0d"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "C144")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 175.26 271.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "1ea976b6-1c65-472a-b3e6-67ce7df732ee")
+		(property "Reference" "#PWR106"
+			(at 175.26 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 175.26 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 175.26 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 175.26 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "c64d7956-c8d8-41a1-aca0-30c6a8afe337"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR106")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 175.26 264.16)
+			(xy 175.26 266.7))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "d0c0d32f-80a4-42df-af7f-753958ce8659"))
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Bridged")
+		(at 185.42 264.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e517fffa-c2e6-40c4-8168-30f64ef024cd")
+		(property "Reference" "JP143"
+			(at 185.42 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "NC"
+			(at 185.42 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
+			(at 185.42 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 185.42 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 185.42 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" ""
+			(at 185.42 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "abf91389-acf6-4b40-9322-684095576a9d"))
+		(pin "2"
+			(uuid "4ea411f6-f49c-4f65-8e41-204b6b41de01"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "JP143")
+					(unit 1)))))
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 203.2 264.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7ebfed17-ffa8-491e-9f3a-d296dcc04fd8")
+		(property "Reference" "J4"
+			(at 203.454 261.112 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "SMA CLK2"
+			(at 206.121 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
+			(at 203.2 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 203.2 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 203.2 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C496550"
+			(at 203.2 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "BWSMA-KE-P001"
+			(at 203.2 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "BAT Wireless"
+			(at 203.2 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "VERIFY" "see J2"
+			(at 203.2 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "ea27e96a-f480-415f-9ca4-f6ca8de38983"))
+		(pin "2"
+			(uuid "fbc195a5-86a9-49ec-8dc4-838f48008fa4"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "J4")
+					(unit 1)))))
+	(symbol
+		(lib_id "power:GND")
+		(at 203.2 269.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "bf039dbf-cb3c-4d60-9701-04d4c3d1f434")
+		(property "Reference" "#PWR107"
+			(at 203.2 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Value" "GND"
+			(at 203.2 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" ""
+			(at 203.2 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 203.2 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "6fa1b7b3-f0ac-4191-8998-7a9bbf52612a"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR107")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 106.68 264.16)
+			(xy 119.38 264.16))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "c5f3d2a0-aa36-4434-a996-3642d4438ccb"))
+	(wire
+		(pts
+			(xy 124.46 264.16)
+			(xy 142.24 264.16))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "be200be4-ec3b-4748-9157-6454b23322e2"))
+	(wire
+		(pts
+			(xy 147.32 264.16)
+			(xy 165.1 264.16))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "3c5c6ddb-e7cd-44b7-82df-906bf676862d"))
+	(wire
+		(pts
+			(xy 170.18 264.16)
+			(xy 180.34 264.16))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "501d61a4-78f9-4a90-afd4-99e78067e24f"))
+	(wire
+		(pts
+			(xy 190.5 264.16)
+			(xy 198.12 264.16))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "37434fdc-32da-47af-9303-2e2eb87784c3"))
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 88.9 284.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6666c818-6a89-4fe6-b185-bcea0f1119cc")
+		(property "Reference" "JP144"
+			(at 88.9 281.94 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "NO"
+			(at 88.9 287.02 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 88.9 284.48 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" ""
+			(at 88.9 284.48 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 88.9 284.48 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" ""
+			(at 88.9 284.48 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "4c07a321-2c65-49cc-a29a-885db137f47f"))
+		(pin "2"
+			(uuid "357d307a-512d-4323-8000-1debfda8aad1"))
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "JP144")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 76.2 264.16)
+			(xy 76.2 284.48))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "8c46c0b2-6c0d-4979-9622-31d546ad2569"))
+	(wire
+		(pts
+			(xy 76.2 284.48)
+			(xy 83.82 284.48))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "6aaf24c8-3aaf-4815-a67b-dd888f3eb586"))
+	(wire
+		(pts
+			(xy 93.98 284.48)
+			(xy 193.04 284.48))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "075d5b40-8924-45e6-a9ca-ba66769880cb"))
+	(wire
+		(pts
+			(xy 193.04 284.48)
+			(xy 193.04 264.16))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "307b882e-bc99-486c-bf83-882b245484cc"))
+	(text "Jumpers: JP102/JP103, JP122/JP123, JP142/JP143 in-line, normally closed (cut to remove filter).\nJP104/JP124/JP144 filter bypass, normally open (bridge after cutting in-line pair).\nKeep in-line jumper pads <=2 mm from junction (PLAN 6).\nFilter values are interchangeable per output (same footprint):\n  CLK0/CLK1: 60 MHz Cauer (HF + 6 m; matched pair keeps quadrature phase).\n  CLK2: 160 MHz Cauer. Not a harmonic filter for HF bands."
+		(exclude_from_sim no)
+		(at 200 100 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left top))
+		(uuid "fb84477b-b594-4d7b-80ae-734d19139305"))
+	(text "VERIFY (unconfirmed items on this sheet):\n- X1: TCXO stock thin (718); buy before ordering.\n- R27: I2C pull-up value not fixed (PLAN 2.2-4.7k); no LCSC chosen. On +3V3D: ATtiny, Si5351, CP2102N and OLED all at\n   3.3 V, so I2C levels match.\n- R28: as R27\n- R100: 0603 0R series (Jason decision); LCSC code not in PLAN (C17477 is 0805).\n- C100: DC-block LF corner ~32 kHz into 50 ohm (PLAN Q6).\n- R101: DNP shunt ~120 ohm back-match of ~85 ohm source (datasheet Zo); part/LCSC not chosen; verify return loss esp.\n   >100 MHz.\n- L1: LQW2UAS stock 0.9-3.3k/part; buy ahead. 150n uses +/-1% C2044861 (C2043109 is +/-5%).\n- C105: 9.1p only +/-0.25pF in stock (C513588); 24p +/-2% stock thin (C2857979, ~950).\n- J2: Footprint is a placeholder; check BWSMA-KE-P001 launch geometry and 1.6 mm edge fit.\n- R120: see R100\n- R121: see R100\n- J3: see J2\n- R140: see R100\n- R141: see R100\n- J4: see J2"
+		(exclude_from_sim no)
+		(at 290 40 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left top))
+		(uuid "0e8af359-dc15-41ea-b549-8bc983de2308"))
+	(junction
+		(at 193.04 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "12a65b59-945d-4ff5-b7f8-d9985f7b96c9"))
+	(junction
+		(at 175.26 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "246531e8-7b67-4f59-80f1-3786a0e87846"))
+	(junction
+		(at 142.24 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7825348a-bfac-4c55-b3cf-b18440652e04"))
+	(junction
+		(at 193.04 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f0b2a47c-9709-4d98-bcdb-f5003ba4e63f"))
+	(junction
+		(at 109.22 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "14fee877-7bfd-401c-b283-ace69c93c8f1"))
+	(junction
+		(at 129.54 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ea21f9fc-90cf-410b-ac3c-58d3aa09d3fd"))
+	(junction
+		(at 60.96 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3ea71b10-269f-446d-b2ce-41f74e70384d"))
+	(junction
+		(at 147.32 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f0f60c03-b964-4159-abd0-cfb75b414850"))
+	(junction
+		(at 129.54 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "393433e6-de78-4323-9173-caeba5794321"))
+	(junction
+		(at 124.46 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f84e3ec5-8b48-4600-b034-7a8d793db3b3"))
+	(junction
+		(at 165.1 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "df3e1d9b-3b7f-4f6e-9711-9451c6dbdb49"))
+	(junction
+		(at 175.26 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d7d07b3-3958-429c-9685-b3f3e8f6c6da"))
+	(junction
+		(at 170.18 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "60c5552f-db7c-4750-b95a-647c0069f35f"))
+	(junction
+		(at 147.32 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5e4988b5-f10e-4219-af9f-a4f573135b97"))
+	(junction
+		(at 76.2 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3d1dc287-ae2e-45cb-804e-5e4817eb5773"))
+	(junction
+		(at 193.04 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9773375d-db59-42e5-8e09-55414821b272"))
+	(junction
+		(at 165.1 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4c09fbd4-dee0-45ce-a68d-13d9be9e94cf"))
+	(junction
+		(at 59.69 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "154ad6ba-8ac9-4290-9bab-00ff6a543722"))
+	(junction
+		(at 170.18 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d3fda3a-d159-49a4-bbc7-81bef8247f60"))
+	(junction
+		(at 152.4 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "828e1cba-5cc3-46fd-aa19-67a73673b052"))
+	(junction
+		(at 60.96 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a0bca1f2-e72b-41e6-89c4-e69b1f2dc126"))
+	(junction
+		(at 119.38 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "66c392c9-28d0-430e-afb0-9944984d63be"))
+	(junction
+		(at 129.54 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2aad9345-2536-4889-b056-e02ce28091a2"))
+	(junction
+		(at 152.4 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "71f28c49-bae6-45bf-91bb-cacc03eb4558"))
+	(junction
+		(at 147.32 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ba598bc-de59-4de5-a3c6-0831b4651a46"))
+	(junction
+		(at 60.96 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "74589906-fb5f-41e0-86af-35ebcfa02f16"))
+	(junction
+		(at 142.24 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b8a3d2a3-6d4d-4b35-8e85-f579dd37b713"))
+	(junction
+		(at 119.38 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "16694b11-6711-431e-824d-ba91bdd1feef"))
+	(junction
+		(at 165.1 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0f625c5d-839e-4891-8fe7-be6e1dbba84a"))
+	(junction
+		(at 76.2 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ff216f2a-2e1f-477f-a09f-3e51c37e3507"))
+	(junction
+		(at 109.22 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "530aa5dd-a825-4e45-9cb0-6c5418aec76e"))
+	(junction
+		(at 142.24 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d33d77c2-f14e-44f3-b048-1b3639f6b37f"))
+	(junction
+		(at 76.2 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6f2cb910-7915-411b-9f8c-113e865ea6d6"))
+	(junction
+		(at 109.22 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "36661d36-4e2f-4dea-bbbc-573edb93f3d2"))
+	(junction
+		(at 152.4 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c160b3b8-ad7c-4d3c-bcdb-66f7eefe0c62"))
+	(junction
+		(at 124.46 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4f0aae9f-946f-4da4-8624-71a8ce9fb6e1"))
+	(junction
+		(at 175.26 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fef8ffa1-431a-45a8-bf81-078e30642ffd"))
+	(junction
+		(at 119.38 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "66522c0f-4cf6-4d9e-b6d9-5ac32c8f7dd6"))
+	(junction
+		(at 170.18 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "298fc679-58c5-4c19-9e24-a1bb30b122b0"))
+	(junction
+		(at 124.46 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d293c146-c556-4fda-b0f8-baf978c8cae4")))
