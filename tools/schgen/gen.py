@@ -81,29 +81,23 @@ for i,(x,y) in enumerate([(320,60),(335,60),(350,60),(365,60)]):
 M=Sheet('mcu_ui.kicad_sch','MCU and UI','b0000000-0000-4000-8000-000000000003',3); sheets.append(M)
 M.text('ATtiny3226 @ 8 MHz internal, 3.3 V. Optiboot over CP2102N; DTR auto-reset on PB4 (RSTPINCFG=0x3, megaTinyCore "UPDI w/reset on PB4"), as EtherKeyerMini C3/R4.',20,20,2)
 M.place('MCU_Microchip_ATtiny','ATtiny3226-S','U4','ATtiny3226-SU',150,110,
- {'1':'+3V3_MCU','20':'GND','16':'UPDI_PA0','17':'OLED_MOSI','18':'OLED_FS0','19':'OLED_SCK','2':'OLED_CS1','3':'OLED_DC','4':'OLED_CS2','5':'BTN_MENU',
+ {'1':'+3V3D','20':'GND','16':'UPDI_PA0','17':'OLED_MOSI','18':'OLED_FS0','19':'OLED_SCK','2':'OLED_CS1','3':'OLED_DC','4':'OLED_CS2','5':'BTN_MENU',
   '11':'I2C_SCL','10':'I2C_SDA','9':'MCU_TX','8':'MCU_RX','7':'WIRE','6':'BTN_STEP','12':'ENC_A','13':'ENC_B','14':'ENC_SW','15':'BTN_BAND'},
  fields=LC('C3234898','ATTINY3226-SU','Microchip'),vfy='Pin mux (PLAN sec.3) to be checked vs datasheet I/O mux table. Jason consigning parts.')
-C(M,'C15','100n',120,70,'+3V3_MCU','GND',fields=C100N); C(M,'C16','4.7u',132.08,70,'+3V3_MCU','GND',fields=C4U7)
-M.place('Device','D_Schottky','D6','1N5711',101.6,62.23,{'1':('+3V3_MCU',5.08),'2':('+3V3D',5.08)},fp='Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal',fieldpos={'Reference':(0,-5.08),'Value':(0,3.81)},
-  vfy='ATtiny-only rail +3V3_MCU: diode-OR of +3V3D (D6) and UPDI header VCC (D5) so a programmer cannot back-feed +3V3D. Same 1N5711 as EKM D5 (no LCSC/MPN). MCU VDD ~2.9-3.0 V (0.3-0.4 V drop): check ATtiny VIH/VIL vs CP2102N TXD (3.3 V VIO, exceeds MCU VDD by ~0.35 V) and OLED/Si5351 3.3 V logic; I/O pull-ups moved to +3V3_MCU. With only programmer power, MCU pins can back-power unpowered CP2102N/OLED/Si5351 via their ESD diodes.')
-flagrail(M,'+3V3_MCU',60,45)
-M.text('+3V3_MCU = +3V3D via D6 OR UPDI pin 1 via D5 (ATtiny only).',88,52)
+C(M,'C15','100n',120,70,'+3V3D','GND',fields=C100N); C(M,'C16','4.7u',132.08,70,'+3V3D','GND',fields=C4U7)
 C(M,'C14','100n',185.42,134.62,'DTR','WIRE',r=180,fields=C100N,fieldpos={'Reference':(4.45,-1.27),'Value':(4.45,1.27)},vfy='PLAN: series R or clamp on PB4 for DTR-rising overshoot? EKM has none.')
-R(M,'R12','10k',185.42,116.84,'+3V3_MCU','WIRE',fields=R10K)
+R(M,'R12','10k',185.42,116.84,'+3V3D','WIRE',fields=R10K)
 r7=M.pinpos[('U4','7')]; M.wire([r7,(185.42,r7[1])]); M.wire([M.pinpos[('R12','2')],M.pinpos[('C14','2')]])
 # UPDI: replicated exactly from EtherKeyerMini PCB/EtherKeyerMini.kicad_sch (J3,R3,D1,D2,JP2,JP3)
 EKMV='Replicated from EtherKeyerMini (%s); EKM has no LCSC/MPN fields - part number to choose.'
-M.text('UPDI / serial-UPDI header, circuit copied from EtherKeyerMini (J3,R3,D1,D2 -> J5,R13,D4,D5;\nEKM JP2/JP3 omitted per Jason). Pin 1 VCC (via D5, feeds +3V3_MCU only), 2 TXD, 3 RXD/UPDI, 4 GND.',262,140)
+M.text('UPDI / serial-UPDI header, circuit copied from EtherKeyerMini (J3,R3,D1 -> J5,R13,D4;\nEKM D2/JP2/JP3 omitted per Jason). Pin 1 VCC ref (+3V3D), 2 TXD, 3 RXD/UPDI, 4 GND.',262,140)
 M.place('Connector_Generic','Conn_01x04','J5','UPDI',334,170.18,{'1':'WIRE','2':'WIRE','3':'WIRE','4':'WIRE'},
   fp='Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical',vfy=EKMV%'J3')
 p1,p2,p3,p4=[M.pinpos[('J5',n)] for n in '1234']
 M.wire([p4,(p4[0]-2.54,p4[1])]); M.power('GND',p4[0]-2.54,p4[1],'left')
 M.wire([p2,(p2[0]-2.54,p2[1])]); M.label('UPDI_TXD',p2[0]-2.54,p2[1],180)
-M.place('Device','D_Schottky','D5','1N5711',308.61,167.64,{'1':'WIRE','2':'WIRE'},fp='Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal',vfy=EKMV%'D2',
-  fieldpos={'Reference':(0,-2.8),'Value':(0,-5.08)})
-k=M.pinpos[('D5','1')]; a_=M.pinpos[('D5','2')]
-M.wire([a_,p1]); M.wire([k,(k[0]-5.08,k[1])]); M.power('+3V3_MCU',k[0]-5.08,k[1],'up')
+M.wire([p1,(p1[0]-5.08,p1[1])]); M.power('+3V3D',p1[0]-5.08,p1[1],'up')
+M.text('Pin 1 = VCC reference for programmer; board must be USB-powered while programming.',262,158)
 R(M,'R13','470',270.51,177.8,'UPDI_PA0','WIRE',r=90,fp='Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical',vfy=EKMV%'R3')
 r2=M.pinpos[('R13','2')]
 M.wire([r2,(p3[0]-7.62,r2[1]),(p3[0]-7.62,p3[1]),p3])
@@ -114,19 +108,18 @@ dA=M.pinpos[('D4','2')]; dK=M.pinpos[('D4','1')]
 top,bot=(dA,dK) if dA[1]<dK[1] else (dK,dA)
 M.wire([(jx,r2[1]),top]); M.wire([bot,(jx,bot[1]+2.54),(jx+5.08,bot[1]+2.54)]); M.label('UPDI_TXD',jx+5.08,bot[1]+2.54,0)
 M.junction(jx,r2[1])
-print('D4',dA,dK,'D5',k,a_)
 M.place('Connector_Generic','Conn_01x08','DS1','HS13L01W4S01',300,100,
  {'1':'WIRE','2':('+3V3_OLED',17.78),'3':'OLED_SCK','4':'OLED_MOSI','5':'OLED_DC','6':'OLED_CS1','7':'OLED_FS0','8':'OLED_CS2'},
  fp='Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical',fields=LC('C5139764','HS13L01W4S01','HS'),
  vfy='1.3in SPI SH1106 module. Pin order GND,VCC,SCL,SDA,DC,CS1,FS0,CS2 from PLAN pin list; pin numbering, pitch and connector style unverified. Low stock - Jason sourcing.')
 d1=M.pinpos[('DS1','1')]; M.wire([d1,(d1[0]-2.54,d1[1])]); M.power('GND',d1[0]-2.54,d1[1],'left')
-R(M,'R26','10k',270,70,'+3V3_MCU','OLED_CS2',fields=R10K)
+R(M,'R26','10k',270,70,'+3V3D','OLED_CS2',fields=R10K)
 M.text('OLED: SPI only (PA1 MOSI, PA3 SCK, PA4 CS1, PA5 DC). Never shares the Si5351 I2C bus.\nCS2 (font chip) held high by R26.',255,130)
 # debounce: switch node pulled up, 10k series to pin, 100n at pin
 chans=[('ENC_A','R14','R21','C17'),('ENC_B','R15','R22','C18'),('ENC_SW','R16','R23','C19'),('BTN_BAND','R17','R24','C20'),('BTN_STEP','R18','R25','C21'),('BTN_MENU','R19','R20','C25')]
 for i,(n,rs,rp,cc) in enumerate(chans):
     x=25+i*42; y=215
-    R(M,rp,'10k',x,y-12.7,'+3V3_MCU','WIRE',fields=R10K)
+    R(M,rp,'10k',x,y-12.7,'+3V3D','WIRE',fields=R10K)
     R(M,rs,'10k',x+7.62,y,'WIRE','WIRE',r=90,fields=R10K)
     C(M,cc,'100n',x+15.24,y+7.62,'WIRE','GND',fields=C100N,vfy='Debounce topology/count: PLAN lists x5 but 6 inputs (A,B,SW,3 buttons) - drawn as 6. Check vs encoder bounce spec.' if i==0 else None)
     pu=M.pinpos[(rp,'2')]; s1=M.pinpos[(rs,'1')]; s2=M.pinpos[(rs,'2')]; c1=M.pinpos[(cc,'1')]
@@ -153,8 +146,8 @@ S.wire([S.pinpos[('R5','2')],S.pinpos[('X1','4')]]); S.wire([(59.69,72.39),(85.0
 r6=S.pinpos[('R6','2')]; x1=S.pinpos[('X1','1')]; S.wire([r6,(r6[0],x1[1]),x1])
 S.wire([S.pinpos[('X1','3')],S.pinpos[('C6','1')]]); S.wire([S.pinpos[('C6','2')],S.pinpos[('U2','2')]])
 C(S,'C4','100n',165,60,'+3V3_CLK','GND',fields=C100N)
-R(S,'R27','VERIFY 2.2k-4.7k',100,130,'+3V3_MCU','I2C_SCL',vfy='I2C pull-up value not fixed (PLAN 2.2-4.7k); no LCSC chosen. Pulled to +3V3_MCU (not +3V3_CLK) so SCL/SDA never exceed ATtiny VDD; Si5351 VIH 0.7*VDD=2.31 V vs ~2.95 V high - check.')
-R(S,'R28','VERIFY 2.2k-4.7k',140,130,'+3V3_MCU','I2C_SDA',vfy='as R27')
+R(S,'R27','VERIFY 2.2k-4.7k',100,130,'+3V3D','I2C_SCL',vfy='I2C pull-up value not fixed (PLAN 2.2-4.7k); no LCSC chosen. On +3V3D: ATtiny, Si5351, CP2102N and OLED all at 3.3 V, so I2C levels match.')
+R(S,'R28','VERIFY 2.2k-4.7k',140,130,'+3V3D','I2C_SDA',vfy='as R27')
 for k in range(3):
     y=172.72+k*45.72
     n='CLK%d'%k; rb=100+k*20; cb=100+k*20; lb=1+k*3
