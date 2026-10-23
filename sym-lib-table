@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "Si5351AVFO") (type "KiCad") (uri "${KIPRJMOD}/Si5351AVFO.kicad_sym") (options "") (descr "Project symbols (TCXO_4P from Si5351A Breakout Rev F)"))
+)
