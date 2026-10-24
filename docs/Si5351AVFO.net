@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/workspace/wt-sch/PCB/Si5351AVFO.kicad_sch")
-		(date "2026-10-23T20:23:00")
+		(date "2026-10-23T20:24:27")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
@@ -1359,11 +1359,11 @@
 		(comp
 			(ref "H1")
 			(value "M3")
-			(footprint "MountingHole:MountingHole_3.2mm_M3")
+			(footprint "MountingHole:MountingHole_3.2mm_M3_Pad_Via")
 			(description "Mounting Hole without connection")
 			(fields
 				(field
-					(name "Footprint") "MountingHole:MountingHole_3.2mm_M3")
+					(name "Footprint") "MountingHole:MountingHole_3.2mm_M3_Pad_Via")
 				(field
 					(name "Datasheet")
 				)
@@ -1372,8 +1372,8 @@
 			)
 			(libsource
 				(lib "Mechanical")
-				(part "MountingHole")
-				(description "Mounting Hole without connection")
+				(part "MountingHole_Pad")
+				(description "Mounting Hole with connection")
 			)
 			(property
 				(name "Sheetname")
@@ -1387,12 +1387,15 @@
 				(name "exclude_from_bom")
 			)
 			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
 				(name "ki_keywords")
 				(value "mounting hole")
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "MountingHole*")
+				(value "MountingHole*Pad*")
 			)
 			(sheetpath
 				(names "/Power and USB/")
@@ -1402,18 +1405,22 @@
 			(units
 				(unit
 					(name "A")
-					(pins)
+					(pins
+						(pin
+							(num "1")
+						)
+					)
 				)
 			)
 		)
 		(comp
 			(ref "H2")
 			(value "M3")
-			(footprint "MountingHole:MountingHole_3.2mm_M3")
+			(footprint "MountingHole:MountingHole_3.2mm_M3_Pad_Via")
 			(description "Mounting Hole without connection")
 			(fields
 				(field
-					(name "Footprint") "MountingHole:MountingHole_3.2mm_M3")
+					(name "Footprint") "MountingHole:MountingHole_3.2mm_M3_Pad_Via")
 				(field
 					(name "Datasheet")
 				)
@@ -1422,8 +1429,8 @@
 			)
 			(libsource
 				(lib "Mechanical")
-				(part "MountingHole")
-				(description "Mounting Hole without connection")
+				(part "MountingHole_Pad")
+				(description "Mounting Hole with connection")
 			)
 			(property
 				(name "Sheetname")
@@ -1437,12 +1444,15 @@
 				(name "exclude_from_bom")
 			)
 			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
 				(name "ki_keywords")
 				(value "mounting hole")
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "MountingHole*")
+				(value "MountingHole*Pad*")
 			)
 			(sheetpath
 				(names "/Power and USB/")
@@ -1452,18 +1462,22 @@
 			(units
 				(unit
 					(name "A")
-					(pins)
+					(pins
+						(pin
+							(num "1")
+						)
+					)
 				)
 			)
 		)
 		(comp
 			(ref "H3")
 			(value "M3")
-			(footprint "MountingHole:MountingHole_3.2mm_M3")
+			(footprint "MountingHole:MountingHole_3.2mm_M3_Pad_Via")
 			(description "Mounting Hole without connection")
 			(fields
 				(field
-					(name "Footprint") "MountingHole:MountingHole_3.2mm_M3")
+					(name "Footprint") "MountingHole:MountingHole_3.2mm_M3_Pad_Via")
 				(field
 					(name "Datasheet")
 				)
@@ -1472,8 +1486,8 @@
 			)
 			(libsource
 				(lib "Mechanical")
-				(part "MountingHole")
-				(description "Mounting Hole without connection")
+				(part "MountingHole_Pad")
+				(description "Mounting Hole with connection")
 			)
 			(property
 				(name "Sheetname")
@@ -1487,12 +1501,15 @@
 				(name "exclude_from_bom")
 			)
 			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
 				(name "ki_keywords")
 				(value "mounting hole")
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "MountingHole*")
+				(value "MountingHole*Pad*")
 			)
 			(sheetpath
 				(names "/Power and USB/")
@@ -1502,18 +1519,22 @@
 			(units
 				(unit
 					(name "A")
-					(pins)
+					(pins
+						(pin
+							(num "1")
+						)
+					)
 				)
 			)
 		)
 		(comp
 			(ref "H4")
 			(value "M3")
-			(footprint "MountingHole:MountingHole_3.2mm_M3")
+			(footprint "MountingHole:MountingHole_3.2mm_M3_Pad_Via")
 			(description "Mounting Hole without connection")
 			(fields
 				(field
-					(name "Footprint") "MountingHole:MountingHole_3.2mm_M3")
+					(name "Footprint") "MountingHole:MountingHole_3.2mm_M3_Pad_Via")
 				(field
 					(name "Datasheet")
 				)
@@ -1522,8 +1543,8 @@
 			)
 			(libsource
 				(lib "Mechanical")
-				(part "MountingHole")
-				(description "Mounting Hole without connection")
+				(part "MountingHole_Pad")
+				(description "Mounting Hole with connection")
 			)
 			(property
 				(name "Sheetname")
@@ -1537,12 +1558,15 @@
 				(name "exclude_from_bom")
 			)
 			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
 				(name "ki_keywords")
 				(value "mounting hole")
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "MountingHole*")
+				(value "MountingHole*Pad*")
 			)
 			(sheetpath
 				(names "/Power and USB/")
@@ -1552,7 +1576,11 @@
 			(units
 				(unit
 					(name "A")
-					(pins)
+					(pins
+						(pin
+							(num "1")
+						)
+					)
 				)
 			)
 		)
@@ -9869,16 +9897,16 @@
 		)
 		(libpart
 			(lib "Mechanical")
-			(part "MountingHole")
-			(description "Mounting Hole without connection")
+			(part "MountingHole_Pad")
+			(description "Mounting Hole with connection")
 			(footprints
-				(fp "MountingHole*")
+				(fp "MountingHole*Pad*")
 			)
 			(fields
 				(field
 					(name "Reference") "H")
 				(field
-					(name "Value") "MountingHole")
+					(name "Value") "MountingHole_Pad")
 				(field
 					(name "Footprint")
 				)
@@ -9886,7 +9914,14 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Mounting Hole without connection")
+					(name "Description") "Mounting Hole with connection")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "input")
+				)
 			)
 		)
 		(libpart
@@ -11168,6 +11203,30 @@
 				(pin "1")
 				(pinfunction "Pin_1_1")
 				(pintype "passive")
+			)
+			(node
+				(ref "H1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "H2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "H3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "H4")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
 			)
 			(node
 				(ref "J1")
