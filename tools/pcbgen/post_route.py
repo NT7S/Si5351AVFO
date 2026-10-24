@@ -16,4 +16,12 @@ for t in ALL:
     else: nadd+=1; kept.append(t)
 for t in kept:
     if t.GetClass()=='PCB_TRACK' and t.GetWidth()<pcbnew.FromMM(0.127): t.SetWidth(pcbnew.FromMM(0.127))
+# widen +5V (USB VBUS) to 0.5 mm wherever it clears everything else by 0.17 mm
+M=pcbnew.FromMM; v5=b.FindNet('+5V').GetNetCode(); others=[i for f in b.GetFootprints() for i in f.Pads()]+list(b.GetTracks()); nw=0
+for t in kept:
+    if t.GetClass()!='PCB_TRACK' or t.GetNetCode()!=v5: continue
+    L=t.GetLayer(); s=pcbnew.SHAPE_SEGMENT(t.GetStart(),t.GetEnd(),M(0.5))
+    if all(not(o.GetNetCode()!=v5 and o.IsOnLayer(L) and o.GetEffectiveShape(L).Collide(s,M(0.17))) for o in others):
+        t.SetWidth(M(0.5)); nw+=1
+print('+5V widened',nw)
 b.Save(PCB); print('imported',nadd,'mode',mode)

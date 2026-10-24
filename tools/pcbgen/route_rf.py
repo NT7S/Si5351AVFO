@@ -18,7 +18,7 @@ def trk(pts,w,layer,nt):
         t=pcbnew.PCB_TRACK(b); t.SetStart(P(*a)); t.SetEnd(P(*c)); t.SetWidth(M(w)); t.SetLayer(layer); t.SetNet(nt); b.Add(t)
 def via(x,y,nt,d=0.6,dr=0.3):
     v=pcbnew.PCB_VIA(b); v.SetPosition(P(x,y)); v.SetWidth(M(d)); v.SetDrill(M(dr)); v.SetNet(nt); b.Add(v); return v
-W=0.35
+W=0.31
 SMAX=(58.0,71.0,84.0)
 # remove via-fence vias that sit on the A-node and J-In crossings
 for t in list(b.GetTracks()):
@@ -34,7 +34,7 @@ for ci,x in enumerate(SMAX):
     jp=lambda k:'JP%d'%(bs+k)
     # series chain (bottom -> top)
     (r2,n),_=pad('R%d'%bs,'2'),0
-    c1,_=pad('C%d'%bs,'1'); trk([r2,(c1[0],r2[1]),c1] if abs(r2[0]-c1[0])>0.01 else [r2,c1],W,F,n)
+    c1,_=pad('C%d'%bs,'1'); trk([r2,(r2[0],c1[1])] if abs(r2[0]-c1[0])<0.7 else [r2,(c1[0],r2[1]),c1],W,F,n)
     p2p(('C%d'%bs,'2'),(jp(2),'1'))
     p2p((jp(2),'2'),(L[0],'1')); p2p((L[0],'2'),(L[1],'1')); p2p((L[1],'2'),(L[2],'1')); p2p((L[2],'2'),(jp(3),'1'))
     p2p((jp(3),'2'),(J,'1'))
@@ -49,18 +49,24 @@ for ci,x in enumerate(SMAX):
     (a,na)=pad(jp(2),'1'); (b4,_)=pad(jp(4),'1'); trk([a,b4],W,F,na)
     p2p((jp(4),'2'),(jp(5),'1'))
     (b5,nj)=pad(jp(5),'2'); (j3,_)=pad(jp(3),'2'); trk([b5,j3],W,F,nj)
-# Si5351 CLK fan-out (0.25 neck at 0.5 mm pitch pins, then 0.35)
-gnd=net('GND')
+# Si5351 CLK fan-out: U2 rotated so CLK0/1/2 leave the top row on F.Cu, 0.25 neck at the pins into the 0402 series Rs
+gnd=net('GND'); vc=net('+3V3_CLK')
 (p10,n0)=pad('U2','10'); (p9,n1)=pad('U2','9'); (p6,n2)=pad('U2','6')
 r0,_=pad('R100','1'); r1,_=pad('R120','1'); r2,_=pad('R140','1')
-trk([p10,(73.9,p10[1]),(74.5,34.9)],0.25,F,n0); trk([(74.5,34.9),(74.5,34.4)],W,F,n0); via(74.5,34.4,n0)
-trk([(74.5,34.4),(72.6,34.4),(57.6,34.4),(55.9,32.7),(55.9,32.5)],W,B,n0); via(55.9,32.5,n0); trk([(55.9,32.5),r0],W,F,n0)
-trk([p9,(74.4,p9[1])],0.25,F,n1); trk([(74.4,p9[1]),(75.4,35.0),(75.4,33.3),r1],W,F,n1)
-trk([p6,(73.9,p6[1]),(74.6,38.2)],0.25,F,n2); trk([(74.6,38.2),(74.6,38.3)],W,F,n2); via(74.6,38.3,n2)
-trk([(74.6,38.3),(81.4,38.3),(81.9,37.8),(81.9,32.5)],W,B,n2); via(81.9,32.5,n2); trk([(81.9,32.5),r2],W,F,n2)
-(p8,_)=pad('U2','8'); trk([p8,(71.0,36.5)],0.3,F,gnd); via(71.0,36.5,gnd)
-# return vias beside each RF layer change
-for (vx,vy) in ((75.4,36.9),(73.6,33.6),(54.9,32.5),(80.9,32.5)):
-    via(vx,vy,gnd)
+trk([(p10[0],p10[1]),(p10[0],r0[1]),r0],0.25,F,n0)
+trk([(p9[0],p9[1]),r1],0.25,F,n1)
+trk([p6,(p6[0],32.8),(p6[0]+(32.8-r2[1]),r2[1]),r2],0.25,F,n2)
+# pin 8 GND into the body to a via; VDDO pin 7 -> C26 above and a +3V3_CLK via inside the body
+(p8,_)=pad('U2','8'); trk([p8,(p8[0],33.9),(71.6,35.5)],0.25,F,gnd); via(71.6,35.5,gnd)
+(p7,_)=pad('U2','7'); (c26,_)=pad('C26','1'); trk([c26,p7,(p7[0],34.6)],0.25,F,vc); via(p7[0],34.6,vc)
+# VDD pin 1 <- C4 pad 1 <- +3V3_CLK via
+(p1,_)=pad('U2','1'); (c4,_)=pad('C4','1'); trk([(68.4,p1[1]),(c4[0],p1[1]),p1],0.3,F,vc); via(68.4,p1[1],vc)
+# XA under the bottom row to C6; I2C stubs out to the right of U2
+(p2,nx)=pad('U2','2'); (c6,_)=pad('C6','2'); trk([p2,(p2[0],38.42),(c6[0],38.42),c6],0.2,F,nx)
+# SCL is left to the autorouter from pin 4
+(p5,nd)=pad('U2','5'); trk([p5,(p5[0],37.0),(74.6,37.0)],0.2,F,nd)
+# bulk caps C27/C28: pads joined between them on F.Cu, one via to the In2 rail
+(c27,_)=pad('C27','1'); (c28,_)=pad('C28','1'); my=(c27[1]+c28[1])/2
+trk([c27,c28],0.4,F,vc); trk([(c27[0]-1.25,my),(c27[0],my)],0.4,F,vc); via(c27[0]-1.25,my,vc)
 b.Save(PCB)
 print('rf routed')

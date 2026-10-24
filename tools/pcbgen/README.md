@@ -30,3 +30,13 @@ Run: `bash run.sh` (rebuild + import fr.ses), `bash fr.sh` (re-autoroute, then `
 - Fiducials FID1-FID3 (1 mm / 2 mm mask) for JLC PCBA. Fab notes are drawn on User.1 below the outline.
 - `PCB/Si5351AVFO.kicad_dru`: courtyard exemptions for U2's tight decoupling/series Rs and J1 footprint-internal rules.
 - SW2-SW4 are soft buttons (labels drawn on the OLED); no board legend for them.
+
+## Helpers (review-fix pass, Oct 2026)
+- `models.py` – simple CadQuery 3D models in `PCB/lib/Etherkit.3dshapes` (run with a CadQuery venv, e.g. `/workspace/.venv-cq/bin/python`)
+- `mkfp.py` – project footprints
+- `astar.py NET x0 y0 x1 y1 width LAYER[,LAYER2]` – small grid router used for single-net fixes (coords relative to origin 100,100)
+- `stitch.py sma2|fence X,X,...` – adds GND stitching vias with clearance checks (SMA launch flanks, filter fence lines)
+
+Note: the board on `pcb-layout` also carries hand fixes made after the last full regeneration (+3V3_CLK FB1->U2 route,
+CP_VBUS_SENSE B.Cu hop, SMA/fence stitching vias, C4/C27/C28 moves). `gen_pcb.py` has the updated placements, but a full
+`run.sh` rebuild plus the current `fr.ses` will not reproduce those routes exactly. Treat `PCB/Si5351AVFO.kicad_pcb` as the source of truth.

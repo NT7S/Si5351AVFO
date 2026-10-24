@@ -55,7 +55,7 @@ pl['U2']=(71.0,36.5,0); pl['X1']=(63.5,37.0,0)
 # Si5351 decoupling tight to pins: C4 at VDD pin1, X1 VDD filter R5/C5, EN pull-up R6, XA coupling C6
 pl.update({'C4':(69.8,33.7,0),'C6':(66.65,35.6,90),'R5':(63.6,34.0,0),'C5':(59.6,34.5,0),'R6':(59.6,37.3,90)})
 # Power/USB: CC R at J1, ESD under J1, CP2102N with its caps; LDO rows C_in-U-C_out-FB
-pl.update({'R1':(18.9,10.6,90),'R2':(13.1,10.6,90),'D1':(16.0,12.2,0),'C10':(9.6,10.8,90),'C11':(9.6,14.2,90),
+pl.update({'R1':(18.9,10.6,90),'R2':(13.1,10.6,90),'D1':(16.0,10.3,0),'C10':(9.6,10.8,90),'C11':(9.6,14.2,90),
  'U3':(27.5,15.5,0),'C12':(23.2,14.0,90),'C13':(23.2,17.4,90),'R9':(25.8,19.1,0),'R7':(28.8,19.1,0),'R8':(31.8,19.1,0),
  'C1':(34.4,11.0,90),'U1':(37.5,11.0,0),'C2':(37.5,14.0,0),'C3':(40.6,11.0,90),'FB1':(43.0,11.0,90),
  'C7':(34.4,16.8,90),'U5':(37.5,16.8,0),'C8':(37.5,19.6,0),'C9':(40.6,16.8,90),'FB2':(43.0,16.8,90),
@@ -80,6 +80,9 @@ for ci,(x,_,_) in chan.items():
     pl['JP%d'%(base+4)]=(x+4.9,26.0,90); pl['JP%d'%(base+5)]=(x+4.9,9.4,90)
     y=8.6
     while y<=30.0: LPF_VIAS.append((x+3.6,y)); y+=1.5
+# U2 rotated 90: CLK0/CLK1/CLK2 (pins 10/9/6) on the top row, each with its 0402 series R at the pin and a straight F.Cu CPWG to its channel
+pl.update({'U2':(72.0,35.3,90),'R100':(69.0,32.25,180),'R120':(71.02,31.5,180),'R140':(74.9,31.9,0),
+ 'C26':(72.5,31.45,90),'C4':(69.3,36.2,90),'C6':(66.65,35.6,270),'C27':(42.05,4.9,180),'C28':(42.05,7.0,180)})
 def load(fpid):
     lib,name=fpid.split(':')
     p=PROJ+'lib/Etherkit.pretty' if lib=='EtherkitKicadLibrary' else FP+lib+'.pretty'
@@ -106,7 +109,7 @@ for r,c in comps.items():
             fld.SetTextSize(VECTOR2I(M(0.8),M(0.8))); fld.SetTextThickness(M(0.12))
     mm={'RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm':'EC11E_Vertical_H20_simple','SW_Push_6x6mm_SMD_KH-6X6X11H-STM':'SW_6x6_H11_simple',
         'USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A':'USB_C_HCTL_HC-TYPE-C-16P-01A_simple','Oscillator_SMD_SeikoEpson_SG8002CE-4Pin_3.2x2.5mm':'Osc_3.2x2.5_simple',
-        'SMA-ENDLAUNCH':'SMA_EndLaunch_simple'}.get(c['fp'].split(':')[1])
+        'SMA-ENDLAUNCH':'SMA_EndLaunch_simple','RF_Fence_42x33.5mm':'RF_Fence_42x33.5_can_simple'}.get(c['fp'].split(':')[1])
     if r=='DS1': mm='OLED_1.3in_SH1106_on_header_simple'
     if mm:
         if r!='DS1': f.Models().clear()
@@ -181,7 +184,7 @@ rect(OX-2,OY-2,OX+37.4,OY+35.5,pcbnew.User_1 if hasattr(pcbnew,'User_1') else pc
 rect(OX+2.99,OY+7.35,OX+2.99+29.42,OY+7.35+14.7,pcbnew.F_Fab,0.1)  # active area
 def text(s,x,y,layer=pcbnew.F_SilkS,sz=1.0):
     t=pcbnew.PCB_TEXT(b); t.SetText(s); t.SetPosition(P(x,y)); t.SetLayer(layer); t.SetTextSize(VECTOR2I(M(sz),M(sz))); t.SetTextThickness(M(0.15)); t.SetMirrored(layer==pcbnew.B_SilkS); b.Add(t)
-text('1.3in SH1106 OLED (DS1) - module area, keep clear',OX+17.7,OY+31.5,pcbnew.F_SilkS,0.8)
+text('1.3in SH1106 OLED (DS1) - module area, keep clear',OX+17.7,OY+31.5,pcbnew.User_1 if hasattr(pcbnew,'User_1') else pcbnew.Cmts_User,0.8)
 
 for i,n in enumerate(['GND','VCC','CLK','MOSI','RES','DC','CS']):
     t=pcbnew.PCB_TEXT(b); t.SetText(n); t.SetPosition(P(OX+10.08+2.54*i,OY+5.0)); t.SetLayer(pcbnew.F_SilkS)
@@ -256,7 +259,7 @@ keep(50.6,6.1,52.4,40.4,FB,'FENCE_WALL_L'); keep(91.6,6.1,93.4,40.4,FB,'FENCE_WA
 for (a,c) in ((50.6,56.0),(60.0,69.0),(73.0,82.0),(86.0,93.4)): keep(a,6.1,c,7.9,FB,'FENCE_WALL_T')
 keep(0,0,100,65,[pcbnew.In1_Cu],'IN1_NO_TRACKS')
 keep(OX-2,OY+4.0,OX+35.4+2,OY+33.5+2,[pcbnew.F_Cu],'OLED_NO_FCU_TRACKS')
-for r in ((55,10,88,35.5),(73,35.5,83,39.0),(54,32,74,35.5)): keep(*r,[pcbnew.In2_Cu],'IN2_KEEP_SOLID_UNDER_RF')
+for r in ((55,8,88,33.8),): keep(*r,[pcbnew.In2_Cu],'IN2_KEEP_SOLID_UNDER_RF')
 gnd=b.FindNet('GND')
 def plane(layer):
     z=pcbnew.ZONE(b); z.SetLayer(layer); z.SetNet(gnd); z.SetZoneName('GND_'+b.GetLayerName(layer))
@@ -266,5 +269,16 @@ def plane(layer):
     b.Add(z)
 plane(pcbnew.In1_Cu); plane(pcbnew.In2_Cu)
 pcbnew.ZONE_FILLER(b).Fill(b.Zones())
+FABL=pcbnew.User_1 if hasattr(pcbnew,'User_1') else pcbnew.Cmts_User
+for k,ln in enumerate(('FAB NOTES: JLC04161H-7628 4L 1.6mm, 1oz outer',
+    'Controlled impedance 50 ohm, L1/L2, 0.31/0.20 (CPWG, RF50) per JLC calculator',
+    'U3 thermal-pad vias: tented both sides + filled (epoxy)')):
+    text(ln,50.0,68.0+k*1.3,FABL,0.9)
+# JLC PCBA fiducials (board-only, not in BOM/schematic)
+for i,(fx,fy) in enumerate(((3.0,9.0),(96.0,40.0),(4.0,52.0))):
+    f=load('Fiducial:Fiducial_1mm_Mask2mm'); f.SetReference('FID%d'%(i+1)); f.SetValue('Fiducial')
+    f.SetPosition(P(fx,fy)); f.SetBoardOnly(True); f.SetExcludedFromBOM(True)
+    for fld in f.GetFields(): fld.SetVisible(False)
+    b.Add(f)
 b.Save(OUT)
 print('saved',len(comps))

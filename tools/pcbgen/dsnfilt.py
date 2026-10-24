@@ -22,5 +22,13 @@ import re as _r
 s=_r.sub(r'\(wire_keepout "" \(polygon In1\.Cu 0  100000 -100000[^)]*\)\s*\)','',s)
 s=s.replace('(layer In1.Cu\n      (type signal)','(layer In1.Cu\n      (type power)')
 s=s.replace('(clearance 150)','(clearance 170)')
+# +3V3_CLK: In2/B.Cu only (pads already escape to vias); +5V/VBUS: 0.5 mm wide
+i=s.find('(class kicad_default'); j=s.find('(circuit',i)
+hdr=s[i:j].replace(' +3V3_CLK ',' ').replace(' +5V ',' ')
+s=s[:i]+hdr+s[j:]
+i=s.find('(class kicad_default'); e=blk(s,i)
+s=s[:e]+'''
+    (class PWRCLK +3V3_CLK (circuit (use_via "Via[0-3]_600:300_um") (use_layer In2.Cu B.Cu)) (rule (width 300) (clearance 170)))
+    (class PWR5V +5V (circuit (use_via "Via[0-3]_600:300_um")) (rule (width 500) (clearance 170)))'''+s[e:]
 print('dropped RF nets',len(names))
 open('fr.dsn','w').write(s)

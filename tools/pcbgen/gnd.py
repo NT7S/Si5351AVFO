@@ -29,13 +29,13 @@ def free(x,y,r=0.3,cl=0.2,tr=None):
             if it.GetNetCode()!=gc and it.IsOnLayer(pcbnew.F_Cu) and it.GetEffectiveShape(pcbnew.F_Cu).Collide(s,M(0.2)): return False
     return True
 def addvia(x,y):
-    v=pcbnew.PCB_VIA(b); v.SetPosition(P(x,y)); v.SetWidth(M(0.6)); v.SetDrill(M(0.3)); v.SetNet(gnd); b.Add(v); items.append(v); return v
+    v=pcbnew.PCB_VIA(b); v.SetPosition(P(x,y)); v.SetWidth(M(0.6)); v.SetDrill(M(0.3)); v.SetNet(b.FindNet(gc) if False else b.GetNetInfo().GetNetItem(gc)); b.Add(v); items.append(v); return v
 def addtrk(a,c):
-    t=pcbnew.PCB_TRACK(b); t.SetStart(P(*a)); t.SetEnd(P(*c)); t.SetWidth(M(0.4)); t.SetLayer(pcbnew.F_Cu); t.SetNet(gnd); b.Add(t); items.append(t)
+    t=pcbnew.PCB_TRACK(b); t.SetStart(P(*a)); t.SetEnd(P(*c)); t.SetWidth(M(0.4)); t.SetLayer(pcbnew.F_Cu); t.SetNet(b.GetNetInfo().GetNetItem(gc)); b.Add(t); items.append(t)
 n=0; miss=[]
 for f in b.GetFootprints():
     r=f.GetReference()
-    if r.startswith(('H','SH','J2','J3','J4','LOGO')): continue
+    if r.startswith(('H','SH','J2','J3','J4','LOGO','FID')): continue
     fc=f.GetPosition()
     for p in f.Pads():
         if p.GetNetCode()!=gc or p.GetAttribute()!=pcbnew.PAD_ATTRIB_SMD: continue
@@ -56,12 +56,42 @@ for f in b.GetFootprints():
                 addtrk((px,py),(vx,vy)); addvia(vx,vy); n+=1; ok=True; break
         if not ok: miss.append(r+'.'+p.GetNumber())
 print('decoupling/GND pad vias',n,'missed',miss)
+gc=b.FindNet('+3V3_CLK').GetNetCode(); n=0; miss=[]
+for f in b.GetFootprints():
+    r=f.GetReference()
+    if r in ('U2','C4','C26','C27','C28'): continue
+    fc=f.GetPosition()
+    for p in f.Pads():
+        if p.GetNetCode()!=gc or p.GetAttribute()!=pcbnew.PAD_ATTRIB_SMD: continue
+        q=p.GetPosition(); px,py=q.x/1e6-X0,q.y/1e6-Y0
+        sz=p.GetBoundingBox(); hw,hh=sz.GetWidth()/2e6,sz.GetHeight()/2e6
+        ok=False
+        for d in (0.45,0.7,1.0):
+            for ux,uy in ((0,1),(0,-1),(1,0),(-1,0),(1,1),(-1,1),(1,-1),(-1,-1)):
+                vx,vy=px+ux*(hw+d),py+uy*(hh+d)
+                if not ok and free(vx,vy,cl=0.25,tr=((px,py),(vx,vy))):
+                    addtrk((px,py),(vx,vy)); addvia(vx,vy); n+=1; ok=True
+        if not ok: miss.append(r+'.'+p.GetNumber())
+print('+3V3_CLK pad vias',n,'missed',miss)
+gc=gnd.GetNetCode()
 # U3 (CP2102N QFN24): pin 2 GND tied straight into the exposed pad; EP gets 4 thermal vias to In1
 t=pcbnew.PCB_TRACK(b); t.SetStart(P(25.5625,14.75)); t.SetEnd(P(26.6,14.75)); t.SetWidth(M(0.2)); t.SetLayer(pcbnew.F_Cu); t.SetNet(gnd); b.Add(t); items.append(t)
 for dx in (-0.65,0.65):
-    for dy in (-0.65,0.65): addvia(27.5+dx,15.5+dy)
-# stitching grid in the RF fence and around SMA launches
+    for dy in (-0.65,0.65):
+        v=addvia(27.5+dx,15.5+dy)   # tented both sides + filled (no solder wicking from the EP)
+        v.SetFrontTentingMode(pcbnew.TENTING_MODE_TENTED); v.SetBackTentingMode(pcbnew.TENTING_MODE_TENTED); v.SetFillingMode(pcbnew.FILLING_MODE_FILLED)
+# CPWG fences: vias 1.0 mm off each RF centreline (0.31/0.20 -> ~0.35 mm from the ground edge)
 s=0
+lines=[('v',sx,7.0,31.0) for sx in (58.0,71.0,84.0)]+[('h',32.25,58.5,68.3),('h',31.9,75.6,83.5)]
+for o,c,a0,a1 in lines:
+    t=a0
+    while t<=a1:
+        for d in (-1.0,1.0):
+            vx,vy=(c+d,t) if o=='v' else (t,c+d)
+            if free(vx,vy,cl=0.2): addvia(vx,vy); s+=1
+        t+=1.2
+print('cpwg fence vias',s)
+# stitching grid in the RF fence and around SMA launches
 y=8.2
 while y<39.0:
     x=52.8
