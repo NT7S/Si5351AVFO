@@ -1,3 +1,4 @@
+# Regenerates docs/ and runs ERC on schematic changes; see tools/export_docs.sh.
 name: KiCad docs and ERC
 
 on:
