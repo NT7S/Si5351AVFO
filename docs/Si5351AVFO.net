@@ -1,8 +1,8 @@
 (export
 	(version "E")
 	(design
-		(source "/workspace/Si5351AVFO/Si5351AVFO.kicad_sch")
-		(date "2026-10-23T09:48:25")
+		(source "/workspace/Si5351AVFO/PCB/Si5351AVFO.kicad_sch")
+		(date "2026-10-23T18:40:15")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
@@ -643,8 +643,6 @@
 				(field
 					(name "Manufacturer") "YAGEO")
 				(field
-					(name "VERIFY") "LCSC stock low; fallback C49678 (0805) per PLAN")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -668,10 +666,6 @@
 			(property
 				(name "Manufacturer")
 				(value "YAGEO")
-			)
-			(property
-				(name "VERIFY")
-				(value "LCSC stock low; fallback C49678 (0805) per PLAN")
 			)
 			(property
 				(name "Sheetname")
@@ -1151,8 +1145,6 @@
 				(field
 					(name "Manufacturer") "Littelfuse")
 				(field
-					(name "VERIFY") "Pin-to-line mapping (D-/D+/VBUS on pins 2/3/4) to be checked against adapter layout.")
-				(field
 					(name "Footprint") "Package_TO_SOT_SMD:SOT-143")
 				(field
 					(name "Datasheet") "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf")
@@ -1175,10 +1167,6 @@
 			(property
 				(name "Manufacturer")
 				(value "Littelfuse")
-			)
-			(property
-				(name "VERIFY")
-				(value "Pin-to-line mapping (D-/D+/VBUS on pins 2/3/4) to be checked against adapter layout.")
 			)
 			(property
 				(name "Sheetname")
@@ -1306,8 +1294,6 @@
 				(field
 					(name "Manufacturer") "Murata")
 				(field
-					(name "VERIFY") "Bead or series R (<=6 ohm upper bound, PLAN 4a); value to be set by measurement.")
-				(field
 					(name "Footprint") "Inductor_SMD:L_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -1331,10 +1317,6 @@
 			(property
 				(name "Manufacturer")
 				(value "Murata")
-			)
-			(property
-				(name "VERIFY")
-				(value "Bead or series R (<=6 ohm upper bound, PLAN 4a); value to be set by measurement.")
 			)
 			(property
 				(name "Sheetname")
@@ -1573,8 +1555,6 @@
 				(field
 					(name "Manufacturer") "HCTL")
 				(field
-					(name "VERIFY") "UART adapter schematic pairs GCT USB4105 footprint with this HCTL LCSC part; HCTL footprint used here - confirm. Shield to GND assumed (not stated in PLAN).")
-				(field
 					(name "Footprint") "Connector_USB:USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A")
 				(field
 					(name "Datasheet") "https://www.usb.org/sites/default/files/documents/usb_type-c.zip")
@@ -1597,10 +1577,6 @@
 			(property
 				(name "Manufacturer")
 				(value "HCTL")
-			)
-			(property
-				(name "VERIFY")
-				(value "UART adapter schematic pairs GCT USB4105 footprint with this HCTL LCSC part; HCTL footprint used here - confirm. Shield to GND assumed (not stated in PLAN).")
 			)
 			(property
 				(name "Sheetname")
@@ -1704,8 +1680,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "LCSC")
@@ -1729,7 +1705,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -1776,8 +1752,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "LCSC")
@@ -1801,7 +1777,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -1848,8 +1824,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "LCSC")
@@ -1873,7 +1849,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -1920,8 +1896,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "LCSC")
@@ -1945,7 +1921,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -1994,8 +1970,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "LCSC")
@@ -2023,7 +1999,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -2143,8 +2119,6 @@
 				(field
 					(name "Manufacturer") "Silicon Labs")
 				(field
-					(name "VERIFY") "Unused CP2102N pins left NC (adapter used DTR via JP1, TRRS dropped). Confirm none were strapped on the adapter.")
-				(field
 					(name "Footprint") "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm")
 				(field
 					(name "Datasheet") "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf")
@@ -2167,10 +2141,6 @@
 			(property
 				(name "Manufacturer")
 				(value "Silicon Labs")
-			)
-			(property
-				(name "VERIFY")
-				(value "Unused CP2102N pins left NC (adapter used DTR via JP1, TRRS dropped). Confirm none were strapped on the adapter.")
 			)
 			(property
 				(name "Sheetname")
@@ -2592,8 +2562,6 @@
 				(field
 					(name "Manufacturer") "YAGEO")
 				(field
-					(name "VERIFY") "Debounce topology/count: PLAN lists x5 but 6 inputs (A,B,SW,3 buttons) - drawn as 6. Check vs encoder bounce spec.")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
 				(field
 					(name "Datasheet")
@@ -2617,10 +2585,6 @@
 			(property
 				(name "Manufacturer")
 				(value "YAGEO")
-			)
-			(property
-				(name "VERIFY")
-				(value "Debounce topology/count: PLAN lists x5 but 6 inputs (A,B,SW,3 buttons) - drawn as 6. Check vs encoder bounce spec.")
 			)
 			(property
 				(name "Sheetname")
@@ -3090,8 +3054,6 @@
 				(field
 					(name "Manufacturer") "HS")
 				(field
-					(name "VERIFY") "1.3in SPI SH1106 module. Pin order GND,VCC,SCL,SDA,DC,CS1,FS0,CS2 from PLAN pin list; pin numbering, pitch and connector style unverified. Low stock - Jason sourcing.")
-				(field
 					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical")
 				(field
 					(name "Datasheet")
@@ -3115,10 +3077,6 @@
 			(property
 				(name "Manufacturer")
 				(value "HS")
-			)
-			(property
-				(name "VERIFY")
-				(value "1.3in SPI SH1106 module. Pin order GND,VCC,SCL,SDA,DC,CS1,FS0,CS2 from PLAN pin list; pin numbering, pitch and connector style unverified. Low stock - Jason sourcing.")
 			)
 			(property
 				(name "Sheetname")
@@ -3261,8 +3219,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "LCSC")
@@ -3286,7 +3244,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -3329,8 +3287,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "VERIFY")
@@ -3346,7 +3304,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -3393,8 +3351,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "LCSC")
@@ -3418,7 +3376,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -3465,8 +3423,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "LCSC")
@@ -3490,7 +3448,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -3537,8 +3495,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "LCSC")
@@ -3562,7 +3520,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -3609,8 +3567,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "LCSC")
@@ -3634,7 +3592,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -3681,8 +3639,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "LCSC")
@@ -3706,7 +3664,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -3753,8 +3711,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "LCSC")
@@ -3778,7 +3736,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -3825,8 +3783,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "LCSC")
@@ -3850,7 +3808,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -3897,8 +3855,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "LCSC")
@@ -3922,7 +3880,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -3969,8 +3927,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "LCSC")
@@ -3994,7 +3952,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -4041,8 +3999,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "LCSC")
@@ -4066,7 +4024,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -4113,8 +4071,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "LCSC")
@@ -4138,7 +4096,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -4185,8 +4143,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "LCSC")
@@ -4210,7 +4168,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -4257,8 +4215,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "LCSC")
@@ -4282,7 +4240,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -4320,8 +4278,6 @@
 				(field
 					(name "Manufacturer") "ALPS Alpine")
 				(field
-					(name "VERIFY") "Detent/pulse count unverified.")
-				(field
 					(name "Footprint") "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm")
 				(field
 					(name "Datasheet")
@@ -4345,10 +4301,6 @@
 			(property
 				(name "Manufacturer")
 				(value "ALPS Alpine")
-			)
-			(property
-				(name "VERIFY")
-				(value "Detent/pulse count unverified.")
 			)
 			(property
 				(name "Sheetname")
@@ -4959,8 +4911,6 @@
 				(field
 					(name "Manufacturer") "YAGEO")
 				(field
-					(name "VERIFY") "DC-block LF corner ~32 kHz into 50 ohm (PLAN Q6).")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
 				(field
 					(name "Datasheet")
@@ -4984,10 +4934,6 @@
 			(property
 				(name "Manufacturer")
 				(value "YAGEO")
-			)
-			(property
-				(name "VERIFY")
-				(value "DC-block LF corner ~32 kHz into 50 ohm (PLAN Q6).")
 			)
 			(property
 				(name "Sheetname")
@@ -5325,8 +5271,6 @@
 				(field
 					(name "Manufacturer") "YAGEO")
 				(field
-					(name "VERIFY") "9.1p only +/-0.25pF in stock (C513588); 24p +/-2% stock thin (C2857979, ~950).")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -5350,10 +5294,6 @@
 			(property
 				(name "Manufacturer")
 				(value "YAGEO")
-			)
-			(property
-				(name "VERIFY")
-				(value "9.1p only +/-0.25pF in stock (C513588); 24p +/-2% stock thin (C2857979, ~950).")
 			)
 			(property
 				(name "Sheetname")
@@ -7482,8 +7422,6 @@
 				(field
 					(name "Manufacturer") "Murata")
 				(field
-					(name "VERIFY") "LQW2UAS stock 0.9-3.3k/part; buy ahead. 150n uses +/-1% C2044861 (C2043109 is +/-5%).")
-				(field
 					(name "Footprint") "Inductor_SMD:L_1008_2520Metric")
 				(field
 					(name "Datasheet")
@@ -7507,10 +7445,6 @@
 			(property
 				(name "Manufacturer")
 				(value "Murata")
-			)
-			(property
-				(name "VERIFY")
-				(value "LQW2UAS stock 0.9-3.3k/part; buy ahead. 150n uses +/-1% C2044861 (C2043109 is +/-5%).")
 			)
 			(property
 				(name "Sheetname")
@@ -8145,8 +8079,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "LCSC")
@@ -8170,7 +8104,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -8217,8 +8151,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "LCSC")
@@ -8245,7 +8179,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -8288,8 +8222,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "VERIFY")
@@ -8305,7 +8239,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -8348,8 +8282,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "VERIFY")
@@ -8365,7 +8299,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -8411,8 +8345,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "LCSC")
@@ -8432,7 +8366,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -8464,8 +8398,6 @@
 			(description "Resistor, small symbol")
 			(fields
 				(field
-					(name "VERIFY") "DNP shunt ~120 ohm back-match of ~85 ohm source (datasheet Zo); part/LCSC not chosen; verify return loss esp. >100 MHz.")
-				(field
 					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
 				(field
 					(name "Datasheet")
@@ -8475,12 +8407,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
-			)
-			(property
-				(name "VERIFY")
-				(value "DNP shunt ~120 ohm back-match of ~85 ohm source (datasheet Zo); part/LCSC not chosen; verify return loss esp. >100 MHz.")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "Sheetname")
@@ -8495,7 +8423,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -8541,8 +8469,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "LCSC")
@@ -8562,7 +8490,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -8605,8 +8533,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "VERIFY")
@@ -8625,7 +8553,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -8671,8 +8599,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "LCSC")
@@ -8692,7 +8620,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -8735,8 +8663,8 @@
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Small")
-				(description "Resistor, small symbol")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
 			)
 			(property
 				(name "VERIFY")
@@ -8755,7 +8683,7 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "R resistor")
+				(value "r resistor")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -8889,8 +8817,6 @@
 				(field
 					(name "Manufacturer") "YXC")
 				(field
-					(name "VERIFY") "TCXO stock thin (718); buy before ordering.")
-				(field
 					(name "Footprint") "Oscillator:Oscillator_SMD_SeikoEpson_SG8002CE-4Pin_3.2x2.5mm")
 				(field
 					(name "Datasheet")
@@ -8914,10 +8840,6 @@
 			(property
 				(name "Manufacturer")
 				(value "YXC")
-			)
-			(property
-				(name "VERIFY")
-				(value "TCXO stock thin (718); buy before ordering.")
 			)
 			(property
 				(name "Sheetname")
@@ -9361,8 +9283,8 @@
 		)
 		(libpart
 			(lib "Device")
-			(part "R_Small")
-			(description "Resistor, small symbol")
+			(part "R_Small_US")
+			(description "Resistor, small US symbol")
 			(footprints
 				(fp "R_*")
 			)
@@ -9370,7 +9292,7 @@
 				(field
 					(name "Reference") "R")
 				(field
-					(name "Value") "R_Small")
+					(name "Value") "R_Small_US")
 				(field
 					(name "Footprint")
 				)
@@ -9378,7 +9300,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Resistor, small symbol")
+					(name "Description") "Resistor, small US symbol")
 			)
 			(pins
 				(pin
