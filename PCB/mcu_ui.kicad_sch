@@ -2333,7 +2333,7 @@
 	)
 	(text "OLED: SPI only (PA1 MOSI, PA3 SCK, PA4 CS1, PA5 DC). Never shares the Si5351 I2C bus.\nCS2 (font chip) held high by R26."
 		(exclude_from_sim no)
-		(at 255 130 0)
+		(at 255 125.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2341,6 +2341,17 @@
 			(justify left top)
 		)
 		(uuid "389934ff-85cd-4f0b-871f-8f8130d15917")
+	)
+	(text "DS1 DNP: user buys and solders the OLED module (partial kit). Fed 3.3 V from LP2985 OLED rail.\nPCB: print pin names on silkscreen at DS1 header (GND,VCC,... per final pinout)."
+		(exclude_from_sim no)
+		(at 255 131.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "f5e48786-ee37-4481-939e-8f3ae9cacb60")
 	)
 	(text "ATtiny3226 @ 8 MHz internal, 3.3 V. Optiboot over CP2102N; DTR auto-reset on PB4 (RSTPINCFG=0x3, megaTinyCore \"UPDI w/reset on PB4\"), as EtherKeyerMini C3/R4."
 		(exclude_from_sim no)
@@ -4704,10 +4715,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "418d69cb-b31d-4c47-b2b7-0efa81fea90f")
 		(property "Reference" "DS1"
 			(at 299.72 90.17 0)
@@ -4751,7 +4762,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "1.3in SH1106 SPI OLED module, user-fitted (DNP, partial kit). Footprint/pinout currently HS13L01W4S01 8-pin: GND,VCC,SCL,SDA,DC,CS1,FS0,CS2"
 			(at 299.72 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -4762,7 +4773,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C5139764"
+		(property "LCSC" ""
 			(at 299.72 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -4834,10 +4845,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "46748e1e-c507-45eb-9422-e7ae9b47d267")
 		(property "Reference" "R20"
 			(at 236.75 201.33 0)
