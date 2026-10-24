@@ -228,11 +228,10 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x08"
+		(symbol "Connector_Generic:Conn_01x07"
 			(pin_names
 				(offset 1.016)
-				(hide yes)
-			)
+				(hide yes))
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -244,20 +243,14 @@
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x08"
-				(at 0 -12.7 0)
+						(size 1.27 1.27))))
+			(property "Value" "Conn_01x07"
+				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
+						(size 1.27 1.27))))
 			(property "Footprint" ""
 				(at 0 0 0)
 				(show_name no)
@@ -265,10 +258,7 @@
 				(hide yes)
 				(effects
 					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
+						(size 1.27 1.27))))
 			(property "Datasheet" ""
 				(at 0 0 0)
 				(show_name no)
@@ -276,21 +266,15 @@
 				(hide yes)
 				(effects
 					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+						(size 1.27 1.27))))
+			(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
 				(effects
 					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
+						(size 1.27 1.27))))
 			(property "ki_keywords" "connector"
 				(at 0 0 0)
 				(show_name no)
@@ -298,10 +282,7 @@
 				(hide yes)
 				(effects
 					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
+						(size 1.27 1.27))))
 			(property "ki_fp_filters" "Connector*:*_1x??_*"
 				(at 0 0 0)
 				(show_name no)
@@ -309,257 +290,150 @@
 				(hide yes)
 				(effects
 					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Conn_01x08_1_1"
+						(size 1.27 1.27))))
+			(symbol "Conn_01x07_1_1"
 				(rectangle
 					(start -1.27 8.89)
-					(end 1.27 -11.43)
+					(end 1.27 -8.89)
 					(stroke
 						(width 0.254)
-						(type default)
-					)
+						(type default))
 					(fill
-						(type background)
-					)
-				)
+						(type background)))
 				(rectangle
 					(start -1.27 7.747)
 					(end 0 7.493)
 					(stroke
 						(width 0.1524)
-						(type default)
-					)
+						(type default))
 					(fill
-						(type none)
-					)
-				)
+						(type none)))
 				(rectangle
 					(start -1.27 5.207)
 					(end 0 4.953)
 					(stroke
 						(width 0.1524)
-						(type default)
-					)
+						(type default))
 					(fill
-						(type none)
-					)
-				)
+						(type none)))
 				(rectangle
 					(start -1.27 2.667)
 					(end 0 2.413)
 					(stroke
 						(width 0.1524)
-						(type default)
-					)
+						(type default))
 					(fill
-						(type none)
-					)
-				)
+						(type none)))
 				(rectangle
 					(start -1.27 0.127)
 					(end 0 -0.127)
 					(stroke
 						(width 0.1524)
-						(type default)
-					)
+						(type default))
 					(fill
-						(type none)
-					)
-				)
+						(type none)))
 				(rectangle
 					(start -1.27 -2.413)
 					(end 0 -2.667)
 					(stroke
 						(width 0.1524)
-						(type default)
-					)
+						(type default))
 					(fill
-						(type none)
-					)
-				)
+						(type none)))
 				(rectangle
 					(start -1.27 -4.953)
 					(end 0 -5.207)
 					(stroke
 						(width 0.1524)
-						(type default)
-					)
+						(type default))
 					(fill
-						(type none)
-					)
-				)
+						(type none)))
 				(rectangle
 					(start -1.27 -7.493)
 					(end 0 -7.747)
 					(stroke
 						(width 0.1524)
-						(type default)
-					)
+						(type default))
 					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -10.033)
-					(end 0 -10.287)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+						(type none)))
 				(pin passive line
 					(at -5.08 7.62 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
+								(size 1.27 1.27))))
 					(number "1"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
+								(size 1.27 1.27)))))
 				(pin passive line
 					(at -5.08 5.08 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
+								(size 1.27 1.27))))
 					(number "2"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
+								(size 1.27 1.27)))))
 				(pin passive line
 					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
+								(size 1.27 1.27))))
 					(number "3"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
+								(size 1.27 1.27)))))
 				(pin passive line
 					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
+								(size 1.27 1.27))))
 					(number "4"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
+								(size 1.27 1.27)))))
 				(pin passive line
 					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_5"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
+								(size 1.27 1.27))))
 					(number "5"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
+								(size 1.27 1.27)))))
 				(pin passive line
 					(at -5.08 -5.08 0)
 					(length 3.81)
 					(name "Pin_6"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
+								(size 1.27 1.27))))
 					(number "6"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
+								(size 1.27 1.27)))))
 				(pin passive line
 					(at -5.08 -7.62 0)
 					(length 3.81)
 					(name "Pin_7"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
+								(size 1.27 1.27))))
 					(number "7"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -10.16 0)
-					(length 3.81)
-					(name "Pin_8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -2331,7 +2205,7 @@
 		)
 		(uuid "1044b112-d7a5-41de-8d59-e61b06ce6792")
 	)
-	(text "OLED: SPI only (PA1 MOSI, PA3 SCK, PA4 CS1, PA5 DC). Never shares the Si5351 I2C bus.\nCS2 (font chip) held high by R26."
+	(text "OLED: SPI only (PA1 MOSI, PA3 SCK, PA4 CS, PA5 DC, PA6 RES). Never shares the Si5351 I2C bus.\nPA2 spare (no-connect)."
 		(exclude_from_sim no)
 		(at 255 125.5 0)
 		(effects
@@ -2342,7 +2216,7 @@
 		)
 		(uuid "389934ff-85cd-4f0b-871f-8f8130d15917")
 	)
-	(text "DS1 DNP: user buys and solders the OLED module (partial kit). Fed 3.3 V from LP2985 OLED rail.\nPCB: print pin names on silkscreen at DS1 header (GND,VCC,... per final pinout)."
+	(text "DS1 DNP: OLED module supplied in kit, user-soldered. Fed 3.3 V from LP2985 OLED rail.\nPCB: print pin names on silkscreen at DS1 header (GND,VCC,CLK,MOSI,RES,DC,CS); suppliers vary."
 		(exclude_from_sim no)
 		(at 255 131.5 0)
 		(effects
@@ -2819,6 +2693,10 @@
 		)
 		(uuid "f33e8fdb-7625-40c0-8aa2-8c26347e5d0b")
 	)
+	(no_connect
+		(at 165.1 97.79)
+		(uuid "246c24db-3538-45cc-9e82-2424b90e53e1")
+	)
 	(label "ENC_SW_SW"
 		(at 57.15 257.81 0)
 		(effects
@@ -2909,7 +2787,7 @@
 		)
 		(uuid "28e3505e-23c8-4387-8d71-2b7f97cde31e")
 	)
-	(label "OLED_FS0"
+	(label "OLED_CS"
 		(at 294.64 107.95 180)
 		(effects
 			(font
@@ -2959,7 +2837,7 @@
 		)
 		(uuid "4430c1a2-25f4-476d-8b83-1bc89f3d5fad")
 	)
-	(label "OLED_CS1"
+	(label "OLED_DC"
 		(at 294.64 105.41 180)
 		(effects
 			(font
@@ -2999,7 +2877,7 @@
 		)
 		(uuid "5063fa86-5208-4649-8e5f-4f9d0d681dc4")
 	)
-	(label "OLED_DC"
+	(label "OLED_RES"
 		(at 294.64 102.87 180)
 		(effects
 			(font
@@ -3018,16 +2896,6 @@
 			(justify right bottom)
 		)
 		(uuid "59d225ba-b0ca-4ca3-a608-e1e16edd21e0")
-	)
-	(label "OLED_FS0"
-		(at 165.1 97.79 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5dcb121d-ae79-4f08-baa0-815eabbd6df7")
 	)
 	(label "ENC_B"
 		(at 134.62 118.11 180)
@@ -3048,16 +2916,6 @@
 			(justify right bottom)
 		)
 		(uuid "71d7f4a9-8c4c-497f-82ac-0dc4602367b8")
-	)
-	(label "OLED_CS2"
-		(at 270.51 72.39 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "73a0134b-d21d-4c9e-a4f1-9210f4f4bc2d")
 	)
 	(label "ENC_B_SW"
 		(at 41.91 262.89 180)
@@ -3129,7 +2987,7 @@
 		)
 		(uuid "8f7395b0-3199-4955-83dc-87c336e1f6fc")
 	)
-	(label "OLED_CS2"
+	(label "OLED_RES"
 		(at 165.1 107.95 0)
 		(effects
 			(font
@@ -3148,16 +3006,6 @@
 			(justify right bottom)
 		)
 		(uuid "a0f0a042-1bfd-4d2b-ba92-04d49f0500d9")
-	)
-	(label "OLED_CS2"
-		(at 294.64 110.49 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b3fffa67-f348-458f-ad52-75339a58a458")
 	)
 	(label "BTN_STEP_SW"
 		(at 134.62 260.35 180)
@@ -3189,7 +3037,7 @@
 		)
 		(uuid "c907a22e-8a86-43df-8c90-20e71bb736bb")
 	)
-	(label "OLED_CS1"
+	(label "OLED_CS"
 		(at 165.1 102.87 0)
 		(effects
 			(font
@@ -4710,7 +4558,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x08")
+		(lib_id "Connector_Generic:Conn_01x07")
 		(at 299.72 100.33 0)
 		(unit 1)
 		(body_style 1)
@@ -4730,7 +4578,7 @@
 				)
 			)
 		)
-		(property "Value" "HS13L01W4S01"
+		(property "Value" "OLED_1.3in_SH1106_SPI_7pin"
 			(at 299.72 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4740,7 +4588,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical"
 			(at 299.72 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -4762,7 +4610,7 @@
 				)
 			)
 		)
-		(property "Description" "1.3in SH1106 SPI OLED module, user-fitted (DNP, partial kit). Footprint/pinout currently HS13L01W4S01 8-pin: GND,VCC,SCL,SDA,DC,CS1,FS0,CS2"
+		(property "Description" "Generic 1.3in 128x64 SH1106 4-wire SPI OLED module, 7-pin 2.54 mm: GND,VCC,CLK(D0),MOSI(D1),RES,DC,CS. DNP, supplied in kit, user-soldered."
 			(at 299.72 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -4784,7 +4632,7 @@
 				)
 			)
 		)
-		(property "MPN" "HS13L01W4S01"
+		(property "MPN" "generic 1.3in SH1106 SPI 7-pin"
 			(at 299.72 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -4795,7 +4643,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "HS"
+		(property "Manufacturer" "generic"
 			(at 299.72 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -4826,9 +4674,6 @@
 		)
 		(pin "7"
 			(uuid "7d988ebd-9d1f-4da6-b4b2-7861739279b6")
-		)
-		(pin "8"
-			(uuid "631a2b16-4814-4060-8a9b-fc7b9ac0a4c2")
 		)
 		(instances
 			(project "Si5351AVFO"
@@ -5136,82 +4981,6 @@
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000003"
 					(reference "R14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 270.51 67.31 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "508e7527-877c-41f1-ae55-d1f3dd607043")
-		(property "Reference" "#PWR062"
-			(at 270.51 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3D"
-			(at 270.51 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 270.51 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 270.51 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 270.51 67.31 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f91815d1-ae55-4a96-a8d3-3119a4a466f0")
-		)
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000003"
-					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -6499,120 +6268,6 @@
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000003"
 					(reference "SW4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 270.51 69.85 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8dd20e9b-267a-40d1-8a8f-41817e39490d")
-		(property "Reference" "R26"
-			(at 272.31 69.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 272.31 71.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 270.51 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 270.51 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 270.51 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C17414"
-			(at 270.51 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "0805W8F1002T5E"
-			(at 270.51 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 270.51 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "dcef8404-f8ed-4ffb-b9c8-c883797ccaf4")
-		)
-		(pin "2"
-			(uuid "ed896b52-afd7-4482-98f7-496f5dd387f0")
-		)
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000003"
-					(reference "R26")
 					(unit 1)
 				)
 			)
