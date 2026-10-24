@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/workspace/wt-sch/PCB/Si5351AVFO.kicad_sch")
-		(date "2026-10-23T20:13:40")
+		(date "2026-10-23T20:23:00")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
@@ -4404,22 +4404,22 @@
 		(comp
 			(ref "SW2")
 			(value "BAND")
-			(footprint "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A")
-			(description "Push button switch, generic, two pins")
+			(footprint "EtherkitKicadLibrary:SW_Push_6x6mm_SMD_KH-6X6X11H-STM")
+			(description "Tactile switch 6x6 mm SMD, 11 mm actuator (front-panel height, no cap)")
 			(fields
 				(field
-					(name "LCSC") "C318884")
+					(name "LCSC") "C2837537")
 				(field
-					(name "MPN") "TS-1187A-B-A-B")
+					(name "MPN") "KH-6X6X11H-STM")
 				(field
-					(name "Manufacturer") "XKB")
+					(name "Manufacturer") "Kinghelm")
 				(field
-					(name "Footprint") "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A")
+					(name "Footprint") "EtherkitKicadLibrary:SW_Push_6x6mm_SMD_KH-6X6X11H-STM")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Push button switch, generic, two pins")
+					(name "Description") "Tactile switch 6x6 mm SMD, 11 mm actuator (front-panel height, no cap)")
 			)
 			(libsource
 				(lib "Switch")
@@ -4428,15 +4428,15 @@
 			)
 			(property
 				(name "LCSC")
-				(value "C318884")
+				(value "C2837537")
 			)
 			(property
 				(name "MPN")
-				(value "TS-1187A-B-A-B")
+				(value "KH-6X6X11H-STM")
 			)
 			(property
 				(name "Manufacturer")
-				(value "XKB")
+				(value "Kinghelm")
 			)
 			(property
 				(name "Sheetname")
@@ -4472,22 +4472,22 @@
 		(comp
 			(ref "SW3")
 			(value "STEP")
-			(footprint "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A")
-			(description "Push button switch, generic, two pins")
+			(footprint "EtherkitKicadLibrary:SW_Push_6x6mm_SMD_KH-6X6X11H-STM")
+			(description "Tactile switch 6x6 mm SMD, 11 mm actuator (front-panel height, no cap)")
 			(fields
 				(field
-					(name "LCSC") "C318884")
+					(name "LCSC") "C2837537")
 				(field
-					(name "MPN") "TS-1187A-B-A-B")
+					(name "MPN") "KH-6X6X11H-STM")
 				(field
-					(name "Manufacturer") "XKB")
+					(name "Manufacturer") "Kinghelm")
 				(field
-					(name "Footprint") "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A")
+					(name "Footprint") "EtherkitKicadLibrary:SW_Push_6x6mm_SMD_KH-6X6X11H-STM")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Push button switch, generic, two pins")
+					(name "Description") "Tactile switch 6x6 mm SMD, 11 mm actuator (front-panel height, no cap)")
 			)
 			(libsource
 				(lib "Switch")
@@ -4496,15 +4496,15 @@
 			)
 			(property
 				(name "LCSC")
-				(value "C318884")
+				(value "C2837537")
 			)
 			(property
 				(name "MPN")
-				(value "TS-1187A-B-A-B")
+				(value "KH-6X6X11H-STM")
 			)
 			(property
 				(name "Manufacturer")
-				(value "XKB")
+				(value "Kinghelm")
 			)
 			(property
 				(name "Sheetname")
@@ -4540,22 +4540,22 @@
 		(comp
 			(ref "SW4")
 			(value "MENU")
-			(footprint "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A")
-			(description "Push button switch, generic, two pins")
+			(footprint "EtherkitKicadLibrary:SW_Push_6x6mm_SMD_KH-6X6X11H-STM")
+			(description "Tactile switch 6x6 mm SMD, 11 mm actuator (front-panel height, no cap)")
 			(fields
 				(field
-					(name "LCSC") "C318884")
+					(name "LCSC") "C2837537")
 				(field
-					(name "MPN") "TS-1187A-B-A-B")
+					(name "MPN") "KH-6X6X11H-STM")
 				(field
-					(name "Manufacturer") "XKB")
+					(name "Manufacturer") "Kinghelm")
 				(field
-					(name "Footprint") "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A")
+					(name "Footprint") "EtherkitKicadLibrary:SW_Push_6x6mm_SMD_KH-6X6X11H-STM")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Push button switch, generic, two pins")
+					(name "Description") "Tactile switch 6x6 mm SMD, 11 mm actuator (front-panel height, no cap)")
 			)
 			(libsource
 				(lib "Switch")
@@ -4564,15 +4564,15 @@
 			)
 			(property
 				(name "LCSC")
-				(value "C318884")
+				(value "C2837537")
 			)
 			(property
 				(name "MPN")
-				(value "TS-1187A-B-A-B")
+				(value "KH-6X6X11H-STM")
 			)
 			(property
 				(name "Manufacturer")
-				(value "XKB")
+				(value "Kinghelm")
 			)
 			(property
 				(name "Sheetname")

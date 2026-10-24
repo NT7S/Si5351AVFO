@@ -142,3 +142,7 @@ Checked items are finalized and their notes have been removed from the schematic
 
 - [x] **Title block**: comment 1 on all sheets changed to "Draft schematic, not reviewed. Open items: docs/VERIFY.md".
   - Jason: 
+
+## Layout round 1 changes
+- [x] **SW2-SW4**: taller front-panel tact switch, no caps.
+  - Resolved (Jason, 2026-10-23): TS-1187A (5.1x5.1, ~1.5 mm) replaced by Kinghelm KH-6X6X11H-STM, 6x6 mm SMD, 11 mm actuator height, LCSC C2837537 (14,430 in stock 2026-10-23, ~$0.04). JLC-assembled, not DNP: SMD stock is solid, so no THT kit part is needed. Height: OLED glass top ~5.2 mm above PCB (2.5 mm header); EC11 body 6.5 mm, so a 1.6 mm panel resting at ~8 mm puts the panel face at ~9.6 mm, leaving ~3-4 mm of M7 bushing thread for the nut. An 11 mm actuator then sits ~1.4 mm proud of the panel face, flush-ish with a finger, far below the 20 mm encoder shaft. Panel holes ~4 mm for the 3.5 mm round actuator. Alternative heights in the same family if the panel spacing changes: KH-6X6X10H-STM C2837536, KH-6X6X13H-STM C2837539. Bench check: confirm the actuator protrusion against the real panel and standoff height.
