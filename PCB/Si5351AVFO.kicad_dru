@@ -15,3 +15,7 @@
 (rule "J1 shield solid"
   (condition "A.memberOfFootprint('J1') && A.Pad_Type == 'Through-hole'")
   (constraint zone_connection solid))
+# CPWG: 0.20 mm gap from every RF50 track/pad to the coplanar GND pour (JLC calc: 0.31/0.20 = 50 ohm)
+(rule "RF50 CPWG gap to GND pour"
+  (condition "A.NetClass == 'RF50' && B.Type == 'Zone' && B.Net == 'GND'")
+  (constraint clearance (min 0.2mm)))
