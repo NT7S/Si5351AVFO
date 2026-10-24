@@ -1,5 +1,5 @@
-ERC report (2026-10-23T18:40:17, Encoding UTF8)
-Report includes: Errors, Warnings, Exclusions
+ERC report (2026-10-23T18:45:37, Encoding UTF8)
+Report includes: Errors, Warnings
 
 ***** Sheet /
 [footprint_link_issues]: The current configuration does not include the footprint library 'EtherkitKicadLibrary'
