@@ -534,7 +534,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_Small"
+		(symbol "Device:R_Small_US"
 			(pin_numbers
 				(hide yes)
 			)
@@ -548,23 +548,25 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
-				(at 0 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Value" "R_Small"
-				(at 1.778 0 90)
+				(at 0.762 0.508 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small_US"
+				(at 0.762 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -589,7 +591,7 @@
 					)
 				)
 			)
-			(property "Description" "Resistor, small symbol"
+			(property "Description" "Resistor, small US symbol"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -600,7 +602,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "R resistor"
+			(property "ki_keywords" "r resistor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -622,23 +624,34 @@
 					)
 				)
 			)
-			(symbol "R_Small_0_1"
-				(rectangle
-					(start -0.762 1.778)
-					(end 0.762 -1.778)
+			(symbol "R_Small_US_1_1"
+				(polyline
+					(pts
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+					)
 					(stroke
-						(width 0.2032)
+						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-			)
-			(symbol "R_Small_1_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
 					(at 0 2.54 270)
-					(length 0.762)
+					(length 1.016)
 					(name ""
 						(effects
 							(font
@@ -656,7 +669,7 @@
 				)
 				(pin passive line
 					(at 0 -2.54 90)
-					(length 0.762)
+					(length 1.016)
 					(name ""
 						(effects
 							(font
@@ -1838,7 +1851,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "VERIFY (unconfirmed items on this sheet):\n- X1: TCXO stock thin (718); buy before ordering.\n- R27: I2C pull-up value not fixed (PLAN 2.2-4.7k); no LCSC chosen. On +3V3D: ATtiny, Si5351, CP2102N and OLED all at\n   3.3 V, so I2C levels match.\n- R28: as R27\n- R100: 0603 0R series (Jason decision); LCSC code not in PLAN (C17477 is 0805).\n- C100: DC-block LF corner ~32 kHz into 50 ohm (PLAN Q6).\n- R101: DNP shunt ~120 ohm back-match of ~85 ohm source (datasheet Zo); part/LCSC not chosen; verify return loss esp.\n   >100 MHz.\n- L1: LQW2UAS stock 0.9-3.3k/part; buy ahead. 150n uses +/-1% C2044861 (C2043109 is +/-5%).\n- C105: 9.1p only +/-0.25pF in stock (C513588); 24p +/-2% stock thin (C2857979, ~950).\n- J2: Footprint is a placeholder; check BWSMA-KE-P001 launch geometry and 1.6 mm edge fit.\n- R120: see R100\n- R121: see R100\n- J3: see J2\n- R140: see R100\n- R141: see R100\n- J4: see J2"
+	(text "VERIFY (unconfirmed items on this sheet):\n- R27: I2C pull-up value not fixed (PLAN 2.2-4.7k); no LCSC chosen. On +3V3D: ATtiny, Si5351, CP2102N and OLED all at\n   3.3 V, so I2C levels match.\n- R28: as R27\n- R100: 0603 0R series (Jason decision); LCSC code not in PLAN (C17477 is 0805).\n- J2: Footprint is a placeholder; check BWSMA-KE-P001 launch geometry and 1.6 mm edge fit.\n- R120: see R100\n- R121: see R100\n- J3: see J2\n- R140: see R100\n- R141: see R100\n- J4: see J2"
 		(exclude_from_sim no)
 		(at 290 40 0)
 		(effects
@@ -1903,6 +1916,17 @@
 			(justify left top)
 		)
 		(uuid "fb84477b-b594-4d7b-80ae-734d19139305")
+	)
+	(text "PCB: C4 100n at U2 pins 1 (VDD) + 7 (VDDO), tight loop\nto pin 8 (GND); GND via at cap pad. C5 100n at X1 pin 4 (VDD)."
+		(exclude_from_sim no)
+		(at 162.56 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a55ad005-ec98-4a7b-b1fa-bb8f3b5087e9")
 	)
 	(junction
 		(at 165.1 264.16)
@@ -4737,17 +4761,6 @@
 				)
 			)
 		)
-		(property "VERIFY" "LQW2UAS stock 0.9-3.3k/part; buy ahead. 150n uses +/-1% C2044861 (C2043109 is +/-5%)."
-			(at 121.92 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "42340c48-fad8-42e4-b088-cca6f34284dd")
 		)
@@ -5182,7 +5195,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 139.7 129.54 0)
 		(unit 1)
 		(body_style 1)
@@ -5275,7 +5288,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 165.1 59.69 0)
+		(at 154.94 76.2 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5285,7 +5298,7 @@
 		(dnp no)
 		(uuid "56bd0ef7-c366-4426-b0b9-30adc6145bde")
 		(property "Reference" "C4"
-			(at 166.9 59.09 0)
+			(at 156.74 75.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5296,7 +5309,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 166.9 61.29 0)
+			(at 156.74 77.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5307,7 +5320,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 165.1 59.69 0)
+			(at 154.94 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5318,7 +5331,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 59.69 0)
+			(at 154.94 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5329,7 +5342,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 165.1 59.69 0)
+			(at 154.94 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5340,7 +5353,7 @@
 			)
 		)
 		(property "LCSC" "C49678"
-			(at 165.1 59.69 0)
+			(at 154.94 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5351,7 +5364,7 @@
 			)
 		)
 		(property "MPN" "CC0805KRX7R9BB104"
-			(at 165.1 59.69 0)
+			(at 154.94 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5362,7 +5375,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 165.1 59.69 0)
+			(at 154.94 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5589,7 +5602,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 40.64 172.72 90)
 		(unit 1)
 		(body_style 1)
@@ -5690,7 +5703,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 40.64 264.16 90)
 		(unit 1)
 		(body_style 1)
@@ -6089,17 +6102,6 @@
 				)
 			)
 		)
-		(property "VERIFY" "9.1p only +/-0.25pF in stock (C513588); 24p +/-2% stock thin (C2857979, ~950)."
-			(at 121.92 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "9cd61268-124a-4dc8-8cbe-36c261a5b411")
 		)
@@ -6482,17 +6484,6 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 50.8 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFY" "DC-block LF corner ~32 kHz into 50 ohm (PLAN Q6)."
 			(at 50.8 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -6960,7 +6951,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 40.64 218.44 90)
 		(unit 1)
 		(body_style 1)
@@ -7137,7 +7128,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 60.96 177.8 0)
 		(unit 1)
 		(body_style 1)
@@ -7192,17 +7183,6 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 60.96 177.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFY" "DNP shunt ~120 ohm back-match of ~85 ohm source (datasheet Zo); part/LCSC not chosen; verify return loss esp. >100 MHz."
 			(at 60.96 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -7757,7 +7737,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 59.69 67.31 0)
 		(unit 1)
 		(body_style 1)
@@ -7871,7 +7851,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 60.96 223.52 0)
 		(unit 1)
 		(body_style 1)
@@ -8162,17 +8142,6 @@
 			)
 		)
 		(property "Manufacturer" "YXC"
-			(at 59.69 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFY" "TCXO stock thin (718); buy before ordering."
 			(at 59.69 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -9122,7 +9091,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 44.45 74.93 0)
 		(unit 1)
 		(body_style 1)
@@ -9778,7 +9747,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 100.33 129.54 0)
 		(unit 1)
 		(body_style 1)
@@ -10173,7 +10142,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 165.1 62.23 0)
+		(at 154.94 78.74 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10183,7 +10152,7 @@
 		(dnp no)
 		(uuid "d440b8b4-4500-415e-94b7-59eb3c3da89f")
 		(property "Reference" "#PWR087"
-			(at 165.1 62.23 0)
+			(at 154.94 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10194,7 +10163,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 165.1 66.04 0)
+			(at 154.94 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10204,7 +10173,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 62.23 0)
+			(at 154.94 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10215,7 +10184,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 62.23 0)
+			(at 154.94 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10226,7 +10195,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 165.1 62.23 0)
+			(at 154.94 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10414,7 +10383,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 60.96 269.24 0)
 		(unit 1)
 		(body_style 1)
@@ -10695,7 +10664,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 165.1 57.15 0)
+		(at 154.94 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10705,7 +10674,7 @@
 		(dnp no)
 		(uuid "e3296a37-ece0-4a77-91c0-a5f583592d07")
 		(property "Reference" "#PWR086"
-			(at 165.1 57.15 0)
+			(at 154.94 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10716,7 +10685,7 @@
 			)
 		)
 		(property "Value" "+3V3_CLK"
-			(at 165.1 53.34 0)
+			(at 154.94 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10726,7 +10695,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 57.15 0)
+			(at 154.94 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10737,7 +10706,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 57.15 0)
+			(at 154.94 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10748,7 +10717,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 165.1 57.15 0)
+			(at 154.94 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
