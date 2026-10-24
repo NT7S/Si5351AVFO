@@ -1,8 +1,8 @@
 (export
 	(version "E")
 	(design
-		(source "/__w/Si5351AVFO/Si5351AVFO/PCB/Si5351AVFO.kicad_sch")
-		(date "2026-10-24T03:56:01")
+		(source "/workspace/wt-sch/PCB/Si5351AVFO.kicad_sch")
+		(date "2026-10-23T22:32:32")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
@@ -5036,6 +5036,222 @@
 			)
 		)
 		(comp
+			(ref "C26")
+			(value "100n")
+			(footprint "Capacitor_SMD:C_0402_1005Metric")
+			(description "Unpolarized capacitor, small symbol")
+			(fields
+				(field
+					(name "LCSC") "C1525")
+				(field
+					(name "MPN") "CL05B104KO5NNNC")
+				(field
+					(name "Manufacturer") "Samsung Electro-Mechanics")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0402_1005Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor, small symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "C_Small")
+				(description "Unpolarized capacitor, small symbol")
+			)
+			(property
+				(name "LCSC")
+				(value "C1525")
+			)
+			(property
+				(name "MPN")
+				(value "CL05B104KO5NNNC")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Samsung Electro-Mechanics")
+			)
+			(property
+				(name "Sheetname")
+				(value "Synth and RF outputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "capacitor cap")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Synth and RF outputs/")
+				(tstamps "/b0000000-0000-4000-8000-000000000004/")
+			)
+			(tstamps "c3225fbc-761a-4ea7-82cf-035f3b2b975a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C27")
+			(value "10u")
+			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(description "Unpolarized capacitor, small symbol")
+			(fields
+				(field
+					(name "LCSC") "C15850")
+				(field
+					(name "MPN") "CL21A106KAYNNNE")
+				(field
+					(name "Manufacturer") "Samsung Electro-Mechanics")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor, small symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "C_Small")
+				(description "Unpolarized capacitor, small symbol")
+			)
+			(property
+				(name "LCSC")
+				(value "C15850")
+			)
+			(property
+				(name "MPN")
+				(value "CL21A106KAYNNNE")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Samsung Electro-Mechanics")
+			)
+			(property
+				(name "Sheetname")
+				(value "Synth and RF outputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "capacitor cap")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Synth and RF outputs/")
+				(tstamps "/b0000000-0000-4000-8000-000000000004/")
+			)
+			(tstamps "3464bd9c-12f3-4000-b2ce-5723c1366456")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C28")
+			(value "100n")
+			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(description "Unpolarized capacitor, small symbol")
+			(fields
+				(field
+					(name "LCSC") "C49678")
+				(field
+					(name "MPN") "CC0805KRX7R9BB104")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor, small symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "C_Small")
+				(description "Unpolarized capacitor, small symbol")
+			)
+			(property
+				(name "LCSC")
+				(value "C49678")
+			)
+			(property
+				(name "MPN")
+				(value "CC0805KRX7R9BB104")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
+				(name "Sheetname")
+				(value "Synth and RF outputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "capacitor cap")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Synth and RF outputs/")
+				(tstamps "/b0000000-0000-4000-8000-000000000004/")
+			)
+			(tstamps "db451c4d-8c56-45ca-87a5-22e068e5631d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "C100")
 			(value "100n")
 			(footprint "Capacitor_SMD:C_0805_2012Metric")
@@ -8719,17 +8935,17 @@
 		(comp
 			(ref "R100")
 			(value "0")
-			(footprint "Resistor_SMD:R_0805_2012Metric")
+			(footprint "Resistor_SMD:R_0402_1005Metric")
 			(description "Resistor, small symbol")
 			(fields
 				(field
-					(name "LCSC") "C17477")
+					(name "LCSC") "C17168")
 				(field
-					(name "MPN") "0805W8F0000T5E")
+					(name "MPN") "0402WGF0000TCE")
 				(field
 					(name "Manufacturer") "UNI-ROYAL")
 				(field
-					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
+					(name "Footprint") "Resistor_SMD:R_0402_1005Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -8743,11 +8959,11 @@
 			)
 			(property
 				(name "LCSC")
-				(value "C17477")
+				(value "C17168")
 			)
 			(property
 				(name "MPN")
-				(value "0805W8F0000T5E")
+				(value "0402WGF0000TCE")
 			)
 			(property
 				(name "Manufacturer")
@@ -8866,17 +9082,17 @@
 		(comp
 			(ref "R120")
 			(value "0")
-			(footprint "Resistor_SMD:R_0805_2012Metric")
+			(footprint "Resistor_SMD:R_0402_1005Metric")
 			(description "Resistor, small symbol")
 			(fields
 				(field
-					(name "LCSC") "C17477")
+					(name "LCSC") "C17168")
 				(field
-					(name "MPN") "0805W8F0000T5E")
+					(name "MPN") "0402WGF0000TCE")
 				(field
 					(name "Manufacturer") "UNI-ROYAL")
 				(field
-					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
+					(name "Footprint") "Resistor_SMD:R_0402_1005Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -8890,11 +9106,11 @@
 			)
 			(property
 				(name "LCSC")
-				(value "C17477")
+				(value "C17168")
 			)
 			(property
 				(name "MPN")
-				(value "0805W8F0000T5E")
+				(value "0402WGF0000TCE")
 			)
 			(property
 				(name "Manufacturer")
@@ -9013,17 +9229,17 @@
 		(comp
 			(ref "R140")
 			(value "0")
-			(footprint "Resistor_SMD:R_0805_2012Metric")
+			(footprint "Resistor_SMD:R_0402_1005Metric")
 			(description "Resistor, small symbol")
 			(fields
 				(field
-					(name "LCSC") "C17477")
+					(name "LCSC") "C17168")
 				(field
-					(name "MPN") "0805W8F0000T5E")
+					(name "MPN") "0402WGF0000TCE")
 				(field
 					(name "Manufacturer") "UNI-ROYAL")
 				(field
-					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
+					(name "Footprint") "Resistor_SMD:R_0402_1005Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -9037,11 +9253,11 @@
 			)
 			(property
 				(name "LCSC")
-				(value "C17477")
+				(value "C17168")
 			)
 			(property
 				(name "MPN")
-				(value "0805W8F0000T5E")
+				(value "0402WGF0000TCE")
 			)
 			(property
 				(name "Manufacturer")
@@ -10556,6 +10772,21 @@
 			(name "+3V3_CLK")
 			(class "Default")
 			(node
+				(ref "C26")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C27")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C28")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
 				(ref "C4")
 				(pin "1")
 				(pintype "passive")
@@ -11220,7 +11451,7 @@
 		(net
 			(code "30")
 			(name "/Synth and RF outputs/CLK0_BYP")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "JP104")
 				(pin "2")
@@ -11253,7 +11484,7 @@
 		(net
 			(code "32")
 			(name "/Synth and RF outputs/CLK1_BYP")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "JP124")
 				(pin "2")
@@ -11286,7 +11517,7 @@
 		(net
 			(code "34")
 			(name "/Synth and RF outputs/CLK2_BYP")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "JP144")
 				(pin "2")
@@ -11462,6 +11693,21 @@
 			)
 			(node
 				(ref "C25")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C26")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C27")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C28")
 				(pin "2")
 				(pintype "passive")
 			)
