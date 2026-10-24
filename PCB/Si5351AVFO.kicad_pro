@@ -308,7 +308,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.35,
+        "track_width": 0.31,
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
@@ -416,6 +416,18 @@
       {
         "netclass": "RF50",
         "pattern": "Net-(JP143-A)"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "/Synth and RF outputs/CLK0_BYP"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "/Synth and RF outputs/CLK1_BYP"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "/Synth and RF outputs/CLK2_BYP"
       }
     ]
   },
