@@ -1,8 +1,8 @@
 (export
 	(version "E")
 	(design
-		(source "/workspace/wt-sch/PCB/Si5351AVFO.kicad_sch")
-		(date "2026-10-23T20:53:32")
+		(source "/__w/Si5351AVFO/Si5351AVFO/PCB/Si5351AVFO.kicad_sch")
+		(date "2026-10-24T03:56:01")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
@@ -11204,7 +11204,7 @@
 		(net
 			(code "29")
 			(name "/Synth and RF outputs/CLK0")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "R100")
 				(pin "1")
@@ -11237,7 +11237,7 @@
 		(net
 			(code "31")
 			(name "/Synth and RF outputs/CLK1")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "R120")
 				(pin "1")
@@ -11270,7 +11270,7 @@
 		(net
 			(code "33")
 			(name "/Synth and RF outputs/CLK2")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "R140")
 				(pin "1")
@@ -11790,7 +11790,7 @@
 		(net
 			(code "42")
 			(name "Net-(C100-Pad1)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C100")
 				(pin "1")
@@ -11805,7 +11805,7 @@
 		(net
 			(code "43")
 			(name "Net-(C102-Pad1)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C102")
 				(pin "1")
@@ -11835,7 +11835,7 @@
 		(net
 			(code "44")
 			(name "Net-(C103-Pad1)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C103")
 				(pin "1")
@@ -11865,7 +11865,7 @@
 		(net
 			(code "45")
 			(name "Net-(C120-Pad1)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C120")
 				(pin "1")
@@ -11880,7 +11880,7 @@
 		(net
 			(code "46")
 			(name "Net-(C122-Pad1)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C122")
 				(pin "1")
@@ -11910,7 +11910,7 @@
 		(net
 			(code "47")
 			(name "Net-(C123-Pad1)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C123")
 				(pin "1")
@@ -11940,7 +11940,7 @@
 		(net
 			(code "48")
 			(name "Net-(C140-Pad1)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C140")
 				(pin "1")
@@ -11955,7 +11955,7 @@
 		(net
 			(code "49")
 			(name "Net-(C142-Pad1)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C142")
 				(pin "1")
@@ -11985,7 +11985,7 @@
 		(net
 			(code "50")
 			(name "Net-(C143-Pad1)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C143")
 				(pin "1")
@@ -12069,7 +12069,7 @@
 		(net
 			(code "54")
 			(name "Net-(J2-In)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "J2")
 				(pin "1")
@@ -12092,7 +12092,7 @@
 		(net
 			(code "55")
 			(name "Net-(J3-In)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "J3")
 				(pin "1")
@@ -12115,7 +12115,7 @@
 		(net
 			(code "56")
 			(name "Net-(J4-In)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "J4")
 				(pin "1")
@@ -12138,7 +12138,7 @@
 		(net
 			(code "57")
 			(name "Net-(JP102-A)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C100")
 				(pin "2")
@@ -12165,7 +12165,7 @@
 		(net
 			(code "58")
 			(name "Net-(JP102-B)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C101")
 				(pin "1")
@@ -12191,7 +12191,7 @@
 		(net
 			(code "59")
 			(name "Net-(JP103-A)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C104")
 				(pin "1")
@@ -12217,7 +12217,7 @@
 		(net
 			(code "60")
 			(name "Net-(JP122-A)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C120")
 				(pin "2")
@@ -12244,7 +12244,7 @@
 		(net
 			(code "61")
 			(name "Net-(JP122-B)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C121")
 				(pin "1")
@@ -12270,7 +12270,7 @@
 		(net
 			(code "62")
 			(name "Net-(JP123-A)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C124")
 				(pin "1")
@@ -12296,7 +12296,7 @@
 		(net
 			(code "63")
 			(name "Net-(JP142-A)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C140")
 				(pin "2")
@@ -12323,7 +12323,7 @@
 		(net
 			(code "64")
 			(name "Net-(JP142-B)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C141")
 				(pin "1")
@@ -12349,7 +12349,7 @@
 		(net
 			(code "65")
 			(name "Net-(JP143-A)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C144")
 				(pin "1")
