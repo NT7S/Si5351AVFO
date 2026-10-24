@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/workspace/wt-sch/PCB/Si5351AVFO.kicad_sch")
-		(date "2026-10-23T22:32:32")
+		(date "2026-10-24T13:51:10")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
@@ -4491,7 +4491,7 @@
 		)
 		(comp
 			(ref "SW2")
-			(value "BAND")
+			(value "SOFT1")
 			(footprint "EtherkitKicadLibrary:SW_Push_6x6mm_SMD_KH-6X6X11H-STM")
 			(description "Tactile switch 6x6 mm SMD, 11 mm actuator (front-panel height, no cap)")
 			(fields
@@ -4559,7 +4559,7 @@
 		)
 		(comp
 			(ref "SW3")
-			(value "STEP")
+			(value "SOFT2")
 			(footprint "EtherkitKicadLibrary:SW_Push_6x6mm_SMD_KH-6X6X11H-STM")
 			(description "Tactile switch 6x6 mm SMD, 11 mm actuator (front-panel height, no cap)")
 			(fields
@@ -4627,7 +4627,7 @@
 		)
 		(comp
 			(ref "SW4")
-			(value "MENU")
+			(value "SOFT3")
 			(footprint "EtherkitKicadLibrary:SW_Push_6x6mm_SMD_KH-6X6X11H-STM")
 			(description "Tactile switch 6x6 mm SMD, 11 mm actuator (front-panel height, no cap)")
 			(fields
@@ -10937,7 +10937,7 @@
 		)
 		(net
 			(code "5")
-			(name "/MCU and UI/BTN_BAND")
+			(name "/MCU and UI/BTN_S1")
 			(class "Default")
 			(node
 				(ref "C20")
@@ -10958,7 +10958,7 @@
 		)
 		(net
 			(code "6")
-			(name "/MCU and UI/BTN_BAND_SW")
+			(name "/MCU and UI/BTN_S1_SW")
 			(class "Default")
 			(node
 				(ref "R17")
@@ -10979,49 +10979,7 @@
 		)
 		(net
 			(code "7")
-			(name "/MCU and UI/BTN_MENU")
-			(class "Default")
-			(node
-				(ref "C25")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R19")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "U4")
-				(pin "5")
-				(pinfunction "PA7_5")
-				(pintype "bidirectional")
-			)
-		)
-		(net
-			(code "8")
-			(name "/MCU and UI/BTN_MENU_SW")
-			(class "Default")
-			(node
-				(ref "R19")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R20")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "SW4")
-				(pin "1")
-				(pinfunction "1_1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "9")
-			(name "/MCU and UI/BTN_STEP")
+			(name "/MCU and UI/BTN_S2")
 			(class "Default")
 			(node
 				(ref "C21")
@@ -11041,8 +10999,8 @@
 			)
 		)
 		(net
-			(code "10")
-			(name "/MCU and UI/BTN_STEP_SW")
+			(code "8")
+			(name "/MCU and UI/BTN_S2_SW")
 			(class "Default")
 			(node
 				(ref "R18")
@@ -11056,6 +11014,48 @@
 			)
 			(node
 				(ref "SW3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "9")
+			(name "/MCU and UI/BTN_S3")
+			(class "Default")
+			(node
+				(ref "C25")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R19")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U4")
+				(pin "5")
+				(pinfunction "PA7_5")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "10")
+			(name "/MCU and UI/BTN_S3_SW")
+			(class "Default")
+			(node
+				(ref "R19")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R20")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW4")
 				(pin "1")
 				(pinfunction "1_1")
 				(pintype "passive")
