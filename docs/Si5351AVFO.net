@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/workspace/wt-sch/PCB/Si5351AVFO.kicad_sch")
-		(date "2026-10-23T20:53:32")
+		(date "2026-10-23T22:26:44")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
@@ -5021,6 +5021,222 @@
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
 			(tstamps "fcfffa21-d54e-461f-a31c-9a7aabcdc417")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C26")
+			(value "100n")
+			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(description "Unpolarized capacitor, small symbol")
+			(fields
+				(field
+					(name "LCSC") "C49678")
+				(field
+					(name "MPN") "CC0805KRX7R9BB104")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor, small symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "C_Small")
+				(description "Unpolarized capacitor, small symbol")
+			)
+			(property
+				(name "LCSC")
+				(value "C49678")
+			)
+			(property
+				(name "MPN")
+				(value "CC0805KRX7R9BB104")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
+				(name "Sheetname")
+				(value "Synth and RF outputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "capacitor cap")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Synth and RF outputs/")
+				(tstamps "/b0000000-0000-4000-8000-000000000004/")
+			)
+			(tstamps "c3225fbc-761a-4ea7-82cf-035f3b2b975a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C27")
+			(value "10u")
+			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(description "Unpolarized capacitor, small symbol")
+			(fields
+				(field
+					(name "LCSC") "C15850")
+				(field
+					(name "MPN") "CL21A106KAYNNNE")
+				(field
+					(name "Manufacturer") "Samsung Electro-Mechanics")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor, small symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "C_Small")
+				(description "Unpolarized capacitor, small symbol")
+			)
+			(property
+				(name "LCSC")
+				(value "C15850")
+			)
+			(property
+				(name "MPN")
+				(value "CL21A106KAYNNNE")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Samsung Electro-Mechanics")
+			)
+			(property
+				(name "Sheetname")
+				(value "Synth and RF outputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "capacitor cap")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Synth and RF outputs/")
+				(tstamps "/b0000000-0000-4000-8000-000000000004/")
+			)
+			(tstamps "3464bd9c-12f3-4000-b2ce-5723c1366456")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C28")
+			(value "100n")
+			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(description "Unpolarized capacitor, small symbol")
+			(fields
+				(field
+					(name "LCSC") "C49678")
+				(field
+					(name "MPN") "CC0805KRX7R9BB104")
+				(field
+					(name "Manufacturer") "YAGEO")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor, small symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "C_Small")
+				(description "Unpolarized capacitor, small symbol")
+			)
+			(property
+				(name "LCSC")
+				(value "C49678")
+			)
+			(property
+				(name "MPN")
+				(value "CC0805KRX7R9BB104")
+			)
+			(property
+				(name "Manufacturer")
+				(value "YAGEO")
+			)
+			(property
+				(name "Sheetname")
+				(value "Synth and RF outputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "capacitor cap")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Synth and RF outputs/")
+				(tstamps "/b0000000-0000-4000-8000-000000000004/")
+			)
+			(tstamps "db451c4d-8c56-45ca-87a5-22e068e5631d")
 			(units
 				(unit
 					(name "A")
@@ -10556,6 +10772,21 @@
 			(name "+3V3_CLK")
 			(class "Default")
 			(node
+				(ref "C26")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C27")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C28")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
 				(ref "C4")
 				(pin "1")
 				(pintype "passive")
@@ -11204,7 +11435,7 @@
 		(net
 			(code "29")
 			(name "/Synth and RF outputs/CLK0")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "R100")
 				(pin "1")
@@ -11220,7 +11451,7 @@
 		(net
 			(code "30")
 			(name "/Synth and RF outputs/CLK0_BYP")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "JP104")
 				(pin "2")
@@ -11237,7 +11468,7 @@
 		(net
 			(code "31")
 			(name "/Synth and RF outputs/CLK1")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "R120")
 				(pin "1")
@@ -11253,7 +11484,7 @@
 		(net
 			(code "32")
 			(name "/Synth and RF outputs/CLK1_BYP")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "JP124")
 				(pin "2")
@@ -11270,7 +11501,7 @@
 		(net
 			(code "33")
 			(name "/Synth and RF outputs/CLK2")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "R140")
 				(pin "1")
@@ -11286,7 +11517,7 @@
 		(net
 			(code "34")
 			(name "/Synth and RF outputs/CLK2_BYP")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "JP144")
 				(pin "2")
@@ -11462,6 +11693,21 @@
 			)
 			(node
 				(ref "C25")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C26")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C27")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C28")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -11790,7 +12036,7 @@
 		(net
 			(code "42")
 			(name "Net-(C100-Pad1)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C100")
 				(pin "1")
@@ -11805,7 +12051,7 @@
 		(net
 			(code "43")
 			(name "Net-(C102-Pad1)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C102")
 				(pin "1")
@@ -11835,7 +12081,7 @@
 		(net
 			(code "44")
 			(name "Net-(C103-Pad1)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C103")
 				(pin "1")
@@ -11865,7 +12111,7 @@
 		(net
 			(code "45")
 			(name "Net-(C120-Pad1)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C120")
 				(pin "1")
@@ -11880,7 +12126,7 @@
 		(net
 			(code "46")
 			(name "Net-(C122-Pad1)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C122")
 				(pin "1")
@@ -11910,7 +12156,7 @@
 		(net
 			(code "47")
 			(name "Net-(C123-Pad1)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C123")
 				(pin "1")
@@ -11940,7 +12186,7 @@
 		(net
 			(code "48")
 			(name "Net-(C140-Pad1)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C140")
 				(pin "1")
@@ -11955,7 +12201,7 @@
 		(net
 			(code "49")
 			(name "Net-(C142-Pad1)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C142")
 				(pin "1")
@@ -11985,7 +12231,7 @@
 		(net
 			(code "50")
 			(name "Net-(C143-Pad1)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C143")
 				(pin "1")
@@ -12069,7 +12315,7 @@
 		(net
 			(code "54")
 			(name "Net-(J2-In)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "J2")
 				(pin "1")
@@ -12092,7 +12338,7 @@
 		(net
 			(code "55")
 			(name "Net-(J3-In)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "J3")
 				(pin "1")
@@ -12115,7 +12361,7 @@
 		(net
 			(code "56")
 			(name "Net-(J4-In)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "J4")
 				(pin "1")
@@ -12138,7 +12384,7 @@
 		(net
 			(code "57")
 			(name "Net-(JP102-A)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C100")
 				(pin "2")
@@ -12165,7 +12411,7 @@
 		(net
 			(code "58")
 			(name "Net-(JP102-B)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C101")
 				(pin "1")
@@ -12191,7 +12437,7 @@
 		(net
 			(code "59")
 			(name "Net-(JP103-A)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C104")
 				(pin "1")
@@ -12217,7 +12463,7 @@
 		(net
 			(code "60")
 			(name "Net-(JP122-A)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C120")
 				(pin "2")
@@ -12244,7 +12490,7 @@
 		(net
 			(code "61")
 			(name "Net-(JP122-B)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C121")
 				(pin "1")
@@ -12270,7 +12516,7 @@
 		(net
 			(code "62")
 			(name "Net-(JP123-A)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C124")
 				(pin "1")
@@ -12296,7 +12542,7 @@
 		(net
 			(code "63")
 			(name "Net-(JP142-A)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C140")
 				(pin "2")
@@ -12323,7 +12569,7 @@
 		(net
 			(code "64")
 			(name "Net-(JP142-B)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C141")
 				(pin "1")
@@ -12349,7 +12595,7 @@
 		(net
 			(code "65")
 			(name "Net-(JP143-A)")
-			(class "Default")
+			(class "RF50")
 			(node
 				(ref "C144")
 				(pin "1")
