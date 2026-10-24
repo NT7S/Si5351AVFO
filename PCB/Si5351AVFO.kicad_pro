@@ -12,7 +12,21 @@
     },
     "layer_pairs": [],
     "layer_presets": [],
-    "viewports": []
+    "viewports": [],
+    "design_settings": {
+      "rules": {
+        "min_hole_clearance": 0.2,
+        "min_through_hole_diameter": 0.2,
+        "min_clearance": 0.15,
+        "min_copper_edge_clearance": 0.3,
+        "min_hole_to_hole": 0.25,
+        "min_via_annular_width": 0.1,
+        "min_track_width": 0.127
+      },
+      "defaults": {
+        "board_outline_line_width": 0.1
+      }
+    }
   },
   "boards": [],
   "component_class_settings": {
@@ -264,7 +278,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -280,6 +294,25 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "RF50",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.35,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -287,7 +320,104 @@
     },
     "net_colors": {},
     "netclass_assignments": {},
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "RF50",
+        "pattern": "/Synth and RF outputs/CLK0"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "/Synth and RF outputs/CLK1"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "/Synth and RF outputs/CLK2"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "Net-(C100-Pad1)"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "Net-(C102-Pad1)"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "Net-(C103-Pad1)"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "Net-(C120-Pad1)"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "Net-(C122-Pad1)"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "Net-(C123-Pad1)"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "Net-(C140-Pad1)"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "Net-(C142-Pad1)"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "Net-(C143-Pad1)"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "Net-(J2-In)"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "Net-(J3-In)"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "Net-(J4-In)"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "Net-(JP102-A)"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "Net-(JP102-B)"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "Net-(JP103-A)"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "Net-(JP122-A)"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "Net-(JP122-B)"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "Net-(JP123-A)"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "Net-(JP142-A)"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "Net-(JP142-B)"
+      },
+      {
+        "netclass": "RF50",
+        "pattern": "Net-(JP143-A)"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {

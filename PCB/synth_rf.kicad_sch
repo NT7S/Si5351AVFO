@@ -9,7 +9,7 @@
 		(date "2026-10-22")
 		(rev "A")
 		(company "Etherkit / NT7S")
-		(comment 1 "Draft schematic, not reviewed. See VERIFY notes.")
+		(comment 1 "Draft schematic, not reviewed. Open items: docs/VERIFY.md")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_Coaxial"
@@ -534,7 +534,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_Small"
+		(symbol "Device:R_Small_US"
 			(pin_numbers
 				(hide yes)
 			)
@@ -548,23 +548,25 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
-				(at 0 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Value" "R_Small"
-				(at 1.778 0 90)
+				(at 0.762 0.508 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small_US"
+				(at 0.762 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -589,7 +591,7 @@
 					)
 				)
 			)
-			(property "Description" "Resistor, small symbol"
+			(property "Description" "Resistor, small US symbol"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -600,7 +602,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "R resistor"
+			(property "ki_keywords" "r resistor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -622,23 +624,34 @@
 					)
 				)
 			)
-			(symbol "R_Small_0_1"
-				(rectangle
-					(start -0.762 1.778)
-					(end 0.762 -1.778)
+			(symbol "R_Small_US_1_1"
+				(polyline
+					(pts
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+					)
 					(stroke
-						(width 0.2032)
+						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-			)
-			(symbol "R_Small_1_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
 					(at 0 2.54 270)
-					(length 0.762)
+					(length 1.016)
 					(name ""
 						(effects
 							(font
@@ -656,7 +669,7 @@
 				)
 				(pin passive line
 					(at 0 -2.54 90)
-					(length 0.762)
+					(length 1.016)
 					(name ""
 						(effects
 							(font
@@ -1838,17 +1851,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "VERIFY (unconfirmed items on this sheet):\n- X1: TCXO stock thin (718); buy before ordering.\n- R27: I2C pull-up value not fixed (PLAN 2.2-4.7k); no LCSC chosen. On +3V3D: ATtiny, Si5351, CP2102N and OLED all at\n   3.3 V, so I2C levels match.\n- R28: as R27\n- R100: 0603 0R series (Jason decision); LCSC code not in PLAN (C17477 is 0805).\n- C100: DC-block LF corner ~32 kHz into 50 ohm (PLAN Q6).\n- R101: DNP shunt ~120 ohm back-match of ~85 ohm source (datasheet Zo); part/LCSC not chosen; verify return loss esp.\n   >100 MHz.\n- L1: LQW2UAS stock 0.9-3.3k/part; buy ahead. 150n uses +/-1% C2044861 (C2043109 is +/-5%).\n- C105: 9.1p only +/-0.25pF in stock (C513588); 24p +/-2% stock thin (C2857979, ~950).\n- J2: Footprint is a placeholder; check BWSMA-KE-P001 launch geometry and 1.6 mm edge fit.\n- R120: see R100\n- R121: see R100\n- J3: see J2\n- R140: see R100\n- R141: see R100\n- J4: see J2"
-		(exclude_from_sim no)
-		(at 290 40 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left top)
-		)
-		(uuid "0e8af359-dc15-41ea-b549-8bc983de2308")
-	)
 	(text "CLK0 output chain (J2)"
 		(exclude_from_sim no)
 		(at 20 148.72 0)
@@ -1903,6 +1905,17 @@
 			(justify left top)
 		)
 		(uuid "fb84477b-b594-4d7b-80ae-734d19139305")
+	)
+	(text "PCB: C4 100n at U2 pins 1 (VDD) + 7 (VDDO), tight loop\nto pin 8 (GND); GND via at cap pad. C5 100n at X1 pin 4 (VDD)."
+		(exclude_from_sim no)
+		(at 162.56 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a55ad005-ec98-4a7b-b1fa-bb8f3b5087e9")
 	)
 	(junction
 		(at 165.1 264.16)
@@ -2180,7 +2193,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 284.48) (xy 193.04 284.48)
+			(xy 93.98 284.48) (xy 180.34 284.48)
 		)
 		(stroke
 			(width 0)
@@ -2730,7 +2743,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 238.76) (xy 193.04 238.76)
+			(xy 93.98 238.76) (xy 180.34 238.76)
 		)
 		(stroke
 			(width 0)
@@ -2820,7 +2833,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 193.04) (xy 193.04 193.04)
+			(xy 93.98 193.04) (xy 180.34 193.04)
 		)
 		(stroke
 			(width 0)
@@ -3066,7 +3079,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -3420,7 +3433,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -4737,17 +4750,6 @@
 				)
 			)
 		)
-		(property "VERIFY" "LQW2UAS stock 0.9-3.3k/part; buy ahead. 150n uses +/-1% C2044861 (C2043109 is +/-5%)."
-			(at 121.92 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "42340c48-fad8-42e4-b088-cca6f34284dd")
 		)
@@ -5182,7 +5184,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 139.7 129.54 0)
 		(unit 1)
 		(body_style 1)
@@ -5203,7 +5205,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "VERIFY 2.2k-4.7k"
+		(property "Value" "4.7k"
 			(at 141.5 131.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5247,7 +5249,29 @@
 				)
 			)
 		)
-		(property "VERIFY" "as R27"
+		(property "LCSC" "C17673"
+			(at 139.7 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0805W8F4701T5E"
+			(at 139.7 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 139.7 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -5275,7 +5299,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 165.1 59.69 0)
+		(at 154.94 76.2 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5285,7 +5309,7 @@
 		(dnp no)
 		(uuid "56bd0ef7-c366-4426-b0b9-30adc6145bde")
 		(property "Reference" "C4"
-			(at 166.9 59.09 0)
+			(at 156.74 75.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5296,7 +5320,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 166.9 61.29 0)
+			(at 156.74 77.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5307,7 +5331,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 165.1 59.69 0)
+			(at 154.94 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5318,7 +5342,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 59.69 0)
+			(at 154.94 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5329,7 +5353,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 165.1 59.69 0)
+			(at 154.94 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5340,7 +5364,7 @@
 			)
 		)
 		(property "LCSC" "C49678"
-			(at 165.1 59.69 0)
+			(at 154.94 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5351,7 +5375,7 @@
 			)
 		)
 		(property "MPN" "CC0805KRX7R9BB104"
-			(at 165.1 59.69 0)
+			(at 154.94 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5362,7 +5386,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 165.1 59.69 0)
+			(at 154.94 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5469,10 +5493,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "584ceec2-979e-4b8b-9451-7e0fbc9e09ca")
 		(property "Reference" "J2"
 			(at 203.454 169.672 0)
@@ -5496,7 +5520,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
+		(property "Footprint" "EtherkitKicadLibrary:SMA-ENDLAUNCH"
 			(at 203.2 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -5518,7 +5542,7 @@
 				)
 			)
 		)
-		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+		(property "Description" "SMA end-launch jack, edge mount. DNP, supplied in kit, user-soldered."
 			(at 203.2 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -5529,7 +5553,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C496550"
+		(property "LCSC" ""
 			(at 203.2 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -5562,17 +5586,6 @@
 				)
 			)
 		)
-		(property "VERIFY" "Footprint is a placeholder; check BWSMA-KE-P001 launch geometry and 1.6 mm edge fit."
-			(at 203.2 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "d712c71f-8c66-4916-adba-27c0dc87e6fb")
 		)
@@ -5589,7 +5602,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 40.64 172.72 90)
 		(unit 1)
 		(body_style 1)
@@ -5619,7 +5632,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 40.64 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -5652,7 +5665,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C17477"
 			(at 40.64 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -5663,7 +5676,18 @@
 				)
 			)
 		)
-		(property "VERIFY" "0603 0R series (Jason decision); LCSC code not in PLAN (C17477 is 0805)."
+		(property "MPN" "0805W8F0000T5E"
+			(at 40.64 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 40.64 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -5690,7 +5714,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 40.64 264.16 90)
 		(unit 1)
 		(body_style 1)
@@ -5720,7 +5744,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 40.64 264.16 0)
 			(hide yes)
 			(show_name no)
@@ -5753,7 +5777,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C17477"
 			(at 40.64 264.16 0)
 			(hide yes)
 			(show_name no)
@@ -5764,7 +5788,18 @@
 				)
 			)
 		)
-		(property "VERIFY" "see R100"
+		(property "MPN" "0805W8F0000T5E"
+			(at 40.64 264.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 40.64 264.16 0)
 			(hide yes)
 			(show_name no)
@@ -5908,7 +5943,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -6089,17 +6124,6 @@
 				)
 			)
 		)
-		(property "VERIFY" "9.1p only +/-0.25pF in stock (C513588); 24p +/-2% stock thin (C2857979, ~950)."
-			(at 121.92 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "9cd61268-124a-4dc8-8cbe-36c261a5b411")
 		)
@@ -6235,7 +6259,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -6482,17 +6506,6 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 50.8 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFY" "DC-block LF corner ~32 kHz into 50 ohm (PLAN Q6)."
 			(at 50.8 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -6750,7 +6763,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -6840,10 +6853,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "7ebfed17-ffa8-491e-9f3a-d296dcc04fd8")
 		(property "Reference" "J4"
 			(at 203.454 261.112 0)
@@ -6867,7 +6880,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
+		(property "Footprint" "EtherkitKicadLibrary:SMA-ENDLAUNCH"
 			(at 203.2 264.16 0)
 			(hide yes)
 			(show_name no)
@@ -6889,7 +6902,7 @@
 				)
 			)
 		)
-		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+		(property "Description" "SMA end-launch jack, edge mount. DNP, supplied in kit, user-soldered."
 			(at 203.2 264.16 0)
 			(hide yes)
 			(show_name no)
@@ -6900,7 +6913,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C496550"
+		(property "LCSC" ""
 			(at 203.2 264.16 0)
 			(hide yes)
 			(show_name no)
@@ -6933,17 +6946,6 @@
 				)
 			)
 		)
-		(property "VERIFY" "see J2"
-			(at 203.2 264.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "ea27e96a-f480-415f-9ca4-f6ca8de38983")
 		)
@@ -6960,7 +6962,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 40.64 218.44 90)
 		(unit 1)
 		(body_style 1)
@@ -6990,7 +6992,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 40.64 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -7023,7 +7025,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C17477"
 			(at 40.64 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -7034,7 +7036,18 @@
 				)
 			)
 		)
-		(property "VERIFY" "see R100"
+		(property "MPN" "0805W8F0000T5E"
+			(at 40.64 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 40.64 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -7137,7 +7150,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 60.96 177.8 0)
 		(unit 1)
 		(body_style 1)
@@ -7202,7 +7215,29 @@
 				)
 			)
 		)
-		(property "VERIFY" "DNP shunt ~120 ohm back-match of ~85 ohm source (datasheet Zo); part/LCSC not chosen; verify return loss esp. >100 MHz."
+		(property "LCSC" "C17437"
+			(at 60.96 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0805W8F1200T5E"
+			(at 60.96 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 60.96 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -7757,7 +7792,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 59.69 67.31 0)
 		(unit 1)
 		(body_style 1)
@@ -7871,7 +7906,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 60.96 223.52 0)
 		(unit 1)
 		(body_style 1)
@@ -7936,7 +7971,29 @@
 				)
 			)
 		)
-		(property "VERIFY" "see R100"
+		(property "LCSC" "C17437"
+			(at 60.96 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0805W8F1200T5E"
+			(at 60.96 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 60.96 223.52 0)
 			(hide yes)
 			(show_name no)
@@ -8172,17 +8229,6 @@
 				)
 			)
 		)
-		(property "VERIFY" "TCXO stock thin (718); buy before ordering."
-			(at 59.69 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "4f7f978d-6e88-4919-876b-c921f812719f")
 		)
@@ -8210,7 +8256,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -8738,10 +8784,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "b039bf94-d82a-4ab8-a530-72d73dcf3d03")
 		(property "Reference" "J3"
 			(at 203.454 215.392 0)
@@ -8765,7 +8811,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
+		(property "Footprint" "EtherkitKicadLibrary:SMA-ENDLAUNCH"
 			(at 203.2 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -8787,7 +8833,7 @@
 				)
 			)
 		)
-		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+		(property "Description" "SMA end-launch jack, edge mount. DNP, supplied in kit, user-soldered."
 			(at 203.2 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -8798,7 +8844,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C496550"
+		(property "LCSC" ""
 			(at 203.2 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -8821,17 +8867,6 @@
 			)
 		)
 		(property "Manufacturer" "BAT Wireless"
-			(at 203.2 218.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFY" "see J2"
 			(at 203.2 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -9122,7 +9157,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 44.45 74.93 0)
 		(unit 1)
 		(body_style 1)
@@ -9693,7 +9728,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -9778,7 +9813,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 100.33 129.54 0)
 		(unit 1)
 		(body_style 1)
@@ -9799,7 +9834,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "VERIFY 2.2k-4.7k"
+		(property "Value" "4.7k"
 			(at 102.13 131.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9843,7 +9878,29 @@
 				)
 			)
 		)
-		(property "VERIFY" "I2C pull-up value not fixed (PLAN 2.2-4.7k); no LCSC chosen. On +3V3D: ATtiny, Si5351, CP2102N and OLED all at 3.3 V, so I2C levels match."
+		(property "LCSC" "C17673"
+			(at 100.33 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0805W8F4701T5E"
+			(at 100.33 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 100.33 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -10173,7 +10230,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 165.1 62.23 0)
+		(at 154.94 78.74 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10183,7 +10240,7 @@
 		(dnp no)
 		(uuid "d440b8b4-4500-415e-94b7-59eb3c3da89f")
 		(property "Reference" "#PWR087"
-			(at 165.1 62.23 0)
+			(at 154.94 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10194,7 +10251,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 165.1 66.04 0)
+			(at 154.94 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10204,7 +10261,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 62.23 0)
+			(at 154.94 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10215,7 +10272,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 62.23 0)
+			(at 154.94 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10226,7 +10283,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 165.1 62.23 0)
+			(at 154.94 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10329,7 +10386,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -10414,7 +10471,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 60.96 269.24 0)
 		(unit 1)
 		(body_style 1)
@@ -10479,7 +10536,29 @@
 				)
 			)
 		)
-		(property "VERIFY" "see R100"
+		(property "LCSC" "C17437"
+			(at 60.96 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0805W8F1200T5E"
+			(at 60.96 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 60.96 269.24 0)
 			(hide yes)
 			(show_name no)
@@ -10695,7 +10774,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 165.1 57.15 0)
+		(at 154.94 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10705,7 +10784,7 @@
 		(dnp no)
 		(uuid "e3296a37-ece0-4a77-91c0-a5f583592d07")
 		(property "Reference" "#PWR086"
-			(at 165.1 57.15 0)
+			(at 154.94 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10716,7 +10795,7 @@
 			)
 		)
 		(property "Value" "+3V3_CLK"
-			(at 165.1 53.34 0)
+			(at 154.94 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10726,7 +10805,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 57.15 0)
+			(at 154.94 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10737,7 +10816,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 57.15 0)
+			(at 154.94 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10748,7 +10827,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 165.1 57.15 0)
+			(at 154.94 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10775,7 +10854,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -11720,5 +11799,335 @@
 				)
 			)
 		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 185.42 193.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8357e047-c31d-46e6-8191-33939bc31ca2")
+		(property "Reference" "JP105"
+			(at 185.42 190.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NO"
+			(at 185.42 195.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 185.42 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 185.42 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 185.42 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2eb8432e-118d-408c-95e2-b326774b98b6")
+		)
+		(pin "2"
+			(uuid "76e2c2da-50c4-42cc-a8d5-0ff2777b29f9")
+		)
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "JP105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 190.5 193.04) (xy 193.04 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccfa53fa-dd17-4048-984e-7940af75bca6")
+	)
+	(label "CLK0_BYP"
+		(at 137.16 193.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "efb373d6-f7aa-4c9d-ab8a-fd62cb14bc26")
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 185.42 238.76 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6192207a-848f-4f4c-bb27-3200fd7edca7")
+		(property "Reference" "JP125"
+			(at 185.42 236.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NO"
+			(at 185.42 241.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 185.42 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 185.42 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 185.42 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "893d16f6-89c7-4148-ab75-cce1e50eeaaf")
+		)
+		(pin "2"
+			(uuid "8b131cd6-8b95-4807-a7ba-b0226dc8beb6")
+		)
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "JP125")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 190.5 238.76) (xy 193.04 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a18fc3d-f756-4346-ac0d-dbeb465565c1")
+	)
+	(label "CLK1_BYP"
+		(at 137.16 238.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b85ed2ab-08b5-44dc-a154-e5406251ece0")
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 185.42 284.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "57ca926b-ead6-4944-b691-3bf569edb719")
+		(property "Reference" "JP145"
+			(at 185.42 281.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NO"
+			(at 185.42 287.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 185.42 284.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 284.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 185.42 284.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 185.42 284.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4e71406c-b5a6-41d1-9821-26af27d23810")
+		)
+		(pin "2"
+			(uuid "37879907-ad96-40ba-8a36-6303017f55fd")
+		)
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "JP145")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 190.5 284.48) (xy 193.04 284.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2e39c93-9c91-4a55-819f-f701c5b3bae0")
+	)
+	(label "CLK2_BYP"
+		(at 137.16 284.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3dd4aba0-7cdc-4aa6-89d0-7007dc5b1773")
 	)
 )

@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "EtherkitKicadLibrary") (type "KiCad") (uri "${KIPRJMOD}/lib/Etherkit.pretty") (options "") (descr "Project-local copy of used footprints from github.com/etherkit/EtherkitKicadLibrary @6b9fc0f"))
+)
