@@ -1,8 +1,8 @@
 (export
 	(version "E")
 	(design
-		(source "/workspace/Si5351AVFO/PCB/Si5351AVFO.kicad_sch")
-		(date "2026-10-23T18:45:35")
+		(source "/__w/Si5351AVFO/Si5351AVFO/PCB/Si5351AVFO.kicad_sch")
+		(date "2026-10-24T01:48:38")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
@@ -9963,52 +9963,8 @@
 	)
 	(libraries
 		(library
-			(logical "Connector")
-			(uri "${KICAD10_SYMBOL_DIR}/Connector.kicad_sym")
-		)
-		(library
-			(logical "Connector_Generic")
-			(uri "${KICAD10_SYMBOL_DIR}/Connector_Generic.kicad_sym")
-		)
-		(library
-			(logical "Device")
-			(uri "${KICAD10_SYMBOL_DIR}/Device.kicad_sym")
-		)
-		(library
-			(logical "Interface_USB")
-			(uri "${KICAD10_SYMBOL_DIR}/Interface_USB.kicad_sym")
-		)
-		(library
-			(logical "Jumper")
-			(uri "${KICAD10_SYMBOL_DIR}/Jumper.kicad_sym")
-		)
-		(library
-			(logical "MCU_Microchip_ATtiny")
-			(uri "${KICAD10_SYMBOL_DIR}/MCU_Microchip_ATtiny.kicad_sym")
-		)
-		(library
-			(logical "Mechanical")
-			(uri "${KICAD10_SYMBOL_DIR}/Mechanical.kicad_sym")
-		)
-		(library
-			(logical "Oscillator")
-			(uri "${KICAD10_SYMBOL_DIR}/Oscillator.kicad_sym")
-		)
-		(library
-			(logical "Power_Protection")
-			(uri "${KICAD10_SYMBOL_DIR}/Power_Protection.kicad_sym")
-		)
-		(library
-			(logical "Regulator_Linear")
-			(uri "${KICAD10_SYMBOL_DIR}/Regulator_Linear.kicad_sym")
-		)
-		(library
 			(logical "Si5351AVFO")
 			(uri "${KIPRJMOD}/Si5351AVFO.kicad_sym")
-		)
-		(library
-			(logical "Switch")
-			(uri "${KICAD10_SYMBOL_DIR}/Switch.kicad_sym")
 		)
 	)
 	(nets
