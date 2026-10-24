@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/__w/Si5351AVFO/Si5351AVFO/PCB/Si5351AVFO.kicad_sch")
-		(date "2026-10-24T01:48:38")
+		(date "2026-10-24T01:49:59")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
