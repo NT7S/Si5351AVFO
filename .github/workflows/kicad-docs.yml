@@ -40,9 +40,16 @@ jobs:
       - name: Trust workspace
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
+      - name: Install default KiCad library tables for this user
+        run: |
+          d="$HOME/.config/kicad/10.0"; mkdir -p "$d"
+          for t in sym-lib-table fp-lib-table; do
+            [ -f "$d/$t" ] || cp "/usr/share/kicad/template/$t" "$d/$t"
+          done
+          ls -l "$d"
+
       - name: ERC (fail on errors only; warnings allowed)
         run: |
-          mkdir -p "$HOME"
           kicad-cli sch erc --severity-error --exit-code-violations \
             -o /tmp/erc-errors.rpt PCB/Si5351AVFO.kicad_sch
           cat /tmp/erc-errors.rpt || true
