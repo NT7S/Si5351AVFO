@@ -2707,7 +2707,7 @@
 		)
 		(uuid "061f4deb-331d-48ce-89cb-5cf882685b38")
 	)
-	(label "BTN_MENU"
+	(label "BTN_S3"
 		(at 165.1 110.49 0)
 		(effects
 			(font
@@ -2727,7 +2727,7 @@
 		)
 		(uuid "0a2fd76e-ceeb-4c28-af6a-efe411bfd2fa")
 	)
-	(label "BTN_BAND"
+	(label "BTN_S1"
 		(at 166.37 214.63 0)
 		(effects
 			(font
@@ -2777,7 +2777,7 @@
 		)
 		(uuid "22a857c8-f1d1-4b4f-8a9a-ae8c92c9e774")
 	)
-	(label "BTN_BAND"
+	(label "BTN_S1"
 		(at 134.62 123.19 180)
 		(effects
 			(font
@@ -2827,7 +2827,7 @@
 		)
 		(uuid "40e80b97-99bf-4782-bc98-14aa8f223c01")
 	)
-	(label "BTN_MENU_SW"
+	(label "BTN_S3_SW"
 		(at 165.1 260.35 180)
 		(effects
 			(font
@@ -2907,7 +2907,7 @@
 		)
 		(uuid "6282c8a0-2a53-4eca-aac0-84a73f9970e4")
 	)
-	(label "BTN_BAND_SW"
+	(label "BTN_S1_SW"
 		(at 151.13 214.63 180)
 		(effects
 			(font
@@ -2937,7 +2937,7 @@
 		)
 		(uuid "77559b66-30c6-4692-9c04-9205b863aefb")
 	)
-	(label "BTN_STEP_SW"
+	(label "BTN_S2_SW"
 		(at 193.04 214.63 180)
 		(effects
 			(font
@@ -2947,7 +2947,7 @@
 		)
 		(uuid "7effb1ce-97bb-440e-b126-e168006f4a74")
 	)
-	(label "BTN_STEP"
+	(label "BTN_S2"
 		(at 165.1 128.27 0)
 		(effects
 			(font
@@ -2977,7 +2977,7 @@
 		)
 		(uuid "89f51f96-7e96-444b-bcd9-53bf1d41bfd1")
 	)
-	(label "BTN_BAND_SW"
+	(label "BTN_S1_SW"
 		(at 105.41 260.35 180)
 		(effects
 			(font
@@ -2997,7 +2997,7 @@
 		)
 		(uuid "93b6d0d9-e289-4843-9d8f-372bd65e545d")
 	)
-	(label "BTN_MENU_SW"
+	(label "BTN_S3_SW"
 		(at 234.95 214.63 180)
 		(effects
 			(font
@@ -3007,7 +3007,7 @@
 		)
 		(uuid "a0f0a042-1bfd-4d2b-ba92-04d49f0500d9")
 	)
-	(label "BTN_STEP_SW"
+	(label "BTN_S2_SW"
 		(at 134.62 260.35 180)
 		(effects
 			(font
@@ -3027,7 +3027,7 @@
 		)
 		(uuid "c3dce509-e2fa-47ca-bb8e-c5ac45f33e9b")
 	)
-	(label "BTN_MENU"
+	(label "BTN_S3"
 		(at 250.19 214.63 0)
 		(effects
 			(font
@@ -3047,7 +3047,7 @@
 		)
 		(uuid "e2fa24e3-d64d-4b62-a7e9-8f61501672e0")
 	)
-	(label "BTN_STEP"
+	(label "BTN_S2"
 		(at 208.28 214.63 0)
 		(effects
 			(font
@@ -4466,7 +4466,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BAND"
+		(property "Value" "SOFT1"
 			(at 110.49 261.874 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6182,7 +6182,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MENU"
+		(property "Value" "SOFT3"
 			(at 170.18 261.874 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7247,7 +7247,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "STEP"
+		(property "Value" "SOFT2"
 			(at 139.7 261.874 0)
 			(show_name no)
 			(do_not_autoplace no)
