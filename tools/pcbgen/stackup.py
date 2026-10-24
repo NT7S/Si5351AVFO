@@ -1,0 +1,26 @@
+p='/workspace/Si5351AVFO/PCB/Si5351AVFO.kicad_pcb'
+s=open(p).read()
+st='''		(stackup
+			(layer "F.SilkS" (type "Top Silk Screen") (color "White"))
+			(layer "F.Paste" (type "Top Solder Paste"))
+			(layer "F.Mask" (type "Top Solder Mask") (color "Blue") (thickness 0.01) (material "LPI") (epsilon_r 3.8) (loss_tangent 0))
+			(layer "F.Cu" (type "copper") (thickness 0.035))
+			(layer "dielectric 1" (type "prepreg") (color "FR4 natural") (thickness 0.2104) (material "7628 (JLC04161H-7628)") (epsilon_r 4.4) (loss_tangent 0.02))
+			(layer "In1.Cu" (type "copper") (thickness 0.0152))
+			(layer "dielectric 2" (type "core") (color "FR4 natural") (thickness 1.065) (material "FR4 core") (epsilon_r 4.6) (loss_tangent 0.02))
+			(layer "In2.Cu" (type "copper") (thickness 0.0152))
+			(layer "dielectric 3" (type "prepreg") (color "FR4 natural") (thickness 0.2104) (material "7628 (JLC04161H-7628)") (epsilon_r 4.4) (loss_tangent 0.02))
+			(layer "B.Cu" (type "copper") (thickness 0.035))
+			(layer "B.Mask" (type "Bottom Solder Mask") (color "Blue") (thickness 0.01) (material "LPI") (epsilon_r 3.8) (loss_tangent 0))
+			(layer "B.Paste" (type "Bottom Solder Paste"))
+			(layer "B.SilkS" (type "Bottom Silk Screen") (color "White"))
+			(copper_finish "HAL lead-free")
+			(dielectric_constraints no)
+			(edge_connector no)
+			(castellated_pads no)
+			(edge_plating no)
+		)
+'''
+if '(stackup' not in s:
+    s=s.replace('\t(setup\n','\t(setup\n'+st,1)
+open(p,'w').write(s)
