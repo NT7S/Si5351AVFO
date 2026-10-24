@@ -10393,6 +10393,17 @@
 			(uuid "3e8f9f7d-ab6b-4f47-a8b6-9b881f0c60be")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/lib/Etherkit.3dshapes/RF_Fence_42x33.5_can_simple.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
