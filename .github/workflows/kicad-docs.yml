@@ -1,0 +1,68 @@
+name: KiCad docs and ERC
+
+on:
+  push:
+    paths:
+      - 'PCB/**/*.kicad_sch'
+      - 'PCB/*.kicad_pro'
+      - 'tools/export_docs.sh'
+      - '.github/workflows/kicad-docs.yml'
+  pull_request:
+    paths:
+      - 'PCB/**/*.kicad_sch'
+      - 'PCB/*.kicad_pro'
+      - 'tools/export_docs.sh'
+      - '.github/workflows/kicad-docs.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kicad-docs-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  erc-and-docs:
+    # Loop guard: never react to our own bot commits.
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:10.0
+      options: --user root
+    steps:
+      - name: Install git
+        run: apt-get update -qq && apt-get install -y -qq git >/dev/null
+
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'push' && github.ref || '' }}
+
+      - name: Trust workspace
+        run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
+      - name: ERC (fail on errors only; warnings allowed)
+        run: |
+          mkdir -p "$HOME"
+          kicad-cli sch erc --severity-error --exit-code-violations \
+            -o /tmp/erc-errors.rpt PCB/Si5351AVFO.kicad_sch
+          cat /tmp/erc-errors.rpt || true
+
+      - name: Export PDF, netlist, SVGs, ERC report
+        run: tools/export_docs.sh
+
+      - name: Commit regenerated docs (push only, skip date-only changes)
+        if: github.event_name == 'push'
+        run: |
+          git add -A docs
+          # Netlist, ERC report and SVGs are text renderings of the same
+          # schematic as the PDF. If they differ only in timestamp lines,
+          # the PDF change is just its embedded date: drop everything.
+          if git diff --cached --quiet -I 'date' -I 'ERC report \(' -- docs/Si5351AVFO.net docs/erc.rpt docs/svg \
+             && ! git diff --cached --name-only --diff-filter=AD -- docs | grep -q .; then
+            echo "Only embedded dates changed; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "docs: regenerate schematic PDF, netlist, SVGs, ERC report [skip ci]"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
