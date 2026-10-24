@@ -9,7 +9,7 @@
 		(date "2026-10-22")
 		(rev "A")
 		(company "Etherkit / NT7S")
-		(comment 1 "Draft schematic, not reviewed. See VERIFY notes.")
+		(comment 1 "Draft schematic, not reviewed. Open items: docs/VERIFY.md")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_Coaxial"
@@ -5249,17 +5249,6 @@
 				)
 			)
 		)
-		(property "VERIFY" "as R27"
-			(at 139.7 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "LCSC" "C17673"
 			(at 139.7 129.54 0)
 			(hide yes)
@@ -5597,17 +5586,6 @@
 				)
 			)
 		)
-		(property "VERIFY" "Footprint is a placeholder; check BWSMA-KE-P001 launch geometry and 1.6 mm edge fit."
-			(at 203.2 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "d712c71f-8c66-4916-adba-27c0dc87e6fb")
 		)
@@ -5688,17 +5666,6 @@
 			)
 		)
 		(property "LCSC" "C17477"
-			(at 40.64 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFY" "0603 0R series (Jason decision); LCSC code not in PLAN (C17477 is 0805)."
 			(at 40.64 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -5811,17 +5778,6 @@
 			)
 		)
 		(property "LCSC" "C17477"
-			(at 40.64 264.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFY" "see R100"
 			(at 40.64 264.16 0)
 			(hide yes)
 			(show_name no)
@@ -6990,17 +6946,6 @@
 				)
 			)
 		)
-		(property "VERIFY" "see J2"
-			(at 203.2 264.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "ea27e96a-f480-415f-9ca4-f6ca8de38983")
 		)
@@ -7081,17 +7026,6 @@
 			)
 		)
 		(property "LCSC" "C17477"
-			(at 40.64 218.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFY" "see R100"
 			(at 40.64 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -8037,17 +7971,6 @@
 				)
 			)
 		)
-		(property "VERIFY" "see R100"
-			(at 60.96 223.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "LCSC" "C17437"
 			(at 60.96 223.52 0)
 			(hide yes)
@@ -8944,17 +8867,6 @@
 			)
 		)
 		(property "Manufacturer" "BAT Wireless"
-			(at 203.2 218.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFY" "see J2"
 			(at 203.2 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -9966,17 +9878,6 @@
 				)
 			)
 		)
-		(property "VERIFY" "I2C pull-up value not fixed (PLAN 2.2-4.7k); no LCSC chosen. On +3V3D: ATtiny, Si5351, CP2102N and OLED all at 3.3 V, so I2C levels match."
-			(at 100.33 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "LCSC" "C17673"
 			(at 100.33 129.54 0)
 			(hide yes)
@@ -10625,17 +10526,6 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 60.96 269.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFY" "see R100"
 			(at 60.96 269.24 0)
 			(hide yes)
 			(show_name no)

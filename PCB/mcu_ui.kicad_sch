@@ -9,7 +9,7 @@
 		(date "2026-10-22")
 		(rev "A")
 		(company "Etherkit / NT7S")
-		(comment 1 "Draft schematic, not reviewed. See VERIFY notes.")
+		(comment 1 "Draft schematic, not reviewed. Open items: docs/VERIFY.md")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x04"
@@ -4157,17 +4157,6 @@
 				)
 			)
 		)
-		(property "VERIFY" "Replicated from EtherKeyerMini (R3); EKM has no LCSC/MPN fields - part number to choose."
-			(at 300.99 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "LCSC" "C23179"
 			(at 300.99 172.72 0)
 			(hide yes)
@@ -6682,17 +6671,6 @@
 				)
 			)
 		)
-		(property "VERIFY" "Replicated from EtherKeyerMini (D1); EKM has no LCSC/MPN fields - part number to choose."
-			(at 309.88 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "LCSC" "C154843"
 			(at 309.88 180.34 0)
 			(hide yes)
@@ -7527,17 +7505,6 @@
 				)
 			)
 		)
-		(property "VERIFY" "Replicated from EtherKeyerMini (J3); EKM has no LCSC/MPN fields - part number to choose."
-			(at 334.01 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "LCSC" "C124378"
 			(at 334.01 170.18 0)
 			(hide yes)
@@ -7792,17 +7759,6 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 185.42 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFY" "PLAN: series R or clamp on PB4 for DTR-rising overshoot? EKM has none."
 			(at 185.42 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -8144,17 +8100,6 @@
 			)
 		)
 		(property "Manufacturer" "Microchip"
-			(at 149.86 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFY" "Pin mux (PLAN sec.3) to be checked vs datasheet I/O mux table. Jason consigning parts."
 			(at 149.86 110.49 0)
 			(hide yes)
 			(show_name no)

@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/workspace/Si5351AVFO/PCB/Si5351AVFO.kicad_sch")
-		(date "2026-10-23T18:58:56")
+		(date "2026-10-23T19:10:50")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
@@ -16,7 +16,7 @@
 				(source "Si5351AVFO.kicad_sch")
 				(comment
 					(number "1")
-					(value "Draft schematic, not reviewed. See VERIFY notes.")
+					(value "Draft schematic, not reviewed. Open items: docs/VERIFY.md")
 				)
 				(comment
 					(number "2")
@@ -64,7 +64,7 @@
 				(source "power_usb.kicad_sch")
 				(comment
 					(number "1")
-					(value "Draft schematic, not reviewed. See VERIFY notes.")
+					(value "Draft schematic, not reviewed. Open items: docs/VERIFY.md")
 				)
 				(comment
 					(number "2")
@@ -112,7 +112,7 @@
 				(source "mcu_ui.kicad_sch")
 				(comment
 					(number "1")
-					(value "Draft schematic, not reviewed. See VERIFY notes.")
+					(value "Draft schematic, not reviewed. Open items: docs/VERIFY.md")
 				)
 				(comment
 					(number "2")
@@ -160,7 +160,7 @@
 				(source "synth_rf.kicad_sch")
 				(comment
 					(number "1")
-					(value "Draft schematic, not reviewed. See VERIFY notes.")
+					(value "Draft schematic, not reviewed. Open items: docs/VERIFY.md")
 				)
 				(comment
 					(number "2")
@@ -931,8 +931,6 @@
 				(field
 					(name "Manufacturer") "Samsung")
 				(field
-					(name "VERIFY") "OLED bulk value: PLAN start point 2x4.7u, tune by measurement")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
 				(field
 					(name "Datasheet")
@@ -956,10 +954,6 @@
 			(property
 				(name "Manufacturer")
 				(value "Samsung")
-			)
-			(property
-				(name "VERIFY")
-				(value "OLED bulk value: PLAN start point 2x4.7u, tune by measurement")
 			)
 			(property
 				(name "Sheetname")
@@ -1075,8 +1069,6 @@
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "VERIFY") "DNP 1206 site for larger OLED bulk cap; value/part not chosen")
-				(field
 					(name "LCSC") "C12891")
 				(field
 					(name "MPN") "CL31A226KAHNNNE")
@@ -1094,10 +1086,6 @@
 				(lib "Device")
 				(part "C_Small")
 				(description "Unpolarized capacitor, small symbol")
-			)
-			(property
-				(name "VERIFY")
-				(value "DNP 1206 site for larger OLED bulk cap; value/part not chosen")
 			)
 			(property
 				(name "LCSC")
@@ -1986,8 +1974,6 @@
 				(field
 					(name "Manufacturer") "YAGEO")
 				(field
-					(name "VERIFY") "PLAN says /RST pull-up to VBUS (as on adapter); CP2102N RST max is VIO-referenced - confirm adapter really ties to VBUS.")
-				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -2011,10 +1997,6 @@
 			(property
 				(name "Manufacturer")
 				(value "YAGEO")
-			)
-			(property
-				(name "VERIFY")
-				(value "PLAN says /RST pull-up to VBUS (as on adapter); CP2102N RST max is VIO-referenced - confirm adapter really ties to VBUS.")
 			)
 			(property
 				(name "Sheetname")
@@ -2367,8 +2349,6 @@
 				(field
 					(name "Manufacturer") "YAGEO")
 				(field
-					(name "VERIFY") "PLAN: series R or clamp on PB4 for DTR-rising overshoot? EKM has none.")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
 				(field
 					(name "Datasheet")
@@ -2392,10 +2372,6 @@
 			(property
 				(name "Manufacturer")
 				(value "YAGEO")
-			)
-			(property
-				(name "VERIFY")
-				(value "PLAN: series R or clamp on PB4 for DTR-rising overshoot? EKM has none.")
 			)
 			(property
 				(name "Sheetname")
@@ -3015,8 +2991,6 @@
 			(description "Schottky diode")
 			(fields
 				(field
-					(name "VERIFY") "Replicated from EtherKeyerMini (D1); EKM has no LCSC/MPN fields - part number to choose.")
-				(field
 					(name "LCSC") "C154843")
 				(field
 					(name "MPN") "1N5711W-7-F")
@@ -3034,10 +3008,6 @@
 				(lib "Device")
 				(part "D_Schottky")
 				(description "Schottky diode")
-			)
-			(property
-				(name "VERIFY")
-				(value "Replicated from EtherKeyerMini (D1); EKM has no LCSC/MPN fields - part number to choose.")
 			)
 			(property
 				(name "LCSC")
@@ -3183,8 +3153,6 @@
 			(description "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)")
 			(fields
 				(field
-					(name "VERIFY") "Replicated from EtherKeyerMini (J3); EKM has no LCSC/MPN fields - part number to choose.")
-				(field
 					(name "LCSC") "C124378")
 				(field
 					(name "MPN") "B-2100S04P-A110")
@@ -3202,10 +3170,6 @@
 				(lib "Connector_Generic")
 				(part "Conn_01x04")
 				(description "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)")
-			)
-			(property
-				(name "VERIFY")
-				(value "Replicated from EtherKeyerMini (J3); EKM has no LCSC/MPN fields - part number to choose.")
 			)
 			(property
 				(name "LCSC")
@@ -3339,8 +3303,6 @@
 			(description "Resistor, small symbol")
 			(fields
 				(field
-					(name "VERIFY") "Replicated from EtherKeyerMini (R3); EKM has no LCSC/MPN fields - part number to choose.")
-				(field
 					(name "LCSC") "C23179")
 				(field
 					(name "MPN") "0603WAF4700T5E")
@@ -3358,10 +3320,6 @@
 				(lib "Device")
 				(part "R_Small_US")
 				(description "Resistor, small US symbol")
-			)
-			(property
-				(name "VERIFY")
-				(value "Replicated from EtherKeyerMini (R3); EKM has no LCSC/MPN fields - part number to choose.")
 			)
 			(property
 				(name "LCSC")
@@ -4717,8 +4675,6 @@
 				(field
 					(name "Manufacturer") "Microchip")
 				(field
-					(name "VERIFY") "Pin mux (PLAN sec.3) to be checked vs datasheet I/O mux table. Jason consigning parts.")
-				(field
 					(name "Footprint") "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
 				(field
 					(name "Datasheet") "https://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny3224-3226-3227-Data-Sheet-DS40002345A.pdf")
@@ -4741,10 +4697,6 @@
 			(property
 				(name "Manufacturer")
 				(value "Microchip")
-			)
-			(property
-				(name "VERIFY")
-				(value "Pin mux (PLAN sec.3) to be checked vs datasheet I/O mux table. Jason consigning parts.")
 			)
 			(property
 				(name "Sheetname")
@@ -6792,8 +6744,6 @@
 				(field
 					(name "Manufacturer") "BAT Wireless")
 				(field
-					(name "VERIFY") "Footprint is a placeholder; check BWSMA-KE-P001 launch geometry and 1.6 mm edge fit.")
-				(field
 					(name "Footprint") "EtherkitKicadLibrary:SMA-ENDLAUNCH")
 				(field
 					(name "Datasheet")
@@ -6817,10 +6767,6 @@
 			(property
 				(name "Manufacturer")
 				(value "BAT Wireless")
-			)
-			(property
-				(name "VERIFY")
-				(value "Footprint is a placeholder; check BWSMA-KE-P001 launch geometry and 1.6 mm edge fit.")
 			)
 			(property
 				(name "Sheetname")
@@ -6870,8 +6816,6 @@
 				(field
 					(name "Manufacturer") "BAT Wireless")
 				(field
-					(name "VERIFY") "see J2")
-				(field
 					(name "Footprint") "EtherkitKicadLibrary:SMA-ENDLAUNCH")
 				(field
 					(name "Datasheet")
@@ -6895,10 +6839,6 @@
 			(property
 				(name "Manufacturer")
 				(value "BAT Wireless")
-			)
-			(property
-				(name "VERIFY")
-				(value "see J2")
 			)
 			(property
 				(name "Sheetname")
@@ -6948,8 +6888,6 @@
 				(field
 					(name "Manufacturer") "BAT Wireless")
 				(field
-					(name "VERIFY") "see J2")
-				(field
 					(name "Footprint") "EtherkitKicadLibrary:SMA-ENDLAUNCH")
 				(field
 					(name "Datasheet")
@@ -6973,10 +6911,6 @@
 			(property
 				(name "Manufacturer")
 				(value "BAT Wireless")
-			)
-			(property
-				(name "VERIFY")
-				(value "see J2")
 			)
 			(property
 				(name "Sheetname")
@@ -8391,8 +8325,6 @@
 			(description "Resistor, small symbol")
 			(fields
 				(field
-					(name "VERIFY") "I2C pull-up value not fixed (PLAN 2.2-4.7k); no LCSC chosen. On +3V3D: ATtiny, Si5351, CP2102N and OLED all at 3.3 V, so I2C levels match.")
-				(field
 					(name "LCSC") "C17673")
 				(field
 					(name "MPN") "0805W8F4701T5E")
@@ -8410,10 +8342,6 @@
 				(lib "Device")
 				(part "R_Small_US")
 				(description "Resistor, small US symbol")
-			)
-			(property
-				(name "VERIFY")
-				(value "I2C pull-up value not fixed (PLAN 2.2-4.7k); no LCSC chosen. On +3V3D: ATtiny, Si5351, CP2102N and OLED all at 3.3 V, so I2C levels match.")
 			)
 			(property
 				(name "LCSC")
@@ -8469,8 +8397,6 @@
 			(description "Resistor, small symbol")
 			(fields
 				(field
-					(name "VERIFY") "as R27")
-				(field
 					(name "LCSC") "C17673")
 				(field
 					(name "MPN") "0805W8F4701T5E")
@@ -8488,10 +8414,6 @@
 				(lib "Device")
 				(part "R_Small_US")
 				(description "Resistor, small US symbol")
-			)
-			(property
-				(name "VERIFY")
-				(value "as R27")
 			)
 			(property
 				(name "LCSC")
@@ -8549,8 +8471,6 @@
 				(field
 					(name "LCSC") "C17477")
 				(field
-					(name "VERIFY") "0603 0R series (Jason decision); LCSC code not in PLAN (C17477 is 0805).")
-				(field
 					(name "MPN") "0805W8F0000T5E")
 				(field
 					(name "Manufacturer") "UNI-ROYAL")
@@ -8570,10 +8490,6 @@
 			(property
 				(name "LCSC")
 				(value "C17477")
-			)
-			(property
-				(name "VERIFY")
-				(value "0603 0R series (Jason decision); LCSC code not in PLAN (C17477 is 0805).")
 			)
 			(property
 				(name "MPN")
@@ -8702,8 +8618,6 @@
 				(field
 					(name "LCSC") "C17477")
 				(field
-					(name "VERIFY") "see R100")
-				(field
 					(name "MPN") "0805W8F0000T5E")
 				(field
 					(name "Manufacturer") "UNI-ROYAL")
@@ -8723,10 +8637,6 @@
 			(property
 				(name "LCSC")
 				(value "C17477")
-			)
-			(property
-				(name "VERIFY")
-				(value "see R100")
 			)
 			(property
 				(name "MPN")
@@ -8778,8 +8688,6 @@
 			(description "Resistor, small symbol")
 			(fields
 				(field
-					(name "VERIFY") "see R100")
-				(field
 					(name "LCSC") "C17437")
 				(field
 					(name "MPN") "0805W8F1200T5E")
@@ -8797,10 +8705,6 @@
 				(lib "Device")
 				(part "R_Small_US")
 				(description "Resistor, small US symbol")
-			)
-			(property
-				(name "VERIFY")
-				(value "see R100")
 			)
 			(property
 				(name "LCSC")
@@ -8861,8 +8765,6 @@
 				(field
 					(name "LCSC") "C17477")
 				(field
-					(name "VERIFY") "see R100")
-				(field
 					(name "MPN") "0805W8F0000T5E")
 				(field
 					(name "Manufacturer") "UNI-ROYAL")
@@ -8882,10 +8784,6 @@
 			(property
 				(name "LCSC")
 				(value "C17477")
-			)
-			(property
-				(name "VERIFY")
-				(value "see R100")
 			)
 			(property
 				(name "MPN")
@@ -8937,8 +8835,6 @@
 			(description "Resistor, small symbol")
 			(fields
 				(field
-					(name "VERIFY") "see R100")
-				(field
 					(name "LCSC") "C17437")
 				(field
 					(name "MPN") "0805W8F1200T5E")
@@ -8956,10 +8852,6 @@
 				(lib "Device")
 				(part "R_Small_US")
 				(description "Resistor, small US symbol")
-			)
-			(property
-				(name "VERIFY")
-				(value "see R100")
 			)
 			(property
 				(name "LCSC")

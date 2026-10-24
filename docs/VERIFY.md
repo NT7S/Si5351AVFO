@@ -117,5 +117,22 @@ Checked items are finalized and their notes have been removed from the schematic
 - [x] **JP102-JP144**: Solder-jumper footprints (SolderJumper-2_P1.3mm_*_RoundedPad1.0x1.5mm) not RF-characterised; check pad parasitics at 160 MHz on layout. Bridged (NC) trace must be cut to remove a filter; then bridge the NO bypass.
   - Jason: OK
 
-- [ ] **LPF**: LPF values (CLK0/1 60 MHz, CLK2 160 MHz): designs in /workspace/vfo/lpf60 and /workspace/vfo/lpf (ngspice + Monte Carlo); confirm on a VNA once built.
+- [x] **LPF**: LPF values (CLK0/1 60 MHz, CLK2 160 MHz): designs in /workspace/vfo/lpf60 and /workspace/vfo/lpf (ngspice + Monte Carlo); confirm on a VNA once built.
+  - Jason: Will measure on actual hardware; not required before board order.
+
+## Pre-layout items (round 3)
+
+- [ ] **DS1 supply**: DS1 pin 2 (VCC) is fed from the 3.3 V LP2985 OLED rail (through R_OLED/FB2, bulk C22-C24). HS13L01W4S01 data sheet (HS, via LCSC C5139764): Absolute Maximum Ratings give module VCC 3-5 V, logic 1.65-3.3 V; DC Characteristics give the panel's internal DC/DC input VBAT 3.5-4.2 V. Sec. 1.5/1.7 don't show what sits between pin 2 and the panel's VBAT/VDD. Pin 2 is rated to 5 V while VDD maxes at 3.3 V, so the module must carry a regulator (usually a 3.3 V LDO on these boards); at 3.3 V in, VBAT would sit below its 3.5 V minimum. 3.3 V is inside the module-pin rating but likely below the DC/DC's. No change made. Options: (a) feed DS1 VCC from +5V through R_OLED + bulk (inside the 3-5 V module rating; SPI logic stays 3.3 V from the MCU); (b) keep 3.3 V if a bench check on your sample module shows full brightness and no dropout. Suggested check: power a sample at 3.3 V and 5 V and measure its onboard regulator output.
+  - Jason: 
+
+- [x] **J2-J4 fit**: BWSMA-KE-P001 (BAT Wireless data sheet rev July-2-2025-A01 p.6, plus the LCSC EasyEDA model for C496550): 6.5 mm square flange; GND legs 0.9 mm thick at +/-2.55 mm centres (4.2 mm inner, 6.0 mm outer), 4.0 mm long; 1.7 mm gap between top and bottom legs (fits a 1.6 mm board); centre pin on top. SMA-ENDLAUNCH: centre pad 1.8 x 5.08 mm; GND pads 1.8 x 5.08 mm at +/-3.0 mm (2.1-3.9 mm), on top and bottom. The legs (2.1-3.0 mm) land fully on the GND pads, flush with the pads' inner edge, and the 5.08 mm pads cover the 4.0 mm legs. Footprint kept. The 1.8 mm centre pad is wider than a 50-ohm trace, which is negligible at 160 MHz.
+  - Jason: 
+
+- [x] **X1 fit**: YXC TCXO data sheet (via LCSC C48888230) p.3, 3.2x2.5 package: leads 0.6 x 0.7 mm at 2.4 x 1.7 mm pitch; recommended land 1.0 x 0.8 mm at 2.6 x 1.9 mm. Pinout (top view): 1 NC (leave floating), 2 GND, 3 Output, 4 VDD, with pin 1 bottom-left, counter-clockwise. KiCad Oscillator_SMD_SeikoEpson_SG8002CE-4Pin_3.2x2.5mm has 1.4 x 1.2 mm pads at 2.4 x 1.9 mm pitch with the same numbering, and every lead sits fully on its pad. Symbol TCXO_4P pins (1 NC/EN, 2 GND, 3 OUT, 4 VDD) match. Footprint kept.
+  - Jason: 
+
+- [x] **Library**: EtherkitKicadLibrary now resolves from the project-local PCB/lib folder via PCB/sym-lib-table and PCB/fp-lib-table (${KIPRJMOD}). Etherkit.pretty holds SMA-ENDLAUNCH and EtherkitLogoSmall, copied unchanged from github.com/etherkit/EtherkitKicadLibrary @6b9fc0f. Etherkit.kicad_sym holds LOGO, copied from the copy embedded in your review commit 4963a6d (the public library has no LOGO symbol). ERC: 0 errors, 0 warnings.
+  - Jason: 
+
+- [x] **Title block**: comment 1 on all sheets changed to "Draft schematic, not reviewed. Open items: docs/VERIFY.md".
   - Jason: 

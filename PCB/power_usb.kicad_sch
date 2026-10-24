@@ -9,7 +9,7 @@
 		(date "2026-10-22")
 		(rev "A")
 		(company "Etherkit / NT7S")
-		(comment 1 "Draft schematic, not reviewed. See VERIFY notes.")
+		(comment 1 "Draft schematic, not reviewed. Open items: docs/VERIFY.md")
 	)
 	(lib_symbols
 		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
@@ -4311,17 +4311,6 @@
 				)
 			)
 		)
-		(property "VERIFY" "DNP 1206 site for larger OLED bulk cap; value/part not chosen"
-			(at 185.42 261.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "LCSC" "C12891"
 			(at 185.42 261.62 0)
 			(hide yes)
@@ -4459,17 +4448,6 @@
 			)
 		)
 		(property "Manufacturer" "Samsung"
-			(at 160.02 261.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFY" "OLED bulk value: PLAN start point 2x4.7u, tune by measurement"
 			(at 160.02 261.62 0)
 			(hide yes)
 			(show_name no)
@@ -10063,17 +10041,6 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 137.16 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFY" "PLAN says /RST pull-up to VBUS (as on adapter); CP2102N RST max is VIO-referenced - confirm adapter really ties to VBUS."
 			(at 137.16 59.69 0)
 			(hide yes)
 			(show_name no)
