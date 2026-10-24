@@ -2331,17 +2331,6 @@
 		)
 		(uuid "1044b112-d7a5-41de-8d59-e61b06ce6792")
 	)
-	(text "VERIFY (unconfirmed items on this sheet):\n- U4: Pin mux (PLAN sec.3) to be checked vs datasheet I/O mux table. Jason consigning parts.\n- C14: PLAN: series R or clamp on PB4 for DTR-rising overshoot? EKM has none.\n- J5: Replicated from EtherKeyerMini (J3); EKM has no LCSC/MPN fields - part number to choose.\n- R13: Replicated from EtherKeyerMini (R3); EKM has no LCSC/MPN fields - part number to choose.\n- D4: Replicated from EtherKeyerMini (D1); EKM has no LCSC/MPN fields - part number to choose."
-		(exclude_from_sim no)
-		(at 195 238 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left top)
-		)
-		(uuid "1937c5dc-18bf-48a1-a2fe-c9d8db0c25fe")
-	)
 	(text "OLED: SPI only (PA1 MOSI, PA3 SCK, PA4 CS1, PA5 DC). Never shares the Si5351 I2C bus.\nCS2 (font chip) held high by R26."
 		(exclude_from_sim no)
 		(at 255 130 0)
@@ -2408,6 +2397,16 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "79a7a2ba-061e-4776-8db7-bc024c7d16b5")
+	)
+	(wire
+		(pts
+			(xy 185.42 132.08) (xy 185.42 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3910829-815d-4f25-8d2e-e28bffd379d9")
 	)
 	(wire
 		(pts
@@ -2701,7 +2700,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 119.38) (xy 185.42 132.08)
+			(xy 185.42 119.38) (xy 185.42 127)
 		)
 		(stroke
 			(width 0)
@@ -3290,7 +3289,7 @@
 	)
 	(global_label "DTR"
 		(shape passive)
-		(at 185.42 137.16 270)
+		(at 185.42 142.24 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3300,7 +3299,7 @@
 		)
 		(uuid "cfba5075-c205-4cd3-9829-96918cb57ed6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 185.42 137.16 0)
+			(at 185.42 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4125,7 +4124,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 300.99 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -4159,6 +4158,39 @@
 			)
 		)
 		(property "VERIFY" "Replicated from EtherKeyerMini (R3); EKM has no LCSC/MPN fields - part number to choose."
+			(at 300.99 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23179"
+			(at 300.99 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF4700T5E"
+			(at 300.99 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 300.99 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -5868,6 +5900,120 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 185.42 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d54fc266-a159-44e9-b7bf-2bc783a97a49")
+		(property "Reference" "R29"
+			(at 187.22 128.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 187.22 131.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 185.42 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 185.42 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 185.42 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1001T5E"
+			(at 185.42 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 185.42 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fcb12a0f-67aa-41d8-924a-bcad5021ebc5")
+		)
+		(pin "2"
+			(uuid "7c4d6312-f747-485a-899b-31cb04fdfa01")
+		)
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000003"
+					(reference "R29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 326.39 175.26 270)
 		(unit 1)
@@ -6493,7 +6639,7 @@
 				)
 			)
 		)
-		(property "Value" "1N5711"
+		(property "Value" "1N5711W"
 			(at 317.5 181.61 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6503,7 +6649,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 309.88 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -6537,6 +6683,39 @@
 			)
 		)
 		(property "VERIFY" "Replicated from EtherKeyerMini (D1); EKM has no LCSC/MPN fields - part number to choose."
+			(at 309.88 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C154843"
+			(at 309.88 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "1N5711W-7-F"
+			(at 309.88 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Diodes Incorporated"
 			(at 309.88 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -7315,7 +7494,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 334.01 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -7349,6 +7528,39 @@
 			)
 		)
 		(property "VERIFY" "Replicated from EtherKeyerMini (J3); EKM has no LCSC/MPN fields - part number to choose."
+			(at 334.01 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C124378"
+			(at 334.01 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "B-2100S04P-A110"
+			(at 334.01 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Ckmtw"
 			(at 334.01 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -7495,7 +7707,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 185.42 134.62 180)
+		(at 185.42 139.7 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7505,7 +7717,7 @@
 		(dnp no)
 		(uuid "c5bfe053-4593-4241-9e35-6b7338f4b87c")
 		(property "Reference" "C14"
-			(at 189.87 133.35 0)
+			(at 189.87 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7515,7 +7727,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 189.87 135.89 0)
+			(at 189.87 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7525,7 +7737,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 185.42 134.62 0)
+			(at 185.42 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7536,7 +7748,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 134.62 0)
+			(at 185.42 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7547,7 +7759,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 185.42 134.62 0)
+			(at 185.42 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7558,7 +7770,7 @@
 			)
 		)
 		(property "LCSC" "C49678"
-			(at 185.42 134.62 0)
+			(at 185.42 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7569,7 +7781,7 @@
 			)
 		)
 		(property "MPN" "CC0805KRX7R9BB104"
-			(at 185.42 134.62 0)
+			(at 185.42 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7580,7 +7792,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 185.42 134.62 0)
+			(at 185.42 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7591,7 +7803,7 @@
 			)
 		)
 		(property "VERIFY" "PLAN: series R or clamp on PB4 for DTR-rising overshoot? EKM has none."
-			(at 185.42 134.62 0)
+			(at 185.42 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

@@ -3207,17 +3207,6 @@
 		)
 		(uuid "d99b4f92-956c-4189-8cf0-7791d40c5d60")
 	)
-	(text "VERIFY (unconfirmed items on this sheet):\n- R9: PLAN says /RST pull-up to VBUS (as on adapter); CP2102N RST max is VIO-referenced - confirm adapter really ties to\n   VBUS.\n- C22: OLED bulk value: PLAN start point 2x4.7u, tune by measurement\n- C24: DNP 1206 site for larger OLED bulk cap; value/part not chosen"
-		(exclude_from_sim no)
-		(at 230 150 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left top)
-		)
-		(uuid "faf25ac4-95a2-4eec-8845-b350cd9c2473")
-	)
 	(text "PCB: C10 100n + C11 4.7u at U3 pin 7 (VREGIN); C13 100n + C12 4.7u at\nU3 pin 6 (VDD) / pin 5 (VIO). 100n closest. GND to pin 2 / EP (25) with vias at pads."
 		(exclude_from_sim no)
 		(at 160.02 27.94 0)
@@ -3704,6 +3693,16 @@
 			(justify right bottom)
 		)
 		(uuid "2db22bd0-a4c6-4c3b-b786-a21e020510e4")
+	)
+	(label "CP_VDD"
+		(at 137.16 57.15 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2bae24d5-cd3d-49ad-a419-417cb6435f85")
 	)
 	(label "CP_VDD"
 		(at 245.11 44.45 0)
@@ -4255,7 +4254,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "0f78d740-5f25-4111-9bfc-87d14e954f6e")
 		(property "Reference" "C24"
 			(at 187.22 261.02 0)
@@ -4268,7 +4267,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DNP"
+		(property "Value" "22u"
 			(at 187.22 263.22 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4313,6 +4312,39 @@
 			)
 		)
 		(property "VERIFY" "DNP 1206 site for larger OLED bulk cap; value/part not chosen"
+			(at 185.42 261.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C12891"
+			(at 185.42 261.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL31A226KAHNNNE"
+			(at 185.42 261.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung"
 			(at 185.42 261.62 0)
 			(hide yes)
 			(show_name no)
@@ -4469,7 +4501,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -5527,82 +5559,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 137.16 57.15 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "38a44e92-cc4d-4621-b69c-98030c83ab42")
-		(property "Reference" "#PWR016"
-			(at 137.16 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 137.16 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 137.16 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 137.16 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 137.16 57.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "54b3fc98-afb7-44ea-8e8e-9a904a68034e")
-		)
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000002"
-					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 149.86 82.55 0)
 		(unit 1)
@@ -5912,7 +5868,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -9875,7 +9831,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -10757,7 +10713,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)

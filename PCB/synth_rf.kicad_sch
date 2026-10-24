@@ -1851,17 +1851,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "VERIFY (unconfirmed items on this sheet):\n- R27: I2C pull-up value not fixed (PLAN 2.2-4.7k); no LCSC chosen. On +3V3D: ATtiny, Si5351, CP2102N and OLED all at\n   3.3 V, so I2C levels match.\n- R28: as R27\n- R100: 0603 0R series (Jason decision); LCSC code not in PLAN (C17477 is 0805).\n- J2: Footprint is a placeholder; check BWSMA-KE-P001 launch geometry and 1.6 mm edge fit.\n- R120: see R100\n- R121: see R100\n- J3: see J2\n- R140: see R100\n- R141: see R100\n- J4: see J2"
-		(exclude_from_sim no)
-		(at 290 40 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left top)
-		)
-		(uuid "0e8af359-dc15-41ea-b549-8bc983de2308")
-	)
 	(text "CLK0 output chain (J2)"
 		(exclude_from_sim no)
 		(at 20 148.72 0)
@@ -3090,7 +3079,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -3444,7 +3433,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -5216,7 +5205,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "VERIFY 2.2k-4.7k"
+		(property "Value" "4.7k"
 			(at 141.5 131.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5261,6 +5250,39 @@
 			)
 		)
 		(property "VERIFY" "as R27"
+			(at 139.7 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17673"
+			(at 139.7 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0805W8F4701T5E"
+			(at 139.7 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 139.7 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -5509,7 +5531,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
+		(property "Footprint" "EtherkitKicadLibrary:SMA-ENDLAUNCH"
 			(at 203.2 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -5632,7 +5654,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 40.64 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -5665,7 +5687,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C17477"
 			(at 40.64 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -5677,6 +5699,28 @@
 			)
 		)
 		(property "VERIFY" "0603 0R series (Jason decision); LCSC code not in PLAN (C17477 is 0805)."
+			(at 40.64 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0805W8F0000T5E"
+			(at 40.64 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 40.64 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -5733,7 +5777,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 40.64 264.16 0)
 			(hide yes)
 			(show_name no)
@@ -5766,7 +5810,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C17477"
 			(at 40.64 264.16 0)
 			(hide yes)
 			(show_name no)
@@ -5778,6 +5822,28 @@
 			)
 		)
 		(property "VERIFY" "see R100"
+			(at 40.64 264.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0805W8F0000T5E"
+			(at 40.64 264.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 40.64 264.16 0)
 			(hide yes)
 			(show_name no)
@@ -5921,7 +5987,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -6237,7 +6303,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -6741,7 +6807,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -6858,7 +6924,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
+		(property "Footprint" "EtherkitKicadLibrary:SMA-ENDLAUNCH"
 			(at 203.2 264.16 0)
 			(hide yes)
 			(show_name no)
@@ -6981,7 +7047,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 40.64 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -7014,7 +7080,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C17477"
 			(at 40.64 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -7026,6 +7092,28 @@
 			)
 		)
 		(property "VERIFY" "see R100"
+			(at 40.64 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0805W8F0000T5E"
+			(at 40.64 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 40.64 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -7183,6 +7271,39 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 60.96 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17437"
+			(at 60.96 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0805W8F1200T5E"
+			(at 60.96 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 60.96 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -7927,6 +8048,39 @@
 				)
 			)
 		)
+		(property "LCSC" "C17437"
+			(at 60.96 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0805W8F1200T5E"
+			(at 60.96 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 60.96 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6e8f60b2-3744-4e61-88c7-d273e0309f73")
 		)
@@ -8179,7 +8333,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -8734,7 +8888,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
+		(property "Footprint" "EtherkitKicadLibrary:SMA-ENDLAUNCH"
 			(at 203.2 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -9662,7 +9816,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -9768,7 +9922,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "VERIFY 2.2k-4.7k"
+		(property "Value" "4.7k"
 			(at 102.13 131.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9813,6 +9967,39 @@
 			)
 		)
 		(property "VERIFY" "I2C pull-up value not fixed (PLAN 2.2-4.7k); no LCSC chosen. On +3V3D: ATtiny, Si5351, CP2102N and OLED all at 3.3 V, so I2C levels match."
+			(at 100.33 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17673"
+			(at 100.33 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0805W8F4701T5E"
+			(at 100.33 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 100.33 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -10298,7 +10485,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -10449,6 +10636,39 @@
 			)
 		)
 		(property "VERIFY" "see R100"
+			(at 60.96 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17437"
+			(at 60.96 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0805W8F1200T5E"
+			(at 60.96 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 60.96 269.24 0)
 			(hide yes)
 			(show_name no)
@@ -10744,7 +10964,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
