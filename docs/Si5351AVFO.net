@@ -1,8 +1,8 @@
 (export
 	(version "E")
 	(design
-		(source "/workspace/Si5351AVFO/PCB/Si5351AVFO.kicad_sch")
-		(date "2026-10-23T20:33:06")
+		(source "/workspace/wt-sch/PCB/Si5351AVFO.kicad_sch")
+		(date "2026-10-23T20:53:32")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
@@ -7202,6 +7202,70 @@
 			)
 		)
 		(comp
+			(ref "JP105")
+			(value "NO")
+			(footprint "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
+			(description "Solder Jumper, 2-pole, open")
+			(fields
+				(field
+					(name "LCSC")
+				)
+				(field
+					(name "Footprint") "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Solder Jumper, 2-pole, open")
+			)
+			(libsource
+				(lib "Jumper")
+				(part "SolderJumper_2_Open")
+				(description "Solder Jumper, 2-pole, open")
+			)
+			(property
+				(name "LCSC")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Synth and RF outputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "solder jumper SPST")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SolderJumper*Open*")
+			)
+			(sheetpath
+				(names "/Synth and RF outputs/")
+				(tstamps "/b0000000-0000-4000-8000-000000000004/")
+			)
+			(tstamps "8357e047-c31d-46e6-8191-33939bc31ca2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "JP122")
 			(value "NC")
 			(footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
@@ -7394,6 +7458,70 @@
 			)
 		)
 		(comp
+			(ref "JP125")
+			(value "NO")
+			(footprint "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
+			(description "Solder Jumper, 2-pole, open")
+			(fields
+				(field
+					(name "LCSC")
+				)
+				(field
+					(name "Footprint") "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Solder Jumper, 2-pole, open")
+			)
+			(libsource
+				(lib "Jumper")
+				(part "SolderJumper_2_Open")
+				(description "Solder Jumper, 2-pole, open")
+			)
+			(property
+				(name "LCSC")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Synth and RF outputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "solder jumper SPST")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SolderJumper*Open*")
+			)
+			(sheetpath
+				(names "/Synth and RF outputs/")
+				(tstamps "/b0000000-0000-4000-8000-000000000004/")
+			)
+			(tstamps "6192207a-848f-4f4c-bb27-3200fd7edca7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "JP142")
 			(value "NC")
 			(footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
@@ -7571,6 +7699,70 @@
 				(tstamps "/b0000000-0000-4000-8000-000000000004/")
 			)
 			(tstamps "6666c818-6a89-4fe6-b185-bcea0f1119cc")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "JP145")
+			(value "NO")
+			(footprint "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
+			(description "Solder Jumper, 2-pole, open")
+			(fields
+				(field
+					(name "LCSC")
+				)
+				(field
+					(name "Footprint") "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Solder Jumper, 2-pole, open")
+			)
+			(libsource
+				(lib "Jumper")
+				(part "SolderJumper_2_Open")
+				(description "Solder Jumper, 2-pole, open")
+			)
+			(property
+				(name "LCSC")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Synth and RF outputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "solder jumper SPST")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SolderJumper*Open*")
+			)
+			(sheetpath
+				(names "/Synth and RF outputs/")
+				(tstamps "/b0000000-0000-4000-8000-000000000004/")
+			)
+			(tstamps "57ca926b-ead6-4944-b691-3bf569edb719")
 			(units
 				(unit
 					(name "A")
@@ -11012,7 +11204,7 @@
 		(net
 			(code "29")
 			(name "/Synth and RF outputs/CLK0")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "R100")
 				(pin "1")
@@ -11027,8 +11219,25 @@
 		)
 		(net
 			(code "30")
+			(name "/Synth and RF outputs/CLK0_BYP")
+			(class "Default")
+			(node
+				(ref "JP104")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "JP105")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "31")
 			(name "/Synth and RF outputs/CLK1")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "R120")
 				(pin "1")
@@ -11042,9 +11251,26 @@
 			)
 		)
 		(net
-			(code "31")
+			(code "32")
+			(name "/Synth and RF outputs/CLK1_BYP")
+			(class "Default")
+			(node
+				(ref "JP124")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "JP125")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "33")
 			(name "/Synth and RF outputs/CLK2")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "R140")
 				(pin "1")
@@ -11058,7 +11284,24 @@
 			)
 		)
 		(net
-			(code "32")
+			(code "34")
+			(name "/Synth and RF outputs/CLK2_BYP")
+			(class "Default")
+			(node
+				(ref "JP144")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "JP145")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "35")
 			(name "DTR")
 			(class "Default")
 			(node
@@ -11074,7 +11317,7 @@
 			)
 		)
 		(net
-			(code "33")
+			(code "36")
 			(name "GND")
 			(class "Default")
 			(node
@@ -11452,7 +11695,7 @@
 			)
 		)
 		(net
-			(code "34")
+			(code "37")
 			(name "I2C_SCL")
 			(class "Default")
 			(node
@@ -11474,7 +11717,7 @@
 			)
 		)
 		(net
-			(code "35")
+			(code "38")
 			(name "I2C_SDA")
 			(class "Default")
 			(node
@@ -11496,7 +11739,7 @@
 			)
 		)
 		(net
-			(code "36")
+			(code "39")
 			(name "MCU_RX")
 			(class "Default")
 			(node
@@ -11513,7 +11756,7 @@
 			)
 		)
 		(net
-			(code "37")
+			(code "40")
 			(name "MCU_TX")
 			(class "Default")
 			(node
@@ -11530,7 +11773,7 @@
 			)
 		)
 		(net
-			(code "38")
+			(code "41")
 			(name "Net-(C14-Pad2)")
 			(class "Default")
 			(node
@@ -11545,9 +11788,9 @@
 			)
 		)
 		(net
-			(code "39")
+			(code "42")
 			(name "Net-(C100-Pad1)")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "C100")
 				(pin "1")
@@ -11560,9 +11803,9 @@
 			)
 		)
 		(net
-			(code "40")
+			(code "43")
 			(name "Net-(C102-Pad1)")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "C102")
 				(pin "1")
@@ -11590,9 +11833,9 @@
 			)
 		)
 		(net
-			(code "41")
+			(code "44")
 			(name "Net-(C103-Pad1)")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "C103")
 				(pin "1")
@@ -11620,9 +11863,9 @@
 			)
 		)
 		(net
-			(code "42")
+			(code "45")
 			(name "Net-(C120-Pad1)")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "C120")
 				(pin "1")
@@ -11635,9 +11878,9 @@
 			)
 		)
 		(net
-			(code "43")
+			(code "46")
 			(name "Net-(C122-Pad1)")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "C122")
 				(pin "1")
@@ -11665,9 +11908,9 @@
 			)
 		)
 		(net
-			(code "44")
+			(code "47")
 			(name "Net-(C123-Pad1)")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "C123")
 				(pin "1")
@@ -11695,9 +11938,9 @@
 			)
 		)
 		(net
-			(code "45")
+			(code "48")
 			(name "Net-(C140-Pad1)")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "C140")
 				(pin "1")
@@ -11710,9 +11953,9 @@
 			)
 		)
 		(net
-			(code "46")
+			(code "49")
 			(name "Net-(C142-Pad1)")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "C142")
 				(pin "1")
@@ -11740,9 +11983,9 @@
 			)
 		)
 		(net
-			(code "47")
+			(code "50")
 			(name "Net-(C143-Pad1)")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "C143")
 				(pin "1")
@@ -11770,7 +12013,7 @@
 			)
 		)
 		(net
-			(code "48")
+			(code "51")
 			(name "Net-(D4-A)")
 			(class "Default")
 			(node
@@ -11792,7 +12035,7 @@
 			)
 		)
 		(net
-			(code "49")
+			(code "52")
 			(name "Net-(J1-CC1)")
 			(class "Default")
 			(node
@@ -11808,7 +12051,7 @@
 			)
 		)
 		(net
-			(code "50")
+			(code "53")
 			(name "Net-(J1-CC2)")
 			(class "Default")
 			(node
@@ -11824,9 +12067,9 @@
 			)
 		)
 		(net
-			(code "51")
+			(code "54")
 			(name "Net-(J2-In)")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "J2")
 				(pin "1")
@@ -11840,16 +12083,16 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "JP104")
+				(ref "JP105")
 				(pin "2")
 				(pinfunction "B_2")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "52")
+			(code "55")
 			(name "Net-(J3-In)")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "J3")
 				(pin "1")
@@ -11863,16 +12106,16 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "JP124")
+				(ref "JP125")
 				(pin "2")
 				(pinfunction "B_2")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "53")
+			(code "56")
 			(name "Net-(J4-In)")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "J4")
 				(pin "1")
@@ -11886,16 +12129,16 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "JP144")
+				(ref "JP145")
 				(pin "2")
 				(pinfunction "B_2")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "54")
+			(code "57")
 			(name "Net-(JP102-A)")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "C100")
 				(pin "2")
@@ -11920,9 +12163,9 @@
 			)
 		)
 		(net
-			(code "55")
+			(code "58")
 			(name "Net-(JP102-B)")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "C101")
 				(pin "1")
@@ -11946,9 +12189,9 @@
 			)
 		)
 		(net
-			(code "56")
+			(code "59")
 			(name "Net-(JP103-A)")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "C104")
 				(pin "1")
@@ -11972,9 +12215,9 @@
 			)
 		)
 		(net
-			(code "57")
+			(code "60")
 			(name "Net-(JP122-A)")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "C120")
 				(pin "2")
@@ -11999,9 +12242,9 @@
 			)
 		)
 		(net
-			(code "58")
+			(code "61")
 			(name "Net-(JP122-B)")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "C121")
 				(pin "1")
@@ -12025,9 +12268,9 @@
 			)
 		)
 		(net
-			(code "59")
+			(code "62")
 			(name "Net-(JP123-A)")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "C124")
 				(pin "1")
@@ -12051,9 +12294,9 @@
 			)
 		)
 		(net
-			(code "60")
+			(code "63")
 			(name "Net-(JP142-A)")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "C140")
 				(pin "2")
@@ -12078,9 +12321,9 @@
 			)
 		)
 		(net
-			(code "61")
+			(code "64")
 			(name "Net-(JP142-B)")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "C141")
 				(pin "1")
@@ -12104,9 +12347,9 @@
 			)
 		)
 		(net
-			(code "62")
+			(code "65")
 			(name "Net-(JP143-A)")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "C144")
 				(pin "1")
@@ -12130,7 +12373,7 @@
 			)
 		)
 		(net
-			(code "63")
+			(code "66")
 			(name "Net-(U1-BP)")
 			(class "Default")
 			(node
@@ -12146,7 +12389,7 @@
 			)
 		)
 		(net
-			(code "64")
+			(code "67")
 			(name "Net-(U2-XA)")
 			(class "Default")
 			(node
@@ -12162,7 +12405,7 @@
 			)
 		)
 		(net
-			(code "65")
+			(code "68")
 			(name "Net-(U4-PB4)")
 			(class "Default")
 			(node
@@ -12183,7 +12426,7 @@
 			)
 		)
 		(net
-			(code "66")
+			(code "69")
 			(name "Net-(U5-BP)")
 			(class "Default")
 			(node
@@ -12199,7 +12442,7 @@
 			)
 		)
 		(net
-			(code "67")
+			(code "70")
 			(name "Net-(U5-VOUT)")
 			(class "Default")
 			(node
@@ -12220,7 +12463,7 @@
 			)
 		)
 		(net
-			(code "68")
+			(code "71")
 			(name "Net-(X1-NC{slash}EN)")
 			(class "Default")
 			(node
@@ -12236,7 +12479,7 @@
 			)
 		)
 		(net
-			(code "69")
+			(code "72")
 			(name "Net-(X1-OUT)")
 			(class "Default")
 			(node
@@ -12252,7 +12495,7 @@
 			)
 		)
 		(net
-			(code "70")
+			(code "73")
 			(name "Net-(X1-VDD)")
 			(class "Default")
 			(node
@@ -12278,7 +12521,7 @@
 			)
 		)
 		(net
-			(code "71")
+			(code "74")
 			(name "unconnected-(J1-SBU1-PadA8)")
 			(class "Default")
 			(node
@@ -12289,7 +12532,7 @@
 			)
 		)
 		(net
-			(code "72")
+			(code "75")
 			(name "unconnected-(J1-SBU2-PadB8)")
 			(class "Default")
 			(node
@@ -12300,7 +12543,7 @@
 			)
 		)
 		(net
-			(code "73")
+			(code "76")
 			(name "unconnected-(U2-XB-Pad3)")
 			(class "Default")
 			(node
@@ -12311,7 +12554,7 @@
 			)
 		)
 		(net
-			(code "74")
+			(code "77")
 			(name "unconnected-(U3-NC-Pad10)")
 			(class "Default")
 			(node
@@ -12322,7 +12565,7 @@
 			)
 		)
 		(net
-			(code "75")
+			(code "78")
 			(name "unconnected-(U3-NC-Pad16)")
 			(class "Default")
 			(node
@@ -12333,7 +12576,7 @@
 			)
 		)
 		(net
-			(code "76")
+			(code "79")
 			(name "unconnected-(U3-RS485{slash}GPIO.2-Pad12)")
 			(class "Default")
 			(node
@@ -12344,7 +12587,7 @@
 			)
 		)
 		(net
-			(code "77")
+			(code "80")
 			(name "unconnected-(U3-SUSPEND-Pad17)")
 			(class "Default")
 			(node
@@ -12355,7 +12598,7 @@
 			)
 		)
 		(net
-			(code "78")
+			(code "81")
 			(name "unconnected-(U3-~{CTS}-Pad18)")
 			(class "Default")
 			(node
@@ -12366,7 +12609,7 @@
 			)
 		)
 		(net
-			(code "79")
+			(code "82")
 			(name "unconnected-(U3-~{DCD}-Pad24)")
 			(class "Default")
 			(node
@@ -12377,7 +12620,7 @@
 			)
 		)
 		(net
-			(code "80")
+			(code "83")
 			(name "unconnected-(U3-~{DSR}-Pad22)")
 			(class "Default")
 			(node
@@ -12388,7 +12631,7 @@
 			)
 		)
 		(net
-			(code "81")
+			(code "84")
 			(name "unconnected-(U3-~{RI}{slash}CLK-Pad1)")
 			(class "Default")
 			(node
@@ -12399,7 +12642,7 @@
 			)
 		)
 		(net
-			(code "82")
+			(code "85")
 			(name "unconnected-(U3-~{RTS}-Pad19)")
 			(class "Default")
 			(node
@@ -12410,7 +12653,7 @@
 			)
 		)
 		(net
-			(code "83")
+			(code "86")
 			(name "unconnected-(U3-~{RXT}{slash}GPIO.1-Pad13)")
 			(class "Default")
 			(node
@@ -12421,7 +12664,7 @@
 			)
 		)
 		(net
-			(code "84")
+			(code "87")
 			(name "unconnected-(U3-~{SUSPEND}-Pad15)")
 			(class "Default")
 			(node
@@ -12432,7 +12675,7 @@
 			)
 		)
 		(net
-			(code "85")
+			(code "88")
 			(name "unconnected-(U3-~{TXT}{slash}GPIO.0-Pad14)")
 			(class "Default")
 			(node
@@ -12443,7 +12686,7 @@
 			)
 		)
 		(net
-			(code "86")
+			(code "89")
 			(name "unconnected-(U3-~{WAKEUP}{slash}GPIO.3-Pad11)")
 			(class "Default")
 			(node
@@ -12454,7 +12697,7 @@
 			)
 		)
 		(net
-			(code "87")
+			(code "90")
 			(name "unconnected-(U4-PA2-Pad18)")
 			(class "Default")
 			(node
