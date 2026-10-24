@@ -9,7 +9,7 @@
 		(date "2026-10-22")
 		(rev "A")
 		(company "Etherkit / NT7S")
-		(comment 1 "Draft schematic, not reviewed. See VERIFY notes.")
+		(comment 1 "Draft schematic, not reviewed. Open items: docs/VERIFY.md")
 	)
 	(lib_symbols)
 	(text "Si5351A VFO Rev A - Field Manual Ch. 6. Plan: PLAN.md (2026-10-22). Hierarchy: power/USB, MCU/UI, synth/RF.\nInter-sheet nets via global labels (MCU_TX, MCU_RX, DTR, I2C_SCL, I2C_SDA) and power rails."
