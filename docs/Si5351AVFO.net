@@ -1,8 +1,8 @@
 (export
 	(version "E")
 	(design
-		(source "/workspace/wt-sch/PCB/Si5351AVFO.kicad_sch")
-		(date "2026-10-24T13:51:10")
+		(source "/__w/Si5351AVFO/Si5351AVFO/PCB/Si5351AVFO.kicad_sch")
+		(date "2026-10-24T21:44:54")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
@@ -11451,7 +11451,7 @@
 		(net
 			(code "30")
 			(name "/Synth and RF outputs/CLK0_BYP")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "JP104")
 				(pin "2")
@@ -11484,7 +11484,7 @@
 		(net
 			(code "32")
 			(name "/Synth and RF outputs/CLK1_BYP")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "JP124")
 				(pin "2")
@@ -11517,7 +11517,7 @@
 		(net
 			(code "34")
 			(name "/Synth and RF outputs/CLK2_BYP")
-			(class "RF50")
+			(class "Default")
 			(node
 				(ref "JP144")
 				(pin "2")
