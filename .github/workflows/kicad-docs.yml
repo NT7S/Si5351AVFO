@@ -65,7 +65,7 @@ jobs:
           # Netlist, ERC report and SVGs are text renderings of the same
           # schematic as the PDF. If they differ only in timestamp lines,
           # the PDF change is just its embedded date: drop everything.
-          if git diff --cached --quiet -I 'date' -I '(source ' -I 'ERC report \(' -- docs/Si5351AVFO.net docs/erc.rpt docs/svg \
+          if git diff --cached --quiet -I 'date' -I '\(source ' -I 'ERC report \(' -- docs/Si5351AVFO.net docs/erc.rpt docs/svg \
              && ! git diff --cached --name-only --diff-filter=AD -- docs | grep -q .; then
             echo "Only embedded dates changed; nothing to commit."
             exit 0
