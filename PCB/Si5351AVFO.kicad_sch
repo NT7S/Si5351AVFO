@@ -1,5 +1,5 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "a0000000-0000-4000-8000-000000000001")
@@ -9,16 +9,20 @@
 		(date "2026-10-22")
 		(rev "A")
 		(company "Etherkit / NT7S")
-		(comment 1 "Draft schematic, not reviewed. See VERIFY notes."))
+		(comment 1 "Draft schematic, not reviewed. See VERIFY notes.")
+	)
 	(lib_symbols)
 	(text "Si5351A VFO Rev A - Field Manual Ch. 6. Plan: PLAN.md (2026-10-22). Hierarchy: power/USB, MCU/UI, synth/RF.\nInter-sheet nets via global labels (MCU_TX, MCU_RX, DTR, I2C_SCL, I2C_SDA) and power rails."
 		(exclude_from_sim no)
 		(at 20 20 0)
 		(effects
 			(font
-				(size 2 2))
-			(justify left top))
-		(uuid "8d4c322b-b76d-4ee4-8408-7af71233efb9"))
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "8d4c322b-b76d-4ee4-8408-7af71233efb9")
+	)
 	(sheet
 		(at 40 60)
 		(size 70 30)
@@ -29,26 +33,42 @@
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
-			(type solid))
+			(type solid)
+		)
 		(fill
-			(color 0 0 0 0.0000))
+			(color 0 0 0 0)
+		)
 		(uuid "b0000000-0000-4000-8000-000000000002")
 		(property "Sheetname" "Power and USB"
 			(at 40 59.3 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27))
-				(justify left bottom)))
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
 		(property "Sheetfile" "power_usb.kicad_sch"
 			(at 40 90.6 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27))
-				(justify left top)))
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001"
-					(page "2")))))
+					(page "2")
+				)
+			)
+		)
+	)
 	(sheet
 		(at 130 60)
 		(size 70 30)
@@ -59,26 +79,42 @@
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
-			(type solid))
+			(type solid)
+		)
 		(fill
-			(color 0 0 0 0.0000))
+			(color 0 0 0 0)
+		)
 		(uuid "b0000000-0000-4000-8000-000000000003")
 		(property "Sheetname" "MCU and UI"
 			(at 130 59.3 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27))
-				(justify left bottom)))
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
 		(property "Sheetfile" "mcu_ui.kicad_sch"
 			(at 130 90.6 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27))
-				(justify left top)))
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001"
-					(page "3")))))
+					(page "3")
+				)
+			)
+		)
+	)
 	(sheet
 		(at 220 60)
 		(size 70 30)
@@ -89,26 +125,46 @@
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
-			(type solid))
+			(type solid)
+		)
 		(fill
-			(color 0 0 0 0.0000))
+			(color 0 0 0 0)
+		)
 		(uuid "b0000000-0000-4000-8000-000000000004")
 		(property "Sheetname" "Synth and RF outputs"
 			(at 220 59.3 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27))
-				(justify left bottom)))
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
 		(property "Sheetfile" "synth_rf.kicad_sch"
 			(at 220 90.6 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27))
-				(justify left top)))
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001"
-					(page "4")))))
+					(page "4")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
-			(page "1"))))
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
