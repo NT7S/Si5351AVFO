@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/workspace/wt-sch/PCB/Si5351AVFO.kicad_sch")
-		(date "2026-10-23T22:26:44")
+		(date "2026-10-23T22:32:32")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
@@ -5038,17 +5038,17 @@
 		(comp
 			(ref "C26")
 			(value "100n")
-			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(footprint "Capacitor_SMD:C_0402_1005Metric")
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "LCSC") "C49678")
+					(name "LCSC") "C1525")
 				(field
-					(name "MPN") "CC0805KRX7R9BB104")
+					(name "MPN") "CL05B104KO5NNNC")
 				(field
-					(name "Manufacturer") "YAGEO")
+					(name "Manufacturer") "Samsung Electro-Mechanics")
 				(field
-					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+					(name "Footprint") "Capacitor_SMD:C_0402_1005Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -5062,15 +5062,15 @@
 			)
 			(property
 				(name "LCSC")
-				(value "C49678")
+				(value "C1525")
 			)
 			(property
 				(name "MPN")
-				(value "CC0805KRX7R9BB104")
+				(value "CL05B104KO5NNNC")
 			)
 			(property
 				(name "Manufacturer")
-				(value "YAGEO")
+				(value "Samsung Electro-Mechanics")
 			)
 			(property
 				(name "Sheetname")
@@ -8935,17 +8935,17 @@
 		(comp
 			(ref "R100")
 			(value "0")
-			(footprint "Resistor_SMD:R_0805_2012Metric")
+			(footprint "Resistor_SMD:R_0402_1005Metric")
 			(description "Resistor, small symbol")
 			(fields
 				(field
-					(name "LCSC") "C17477")
+					(name "LCSC") "C17168")
 				(field
-					(name "MPN") "0805W8F0000T5E")
+					(name "MPN") "0402WGF0000TCE")
 				(field
 					(name "Manufacturer") "UNI-ROYAL")
 				(field
-					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
+					(name "Footprint") "Resistor_SMD:R_0402_1005Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -8959,11 +8959,11 @@
 			)
 			(property
 				(name "LCSC")
-				(value "C17477")
+				(value "C17168")
 			)
 			(property
 				(name "MPN")
-				(value "0805W8F0000T5E")
+				(value "0402WGF0000TCE")
 			)
 			(property
 				(name "Manufacturer")
@@ -9082,17 +9082,17 @@
 		(comp
 			(ref "R120")
 			(value "0")
-			(footprint "Resistor_SMD:R_0805_2012Metric")
+			(footprint "Resistor_SMD:R_0402_1005Metric")
 			(description "Resistor, small symbol")
 			(fields
 				(field
-					(name "LCSC") "C17477")
+					(name "LCSC") "C17168")
 				(field
-					(name "MPN") "0805W8F0000T5E")
+					(name "MPN") "0402WGF0000TCE")
 				(field
 					(name "Manufacturer") "UNI-ROYAL")
 				(field
-					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
+					(name "Footprint") "Resistor_SMD:R_0402_1005Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -9106,11 +9106,11 @@
 			)
 			(property
 				(name "LCSC")
-				(value "C17477")
+				(value "C17168")
 			)
 			(property
 				(name "MPN")
-				(value "0805W8F0000T5E")
+				(value "0402WGF0000TCE")
 			)
 			(property
 				(name "Manufacturer")
@@ -9229,17 +9229,17 @@
 		(comp
 			(ref "R140")
 			(value "0")
-			(footprint "Resistor_SMD:R_0805_2012Metric")
+			(footprint "Resistor_SMD:R_0402_1005Metric")
 			(description "Resistor, small symbol")
 			(fields
 				(field
-					(name "LCSC") "C17477")
+					(name "LCSC") "C17168")
 				(field
-					(name "MPN") "0805W8F0000T5E")
+					(name "MPN") "0402WGF0000TCE")
 				(field
 					(name "Manufacturer") "UNI-ROYAL")
 				(field
-					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
+					(name "Footprint") "Resistor_SMD:R_0402_1005Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -9253,11 +9253,11 @@
 			)
 			(property
 				(name "LCSC")
-				(value "C17477")
+				(value "C17168")
 			)
 			(property
 				(name "MPN")
-				(value "0805W8F0000T5E")
+				(value "0402WGF0000TCE")
 			)
 			(property
 				(name "Manufacturer")
