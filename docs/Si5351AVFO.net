@@ -1,8 +1,8 @@
 (export
 	(version "E")
 	(design
-		(source "/workspace/Si5351AVFO/PCB/Si5351AVFO.kicad_sch")
-		(date "2026-10-23T19:46:46")
+		(source "/workspace/wt-sch/PCB/Si5351AVFO.kicad_sch")
+		(date "2026-10-23T20:13:40")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
@@ -6679,10 +6679,11 @@
 			(ref "J2")
 			(value "SMA CLK0")
 			(footprint "EtherkitKicadLibrary:SMA-ENDLAUNCH")
-			(description "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)")
+			(description "SMA end-launch jack, edge mount. DNP, supplied in kit, user-soldered.")
 			(fields
 				(field
-					(name "LCSC") "C496550")
+					(name "LCSC")
+				)
 				(field
 					(name "MPN") "BWSMA-KE-P001")
 				(field
@@ -6693,7 +6694,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)")
+					(name "Description") "SMA end-launch jack, edge mount. DNP, supplied in kit, user-soldered.")
 			)
 			(libsource
 				(lib "Connector")
@@ -6702,7 +6703,7 @@
 			)
 			(property
 				(name "LCSC")
-				(value "C496550")
+				(value "")
 			)
 			(property
 				(name "MPN")
@@ -6719,6 +6720,15 @@
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -6751,10 +6761,11 @@
 			(ref "J3")
 			(value "SMA CLK1")
 			(footprint "EtherkitKicadLibrary:SMA-ENDLAUNCH")
-			(description "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)")
+			(description "SMA end-launch jack, edge mount. DNP, supplied in kit, user-soldered.")
 			(fields
 				(field
-					(name "LCSC") "C496550")
+					(name "LCSC")
+				)
 				(field
 					(name "MPN") "BWSMA-KE-P001")
 				(field
@@ -6765,7 +6776,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)")
+					(name "Description") "SMA end-launch jack, edge mount. DNP, supplied in kit, user-soldered.")
 			)
 			(libsource
 				(lib "Connector")
@@ -6774,7 +6785,7 @@
 			)
 			(property
 				(name "LCSC")
-				(value "C496550")
+				(value "")
 			)
 			(property
 				(name "MPN")
@@ -6791,6 +6802,15 @@
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -6823,10 +6843,11 @@
 			(ref "J4")
 			(value "SMA CLK2")
 			(footprint "EtherkitKicadLibrary:SMA-ENDLAUNCH")
-			(description "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)")
+			(description "SMA end-launch jack, edge mount. DNP, supplied in kit, user-soldered.")
 			(fields
 				(field
-					(name "LCSC") "C496550")
+					(name "LCSC")
+				)
 				(field
 					(name "MPN") "BWSMA-KE-P001")
 				(field
@@ -6837,7 +6858,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)")
+					(name "Description") "SMA end-launch jack, edge mount. DNP, supplied in kit, user-soldered.")
 			)
 			(libsource
 				(lib "Connector")
@@ -6846,7 +6867,7 @@
 			)
 			(property
 				(name "LCSC")
-				(value "C496550")
+				(value "")
 			)
 			(property
 				(name "MPN")
@@ -6863,6 +6884,15 @@
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")

@@ -89,6 +89,7 @@ Checked items are finalized and their notes have been removed from the schematic
 - [x] **J2**: Footprint is a placeholder; check BWSMA-KE-P001 launch geometry and 1.6 mm edge fit.
   - Jason: USE SMA-ENDLAUNCH FOOTPRINT FROM ETHERKITKICADLIBRARY
   - KiCad EE: Applied the EtherkitKicadLibrary:SMA-ENDLAUNCH footprint (pad 1 = center pin, pad 2 = GND on both sides plus vias, which matches Conn_Coaxial pins 1/2). The footprint isn't in this project's library table, so it only resolves where your Etherkit library is installed (ERC warns about it). LCSC C496550 BWSMA-KE-P001 (34 k in stock) is kept, but I haven't checked its body against this footprint.
+  - Resolved (Jason, 2026-10-23): J2-J4 are DNP, supplied in kit, user-soldered. in_bom/in_pos_files off, LCSC cleared; MPN BWSMA-KE-P001 kept for kit sourcing. PCB: keep pads exposed and the footprint edge line on the board edge so the user can solder it by hand.
 
 - [x] **R120**: see R100
   - Jason: USE 0805
@@ -100,7 +101,7 @@ Checked items are finalized and their notes have been removed from the schematic
 
 - [x] **J3**: see J2
   - Jason: USE SMA-ENDLAUNCH FOOTPRINT FROM ETHERKITKICADLIBRARY
-  - KiCad EE: Same as J2.
+  - KiCad EE: Same as J2 (DNP, supplied in kit, user-soldered).
 
 - [x] **R140**: see R100
   - Jason: USE 0805
@@ -112,7 +113,7 @@ Checked items are finalized and their notes have been removed from the schematic
 
 - [x] **J4**: see J2
   - Jason: USE SMA-ENDLAUNCH FOOTPRINT FROM ETHERKITKICADLIBRARY
-  - KiCad EE: Same as J2.
+  - KiCad EE: Same as J2 (DNP, supplied in kit, user-soldered).
 
 - [x] **JP102-JP144**: Solder-jumper footprints (SolderJumper-2_P1.3mm_*_RoundedPad1.0x1.5mm) not RF-characterised; check pad parasitics at 160 MHz on layout. Bridged (NC) trace must be cut to remove a filter; then bridge the NO bypass.
   - Jason: OK
