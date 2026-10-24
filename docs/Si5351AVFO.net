@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/workspace/wt-sch/PCB/Si5351AVFO.kicad_sch")
-		(date "2026-10-23T20:24:27")
+		(date "2026-10-23T20:28:41")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
@@ -2056,6 +2056,66 @@
 						)
 						(pin
 							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SH1")
+			(value "RF_FENCE")
+			(footprint "EtherkitKicadLibrary:RF_Fence_42x33.5mm")
+			(description "DNP RF shield solder fence (42x33.5 mm, 1 mm GND strip) for a user-cut tin-plate can over Si5351/TCXO/LPFs; not in BOM")
+			(fields
+				(field
+					(name "Footprint") "EtherkitKicadLibrary:RF_Fence_42x33.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "DNP RF shield solder fence (42x33.5 mm, 1 mm GND strip) for a user-cut tin-plate can over Si5351/TCXO/LPFs; not in BOM")
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "MountingHole_Pad")
+				(description "Mounting Hole with connection")
+			)
+			(property
+				(name "Sheetname")
+				(value "Power and USB")
+			)
+			(property
+				(name "Sheetfile")
+				(value "power_usb.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "mounting hole")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "MountingHole*Pad*")
+			)
+			(sheetpath
+				(names "/Power and USB/")
+				(tstamps "/b0000000-0000-4000-8000-000000000002/")
+			)
+			(tstamps "27ece595-9209-4d9e-9b8d-58988c5c8f1a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
 						)
 					)
 				)
@@ -11311,6 +11371,12 @@
 				(ref "R8")
 				(pin "2")
 				(pintype "passive")
+			)
+			(node
+				(ref "SH1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
 			)
 			(node
 				(ref "SW1")
