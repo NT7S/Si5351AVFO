@@ -1,8 +1,8 @@
 (export
 	(version "E")
 	(design
-		(source "/__w/Si5351AVFO/Si5351AVFO/PCB/Si5351AVFO.kicad_sch")
-		(date "2026-10-24T01:52:56")
+		(source "/workspace/Si5351AVFO/PCB/Si5351AVFO.kicad_sch")
+		(date "2026-10-23T18:58:56")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
@@ -1070,12 +1070,18 @@
 		)
 		(comp
 			(ref "C24")
-			(value "DNP")
+			(value "22u")
 			(footprint "Capacitor_SMD:C_1206_3216Metric")
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
 					(name "VERIFY") "DNP 1206 site for larger OLED bulk cap; value/part not chosen")
+				(field
+					(name "LCSC") "C12891")
+				(field
+					(name "MPN") "CL31A226KAHNNNE")
+				(field
+					(name "Manufacturer") "Samsung")
 				(field
 					(name "Footprint") "Capacitor_SMD:C_1206_3216Metric")
 				(field
@@ -1094,15 +1100,24 @@
 				(value "DNP 1206 site for larger OLED bulk cap; value/part not chosen")
 			)
 			(property
+				(name "LCSC")
+				(value "C12891")
+			)
+			(property
+				(name "MPN")
+				(value "CL31A226KAHNNNE")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Samsung")
+			)
+			(property
 				(name "Sheetname")
 				(value "Power and USB")
 			)
 			(property
 				(name "Sheetfile")
 				(value "power_usb.kicad_sch")
-			)
-			(property
-				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -1381,6 +1396,9 @@
 				(value "power_usb.kicad_sch")
 			)
 			(property
+				(name "exclude_from_bom")
+			)
+			(property
 				(name "ki_keywords")
 				(value "mounting hole")
 			)
@@ -1426,6 +1444,9 @@
 			(property
 				(name "Sheetfile")
 				(value "power_usb.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
 			)
 			(property
 				(name "ki_keywords")
@@ -1475,6 +1496,9 @@
 				(value "power_usb.kicad_sch")
 			)
 			(property
+				(name "exclude_from_bom")
+			)
+			(property
 				(name "ki_keywords")
 				(value "mounting hole")
 			)
@@ -1520,6 +1544,9 @@
 			(property
 				(name "Sheetfile")
 				(value "power_usb.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
 			)
 			(property
 				(name "ki_keywords")
@@ -2983,14 +3010,20 @@
 		)
 		(comp
 			(ref "D4")
-			(value "1N5711")
-			(footprint "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal")
+			(value "1N5711W")
+			(footprint "Diode_SMD:D_SOD-123")
 			(description "Schottky diode")
 			(fields
 				(field
 					(name "VERIFY") "Replicated from EtherKeyerMini (D1); EKM has no LCSC/MPN fields - part number to choose.")
 				(field
-					(name "Footprint") "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal")
+					(name "LCSC") "C154843")
+				(field
+					(name "MPN") "1N5711W-7-F")
+				(field
+					(name "Manufacturer") "Diodes Incorporated")
+				(field
+					(name "Footprint") "Diode_SMD:D_SOD-123")
 				(field
 					(name "Datasheet")
 				)
@@ -3005,6 +3038,18 @@
 			(property
 				(name "VERIFY")
 				(value "Replicated from EtherKeyerMini (D1); EKM has no LCSC/MPN fields - part number to choose.")
+			)
+			(property
+				(name "LCSC")
+				(value "C154843")
+			)
+			(property
+				(name "MPN")
+				(value "1N5711W-7-F")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Diodes Incorporated")
 			)
 			(property
 				(name "Sheetname")
@@ -3134,13 +3179,19 @@
 		(comp
 			(ref "J5")
 			(value "UPDI")
-			(footprint "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
 			(description "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)")
 			(fields
 				(field
 					(name "VERIFY") "Replicated from EtherKeyerMini (J3); EKM has no LCSC/MPN fields - part number to choose.")
 				(field
-					(name "Footprint") "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical")
+					(name "LCSC") "C124378")
+				(field
+					(name "MPN") "B-2100S04P-A110")
+				(field
+					(name "Manufacturer") "Ckmtw")
+				(field
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
 				(field
 					(name "Datasheet")
 				)
@@ -3155,6 +3206,18 @@
 			(property
 				(name "VERIFY")
 				(value "Replicated from EtherKeyerMini (J3); EKM has no LCSC/MPN fields - part number to choose.")
+			)
+			(property
+				(name "LCSC")
+				(value "C124378")
+			)
+			(property
+				(name "MPN")
+				(value "B-2100S04P-A110")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Ckmtw")
 			)
 			(property
 				(name "Sheetname")
@@ -3272,13 +3335,19 @@
 		(comp
 			(ref "R13")
 			(value "470")
-			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
 			(description "Resistor, small symbol")
 			(fields
 				(field
 					(name "VERIFY") "Replicated from EtherKeyerMini (R3); EKM has no LCSC/MPN fields - part number to choose.")
 				(field
-					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical")
+					(name "LCSC") "C23179")
+				(field
+					(name "MPN") "0603WAF4700T5E")
+				(field
+					(name "Manufacturer") "UNI-ROYAL")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -3293,6 +3362,18 @@
 			(property
 				(name "VERIFY")
 				(value "Replicated from EtherKeyerMini (R3); EKM has no LCSC/MPN fields - part number to choose.")
+			)
+			(property
+				(name "LCSC")
+				(value "C23179")
+			)
+			(property
+				(name "MPN")
+				(value "0603WAF4700T5E")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL")
 			)
 			(property
 				(name "Sheetname")
@@ -4251,6 +4332,78 @@
 				(tstamps "/b0000000-0000-4000-8000-000000000003/")
 			)
 			(tstamps "8dd20e9b-267a-40d1-8a8f-41817e39490d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R29")
+			(value "1k")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor, small symbol")
+			(fields
+				(field
+					(name "LCSC") "C21190")
+				(field
+					(name "MPN") "0603WAF1001T5E")
+				(field
+					(name "Manufacturer") "UNI-ROYAL")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor, small symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "R_Small_US")
+				(description "Resistor, small US symbol")
+			)
+			(property
+				(name "LCSC")
+				(value "C21190")
+			)
+			(property
+				(name "MPN")
+				(value "0603WAF1001T5E")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL")
+			)
+			(property
+				(name "Sheetname")
+				(value "MCU and UI")
+			)
+			(property
+				(name "Sheetfile")
+				(value "mcu_ui.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "r resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/MCU and UI/")
+				(tstamps "/b0000000-0000-4000-8000-000000000003/")
+			)
+			(tstamps "d54fc266-a159-44e9-b7bf-2bc783a97a49")
 			(units
 				(unit
 					(name "A")
@@ -6629,7 +6782,7 @@
 		(comp
 			(ref "J2")
 			(value "SMA CLK0")
-			(footprint "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount")
+			(footprint "EtherkitKicadLibrary:SMA-ENDLAUNCH")
 			(description "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)")
 			(fields
 				(field
@@ -6641,7 +6794,7 @@
 				(field
 					(name "VERIFY") "Footprint is a placeholder; check BWSMA-KE-P001 launch geometry and 1.6 mm edge fit.")
 				(field
-					(name "Footprint") "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount")
+					(name "Footprint") "EtherkitKicadLibrary:SMA-ENDLAUNCH")
 				(field
 					(name "Datasheet")
 				)
@@ -6707,7 +6860,7 @@
 		(comp
 			(ref "J3")
 			(value "SMA CLK1")
-			(footprint "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount")
+			(footprint "EtherkitKicadLibrary:SMA-ENDLAUNCH")
 			(description "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)")
 			(fields
 				(field
@@ -6719,7 +6872,7 @@
 				(field
 					(name "VERIFY") "see J2")
 				(field
-					(name "Footprint") "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount")
+					(name "Footprint") "EtherkitKicadLibrary:SMA-ENDLAUNCH")
 				(field
 					(name "Datasheet")
 				)
@@ -6785,7 +6938,7 @@
 		(comp
 			(ref "J4")
 			(value "SMA CLK2")
-			(footprint "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount")
+			(footprint "EtherkitKicadLibrary:SMA-ENDLAUNCH")
 			(description "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)")
 			(fields
 				(field
@@ -6797,7 +6950,7 @@
 				(field
 					(name "VERIFY") "see J2")
 				(field
-					(name "Footprint") "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount")
+					(name "Footprint") "EtherkitKicadLibrary:SMA-ENDLAUNCH")
 				(field
 					(name "Datasheet")
 				)
@@ -6895,6 +7048,9 @@
 				(value "synth_rf.kicad_sch")
 			)
 			(property
+				(name "exclude_from_bom")
+			)
+			(property
 				(name "ki_keywords")
 				(value "solder jumper SPST")
 			)
@@ -6954,6 +7110,9 @@
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
 			)
 			(property
 				(name "ki_keywords")
@@ -7017,6 +7176,9 @@
 				(value "synth_rf.kicad_sch")
 			)
 			(property
+				(name "exclude_from_bom")
+			)
+			(property
 				(name "ki_keywords")
 				(value "solder jumper SPST")
 			)
@@ -7076,6 +7238,9 @@
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
 			)
 			(property
 				(name "ki_keywords")
@@ -7139,6 +7304,9 @@
 				(value "synth_rf.kicad_sch")
 			)
 			(property
+				(name "exclude_from_bom")
+			)
+			(property
 				(name "ki_keywords")
 				(value "solder jumper SPST")
 			)
@@ -7198,6 +7366,9 @@
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
 			)
 			(property
 				(name "ki_keywords")
@@ -7261,6 +7432,9 @@
 				(value "synth_rf.kicad_sch")
 			)
 			(property
+				(name "exclude_from_bom")
+			)
+			(property
 				(name "ki_keywords")
 				(value "solder jumper SPST")
 			)
@@ -7322,6 +7496,9 @@
 				(value "synth_rf.kicad_sch")
 			)
 			(property
+				(name "exclude_from_bom")
+			)
+			(property
 				(name "ki_keywords")
 				(value "solder jumper SPST")
 			)
@@ -7381,6 +7558,9 @@
 			(property
 				(name "Sheetfile")
 				(value "synth_rf.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
 			)
 			(property
 				(name "ki_keywords")
@@ -8206,12 +8386,18 @@
 		)
 		(comp
 			(ref "R27")
-			(value "VERIFY 2.2k-4.7k")
+			(value "4.7k")
 			(footprint "Resistor_SMD:R_0805_2012Metric")
 			(description "Resistor, small symbol")
 			(fields
 				(field
 					(name "VERIFY") "I2C pull-up value not fixed (PLAN 2.2-4.7k); no LCSC chosen. On +3V3D: ATtiny, Si5351, CP2102N and OLED all at 3.3 V, so I2C levels match.")
+				(field
+					(name "LCSC") "C17673")
+				(field
+					(name "MPN") "0805W8F4701T5E")
+				(field
+					(name "Manufacturer") "UNI-ROYAL")
 				(field
 					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
 				(field
@@ -8228,6 +8414,18 @@
 			(property
 				(name "VERIFY")
 				(value "I2C pull-up value not fixed (PLAN 2.2-4.7k); no LCSC chosen. On +3V3D: ATtiny, Si5351, CP2102N and OLED all at 3.3 V, so I2C levels match.")
+			)
+			(property
+				(name "LCSC")
+				(value "C17673")
+			)
+			(property
+				(name "MPN")
+				(value "0805W8F4701T5E")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL")
 			)
 			(property
 				(name "Sheetname")
@@ -8266,12 +8464,18 @@
 		)
 		(comp
 			(ref "R28")
-			(value "VERIFY 2.2k-4.7k")
+			(value "4.7k")
 			(footprint "Resistor_SMD:R_0805_2012Metric")
 			(description "Resistor, small symbol")
 			(fields
 				(field
 					(name "VERIFY") "as R27")
+				(field
+					(name "LCSC") "C17673")
+				(field
+					(name "MPN") "0805W8F4701T5E")
+				(field
+					(name "Manufacturer") "UNI-ROYAL")
 				(field
 					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
 				(field
@@ -8288,6 +8492,18 @@
 			(property
 				(name "VERIFY")
 				(value "as R27")
+			)
+			(property
+				(name "LCSC")
+				(value "C17673")
+			)
+			(property
+				(name "MPN")
+				(value "0805W8F4701T5E")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL")
 			)
 			(property
 				(name "Sheetname")
@@ -8327,16 +8543,19 @@
 		(comp
 			(ref "R100")
 			(value "0")
-			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
 			(description "Resistor, small symbol")
 			(fields
 				(field
-					(name "LCSC")
-				)
+					(name "LCSC") "C17477")
 				(field
 					(name "VERIFY") "0603 0R series (Jason decision); LCSC code not in PLAN (C17477 is 0805).")
 				(field
-					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+					(name "MPN") "0805W8F0000T5E")
+				(field
+					(name "Manufacturer") "UNI-ROYAL")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -8350,11 +8569,19 @@
 			)
 			(property
 				(name "LCSC")
-				(value "")
+				(value "C17477")
 			)
 			(property
 				(name "VERIFY")
 				(value "0603 0R series (Jason decision); LCSC code not in PLAN (C17477 is 0805).")
+			)
+			(property
+				(name "MPN")
+				(value "0805W8F0000T5E")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL")
 			)
 			(property
 				(name "Sheetname")
@@ -8398,6 +8625,12 @@
 			(description "Resistor, small symbol")
 			(fields
 				(field
+					(name "LCSC") "C17437")
+				(field
+					(name "MPN") "0805W8F1200T5E")
+				(field
+					(name "Manufacturer") "UNI-ROYAL")
+				(field
 					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
 				(field
 					(name "Datasheet")
@@ -8409,6 +8642,18 @@
 				(lib "Device")
 				(part "R_Small_US")
 				(description "Resistor, small US symbol")
+			)
+			(property
+				(name "LCSC")
+				(value "C17437")
+			)
+			(property
+				(name "MPN")
+				(value "0805W8F1200T5E")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL")
 			)
 			(property
 				(name "Sheetname")
@@ -8451,16 +8696,19 @@
 		(comp
 			(ref "R120")
 			(value "0")
-			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
 			(description "Resistor, small symbol")
 			(fields
 				(field
-					(name "LCSC")
-				)
+					(name "LCSC") "C17477")
 				(field
 					(name "VERIFY") "see R100")
 				(field
-					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+					(name "MPN") "0805W8F0000T5E")
+				(field
+					(name "Manufacturer") "UNI-ROYAL")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -8474,11 +8722,19 @@
 			)
 			(property
 				(name "LCSC")
-				(value "")
+				(value "C17477")
 			)
 			(property
 				(name "VERIFY")
 				(value "see R100")
+			)
+			(property
+				(name "MPN")
+				(value "0805W8F0000T5E")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL")
 			)
 			(property
 				(name "Sheetname")
@@ -8524,6 +8780,12 @@
 				(field
 					(name "VERIFY") "see R100")
 				(field
+					(name "LCSC") "C17437")
+				(field
+					(name "MPN") "0805W8F1200T5E")
+				(field
+					(name "Manufacturer") "UNI-ROYAL")
+				(field
 					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
 				(field
 					(name "Datasheet")
@@ -8539,6 +8801,18 @@
 			(property
 				(name "VERIFY")
 				(value "see R100")
+			)
+			(property
+				(name "LCSC")
+				(value "C17437")
+			)
+			(property
+				(name "MPN")
+				(value "0805W8F1200T5E")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL")
 			)
 			(property
 				(name "Sheetname")
@@ -8581,16 +8855,19 @@
 		(comp
 			(ref "R140")
 			(value "0")
-			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
 			(description "Resistor, small symbol")
 			(fields
 				(field
-					(name "LCSC")
-				)
+					(name "LCSC") "C17477")
 				(field
 					(name "VERIFY") "see R100")
 				(field
-					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+					(name "MPN") "0805W8F0000T5E")
+				(field
+					(name "Manufacturer") "UNI-ROYAL")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -8604,11 +8881,19 @@
 			)
 			(property
 				(name "LCSC")
-				(value "")
+				(value "C17477")
 			)
 			(property
 				(name "VERIFY")
 				(value "see R100")
+			)
+			(property
+				(name "MPN")
+				(value "0805W8F0000T5E")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL")
 			)
 			(property
 				(name "Sheetname")
@@ -8654,6 +8939,12 @@
 				(field
 					(name "VERIFY") "see R100")
 				(field
+					(name "LCSC") "C17437")
+				(field
+					(name "MPN") "0805W8F1200T5E")
+				(field
+					(name "Manufacturer") "UNI-ROYAL")
+				(field
 					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
 				(field
 					(name "Datasheet")
@@ -8669,6 +8960,18 @@
 			(property
 				(name "VERIFY")
 				(value "see R100")
+			)
+			(property
+				(name "LCSC")
+				(value "C17437")
+			)
+			(property
+				(name "MPN")
+				(value "0805W8F1200T5E")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL")
 			)
 			(property
 				(name "Sheetname")
@@ -10228,11 +10531,6 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R9")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
 				(ref "U1")
 				(pin "1")
 				(pinfunction "VIN_1")
@@ -10703,6 +11001,11 @@
 			)
 			(node
 				(ref "C13")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R9")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -11269,6 +11572,21 @@
 		)
 		(net
 			(code "39")
+			(name "Net-(C14-Pad2)")
+			(class "Default")
+			(node
+				(ref "C14")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R29")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "40")
 			(name "Net-(C100-Pad1)")
 			(class "Default")
 			(node
@@ -11283,7 +11601,7 @@
 			)
 		)
 		(net
-			(code "40")
+			(code "41")
 			(name "Net-(C102-Pad1)")
 			(class "Default")
 			(node
@@ -11313,7 +11631,7 @@
 			)
 		)
 		(net
-			(code "41")
+			(code "42")
 			(name "Net-(C103-Pad1)")
 			(class "Default")
 			(node
@@ -11343,7 +11661,7 @@
 			)
 		)
 		(net
-			(code "42")
+			(code "43")
 			(name "Net-(C120-Pad1)")
 			(class "Default")
 			(node
@@ -11358,7 +11676,7 @@
 			)
 		)
 		(net
-			(code "43")
+			(code "44")
 			(name "Net-(C122-Pad1)")
 			(class "Default")
 			(node
@@ -11388,7 +11706,7 @@
 			)
 		)
 		(net
-			(code "44")
+			(code "45")
 			(name "Net-(C123-Pad1)")
 			(class "Default")
 			(node
@@ -11418,7 +11736,7 @@
 			)
 		)
 		(net
-			(code "45")
+			(code "46")
 			(name "Net-(C140-Pad1)")
 			(class "Default")
 			(node
@@ -11433,7 +11751,7 @@
 			)
 		)
 		(net
-			(code "46")
+			(code "47")
 			(name "Net-(C142-Pad1)")
 			(class "Default")
 			(node
@@ -11463,7 +11781,7 @@
 			)
 		)
 		(net
-			(code "47")
+			(code "48")
 			(name "Net-(C143-Pad1)")
 			(class "Default")
 			(node
@@ -11493,7 +11811,7 @@
 			)
 		)
 		(net
-			(code "48")
+			(code "49")
 			(name "Net-(D4-A)")
 			(class "Default")
 			(node
@@ -11515,7 +11833,7 @@
 			)
 		)
 		(net
-			(code "49")
+			(code "50")
 			(name "Net-(J1-CC1)")
 			(class "Default")
 			(node
@@ -11531,7 +11849,7 @@
 			)
 		)
 		(net
-			(code "50")
+			(code "51")
 			(name "Net-(J1-CC2)")
 			(class "Default")
 			(node
@@ -11547,7 +11865,7 @@
 			)
 		)
 		(net
-			(code "51")
+			(code "52")
 			(name "Net-(J2-In)")
 			(class "Default")
 			(node
@@ -11570,7 +11888,7 @@
 			)
 		)
 		(net
-			(code "52")
+			(code "53")
 			(name "Net-(J3-In)")
 			(class "Default")
 			(node
@@ -11593,7 +11911,7 @@
 			)
 		)
 		(net
-			(code "53")
+			(code "54")
 			(name "Net-(J4-In)")
 			(class "Default")
 			(node
@@ -11616,7 +11934,7 @@
 			)
 		)
 		(net
-			(code "54")
+			(code "55")
 			(name "Net-(JP102-A)")
 			(class "Default")
 			(node
@@ -11643,7 +11961,7 @@
 			)
 		)
 		(net
-			(code "55")
+			(code "56")
 			(name "Net-(JP102-B)")
 			(class "Default")
 			(node
@@ -11669,7 +11987,7 @@
 			)
 		)
 		(net
-			(code "56")
+			(code "57")
 			(name "Net-(JP103-A)")
 			(class "Default")
 			(node
@@ -11695,7 +12013,7 @@
 			)
 		)
 		(net
-			(code "57")
+			(code "58")
 			(name "Net-(JP122-A)")
 			(class "Default")
 			(node
@@ -11722,7 +12040,7 @@
 			)
 		)
 		(net
-			(code "58")
+			(code "59")
 			(name "Net-(JP122-B)")
 			(class "Default")
 			(node
@@ -11748,7 +12066,7 @@
 			)
 		)
 		(net
-			(code "59")
+			(code "60")
 			(name "Net-(JP123-A)")
 			(class "Default")
 			(node
@@ -11774,7 +12092,7 @@
 			)
 		)
 		(net
-			(code "60")
+			(code "61")
 			(name "Net-(JP142-A)")
 			(class "Default")
 			(node
@@ -11801,7 +12119,7 @@
 			)
 		)
 		(net
-			(code "61")
+			(code "62")
 			(name "Net-(JP142-B)")
 			(class "Default")
 			(node
@@ -11827,7 +12145,7 @@
 			)
 		)
 		(net
-			(code "62")
+			(code "63")
 			(name "Net-(JP143-A)")
 			(class "Default")
 			(node
@@ -11853,7 +12171,7 @@
 			)
 		)
 		(net
-			(code "63")
+			(code "64")
 			(name "Net-(U1-BP)")
 			(class "Default")
 			(node
@@ -11869,7 +12187,7 @@
 			)
 		)
 		(net
-			(code "64")
+			(code "65")
 			(name "Net-(U2-XA)")
 			(class "Default")
 			(node
@@ -11885,17 +12203,17 @@
 			)
 		)
 		(net
-			(code "65")
+			(code "66")
 			(name "Net-(U4-PB4)")
 			(class "Default")
 			(node
-				(ref "C14")
+				(ref "R12")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "R12")
-				(pin "2")
+				(ref "R29")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -11906,7 +12224,7 @@
 			)
 		)
 		(net
-			(code "66")
+			(code "67")
 			(name "Net-(U5-BP)")
 			(class "Default")
 			(node
@@ -11922,7 +12240,7 @@
 			)
 		)
 		(net
-			(code "67")
+			(code "68")
 			(name "Net-(U5-VOUT)")
 			(class "Default")
 			(node
@@ -11943,7 +12261,7 @@
 			)
 		)
 		(net
-			(code "68")
+			(code "69")
 			(name "Net-(X1-NC{slash}EN)")
 			(class "Default")
 			(node
@@ -11959,7 +12277,7 @@
 			)
 		)
 		(net
-			(code "69")
+			(code "70")
 			(name "Net-(X1-OUT)")
 			(class "Default")
 			(node
@@ -11975,7 +12293,7 @@
 			)
 		)
 		(net
-			(code "70")
+			(code "71")
 			(name "Net-(X1-VDD)")
 			(class "Default")
 			(node
@@ -12001,7 +12319,7 @@
 			)
 		)
 		(net
-			(code "71")
+			(code "72")
 			(name "unconnected-(J1-SBU1-PadA8)")
 			(class "Default")
 			(node
@@ -12012,7 +12330,7 @@
 			)
 		)
 		(net
-			(code "72")
+			(code "73")
 			(name "unconnected-(J1-SBU2-PadB8)")
 			(class "Default")
 			(node
@@ -12023,7 +12341,7 @@
 			)
 		)
 		(net
-			(code "73")
+			(code "74")
 			(name "unconnected-(U2-XB-Pad3)")
 			(class "Default")
 			(node
@@ -12034,7 +12352,7 @@
 			)
 		)
 		(net
-			(code "74")
+			(code "75")
 			(name "unconnected-(U3-NC-Pad10)")
 			(class "Default")
 			(node
@@ -12045,7 +12363,7 @@
 			)
 		)
 		(net
-			(code "75")
+			(code "76")
 			(name "unconnected-(U3-NC-Pad16)")
 			(class "Default")
 			(node
@@ -12056,7 +12374,7 @@
 			)
 		)
 		(net
-			(code "76")
+			(code "77")
 			(name "unconnected-(U3-RS485{slash}GPIO.2-Pad12)")
 			(class "Default")
 			(node
@@ -12067,7 +12385,7 @@
 			)
 		)
 		(net
-			(code "77")
+			(code "78")
 			(name "unconnected-(U3-SUSPEND-Pad17)")
 			(class "Default")
 			(node
@@ -12078,7 +12396,7 @@
 			)
 		)
 		(net
-			(code "78")
+			(code "79")
 			(name "unconnected-(U3-~{CTS}-Pad18)")
 			(class "Default")
 			(node
@@ -12089,7 +12407,7 @@
 			)
 		)
 		(net
-			(code "79")
+			(code "80")
 			(name "unconnected-(U3-~{DCD}-Pad24)")
 			(class "Default")
 			(node
@@ -12100,7 +12418,7 @@
 			)
 		)
 		(net
-			(code "80")
+			(code "81")
 			(name "unconnected-(U3-~{DSR}-Pad22)")
 			(class "Default")
 			(node
@@ -12111,7 +12429,7 @@
 			)
 		)
 		(net
-			(code "81")
+			(code "82")
 			(name "unconnected-(U3-~{RI}{slash}CLK-Pad1)")
 			(class "Default")
 			(node
@@ -12122,7 +12440,7 @@
 			)
 		)
 		(net
-			(code "82")
+			(code "83")
 			(name "unconnected-(U3-~{RTS}-Pad19)")
 			(class "Default")
 			(node
@@ -12133,7 +12451,7 @@
 			)
 		)
 		(net
-			(code "83")
+			(code "84")
 			(name "unconnected-(U3-~{RXT}{slash}GPIO.1-Pad13)")
 			(class "Default")
 			(node
@@ -12144,7 +12462,7 @@
 			)
 		)
 		(net
-			(code "84")
+			(code "85")
 			(name "unconnected-(U3-~{SUSPEND}-Pad15)")
 			(class "Default")
 			(node
@@ -12155,7 +12473,7 @@
 			)
 		)
 		(net
-			(code "85")
+			(code "86")
 			(name "unconnected-(U3-~{TXT}{slash}GPIO.0-Pad14)")
 			(class "Default")
 			(node
@@ -12166,7 +12484,7 @@
 			)
 		)
 		(net
-			(code "86")
+			(code "87")
 			(name "unconnected-(U3-~{WAKEUP}{slash}GPIO.3-Pad11)")
 			(class "Default")
 			(node

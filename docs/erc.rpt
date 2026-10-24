@@ -1,4 +1,4 @@
-ERC report (2026-10-24T01:53:00, Encoding UTF8)
+ERC report (2026-10-23T18:58:58, Encoding UTF8)
 Report includes: Errors, Warnings
 
 ***** Sheet /
@@ -8,6 +8,15 @@ Report includes: Errors, Warnings
 [lib_symbol_issues]: The current configuration does not include the symbol library 'EtherkitKicadLibrary'
     ; warning
     @(340.36 mm, 85.09 mm): Symbol #G1 [LOGO]
+[footprint_link_issues]: The current configuration does not include the footprint library 'EtherkitKicadLibrary'
+    ; warning
+    @(203.20 mm, 172.72 mm): Symbol J2 [Conn_Coaxial]
+[footprint_link_issues]: The current configuration does not include the footprint library 'EtherkitKicadLibrary'
+    ; warning
+    @(203.20 mm, 218.44 mm): Symbol J3 [Conn_Coaxial]
+[footprint_link_issues]: The current configuration does not include the footprint library 'EtherkitKicadLibrary'
+    ; warning
+    @(203.20 mm, 264.16 mm): Symbol J4 [Conn_Coaxial]
 
 ***** Sheet /Power and USB/
 
@@ -15,7 +24,7 @@ Report includes: Errors, Warnings
 
 ***** Sheet /Synth and RF outputs/
 
- ** ERC messages: 2  Errors 0  Warnings 2
+ ** ERC messages: 5  Errors 0  Warnings 5
 
  ** Ignored checks:
     - Global label only appears once in the schematic
