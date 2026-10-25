@@ -6262,7 +6262,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1705"
+		(property "LCSC" "C19666"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -6274,7 +6274,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10A475KP8NNNC"
+		(property "MPN" "CL10A475KO8NNNC"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -6448,7 +6448,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C105580"
+		(property "LCSC" "C23186"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -6460,7 +6460,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0603FR-075K1L"
+		(property "MPN" "0603WAF5101T5E"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -6472,7 +6472,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -11262,7 +11262,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C105580"
+		(property "LCSC" "C23186"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -11274,7 +11274,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0603FR-075K1L"
+		(property "MPN" "0603WAF5101T5E"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -11286,7 +11286,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -14288,7 +14288,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1705"
+		(property "LCSC" "C19666"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -14300,7 +14300,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10A475KP8NNNC"
+		(property "MPN" "CL10A475KO8NNNC"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)

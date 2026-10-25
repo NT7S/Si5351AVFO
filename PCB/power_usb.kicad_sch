@@ -5475,7 +5475,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1705"
+		(property "LCSC" "C19666"
 			(at 204.47 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -5486,7 +5486,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10A475KP8NNNC"
+		(property "MPN" "CL10A475KO8NNNC"
 			(at 204.47 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -6231,7 +6231,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1705"
+		(property "LCSC" "C19666"
 			(at 177.8 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -6242,7 +6242,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10A475KP8NNNC"
+		(property "MPN" "CL10A475KO8NNNC"
 			(at 177.8 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -6421,7 +6421,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C105580"
+		(property "LCSC" "C23186"
 			(at 80.01 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -6432,7 +6432,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0603FR-075K1L"
+		(property "MPN" "0603WAF5101T5E"
 			(at 80.01 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -6443,7 +6443,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 80.01 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -6611,7 +6611,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C105580"
+		(property "LCSC" "C23186"
 			(at 92.71 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -6622,7 +6622,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0603FR-075K1L"
+		(property "MPN" "0603WAF5101T5E"
 			(at 92.71 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -6633,7 +6633,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 92.71 100.33 0)
 			(hide yes)
 			(show_name no)

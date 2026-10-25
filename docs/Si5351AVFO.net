@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/workspace/Si5351AVFO/PCB/Si5351AVFO.kicad_sch")
-		(date "2026-10-24T19:50:11")
+		(date "2026-10-24T20:03:54")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
@@ -709,9 +709,9 @@
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "LCSC") "C1705")
+					(name "LCSC") "C19666")
 				(field
-					(name "MPN") "CL10A475KP8NNNC")
+					(name "MPN") "CL10A475KO8NNNC")
 				(field
 					(name "Manufacturer") "Samsung")
 				(field
@@ -729,11 +729,11 @@
 			)
 			(property
 				(name "LCSC")
-				(value "C1705")
+				(value "C19666")
 			)
 			(property
 				(name "MPN")
-				(value "CL10A475KP8NNNC")
+				(value "CL10A475KO8NNNC")
 			)
 			(property
 				(name "Manufacturer")
@@ -781,9 +781,9 @@
 			(description "Unpolarized capacitor, small symbol")
 			(fields
 				(field
-					(name "LCSC") "C1705")
+					(name "LCSC") "C19666")
 				(field
-					(name "MPN") "CL10A475KP8NNNC")
+					(name "MPN") "CL10A475KO8NNNC")
 				(field
 					(name "Manufacturer") "Samsung")
 				(field
@@ -801,11 +801,11 @@
 			)
 			(property
 				(name "LCSC")
-				(value "C1705")
+				(value "C19666")
 			)
 			(property
 				(name "MPN")
-				(value "CL10A475KP8NNNC")
+				(value "CL10A475KO8NNNC")
 			)
 			(property
 				(name "Manufacturer")
@@ -1708,11 +1708,11 @@
 			(description "Resistor, small symbol")
 			(fields
 				(field
-					(name "LCSC") "C105580")
+					(name "LCSC") "C23186")
 				(field
-					(name "MPN") "RC0603FR-075K1L")
+					(name "MPN") "0603WAF5101T5E")
 				(field
-					(name "Manufacturer") "YAGEO")
+					(name "Manufacturer") "UNI-ROYAL")
 				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
@@ -1728,15 +1728,15 @@
 			)
 			(property
 				(name "LCSC")
-				(value "C105580")
+				(value "C23186")
 			)
 			(property
 				(name "MPN")
-				(value "RC0603FR-075K1L")
+				(value "0603WAF5101T5E")
 			)
 			(property
 				(name "Manufacturer")
-				(value "YAGEO")
+				(value "UNI-ROYAL")
 			)
 			(property
 				(name "Sheetname")
@@ -1780,11 +1780,11 @@
 			(description "Resistor, small symbol")
 			(fields
 				(field
-					(name "LCSC") "C105580")
+					(name "LCSC") "C23186")
 				(field
-					(name "MPN") "RC0603FR-075K1L")
+					(name "MPN") "0603WAF5101T5E")
 				(field
-					(name "Manufacturer") "YAGEO")
+					(name "Manufacturer") "UNI-ROYAL")
 				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
@@ -1800,15 +1800,15 @@
 			)
 			(property
 				(name "LCSC")
-				(value "C105580")
+				(value "C23186")
 			)
 			(property
 				(name "MPN")
-				(value "RC0603FR-075K1L")
+				(value "0603WAF5101T5E")
 			)
 			(property
 				(name "Manufacturer")
-				(value "YAGEO")
+				(value "UNI-ROYAL")
 			)
 			(property
 				(name "Sheetname")
