@@ -12,6 +12,129 @@
 		(comment 1 "Draft schematic, not reviewed. Open items: docs/VERIFY.md")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
 			(pin_names
 				(offset 1.016)
@@ -11337,5 +11460,1100 @@
 				)
 			)
 		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 271.78 233.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "8a53754f-a72b-4e2f-95f9-212cac269903")
+		(property "Reference" "TP1"
+			(at 273.67999999999995 229.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 273.67999999999995 231.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 271.78 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Datasheet" ""
+			(at 271.78 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Description" "Test point"
+			(at 271.78 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(pin "1"
+			(uuid "533c57fa-9dd0-4deb-a588-6b24506bc8c7")
+		)
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000002"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 271.78 233.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d983f21b-2244-411f-829d-2cfb576e64b0")
+		(property "Reference" "#PWR900"
+			(at 273.67999999999995 229.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 273.67999999999995 237.48000000000002 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 271.78 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Datasheet" ""
+			(at 271.78 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Description" ""
+			(at 271.78 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(pin "1"
+			(uuid "7414a416-c8cf-46fe-b84e-a77343eef2a0")
+		)
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000002"
+					(reference "#PWR900")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 284.48 233.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "eb79fd4e-9a03-4691-8717-c87c642c8659")
+		(property "Reference" "TP2"
+			(at 286.38 229.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 286.38 231.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 284.48 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Datasheet" ""
+			(at 284.48 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Description" "Test point"
+			(at 284.48 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(pin "1"
+			(uuid "af985fc8-3c5a-4937-8c7a-6f067d87b52b")
+		)
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000002"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 284.48 233.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "93d6ee03-7343-4295-8087-adc08cb40340")
+		(property "Reference" "#PWR901"
+			(at 286.38 229.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 286.38 237.48000000000002 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 284.48 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Datasheet" ""
+			(at 284.48 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Description" ""
+			(at 284.48 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(pin "1"
+			(uuid "5da55774-e86f-4361-b672-f35a79563fc8")
+		)
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000002"
+					(reference "#PWR901")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 297.18 233.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "98b50d91-e450-4fdb-a328-17e130cffcb0")
+		(property "Reference" "TP3"
+			(at 299.08 229.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+5V"
+			(at 299.08 231.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 297.18 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Datasheet" ""
+			(at 297.18 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Description" "Test point"
+			(at 297.18 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(pin "1"
+			(uuid "ab32918d-f026-4f6e-9b84-d0e10a792260")
+		)
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000002"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 297.18 238.76 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7a8ba6cb-69a1-450c-89be-14a9017ad5e4")
+		(property "Reference" "#PWR902"
+			(at 299.08 234.26 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+5V"
+			(at 299.08 242.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 297.18 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Datasheet" ""
+			(at 297.18 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Description" ""
+			(at 297.18 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(pin "1"
+			(uuid "608745f8-73a0-40f3-a1ff-5492d266fe86")
+		)
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000002"
+					(reference "#PWR902")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 297.18 233.68) (xy 297.18 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5c3b61d-e9d3-4587-8f61-d55cc76c1c22")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 309.88 233.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "a459d6d3-e42e-40d1-8fac-172a714dbac5")
+		(property "Reference" "TP4"
+			(at 311.78 229.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+3V3D"
+			(at 311.78 231.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 309.88 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Datasheet" ""
+			(at 309.88 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Description" "Test point"
+			(at 309.88 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(pin "1"
+			(uuid "1d83f383-d03b-412c-9782-91a1a9ca7c2a")
+		)
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000002"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 309.88 238.76 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7f66d612-3fba-46a0-a5f9-caf566c155e8")
+		(property "Reference" "#PWR903"
+			(at 311.78 234.26 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+3V3D"
+			(at 311.78 242.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 309.88 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Datasheet" ""
+			(at 309.88 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Description" ""
+			(at 309.88 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(pin "1"
+			(uuid "ce387c76-257d-4065-96f3-f338fad8baae")
+		)
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000002"
+					(reference "#PWR903")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 309.88 233.68) (xy 309.88 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "905a48fa-1b9c-493b-8f97-3b81e008408d")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 322.58 233.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "0c6d861a-3e62-4e50-b217-347d75502f1b")
+		(property "Reference" "TP5"
+			(at 324.47999999999996 229.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+3V3_CLK"
+			(at 324.47999999999996 231.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 322.58 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Datasheet" ""
+			(at 322.58 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Description" "Test point"
+			(at 322.58 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(pin "1"
+			(uuid "0ae63978-6c11-489a-9403-99f73240516c")
+		)
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000002"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 322.58 238.76 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "632da59e-afe9-4dbb-af0f-1a21d9e85400")
+		(property "Reference" "#PWR904"
+			(at 324.47999999999996 234.26 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+3V3_CLK"
+			(at 324.47999999999996 242.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 322.58 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Datasheet" ""
+			(at 322.58 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Description" ""
+			(at 322.58 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(pin "1"
+			(uuid "b2db45b4-1969-4c48-be6a-05e3e34572c7")
+		)
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000002"
+					(reference "#PWR904")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 322.58 233.68) (xy 322.58 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edf91853-4e45-43c0-933e-c1067a86bbf4")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 335.28 233.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "21635e02-640a-4aa5-b5f8-eeb0a3912a74")
+		(property "Reference" "TP6"
+			(at 337.17999999999995 229.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+3V3_OLED"
+			(at 337.17999999999995 231.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 335.28 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Datasheet" ""
+			(at 335.28 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Description" "Test point"
+			(at 335.28 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(pin "1"
+			(uuid "b04c0c63-89ec-44d0-8ff5-c76e7bd3816d")
+		)
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000002"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 335.28 238.76 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f747132e-1927-43f5-a082-c4aaa8e5e904")
+		(property "Reference" "#PWR905"
+			(at 337.17999999999995 234.26 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+3V3_OLED"
+			(at 337.17999999999995 242.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 335.28 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Datasheet" ""
+			(at 335.28 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Description" ""
+			(at 335.28 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(pin "1"
+			(uuid "d04a0f23-7efb-4c1b-bf0c-2980a0308632")
+		)
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000002"
+					(reference "#PWR905")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 335.28 233.68) (xy 335.28 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eade0387-4729-4d29-a181-4fe51aa27365")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 347.98 233.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "78bdd774-3e27-46dd-b544-71d0f3f5f33c")
+		(property "Reference" "TP7"
+			(at 349.88 229.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "I2C_SCL"
+			(at 349.88 231.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 347.98 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Datasheet" ""
+			(at 347.98 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Description" "Test point"
+			(at 347.98 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(pin "1"
+			(uuid "8e55b574-d008-4f42-a084-0d8bb2cbe69f")
+		)
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000002"
+					(reference "TP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "I2C_SCL"
+		(shape bidirectional)
+		(at 347.98 238.76 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b1e93d03-e445-4f26-aef2-8909bfdab608")
+	)
+	(wire
+		(pts
+			(xy 347.98 233.68) (xy 347.98 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1aa25f7-647b-4d88-836a-40eed597f9ef")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 360.68 233.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "32484009-afa7-49a8-ba3c-753ad314a864")
+		(property "Reference" "TP8"
+			(at 362.58 229.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "I2C_SDA"
+			(at 362.58 231.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 360.68 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Datasheet" ""
+			(at 360.68 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(property "Description" "Test point"
+			(at 360.68 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				
+			)
+		)
+		(pin "1"
+			(uuid "0b4fa994-eee8-40f3-bd4e-d19e74735a20")
+		)
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000002"
+					(reference "TP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "I2C_SDA"
+		(shape bidirectional)
+		(at 360.68 238.76 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f140dcbe-ad2b-421a-a791-cf9f66a4aaf0")
+	)
+	(wire
+		(pts
+			(xy 360.68 233.68) (xy 360.68 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d0016d7-63a9-43f2-9fd3-c11f61b0345c")
+	)
+	(text "Test points (Rev A): DC rails, GND, I2C only. No TPs on CLK0/1/2 or RF50 nets. Bare 1.5 mm pads, not in BOM/CPL."
+		(exclude_from_sim no)
+		(at 271.78 222.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7ec633fa-10b1-4f48-a0cd-475001ecaaec")
 	)
 )

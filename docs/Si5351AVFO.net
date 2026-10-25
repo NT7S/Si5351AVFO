@@ -1,8 +1,8 @@
 (export
 	(version "E")
 	(design
-		(source "/__w/Si5351AVFO/Si5351AVFO/PCB/Si5351AVFO.kicad_sch")
-		(date "2026-10-24T22:34:22")
+		(source "/workspace/Si5351AVFO/PCB/Si5351AVFO.kicad_sch")
+		(date "2026-10-24T19:50:11")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
@@ -2110,6 +2110,462 @@
 				(tstamps "/b0000000-0000-4000-8000-000000000002/")
 			)
 			(tstamps "27ece595-9209-4d9e-9b8d-58988c5c8f1a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP1")
+			(value "GND")
+			(footprint "TestPoint:TestPoint_Pad_D1.5mm")
+			(description "Test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_Pad_D1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Power and USB")
+			)
+			(property
+				(name "Sheetfile")
+				(value "power_usb.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/Power and USB/")
+				(tstamps "/b0000000-0000-4000-8000-000000000002/")
+			)
+			(tstamps "8a53754f-a72b-4e2f-95f9-212cac269903")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP2")
+			(value "GND")
+			(footprint "TestPoint:TestPoint_Pad_D1.5mm")
+			(description "Test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_Pad_D1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Power and USB")
+			)
+			(property
+				(name "Sheetfile")
+				(value "power_usb.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/Power and USB/")
+				(tstamps "/b0000000-0000-4000-8000-000000000002/")
+			)
+			(tstamps "eb79fd4e-9a03-4691-8717-c87c642c8659")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP3")
+			(value "+5V")
+			(footprint "TestPoint:TestPoint_Pad_D1.5mm")
+			(description "Test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_Pad_D1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Power and USB")
+			)
+			(property
+				(name "Sheetfile")
+				(value "power_usb.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/Power and USB/")
+				(tstamps "/b0000000-0000-4000-8000-000000000002/")
+			)
+			(tstamps "98b50d91-e450-4fdb-a328-17e130cffcb0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP4")
+			(value "+3V3D")
+			(footprint "TestPoint:TestPoint_Pad_D1.5mm")
+			(description "Test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_Pad_D1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Power and USB")
+			)
+			(property
+				(name "Sheetfile")
+				(value "power_usb.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/Power and USB/")
+				(tstamps "/b0000000-0000-4000-8000-000000000002/")
+			)
+			(tstamps "a459d6d3-e42e-40d1-8fac-172a714dbac5")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP5")
+			(value "+3V3_CLK")
+			(footprint "TestPoint:TestPoint_Pad_D1.5mm")
+			(description "Test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_Pad_D1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Power and USB")
+			)
+			(property
+				(name "Sheetfile")
+				(value "power_usb.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/Power and USB/")
+				(tstamps "/b0000000-0000-4000-8000-000000000002/")
+			)
+			(tstamps "0c6d861a-3e62-4e50-b217-347d75502f1b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP6")
+			(value "+3V3_OLED")
+			(footprint "TestPoint:TestPoint_Pad_D1.5mm")
+			(description "Test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_Pad_D1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Power and USB")
+			)
+			(property
+				(name "Sheetfile")
+				(value "power_usb.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/Power and USB/")
+				(tstamps "/b0000000-0000-4000-8000-000000000002/")
+			)
+			(tstamps "21635e02-640a-4aa5-b5f8-eeb0a3912a74")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP7")
+			(value "I2C_SCL")
+			(footprint "TestPoint:TestPoint_Pad_D1.5mm")
+			(description "Test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_Pad_D1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Power and USB")
+			)
+			(property
+				(name "Sheetfile")
+				(value "power_usb.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/Power and USB/")
+				(tstamps "/b0000000-0000-4000-8000-000000000002/")
+			)
+			(tstamps "78bdd774-3e27-46dd-b544-71d0f3f5f33c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP8")
+			(value "I2C_SDA")
+			(footprint "TestPoint:TestPoint_Pad_D1.5mm")
+			(description "Test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_Pad_D1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Power and USB")
+			)
+			(property
+				(name "Sheetfile")
+				(value "power_usb.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/Power and USB/")
+				(tstamps "/b0000000-0000-4000-8000-000000000002/")
+			)
+			(tstamps "32484009-afa7-49a8-ba3c-753ad314a864")
 			(units
 				(unit
 					(name "A")
@@ -9587,6 +10043,36 @@
 		)
 		(libpart
 			(lib "Connector")
+			(part "TestPoint")
+			(description "test point")
+			(footprints
+				(fp "Pin*")
+				(fp "Test*")
+			)
+			(fields
+				(field
+					(name "Reference") "TP")
+				(field
+					(name "Value") "TestPoint")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Connector")
 			(part "USB_C_Receptacle_USB2.0_16P")
 			(description "USB 2.0-only 16P Type-C Receptacle connector")
 			(docs "https://www.usb.org/sites/default/files/documents/usb_type-c.zip")
@@ -10755,6 +11241,12 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "TP4")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
 				(ref "U1")
 				(pin "5")
 				(pinfunction "VOUT_5")
@@ -10802,6 +11294,12 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "TP5")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
 				(ref "U2")
 				(pin "1")
 				(pinfunction "VDD_1")
@@ -10842,6 +11340,12 @@
 			(node
 				(ref "FB2")
 				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP6")
+				(pin "1")
+				(pinfunction "1_1")
 				(pintype "passive")
 			)
 		)
@@ -10902,6 +11406,12 @@
 			(node
 				(ref "R7")
 				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP3")
+				(pin "1")
+				(pinfunction "1_1")
 				(pintype "passive")
 			)
 			(node
@@ -11898,6 +12408,18 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "TP1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
 				(ref "U1")
 				(pin "2")
 				(pinfunction "GND_2")
@@ -11950,6 +12472,12 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "TP7")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
 				(ref "U2")
 				(pin "4")
 				(pinfunction "SCL_4")
@@ -11969,6 +12497,12 @@
 			(node
 				(ref "R28")
 				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP8")
+				(pin "1")
+				(pinfunction "1_1")
 				(pintype "passive")
 			)
 			(node
