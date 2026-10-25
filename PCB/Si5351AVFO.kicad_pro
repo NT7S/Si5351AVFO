@@ -12,7 +12,21 @@
     },
     "layer_pairs": [],
     "layer_presets": [],
-    "viewports": []
+    "viewports": [],
+    "design_settings": {
+      "rules": {
+        "min_hole_clearance": 0.2,
+        "min_through_hole_diameter": 0.2,
+        "min_clearance": 0.15,
+        "min_copper_edge_clearance": 0.3,
+        "min_hole_to_hole": 0.25,
+        "min_via_annular_width": 0.1,
+        "min_track_width": 0.127
+      },
+      "defaults": {
+        "board_outline_line_width": 0.1
+      }
+    }
   },
   "boards": [],
   "component_class_settings": {

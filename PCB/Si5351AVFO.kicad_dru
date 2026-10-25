@@ -1,0 +1,21 @@
+(version 1)
+# Si5351 (U2) decoupling and CLK series parts are deliberately placed inside U2's courtyard
+# margin so VDD/VDDO caps touch their pins and the 0402 series Rs sit within ~1 mm of CLK0/1/2.
+(rule "U2 tight decoupling"
+  (condition "A.Reference == 'U2' && (B.Reference == 'C4' || B.Reference == 'C26' || B.Reference == 'R100' || B.Reference == 'R120' || B.Reference == 'R140')")
+  (constraint courtyard_clearance (min -2mm)))
+(rule "CLK1 series R to DC block"
+  (condition "A.Reference == 'R120' && B.Reference == 'C120'")
+  (constraint courtyard_clearance (min -1mm)))
+# USB-C receptacle (J1) footprint: GND pads A1/B12, B1/A12 sit 0.18 mm from the locating NPTHs by design
+(rule "J1 footprint-internal hole clearance"
+  (condition "A.memberOfFootprint('J1') && B.memberOfFootprint('J1')")
+  (constraint hole_clearance (min 0.15mm)))
+# J1 shield tabs: solid to the GND pour
+(rule "J1 shield solid"
+  (condition "A.memberOfFootprint('J1') && A.Pad_Type == 'Through-hole'")
+  (constraint zone_connection solid))
+# CPWG: 0.20 mm gap from every RF50 track/pad to the coplanar GND pour (JLC calc: 0.31/0.20 = 50 ohm)
+(rule "RF50 CPWG gap to GND pour"
+  (condition "A.NetClass == 'RF50' && B.Type == 'Zone' && B.Net == 'GND'")
+  (constraint clearance (min 0.2mm)))

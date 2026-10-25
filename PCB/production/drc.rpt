@@ -1,0 +1,78 @@
+** Drc report for Si5351AVFO.kicad_pcb **
+** Created on 2026-10-24T20:13:55 **
+** Report includes: Errors, Warnings **
+
+** Found 15 DRC violations **
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(103.0000 mm, 100.0000 mm): Segment on Edge.Cuts
+    @(171.0000 mm, 102.5400 mm): Pad 1 [Net-(J3-In)] of J3 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(103.0000 mm, 100.0000 mm): Segment on Edge.Cuts
+    @(174.0000 mm, 102.5400 mm): Pad 2 [GND] of J3 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(103.0000 mm, 100.0000 mm): Segment on Edge.Cuts
+    @(174.0000 mm, 102.5400 mm): Pad 2 [GND] of J3 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(103.0000 mm, 100.0000 mm): Segment on Edge.Cuts
+    @(168.0000 mm, 102.5400 mm): Pad 2 [GND] of J3 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(103.0000 mm, 100.0000 mm): Segment on Edge.Cuts
+    @(168.0000 mm, 102.5400 mm): Pad 2 [GND] of J3 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(103.0000 mm, 100.0000 mm): Segment on Edge.Cuts
+    @(158.0000 mm, 102.5400 mm): Pad 1 [Net-(J2-In)] of J2 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(103.0000 mm, 100.0000 mm): Segment on Edge.Cuts
+    @(161.0000 mm, 102.5400 mm): Pad 2 [GND] of J2 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(103.0000 mm, 100.0000 mm): Segment on Edge.Cuts
+    @(161.0000 mm, 102.5400 mm): Pad 2 [GND] of J2 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(103.0000 mm, 100.0000 mm): Segment on Edge.Cuts
+    @(155.0000 mm, 102.5400 mm): Pad 2 [GND] of J2 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(103.0000 mm, 100.0000 mm): Segment on Edge.Cuts
+    @(155.0000 mm, 102.5400 mm): Pad 2 [GND] of J2 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(103.0000 mm, 100.0000 mm): Segment on Edge.Cuts
+    @(184.0000 mm, 102.5400 mm): Pad 1 [Net-(J4-In)] of J4 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(103.0000 mm, 100.0000 mm): Segment on Edge.Cuts
+    @(187.0000 mm, 102.5400 mm): Pad 2 [GND] of J4 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(103.0000 mm, 100.0000 mm): Segment on Edge.Cuts
+    @(187.0000 mm, 102.5400 mm): Pad 2 [GND] of J4 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(103.0000 mm, 100.0000 mm): Segment on Edge.Cuts
+    @(181.0000 mm, 102.5400 mm): Pad 2 [GND] of J4 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(103.0000 mm, 100.0000 mm): Segment on Edge.Cuts
+    @(181.0000 mm, 102.5400 mm): Pad 2 [GND] of J4 on B.Cu
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **
