@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/workspace/Si5351AVFO/PCB/Si5351AVFO.kicad_sch")
-		(date "2026-10-25T09:44:33")
+		(date "2026-10-25T15:19:40")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
@@ -9170,81 +9170,6 @@
 			)
 		)
 		(comp
-			(ref "R6")
-			(value "0")
-			(footprint "Resistor_SMD:R_0805_2012Metric")
-			(description "Resistor, small symbol")
-			(fields
-				(field
-					(name "LCSC") "C17477")
-				(field
-					(name "MPN") "0805W8F0000T5E")
-				(field
-					(name "Manufacturer") "UNI-ROYAL")
-				(field
-					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Resistor, small symbol")
-			)
-			(libsource
-				(lib "Device")
-				(part "R_Small_US")
-				(description "Resistor, small US symbol")
-			)
-			(property
-				(name "LCSC")
-				(value "C17477")
-			)
-			(property
-				(name "MPN")
-				(value "0805W8F0000T5E")
-			)
-			(property
-				(name "Manufacturer")
-				(value "UNI-ROYAL")
-			)
-			(property
-				(name "Sheetname")
-				(value "Synth and RF outputs")
-			)
-			(property
-				(name "Sheetfile")
-				(value "synth_rf.kicad_sch")
-			)
-			(property
-				(name "dnp")
-			)
-			(property
-				(name "ki_keywords")
-				(value "r resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/Synth and RF outputs/")
-				(tstamps "/b0000000-0000-4000-8000-000000000004/")
-			)
-			(tstamps "b9d7b4cb-e8c3-4ce4-95de-c829cf61f503")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
 			(ref "R27")
 			(value "4.7k")
 			(footprint "Resistor_SMD:R_0805_2012Metric")
@@ -9929,7 +9854,7 @@
 			(ref "X1")
 			(value "25MHz TCXO")
 			(footprint "Oscillator:Oscillator_SMD_SeikoEpson_SG8002CE-4Pin_3.2x2.5mm")
-			(description "4-pin 3225 TCXO, clipped-sine output; pin 1 NC/EN (NC on fitted part; EN on active-high-enable TCXOs via DNP R6)")
+			(description "4-pin 3225 TCXO, clipped-sine output; pin 1 NC/EN, tied to GND (YXC 3225 pin 1 is NC: float or GND)")
 			(fields
 				(field
 					(name "LCSC") "C48888230")
@@ -9943,12 +9868,12 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "4-pin 3225 TCXO, clipped-sine output; pin 1 NC/EN (NC on fitted part; EN on active-high-enable TCXOs via DNP R6)")
+					(name "Description") "4-pin 3225 TCXO, clipped-sine output; pin 1 NC/EN, tied to GND (YXC 3225 pin 1 is NC: float or GND)")
 			)
 			(libsource
 				(lib "Si5351AVFO")
 				(part "TCXO_4P")
-				(description "4-pin 3225 TCXO, clipped-sine output; pin 1 NC/EN (NC on fitted part; EN on active-high-enable TCXOs via DNP R6)")
+				(description "4-pin 3225 TCXO, clipped-sine output; pin 1 NC/EN, tied to GND (YXC 3225 pin 1 is NC: float or GND)")
 			)
 			(property
 				(name "LCSC")
@@ -11045,7 +10970,7 @@
 		(libpart
 			(lib "Si5351AVFO")
 			(part "TCXO_4P")
-			(description "4-pin 3225 TCXO, clipped-sine output; pin 1 NC/EN (NC on fitted part; EN on active-high-enable TCXOs via DNP R6)")
+			(description "4-pin 3225 TCXO, clipped-sine output; pin 1 NC/EN, tied to GND (YXC 3225 pin 1 is NC: float or GND)")
 			(fields
 				(field
 					(name "Reference") "X")
@@ -11057,7 +10982,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "4-pin 3225 TCXO, clipped-sine output; pin 1 NC/EN (NC on fitted part; EN on active-high-enable TCXOs via DNP R6)")
+					(name "Description") "4-pin 3225 TCXO, clipped-sine output; pin 1 NC/EN, tied to GND (YXC 3225 pin 1 is NC: float or GND)")
 			)
 			(pins
 				(pin
@@ -12457,6 +12382,12 @@
 			)
 			(node
 				(ref "X1")
+				(pin "1")
+				(pinfunction "NC/EN_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "X1")
 				(pin "2")
 				(pinfunction "GND_2")
 				(pintype "power_in")
@@ -13244,22 +13175,6 @@
 		)
 		(net
 			(code "71")
-			(name "Net-(X1-NC{slash}EN)")
-			(class "Default")
-			(node
-				(ref "R6")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "X1")
-				(pin "1")
-				(pinfunction "NC/EN_1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "72")
 			(name "Net-(X1-OUT)")
 			(class "Default")
 			(node
@@ -13275,7 +13190,7 @@
 			)
 		)
 		(net
-			(code "73")
+			(code "72")
 			(name "Net-(X1-VDD)")
 			(class "Default")
 			(node
@@ -13289,11 +13204,6 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R6")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
 				(ref "X1")
 				(pin "4")
 				(pinfunction "VDD_4")
@@ -13301,7 +13211,7 @@
 			)
 		)
 		(net
-			(code "74")
+			(code "73")
 			(name "unconnected-(J1-SBU1-PadA8)")
 			(class "Default")
 			(node
@@ -13312,7 +13222,7 @@
 			)
 		)
 		(net
-			(code "75")
+			(code "74")
 			(name "unconnected-(J1-SBU2-PadB8)")
 			(class "Default")
 			(node
@@ -13323,7 +13233,7 @@
 			)
 		)
 		(net
-			(code "76")
+			(code "75")
 			(name "unconnected-(U2-XB-Pad3)")
 			(class "Default")
 			(node
@@ -13334,7 +13244,7 @@
 			)
 		)
 		(net
-			(code "77")
+			(code "76")
 			(name "unconnected-(U3-NC-Pad10)")
 			(class "Default")
 			(node
@@ -13345,7 +13255,7 @@
 			)
 		)
 		(net
-			(code "78")
+			(code "77")
 			(name "unconnected-(U3-NC-Pad16)")
 			(class "Default")
 			(node
@@ -13356,7 +13266,7 @@
 			)
 		)
 		(net
-			(code "79")
+			(code "78")
 			(name "unconnected-(U3-RS485{slash}GPIO.2-Pad12)")
 			(class "Default")
 			(node
@@ -13367,7 +13277,7 @@
 			)
 		)
 		(net
-			(code "80")
+			(code "79")
 			(name "unconnected-(U3-SUSPEND-Pad17)")
 			(class "Default")
 			(node
@@ -13378,7 +13288,7 @@
 			)
 		)
 		(net
-			(code "81")
+			(code "80")
 			(name "unconnected-(U3-~{CTS}-Pad18)")
 			(class "Default")
 			(node
@@ -13389,7 +13299,7 @@
 			)
 		)
 		(net
-			(code "82")
+			(code "81")
 			(name "unconnected-(U3-~{DCD}-Pad24)")
 			(class "Default")
 			(node
@@ -13400,7 +13310,7 @@
 			)
 		)
 		(net
-			(code "83")
+			(code "82")
 			(name "unconnected-(U3-~{DSR}-Pad22)")
 			(class "Default")
 			(node
@@ -13411,7 +13321,7 @@
 			)
 		)
 		(net
-			(code "84")
+			(code "83")
 			(name "unconnected-(U3-~{RI}{slash}CLK-Pad1)")
 			(class "Default")
 			(node
@@ -13422,7 +13332,7 @@
 			)
 		)
 		(net
-			(code "85")
+			(code "84")
 			(name "unconnected-(U3-~{RTS}-Pad19)")
 			(class "Default")
 			(node
@@ -13433,7 +13343,7 @@
 			)
 		)
 		(net
-			(code "86")
+			(code "85")
 			(name "unconnected-(U3-~{RXT}{slash}GPIO.1-Pad13)")
 			(class "Default")
 			(node
@@ -13444,7 +13354,7 @@
 			)
 		)
 		(net
-			(code "87")
+			(code "86")
 			(name "unconnected-(U3-~{SUSPEND}-Pad15)")
 			(class "Default")
 			(node
@@ -13455,7 +13365,7 @@
 			)
 		)
 		(net
-			(code "88")
+			(code "87")
 			(name "unconnected-(U3-~{TXT}{slash}GPIO.0-Pad14)")
 			(class "Default")
 			(node
@@ -13466,7 +13376,7 @@
 			)
 		)
 		(net
-			(code "89")
+			(code "88")
 			(name "unconnected-(U3-~{WAKEUP}{slash}GPIO.3-Pad11)")
 			(class "Default")
 			(node
@@ -13477,7 +13387,7 @@
 			)
 		)
 		(net
-			(code "90")
+			(code "89")
 			(name "unconnected-(U4-PA2-Pad18)")
 			(class "Default")
 			(node
