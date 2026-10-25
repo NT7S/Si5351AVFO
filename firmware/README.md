@@ -44,7 +44,7 @@ pio run -t upload       # upload via Optiboot on the USB serial port
 
 | Build | Flash | RAM |
 |---|---:|---:|
-| Full (serial on, rev 3.5) | 28,243 B of 32,256 B (87.6%) | 662 B of 3,072 B (21.5%) |
+| Full (serial on, rev 3.5) | 28,273 B of 32,256 B (87.7%) | 662 B of 3,072 B (21.5%) |
 | `ENABLE_SERIAL=0` (measured at an earlier revision) | 21,360 B (66.2%) | 474 B |
 
 Si5351Arduino is about 8.9 KB of this. See the flash-optimization notes in the
