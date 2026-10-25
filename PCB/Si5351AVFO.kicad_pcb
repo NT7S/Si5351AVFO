@@ -25400,7 +25400,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C110776"
+		(property "LCSC" "C21190"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -25412,7 +25412,7 @@
 				)
 			)
 		)
-		(property "MPN" "RT0603BRD071KL"
+		(property "MPN" "0603WAF1001T5E"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -25424,7 +25424,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)

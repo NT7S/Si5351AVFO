@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/workspace/Si5351AVFO/PCB/Si5351AVFO.kicad_sch")
-		(date "2026-10-24T20:05:04")
+		(date "2026-10-24T20:13:58")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
@@ -1996,11 +1996,11 @@
 			(description "Resistor, small symbol")
 			(fields
 				(field
-					(name "LCSC") "C110776")
+					(name "LCSC") "C21190")
 				(field
-					(name "MPN") "RT0603BRD071KL")
+					(name "MPN") "0603WAF1001T5E")
 				(field
-					(name "Manufacturer") "YAGEO")
+					(name "Manufacturer") "UNI-ROYAL")
 				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
@@ -2016,15 +2016,15 @@
 			)
 			(property
 				(name "LCSC")
-				(value "C110776")
+				(value "C21190")
 			)
 			(property
 				(name "MPN")
-				(value "RT0603BRD071KL")
+				(value "0603WAF1001T5E")
 			)
 			(property
 				(name "Manufacturer")
-				(value "YAGEO")
+				(value "UNI-ROYAL")
 			)
 			(property
 				(name "Sheetname")

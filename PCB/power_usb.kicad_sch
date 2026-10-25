@@ -10273,7 +10273,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C110776"
+		(property "LCSC" "C21190"
 			(at 137.16 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -10284,7 +10284,7 @@
 				)
 			)
 		)
-		(property "MPN" "RT0603BRD071KL"
+		(property "MPN" "0603WAF1001T5E"
 			(at 137.16 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -10295,7 +10295,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 137.16 59.69 0)
 			(hide yes)
 			(show_name no)
