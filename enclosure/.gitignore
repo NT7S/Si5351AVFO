@@ -1,0 +1,6 @@
+__pycache__/
+# vfo_case.py writes its exports next to itself; copy them to ../step and ../stl
+src/*.step
+src/*.stl
+src/board.stl
+src/_*_asm.stl
