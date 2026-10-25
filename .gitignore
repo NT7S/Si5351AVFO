@@ -1,0 +1,15 @@
+# KiCad lock files
+*.lck
+~*.lck
+# KiCad autosave and backups
+_autosave-*
+*-backups/
+\#auto_saved_files\#
+*.bak
+*.bck
+*-bak
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*~
+# Caches
+fp-info-cache

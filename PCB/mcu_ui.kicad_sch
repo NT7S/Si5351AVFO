@@ -9,7 +9,7 @@
 		(date "2026-10-22")
 		(rev "A")
 		(company "Etherkit / NT7S")
-		(comment 1 "Draft schematic, not reviewed. See VERIFY notes.")
+		(comment 1 "Draft schematic, not reviewed. Open items: docs/VERIFY.md")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x04"
@@ -228,11 +228,10 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x08"
+		(symbol "Connector_Generic:Conn_01x07"
 			(pin_names
 				(offset 1.016)
-				(hide yes)
-			)
+				(hide yes))
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -244,20 +243,14 @@
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x08"
-				(at 0 -12.7 0)
+						(size 1.27 1.27))))
+			(property "Value" "Conn_01x07"
+				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
+						(size 1.27 1.27))))
 			(property "Footprint" ""
 				(at 0 0 0)
 				(show_name no)
@@ -265,10 +258,7 @@
 				(hide yes)
 				(effects
 					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
+						(size 1.27 1.27))))
 			(property "Datasheet" ""
 				(at 0 0 0)
 				(show_name no)
@@ -276,21 +266,15 @@
 				(hide yes)
 				(effects
 					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+						(size 1.27 1.27))))
+			(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
 				(effects
 					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
+						(size 1.27 1.27))))
 			(property "ki_keywords" "connector"
 				(at 0 0 0)
 				(show_name no)
@@ -298,10 +282,7 @@
 				(hide yes)
 				(effects
 					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
+						(size 1.27 1.27))))
 			(property "ki_fp_filters" "Connector*:*_1x??_*"
 				(at 0 0 0)
 				(show_name no)
@@ -309,257 +290,150 @@
 				(hide yes)
 				(effects
 					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Conn_01x08_1_1"
+						(size 1.27 1.27))))
+			(symbol "Conn_01x07_1_1"
 				(rectangle
 					(start -1.27 8.89)
-					(end 1.27 -11.43)
+					(end 1.27 -8.89)
 					(stroke
 						(width 0.254)
-						(type default)
-					)
+						(type default))
 					(fill
-						(type background)
-					)
-				)
+						(type background)))
 				(rectangle
 					(start -1.27 7.747)
 					(end 0 7.493)
 					(stroke
 						(width 0.1524)
-						(type default)
-					)
+						(type default))
 					(fill
-						(type none)
-					)
-				)
+						(type none)))
 				(rectangle
 					(start -1.27 5.207)
 					(end 0 4.953)
 					(stroke
 						(width 0.1524)
-						(type default)
-					)
+						(type default))
 					(fill
-						(type none)
-					)
-				)
+						(type none)))
 				(rectangle
 					(start -1.27 2.667)
 					(end 0 2.413)
 					(stroke
 						(width 0.1524)
-						(type default)
-					)
+						(type default))
 					(fill
-						(type none)
-					)
-				)
+						(type none)))
 				(rectangle
 					(start -1.27 0.127)
 					(end 0 -0.127)
 					(stroke
 						(width 0.1524)
-						(type default)
-					)
+						(type default))
 					(fill
-						(type none)
-					)
-				)
+						(type none)))
 				(rectangle
 					(start -1.27 -2.413)
 					(end 0 -2.667)
 					(stroke
 						(width 0.1524)
-						(type default)
-					)
+						(type default))
 					(fill
-						(type none)
-					)
-				)
+						(type none)))
 				(rectangle
 					(start -1.27 -4.953)
 					(end 0 -5.207)
 					(stroke
 						(width 0.1524)
-						(type default)
-					)
+						(type default))
 					(fill
-						(type none)
-					)
-				)
+						(type none)))
 				(rectangle
 					(start -1.27 -7.493)
 					(end 0 -7.747)
 					(stroke
 						(width 0.1524)
-						(type default)
-					)
+						(type default))
 					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -10.033)
-					(end 0 -10.287)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+						(type none)))
 				(pin passive line
 					(at -5.08 7.62 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
+								(size 1.27 1.27))))
 					(number "1"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
+								(size 1.27 1.27)))))
 				(pin passive line
 					(at -5.08 5.08 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
+								(size 1.27 1.27))))
 					(number "2"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
+								(size 1.27 1.27)))))
 				(pin passive line
 					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
+								(size 1.27 1.27))))
 					(number "3"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
+								(size 1.27 1.27)))))
 				(pin passive line
 					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
+								(size 1.27 1.27))))
 					(number "4"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
+								(size 1.27 1.27)))))
 				(pin passive line
 					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_5"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
+								(size 1.27 1.27))))
 					(number "5"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
+								(size 1.27 1.27)))))
 				(pin passive line
 					(at -5.08 -5.08 0)
 					(length 3.81)
 					(name "Pin_6"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
+								(size 1.27 1.27))))
 					(number "6"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
+								(size 1.27 1.27)))))
 				(pin passive line
 					(at -5.08 -7.62 0)
 					(length 3.81)
 					(name "Pin_7"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
+								(size 1.27 1.27))))
 					(number "7"
 						(effects
 							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -10.16 0)
-					(length 3.81)
-					(name "Pin_8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -882,7 +756,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_Small"
+		(symbol "Device:R_Small_US"
 			(pin_numbers
 				(hide yes)
 			)
@@ -896,23 +770,25 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
-				(at 0 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Value" "R_Small"
-				(at 1.778 0 90)
+				(at 0.762 0.508 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small_US"
+				(at 0.762 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -937,7 +813,7 @@
 					)
 				)
 			)
-			(property "Description" "Resistor, small symbol"
+			(property "Description" "Resistor, small US symbol"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -948,7 +824,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "R resistor"
+			(property "ki_keywords" "r resistor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -970,23 +846,34 @@
 					)
 				)
 			)
-			(symbol "R_Small_0_1"
-				(rectangle
-					(start -0.762 1.778)
-					(end 0.762 -1.778)
+			(symbol "R_Small_US_1_1"
+				(polyline
+					(pts
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+					)
 					(stroke
-						(width 0.2032)
+						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-			)
-			(symbol "R_Small_1_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
 					(at 0 2.54 270)
-					(length 0.762)
+					(length 1.016)
 					(name ""
 						(effects
 							(font
@@ -1004,7 +891,7 @@
 				)
 				(pin passive line
 					(at 0 -2.54 90)
-					(length 0.762)
+					(length 1.016)
 					(name ""
 						(effects
 							(font
@@ -2318,20 +2205,9 @@
 		)
 		(uuid "1044b112-d7a5-41de-8d59-e61b06ce6792")
 	)
-	(text "VERIFY (unconfirmed items on this sheet):\n- U4: Pin mux (PLAN sec.3) to be checked vs datasheet I/O mux table. Jason consigning parts.\n- C14: PLAN: series R or clamp on PB4 for DTR-rising overshoot? EKM has none.\n- J5: Replicated from EtherKeyerMini (J3); EKM has no LCSC/MPN fields - part number to choose.\n- R13: Replicated from EtherKeyerMini (R3); EKM has no LCSC/MPN fields - part number to choose.\n- D4: Replicated from EtherKeyerMini (D1); EKM has no LCSC/MPN fields - part number to choose.\n- DS1: 1.3in SPI SH1106 module. Pin order GND,VCC,SCL,SDA,DC,CS1,FS0,CS2 from PLAN pin list; pin numbering, pitch and\n   connector style unverified. Low stock - Jason sourcing.\n- C17: Debounce topology/count: PLAN lists x5 but 6 inputs (A,B,SW,3 buttons) - drawn as 6. Check vs encoder bounce\n   spec.\n- SW1: Detent/pulse count unverified."
+	(text "OLED: SPI only (PA1 MOSI, PA3 SCK, PA4 CS, PA5 DC, PA6 RES). Never shares the Si5351 I2C bus.\nPA2 spare (no-connect)."
 		(exclude_from_sim no)
-		(at 195 238 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left top)
-		)
-		(uuid "1937c5dc-18bf-48a1-a2fe-c9d8db0c25fe")
-	)
-	(text "OLED: SPI only (PA1 MOSI, PA3 SCK, PA4 CS1, PA5 DC). Never shares the Si5351 I2C bus.\nCS2 (font chip) held high by R26."
-		(exclude_from_sim no)
-		(at 255 130 0)
+		(at 255 125.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2339,6 +2215,17 @@
 			(justify left top)
 		)
 		(uuid "389934ff-85cd-4f0b-871f-8f8130d15917")
+	)
+	(text "DS1 DNP: OLED module supplied in kit, user-soldered. Fed 3.3 V from LP2985 OLED rail.\nPCB: print pin names on silkscreen at DS1 header (GND,VCC,CLK,MOSI,RES,DC,CS); suppliers vary."
+		(exclude_from_sim no)
+		(at 255 131.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "f5e48786-ee37-4481-939e-8f3ae9cacb60")
 	)
 	(text "ATtiny3226 @ 8 MHz internal, 3.3 V. Optiboot over CP2102N; DTR auto-reset on PB4 (RSTPINCFG=0x3, megaTinyCore \"UPDI w/reset on PB4\"), as EtherKeyerMini C3/R4."
 		(exclude_from_sim no)
@@ -2362,6 +2249,28 @@
 		)
 		(uuid "d8e6c7a9-0f86-4ef0-99a3-d7669c1d355d")
 	)
+	(text "PCB: C15 100n + C16 4.7u at U4 pin 1 (VCC) / pin 20 (GND).\n100n closest to pin 1; GND via at each cap pad."
+		(exclude_from_sim no)
+		(at 177.8 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "46cbd7a5-155c-4d6b-bcef-42bbb3b7bd09")
+	)
+	(text "PCB: C22/C23 (4.7u) + C24 (DNP) bulk (power sheet)\nat DS1 pin 2 (VCC) / pin 1 (GND), at the header."
+		(exclude_from_sim no)
+		(at 256.54 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "2822faff-e65d-452b-abd4-5d49f12a1b31")
+	)
 	(junction
 		(at 185.42 125.73)
 		(diameter 0)
@@ -2373,6 +2282,16 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "79a7a2ba-061e-4776-8db7-bc024c7d16b5")
+	)
+	(wire
+		(pts
+			(xy 185.42 132.08) (xy 185.42 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3910829-815d-4f25-8d2e-e28bffd379d9")
 	)
 	(wire
 		(pts
@@ -2666,7 +2585,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 119.38) (xy 185.42 132.08)
+			(xy 185.42 119.38) (xy 185.42 127)
 		)
 		(stroke
 			(width 0)
@@ -2774,6 +2693,10 @@
 		)
 		(uuid "f33e8fdb-7625-40c0-8aa2-8c26347e5d0b")
 	)
+	(no_connect
+		(at 165.1 97.79)
+		(uuid "246c24db-3538-45cc-9e82-2424b90e53e1")
+	)
 	(label "ENC_SW_SW"
 		(at 57.15 257.81 0)
 		(effects
@@ -2784,7 +2707,7 @@
 		)
 		(uuid "061f4deb-331d-48ce-89cb-5cf882685b38")
 	)
-	(label "BTN_MENU"
+	(label "BTN_S3"
 		(at 165.1 110.49 0)
 		(effects
 			(font
@@ -2804,7 +2727,7 @@
 		)
 		(uuid "0a2fd76e-ceeb-4c28-af6a-efe411bfd2fa")
 	)
-	(label "BTN_BAND"
+	(label "BTN_S1"
 		(at 166.37 214.63 0)
 		(effects
 			(font
@@ -2854,7 +2777,7 @@
 		)
 		(uuid "22a857c8-f1d1-4b4f-8a9a-ae8c92c9e774")
 	)
-	(label "BTN_BAND"
+	(label "BTN_S1"
 		(at 134.62 123.19 180)
 		(effects
 			(font
@@ -2864,7 +2787,7 @@
 		)
 		(uuid "28e3505e-23c8-4387-8d71-2b7f97cde31e")
 	)
-	(label "OLED_FS0"
+	(label "OLED_CS"
 		(at 294.64 107.95 180)
 		(effects
 			(font
@@ -2904,7 +2827,7 @@
 		)
 		(uuid "40e80b97-99bf-4782-bc98-14aa8f223c01")
 	)
-	(label "BTN_MENU_SW"
+	(label "BTN_S3_SW"
 		(at 165.1 260.35 180)
 		(effects
 			(font
@@ -2914,7 +2837,7 @@
 		)
 		(uuid "4430c1a2-25f4-476d-8b83-1bc89f3d5fad")
 	)
-	(label "OLED_CS1"
+	(label "OLED_DC"
 		(at 294.64 105.41 180)
 		(effects
 			(font
@@ -2954,7 +2877,7 @@
 		)
 		(uuid "5063fa86-5208-4649-8e5f-4f9d0d681dc4")
 	)
-	(label "OLED_DC"
+	(label "OLED_RES"
 		(at 294.64 102.87 180)
 		(effects
 			(font
@@ -2974,16 +2897,6 @@
 		)
 		(uuid "59d225ba-b0ca-4ca3-a608-e1e16edd21e0")
 	)
-	(label "OLED_FS0"
-		(at 165.1 97.79 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5dcb121d-ae79-4f08-baa0-815eabbd6df7")
-	)
 	(label "ENC_B"
 		(at 134.62 118.11 180)
 		(effects
@@ -2994,7 +2907,7 @@
 		)
 		(uuid "6282c8a0-2a53-4eca-aac0-84a73f9970e4")
 	)
-	(label "BTN_BAND_SW"
+	(label "BTN_S1_SW"
 		(at 151.13 214.63 180)
 		(effects
 			(font
@@ -3003,16 +2916,6 @@
 			(justify right bottom)
 		)
 		(uuid "71d7f4a9-8c4c-497f-82ac-0dc4602367b8")
-	)
-	(label "OLED_CS2"
-		(at 270.51 72.39 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "73a0134b-d21d-4c9e-a4f1-9210f4f4bc2d")
 	)
 	(label "ENC_B_SW"
 		(at 41.91 262.89 180)
@@ -3034,7 +2937,7 @@
 		)
 		(uuid "77559b66-30c6-4692-9c04-9205b863aefb")
 	)
-	(label "BTN_STEP_SW"
+	(label "BTN_S2_SW"
 		(at 193.04 214.63 180)
 		(effects
 			(font
@@ -3044,7 +2947,7 @@
 		)
 		(uuid "7effb1ce-97bb-440e-b126-e168006f4a74")
 	)
-	(label "BTN_STEP"
+	(label "BTN_S2"
 		(at 165.1 128.27 0)
 		(effects
 			(font
@@ -3074,7 +2977,7 @@
 		)
 		(uuid "89f51f96-7e96-444b-bcd9-53bf1d41bfd1")
 	)
-	(label "BTN_BAND_SW"
+	(label "BTN_S1_SW"
 		(at 105.41 260.35 180)
 		(effects
 			(font
@@ -3084,7 +2987,7 @@
 		)
 		(uuid "8f7395b0-3199-4955-83dc-87c336e1f6fc")
 	)
-	(label "OLED_CS2"
+	(label "OLED_RES"
 		(at 165.1 107.95 0)
 		(effects
 			(font
@@ -3094,7 +2997,7 @@
 		)
 		(uuid "93b6d0d9-e289-4843-9d8f-372bd65e545d")
 	)
-	(label "BTN_MENU_SW"
+	(label "BTN_S3_SW"
 		(at 234.95 214.63 180)
 		(effects
 			(font
@@ -3104,17 +3007,7 @@
 		)
 		(uuid "a0f0a042-1bfd-4d2b-ba92-04d49f0500d9")
 	)
-	(label "OLED_CS2"
-		(at 294.64 110.49 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b3fffa67-f348-458f-ad52-75339a58a458")
-	)
-	(label "BTN_STEP_SW"
+	(label "BTN_S2_SW"
 		(at 134.62 260.35 180)
 		(effects
 			(font
@@ -3134,7 +3027,7 @@
 		)
 		(uuid "c3dce509-e2fa-47ca-bb8e-c5ac45f33e9b")
 	)
-	(label "BTN_MENU"
+	(label "BTN_S3"
 		(at 250.19 214.63 0)
 		(effects
 			(font
@@ -3144,7 +3037,7 @@
 		)
 		(uuid "c907a22e-8a86-43df-8c90-20e71bb736bb")
 	)
-	(label "OLED_CS1"
+	(label "OLED_CS"
 		(at 165.1 102.87 0)
 		(effects
 			(font
@@ -3154,7 +3047,7 @@
 		)
 		(uuid "e2fa24e3-d64d-4b62-a7e9-8f61501672e0")
 	)
-	(label "BTN_STEP"
+	(label "BTN_S2"
 		(at 208.28 214.63 0)
 		(effects
 			(font
@@ -3255,7 +3148,7 @@
 	)
 	(global_label "DTR"
 		(shape passive)
-		(at 185.42 137.16 270)
+		(at 185.42 142.24 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3265,7 +3158,7 @@
 		)
 		(uuid "cfba5075-c205-4cd3-9829-96918cb57ed6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 185.42 137.16 0)
+			(at 185.42 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3605,7 +3498,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 132.08 69.85 0)
+		(at 170.18 80.01 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3615,7 +3508,7 @@
 		(dnp no)
 		(uuid "0e43b05f-7755-490a-8046-5bcf463be291")
 		(property "Reference" "C16"
-			(at 133.88 69.25 0)
+			(at 171.98 79.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3626,7 +3519,7 @@
 			)
 		)
 		(property "Value" "4.7u"
-			(at 133.88 71.45 0)
+			(at 171.98 81.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3637,7 +3530,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 132.08 69.85 0)
+			(at 170.18 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3648,7 +3541,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 69.85 0)
+			(at 170.18 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3659,7 +3552,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 132.08 69.85 0)
+			(at 170.18 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3670,7 +3563,7 @@
 			)
 		)
 		(property "LCSC" "C1779"
-			(at 132.08 69.85 0)
+			(at 170.18 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3681,7 +3574,7 @@
 			)
 		)
 		(property "MPN" "CL21A475KAQNNNE"
-			(at 132.08 69.85 0)
+			(at 170.18 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3692,7 +3585,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung"
-			(at 132.08 69.85 0)
+			(at 170.18 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4060,7 +3953,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 300.99 172.72 90)
 		(unit 1)
 		(body_style 1)
@@ -4090,7 +3983,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 300.99 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -4123,7 +4016,29 @@
 				)
 			)
 		)
-		(property "VERIFY" "Replicated from EtherKeyerMini (R3); EKM has no LCSC/MPN fields - part number to choose."
+		(property "LCSC" "C23179"
+			(at 300.99 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF4700T5E"
+			(at 300.99 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 300.99 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -4265,7 +4180,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 119.38 67.31 0)
+		(at 160.02 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4275,7 +4190,7 @@
 		(dnp no)
 		(uuid "2887430a-e8af-43ba-ab03-d9863bb1d8ad")
 		(property "Reference" "#PWR053"
-			(at 119.38 67.31 0)
+			(at 160.02 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4286,7 +4201,7 @@
 			)
 		)
 		(property "Value" "+3V3D"
-			(at 119.38 63.5 0)
+			(at 160.02 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4296,7 +4211,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 67.31 0)
+			(at 160.02 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4307,7 +4222,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 67.31 0)
+			(at 160.02 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4318,7 +4233,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 119.38 67.31 0)
+			(at 160.02 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4340,7 +4255,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 193.04 201.93 0)
 		(unit 1)
 		(body_style 1)
@@ -4551,7 +4466,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BAND"
+		(property "Value" "SOFT1"
 			(at 110.49 261.874 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4561,7 +4476,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
+		(property "Footprint" "EtherkitKicadLibrary:SW_Push_6x6mm_SMD_KH-6X6X11H-STM"
 			(at 110.49 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -4583,7 +4498,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Tactile switch 6x6 mm SMD, 11 mm actuator (front-panel height, no cap)"
 			(at 110.49 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -4594,7 +4509,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C318884"
+		(property "LCSC" "C2837537"
 			(at 110.49 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -4605,7 +4520,7 @@
 				)
 			)
 		)
-		(property "MPN" "TS-1187A-B-A-B"
+		(property "MPN" "KH-6X6X11H-STM"
 			(at 110.49 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -4616,7 +4531,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "XKB"
+		(property "Manufacturer" "Kinghelm"
 			(at 110.49 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -4643,15 +4558,15 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x08")
+		(lib_id "Connector_Generic:Conn_01x07")
 		(at 299.72 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "418d69cb-b31d-4c47-b2b7-0efa81fea90f")
 		(property "Reference" "DS1"
 			(at 299.72 90.17 0)
@@ -4663,7 +4578,7 @@
 				)
 			)
 		)
-		(property "Value" "HS13L01W4S01"
+		(property "Value" "OLED_1.3in_SH1106_SPI_7pin"
 			(at 299.72 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4673,7 +4588,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical"
 			(at 299.72 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -4695,7 +4610,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic 1.3in 128x64 SH1106 4-wire SPI OLED module, 7-pin 2.54 mm: GND,VCC,CLK(D0),MOSI(D1),RES,DC,CS. DNP, supplied in kit, user-soldered."
 			(at 299.72 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -4706,7 +4621,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C5139764"
+		(property "LCSC" ""
 			(at 299.72 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -4717,7 +4632,7 @@
 				)
 			)
 		)
-		(property "MPN" "HS13L01W4S01"
+		(property "MPN" "generic 1.3in SH1106 SPI 7-pin"
 			(at 299.72 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -4728,18 +4643,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "HS"
-			(at 299.72 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFY" "1.3in SPI SH1106 module. Pin order GND,VCC,SCL,SDA,DC,CS1,FS0,CS2 from PLAN pin list; pin numbering, pitch and connector style unverified. Low stock - Jason sourcing."
+		(property "Manufacturer" "generic"
 			(at 299.72 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -4771,9 +4675,6 @@
 		(pin "7"
 			(uuid "7d988ebd-9d1f-4da6-b4b2-7861739279b6")
 		)
-		(pin "8"
-			(uuid "631a2b16-4814-4060-8a9b-fc7b9ac0a4c2")
-		)
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000003"
@@ -4784,15 +4685,15 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 234.95 201.93 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "46748e1e-c507-45eb-9422-e7ae9b47d267")
 		(property "Reference" "R20"
 			(at 236.75 201.33 0)
@@ -4974,7 +4875,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 33.02 214.63 90)
 		(unit 1)
 		(body_style 1)
@@ -5086,82 +4987,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 270.51 67.31 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "508e7527-877c-41f1-ae55-d1f3dd607043")
-		(property "Reference" "#PWR062"
-			(at 270.51 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3D"
-			(at 270.51 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 270.51 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 270.51 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 270.51 67.31 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f91815d1-ae55-4a96-a8d3-3119a4a466f0")
-		)
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000003"
-					(reference "#PWR062")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 124.46 224.79 0)
 		(unit 1)
@@ -5238,7 +5063,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 242.57 214.63 90)
 		(unit 1)
 		(body_style 1)
@@ -5351,7 +5176,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 119.38 69.85 0)
+		(at 160.02 80.01 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5361,7 +5186,7 @@
 		(dnp no)
 		(uuid "5e35aeb2-a892-45c6-8319-70dbefa4929e")
 		(property "Reference" "C15"
-			(at 121.18 69.25 0)
+			(at 161.82 79.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5372,7 +5197,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 121.18 71.45 0)
+			(at 161.82 81.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5383,7 +5208,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 119.38 69.85 0)
+			(at 160.02 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5394,7 +5219,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 69.85 0)
+			(at 160.02 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5405,7 +5230,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 119.38 69.85 0)
+			(at 160.02 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5416,7 +5241,7 @@
 			)
 		)
 		(property "LCSC" "C49678"
-			(at 119.38 69.85 0)
+			(at 160.02 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5427,7 +5252,7 @@
 			)
 		)
 		(property "MPN" "CC0805KRX7R9BB104"
-			(at 119.38 69.85 0)
+			(at 160.02 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5438,7 +5263,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 119.38 69.85 0)
+			(at 160.02 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5616,7 +5441,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 25.4 201.93 0)
 		(unit 1)
 		(body_style 1)
@@ -5730,7 +5555,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 185.42 116.84 0)
 		(unit 1)
 		(body_style 1)
@@ -5844,6 +5669,120 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 185.42 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d54fc266-a159-44e9-b7bf-2bc783a97a49")
+		(property "Reference" "R29"
+			(at 187.22 128.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 187.22 131.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 185.42 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 185.42 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 185.42 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1001T5E"
+			(at 185.42 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 185.42 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fcb12a0f-67aa-41d8-924a-bcad5021ebc5")
+		)
+		(pin "2"
+			(uuid "7c4d6312-f747-485a-899b-31cb04fdfa01")
+		)
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000003"
+					(reference "R29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 326.39 175.26 270)
 		(unit 1)
@@ -5920,7 +5859,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 151.13 201.93 0)
 		(unit 1)
 		(body_style 1)
@@ -6034,7 +5973,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 116.84 214.63 90)
 		(unit 1)
 		(body_style 1)
@@ -6243,7 +6182,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MENU"
+		(property "Value" "SOFT3"
 			(at 170.18 261.874 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6253,7 +6192,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
+		(property "Footprint" "EtherkitKicadLibrary:SW_Push_6x6mm_SMD_KH-6X6X11H-STM"
 			(at 170.18 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -6275,7 +6214,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Tactile switch 6x6 mm SMD, 11 mm actuator (front-panel height, no cap)"
 			(at 170.18 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -6286,7 +6225,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C318884"
+		(property "LCSC" "C2837537"
 			(at 170.18 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -6297,7 +6236,7 @@
 				)
 			)
 		)
-		(property "MPN" "TS-1187A-B-A-B"
+		(property "MPN" "KH-6X6X11H-STM"
 			(at 170.18 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -6308,7 +6247,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "XKB"
+		(property "Manufacturer" "Kinghelm"
 			(at 170.18 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -6335,120 +6274,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 270.51 69.85 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8dd20e9b-267a-40d1-8a8f-41817e39490d")
-		(property "Reference" "R26"
-			(at 272.31 69.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 272.31 71.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 270.51 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 270.51 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 270.51 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C17414"
-			(at 270.51 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "0805W8F1002T5E"
-			(at 270.51 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 270.51 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "dcef8404-f8ed-4ffb-b9c8-c883797ccaf4")
-		)
-		(pin "2"
-			(uuid "ed896b52-afd7-4482-98f7-496f5dd387f0")
-		)
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000003"
-					(reference "R26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D_Schottky")
 		(at 309.88 180.34 90)
 		(unit 1)
@@ -6469,7 +6294,7 @@
 				)
 			)
 		)
-		(property "Value" "1N5711"
+		(property "Value" "1N5711W"
 			(at 317.5 181.61 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6479,7 +6304,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 309.88 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -6512,7 +6337,29 @@
 				)
 			)
 		)
-		(property "VERIFY" "Replicated from EtherKeyerMini (D1); EKM has no LCSC/MPN fields - part number to choose."
+		(property "LCSC" "C154843"
+			(at 309.88 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "1N5711W-7-F"
+			(at 309.88 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Diodes Incorporated"
 			(at 309.88 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -6768,7 +6615,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 119.38 72.39 0)
+		(at 160.02 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6778,7 +6625,7 @@
 		(dnp no)
 		(uuid "aa26cb3b-7282-47d6-976d-0a3284a15f03")
 		(property "Reference" "#PWR054"
-			(at 119.38 72.39 0)
+			(at 160.02 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6789,7 +6636,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.38 76.2 0)
+			(at 160.02 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6799,7 +6646,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 72.39 0)
+			(at 160.02 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6810,7 +6657,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 72.39 0)
+			(at 160.02 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6821,7 +6668,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 119.38 72.39 0)
+			(at 160.02 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6843,7 +6690,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 67.31 201.93 0)
 		(unit 1)
 		(body_style 1)
@@ -7034,7 +6881,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 132.08 72.39 0)
+		(at 170.18 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7044,7 +6891,7 @@
 		(dnp no)
 		(uuid "bc53b39a-f6d2-4a5e-b413-3ecc16599570")
 		(property "Reference" "#PWR056"
-			(at 132.08 72.39 0)
+			(at 170.18 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7055,7 +6902,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 132.08 76.2 0)
+			(at 170.18 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7065,7 +6912,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 72.39 0)
+			(at 170.18 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7076,7 +6923,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 72.39 0)
+			(at 170.18 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7087,7 +6934,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 132.08 72.39 0)
+			(at 170.18 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7291,7 +7138,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 334.01 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -7324,7 +7171,29 @@
 				)
 			)
 		)
-		(property "VERIFY" "Replicated from EtherKeyerMini (J3); EKM has no LCSC/MPN fields - part number to choose."
+		(property "LCSC" "C124378"
+			(at 334.01 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "B-2100S04P-A110"
+			(at 334.01 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Ckmtw"
 			(at 334.01 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -7378,7 +7247,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "STEP"
+		(property "Value" "SOFT2"
 			(at 139.7 261.874 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7388,7 +7257,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
+		(property "Footprint" "EtherkitKicadLibrary:SW_Push_6x6mm_SMD_KH-6X6X11H-STM"
 			(at 139.7 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -7410,7 +7279,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Tactile switch 6x6 mm SMD, 11 mm actuator (front-panel height, no cap)"
 			(at 139.7 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -7421,7 +7290,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C318884"
+		(property "LCSC" "C2837537"
 			(at 139.7 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -7432,7 +7301,7 @@
 				)
 			)
 		)
-		(property "MPN" "TS-1187A-B-A-B"
+		(property "MPN" "KH-6X6X11H-STM"
 			(at 139.7 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -7443,7 +7312,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "XKB"
+		(property "Manufacturer" "Kinghelm"
 			(at 139.7 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -7471,7 +7340,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 185.42 134.62 180)
+		(at 185.42 139.7 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7481,7 +7350,7 @@
 		(dnp no)
 		(uuid "c5bfe053-4593-4241-9e35-6b7338f4b87c")
 		(property "Reference" "C14"
-			(at 189.87 133.35 0)
+			(at 189.87 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7491,7 +7360,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 189.87 135.89 0)
+			(at 189.87 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7501,7 +7370,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 185.42 134.62 0)
+			(at 185.42 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7512,7 +7381,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 134.62 0)
+			(at 185.42 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7523,7 +7392,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 185.42 134.62 0)
+			(at 185.42 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7534,7 +7403,7 @@
 			)
 		)
 		(property "LCSC" "C49678"
-			(at 185.42 134.62 0)
+			(at 185.42 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7545,7 +7414,7 @@
 			)
 		)
 		(property "MPN" "CC0805KRX7R9BB104"
-			(at 185.42 134.62 0)
+			(at 185.42 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7556,18 +7425,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 185.42 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFY" "PLAN: series R or clamp on PB4 for DTR-rising overshoot? EKM has none."
-			(at 185.42 134.62 0)
+			(at 185.42 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7681,17 +7539,6 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 40.64 222.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFY" "Debounce topology/count: PLAN lists x5 but 6 inputs (A,B,SW,3 buttons) - drawn as 6. Check vs encoder bounce spec."
 			(at 40.64 222.25 0)
 			(hide yes)
 			(show_name no)
@@ -7929,17 +7776,6 @@
 				)
 			)
 		)
-		(property "VERIFY" "Pin mux (PLAN sec.3) to be checked vs datasheet I/O mux table. Jason consigning parts."
-			(at 149.86 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "1d385930-1906-4b85-8d3d-69d94ef982b5")
 		)
@@ -8011,7 +7847,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 132.08 67.31 0)
+		(at 170.18 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8021,7 +7857,7 @@
 		(dnp no)
 		(uuid "ce11bacf-17e6-4c53-ac4f-39604c65315c")
 		(property "Reference" "#PWR055"
-			(at 132.08 67.31 0)
+			(at 170.18 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8032,7 +7868,7 @@
 			)
 		)
 		(property "Value" "+3V3D"
-			(at 132.08 63.5 0)
+			(at 170.18 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8042,7 +7878,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 67.31 0)
+			(at 170.18 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8053,7 +7889,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 67.31 0)
+			(at 170.18 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8064,7 +7900,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 132.08 67.31 0)
+			(at 170.18 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8172,17 +8008,6 @@
 			)
 		)
 		(property "Manufacturer" "ALPS Alpine"
-			(at 49.53 260.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFY" "Detent/pulse count unverified."
 			(at 49.53 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -8370,7 +8195,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 109.22 201.93 0)
 		(unit 1)
 		(body_style 1)
@@ -8560,7 +8385,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 158.75 214.63 90)
 		(unit 1)
 		(body_style 1)
@@ -8900,7 +8725,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 74.93 214.63 90)
 		(unit 1)
 		(body_style 1)
@@ -9012,7 +8837,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "Device:R_Small_US")
 		(at 200.66 214.63 90)
 		(unit 1)
 		(body_style 1)
