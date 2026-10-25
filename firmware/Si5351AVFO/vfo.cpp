@@ -5,6 +5,7 @@
 #include "tuning.h"
 #include "settings.h"
 #include "config.h"
+#include <string.h>
 
 VfoState g_vfo;
 ClockPlan g_plan;
@@ -29,7 +30,9 @@ bool vfo_begin() {
   g_si5351_ok = si5351.init(SI5351_CRYSTAL_LOAD_0PF, REF_FREQ_HZ, g_vfo.cal_ppb) &&
                 !si5351.get_i2c_error();
   if (g_si5351_ok) {
-    hw_mode = 0xFF;   // force a full reprogram
+    hw_mode = 0xFF;   // force a full reprogram (init/reset cleared the chip)
+    hw_on = 0xFF;
+    for (uint8_t i = 0; i < NUM_CLOCKS; i++) hw_drive[i] = 0xFF;
     vfo_apply();
   }
   return g_si5351_ok;
@@ -71,18 +74,26 @@ void vfo_apply() {
     // the clock that lags. A PLL reset re-aligns the phases.
     uint64_t pll = (uint64_t)g_plan.iq_pll * 100ULL;
     uint64_t f = (uint64_t)g_plan.f[0] * 100ULL;
-    si5351.set_freq_manual(f, pll, SI5351_CLK0);
-    si5351.set_freq_manual(f, pll, SI5351_CLK1);
+    uint8_t e = si5351.set_freq_manual(f, pll, SI5351_CLK0);
+    e |= si5351.set_freq_manual(f, pll, SI5351_CLK1);
+    if (e) { g_plan.on &= ~0x03; g_plan.flags |= PLAN_FAIL; }
     si5351.set_phase(g_vfo.iq_order ? SI5351_CLK1 : SI5351_CLK0, 0);
     si5351.set_phase(g_vfo.iq_order ? SI5351_CLK0 : SI5351_CLK1, g_plan.iq_div);
     si5351.pll_reset(SI5351_PLLA);
-    hw_f[0] = hw_f[1] = g_plan.f[0];
+    hw_f[0] = hw_f[1] = e ? 0 : g_plan.f[0];
+    // set_freq_manual() enables both outputs; force the enable pass below so
+    // a clock that is off in the plan is switched off again.
+    hw_on = 0xFF;
   }
   for (uint8_t i = 0; i < NUM_CLOCKS; i++) {
     if (mode == MODE_QUAD && i < 2) continue;          // handled above
     if (!(g_plan.on & (1 << i)) || g_plan.f[i] == hw_f[i]) continue;
-    si5351.set_freq((uint64_t)g_plan.f[i] * 100ULL, CLK(i));
-    hw_f[i] = g_plan.f[i];
+    if (si5351.set_freq((uint64_t)g_plan.f[i] * 100ULL, CLK(i))) {
+      g_plan.on &= ~(1 << i);          // refused (e.g. two >100 MHz on one PLL)
+      g_plan.flags |= PLAN_FAIL;
+      hw_f[i] = 0;
+    } else hw_f[i] = g_plan.f[i];
+    hw_on = 0xFF;                      // set_freq may enable the output
   }
   if (g_plan.on != hw_on) {
     for (uint8_t i = 0; i < NUM_CLOCKS; i++) si5351.output_enable(CLK(i), (g_plan.on >> i) & 1);
@@ -100,15 +111,26 @@ void vfo_update() {
 // Clock enables follow the band (§6.3): Direct/Quadrature on a band above the
 // CLK0/1 filters uses CLK2 (CLK0/1 dropped unless overridden); coming back
 // from such a band with only CLK2 on restores the CLK0 default.
+static bool band_vhf(uint8_t b) { return b < NUM_BANDS && BANDS[b].lo > LPF_CLK01_HZ; }
+
+// Clock-enable rule (§6.1), run on every band change and every mode change.
+static void apply_enable_rule(bool was_vhf, bool vhf) {
+  if (g_vfo.mode == MODE_SUPERHET) return;
+  if (vhf) g_vfo.clk_en = (g_vfo.clk_en & g_vfo.filter_override & 0x03) | 0x04;
+  else if (was_vhf && g_vfo.clk_en == 0x04) g_vfo.clk_en = 0x01;
+}
+
 static void set_band_index(uint8_t band) {
   if (band >= NUM_BANDS || band == g_vfo.band) return;
-  bool was_vhf = g_vfo.band < NUM_BANDS && BANDS[g_vfo.band].lo > LPF_CLK01_HZ;
-  bool vhf = BANDS[band].lo > LPF_CLK01_HZ;
-  if (g_vfo.mode != MODE_SUPERHET) {
-    if (vhf) g_vfo.clk_en = (g_vfo.clk_en & g_vfo.filter_override & 0x03) | 0x04;
-    else if (was_vhf && g_vfo.clk_en == 0x04) g_vfo.clk_en = 0x01;
-  }
+  apply_enable_rule(band_vhf(g_vfo.band), band_vhf(band));
   g_vfo.band = band;
+}
+
+static void set_mode_index(uint8_t mode) {
+  if (mode >= MODE_COUNT || mode == g_vfo.mode) return;
+  g_vfo.mode = mode;
+  bool v = band_vhf(g_vfo.band);
+  apply_enable_rule(v, v);
 }
 
 void vfo_set_freq(uint32_t f) {
@@ -159,7 +181,7 @@ void vfo_band_step(int8_t dir) { vfo_set_band(band_step(g_vfo.band, dir)); }
 
 void vfo_set_mode(uint8_t mode) {
   if (mode >= MODE_COUNT) return;
-  g_vfo.mode = mode;
+  set_mode_index(mode);
   vfo_apply();
   vfo_changed();
 }
@@ -188,6 +210,14 @@ void vfo_set_cal(int32_t ppb) {
   vfo_changed();
 }
 
+// Calibration preview: hardware only, g_vfo and EEPROM untouched (§8).
+void vfo_preview_cal(int32_t ppb) {
+  if (!g_si5351_ok) return;
+  si5351.set_correction(ppb, SI5351_PLL_INPUT_XO);
+  for (uint8_t i = 0; i < NUM_CLOCKS; i++) hw_f[i] = 0;
+  vfo_apply();
+}
+
 void vfo_cal_mode(bool on) {
   cal_active = on;
   for (uint8_t i = 0; i < NUM_CLOCKS; i++) hw_f[i] = 0;
@@ -207,7 +237,8 @@ bool vfo_mem_store(uint8_t n) {
 bool vfo_mem_recall(uint8_t n) {
   if (n >= NUM_MEMORIES || g_vfo.mem[n].info == MEM_EMPTY) return false;
   uint8_t mode = g_vfo.mem[n].info >> 4, band = g_vfo.mem[n].info & 0x0F;
-  if (mode < MODE_COUNT) g_vfo.mode = mode;
+  // The recalled mode governs the enable rule: mode first, then band (§6.1).
+  set_mode_index(mode);
   set_band_index(band);
   vfo_set_freq(g_vfo.mem[n].freq);
   return true;
@@ -222,8 +253,20 @@ bool vfo_mem_clear(uint8_t n) {
   return true;
 }
 
+// Factory reset: everything, including calibration and memories.
 void vfo_defaults() {
   state_defaults(g_vfo);
   vfo_set_cal(0);          // also re-applies every output
+  settings_save_now();
+}
+
+// Reset settings: defaults, but keep calibration and memories (§6.2, §9).
+void vfo_reset_settings() {
+  int32_t cal = g_vfo.cal_ppb;
+  Memory mem[NUM_MEMORIES];
+  memcpy(mem, g_vfo.mem, sizeof(mem));
+  state_defaults(g_vfo);
+  memcpy(g_vfo.mem, mem, sizeof(mem));
+  vfo_set_cal(cal);
   settings_save_now();
 }

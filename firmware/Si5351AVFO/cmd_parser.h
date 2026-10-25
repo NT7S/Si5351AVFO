@@ -11,7 +11,7 @@ enum CmdId : uint8_t {
   CMD_LIMIT, CMD_FOVR,
   CMD_MS, CMD_MR, CMD_MC, CMD_MLIST,
   CMD_CAL,
-  CMD_SAVE, CMD_DEFAULTS, CMD_STATUS, CMD_VER, CMD_HELP, CMD_AUTO,
+  CMD_SAVE, CMD_DEFAULTS, CMD_STATUS, CMD_VER, CMD_HELP, CMD_AUTO, CMD_RESET,
   CMD_COUNT,
   CMD_UNKNOWN = 0xFF
 };
@@ -30,6 +30,9 @@ struct Cmd {
 // Parse `line` in place (it is upper-cased and split with NULs).
 // Returns the command id (also stored in c.id).
 uint8_t cmd_parse(char *line, Cmd &c);
+
+// String equality (shared with serialcmd.cpp).
+bool cmd_streq(const char *a, const char *b);
 
 // Name of a command for HELP, or nullptr.
 const char *cmd_name(uint8_t id);

@@ -1,8 +1,10 @@
 #include "sh1106.h"
+// tinyAVR 2-series maps flash into data space, so const tables stay in flash
+// and are read directly (no PROGMEM / pgm_read_byte needed).
 #include <avr/pgmspace.h>
 
 // 5x7 font, ASCII 0x20..0x5A (space..Z); lowercase is folded to upper case.
-static const uint8_t font5x7[] PROGMEM = {
+static const uint8_t font5x7[] = {
   0,0,0,0,0, 0,0,0x5F,0,0, 0,7,0,7,0, 0x14,0x7F,0x14,0x7F,0x14,
   0x24,0x2A,0x7F,0x2A,0x12, 0x23,0x13,8,0x64,0x62, 0x36,0x49,0x55,0x22,0x50, 0,5,3,0,0,
   0,0x1C,0x22,0x41,0, 0,0x41,0x22,0x1C,0, 8,0x2A,0x1C,0x2A,8, 8,8,0x3E,8,8,
@@ -21,7 +23,7 @@ static const uint8_t font5x7[] PROGMEM = {
 };
 
 // 8x16 digits 0-9; each glyph is 8 bytes top page then 8 bytes bottom page.
-static const uint8_t font8x16[10][16] PROGMEM = {
+static const uint8_t font8x16[10][16] = {
   {0xF8,0xFC,0x06,0xC2,0x32,0x0C,0xF8,0x00, 0x1F,0x30,0x4C,0x43,0x60,0x3F,0x1F,0x00},
   {0x00,0x08,0x0C,0xFE,0xFE,0x00,0x00,0x00, 0x00,0x40,0x40,0x7F,0x7F,0x40,0x40,0x00},
   {0x18,0x1C,0x06,0x02,0x82,0xFC,0x78,0x00, 0x60,0x70,0x58,0x4C,0x46,0x43,0x40,0x00},
@@ -34,7 +36,7 @@ static const uint8_t font8x16[10][16] PROGMEM = {
   {0x78,0xFC,0x86,0x02,0x86,0xFC,0xF8,0x00, 0x00,0x41,0x43,0x62,0x31,0x1F,0x0F,0x00},
 };
 
-static const uint8_t init_seq[] PROGMEM = {
+static const uint8_t init_seq[] = {
   0xAE,       // display off
   0xD5, 0x80, // clock divide
   0xA8, 0x3F, // multiplex 64
@@ -60,10 +62,10 @@ static void cmd(uint8_t c) {
   digitalWrite(OLED_CS, HIGH);
 }
 
-static void data(const uint8_t *p, uint8_t n, bool pgm) {
+static void data(const uint8_t *p, uint8_t n) {
   digitalWrite(OLED_DC, HIGH);
   digitalWrite(OLED_CS, LOW);
-  while (n--) SPI.transfer(pgm ? pgm_read_byte(p++) : *p++);
+  while (n--) SPI.transfer(*p++);
   digitalWrite(OLED_CS, HIGH);
 }
 
@@ -80,7 +82,7 @@ void begin() {
   delayMicroseconds(20);
   digitalWrite(OLED_RES, HIGH);
   delay(2);
-  for (uint8_t i = 0; i < sizeof(init_seq); i++) cmd(pgm_read_byte(&init_seq[i]));
+  for (uint8_t i = 0; i < sizeof(init_seq); i++) cmd(*(&init_seq[i]));
   clear();
 }
 
@@ -106,7 +108,7 @@ void text5x7(uint8_t page, uint8_t col, const char *s, uint8_t ul, bool inv) {
     const uint8_t *g = &font5x7[(ch - ' ') * 5];
     uint8_t extra = (i == ul) ? 0x80 : 0;  // underline row
     for (uint8_t k = 0; k < 6; k++) {
-      uint8_t v = (k < 5 ? pgm_read_byte(g + k) : 0) | extra;
+      uint8_t v = (k < 5 ? *(g + k) : 0) | extra;
       SPI.transfer(inv ? (uint8_t)~v : v);
     }
   }
@@ -129,10 +131,10 @@ void big8x16(uint8_t page, uint8_t col, const char *s) {
   for (uint8_t half = 0; half < 2; half++) {
     setPos(page + half, col);
     for (const char *q = s; *q; q++) {
-      if (*q >= '0' && *q <= '9') data(&font8x16[*q - '0'][half * 8], 8, true);
-      else if (*q == '.' && half) data(dot, 8, false);
-      else if (*q == '-' && !half) data(minus, 8, false);
-      else data(blank, 8, false);
+      if (*q >= '0' && *q <= '9') data(&font8x16[*q - '0'][half * 8], 8);
+      else if (*q == '.' && half) data(dot, 8);
+      else if (*q == '-' && !half) data(minus, 8);
+      else data(blank, 8);
     }
   }
 }

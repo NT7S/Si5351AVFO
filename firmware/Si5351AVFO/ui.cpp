@@ -36,7 +36,7 @@ enum ItemKind : uint8_t { K_CHOICE, K_NUM };
 enum ItemId : uint8_t {
   I_MODE, I_CLK0, I_CLK1, I_CLK2, I_IF, I_INJ, I_IQ, I_LIMIT,
   I_DRV0, I_DRV1, I_DRV2, I_FOV0, I_FOV1, I_FOV2,
-  I_MSTORE, I_MRECALL, I_MCLEAR, I_CAL, I_DEFAULTS, I_ABOUT, I_COUNT
+  I_MSTORE, I_MRECALL, I_MCLEAR, I_CAL, I_RESET, I_FACTORY, I_ABOUT, I_COUNT
 };
 struct MenuItem {
   const char *label;
@@ -63,13 +63,15 @@ static const MenuItem ITEMS[I_COUNT] = {
   {"MEM RECALL",   K_CHOICE, NUM_MEMORIES, nullptr},
   {"MEM CLEAR",    K_CHOICE, NUM_MEMORIES, nullptr},
   {"CALIBRATE PPB", K_NUM,   6, nullptr},
-  {"RESET DEFAULTS", K_CHOICE, 2, "NO|YES"},
+  {"RESET SETTINGS", K_CHOICE, 2, "NO|YES"},             // keeps cal + memories
+  {"FACTORY RESET", K_CHOICE, 2, "NO|YES, ERASE ALL"},   // erases cal + memories
   {"ABOUT",        K_CHOICE, 1, FW_NAME " " FW_VERSION},
 };
 #define MENU_ROWS 6                      // list rows on pages 1-6
 
 static uint8_t menu_sel, menu_top;       // selected item, first visible item
 static int32_t edit_val;                 // working copy while editing
+static int32_t edit_orig;                // value when the editor opened (cancel)
 static uint8_t edit_cursor;              // K_NUM: digit index from the right
 
 // Current value of an item, read from g_vfo.
@@ -110,7 +112,8 @@ static const char *item_set(uint8_t id, int32_t v) {
     case I_MRECALL: return vfo_mem_recall((uint8_t)v) ? "MEMORY RECALLED" : "MEMORY EMPTY";
     case I_MCLEAR:  vfo_mem_clear((uint8_t)v); return "MEMORY CLEARED";
     case I_CAL:     vfo_set_cal(v); settings_save_now(); return "CAL SAVED";
-    case I_DEFAULTS: if (v) { vfo_defaults(); return "DEFAULTS LOADED"; } break;
+    case I_RESET:   if (v) { vfo_reset_settings(); return "SETTINGS RESET"; } break;
+    case I_FACTORY: if (v) { vfo_defaults(); return "FACTORY RESET DONE"; } break;
   }
   return nullptr;
 }
@@ -168,7 +171,6 @@ static void big_number(const char *s, uint8_t ul) {
   if (ul != 0xFF) sh1106::fill(4, BIG_COL + ul * 8, 7, 0x03);
 }
 
-static const char *const MODE_SHORT[MODE_COUNT] = {"DIR", "SH", "IQ"};
 
 static void draw_main() {
   char buf[24];
@@ -180,7 +182,7 @@ static void draw_main() {
   char clk[4];
   for (uint8_t i = 0; i < 3; i++) clk[i] = (g_plan.on >> i) & 1 ? '0' + i : '-';
   clk[3] = 0;
-  char *p = cat(buf, MODE_SHORT[s.mode]);
+  char *p = cat(buf, MODE_NAMES[s.mode]);
   p = cat(p, " "); p = cat(p, b == 0xFF ? "--" : BANDS[b].name);
   p = cat(p, s.limit == LIMIT_HAM ? " HAM C" : " WIDE C");
   cat(p, clk);
@@ -199,7 +201,9 @@ static void draw_main() {
   // Info line: message, then warnings, then mode details.
   if (msg) line(6, 0, msg);
   else if (!g_si5351_ok) line(6, 0, "SI5351 NOT FOUND");
+  else if (g_plan.flags & PLAN_FAIL) line(6, 0, "CLK NOT POSSIBLE: OFF");
   else if (g_plan.flags & PLAN_IQ_LOW) line(6, 0, "IQ NEEDS >4.76 MHZ");
+  else if (g_plan.flags & PLAN_IQ_HIGH) line(6, 0, "IQ ONLY TO 90 MHZ");
   else if (g_plan.flags & PLAN_LO_RANGE) line(6, 0, "LO OUT OF RANGE");
   else if (g_plan.flags & PLAN_FILTER) line(6, 0, "ABOVE LPF: CLK MUTED");
   else if (s.mode == MODE_SUPERHET) {
@@ -264,7 +268,7 @@ static void enter_screen(uint8_t s) {
 
 static void edit_begin() {
   if (menu_sel == I_ABOUT) { ui_message(FW_NAME " " FW_VERSION); return; }
-  edit_val = item_get(menu_sel);
+  edit_val = edit_orig = item_get(menu_sel);
   edit_cursor = 0;
   if (menu_sel == I_CAL) vfo_cal_mode(true);
   enter_screen(SCR_EDIT);
@@ -273,7 +277,7 @@ static void edit_begin() {
 static void edit_end(bool save) {
   const char *m = nullptr;
   if (menu_sel == I_CAL) {
-    if (!save) vfo_set_cal(item_get(I_CAL));   // undo the live preview
+    if (!save) vfo_preview_cal(edit_orig);     // undo the preview (hardware only)
     vfo_cal_mode(false);
   }
   if (save) m = item_set(menu_sel, edit_val);
@@ -284,18 +288,26 @@ static void edit_end(bool save) {
 static void edit_turn(int8_t d) {
   const MenuItem &it = ITEMS[menu_sel];
   if (it.kind == K_CHOICE) {             // wrap through the options
-    int16_t v = edit_val + d;
-    while (v < 0) v += it.n;
-    edit_val = v % it.n;
+    int8_t step = d < 0 ? -1 : 1;
+    for (int8_t k = d; k; k -= step) {
+      int16_t v = edit_val + step;
+      if (v < 0) v = it.n - 1;
+      if (v >= it.n) v = 0;
+      edit_val = v;
+      // Quadrature is greyed out (skipped) outside its range (§6.3).
+      if (menu_sel == I_MODE && v == MODE_QUAD && !iq_in_range(g_vfo.freq)) k += step;
+    }
     return;
   }
+  if (d > 9) d = 9;                      // keeps d * p inside int32 (S7)
+  if (d < -9) d = -9;
   int32_t p = 1;
   for (uint8_t i = 0; i < edit_cursor; i++) p *= 10;
-  int32_t v = edit_val + d * p;
-  int32_t lo = (menu_sel == I_CAL) ? -999999L : (int32_t)FREQ_MIN_HZ;
-  int32_t hi = (menu_sel == I_CAL) ? 999999L : (int32_t)FREQ_MAX_HZ;
+  int32_t v = edit_val + (int32_t)d * p;
+  int32_t lo = (menu_sel == I_CAL) ? -CAL_MAX_PPB : (int32_t)FREQ_MIN_HZ;
+  int32_t hi = (menu_sel == I_CAL) ? CAL_MAX_PPB : (int32_t)FREQ_MAX_HZ;
   edit_val = v < lo ? lo : (v > hi ? hi : v);
-  if (menu_sel == I_CAL) vfo_set_cal(edit_val);   // live preview on CLK2
+  if (menu_sel == I_CAL) vfo_preview_cal(edit_val);   // live preview on CLK2, not saved
 }
 
 void ui_event(uint8_t ev, int8_t d) {

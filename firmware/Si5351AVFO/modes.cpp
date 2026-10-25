@@ -1,13 +1,15 @@
 #include "modes.h"
 #include "bands.h"
 
+const char *const MODE_NAMES[MODE_COUNT] = {"DIR", "SH", "IQ"};
+
 bool iq_plan(uint32_t f, uint32_t &pll, uint8_t &div) {
-  if (f < IQ_MIN_HZ) return false;
+  if (!iq_in_range(f)) return false;
   // Highest even divider that keeps the PLL at or below 900 MHz.
   uint32_t d = PLL_MAX_HZ / f;
   if (d > IQ_MAX_DIV) d = IQ_MAX_DIV;
   d &= ~1UL;
-  if (d < 4) return false;
+  if (d < IQ_MIN_DIV) return false;
   uint32_t p = f * d;          // <= 900 MHz, fits in 32 bits
   if (p < PLL_MIN_HZ) return false;
   pll = p;
@@ -38,7 +40,10 @@ void plan_outputs(const VfoState &s, ClockPlan &p) {
     case MODE_QUAD:
       // CLK0/CLK1 = I/Q pair at F (90 degrees), CLK2 = tuned frequency.
       p.f[0] = p.f[1] = p.f[2] = F;
-      if (!iq_plan(F, p.iq_pll, p.iq_div)) { p.flags |= PLAN_IQ_LOW; p.on &= ~0x03; }
+      if (!iq_plan(F, p.iq_pll, p.iq_div)) {
+        p.flags |= (F > IQ_MAX_HZ) ? PLAN_IQ_HIGH : PLAN_IQ_LOW;
+        p.on &= ~0x03;
+      }
       break;
     default:  // MODE_DIRECT: every enabled clock shows the displayed frequency
       p.f[0] = p.f[1] = p.f[2] = F;

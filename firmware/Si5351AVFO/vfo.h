@@ -26,6 +26,8 @@ void vfo_cal_mode(bool on);             // CLK2 = 10 MHz for calibration
 bool vfo_mem_store(uint8_t n);
 bool vfo_mem_recall(uint8_t n);
 bool vfo_mem_clear(uint8_t n);
-void vfo_defaults();
-void vfo_changed();
-void vfo_update();                      // after editing g_vfo fields directly: reprogram all + save                     // mark state changed: redraw + delayed save
+void vfo_preview_cal(int32_t ppb);      // calibration preview: hardware only
+void vfo_defaults();                    // factory reset (also cal + memories)
+void vfo_reset_settings();              // reset settings, keep cal + memories
+void vfo_changed();                     // mark state changed: redraw + delayed save
+void vfo_update();                      // after editing g_vfo fields directly: reprogram all + save

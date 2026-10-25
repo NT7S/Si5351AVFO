@@ -16,7 +16,7 @@ Board settings (either build method):
 | Board | ATtiny3226 w/Optiboot |
 | Clock | 8 MHz internal |
 | Reset pin | UPDI on PA0, RST on PB4 |
-| BOD | disabled |
+| BOD | disabled (enabling it is an optional fuse change, see REQUIREMENTS §3) |
 | Startup time | 8 ms |
 | EEPROM | retained (EESAVE) |
 
@@ -63,8 +63,8 @@ on a PC with `g++ -std=c++11`.
 | `vfo_state.h` | **host** – the `VfoState` struct (everything that is saved) |
 | `bands.h/.cpp` | **host** – band table 160 m–2 m, band step with wrap, tuning-limit clamp, defaults |
 | `tuning.h/.cpp` | **host** – step table and cycling, `MMM.KKK.HHH` formatting, step underline position (500 Hz on the '.'), encoder decoder |
-| `modes.h/.cpp` | **host** – Direct / Superhet / Quadrature output plan, I/Q integer PLL plan (≥4.76 MHz), LPF mute unless overridden |
-| `eeprom_layout.h/.cpp` | **host** – byte-exact 127-byte EEPROM image, CRC8, validation |
+| `modes.h/.cpp` | **host** – Direct / Superhet / Quadrature output plan, I/Q integer PLL plan (4.76–90 MHz), LPF mute unless overridden |
+| `eeprom_layout.h/.cpp` | **host** – 128-byte EEPROM slot image (A/B slots), CRC8, validation |
 | `cmd_parser.h/.cpp` | **host** – serial line tokenizer, command table, number parsing |
 | `vfo.h/.cpp` | owns the state, programs the Si5351 (PLL routing, I/Q phase, drive, enables) |
 | `settings.h/.cpp` | EEPROM load, 5 s delayed save, immediate save |
@@ -85,7 +85,7 @@ on a PC with `g++ -std=c++11`.
 `F <Hz>`, `F?`, `STEP <Hz>`, `STEP?`, `BAND <name|+|->`, `BAND?`, `MODE <DIR|SH|IQ>`,
 `MODE?`, `ON <clk>`, `OFF <clk>`, `DRIVE <clk> <2|4|6|8>`, `IF <Hz>`, `IF?`,
 `INJ <HI|LO>`, `IQ <0|1>`, `LIMIT <HAM|WIDE>`, `FOVR <clk> <0|1>`, `MS <n>`,
-`MR <n>`, `MC <n>`, `M?`, `CAL <ppb>`, `CAL?`, `SAVE`, `DEFAULTS`, `STATUS`, `VER`,
+`MR <n>`, `MC <n>`, `M?`, `CAL <ppb>`, `CAL?`, `SAVE`, `RESET`, `RESET ALL`, `DEFAULTS`, `STATUS`, `VER`,
 `HELP`. `AUTO` is not implemented yet. Replies are `OK`, `ERR <reason>` or data.
 
 ## To verify on hardware

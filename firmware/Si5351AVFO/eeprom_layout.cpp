@@ -18,7 +18,7 @@ uint8_t crc8(const uint8_t *p, uint8_t n) {
   return c;
 }
 
-void ee_pack(const VfoState &s, uint8_t *img) {
+void ee_pack(const VfoState &s, uint8_t *img, uint8_t seq) {
   img[EE_OFF_MAGIC] = EE_MAGIC0;
   img[EE_OFF_MAGIC + 1] = EE_MAGIC1;
   img[EE_OFF_VERSION] = EE_VERSION;
@@ -39,13 +39,17 @@ void ee_pack(const VfoState &s, uint8_t *img) {
     put32(img + EE_OFF_MEM + 5 * i, s.mem[i].freq);
     img[EE_OFF_MEM + 5 * i + 4] = s.mem[i].info;
   }
+  img[EE_OFF_SEQ] = seq;
   img[EE_OFF_CRC] = crc8(img, EE_OFF_CRC);
 }
 
+bool ee_valid(const uint8_t *img) {
+  return img[EE_OFF_MAGIC] == EE_MAGIC0 && img[EE_OFF_MAGIC + 1] == EE_MAGIC1 &&
+         img[EE_OFF_VERSION] == EE_VERSION && crc8(img, EE_OFF_CRC) == img[EE_OFF_CRC];
+}
+
 bool ee_unpack(const uint8_t *img, VfoState &s) {
-  if (img[EE_OFF_MAGIC] != EE_MAGIC0 || img[EE_OFF_MAGIC + 1] != EE_MAGIC1) return false;
-  if (img[EE_OFF_VERSION] != EE_VERSION) return false;
-  if (crc8(img, EE_OFF_CRC) != img[EE_OFF_CRC]) return false;
+  if (!ee_valid(img)) return false;
 
   VfoState d;            // defaults, used for any out-of-range field
   state_defaults(d);
@@ -53,6 +57,8 @@ bool ee_unpack(const uint8_t *img, VfoState &s) {
   uint32_t f = get32(img + EE_OFF_FREQ);
   if (f >= FREQ_MIN_HZ && f <= FREQ_MAX_HZ) s.freq = f;
   if (img[EE_OFF_BAND] < NUM_BANDS) s.band = img[EE_OFF_BAND];
+  uint8_t fb = band_find(s.freq);      // band index follows the saved F (N9)
+  if (fb != 0xFF) s.band = fb;
   if (img[EE_OFF_STEP] < NUM_STEPS) s.step_idx = img[EE_OFF_STEP];
   if (img[EE_OFF_MODE] < MODE_COUNT) s.mode = img[EE_OFF_MODE];
   s.clk_en = img[EE_OFF_CLK_EN] & 0x07;
@@ -63,10 +69,11 @@ bool ee_unpack(const uint8_t *img, VfoState &s) {
   f = get32(img + EE_OFF_IF);
   if (f >= FREQ_MIN_HZ && f <= FREQ_MAX_HZ) s.if_freq = f;
   for (uint8_t i = 0; i < NUM_CLOCKS; i++) s.drive[i] = (img[EE_OFF_DRIVE] >> (2 * i)) & 3;
-  s.cal_ppb = (int32_t)get32(img + EE_OFF_CAL);
+  int32_t cal = (int32_t)get32(img + EE_OFF_CAL);
+  if (cal >= -CAL_MAX_PPB && cal <= CAL_MAX_PPB) s.cal_ppb = cal;
   for (uint8_t i = 0; i < NUM_BANDS; i++) {
     f = get32(img + EE_OFF_BAND_LAST + 4 * i);
-    if (f >= FREQ_MIN_HZ && f <= FREQ_MAX_HZ) s.band_last[i] = f;
+    if (f >= BANDS[i].lo && f <= BANDS[i].hi) s.band_last[i] = f;   // else start
   }
   for (uint8_t i = 0; i < NUM_MEMORIES; i++) {
     s.mem[i].freq = get32(img + EE_OFF_MEM + 5 * i);

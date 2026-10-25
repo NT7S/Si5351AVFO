@@ -15,12 +15,11 @@ static char line_buf[CMD_MAX_LINE + 1];
 static uint8_t line_len;
 static bool line_overflow;
 
-static const char *const MODE_NAMES[MODE_COUNT] = {"DIR", "SH", "IQ"};
 
 static void ok() { Serial.println(F("OK")); }
 static void err(const __FlashStringHelper *why) { Serial.print(F("ERR ")); Serial.println(why); }
 
-static bool streq(const char *a, const char *b) { return strcmp(a, b) == 0; }
+#define streq cmd_streq
 
 // Clock argument "0".."2" (also accepts "CLK0".."CLK2").
 static bool arg_clk(const char *s, uint8_t &clk) {
@@ -64,7 +63,7 @@ static const uint8_t ARGC[CMD_COUNT] = {
   1, 2,                   // LIMIT FOVR
   1, 1, 1, 0,             // MS MR MC M?
   1,                      // CAL
-  0, 0, 0, 0, 0, 1,       // SAVE DEFAULTS STATUS VER HELP AUTO
+  0, 0, 0, 0, 0, 1, 1,    // SAVE DEFAULTS STATUS VER HELP AUTO RESET [ALL]
 };
 static bool can_query(uint8_t id) {
   return id == CMD_F || id == CMD_STEP || id == CMD_BAND || id == CMD_MODE ||
@@ -75,7 +74,9 @@ static void execute(Cmd &c) {
   if (c.id == CMD_NONE) return;
   if (c.id >= CMD_COUNT) return err(F("CMD"));
   if (c.query && !can_query(c.id)) return err(F("CMD"));
-  if (c.extra || c.argc != (c.query ? 0 : ARGC[c.id])) return err(F("ARG"));
+  uint8_t want = c.query ? 0 : ARGC[c.id];
+  if (c.id == CMD_RESET && c.argc == 0) want = 0;    // RESET or RESET ALL
+  if (c.extra || c.argc != want) return err(F("ARG"));
 
   uint32_t u;
   int32_t i;
@@ -110,7 +111,10 @@ static void execute(Cmd &c) {
     case CMD_MODE:
       if (c.query) { Serial.println(MODE_NAMES[g_vfo.mode]); return; }
       for (uint8_t m = 0; a0 && m < MODE_COUNT; m++)
-        if (streq(a0, MODE_NAMES[m])) { vfo_set_mode(m); return ok(); }
+        if (streq(a0, MODE_NAMES[m])) {
+          if (m == MODE_QUAD && !iq_in_range(g_vfo.freq)) return err(F("IQRANGE"));
+          vfo_set_mode(m); return ok();
+        }
       return err(F("ARG"));
     case CMD_ON:
     case CMD_OFF:
@@ -160,10 +164,14 @@ static void execute(Cmd &c) {
       return;
     case CMD_CAL:
       if (c.query) { Serial.println(g_vfo.cal_ppb); return; }
-      if (!arg_i32(a0, i)) return err(F("ARG"));
+      if (!arg_i32(a0, i) || i < -CAL_MAX_PPB || i > CAL_MAX_PPB) return err(F("ARG"));
       vfo_set_cal(i); settings_save_now(); return ok();
     case CMD_SAVE: settings_save_now(); return ok();
-    case CMD_DEFAULTS: vfo_defaults(); return ok();
+    case CMD_DEFAULTS: vfo_defaults(); return ok();     // = RESET ALL (kept for compatibility)
+    case CMD_RESET:
+      if (!a0) { vfo_reset_settings(); return ok(); }  // keeps cal + memories
+      if (streq(a0, "ALL")) { vfo_defaults(); return ok(); }
+      return err(F("ARG"));
     case CMD_STATUS: print_status(); return;
     case CMD_VER: Serial.println(F(FW_NAME " " FW_VERSION)); return;
     case CMD_HELP:

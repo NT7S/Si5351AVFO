@@ -31,8 +31,11 @@ uint8_t input_poll(int8_t *detents) {
   // Encoder: hand out whole detents, keep the remainder.
   noInterrupts();
   int16_t q = enc_quarters;
-  int8_t d = q / ENC_QUARTERS_PER_DETENT;
-  enc_quarters = q - d * ENC_QUARTERS_PER_DETENT;
+  int16_t d16 = q / ENC_QUARTERS_PER_DETENT;
+  if (d16 > 127) d16 = 127;            // hand out at most 127 detents per poll;
+  if (d16 < -127) d16 = -127;          // the rest stays queued (S7)
+  int8_t d = (int8_t)d16;
+  enc_quarters = q - d16 * ENC_QUARTERS_PER_DETENT;
   interrupts();
   if (d) {
     *detents = ENC_REVERSE ? -d : d;

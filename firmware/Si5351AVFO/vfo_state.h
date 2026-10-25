@@ -7,6 +7,7 @@
 #define NUM_CLOCKS   3
 #define NUM_BANDS    13
 #define NUM_MEMORIES 10
+#define CAL_MAX_PPB  999999L   // calibration range, +/- ppb
 #define MEM_EMPTY    0xFF     // memory band/mode byte when the channel is unused
 
 enum OutputMode : uint8_t { MODE_DIRECT = 0, MODE_SUPERHET = 1, MODE_QUAD = 2, MODE_COUNT };

@@ -7,12 +7,12 @@ static const char *const NAMES[CMD_COUNT] = {
   "LIMIT", "FOVR",
   "MS", "MR", "MC", "M",
   "CAL",
-  "SAVE", "DEFAULTS", "STATUS", "VER", "HELP", "AUTO",
+  "SAVE", "DEFAULTS", "STATUS", "VER", "HELP", "AUTO", "RESET",
 };
 
 const char *cmd_name(uint8_t id) { return (id > 0 && id < CMD_COUNT) ? NAMES[id] : nullptr; }
 
-static bool streq(const char *a, const char *b) {
+bool cmd_streq(const char *a, const char *b) {
   while (*a && *a == *b) { a++; b++; }
   return *a == *b;
 }
@@ -46,7 +46,7 @@ uint8_t cmd_parse(char *line, Cmd &c) {
 
   c.id = CMD_UNKNOWN;
   for (uint8_t i = 1; i < CMD_COUNT; i++)
-    if (streq(verb, NAMES[i])) { c.id = i; break; }
+    if (cmd_streq(verb, NAMES[i])) { c.id = i; break; }
   // A bare "M" is only valid as the "M?" list query.
   if (c.id == CMD_MLIST && !c.query) c.id = CMD_UNKNOWN;
   return c.id;
