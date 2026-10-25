@@ -36,7 +36,7 @@ WIN_CHAMFER = 1.0       # 45deg bevel on window outer edge
 OLED_STOP_GAP = 0.3     # gap between panel stops and OLED glass / module PCB
 BTN_HOLE   = 3.5 + 2*FIT    # KH-6X6X11H plunger dia 3.5
 ENC_HOLE   = 7.6            # EC11 M7 bushing (model dia 7.0)
-PANEL_GRAPHICS = True   # debossed name, Etherkit logo, control labels (labels.py)
+PANEL_GRAPHICS = "inlay"   # "inlay" = flush 2nd-colour inlay (separate solid), True = debossed name, Etherkit logo, control labels (labels.py)
 ENC_RING_GAP = 0.2       # ring stops 0.2 above encoder body; nut takes up the gap
 OUT        = os.path.dirname(os.path.abspath(__file__))
 
@@ -159,10 +159,58 @@ def front_shell():
         s = s.cut(box(x - rb, SMA_FLANGE_DEPTH + 0.2, x + rb, WALL_Y1 + 0.1, zb, SMA_AXIS_Z))
         s = s.cut(cq.Workplane("XZ").workplane(offset=-(SMA_FLANGE_DEPTH + 0.2)).center(x, SMA_AXIS_Z)
                   .circle(rb).extrude(-(WALL_Y1 - SMA_FLANGE_DEPTH + 0.2)))
+    if PANEL_GRAPHICS == "inlay":
+        return s.cut(panel_inlay(s))
     if PANEL_GRAPHICS:                     # debossed name/logo/labels, see labels.py
         import labels
         s = s.cut(labels.graphics(PANEL_OUT))
     return s
+
+_inlay = None
+INLAY_MIN_STROKE = 0.8   # widen only features narrower than this (0.4 mm nozzle); None = off
+THIN_REPORT = {}
+def _thicken(g, z, depth, w):
+    """2D: P' = P U buffer(thin parts of P); re-extrude flush (z-depth .. z+0.5)."""
+    from shapely.geometry import Polygon
+    from shapely.ops import unary_union
+    sec = g.section(z - depth/2)
+    polys = []
+    for f in sec.faces().vals():
+        ring = lambda wr: [(v.x, v.y) for v in wr.sample(max(40, int(wr.Length()/0.05)))[0]] if hasattr(wr, "sample") else None
+        def pts(wr):
+            e = cq.Wire.assembleEdges(wr.Edges()) if False else wr
+            n = max(40, int(wr.Length()/0.05))
+            return [(p.x, p.y) for p in [wr.positionAt(i/n) for i in range(n)]]
+        polys.append(Polygon(pts(f.outerWire()), [pts(h) for h in f.innerWires()]).buffer(0))
+    P = unary_union(polys); r = w/2
+    # mitred morphological opening: keeps sharp convex corners, so only genuinely thin strokes show up as "lost"
+    M = dict(join_style=2, mitre_limit=10.0)
+    O = P.buffer(-r, **M).buffer(r, **M)
+    lost = P.difference(O)
+    lost = unary_union([q for q in getattr(lost, "geoms", [lost]) if q.area > 0.03 and q.buffer(-0.02).area > 0])
+    # grow the real outline (mitred offset, no round caps) only where it is thin
+    d = 0.1
+    add = P.buffer(d, **M).intersection(lost.buffer(d + 0.15, **M)) if not lost.is_empty else lost
+    P2 = P.union(add).buffer(0)
+    THIN_REPORT.update(area_thin=round(lost.area, 2), added=round(P2.area - P.area, 2), base_area=round(P.area, 1))
+    out = None
+    for q in getattr(P2, "geoms", [P2]):
+        q = q.simplify(0.005)
+        mk = lambda c: cq.Wire.makePolygon([cq.Vector(x, y, 0) for x, y in list(c)[:-1]], close=True)
+        fc = cq.Face.makeFromWires(mk(q.exterior.coords), [mk(i.coords) for i in q.interiors])
+        sol = cq.Solid.extrudeLinear(fc, cq.Vector(0, 0, depth + 0.5)).translate(cq.Vector(0, 0, z - depth))
+        out = sol if out is None else out.fuse(sol)
+    return cq.Workplane().add(out.clean())
+def panel_inlay(base=None):
+    """Flush 2nd-colour graphics: solids filling the outer face down to labels.INLAY_DEPTH."""
+    global _inlay
+    if _inlay is None:
+        import labels
+        g = labels.graphics(PANEL_OUT, labels.INLAY_DEPTH)
+        if INLAY_MIN_STROKE:
+            g = _thicken(g, PANEL_OUT, labels.INLAY_DEPTH, INLAY_MIN_STROKE)
+        _inlay = g.intersect(base)
+    return _inlay
 
 # ------------------------------------------------------------------ back cover
 def back_cover():
@@ -210,4 +258,14 @@ if __name__ == "__main__":
         cq.exporters.export(po, os.path.join(OUT, f"vfo_{name}.step"))
         cq.exporters.export(po, os.path.join(OUT, f"vfo_{name}.stl"), tolerance=0.02, angularTolerance=0.1)
         bb = po.BoundingBox(); print(f"  print bbox {bb.xlen:.1f} x {bb.ylen:.1f} x {bb.zlen:.1f}")
+        if name == "front_shell" and PANEL_GRAPHICS == "inlay":
+            ss = part.val(); ins = panel_inlay().val()
+            bbf = ss.rotate((0,0,0),(1,0,0),180).BoundingBox()
+            mv = lambda o: o.rotate((0,0,0),(1,0,0),180).translate(cq.Vector(-bbf.center.x, -bbf.center.y, -bbf.zmin))
+            cq.exporters.export(po, os.path.join(OUT, "vfo_front_shell_body.stl"), tolerance=0.02, angularTolerance=0.1)
+            ip = mv(ins)
+            cq.exporters.export(ip, os.path.join(OUT, "vfo_front_shell_inlay.stl"), tolerance=0.01, angularTolerance=0.1)
+            asm = cq.Assembly().add(po, name="body", color=cq.Color(0.1,0.1,0.1)).add(ip, name="inlay", color=cq.Color(1,1,1))
+            asm.save(os.path.join(OUT, "vfo_front_shell_2color.step"))
+            ib = ip.BoundingBox(); print("  inlay valid", ins.isValid(), "vol mm3", round(ins.Volume(),1), "z", round(ib.zmin,3), round(ib.zmax,3), "body+inlay vs base", round(po.Volume()+ip.Volume(),1), THIN_REPORT)
     sys.stdout.flush(); os._exit(0)

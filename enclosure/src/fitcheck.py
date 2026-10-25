@@ -1,7 +1,8 @@
 import os, sys, numpy as np, cadquery as cq, trimesh
 from OCP.BRepExtrema import BRepExtrema_DistShapeShape
 import vfo_case as V
-board = cq.importers.importStep("repo/docs/mechanical/Si5351AVFO_board.step").val()
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+board = cq.importers.importStep(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "docs", "mechanical", "Si5351AVFO_board.step")).val()
 solids = board.Solids()
 f, b = V.front_shell().val(), V.back_cover().val()
 fence = V.dbox(51, 6.5, 93, 40, 1.6, 7.6).val()
@@ -34,7 +35,7 @@ print("closest 25:")
 for r in sorted(res, key=lambda r: r[3])[:25]: print(f"  {r[0]:5} {r[1]:14} vol={r[2]:.4f} d={r[3]:.3f} {r[4]}")
 print("front vs cover overlap vol", round(f.intersect(b).Volume(), 4), "dist", round(dist(f, b), 3))
 print("front within OLED keepout (vol, informational):", round(f.intersect(oled_keep).Volume(), 2))
-for pn, p in (("front", "vfo_front_shell.stl"), ("cover", "vfo_back_cover.stl")):
+for pn, p in (("front", "../stl/vfo_front_shell.stl"), ("cover", "../stl/vfo_back_cover.stl")):
     m = trimesh.load(p); n = m.face_normals; c = m.triangles_center; a = m.area_faces
     down = n[:, 2] < -np.cos(np.radians(44))
     onbed = c[:, 2] < 0.05
