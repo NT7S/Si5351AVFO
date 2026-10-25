@@ -44,8 +44,8 @@ pio run -t upload       # upload via Optiboot on the USB serial port
 
 | Build | Flash | RAM |
 |---|---:|---:|
-| Full (serial on) | 26,139 B of 32,256 B (81.0%) | 654 B of 3,072 B (21.3%) |
-| `ENABLE_SERIAL=0` | 21,360 B (66.2%) | 474 B |
+| Full (serial on, rev 3.5) | 28,243 B of 32,256 B (87.6%) | 662 B of 3,072 B (21.5%) |
+| `ENABLE_SERIAL=0` (measured at an earlier revision) | 21,360 B (66.2%) | 474 B |
 
 Si5351Arduino is about 8.9 KB of this. See the flash-optimization notes in the
 requirements (§10) if space gets tight.
@@ -87,6 +87,15 @@ on a PC with `g++ -std=c++11`.
 `INJ <HI|LO>`, `IQ <0|1>`, `LIMIT <HAM|WIDE>`, `FOVR <clk> <0|1>`, `MS <n>`,
 `MR <n>`, `MC <n>`, `M?`, `CAL <ppb>`, `CAL?`, `SAVE`, `RESET`, `RESET ALL`, `DEFAULTS`, `STATUS`, `VER`,
 `HELP`. `AUTO` is not implemented yet. Replies are `OK`, `ERR <reason>` or data.
+`MODE IQ` and `MR` of a quadrature memory reply `ERR IQRANGE` when the frequency is
+outside the quadrature range (4.761905–90 MHz); nothing is changed.
+
+## EEPROM layout upgrade
+Settings use two 128-byte slots (A/B, layout version 2); each save goes to the older
+slot, so each byte is written every other save. A board flashed with the old
+single-slot layout (version 1) finds no valid slot after the upgrade and boots once
+with defaults, losing its calibration and memories. Note the calibration value
+(`CAL?`) before upgrading if you need it.
 
 ## To verify on hardware
 - Encoder detent count (`ENC_QUARTERS_PER_DETENT`) and direction (`ENC_REVERSE`).

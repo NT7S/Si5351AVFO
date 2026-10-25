@@ -1,7 +1,6 @@
 #include "sh1106.h"
 // tinyAVR 2-series maps flash into data space, so const tables stay in flash
 // and are read directly (no PROGMEM / pgm_read_byte needed).
-#include <avr/pgmspace.h>
 
 // 5x7 font, ASCII 0x20..0x5A (space..Z); lowercase is folded to upper case.
 static const uint8_t font5x7[] = {
@@ -82,7 +81,7 @@ void begin() {
   delayMicroseconds(20);
   digitalWrite(OLED_RES, HIGH);
   delay(2);
-  for (uint8_t i = 0; i < sizeof(init_seq); i++) cmd(*(&init_seq[i]));
+  for (uint8_t i = 0; i < sizeof(init_seq); i++) cmd(init_seq[i]);
   clear();
 }
 

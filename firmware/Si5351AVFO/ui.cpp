@@ -95,7 +95,11 @@ static int32_t item_get(uint8_t id) {
 static const char *item_set(uint8_t id, int32_t v) {
   VfoState &s = g_vfo;
   switch (id) {
-    case I_MODE:  vfo_set_mode((uint8_t)v); break;
+    case I_MODE:
+      // Re-confirming QUADRATURE after tuning out of range is refused, like
+      // serial MODE IQ (ERR IQRANGE); the mode is left unchanged.
+      if (v == MODE_QUAD && !iq_in_range(s.freq)) return "QUAD OUT OF RANGE";
+      vfo_set_mode((uint8_t)v); break;
     case I_CLK0: case I_CLK1: case I_CLK2: vfo_set_clock(id - I_CLK0, v); break;
     case I_IF:    s.if_freq = (uint32_t)v; vfo_update(); break;
     case I_INJ:   s.injection = (uint8_t)v; vfo_update(); break;
@@ -109,7 +113,10 @@ static const char *item_set(uint8_t id, int32_t v) {
       break;
     }
     case I_MSTORE:  vfo_mem_store((uint8_t)v); return "MEMORY STORED";
-    case I_MRECALL: return vfo_mem_recall((uint8_t)v) ? "MEMORY RECALLED" : "MEMORY EMPTY";
+    case I_MRECALL: {
+      uint8_t r = vfo_mem_recall((uint8_t)v);
+      return r == MR_OK ? "MEMORY RECALLED" : r == MR_IQRANGE ? "QUAD OUT OF RANGE" : "MEMORY EMPTY";
+    }
     case I_MCLEAR:  vfo_mem_clear((uint8_t)v); return "MEMORY CLEARED";
     case I_CAL:     vfo_set_cal(v); settings_save_now(); return "CAL SAVED";
     case I_RESET:   if (v) { vfo_reset_settings(); return "SETTINGS RESET"; } break;

@@ -24,7 +24,10 @@ void vfo_set_drive(uint8_t clk, uint8_t drive);
 void vfo_set_cal(int32_t ppb);          // apply correction live
 void vfo_cal_mode(bool on);             // CLK2 = 10 MHz for calibration
 bool vfo_mem_store(uint8_t n);
-bool vfo_mem_recall(uint8_t n);
+// Recall result: MR_OK, MR_EMPTY (bad/empty channel), MR_IQRANGE (quadrature
+// memory whose frequency is outside the quadrature range; nothing changed).
+enum { MR_OK = 0, MR_EMPTY, MR_IQRANGE };
+uint8_t vfo_mem_recall(uint8_t n);
 bool vfo_mem_clear(uint8_t n);
 void vfo_preview_cal(int32_t ppb);      // calibration preview: hardware only
 void vfo_defaults();                    // factory reset (also cal + memories)

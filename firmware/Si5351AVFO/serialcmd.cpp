@@ -148,7 +148,12 @@ static void execute(Cmd &c) {
     case CMD_MR:
     case CMD_MC: {
       if (!arg_u32(a0, u) || u >= NUM_MEMORIES) return err(F("ARG"));
-      bool r = c.id == CMD_MS ? vfo_mem_store(u) : c.id == CMD_MR ? vfo_mem_recall(u) : vfo_mem_clear(u);
+      if (c.id == CMD_MR) {
+        uint8_t r = vfo_mem_recall(u);
+        if (r == MR_IQRANGE) return err(F("IQRANGE"));
+        return r == MR_OK ? ok() : err(F("EMPTY"));
+      }
+      bool r = c.id == CMD_MS ? vfo_mem_store(u) : vfo_mem_clear(u);
       return r ? ok() : err(F("EMPTY"));
     }
     case CMD_MLIST:

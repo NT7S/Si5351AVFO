@@ -16,7 +16,9 @@ static Si5351 si5351;
 static uint8_t hw_mode = 0xFF;           // mode the Si5351 is currently set up for
 static uint32_t hw_f[NUM_CLOCKS];        // last frequency written per clock
 static uint8_t hw_drive[NUM_CLOCKS] = {0xFF, 0xFF, 0xFF};
-static uint8_t hw_on = 0xFF;
+static uint8_t hw_on = 0xFF;            // output enables last written
+static uint8_t hw_pwr = 0xFF;           // clocks powered up (0xFF: unknown, treat as on)
+static bool en_dirty = true;            // the library may have changed enables
 static bool cal_active;
 
 static inline si5351_clock CLK(uint8_t i) { return (si5351_clock)i; }
@@ -32,6 +34,8 @@ bool vfo_begin() {
   if (g_si5351_ok) {
     hw_mode = 0xFF;   // force a full reprogram (init/reset cleared the chip)
     hw_on = 0xFF;
+    hw_pwr = 0xFF;
+    en_dirty = true;
     for (uint8_t i = 0; i < NUM_CLOCKS; i++) hw_drive[i] = 0xFF;
     vfo_apply();
   }
@@ -49,6 +53,18 @@ static void setup_routing(uint8_t mode) {
     si5351.set_phase(SI5351_CLK1, 0);
   }
   for (uint8_t i = 0; i < NUM_CLOCKS; i++) hw_f[i] = 0;
+}
+
+// Take a clock fully out of use: output off, multisynth powered down, and its
+// library frequency cleared so Si5351Arduino no longer counts its PLL as in
+// use when planning other clocks (clk_freq[] is a public member at 1c7199f).
+static void clk_off(uint8_t i) {
+  si5351.output_enable(CLK(i), 0);
+  si5351.set_clock_pwr(CLK(i), 0);
+  si5351.clk_freq[i] = 0;
+  hw_f[i] = 0;
+  hw_pwr &= ~(1 << i);
+  hw_on &= ~(1 << i);
 }
 
 void vfo_apply() {
@@ -69,21 +85,36 @@ void vfo_apply() {
     }
   }
 
+  // Clocks leaving the plan are released first so their PLL is free for the
+  // others; clocks entering it are powered up and fully reprogrammed.
+  for (uint8_t i = 0; i < NUM_CLOCKS; i++) {
+    uint8_t bit = 1 << i;
+    if (!(g_plan.on & bit) && (hw_pwr & bit)) clk_off(i);
+    else if ((g_plan.on & bit) && !(hw_pwr & bit)) {
+      si5351.set_clock_pwr(CLK(i), 1);
+      hw_pwr |= bit;
+      hw_f[i] = 0;
+      en_dirty = true;                 // first set_freq may enable the output
+    }
+  }
+
   if (mode == MODE_QUAD && (g_plan.on & 0x03) && g_plan.f[0] != hw_f[0]) {
     // Integer I/Q pair: same PLL, same divider, phase register = divider on
-    // the clock that lags. A PLL reset re-aligns the phases.
+    // the clock that lags. A PLL reset re-aligns the phases. Both MS are
+    // programmed even if only one clock is on, so the pair stays aligned.
     uint64_t pll = (uint64_t)g_plan.iq_pll * 100ULL;
     uint64_t f = (uint64_t)g_plan.f[0] * 100ULL;
     uint8_t e = si5351.set_freq_manual(f, pll, SI5351_CLK0);
     e |= si5351.set_freq_manual(f, pll, SI5351_CLK1);
-    if (e) { g_plan.on &= ~0x03; g_plan.flags |= PLAN_FAIL; }
     si5351.set_phase(g_vfo.iq_order ? SI5351_CLK1 : SI5351_CLK0, 0);
     si5351.set_phase(g_vfo.iq_order ? SI5351_CLK0 : SI5351_CLK1, g_plan.iq_div);
     si5351.pll_reset(SI5351_PLLA);
-    hw_f[0] = hw_f[1] = e ? 0 : g_plan.f[0];
-    // set_freq_manual() enables both outputs; force the enable pass below so
-    // a clock that is off in the plan is switched off again.
-    hw_on = 0xFF;
+    hw_f[0] = hw_f[1] = g_plan.f[0];
+    if (e) { g_plan.on &= ~0x03; g_plan.flags |= PLAN_FAIL; }
+    // set_freq_manual() always enables its output: release any of the pair
+    // that is not in the plan again.
+    for (uint8_t i = 0; i < 2; i++) if (!(g_plan.on & (1 << i))) clk_off(i);
+    en_dirty = true;
   }
   for (uint8_t i = 0; i < NUM_CLOCKS; i++) {
     if (mode == MODE_QUAD && i < 2) continue;          // handled above
@@ -91,13 +122,15 @@ void vfo_apply() {
     if (si5351.set_freq((uint64_t)g_plan.f[i] * 100ULL, CLK(i))) {
       g_plan.on &= ~(1 << i);          // refused (e.g. two >100 MHz on one PLL)
       g_plan.flags |= PLAN_FAIL;
-      hw_f[i] = 0;
+      clk_off(i);
     } else hw_f[i] = g_plan.f[i];
-    hw_on = 0xFF;                      // set_freq may enable the output
   }
-  if (g_plan.on != hw_on) {
+  // Rewrite enables only when the plan changed or the library may have
+  // touched them (first set of a clock, quadrature programming).
+  if (en_dirty || g_plan.on != hw_on) {
     for (uint8_t i = 0; i < NUM_CLOCKS; i++) si5351.output_enable(CLK(i), (g_plan.on >> i) & 1);
     hw_on = g_plan.on;
+    en_dirty = false;
   }
 }
 
@@ -234,14 +267,16 @@ bool vfo_mem_store(uint8_t n) {
   return true;
 }
 
-bool vfo_mem_recall(uint8_t n) {
-  if (n >= NUM_MEMORIES || g_vfo.mem[n].info == MEM_EMPTY) return false;
+uint8_t vfo_mem_recall(uint8_t n) {
+  if (n >= NUM_MEMORIES || g_vfo.mem[n].info == MEM_EMPTY) return MR_EMPTY;
   uint8_t mode = g_vfo.mem[n].info >> 4, band = g_vfo.mem[n].info & 0x0F;
+  // Same rule as MODE IQ: quadrature is never entered out of range (§6.3).
+  if (mode == MODE_QUAD && !iq_in_range(g_vfo.mem[n].freq)) return MR_IQRANGE;
   // The recalled mode governs the enable rule: mode first, then band (§6.1).
   set_mode_index(mode);
   set_band_index(band);
   vfo_set_freq(g_vfo.mem[n].freq);
-  return true;
+  return MR_OK;
 }
 
 bool vfo_mem_clear(uint8_t n) {
