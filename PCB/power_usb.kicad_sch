@@ -11543,7 +11543,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d983f21b-2244-411f-829d-2cfb576e64b0")
-		(property "Reference" "#PWR900"
+		(property "Reference" "#PWR920"
 			(at 273.67999999999995 229.18 0)
 			(hide yes)
 			(effects
@@ -11598,7 +11598,7 @@
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000002"
-					(reference "#PWR900")
+					(reference "#PWR920")
 					(unit 1)
 				)
 			)
@@ -11686,7 +11686,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "93d6ee03-7343-4295-8087-adc08cb40340")
-		(property "Reference" "#PWR901"
+		(property "Reference" "#PWR921"
 			(at 286.38 229.18 0)
 			(hide yes)
 			(effects
@@ -11741,7 +11741,7 @@
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000002"
-					(reference "#PWR901")
+					(reference "#PWR921")
 					(unit 1)
 				)
 			)
@@ -11829,7 +11829,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7a8ba6cb-69a1-450c-89be-14a9017ad5e4")
-		(property "Reference" "#PWR902"
+		(property "Reference" "#PWR922"
 			(at 299.08 234.26 0)
 			(hide yes)
 			(effects
@@ -11884,7 +11884,7 @@
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000002"
-					(reference "#PWR902")
+					(reference "#PWR922")
 					(unit 1)
 				)
 			)
@@ -11982,7 +11982,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7f66d612-3fba-46a0-a5f9-caf566c155e8")
-		(property "Reference" "#PWR903"
+		(property "Reference" "#PWR923"
 			(at 311.78 234.26 0)
 			(hide yes)
 			(effects
@@ -12037,7 +12037,7 @@
 		(instances
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000002"
-					(reference "#PWR903")
+					(reference "#PWR923")
 					(unit 1)
 				)
 			)
