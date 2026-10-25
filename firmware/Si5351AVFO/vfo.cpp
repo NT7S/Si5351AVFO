@@ -94,6 +94,9 @@ void vfo_apply() {
       si5351.set_clock_pwr(CLK(i), 1);
       hw_pwr |= bit;
       hw_f[i] = 0;
+      // In quadrature the pair is programmed as one (phase + PLLA reset) and
+      // keyed on hw_f[0], so either clock powering up forces the full pair.
+      if (mode == MODE_QUAD && i < 2) hw_f[0] = 0;
       en_dirty = true;                 // first set_freq may enable the output
     }
   }
