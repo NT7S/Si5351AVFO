@@ -20,7 +20,7 @@ Two-part supportless case for the Si5351A VFO board (100 × 65 mm). The case is 
 | `step/` | Print orientation: `vfo_front_shell.step`, `vfo_front_shell_2color.step` (body + inlay assembly), `vfo_back_cover.step`. Board frame: `*_assembly_frame.step` |
 | `3mf/` | `VFO_case_2color_PETG_CC2_rev4.3mf`: OrcaSlicer project, both parts on one Centauri Carbon 2 plate |
 | `gcode/` | `VFO_case_2color_PETG_CC2_rev4.gcode`: the sliced job that was printed |
-| `renders/` | Preview renders from the first iteration (they show the older debossed labels) |
+| `renders/` | Rev4 preview renders (black body, white inlay), made by `src/render.py` |
 
 ## Print settings
 
@@ -64,6 +64,7 @@ python3 -m venv ~/.venvs/cad
 ~/.venvs/cad/bin/pip install cadquery==2.8.0 shapely trimesh pyvista
 ~/.venvs/cad/bin/python enclosure/src/vfo_case.py   # writes STEP/STL exports into enclosure/src/
 mv enclosure/src/*.step enclosure/step/ && mv enclosure/src/*.stl enclosure/stl/
+~/.venvs/cad/bin/python enclosure/src/render.py         # regenerates enclosure/renders/*.png
 ```
 
 Set `PANEL_GRAPHICS = True` in `vfo_case.py` for single-color debossed graphics instead of the inlay.
