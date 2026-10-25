@@ -4,6 +4,7 @@
 #include "eeprom_layout.h"
 #include "vfo.h"
 #include "config.h"
+#include "bands.h"
 
 static bool dirty;
 static uint32_t dirty_ms;
@@ -23,6 +24,9 @@ void settings_touch() {
 
 void settings_save_now() {
   uint8_t img[EE_SIZE];
+  // Current band's last-used frequency goes out with every save (§6.6).
+  uint8_t b = band_find(g_vfo.freq);
+  if (b != 0xFF) g_vfo.band_last[b] = g_vfo.freq;
   ee_pack(g_vfo, img);
   // EEPROM.update only writes bytes that differ, which keeps wear down.
   for (uint8_t i = 0; i < EE_SIZE; i++) EEPROM.update(i, img[i]);

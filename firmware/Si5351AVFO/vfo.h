@@ -17,6 +17,7 @@ void vfo_set_freq(uint32_t f);          // clamp per tuning limit, keep band ind
 void vfo_tune(int8_t detents);          // tune by the current step
 void vfo_band_step(int8_t dir);         // BAND+/BAND- with per-band memory
 void vfo_set_band(uint8_t band);
+void vfo_set_limit(uint8_t limit);     // off-band F moves to the nearest band edge
 void vfo_set_mode(uint8_t mode);
 void vfo_set_clock(uint8_t clk, bool on);
 void vfo_set_drive(uint8_t clk, uint8_t drive);

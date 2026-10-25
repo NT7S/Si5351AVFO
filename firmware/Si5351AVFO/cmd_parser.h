@@ -21,7 +21,8 @@ enum CmdId : uint8_t {
 
 struct Cmd {
   uint8_t id;              // CmdId
-  bool    query;           // command ended in '?', e.g. "F?"
+  bool    query;           // "F?" or "F ?"
+  bool    extra;           // more than CMD_MAX_ARGS arguments (reply ERR ARG)
   uint8_t argc;
   const char *argv[CMD_MAX_ARGS];   // point into the (modified) line buffer
 };

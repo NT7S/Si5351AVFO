@@ -97,10 +97,15 @@ void vfo_update() {
 }
 
 void vfo_set_freq(uint32_t f) {
+  // Amateur only: a frequency inside another band switches to that band;
+  // anything outside every band clamps to the current band's edges (§6.4).
+  uint8_t b = band_find(f);
+  if (g_vfo.limit == LIMIT_HAM && b != 0xFF) g_vfo.band = b;
   g_vfo.freq = freq_clamp(f, g_vfo.limit, g_vfo.band);
-  // Keep the band index in step when tuning into another band (wide open).
-  uint8_t b = band_find(g_vfo.freq);
-  if (b != 0xFF) g_vfo.band = b;
+  // Keep the band index and its last-used frequency in step (§6.6). Tuning
+  // off-band leaves band_last at the last in-band frequency.
+  b = band_find(g_vfo.freq);
+  if (b != 0xFF) { g_vfo.band = b; g_vfo.band_last[b] = g_vfo.freq; }
   vfo_apply();
   vfo_changed();
 }
@@ -111,10 +116,33 @@ void vfo_tune(int8_t detents) {
 
 void vfo_set_band(uint8_t band) {
   if (band >= NUM_BANDS) return;
-  // Remember where we were on the old band, then jump to the new band's last F.
-  if (band_find(g_vfo.freq) == g_vfo.band) g_vfo.band_last[g_vfo.band] = g_vfo.freq;
+  // band_last is kept current by vfo_set_freq, so just jump to the new band.
+  bool was_vhf = BANDS[g_vfo.band].lo > LPF_CLK01_HZ;
+  bool vhf = BANDS[band].lo > LPF_CLK01_HZ;
+  // Clock enables follow the band (§6.3): Direct/Quadrature on a band above the
+  // CLK0/1 filters uses CLK2 (CLK0/1 dropped unless overridden); coming back
+  // from such a band with only CLK2 on restores the CLK0 default.
+  if (g_vfo.mode != MODE_SUPERHET) {
+    if (vhf) g_vfo.clk_en = (g_vfo.clk_en & g_vfo.filter_override & 0x03) | 0x04;
+    else if (was_vhf && g_vfo.clk_en == 0x04) g_vfo.clk_en = 0x01;
+  }
   g_vfo.band = band;
   vfo_set_freq(g_vfo.band_last[band]);
+}
+
+void vfo_set_limit(uint8_t limit) {
+  g_vfo.limit = limit;
+  uint32_t f = g_vfo.freq;
+  if (limit == LIMIT_HAM && band_find(f) == 0xFF) {
+    // Switching to amateur-only while off-band: go to the nearest band edge.
+    uint32_t best = 0xFFFFFFFFUL;
+    for (uint8_t i = 0; i < NUM_BANDS; i++) {
+      uint32_t e = f < BANDS[i].lo ? BANDS[i].lo : BANDS[i].hi;
+      uint32_t d = e > f ? e - f : f - e;
+      if (d < best) { best = d; g_vfo.band = i; }
+    }
+  }
+  vfo_set_freq(f);
 }
 
 void vfo_band_step(int8_t dir) { vfo_set_band(band_step(g_vfo.band, dir)); }

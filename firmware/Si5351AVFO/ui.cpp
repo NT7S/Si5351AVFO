@@ -98,7 +98,7 @@ static const char *item_set(uint8_t id, int32_t v) {
     case I_IF:    s.if_freq = (uint32_t)v; vfo_update(); break;
     case I_INJ:   s.injection = (uint8_t)v; vfo_update(); break;
     case I_IQ:    s.iq_order = (uint8_t)v; vfo_update(); break;
-    case I_LIMIT: s.limit = (uint8_t)v; vfo_set_freq(s.freq); break;
+    case I_LIMIT: vfo_set_limit((uint8_t)v); break;
     case I_DRV0: case I_DRV1: case I_DRV2: vfo_set_drive(id - I_DRV0, (uint8_t)v); break;
     case I_FOV0: case I_FOV1: case I_FOV2: {
       uint8_t bit = 1 << (id - I_FOV0);
@@ -199,7 +199,7 @@ static void draw_main() {
   // Info line: message, then warnings, then mode details.
   if (msg) line(6, 0, msg);
   else if (!g_si5351_ok) line(6, 0, "SI5351 NOT FOUND");
-  else if (g_plan.flags & PLAN_IQ_LOW) line(6, 0, "IQ NEEDS >4.72 MHZ");
+  else if (g_plan.flags & PLAN_IQ_LOW) line(6, 0, "IQ NEEDS >4.76 MHZ");
   else if (g_plan.flags & PLAN_LO_RANGE) line(6, 0, "LO OUT OF RANGE");
   else if (g_plan.flags & PLAN_FILTER) line(6, 0, "ABOVE LPF: CLK MUTED");
   else if (s.mode == MODE_SUPERHET) {
@@ -292,7 +292,7 @@ static void edit_turn(int8_t d) {
   int32_t p = 1;
   for (uint8_t i = 0; i < edit_cursor; i++) p *= 10;
   int32_t v = edit_val + d * p;
-  int32_t lo = (menu_sel == I_CAL) ? -999999L : 0;
+  int32_t lo = (menu_sel == I_CAL) ? -999999L : (int32_t)FREQ_MIN_HZ;
   int32_t hi = (menu_sel == I_CAL) ? 999999L : (int32_t)FREQ_MAX_HZ;
   edit_val = v < lo ? lo : (v > hi ? hi : v);
   if (menu_sel == I_CAL) vfo_set_cal(edit_val);   // live preview on CLK2

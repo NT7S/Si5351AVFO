@@ -5,13 +5,14 @@
 #include "vfo_state.h"
 
 // Low-pass filter warning thresholds (REQUIREMENTS §1): CLK0/1 60 MHz Cauer,
-// CLK2 flat to ~165 MHz.
+// CLK2 flat to ~165 MHz. Tuning stops at 160 MHz, so the CLK2 check is a guard
+// that tuning cannot reach (REQUIREMENTS §6.4).
 #define LPF_CLK01_HZ  60000000UL
 #define LPF_CLK2_HZ  165000000UL
 
-// Quadrature floor: integer MS divider <= 126 (phase register is 7 bits) and
-// PLL >= 600 MHz, so F >= 600 MHz / 127 ~= 4.72 MHz.
-#define IQ_MIN_HZ      4724410UL
+// Quadrature floor: even integer MS divider <= 126 (phase register is 7 bits)
+// and PLL >= 600 MHz, so F >= ceil(600 MHz / 126) = 4 761 905 Hz (~4.76 MHz).
+#define IQ_MIN_HZ      4761905UL
 #define IQ_MAX_DIV     126
 #define PLL_MIN_HZ     600000000UL
 #define PLL_MAX_HZ     900000000UL

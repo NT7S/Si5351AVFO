@@ -20,7 +20,7 @@ static bool streq(const char *a, const char *b) {
 static char *skip_space(char *p) { while (*p == ' ' || *p == '\t') p++; return p; }
 
 uint8_t cmd_parse(char *line, Cmd &c) {
-  c.id = CMD_NONE; c.query = false; c.argc = 0;
+  c.id = CMD_NONE; c.query = false; c.extra = false; c.argc = 0;
   for (char *p = line; *p; p++) if (*p >= 'a' && *p <= 'z') *p -= 32;
 
   char *p = skip_space(line);
@@ -35,11 +35,14 @@ uint8_t cmd_parse(char *line, Cmd &c) {
   for (;;) {
     p = skip_space(p);
     if (!*p) break;
-    if (c.argc == CMD_MAX_ARGS) { c.id = CMD_UNKNOWN; return c.id; }   // too many args
+    if (c.argc == CMD_MAX_ARGS) { c.extra = true; break; }   // too many args
     c.argv[c.argc++] = p;
     while (*p && *p != ' ' && *p != '\t') p++;
     if (*p) *p++ = 0;
   }
+
+  // "F ?" (query mark as the only argument) is the same as "F?".
+  if (!c.query && c.argc == 1 && c.argv[0][0] == '?' && !c.argv[0][1]) { c.query = true; c.argc = 0; }
 
   c.id = CMD_UNKNOWN;
   for (uint8_t i = 1; i < CMD_COUNT; i++)

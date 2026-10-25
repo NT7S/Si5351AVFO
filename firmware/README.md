@@ -63,7 +63,7 @@ on a PC with `g++ -std=c++11`.
 | `vfo_state.h` | **host** – the `VfoState` struct (everything that is saved) |
 | `bands.h/.cpp` | **host** – band table 160 m–2 m, band step with wrap, tuning-limit clamp, defaults |
 | `tuning.h/.cpp` | **host** – step table and cycling, `MMM.KKK.HHH` formatting, step underline position (500 Hz on the '.'), encoder decoder |
-| `modes.h/.cpp` | **host** – Direct / Superhet / Quadrature output plan, I/Q integer PLL plan (≥4.72 MHz), LPF warnings |
+| `modes.h/.cpp` | **host** – Direct / Superhet / Quadrature output plan, I/Q integer PLL plan (≥4.76 MHz), LPF mute unless overridden |
 | `eeprom_layout.h/.cpp` | **host** – byte-exact 127-byte EEPROM image, CRC8, validation |
 | `cmd_parser.h/.cpp` | **host** – serial line tokenizer, command table, number parsing |
 | `vfo.h/.cpp` | owns the state, programs the Si5351 (PLL routing, I/Q phase, drive, enables) |

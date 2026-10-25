@@ -61,7 +61,7 @@ bool ee_unpack(const uint8_t *img, VfoState &s) {
   s.limit = img[EE_OFF_LIMIT] ? LIMIT_HAM : LIMIT_WIDE;
   s.filter_override = img[EE_OFF_FOVR] & 0x07;
   f = get32(img + EE_OFF_IF);
-  if (f <= FREQ_MAX_HZ) s.if_freq = f;
+  if (f >= FREQ_MIN_HZ && f <= FREQ_MAX_HZ) s.if_freq = f;
   for (uint8_t i = 0; i < NUM_CLOCKS; i++) s.drive[i] = (img[EE_OFF_DRIVE] >> (2 * i)) & 3;
   s.cal_ppb = (int32_t)get32(img + EE_OFF_CAL);
   for (uint8_t i = 0; i < NUM_BANDS; i++) {

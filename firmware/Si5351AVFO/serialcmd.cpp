@@ -56,7 +56,27 @@ static void print_status() {
   Serial.print(F(" SI5351=")); Serial.println(g_si5351_ok ? F("OK") : F("ERR"));
 }
 
+// Argument count per command (index = CmdId) when setting, and which commands
+// accept a '?' query (which then takes no arguments). REQUIREMENTS §9.
+static const uint8_t ARGC[CMD_COUNT] = {
+  0, 1, 1, 1,             // -, F, STEP, BAND
+  1, 1, 1, 2, 1, 1, 1,    // MODE ON OFF DRIVE IF INJ IQ
+  1, 2,                   // LIMIT FOVR
+  1, 1, 1, 0,             // MS MR MC M?
+  1,                      // CAL
+  0, 0, 0, 0, 0, 1,       // SAVE DEFAULTS STATUS VER HELP AUTO
+};
+static bool can_query(uint8_t id) {
+  return id == CMD_F || id == CMD_STEP || id == CMD_BAND || id == CMD_MODE ||
+         id == CMD_IF || id == CMD_CAL || id == CMD_MLIST;
+}
+
 static void execute(Cmd &c) {
+  if (c.id == CMD_NONE) return;
+  if (c.id >= CMD_COUNT) return err(F("CMD"));
+  if (c.query && !can_query(c.id)) return err(F("CMD"));
+  if (c.extra || c.argc != (c.query ? 0 : ARGC[c.id])) return err(F("ARG"));
+
   uint32_t u;
   int32_t i;
   uint8_t clk;
@@ -80,8 +100,12 @@ static void execute(Cmd &c) {
       if (!a0) return err(F("ARG"));
       if (streq(a0, "+")) { vfo_band_step(1); return ok(); }
       if (streq(a0, "-")) { vfo_band_step(-1); return ok(); }
-      for (uint8_t b = 0; b < NUM_BANDS; b++)
-        if (streq(a0, BANDS[b].name)) { vfo_set_band(b); return ok(); }
+      for (uint8_t b = 0; b < NUM_BANDS; b++) {
+        // "40M" or the metres shorthand "40".
+        const char *n = BANDS[b].name; uint8_t k = 0;
+        while (a0[k] && a0[k] == n[k]) k++;
+        if (!a0[k] && (!n[k] || (n[k] == 'M' && !n[k + 1]))) { vfo_set_band(b); return ok(); }
+      }
       return err(F("BAND"));
     case CMD_MODE:
       if (c.query) { Serial.println(MODE_NAMES[g_vfo.mode]); return; }
@@ -97,7 +121,7 @@ static void execute(Cmd &c) {
       vfo_set_drive(clk, (uint8_t)(u / 2 - 1)); return ok();
     case CMD_IF:
       if (c.query) { Serial.println(g_vfo.if_freq); return; }
-      if (!arg_u32(a0, u) || u > FREQ_MAX_HZ) return err(F("ARG"));
+      if (!arg_u32(a0, u) || u < FREQ_MIN_HZ || u > FREQ_MAX_HZ) return err(F("ARG"));
       g_vfo.if_freq = u; vfo_update(); return ok();
     case CMD_INJ:
       if (a0 && streq(a0, "HI")) g_vfo.injection = INJ_HIGH;
@@ -108,10 +132,10 @@ static void execute(Cmd &c) {
       if (!arg_u32(a0, u) || u > 1) return err(F("ARG"));
       g_vfo.iq_order = (uint8_t)u; vfo_update(); return ok();
     case CMD_LIMIT:
-      if (a0 && streq(a0, "HAM")) g_vfo.limit = LIMIT_HAM;
-      else if (a0 && streq(a0, "WIDE")) g_vfo.limit = LIMIT_WIDE;
+      if (streq(a0, "HAM")) vfo_set_limit(LIMIT_HAM);
+      else if (streq(a0, "WIDE")) vfo_set_limit(LIMIT_WIDE);
       else return err(F("ARG"));
-      vfo_set_freq(g_vfo.freq); return ok();
+      return ok();
     case CMD_FOVR:
       if (!arg_clk(a0, clk) || !arg_u32(a1, u) || u > 1) return err(F("ARG"));
       if (u) g_vfo.filter_override |= 1 << clk; else g_vfo.filter_override &= ~(1 << clk);
