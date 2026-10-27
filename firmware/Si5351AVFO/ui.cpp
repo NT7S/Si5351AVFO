@@ -1,12 +1,23 @@
 // ui.cpp - display and button handling.
 //
-// Page map (8 px pages on the 128x64 SH1106):
+// Page map (8 px pages on the 128x64 SH1106), quiet main screen:
 //   0      status line: mode, band, tuning limit, enabled clocks
+//   1      blank (keeps the status line off the digits)
 //   2-3    frequency in 8x16 digits "MMM.KKK.HHH"
 //   4      2 px step underline under the digit the step changes
 //   5      step size
-//   6      warnings / mode info / messages
+//   6      blank separator above the key labels
 //   7      soft-key labels centred over SW2, SW3, SW4
+//
+// Superhet (and any warning or message) fills page 6 on that map, so step,
+// the info line and the key labels would sit on three consecutive pages.
+// Those three are drawn with a gap between each instead, and the info line
+// stops short of the labels.
+//
+// The menu shows MENU_ROWS lines at a 10 px pitch (7 px text, 3 px gap) so
+// the selection bar does not touch the row above it, and stops at y=47 so
+// page 6 stays blank above the key labels. Page 0 is the title, or a
+// confirmation while one is up.
 //
 // Controls:
 //   main  : encoder tunes, push cycles step, SW2 BAND-, SW3 BAND+, SW4 MENU
@@ -67,7 +78,9 @@ static const MenuItem ITEMS[I_COUNT] = {
   {"FACTORY RESET", K_CHOICE, 2, "NO|YES, ERASE ALL"},   // erases cal + memories
   {"ABOUT",        K_CHOICE, 1, FW_NAME " " FW_VERSION},
 };
-#define MENU_ROWS 6                      // list rows on pages 1-6
+#define MENU_ROWS 4                      // visible rows; 21 items scroll through them
+#define MENU_Y0   11                     // first row (4 px under the title)
+#define MENU_DY   10                     // 7 px glyph + 3 px gap
 
 static uint8_t menu_sel, menu_top;       // selected item, first visible item
 static int32_t edit_val;                 // working copy while editing
@@ -99,18 +112,24 @@ static const char *item_set(uint8_t id, int32_t v) {
       // Re-confirming QUADRATURE after tuning out of range is refused, like
       // serial MODE IQ (ERR IQRANGE); the mode is left unchanged.
       if (v == MODE_QUAD && !iq_in_range(s.freq)) return "QUAD OUT OF RANGE";
-      vfo_set_mode((uint8_t)v); break;
-    case I_CLK0: case I_CLK1: case I_CLK2: vfo_set_clock(id - I_CLK0, v); break;
-    case I_IF:    s.if_freq = (uint32_t)v; vfo_update(); break;
-    case I_INJ:   s.injection = (uint8_t)v; vfo_update(); break;
-    case I_IQ:    s.iq_order = (uint8_t)v; vfo_update(); break;
-    case I_LIMIT: vfo_set_limit((uint8_t)v); break;
-    case I_DRV0: case I_DRV1: case I_DRV2: vfo_set_drive(id - I_DRV0, (uint8_t)v); break;
+      vfo_set_mode((uint8_t)v); return "MODE SAVED";
+    case I_CLK0: vfo_set_clock(0, v); return "CLK0 SAVED";
+    case I_CLK1: vfo_set_clock(1, v); return "CLK1 SAVED";
+    case I_CLK2: vfo_set_clock(2, v); return "CLK2 SAVED";
+    case I_IF:    s.if_freq = (uint32_t)v; vfo_update(); return "IF SAVED";
+    case I_INJ:   s.injection = (uint8_t)v; vfo_update(); return "INJECTION SAVED";
+    case I_IQ:    s.iq_order = (uint8_t)v; vfo_update(); return "IQ ORDER SAVED";
+    case I_LIMIT: vfo_set_limit((uint8_t)v); return "LIMIT SAVED";
+    case I_DRV0: vfo_set_drive(0, (uint8_t)v); return "CLK0 DRIVE SAVED";
+    case I_DRV1: vfo_set_drive(1, (uint8_t)v); return "CLK1 DRIVE SAVED";
+    case I_DRV2: vfo_set_drive(2, (uint8_t)v); return "CLK2 DRIVE SAVED";
     case I_FOV0: case I_FOV1: case I_FOV2: {
       uint8_t bit = 1 << (id - I_FOV0);
       if (v) s.filter_override |= bit; else s.filter_override &= ~bit;
       vfo_update();
-      break;
+      if (id == I_FOV0) return "CLK0 FILTER SAVED";
+      if (id == I_FOV1) return "CLK1 FILTER SAVED";
+      return "CLK2 FILTER SAVED";
     }
     case I_MSTORE:  vfo_mem_store((uint8_t)v); return "MEMORY STORED";
     case I_MRECALL: {
@@ -153,10 +172,12 @@ static void option_text(uint8_t id, uint8_t v, char *buf) {
 // Draw a 5x7 line and blank the rest of the page, so nothing flickers.
 static void line(uint8_t page, uint8_t col, const char *s, uint8_t ul = 0xFF, bool inv = false) {
   uint8_t len = strlen(s);
-  if (col) sh1106::fill(page, 0, col, inv ? 0xFF : 0);
+  // 0x7F, not 0xFF: the selection bar keeps the page's bottom pixel clear.
+  uint8_t bg = inv ? 0x7F : 0;
+  if (col) sh1106::fill(page, 0, col, bg);
   sh1106::text5x7(page, col, s, ul, inv);
   uint8_t end = col + len * 6;
-  if (end < 128) sh1106::fill(page, end, 128 - end, inv ? 0xFF : 0);
+  if (end < 128) sh1106::fill(page, end, 128 - end, bg);
 }
 
 static void labels(const char *a, const char *b, const char *c) {
@@ -203,33 +224,59 @@ static void draw_main() {
   p = cat(buf, "STEP ");
   ultoa(st >= 1000 ? st / 1000 : st, p, 10);
   cat(p + strlen(p), st >= 1000 ? " KHZ" : " HZ");
-  line(5, 0, buf);
 
-  // Info line: message, then warnings, then mode details.
-  if (msg) line(6, 0, msg);
-  else if (!g_si5351_ok) line(6, 0, "SI5351 NOT FOUND");
-  else if (g_plan.flags & PLAN_FAIL) line(6, 0, "CLK NOT POSSIBLE: OFF");
-  else if (g_plan.flags & PLAN_IQ_LOW) line(6, 0, "IQ NEEDS >4.76 MHZ");
-  else if (g_plan.flags & PLAN_IQ_HIGH) line(6, 0, "IQ ONLY TO 90 MHZ");
-  else if (g_plan.flags & PLAN_LO_RANGE) line(6, 0, "LO OUT OF RANGE");
-  else if (g_plan.flags & PLAN_FILTER) line(6, 0, "ABOVE LPF: CLK MUTED");
+  // Info line: message, then warnings, then the superhet IF. Empty on a
+  // quiet direct screen, which keeps the page-aligned layout below.
+  char info[24];
+  info[0] = 0;
+  if (msg) cat(info, msg);
+  else if (!g_si5351_ok) cat(info, "SI5351 NOT FOUND");
+  else if (g_plan.flags & PLAN_FAIL) cat(info, "CLK NOT POSSIBLE: OFF");
+  else if (g_plan.flags & PLAN_IQ_LOW) cat(info, "IQ NEEDS >4.76 MHZ");
+  else if (g_plan.flags & PLAN_IQ_HIGH) cat(info, "IQ ONLY TO 90 MHZ");
+  else if (g_plan.flags & PLAN_LO_RANGE) cat(info, "LO OUT OF RANGE");
+  else if (g_plan.flags & PLAN_FILTER) cat(info, "ABOVE LPF: CLK MUTED");
   else if (s.mode == MODE_SUPERHET) {
     freq_format(s.if_freq, f);
-    p = cat(buf, "IF"); p = cat(p, f);
+    p = cat(info, "IF"); p = cat(p, f);
     cat(p, s.injection == INJ_HIGH ? " HI" : " LO");
-    line(6, 0, buf);
-  } else line(6, 0, "");
+  }
+
+  if (!info[0]) {
+    line(5, 0, buf);
+    sh1106::clearPage(6);
+  } else {
+    // Underline is y=32-33. Step starts at y=35 so it never meets that bar,
+    // info at y=45 (3 px below the step, 4 px left blank above the labels).
+    uint8_t pagebuf[128];
+    uint8_t ulpos = step_underline_pos(s.step_idx);
+    for (uint8_t page = 4; page <= 6; page++) {
+      memset(pagebuf, 0, sizeof(pagebuf));
+      if (page == 4) {
+        for (uint8_t k = 0; k < 7; k++) pagebuf[BIG_COL + ulpos * 8 + k] = 0x03;
+      }
+      sh1106::paint5x7(pagebuf, page, 35, 0, buf, false);
+      sh1106::paint5x7(pagebuf, page, 45, 0, info, false);
+      sh1106::writePage(page, pagebuf);
+    }
+  }
 }
 
 static void draw_menu() {
   char buf[24];
-  if (redraw) { labels("PG UP", "PG DN", "BACK"); line(0, 0, "MENU"); }
-  for (uint8_t r = 0; r < MENU_ROWS; r++) {
-    uint8_t id = menu_top + r;
-    if (id >= I_COUNT) { sh1106::clearPage(1 + r); continue; }
-    buf[0] = ' ';
-    cat(buf + 1, ITEMS[id].label);
-    line(1 + r, 0, buf, 0xFF, id == menu_sel);   // selected row inverted
+  if (redraw) labels("PG UP", "PG DN", "BACK");
+  // Pages 1-6. Page 6 stays empty: the last glyph ends at y=47.
+  uint8_t pagebuf[128];
+  for (uint8_t page = 1; page <= 6; page++) {
+    memset(pagebuf, 0, sizeof(pagebuf));
+    for (uint8_t r = 0; r < MENU_ROWS; r++) {
+      uint8_t id = menu_top + r;
+      if (id >= I_COUNT) continue;
+      buf[0] = ' ';
+      cat(buf + 1, ITEMS[id].label);
+      sh1106::paint5x7(pagebuf, page, MENU_Y0 + r * MENU_DY, 0, buf, id == menu_sel);
+    }
+    sh1106::writePage(page, pagebuf);
   }
 }
 

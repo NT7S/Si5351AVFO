@@ -15,8 +15,16 @@ void begin();
 void clear();
 void setPos(uint8_t page, uint8_t col);
 // 5x7 text on one page (6 px per char). Character index `ul` (0xFF = none)
-// gets a 1 px underline in the free bottom row of the page; `inv` inverts.
+// gets a 1 px underline in the free bottom row of the page. `inv` inverts the
+// glyph and leaves that bottom row clear, so a selection bar keeps a 1 px gap
+// before the next page.
 void text5x7(uint8_t page, uint8_t col, const char *s, uint8_t ul = 0xFF, bool inv = false);
+// OR 5x7 text into a 128-byte image of `page`. `y` is the glyph top in screen
+// pixels, so a line can sit on a page boundary. `inv` paints a 7 px bar and
+// punches the glyphs out of it. The caller clears `dst` and flushes with
+// writePage; nothing here is stored on the panel until then.
+void paint5x7(uint8_t *dst, uint8_t page, uint8_t y, uint8_t col, const char *s, bool inv);
+void writePage(uint8_t page, const uint8_t *bytes);
 // 8x16 digits over two pages (8 px per char); only '0'-'9', '.', '-', ' '.
 void big8x16(uint8_t page, uint8_t col, const char *s);
 // Write `n` copies of the column byte `b` (used for clearing and bars).

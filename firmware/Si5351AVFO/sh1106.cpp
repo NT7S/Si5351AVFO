@@ -22,8 +22,10 @@ static const uint8_t font5x7[] = {
 };
 
 // 8x16 digits 0-9; each glyph is 8 bytes top page then 8 bytes bottom page.
+// '0' is an open oval with the same 2 px stroke as 6/8/9. A slashed zero
+// merged the slash into that stroke and read heavier than the other digits.
 static const uint8_t font8x16[10][16] = {
-  {0xF8,0xFC,0x06,0xC2,0x32,0x0C,0xF8,0x00, 0x1F,0x30,0x4C,0x43,0x60,0x3F,0x1F,0x00},
+  {0xF8,0xFC,0x06,0x02,0x06,0xFC,0xF8,0x00, 0x1F,0x3F,0x60,0x40,0x60,0x3F,0x1F,0x00},
   {0x00,0x08,0x0C,0xFE,0xFE,0x00,0x00,0x00, 0x00,0x40,0x40,0x7F,0x7F,0x40,0x40,0x00},
   {0x18,0x1C,0x06,0x02,0x82,0xFC,0x78,0x00, 0x60,0x70,0x58,0x4C,0x46,0x43,0x40,0x00},
   {0x08,0x0C,0x86,0x82,0x82,0xFC,0x78,0x00, 0x10,0x30,0x60,0x40,0x41,0x3F,0x1E,0x00},
@@ -96,22 +98,61 @@ void clear() {
   for (uint8_t p = 0; p < 8; p++) fill(p, 0, 128, 0);
 }
 
+static const uint8_t *glyph5(char ch) {
+  if (ch >= 'a' && ch <= 'z') ch -= 32;
+  if (ch < ' ' || ch > 'Z') ch = ' ';
+  return &font5x7[(ch - ' ') * 5];
+}
+
 void text5x7(uint8_t page, uint8_t col, const char *s, uint8_t ul, bool inv) {
   setPos(page, col);
   digitalWrite(OLED_DC, HIGH);
   digitalWrite(OLED_CS, LOW);
   for (uint8_t i = 0; s[i]; i++) {
-    char ch = s[i];
-    if (ch >= 'a' && ch <= 'z') ch -= 32;
-    if (ch < ' ' || ch > 'Z') ch = ' ';
-    const uint8_t *g = &font5x7[(ch - ' ') * 5];
+    const uint8_t *g = glyph5(s[i]);
     uint8_t extra = (i == ul) ? 0x80 : 0;  // underline row
     for (uint8_t k = 0; k < 6; k++) {
       uint8_t v = (k < 5 ? *(g + k) : 0) | extra;
-      SPI.transfer(inv ? (uint8_t)~v : v);
+      // Leave the bottom pixel clear when inverted. A full-page bar has no
+      // gap before the next page, so the highlight touches the line below.
+      if (inv) v = (uint8_t)((~v) & 0x7F);
+      SPI.transfer(v);
     }
   }
   digitalWrite(OLED_CS, HIGH);
+}
+
+void paint5x7(uint8_t *dst, uint8_t page, uint8_t y, uint8_t col, const char *s, bool inv) {
+  uint8_t top = page * 8;
+  if (inv) {
+    for (uint8_t b = 0; b < 7; b++) {
+      uint8_t yy = y + b;
+      if (yy < top || yy >= top + 8) continue;
+      uint8_t bit = 1 << (yy - top);
+      for (uint8_t x = 0; x < 128; x++) dst[x] |= bit;
+    }
+  }
+  for (uint8_t i = 0; s[i]; i++) {
+    uint8_t x0 = col + i * 6;
+    if (x0 >= 128) break;
+    const uint8_t *g = glyph5(s[i]);
+    for (uint8_t k = 0; k < 5 && x0 + k < 128; k++) {
+      uint8_t bits = g[k];
+      for (uint8_t b = 0; b < 7; b++) {
+        if (!(bits & (1 << b))) continue;
+        uint8_t yy = y + b;
+        if (yy < top || yy >= top + 8) continue;
+        uint8_t bit = 1 << (yy - top);
+        if (inv) dst[x0 + k] &= (uint8_t)~bit;  // punch the glyph out of the bar
+        else dst[x0 + k] |= bit;
+      }
+    }
+  }
+}
+
+void writePage(uint8_t page, const uint8_t *bytes) {
+  setPos(page, 0);
+  data(bytes, 128);
 }
 
 void fill(uint8_t page, uint8_t col, uint8_t n, uint8_t b) {
