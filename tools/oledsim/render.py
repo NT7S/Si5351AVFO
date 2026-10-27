@@ -280,6 +280,78 @@ def read_text_at(rows, x, y0, nchars):
     return "".join(out)
 
 
+def is_pitched_menu(rows):
+    """True for the 10 px menu. Page-packed frames still decode as items."""
+    paged = list_rows(rows)
+    if paged and all(any(text.endswith(it) for it in ITEMS) for _, text, _ in paged):
+        return False
+    return bool(pitched_rows(rows))
+
+
+def row_full(rows, y):
+    return 0 <= y < len(rows) and all(rows[y])
+
+
+def row_dark(rows, y):
+    return y < 0 or y >= len(rows) or not any(rows[y])
+
+
+def check_highlight(raw_dir):
+    """9 px selection bar on the pitched menu: 1 px pad above and below the
+    7 px glyph, 10 px row pitch, no contact with the next row or the labels,
+    and every glyph still readable inside the panel."""
+    sample = os.path.join(raw_dir, "menu_top.pbm")
+    if not os.path.exists(sample) or not is_pitched_menu(load_pbm(sample)):
+        print("highlight pad: skipped (page-packed menu)")
+        return
+    fails = 0
+    pitch = [11, 21, 31, 41]
+    for name in sorted(os.listdir(raw_dir)):
+        if not name.endswith(".pbm"):
+            continue
+        if not (name.startswith("menu_") or name.startswith("save_")):
+            continue
+        rows = load_pbm(os.path.join(raw_dir, name))
+        if not is_pitched_menu(rows):
+            print(name, "is not a pitched menu")
+            fails += 1
+            continue
+        got = pitched_rows(rows)
+        if [y for y, _, _ in got] != pitch:
+            print(name, "pitch", [y for y, _, _ in got])
+            fails += 1
+        for y in range(7, 10):
+            if not row_dark(rows, y):
+                print(name, "row", y, "lit under the title")
+                fails += 1
+        for y in range(49, 56):
+            if not row_dark(rows, y):
+                print(name, "row", y, "lit above the key labels")
+                fails += 1
+        for y, text, inv in got:
+            if y < 0 or y + 6 > 63:
+                print(name, "glyph clipped at", y)
+                fails += 1
+            if "?" in text:
+                print(name, "unreadable glyph in", text)
+                fails += 1
+            if inv:
+                # Pad rows are solid. The rows just outside the 9 px bar are dark,
+                # which is the gap to the title, the next row, or the labels.
+                if not row_full(rows, y - 1) or not row_full(rows, y + 7):
+                    print(name, "bar pad missing around", text, "at", y)
+                    fails += 1
+                if not row_dark(rows, y - 2) or not row_dark(rows, y + 8):
+                    print(name, "bar touches a neighbour", text, "at", y)
+                    fails += 1
+            elif not row_dark(rows, y - 1) or not row_dark(rows, y + 7):
+                print(name, "unselected row has a bar", text)
+                fails += 1
+    if fails:
+        raise SystemExit("%d highlight checks failed" % fails)
+    print("highlight ok: 9 px bar, 10 px pitch, labels clear")
+
+
 def check_messages(raw_dir):
     """Title-line confirmations and CANCEL must stay inside 128 columns."""
     fails = 0
@@ -384,8 +456,12 @@ def main():
     png = sys.argv[2]
     check_scroll(raw)
     check_messages(raw)
+    check_highlight(raw)
     export_dir(raw, png)
     if len(sys.argv) >= 5:
+        check_scroll(sys.argv[3])
+        check_messages(sys.argv[3])
+        check_highlight(sys.argv[3])
         contact(raw, sys.argv[3], sys.argv[4])
     return 0
 

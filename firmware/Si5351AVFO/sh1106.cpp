@@ -125,10 +125,12 @@ void text5x7(uint8_t page, uint8_t col, const char *s, uint8_t ul, bool inv) {
 void paint5x7(uint8_t *dst, uint8_t page, uint8_t y, uint8_t col, const char *s, bool inv) {
   uint8_t top = page * 8;
   if (inv) {
-    for (uint8_t b = 0; b < 7; b++) {
-      uint8_t yy = y + b;
-      if (yy < top || yy >= top + 8) continue;
-      uint8_t bit = 1 << (yy - top);
+    // 9 px bar: one pixel above the glyph and one below, so ink does not sit
+    // on the highlight edge. Rows outside this page, or off the panel, skip.
+    for (int8_t b = -1; b <= 7; b++) {
+      int16_t yy = (int16_t)y + b;
+      if (yy < 0 || yy > 63 || yy < top || yy >= top + 8) continue;
+      uint8_t bit = 1 << (uint8_t)(yy - top);
       for (uint8_t x = 0; x < 128; x++) dst[x] |= bit;
     }
   }

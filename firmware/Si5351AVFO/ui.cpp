@@ -14,10 +14,11 @@
 // Those three are drawn with a gap between each instead, and the info line
 // stops short of the labels.
 //
-// The menu shows MENU_ROWS lines at a 10 px pitch (7 px text, 3 px gap) so
-// the selection bar does not touch the row above it, and stops at y=47 so
-// page 6 stays blank above the key labels. Page 0 is the title, or a
-// confirmation while one is up.
+// The menu shows MENU_ROWS lines at a 10 px pitch (7 px text, 3 px gap). The
+// selection bar is 9 px, one pixel above and below the glyphs, so the letters
+// do not touch its edges and neighbouring bars stay one pixel apart. The last
+// bar ends at y=48, leaving y=49-55 blank above the key labels. Page 0 is the
+// title, or a confirmation while one is up.
 //
 // Controls:
 //   main  : encoder tunes, push cycles step, SW2 BAND-, SW3 BAND+, SW4 MENU
@@ -79,8 +80,8 @@ static const MenuItem ITEMS[I_COUNT] = {
   {"ABOUT",        K_CHOICE, 1, FW_NAME " " FW_VERSION},
 };
 #define MENU_ROWS 4                      // visible rows; 21 items scroll through them
-#define MENU_Y0   11                     // first row (4 px under the title)
-#define MENU_DY   10                     // 7 px glyph + 3 px gap
+#define MENU_Y0   11                     // glyph top; the bar starts one pixel higher
+#define MENU_DY   10                     // 7 px glyph + 3 px gap (bars stay 1 px apart)
 
 static uint8_t menu_sel, menu_top;       // selected item, first visible item
 static int32_t edit_val;                 // working copy while editing
@@ -265,7 +266,8 @@ static void draw_main() {
 static void draw_menu() {
   char buf[24];
   if (redraw) labels("PG UP", "PG DN", "BACK");
-  // Pages 1-6. Page 6 stays empty: the last glyph ends at y=47.
+  // Pages 1-6. Glyphs end at y=47. The last bar's lower pad is y=48;
+  // y=49-55 stay blank above the key labels.
   uint8_t pagebuf[128];
   for (uint8_t page = 1; page <= 6; page++) {
     memset(pagebuf, 0, sizeof(pagebuf));
