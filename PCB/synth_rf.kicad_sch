@@ -8364,7 +8364,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C504891"
+		(property "LCSC" "C529366"
 			(at 139.7 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -8375,7 +8375,18 @@
 				)
 			)
 		)
-		(property "MPN" "SI5351A-B-GTR"
+		(property "LCSC_ALT" "C504891"
+			(at 139.7 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SI5351A-B-GT"
 			(at 139.7 95.25 0)
 			(hide yes)
 			(show_name no)

@@ -22189,7 +22189,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C504891"
+		(property "LCSC" "C529366"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -22201,7 +22201,19 @@
 				)
 			)
 		)
-		(property "MPN" "SI5351A-B-GTR"
+		(property "LCSC_ALT" "C504891"
+			(at 0 0 90)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "575532a3-88ce-44ac-adcf-e3c5503c3456")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "SI5351A-B-GT"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
