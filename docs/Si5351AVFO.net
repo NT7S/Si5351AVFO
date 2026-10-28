@@ -1,8 +1,8 @@
 (export
 	(version "E")
 	(design
-		(source "/workspace/Si5351AVFO/PCB/Si5351AVFO.kicad_sch")
-		(date "2026-10-25T15:19:40")
+		(source "/workspace/vfo-pcb/PCB/Si5351AVFO.kicad_sch")
+		(date "2026-10-28T09:20:39")
 		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
@@ -9762,9 +9762,11 @@
 			(description "I2C Programmable Any-Frequency CMOS Clock Generator, MSOP-10")
 			(fields
 				(field
-					(name "LCSC") "C504891")
+					(name "LCSC") "C529366")
 				(field
-					(name "MPN") "SI5351A-B-GTR")
+					(name "LCSC_ALT") "C504891")
+				(field
+					(name "MPN") "SI5351A-B-GT")
 				(field
 					(name "Manufacturer") "Skyworks/Silicon Labs")
 				(field
@@ -9781,11 +9783,15 @@
 			)
 			(property
 				(name "LCSC")
+				(value "C529366")
+			)
+			(property
+				(name "LCSC_ALT")
 				(value "C504891")
 			)
 			(property
 				(name "MPN")
-				(value "SI5351A-B-GTR")
+				(value "SI5351A-B-GT")
 			)
 			(property
 				(name "Manufacturer")
