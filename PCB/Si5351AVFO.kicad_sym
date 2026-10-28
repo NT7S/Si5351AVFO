@@ -40,7 +40,7 @@
 			(effects
 				(font
 					(size 1.27 1.27))))
-		(property "Description" "4-pin 3225 TCXO, clipped-sine output; pin 1 NC/EN (NC on fitted part; EN on active-high-enable TCXOs via DNP R6)"
+		(property "Description" "4-pin 3225 TCXO, clipped-sine output; pin 1 NC/EN, tied to GND (YXC 3225 pin 1 is NC: float or GND)"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)

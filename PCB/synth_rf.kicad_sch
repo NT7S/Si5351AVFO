@@ -1381,7 +1381,7 @@
 					)
 				)
 			)
-			(property "Description" "4-pin 3225 TCXO, clipped-sine output; pin 1 NC/EN (NC on fitted part; EN on active-high-enable TCXOs via DNP R6)"
+			(property "Description" "4-pin 3225 TCXO, clipped-sine output; pin 1 NC/EN, tied to GND (YXC 3225 pin 1 is NC: float or GND)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2633,16 +2633,6 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 72.39) (xy 44.45 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "acc06d6d-971b-49c8-876d-e59625c2df24")
-	)
-	(wire
-		(pts
 			(xy 152.4 172.72) (xy 152.4 175.26)
 		)
 		(stroke
@@ -2863,7 +2853,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 77.47) (xy 44.45 87.63)
+			(xy 44.45 87.63) (xy 44.45 90.17)
 		)
 		(stroke
 			(width 0)
@@ -3316,6 +3306,82 @@
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "#PWR082")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 44.45 90.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0a96e572-a67d-4f1c-9b83-6bf323e14d74")
+		(property "Reference" "#PWR924"
+			(at 44.45 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 44.45 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 44.45 90.17 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "35333c0e-d3b9-44ea-bbb4-6528fac1cf28")
+		)
+		(instances
+			(project "Si5351AVFO"
+				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
+					(reference "#PWR924")
 					(unit 1)
 				)
 			)
@@ -8079,7 +8145,7 @@
 				)
 			)
 		)
-		(property "Description" "4-pin 3225 TCXO, clipped-sine output; pin 1 NC/EN (NC on fitted part; EN on active-high-enable TCXOs via DNP R6)"
+		(property "Description" "4-pin 3225 TCXO, clipped-sine output; pin 1 NC/EN, tied to GND (YXC 3225 pin 1 is NC: float or GND)"
 			(at 59.69 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -8298,7 +8364,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C504891"
+		(property "LCSC" "C529366"
 			(at 139.7 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -8309,7 +8375,18 @@
 				)
 			)
 		)
-		(property "MPN" "SI5351A-B-GTR"
+		(property "LCSC_ALT" "C504891"
+			(at 139.7 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SI5351A-B-GT"
 			(at 139.7 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -9045,120 +9122,6 @@
 			(project "Si5351AVFO"
 				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
 					(reference "#PWR102")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 44.45 74.93 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "b9d7b4cb-e8c3-4ce4-95de-c829cf61f503")
-		(property "Reference" "R6"
-			(at 46.25 74.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0"
-			(at 46.25 76.53 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 44.45 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 44.45 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C17477"
-			(at 44.45 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "0805W8F0000T5E"
-			(at 44.45 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 44.45 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b3135ed7-0e3f-4a36-a4db-5d0512bb7dad")
-		)
-		(pin "2"
-			(uuid "eab461e0-e20f-4bd8-87bf-85c179fa9fa1")
-		)
-		(instances
-			(project "Si5351AVFO"
-				(path "/a0000000-0000-4000-8000-000000000001/b0000000-0000-4000-8000-000000000004"
-					(reference "R6")
 					(unit 1)
 				)
 			)
